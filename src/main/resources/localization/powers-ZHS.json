@@ -1809,7 +1809,7 @@
   "shadowverse:PureflameLadyPower": {
     "NAME": "净火千金",
     "DESCRIPTIONS": [
-      "本回合内，获得 #y力量 或 #y敏捷 时，抽 #b1 张牌(上限为10次)。"
+      "本回合内，获得 #y力量 或 #y敏捷 时，对全体敌人造成 #b2 点伤害(上限为10次)。"
     ]
   },
   "shadowverse:ElluviaPower": {

@@ -49,7 +49,7 @@ import shadowverse.characters.Necromancer;
    public void use(AbstractPlayer p, AbstractMonster m) {
      addToBot(new SFXAction("CorpseKingCommand"));
      addToBot(new ApplyPowerAction(p,p,new BlurPower(p,1),1));
-     addToBot(new NecromanceAction(10,new ApplyPowerAction(p,p,new DoubleDamagePower(p,1,false),1)));
+     addToBot(new NecromanceAction(10,null,new ApplyPowerAction(p,p,new DoubleDamagePower(p,1,false),1)));
    }
  
    

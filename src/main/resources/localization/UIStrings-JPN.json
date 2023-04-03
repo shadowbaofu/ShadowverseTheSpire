@@ -119,19 +119,19 @@
   },
   "ViewBanCardScreen": {
     "TEXT": [
-      "本场战斗中会出现的卡牌",
-      "返回"
+      "ゲーム中に現れるカード",
+      "戻る"
     ]
   },
   "ViewBanCardOption": {
     "TEXT": [
-      "卡池",
-      "查看本场战斗可以出现的卡牌."
+      "カードプール",
+      "ゲーム中に現れるカードを確認できる。"
     ]
   },
   "shadowverse:UnseenStrengthMod": {
     "TEXT": [
-      " NL 造成的伤害无法被格挡。"
+      " NL ブロック不能。"
     ]
   }
 }

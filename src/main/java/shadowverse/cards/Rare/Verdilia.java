@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 import shadowverse.cards.AbstractRightClickCard2;
 import shadowverse.cards.Temp.CyclicalGuidance;
 import shadowverse.characters.AbstractShadowversePlayer;
+import shadowverse.characters.Bishop;
 import shadowverse.characters.Witchcraft;
 
 
@@ -29,7 +30,7 @@ public class Verdilia extends AbstractRightClickCard2 {
     public static final String[] TEXT = uiStrings.TEXT;
 
     public Verdilia() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Witchcraft.Enums.COLOR_BLUE, CardRarity.RARE, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.RARE, CardTarget.SELF);
         this.baseDamage = 8;
         this.tags.add(AbstractShadowversePlayer.Enums.ACADEMIC);
         this.cardsToPreview = new CyclicalGuidance();

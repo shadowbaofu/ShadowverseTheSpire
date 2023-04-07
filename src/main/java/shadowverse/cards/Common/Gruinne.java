@@ -3,7 +3,6 @@ package shadowverse.cards.Common;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -49,7 +48,6 @@ public class Gruinne extends CustomCard {
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot(new SFXAction("Gruinne"));
-        addToBot(new GainBlockAction(abstractPlayer,this.block));
         addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, (AbstractPower) new EarthEssence(abstractPlayer, this.magicNumber), this.magicNumber));
         AbstractPower p = abstractPlayer.getPower(EarthEssence.POWER_ID);
         if (p != null && (p.amount + this.magicNumber) > 2) {

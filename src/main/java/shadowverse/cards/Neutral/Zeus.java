@@ -38,6 +38,19 @@ public class Zeus extends AbstractNeutralCard{
         initializeTitle();
     }
 
+    public void applyPowers() {
+        super.applyPowers();
+        int count = 0;
+        for (AbstractCard c : AbstractDungeon.player.exhaustPile.group) {
+            if (c instanceof EvolutionPoint)
+                count++;
+        }
+        this.rawDescription = cardStrings.DESCRIPTION;
+        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + count;
+        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[1];
+        initializeDescription();
+    }
+
     @Override
     public boolean canUpgrade() {
         return true;

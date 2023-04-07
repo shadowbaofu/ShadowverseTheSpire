@@ -1195,7 +1195,8 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("Norn", new Sfx(voicePath+"NornPower.wav"));
             reflectedMap.put("CassimPower", new Sfx(voicePath+"CassimPower.wav"));
             reflectedMap.put("Cassim", new Sfx(voicePath+"Cassim.wav"));
-            reflectedMap.put("Rosa", new Sfx(voicePath+"RosaPower.wav"));
+            reflectedMap.put("Rosa", new Sfx(voicePath+"Rosa.wav"));
+            reflectedMap.put("RosaPower", new Sfx(voicePath+"RosaPower.wav"));
             reflectedMap.put("Craig", new Sfx(voicePath+"Craig.wav"));
             reflectedMap.put("CraigPower", new Sfx(voicePath+"CraigPower.wav"));
             reflectedMap.put("CraigPower2", new Sfx(voicePath+"CraigPower2.wav"));
@@ -2523,6 +2524,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard( new Cornelius());
         BaseMod.addCard( new MajesticSorcery());
         BaseMod.addCard( new AnneAndGrea());
+        BaseMod.addCard( new Lyelth());
         logger.info("Success");
     }
 

@@ -52,11 +52,7 @@ public class Leeds extends CustomCard {
         if (AbstractDungeon.player instanceof AbstractShadowversePlayer) {
             AbstractShadowversePlayer w = (AbstractShadowversePlayer) AbstractDungeon.player;
             int count = w.burialCount;
-            if (this.upgraded) {
-                this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-            } else {
-                this.rawDescription = cardStrings.DESCRIPTION;
-            }
+            this.rawDescription = cardStrings.DESCRIPTION;
             this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + count;
             this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[1];
             initializeDescription();
@@ -71,15 +67,15 @@ public class Leeds extends CustomCard {
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         if ((UnlockTracker.betaCardPref.getBoolean(this.cardID, false))) {
             addToBot(new SFXAction("Leeds_L"));
-        }else {
+        } else {
             addToBot(new SFXAction("Leeds"));
         }
         addToBot(new GainBlockAction(abstractPlayer, this.block));
-        addToBot(new BurialAction(1, new DamageRandomEnemyAction(new DamageInfo(abstractPlayer,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL)));
+        addToBot(new BurialAction(1, new DamageRandomEnemyAction(new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL)));
         if (AbstractDungeon.player instanceof AbstractShadowversePlayer) {
             AbstractShadowversePlayer w = (AbstractShadowversePlayer) AbstractDungeon.player;
             int count = w.burialCount;
-            if (count > 4){
+            if (count > 4) {
                 addToBot(new GainBlockAction(abstractPlayer, this.block));
             }
         }

@@ -80,6 +80,8 @@ public class Erralde
                 }
             }
             addToBot(new ApplyPowerAction(p, p, new ErraldePower(p)));
+            this.exhaust = true;
+            p.hand.removeCard(this);
         }
 
     }

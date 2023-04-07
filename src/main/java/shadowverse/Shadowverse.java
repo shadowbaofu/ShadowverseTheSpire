@@ -2525,6 +2525,8 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard( new MajesticSorcery());
         BaseMod.addCard( new AnneAndGrea());
         BaseMod.addCard( new Lyelth());
+        BaseMod.addCard( new LyelthMarionette());
+        BaseMod.addCard( new UnseenStrength());
         logger.info("Success");
     }
 

@@ -5280,5 +5280,24 @@
       " NL (사용한 마나리아 공격카드",
       "种不同种类的 马纳历亚 攻击牌。)"
     ]
+  },
+  "shadowverse:LeciaSkySaber": {
+    "NAME": "苍空剑士·莉夏",
+    "DESCRIPTION": "获得（回合结束时，弃掉所有攻击牌，每弃一张便随机对一名敌人造成 !M! 点伤害）效果。 NL 抽到时，若手牌中没有 *黄昏之刃·奈诺 则获得一张，否则合体。"
+  },
+  "shadowverse:NanoTheDawnblade": {
+    "NAME": "黄昏之刃·奈诺",
+    "DESCRIPTION": "消耗 。 保留 。 NL 造成 !D! 点伤害，给予 !M! 层虚弱和易伤。"
+  },
+  "shadowverse:LeciaNano": {
+    "NAME": "莉夏&奈诺",
+    "DESCRIPTION": "消耗 。 虚无 。 NL 获得 !B! 点 格挡 ， !M! 层 人工制品 。 NL 将 *暮光之刃 置入手牌。 NL 谢幕曲 \b当这张牌被 消耗 时，将 *苍空剑士·莉夏 、 *黄昏之刃·奈诺 置入手牌。"
+  },
+  "shadowverse:TwilightBlade": {
+    "NAME": "暮光之刃",
+    "DESCRIPTION": "消耗 。 保留 。 NL 对所有敌人造成当前层数X* !M! 点伤害。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (造成 !D! 点伤害)"
+    ]
   }
 }

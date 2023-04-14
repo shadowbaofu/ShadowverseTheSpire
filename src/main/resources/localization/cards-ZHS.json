@@ -4965,11 +4965,11 @@
     "DESCRIPTION": "对随机敌人造成 !D! 点伤害。 NL 此卡视为财宝牌。 NL 消耗 。"
   },
   "shadowverse:TidalGunner": {
-    "NAME": "潮流炮手",
+    "NAME": "海潮炮手",
     "DESCRIPTION": "八狱 NL 造成 !D! 点伤害。 NL 增加1张 *黄金之杯 到手中。 NL 如果消耗堆中的 财宝牌 数量为7以上，改为增加1张 *战栗的海贼旗 到手中。 NL 本回合内，每打出1张 财宝牌 ，对随机敌人造成 !M! 点伤害。"
   },
   "shadowverse:DeepSeaScout": {
-    "NAME": "海原斥候",
+    "NAME": "大洋斥候",
     "DESCRIPTION": "八狱 NL 造成 !D! 点伤害。 NL 增加1张 *黄金之靴 到手中。 NL 如果消耗堆中的 财宝牌 数量为7以上，改为增加1张 *战栗的海贼旗 到手中。 NL 本回合内，每打出1张 财宝牌 ，抽1张牌。"
   },
   "shadowverse:StormWrackedFirstMate": {
@@ -4990,7 +4990,7 @@
     ]
   },
   "shadowverse:WardenOfHonor": {
-    "NAME": "尽忠的看守",
+    "NAME": "尽忠看守",
     "DESCRIPTION": "八狱 · 结晶 0 NL 下回合开始时额外抽1张牌，增加1张复制品到弃牌堆中。 NL  NL --------------------- NL  NL  升级 这张牌，获得 !B! 点 格挡 2次。 NL 增加1张复制品到消耗堆中。",
     "UPGRADE_DESCRIPTION":"八狱 · 结晶 0 NL 下回合开始时额外抽1张牌，增加1张复制品到弃牌堆中。 NL  NL --------------------- NL  NL 获得 !B! 点 格挡 2次。 NL 增加1张复制品到消耗堆中。 NL 打出后解除升级 。"
   },
@@ -5278,6 +5278,25 @@
     "EXTENDED_DESCRIPTION": [
       " NL (已打出",
       "种不同种类的 马纳历亚 攻击牌。)"
+    ]
+  },
+  "shadowverse:LeciaSkySaber": {
+    "NAME": "苍空剑士·莉夏",
+    "DESCRIPTION": "获得（回合结束时，弃掉所有攻击牌，每弃一张便随机对一名敌人造成 !M! 点伤害）效果。 NL 抽到时，若手牌中没有 *黄昏之刃·奈诺 则获得一张，否则合体。"
+  },
+  "shadowverse:NanoTheDawnblade": {
+    "NAME": "黄昏之刃·奈诺",
+    "DESCRIPTION": "消耗 。 保留 。 NL 造成 !D! 点伤害，给予 !M! 层虚弱和易伤。"
+  },
+  "shadowverse:LeciaNano": {
+    "NAME": "莉夏&奈诺",
+    "DESCRIPTION": "消耗 。 虚无 。 NL 获得 !B! 点 格挡 ， !M! 层 人工制品 。 NL 将 *暮光之刃 置入手牌。 NL 谢幕曲 \b当这张牌被 消耗 时，将 *苍空剑士·莉夏 、 *黄昏之刃·奈诺 置入手牌。"
+  },
+  "shadowverse:TwilightBlade": {
+    "NAME": "暮光之刃",
+    "DESCRIPTION": "消耗 。 保留 。 NL 对所有敌人造成当前层数X* !M! 点伤害。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (造成 !D! 点伤害)"
     ]
   }
 }

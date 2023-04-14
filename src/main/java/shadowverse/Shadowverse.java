@@ -1391,6 +1391,13 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("AnneAndGrea", new Sfx(voicePath+"AnneAndGrea.wav"));
             reflectedMap.put("AnneAndGrea_Eh", new Sfx(voicePath+"AnneAndGrea_Eh.wav"));
             reflectedMap.put("MajesticSorcery", new Sfx(voicePath+"MajesticSorcery.wav"));
+            reflectedMap.put("LeciaSkySaber", new Sfx(voicePath+"LeciaSkySaber.wav"));
+            reflectedMap.put("LeciaSkySaber_Eff", new Sfx(voicePath+"LeciaSkySaber_Eff.wav"));
+            reflectedMap.put("LeciaSkySaber_Eff2", new Sfx(voicePath+"LeciaSkySaber_Eff2.wav"));
+            reflectedMap.put("NanoTheDawnblade", new Sfx(voicePath+"NanoTheDawnblade.wav"));
+            reflectedMap.put("LeciaNano", new Sfx(voicePath+"LeciaNano.wav"));
+            reflectedMap.put("TwilightBlade", new Sfx(voicePath+"TwilightBlade.wav"));
+            reflectedMap.put("SupportCannon", new Sfx(voicePath+"SupportCannon.wav"));
         }
     }
 
@@ -2527,6 +2534,10 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard( new Lyelth());
         BaseMod.addCard( new LyelthMarionette());
         BaseMod.addCard( new UnseenStrength());
+        BaseMod.addCard( new LeciaSkySaber());
+        BaseMod.addCard( new NanoTheDawnblade());
+        BaseMod.addCard( new LeciaNano());
+        BaseMod.addCard( new TwilightBlade());
         logger.info("Success");
     }
 

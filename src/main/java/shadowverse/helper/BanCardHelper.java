@@ -50,6 +50,7 @@ public class BanCardHelper {
                     this.add(new Erika());
                     this.add(new Kagemitsu());
                     this.add(new MonochromeEndgame());
+                    this.add(new LeciaSkySaber());
                 }
             });
             //随从

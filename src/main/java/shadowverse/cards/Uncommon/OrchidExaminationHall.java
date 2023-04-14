@@ -45,7 +45,7 @@ public class OrchidExaminationHall extends AbstractAmuletCard {
 
     public void update() {
         super.update();
-        if (this.hb.hovered)
+        if (this.hb.hovered){
             if (this.rotationTimer <= 0.0F) {
                 this.rotationTimer = 2.0F;
                 this.cardsToPreview = returnChoice().get(previewIndex).makeCopy();
@@ -59,13 +59,14 @@ public class OrchidExaminationHall extends AbstractAmuletCard {
             } else {
                 this.rotationTimer -= Gdx.graphics.getDeltaTime();
             }
+        }
         if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT
         ) {
             if (Shadowverse.Enhance(1)) {
                 setCostForTurn(1);
+            }else{
+                setCostForTurn(0);
             }
-        } else {
-            setCostForTurn(0);
         }
     }
 
@@ -109,15 +110,15 @@ public class OrchidExaminationHall extends AbstractAmuletCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        if (this.costForTurn == 1){
+        if (this.costForTurn == 1) {
             ArrayList<AbstractCard> list = returnChoice();
-            if (upgraded){
-                for (AbstractCard c : list){
+            if (upgraded) {
+                for (AbstractCard c : list) {
                     c.upgrade();
                 }
             }
             addToBot(new ChooseOneAction(list));
-        }else {
+        } else {
             addToBot(new HealAction(AbstractDungeon.player, AbstractDungeon.player, 1));
         }
     }

@@ -68,7 +68,6 @@ public class VerdantPrayer
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction("VerdantPrayer"));
-        addToBot(new ArmamentsAction(true));
         int count = 0;
         for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisCombat) {
             if (c.type == CardType.ATTACK && !(c.hasTag(CardTags.STRIKE)) && c.color == Elf.Enums.COLOR_GREEN) {

@@ -42,7 +42,7 @@ public class Elluvia
 
 
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
-        addToBot(new SFXAction("Abdiel"));
+        addToBot(new SFXAction("Elluvia"));
         addToBot(new VFXAction(new RainbowCardEffect()));
         addToBot(new VFXAction(new BorderFlashEffect(Color.GOLDENROD, true)));
         addToBot( new ApplyPowerAction(p, p, new ElluviaPower(p)));

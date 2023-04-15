@@ -46,7 +46,7 @@ public class LeciaSkySaber extends CustomCard {
 
     public LeciaSkySaber() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, AbstractCard.CardType.ATTACK, Royal.Enums.COLOR_YELLOW, AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.SELF);
-        this.magicNumber = this.baseMagicNumber = 6;
+        this.magicNumber = this.baseMagicNumber = 8;
     }
 
     @Override

@@ -5294,7 +5294,7 @@
   },
   "shadowverse:TwilightBlade": {
     "NAME": "暮光之刃",
-    "DESCRIPTION": "消耗 。 保留 。 NL 对所有敌人造成当前层数X* !M! 点伤害。",
+    "DESCRIPTION": "消耗 。 保留 。 NL 对所有敌人造成(当前层数+X* !M! )点伤害。",
     "EXTENDED_DESCRIPTION": [
       " NL (造成 !D! 点伤害)"
     ]

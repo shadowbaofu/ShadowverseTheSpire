@@ -28,8 +28,4 @@ public class BanShadowverse extends CustomRelic {
         return new BanShadowverse();
     }
 
-    @Override
-    public boolean canPlay(AbstractCard card) {
-        return !card.cardID.contains("shadowverse");
-    }
 }

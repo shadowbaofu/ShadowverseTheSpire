@@ -2373,7 +2373,7 @@
   },
   "shadowverse:PurgationBlade": {
     "NAME": "Purgation's Blade",
-    "DESCRIPTION": "Gain Strength equal to the amount of cards in your exhaust pile. NL Exhaust."
+    "DESCRIPTION": "Gain Strength equal to the amount of attack cards in your exhaust pile. NL Exhaust."
   },
   "shadowverse:Maisha": {
     "NAME": "Maisha, Hero of Purgation",
@@ -5133,20 +5133,20 @@
   },
   "shadowverse:OrchidExaminationHall": {
     "NAME": "Orchid's Examination Hall",
-    "DESCRIPTION": "圣祝 · Academic NL Heal 1 HP. NL Countdown 1: Heal 1 HP. NL Enhance 1: Choose:  NL *Bambeauty's Examination Hall NL *Mum's Examination Hall NL *Plum's Examination Hall",
-    "UPGRADE_DESCRIPTION": "圣祝 · Academic NL Heal 1 HP. NL Countdown 1: Heal 1 HP. NL Enhance 1: Choose:  NL *Bambeauty's Examination Hall+ NL *Mum's Examination Hall+ NL *Plum's Examination Hall+"
+    "DESCRIPTION": "Banish / Academic NL Heal 1 HP. NL Countdown 1: Heal 1 HP. NL Enhance 1: Choose:  NL *Bambeauty's Examination Hall NL *Mum's Examination Hall NL *Plum's Examination Hall",
+    "UPGRADE_DESCRIPTION": "Banish / Academic NL Heal 1 HP. NL Countdown 1: Heal 1 HP. NL Enhance 1: Choose:  NL *Bambeauty's Examination Hall+ NL *Mum's Examination Hall+ NL *Plum's Examination Hall+"
   },
   "shadowverse:BambeautyExaminationHall": {
     "NAME": "Bambeauty's Examination Hall",
-    "DESCRIPTION": "圣祝 · Academic NL Heal 1 HP, draw !M! cards. NL Countdown 1: Heal 1 HP, draw !M! cards."
+    "DESCRIPTION": "Banish / Academic NL Heal 1 HP, draw !M! cards. NL Countdown 1: Heal 1 HP, draw !M! cards."
   },
   "shadowverse:MumExaminationHall": {
     "NAME": "Mum's Examination Hall",
-    "DESCRIPTION": "圣祝 · Academic NL Heal 1 HP, deal !M! damage to a random enemy. NL Countdown 1: Heal 1 HP, deal !M! damage to a random enemy."
+    "DESCRIPTION": "Banish / Academic NL Heal 1 HP, deal !M! damage to a random enemy. NL Countdown 1: Heal 1 HP, deal !M! damage to a random enemy."
   },
   "shadowverse:PlumExaminationHall": {
     "NAME": "Plum's Examination Hall",
-    "DESCRIPTION": "圣祝 · Academic NL Heal !M! HP. NL Countdown 1: Heal !M! HP."
+    "DESCRIPTION": "Banish / Academic NL Heal !M! HP. NL Countdown 1: Heal !M! HP."
   },
   "shadowverse:Gruinne": {
     "NAME": "Gruinne, Leonardian Provost",
@@ -5264,8 +5264,8 @@
   },
   "shadowverse:Cornelius": {
     "NAME": "Cornelius, the Corpse King",
-    "DESCRIPTION": "Academic NL Gain !B! Block. NL Apply 2 Weak and Vulnerable to ALL enemies. NL Add 4 different non-Shadowcraft Attack cards with 1 cost to your hand.",
-    "UPGRADE_DESCRIPTION":"Academic NL Gain !B! Block. NL Apply 2 Weak and Vulnerable to ALL enemies. NL Add 4 different non-Shadowcraft Attack cards with 1 cost to your hand. NL Add 1 *Corpse *King's *Command to your hand."
+    "DESCRIPTION": "Academic NL Gain !B! Block. NL Apply 2 Weak and Vulnerable to ALL enemies. NL Add 4 different non-Shadowcraft Attack cards with 1 cost , Exhaust and they cost 0 this turn to your hand.",
+    "UPGRADE_DESCRIPTION":"Academic NL Gain !B! Block. NL Apply 2 Weak and Vulnerable to ALL enemies. NL Add 4 different non-Shadowcraft Attack cards with 1 cost, Exhaust and they cost 0  to your hand. NL Add 1 *Corpse *King's *Command to your hand."
   },
   "shadowverse:CorpseKingCommand": {
     "NAME": "Corpse King's Command ",
@@ -5286,22 +5286,22 @@
     ]
   },
   "shadowverse:LeciaSkySaber": {
-    "NAME": "苍空剑士·莉夏",
-    "DESCRIPTION": "获得（回合结束时，弃掉所有攻击牌，每弃一张便随机对一名敌人造成 !M! 点伤害）效果。 NL 抽到时，若手牌中没有 *黄昏之刃·奈诺 则获得一张，否则合体。"
+    "NAME": "Lecia, Sky Saber",
+    "DESCRIPTION": "Gain 'At the end of your turn, discard all attack cards in your hand. Deal !M! damage to a random enemy X times equals to the amount discarded. NL When drawn, if *Nano, *The *Dawnblade is not in your hand, put 1 into your hand. Else, fuse it with this."
   },
   "shadowverse:NanoTheDawnblade": {
-    "NAME": "黄昏之刃·奈诺",
-    "DESCRIPTION": "消耗 。 保留 。 NL 造成 !D! 点伤害，给予 !M! 层虚弱和易伤。"
+    "NAME": "Nano, The Dawnblade",
+    "DESCRIPTION": "Retain . NL Deal !D! damage and apply !M! Weak and Vulnerable ."
   },
   "shadowverse:LeciaNano": {
-    "NAME": "莉夏&奈诺",
-    "DESCRIPTION": "消耗 。 虚无 。 NL 获得 !B! 点 格挡 ， !M! 层 人工制品 。 NL 将 *暮光之刃 置入手牌。 NL 谢幕曲 \b当这张牌被 消耗 时，将 *苍空剑士·莉夏 、 *黄昏之刃·奈诺 置入手牌。"
+    "NAME": "Lecia & Nano",
+    "DESCRIPTION": "Gain !B! Blocks and !M! Artifact . NL Put 1 *Twilight *Blade into your hand. NL Last_Words :When exhausted, put 1 *Lecia, *Sky *Saber 、 *Nano, *the *Dawnblade into your hand. NL Exhaust . NL Ethereal ."
   },
   "shadowverse:TwilightBlade": {
-    "NAME": "暮光之刃",
-    "DESCRIPTION": "消耗 。 保留 。 NL 对所有敌人造成当前层数X* !M! 点伤害。",
+    "NAME": "Twilight Blade",
+    "DESCRIPTION": "Retain . NL Deal !M! X damage to all enemies. NL Exhaust .",
     "EXTENDED_DESCRIPTION": [
-      " NL (造成 !D! 点伤害)"
+      " NL (Deal !D! damage)"
     ]
   }
 }

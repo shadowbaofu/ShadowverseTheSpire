@@ -48,10 +48,15 @@ import java.util.List;
    }
 
    public void triggerOnOtherCardPlayed(AbstractCard c) {
-       if (c.hasTag(AbstractShadowversePlayer.Enums.MYSTERIA)||c.type==CardType.SKILL) {
+       if (c.hasTag(AbstractShadowversePlayer.Enums.MYSTERIA)) {
          flash();
-         addToBot((AbstractGameAction)new SFXAction("spell_boost"));
-         addToBot((AbstractGameAction)new ReduceCostAction((AbstractCard)this));
+         addToBot(new SFXAction("spell_boost"));
+         addToBot(new ReduceCostAction(this));
+       }
+       if(c.type==CardType.SKILL){
+         flash();
+         addToBot(new SFXAction("spell_boost"));
+         addToBot(new ReduceCostAction(this));
        }
    }
 
@@ -71,7 +76,7 @@ import java.util.List;
    }
    
    public AbstractCard makeCopy() {
-     return (AbstractCard)new Craig();
+     return new Craig();
    }
 
  }

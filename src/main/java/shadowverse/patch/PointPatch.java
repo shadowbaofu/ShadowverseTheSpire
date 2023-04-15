@@ -23,11 +23,12 @@ public class PointPatch {
 
     @SpirePatch(clz = GameOverScreen.class, method = "checkScoreBonus")
     public static class checkPointPatch{
-        @SpireInsertPatch(rloc = 1,localvars = { "points" })
-        public void Insert(boolean victory, int points){
+        @SpirePostfixPatch()
+        public static int Postfix(int points,boolean victory){
             if (AbstractDungeon.player.hasRelic(BanShadowverse.ID) && AbstractDungeon.player instanceof AbstractShadowversePlayer){
                 points -= 1249;
             }
+            return points;
         }
 
     }

@@ -94,7 +94,7 @@ public class LeciaSkySaber extends CustomCard {
             }
         }
         if (have) {
-            if (AbstractDungeon.player.hand.group.contains(this)) {
+//            if (AbstractDungeon.player.hand.group.contains(this)) {
                 addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_Eff2"));
                 addToBot(new ExhaustSpecificCardAction(c, AbstractDungeon.player.hand));
                 addToBot(new ExhaustSpecificCardAction(this, AbstractDungeon.player.hand));
@@ -103,7 +103,7 @@ public class LeciaSkySaber extends CustomCard {
                 if (this.upgraded) {
                     card.upgrade();
                 }
-            }
+//            }
         } else {
             addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_Eff"));
             AbstractCard card = new NanoTheDawnblade();

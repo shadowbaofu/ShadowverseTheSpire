@@ -31,7 +31,7 @@ public class SupportCannonPower extends AbstractPower {
         this.amount = amount;
         this.type = PowerType.BUFF;
         updateDescription();
-        this.img = new Texture("img/powers/SupportCannonPower.png");
+        this.img = new Texture("img/powers/SupportCannon.png");
     }
 
     @Override

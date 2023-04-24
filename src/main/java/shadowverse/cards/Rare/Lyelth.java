@@ -82,9 +82,7 @@ public class Lyelth
         }, abstractCards -> {
             for (AbstractCard c : abstractCards) {
                 addToBot( new ExhaustSpecificCardAction(c, abstractPlayer.hand));
-                if (this.upgraded) {
-                    addToBot( new MakeTempCardInDrawPileAction(c.makeStatEquivalentCopy(), 1, true, true, false));
-                }
+                addToBot( new MakeTempCardInDrawPileAction(c.makeStatEquivalentCopy(), 1, true, true, false));
                 addToBot(new MakeTempCardInHandAction(new LyelthMarionette()));
                 AbstractCard u = new UnseenStrength();
                 if (upgraded)

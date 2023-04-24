@@ -78,8 +78,10 @@ public class BurialAction extends AbstractGameAction {
                 returnCards();
                 if (null!=action){
                     addToBot(action);
-                    if (this.p.hasPower(MementoPower.POWER_ID))
-                        addToBot(action);
+                    for (AbstractPower power:this.p.powers){
+                        if (power instanceof MementoPower)
+                            addToBot(action);
+                    }
                 }
                 addToBot(new ApplyPowerAction(p, p, new Cemetery(p, 1), 1));
                 if (this.p.hasPower(CarnivalNecromancerPower.POWER_ID)){
@@ -119,8 +121,10 @@ public class BurialAction extends AbstractGameAction {
             AbstractDungeon.handCardSelectScreen.selectedCards.group.clear();
             if (null!=action){
                 addToBot(action);
-                if (this.p.hasPower(MementoPower.POWER_ID))
-                    addToBot(action);
+                for (AbstractPower power:this.p.powers){
+                    if (power instanceof MementoPower)
+                        addToBot(action);
+                }
             }
             addToBot(new ApplyPowerAction(p, p, new Cemetery(p, 1), 1));
             if (this.p.hasPower(CarnivalNecromancerPower.POWER_ID)){

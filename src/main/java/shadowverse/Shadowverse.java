@@ -1398,6 +1398,12 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("LeciaNano", new Sfx(voicePath+"LeciaNano.wav"));
             reflectedMap.put("TwilightBlade", new Sfx(voicePath+"TwilightBlade.wav"));
             reflectedMap.put("SupportCannon", new Sfx(voicePath+"SupportCannon.wav"));
+            reflectedMap.put("Garuda4_Acc", new Sfx(voicePath+"Garuda4_Acc.wav"));
+            reflectedMap.put("Garuda4", new Sfx(voicePath+"Garuda4.wav"));
+            reflectedMap.put("FighterFortitude", new Sfx(voicePath+"FighterFortitude.wav"));
+            reflectedMap.put("SepticShrink", new Sfx(voicePath+"SepticShrink.wav"));
+            reflectedMap.put("Gawain", new Sfx(voicePath+"Gawain.wav"));
+            reflectedMap.put("Weiss", new Sfx(voicePath+"Weiss.wav"));
         }
     }
 
@@ -1477,6 +1483,9 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addRelicToCustomPool( new ShinobuBOSS(), Necromancer.Enums.COLOR_PURPLE);
         BaseMod.addRelic(new BanShadowverse(), RelicType.SHARED);
         BaseMod.addRelic(new Enlightenment(), RelicType.SHARED);
+        BaseMod.addRelic(new Gliesaray(), RelicType.SHARED);
+        BaseMod.addRelicToCustomPool( new Juratio(), Bishop.Enums.COLOR_WHITE);
+        BaseMod.addRelicToCustomPool( new Lagedor(), Bishop.Enums.COLOR_WHITE);
     }
 
     class Keywords {
@@ -2538,6 +2547,13 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard( new NanoTheDawnblade());
         BaseMod.addCard( new LeciaNano());
         BaseMod.addCard( new TwilightBlade());
+        BaseMod.addCard( new DimensionCrack());
+        BaseMod.addCard( new MagicalBishop());
+        BaseMod.addCard( new ThicketOfGnarledHands());
+        BaseMod.addCard( new FighterFortitude());
+        BaseMod.addCard( new SepticShrink());
+        BaseMod.addCard( new Gawain());
+        BaseMod.addCard( new Weiss());
         logger.info("Success");
     }
 

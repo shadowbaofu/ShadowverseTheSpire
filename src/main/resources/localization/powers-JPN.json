@@ -1801,13 +1801,13 @@
     ]
   },
   "shadowverse:MementoPower": {
-    "NAME": "夜想教镰·玫美丹特",
+    "NAME": "夜想の教鎌・メメトト",
     "DESCRIPTIONS": [
-      "每当 #y葬送 时，重复1次 #y葬送 以外的效果。"
+      "葬送する度、 葬送 以外の能力はもう一回働く"
     ]
   },
   "shadowverse:PureflameLadyPower": {
-    "NAME": "净火千金",
+    "NAME": "浄火の令嬢",
     "DESCRIPTIONS": [
       "このターン、 筋力 や 敏捷性 を得る時、敵全体に2ダメージを与える(上限は10回)"
     ]
@@ -1825,10 +1825,23 @@
     ]
   },
   "shadowverse:SupportCannonPower": {
-    "NAME": "炮击支援",
+    "NAME": "援護射撃",
     "DESCRIPTIONS": [
-      "回合结束时，弃掉所有攻击牌，每弃一张便随机对一名敌人造成",
-      "点伤害。"
+      "ターン終了時、アタックカードをすべて捨て、1枚につきランダムな敵に",
+      "ダメージを与える。"
+    ]
+  },
+  "shadowverse:MagicalBishopPower": {
+    "NAME": "マジカルビショップ",
+    "DESCRIPTIONS": [
+      "チェスカードをプレイする度、敵全体に #b",
+      "ダメージを与える。"
+    ]
+  },
+  "shadowverse:WeissPower": {
+    "NAME": "選別の教員・ヴァイス",
+    "DESCRIPTIONS": [
+      "このターン、敵からのデバフを受けない。このターン、敵はバフを受けない。"
     ]
   }
 }

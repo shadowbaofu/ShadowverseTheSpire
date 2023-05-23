@@ -40,7 +40,7 @@
    public static final String IMG_PATH = "img/cards/BellWitch.png";
 
    public BellWitch() {
-     super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Witchcraft.Enums.COLOR_BLUE, CardRarity.COMMON, CardTarget.SELF);
+     super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Witchcraft.Enums.COLOR_BLUE, CardRarity.COMMON, CardTarget.SELF);
      this.tags.add(AbstractShadowversePlayer.Enums.MYSTERIA);
      this.tags.add(AbstractShadowversePlayer.Enums.ACADEMIC);
      this.baseBlock = 3;

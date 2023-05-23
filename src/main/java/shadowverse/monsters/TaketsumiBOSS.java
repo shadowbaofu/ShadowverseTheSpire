@@ -17,13 +17,11 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.MonsterStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.monsters.beyond.Exploder;
 import com.megacrit.cardcrawl.monsters.city.Centurion;
 import com.megacrit.cardcrawl.monsters.city.Healer;
 import com.megacrit.cardcrawl.monsters.city.SnakePlant;
-import com.megacrit.cardcrawl.monsters.exordium.Cultist;
-import com.megacrit.cardcrawl.monsters.exordium.JawWorm;
-import com.megacrit.cardcrawl.monsters.exordium.SlaverBlue;
-import com.megacrit.cardcrawl.monsters.exordium.SlaverRed;
+import com.megacrit.cardcrawl.monsters.exordium.*;
 import com.megacrit.cardcrawl.powers.*;
 import com.megacrit.cardcrawl.vfx.combat.InflameEffect;
 import com.megacrit.cardcrawl.vfx.combat.VerticalImpactEffect;
@@ -139,13 +137,13 @@ public class TaketsumiBOSS extends CustomMonster implements SpriteCreature {
                         m = new JawWorm(this.spawnX - 50 - 85.0F * (i + enemySlots.size()), MathUtils.random(-5.0F, 25.0F));
                         break;
                     case 4:
-                        m = new SnakePlant(this.spawnX - 50 - 85.0F * (i + enemySlots.size()), MathUtils.random(-5.0F, 25.0F));
+                        m = new Exploder(this.spawnX - 50 - 85.0F * (i + enemySlots.size()), MathUtils.random(-5.0F, 25.0F));
                         break;
                     case 5:
                         m = new Healer(this.spawnX - 50 - 85.0F * (i + enemySlots.size()), MathUtils.random(-5.0F, 25.0F));
                         break;
                     case 6:
-                        m = new Centurion(this.spawnX - 50 - 85.0F * (i + enemySlots.size()), MathUtils.random(-5.0F, 25.0F));
+                        m = new SpikeSlime_M(this.spawnX - 50 - 85.0F * (i + enemySlots.size()), MathUtils.random(-5.0F, 25.0F));
                         break;
                 }
                 if (enemySlots.get(i) == null){

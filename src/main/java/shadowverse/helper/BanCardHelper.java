@@ -51,6 +51,7 @@ public class BanCardHelper {
                     this.add(new Kagemitsu());
                     this.add(new MonochromeEndgame());
                     this.add(new LeciaSkySaber());
+                    this.add(new Weiss());
                 }
             });
             //随从
@@ -70,6 +71,7 @@ public class BanCardHelper {
                     this.add(new GeneralMaximus());
                     this.add(new WardenOfHonor());
                     this.add(new Radiel());
+                    this.add(new Gawain());
                 }
             });
             //进化
@@ -176,6 +178,7 @@ public class BanCardHelper {
                     this.add(new Arthur());
                     this.add(new IronwroughtDefender());
                     this.add(new Windslasher());
+                    this.add(new FighterFortitude());
                 }
             });
 //

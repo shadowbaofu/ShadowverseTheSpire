@@ -5298,5 +5298,54 @@
     "EXTENDED_DESCRIPTION": [
       " NL (造成 !D! 点伤害)"
     ]
+  },
+  "shadowverse:DimensionCrack": {
+    "NAME": "次元崩坏",
+    "DESCRIPTION": "抉择 ： NL 从 *解析的创造物 、 *古老的创造物 、 *锋锐的创造物 、 *锋锐的创造物 中选择2种分别加入2张到抽牌堆中。 NL 爆能强化 3:改为加入手中。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "抉择 ： NL 从 *解析的创造物 、 *古老的创造物 、 *神秘的创造物 、 *绚烂的创造物 中选择2种分别加入2张到抽牌堆中。 NL 爆能强化 3:改为加入手中。 NL 消耗性 !stslib:ex! 。"
+  },
+  "shadowverse:MagicalBishop": {
+    "NAME": "奇幻主教",
+    "DESCRIPTION": "象棋 。 NL 每当打出 象棋 牌时，对全体敌人造成3点伤害。 NL 增加 !M! 张 *奇幻士兵 到手中。"
+  },
+  "shadowverse:Garuda4_Cry": {
+    "NAME": "结晶:有翼光辉·迦楼罗",
+    "DESCRIPTION": "倒计时 1:抽1张牌。"
+  },
+  "shadowverse:Garuda4": {
+    "NAME": "有翼光辉·迦楼罗",
+    "DESCRIPTION": "结晶 0 : 倒计时 1 :抽1张牌。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL 选择手中1张护符牌获得「本回合耗能变为0，倒计时变为0，打出时对随机敌人造成原本耗能的10倍伤害」效果。"
+  },
+  "shadowverse:ThicketOfGnarledHands": {
+    "NAME": "深根的多臂异种",
+    "DESCRIPTION": "激奏 0 : 选择弃牌堆中1张攻击牌或能力牌返回手中，对随机敌人造成 !D! 点伤害。 NL  NL --------------------- NL  NL 对全体敌人造成 !M! X点伤害，获得 !M! Y点 格挡 。 NL XY的值随机指定，合计值为本场战斗已打出的卡牌数。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (本场战斗已打出",
+      " 张牌。)"
+    ]
+  },
+  "shadowverse:FighterFortitude": {
+    "NAME": "不屈的斗志",
+    "DESCRIPTION": "失去 !M! 点生命，获得1点 敏捷 。"
+  },
+  "shadowverse:SepticShrink": {
+    "NAME": "不净古灵",
+    "DESCRIPTION": "学园 NL 造成 !D! 点伤害。 NL 葬送 1张牌，获得 [E] 。 NL 如果本场战斗已 葬送 次数为5以上，额外对全体敌人造成 !D! 点伤害。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (已 葬送 ",
+      " 次。)"
+    ]
+  },
+  "shadowverse:Gawain": {
+    "NAME": "誓约的荣光·高文",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 协作 5：额外抽1张牌。 NL 协作 10：抽到这张卡时自动升级。 NL 协作 15：造成双倍伤害。 NL 协作 20：获得1层缓冲。",
+    "EXTENDED_DESCRIPTION": [
+      " NL （协作数：",
+      ")"
+    ]
+  },
+  "shadowverse:Weiss": {
+    "NAME": "选别的教员·韦斯",
+    "DESCRIPTION": "学园 NL 本回合内你不会受到敌人施加的负面效果影响。 NL 本回合内敌人不会受到正面效果影响。"
   }
 }

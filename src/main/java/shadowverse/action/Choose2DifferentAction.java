@@ -24,8 +24,16 @@
      this.duration = Settings.ACTION_DUR_FAST;
      this.amount = 1;
      this.secondTime = secondTime;
-       this.card.addAll(Arrays.asList(card));
+     this.card.addAll(Arrays.asList(card));
    }
+
+     public Choose2DifferentAction(boolean secondTime, int amount, AbstractCard... card) {
+         this.actionType = ActionType.CARD_MANIPULATION;
+         this.duration = Settings.ACTION_DUR_FAST;
+         this.amount = amount;
+         this.secondTime = secondTime;
+         this.card.addAll(Arrays.asList(card));
+     }
  
    
    public void update() {
@@ -45,9 +53,7 @@
          if (AbstractDungeon.player.hasPower("MasterRealityPower")) {
            disCard.upgrade();
          }
-         if (this.amount == 1) {
-           addToBot((AbstractGameAction)new MakeTempCardInHandAction(disCard));
-         }
+         addToBot(new MakeTempCardInHandAction(disCard,this.amount));
          generatedCards.remove(AbstractDungeon.cardRewardScreen.discoveryCard);
          secondGroup = new AbstractCard[generatedCards.size()];
          this.card.toArray(secondGroup);
@@ -57,7 +63,7 @@
      } 
      tickDuration();
      if (secondTime){
-       addToBot((AbstractGameAction)new Choose2DifferentAction(false,secondGroup));
+       addToBot(new Choose2DifferentAction(false,secondGroup));
        this.secondTime = false;
      }
    }

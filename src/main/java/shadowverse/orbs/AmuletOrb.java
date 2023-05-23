@@ -1,5 +1,6 @@
 package shadowverse.orbs;
 
+import basemod.helpers.CardModifierManager;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.evacipated.cardcrawl.mod.stslib.actions.tempHp.AddTemporaryHPAction;
@@ -20,11 +21,11 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import shadowverse.action.ReturnAmuletToDiscardAction;
 import shadowverse.action.StasisEvokeIfRoomInHandAction;
+import shadowverse.cardmods.GarudaMod;
 import shadowverse.cards.AbstractAmuletCard;
 import shadowverse.cards.AbstractCrystalizeCard;
 import shadowverse.cards.AbstractNoCountDownAmulet;
 import shadowverse.cards.Uncommon.GoldenCity;
-import shadowverse.cards.Uncommon.PrimalShipwright;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.effect.AddCardToStasisEffect;
 import shadowverse.powers.UnerielPower;
@@ -133,7 +134,7 @@ public class AmuletOrb extends AbstractOrb {
     }
 
     public void onEvoke() {
-        if ((this.amulet instanceof AbstractAmuletCard || this.amulet instanceof AbstractCrystalizeCard) && !this.amulet.hasTag(AbstractShadowversePlayer.Enums.AMULET_FOR_ONECE) && !(this.amulet instanceof PrimalShipwright))
+        if ((this.amulet instanceof AbstractAmuletCard || this.amulet instanceof AbstractCrystalizeCard) && !this.amulet.hasTag(AbstractShadowversePlayer.Enums.AMULET_FOR_ONECE))
             AbstractDungeon.actionManager.addToTop(new ReturnAmuletToDiscardAction(this.amulet));
         if (this.passiveAmount <= 0 && !(this.amulet instanceof AbstractNoCountDownAmulet)) {
             if (this.amulet instanceof AbstractAmuletCard){
@@ -204,6 +205,9 @@ public class AmuletOrb extends AbstractOrb {
                         AbstractDungeon.actionManager.addToBottom(new SFXAction("UnerielPower"));
                     }
                 }
+            }
+            if (CardModifierManager.hasModifier(((AbstractCard) this.amulet), GarudaMod.ID)){
+                this.onStartOfTurn();
             }
         }
     }

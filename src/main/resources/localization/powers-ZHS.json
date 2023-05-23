@@ -1830,5 +1830,18 @@
       "回合结束时，弃掉所有攻击牌，每弃一张便随机对一名敌人造成",
       "点伤害。"
     ]
+  },
+  "shadowverse:MagicalBishopPower": {
+    "NAME": "奇幻主教",
+    "DESCRIPTIONS": [
+      "每当打出 象棋 牌时，对全体敌人造成 #b",
+      "点伤害。"
+    ]
+  },
+  "shadowverse:WeissPower": {
+    "NAME": "选别的教员·韦斯",
+    "DESCRIPTIONS": [
+      "本回合内你不会受到敌人施加的负面效果影响。本回合内敌人不会受到正面效果影响。"
+    ]
   }
 }

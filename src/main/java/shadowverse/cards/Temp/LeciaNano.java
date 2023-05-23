@@ -79,6 +79,7 @@ public class LeciaNano extends CustomCard {
         addToBot(new SFXAction(ID.replace("shadowverse:", "")));
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
         this.addToBot(new ApplyPowerAction(p, p, new ArtifactPower(p, this.magicNumber), this.magicNumber));
+        addToBot(new MakeTempCardInHandAction(new TwilightBlade()));
     }
 
     @Override

@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
+import com.megacrit.cardcrawl.actions.utility.ScryAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -30,7 +31,7 @@ public class Spineblade extends CustomRelic {
     public static final String OUTLINE_IMG = "img/relics/outline/Spineblade_Outline.png";
 
     public Spineblade() {
-        super(ID, ImageMaster.loadImage(IMG), RelicTier.UNCOMMON, LandingSound.CLINK);
+        super(ID, ImageMaster.loadImage(IMG), RelicTier.UNCOMMON, LandingSound.SOLID);
     }
 
     @Override
@@ -38,21 +39,10 @@ public class Spineblade extends CustomRelic {
         return this.DESCRIPTIONS[0];
     }
 
-    public static ArrayList<AbstractCard> returnProphecy() {
-        ArrayList<AbstractCard> list = new ArrayList<>();
-        list.add(new GildedBlade());
-        list.add(new GildedNecklace());
-        list.add(new GildedGoblet());
-        list.add(new GildedBoots());
-        return list;
-    }
 
     @Override
     public void atTurnStart() {
-        AbstractPlayer p = AbstractDungeon.player;
-        int r1 = AbstractDungeon.cardRandomRng.random(3);
-        AbstractCard c1 = returnProphecy().get(r1);
-        addToBot(new MakeTempCardInHandAction(c1));
+        addToBot(new ScryAction(4));
     }
 
     @Override

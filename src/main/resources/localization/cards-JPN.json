@@ -5298,9 +5298,58 @@
   },
   "shadowverse:TwilightBlade": {
     "NAME": "トワイライトソード",
-    "DESCRIPTION": "保留 。 NL 敵全体 !M! Xダメージを与える。 NL 廃棄" ,
+    "DESCRIPTION": "保留 。 NL 敵全体 !M! ×援護射撃の数のダメージを与える。 NL 廃棄" ,
     "EXTENDED_DESCRIPTION": [
       " NL ( !D! ダメージ)"
     ]
+  },
+  "shadowverse:DimensionCrack": {
+    "NAME": "ディメンションクラック",
+    "DESCRIPTION": "チョイス ： NL 从 *アナライズアーティファクト 、 *エンシェントアーティファクト 、 *エッジアーティファクト 、 *ブリッツアーティファクト から2枚ずつ山札に加える。 NL エンハンス 3:山札ではなく手札に加える。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION": "チョイス ： NL 从 *アナライズアーティファクト 、 *エンシェントアーティファクト 、 *エッジアーティファクト 、 *ブリッツアーティファクト から2枚ずつ山札に加える。 NL あと !stslib:ex! 回使って廃棄する。。"
+  },
+  "shadowverse:MagicalBishop": {
+    "NAME": "マジカルビショップ",
+    "DESCRIPTION": "チェス 。 NL チェス カードをプレイする度、敵全体に3ダメージを与える。 NL *マジカルポーン !M! 枚を手札に加える。"
+  },
+  "shadowverse:Garuda4_Cry": {
+    "NAME": "結晶：有翼の光輝・ガルラ",
+    "DESCRIPTION": "カウントダウン 1:カード1枚を引く。"
+  },
+  "shadowverse:Garuda4": {
+    "NAME": "有翼の光輝・ガルラ",
+    "DESCRIPTION": "結晶 0 : カウントダウン 1:カード1枚を引く。 NL  NL --------------------- NL  NL !D! ダメージを与える。 NL 手札のアミュレットを1枚選択、それは「このターンだけコストとカウントダウンが0になり、プレイする時にランダムな敵に元々のコスト×10のダメージを与える」を得る。"
+  },
+  "shadowverse:ThicketOfGnarledHands": {
+    "NAME": "根深き手の異形",
+    "DESCRIPTION": "アクセラレート 0 : 札からアタックまたはパワー1枚を手札に加え、ランダムな敵に !D! ダメージを与える。 NL  NL --------------------- NL  NL 敵全体に !M! Xダメージを与え、 !M! Y ブロック を得る。 NL XとYは、合計が「（これを含めず）戦闘中にプレイした自分のカードの枚数」になるようにランダムに決まる。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (このバトル中にプレイした自分のカードの枚数は",
+      " 。)"
+    ]
+  },
+  "shadowverse:FighterFortitude": {
+    "NAME": "不屈の闘志",
+    "DESCRIPTION": "HPを !M! 失い、 敏捷性 1を得る。"
+  },
+  "shadowverse:SepticShrink": {
+    "NAME": "不浄の古霊",
+    "DESCRIPTION": "学園 NL !D! ダメージを与える。 NL カード1枚を 葬送 し、 [E] を得る。 NL この戦闘中に 葬送 した回数が5回以上なら、さらに敵全体に !D! ダメージを与える。",
+    "EXTENDED_DESCRIPTION": [
+      " NL ( 葬送 した回数は",
+      " 。)"
+    ]
+  },
+  "shadowverse:Gawain": {
+    "NAME": "約束の栄光・ガウェイン",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 連携 5：追加でカード1枚を引く。 NL 連携 10：これが引かれた場合、アップグレードする。 NL 連携 15：ダメージを2倍にする。 NL 連携 20：次に受けるダメージを0にする。",
+    "EXTENDED_DESCRIPTION": [
+      " NL （連携数：",
+      ")"
+    ]
+  },
+  "shadowverse:Weiss": {
+    "NAME": "選別の教員・ヴァイス",
+    "DESCRIPTION": "学園 NL このターン、敵からのデバフを受けない。 NL このターン、敵はバフを受けない。"
   }
 }

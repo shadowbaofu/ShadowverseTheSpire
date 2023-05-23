@@ -5282,22 +5282,71 @@
     ]
   },
   "shadowverse:LeciaSkySaber": {
-    "NAME": "苍空剑士·莉夏",
-    "DESCRIPTION": "获得（回合结束时，弃掉所有攻击牌，每弃一张便随机对一名敌人造成 !M! 点伤害）效果。 NL 抽到时，若手牌中没有 *黄昏之刃·奈诺 则获得一张，否则合体。"
+    "NAME": "하늘의 기사 리샤",
+    "DESCRIPTION": "이하의 효과를 얻습니다.(턴 종료시 손의 공격카드를 모두 버리고, 버린 카드 1장마다 무작위 적에게 피해를 !M! 줍니다) NL 이 카드를 뽑았을 때 손에 *황혼의 *검 *나노 가 없다면, 1장 얻습니다. 있다면 합체합니다."
   },
   "shadowverse:NanoTheDawnblade": {
-    "NAME": "黄昏之刃·奈诺",
-    "DESCRIPTION": "消耗 。 保留 。 NL 造成 !D! 点伤害，给予 !M! 层虚弱和易伤。"
+    "NAME": "황혼의 검 나노",
+    "DESCRIPTION": "보존. NL 피해를 !D! 주고 취약과 약화를 !M! 부여합니다. NL 소멸. "
   },
   "shadowverse:LeciaNano": {
-    "NAME": "莉夏&奈诺",
-    "DESCRIPTION": "消耗 。 虚无 。 NL 获得 !B! 点 格挡 ， !M! 层 人工制品 。 NL 将 *暮光之刃 置入手牌。 NL 谢幕曲 \b当这张牌被 消耗 时，将 *苍空剑士·莉夏 、 *黄昏之刃·奈诺 置入手牌。"
+    "NAME": "리샤&나노",
+    "DESCRIPTION": " 방어도를 !B! 얻고, 인공물을 !M! 얻습니다. NL *트와일라이트 *소드 1장을 손에 넣습니다. NL 유언 이 카드가 소멸되면, *하늘의 *기사 *리샤 와 *황혼의 *검 *나노 를 손에 넣습니다. NL 소멸, 휘발성. "
   },
-  "shadowverse:TwilightBlade": {
-    "NAME": "暮光之刃",
-    "DESCRIPTION": "消耗 。 保留 。 NL 对所有敌人造成当前层数X* !M! 点伤害。",
+"shadowverse:TwilightBlade": {
+    "NAME": "트와일라이트 소드",
+    "DESCRIPTION": "보존 。 NL 적 전체에게  !M! × 현재 층 수 만큼 피해를 줍니다. NL 소멸." ,
     "EXTENDED_DESCRIPTION": [
-      " NL (造成 !D! 点伤害)"
+      " NL (피해 !D! )"
     ]
+  },
+  "shadowverse:DimensionCrack": {
+    "NAME": "차원의 틈새",
+    "DESCRIPTION": "결단 ： NL *분석의 *아티팩트, *고대의 *아티팩트, *척결의 *아티팩트, *공습의 *아티팩트 중 둘을 골라 각각 2장씩 뽑을 카드더미에 섞어넣습니다. NL 강화 3 : 뽑을 카드더미 대신 손에 넣습니다.  NL 소멸. ",
+    "UPGRADE_DESCRIPTION": "결단 ： NL *분석의 *아티팩트, *고대의 *아티팩트, *척결의 *아티팩트, *공습의 *아티팩트 중 둘을 골라 각각 2장씩 뽑을 카드더미에 섞어넣습니다. NL 강화 3 : 뽑을 카드더미 대신 손에 넣습니다.  NL 앞으로 !stslib:ex! 회 사용 후 소멸합니다."
+  },
+  "shadowverse:MagicalBishop": {
+    "NAME": "매지컬 비숍",
+    "DESCRIPTION": "체스. NL 체스 카드를 사용할 때 마다 모든 적에게 피해를 3 줍니다. NL *매지컬 *폰  !M! 장을 손에 넣습니다."
+  },
+  "shadowverse:Garuda4_Cry": {
+    "NAME": "결정화 : 날개의 광휘 가루라",
+    "DESCRIPTION": "카운트다운 1:카드를 1장 뽑는다."
+  },
+  "shadowverse:Garuda4": {
+    "NAME": "날개의 광휘 가루리",
+    "DESCRIPTION": "결정화 0 : 카운트다운 1:카드를 1장 뽑는다. NL  NL --------------------- NL  NL 피해를 !D! 준다. NL 손의 마법진 1장을 골라, [이번 턴동안 비용과 카운트다운이 0이 되고, 사용하면 원래 코스트 ×10 만큼의 피해를 무작위 적에게 준디]를 부여한다."
+  },
+  "shadowverse:ThicketOfGnarledHands": {
+    "NAME": "뿌리깊은 손의 변종",
+    "DESCRIPTION": "가속화 0 : 버린 카드더미에서 공격이나 파워 카드 1장을 골라 손에 넣고, 무작위 적에게 피해를 !D! 준다. NL  NL --------------------- NL  NL 모든 적에게 피해를 !M! X 주고, 방어도를  !M! Y 얻는다. NL X와Y는 (이 카드를 제외하고)이번 전투중 플레이한 내 카드의 장 수.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (이번 전투중 사용한 카드 장 수",
+      " 장.)"
+    ]
+  },
+  "shadowverse:FighterFortitude": {
+    "NAME": "불굴의 투지",
+    "DESCRIPTION": "체력을 !M! 잃고, 민첩을 1 얻는다."
+  },
+  "shadowverse:SepticShrink": {
+    "NAME": "화장실 유령",
+    "DESCRIPTION": "학원 NL 피해를 !D! 준다.  NL 장송 1:  [E] 를 얻는다. NL 이번 전투중 장송을 5번 이상 했다면, 추가로 모든 적에게 피해를 !D! 준다.",
+    "EXTENDED_DESCRIPTION": [
+      " NL ( 장송한 횟수",
+      " 。)"
+    ]
+  },
+  "shadowverse:Gawain": {
+    "NAME": "약속된 영광 가웨인",
+    "DESCRIPTION": "피해를 !D! 준다. NL 연계 5：카드를 1장 뽑는다. NL 연계 10：이 카드를 뽑으면, 강화한다. NL 연계15：피해를 2배로 준다. NL 연계 20：이 다음 받는 피해를 0으로 한다.",
+    "EXTENDED_DESCRIPTION": [
+      " NL （현재 연계：",
+      ")"
+    ]
+  },
+  "shadowverse:Weiss": {
+    "NAME": "선별의 교사 바이스",
+    "DESCRIPTION": "학원 NL 이번 턴, 적에게서 디버프를 받지 않는다.  NL 이번 턴, 적은 버프를 얻지 못한다. "
   }
 }

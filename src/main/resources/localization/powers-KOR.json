@@ -1825,10 +1825,23 @@
     ]
   },
   "shadowverse:SupportCannonPower": {
-    "NAME": "炮击支援",
+    "NAME": "포격지원",
     "DESCRIPTIONS": [
-      "回合结束时，弃掉所有攻击牌，每弃一张便随机对一名敌人造成",
-      "点伤害。"
+      "턴 종료시, 공격 카드를 모두 버리고 버린 카드 한장마다 무작위 적에게 피해를 ",
+      "줍니다."
+    ]
+  },
+  "shadowverse:MagicalBishopPower": {
+    "NAME": "매지컬 비숍",
+    "DESCRIPTIONS": [
+      "체스 카드를 사용할 때 마다 모든 적에게 피해를 #b",
+      "줍니다."
+    ]
+  },
+  "shadowverse:WeissPower": {
+    "NAME": "선별의 교사 바이스",
+    "DESCRIPTIONS": [
+      "이번 턴, 적에게 디버프를 받지 않습니다. 이번 턴, 적은 버프를 얻지 못합니다."
     ]
   }
 }

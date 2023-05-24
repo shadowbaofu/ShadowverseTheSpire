@@ -5311,15 +5311,15 @@
   },
    "shadowverse:FighterFortitude": {
     "NAME": "Fighter's Fortitude",
-    "DESCRIPTION": "Lose !M! HP、Gain 1 Dexterity。"
+    "DESCRIPTION": "Lose !M! HP, Gain 1 Dexterity。"
   },
   "shadowverse:Garuda4_Cry": {
     "NAME": "Garuda, Winged Radiance (Crystallized)",
-    "DESCRIPTION": "Countdown 1: Draw 1 card. "
+    "DESCRIPTION": "Countdown 1 : Draw 1 card. "
   },
   "shadowverse:Garuda4": {
     "NAME": "Garuda, Winged Radiance",
-    "DESCRIPTION": "Crystallize 0 : Countdown 1: Draw 1 card. NL  NL --------------------- NL  NL Deal !D! Damage。 NL Select 1 Amulet in your hand, give it the following effect: It's cost and Countdown are 0 this turn and when played, deal damage equal to 10 times it's original cost to a random enemy. "
+    "DESCRIPTION": "Crystallize 0 : Countdown 1 : Draw 1 card. NL  NL --------------------- NL  NL Deal !D! Damage. NL Select 1 Amulet in your hand, give it the following effect: It's cost and Countdown are 0 this turn and when played, deal damage equal to 10 times it's original cost to a random enemy. "
   },
   "shadowverse:MagicalBishop": {
     "NAME": "Magical Bishop",
@@ -5327,7 +5327,7 @@
   },
   "shadowverse:SepticShrink": {
     "NAME": "Septic Shrink",
-    "DESCRIPTION": "Academic NL Deal !D! Damage。 NL Burial Rite 1, Gain [E]. NL Deal !D! Damage to all enemies if you've performed Burial Rite 5 or more times this combat. ",
+    "DESCRIPTION": "Academic NL Deal !D! Damage。 NL Burial Rite 1 , Gain [E] . NL Deal !D! Damage to all enemies if you've performed Burial Rite 5 or more times this combat. ",
     "EXTENDED_DESCRIPTION": [
       " NL ( Number of Burial Rites:",
       ". )" 
@@ -5347,7 +5347,7 @@
   },
    "shadowverse:Gawain": {
     "NAME": "Gawain, Oath to Glory",
-    "DESCRIPTION": "Deal !D! Damage。 NL Rally 5：Draw 1 card. NL Rally 10：If this card is drawn, upgrade it. NL Rally 15：Double the damage. NL Rally 20：Gain 1 Buffer. ",
+    "DESCRIPTION": "Deal !D! Damage. NL Rally 5 ：Draw 1 card. NL Rally 10 ：If this card is drawn, upgrade it. NL Rally 15 ：Double the damage. NL Rally 20 ：Gain 1 Buffer. ",
     "EXTENDED_DESCRIPTION": [
       " NL （Rally Count：",
       ")"

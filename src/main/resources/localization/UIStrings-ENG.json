@@ -138,5 +138,10 @@
     "TEXT": [
       "The weak don't deserve to play Shadowverse."
     ]
+  },
+   "shadowverse:GarudaMod": {
+    "TEXT": [
+      " NL When you play this, deal it's original cost x 10 damage to a random enemy."
+    ]
   }
 }

@@ -46,7 +46,7 @@
     "NAME": "Missed Lethal",
     "FLAVOR": "... Anyway, let's clear the board first.",
     "DESCRIPTIONS": [
-      "Gain #b1 [E] at the start of your turn. Once per combat, whenever a non-Minion enemy's HP is lower than 1/5th of its max by the start of turn, that enemy gains #yIntangible."
+      "Gain #b1 [E] at the start of your turn. Once per combat, if an non-Minion enemy's HP is at or below 20% at the end of your turn, that enemy gains #yIntangible."
     ]
   },
   "shadowverse:Offensive": {

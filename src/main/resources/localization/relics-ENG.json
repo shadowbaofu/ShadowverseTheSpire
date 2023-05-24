@@ -46,7 +46,7 @@
     "NAME": "Missed Lethal",
     "FLAVOR": "... Anyway, let's clear the board first.",
     "DESCRIPTIONS": [
-      "Gain #b1 [E] at the start of your turn. Once a combat, whenever a non-Minion enemy's HP is lower than 1/5th of its max by the start of turn, apply #yIntangible."
+      "Gain #b1 [E] at the start of your turn. Once per combat, if an non-Minion enemy's HP is at or below 20% at the end of your turn, that enemy gains #yIntangible."
     ]
   },
   "shadowverse:Offensive": {
@@ -103,7 +103,7 @@
     "NAME": "Bow of Unkilling",
     "FLAVOR": "Fear not ruin, one must merely endure eternity.",
     "DESCRIPTIONS": [
-      "At the start of your turn, randomly apply 1 Vulnerable, Weak,  #yChoke , -1 #yStrength this turn, #yTalk #yto #ythe #yHand, or Poison to all enemies. Each of these debuffs can be applied only once."
+      "At the start of your turn, randomly apply 1 Vulnerable, Weak,  #yChoke , -1 #yStrength this turn, #yTalk #yto #ythe #yHand, or Poison to all enemies. Each of these debuffs apply only once."
     ]
   },
   "shadowverse:ArisaBOSS": {
@@ -159,7 +159,7 @@
     "NAME": "Geass: Survive",
     "FLAVOR": "Survive!",
     "DESCRIPTIONS": [
-      "One time per combat, when you would die, heal 1 HP, remove all of your debuffs, gain #b5 #yStrength and #yDexterity, and gain #b25 #yBlock."
+      "Once per combat, whenever you would die, heal 1 HP, remove all of your debuffs, gain #b5 #yStrength and #yDexterity, and gain #b25 #yBlock."
     ]
   },
   "shadowverse:Offensive3": {
@@ -348,7 +348,7 @@
     "NAME": "Avaritia, Blade of Usurption",
     "FLAVOR": "Go ahead, hunger. Once the craving overtakes you, claim what is rightfully yours. That is the true way of the world, after all.",
     "DESCRIPTIONS": [
-      "At the start of your turn, add 1 random #yLoot to hand."
+      "At the start of your turn, Scry 4."
     ]
   },
   "shadowverse:ValhoreanDealer": {
@@ -384,7 +384,7 @@
     "FLAVOR": "New Limited Time Format: Cross Craft! Build decks with cards from 2 different classes!",
     "DESCRIPTIONS": [
       "Enemies will drop an additional reward of a card belonging to a Shadowverse class other than your own.",
-      "Enemies drop an additional card reward of ",
+      "Enemies drop an additional card reward from ",
       " .",
       "#yRunecraft",
       "#yForestcraft",
@@ -406,7 +406,7 @@
     "NAME": "The Saviors, Spears of Repose",
     "FLAVOR": "Confront the mind in the depths of repose.",
     "DESCRIPTIONS": [
-      "If you played no Attack cards during your turn, start your next turn with #b4 Block."
+      "If you do not play any Attack cards during your turn, start your next turn with #b4 Block."
     ]
   },
   "shadowverse:GrandShield": {
@@ -534,7 +534,28 @@
     "NAME": "Enlightenment",
     "FLAVOR": "Therefore stand by your own will—and I shall see the world put to trial.",
     "DESCRIPTIONS": [
-      "At the start of combat, gain 1 Strength and Dexterity. If you have Mjerrabaine in deck, or have no duplicate in deck, gain 3 instead and next damage you take becomes 0. "
+      "At the start of combat, gain 1 Strength and Dexterity. If you have any copies of Mjerrabaine in your deck, or have no duplicate cards in your deck, gain 3 Strength, 3 Dexterity and 1 Buffer. "
+    ]
+  },
+  "shadowverse:Gliesaray": {
+    "NAME": "Gliesaray",
+    "FLAVOR": "When boys finally learn the bitterness inherent in yearning, that's when they ripen into men.",
+    "DESCRIPTIONS": [
+      "At the start of turn #b5, draw #b5 extra cards and restore #b5 HP."
+    ]
+  },
+   "shadowverse:Juratio": {
+    "NAME": "Juratio, Blessed Signet",
+    "FLAVOR": "Forge the oath, Juratio!",
+    "DESCRIPTIONS": [
+      "At the start of combat, apply #yWeak and #yVulnerable to all enemies #b1 and you gain #yRegen #b2."
+    ]
+  },
+   "shadowverse:Lagedor": {
+    "NAME": "L'Age d'Or, Enchanted Wheel",
+    "FLAVOR": "Round the azure, L'Age d'Or!",
+    "DESCRIPTIONS": [
+      "At the start of your first two turns, randomly add #yLoot card to your hand. At the start of your 3rd turn, gain #b14 Block."
     ]
   }
 }

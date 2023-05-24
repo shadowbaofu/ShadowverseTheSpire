@@ -1803,13 +1803,13 @@
   "shadowverse:MementoPower": {
     "NAME": "Memento, the Grim Teacher",
     "DESCRIPTIONS": [
-      "Whenever you perform Burial Rite, activate its other ability once more."
+      "All Burial Rite effects you play are played twice."
     ]
   },
   "shadowverse:PureflameLadyPower": {
     "NAME": "Pureflame Lady",
     "DESCRIPTIONS": [
-      "本回合内，获得 #y力量 或 #y敏捷 时，抽 #b1 张牌(上限为10次)。"
+      "This turn, when you gain Strength or Dexterity, deal 2 damage to all enemies (max 10 times)."
     ]
   },
   "shadowverse:ElluviaPower": {
@@ -1825,10 +1825,23 @@
     ]
   },
   "shadowverse:SupportCannonPower": {
-    "NAME": "炮击支援",
+    "NAME": "Support Cannon",
     "DESCRIPTIONS": [
-      "回合结束时，弃掉所有攻击牌，每弃一张便随机对一名敌人造成",
-      "点伤害。"
+      "At the end of your turn, discard all Attack cards in your hand and for each card discarded deal",
+      " Damage to a random enemy"
+    ]
+  },
+   "shadowverse:MagicalBishopPower": {
+    "NAME": "Magical Bishop",
+    "DESCRIPTIONS": [
+      "Whenever you play a Chess card, deal #b",
+      " Damage to all enemies."
+    ]
+  },
+  "shadowverse:WeissPower": {
+    "NAME": "Weiss, Discerning Professor",
+    "DESCRIPTIONS": [
+      "Immune to all Debuffs this turn. Enemies will not gain Buffs this turn."
     ]
   }
 }

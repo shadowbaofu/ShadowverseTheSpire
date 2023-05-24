@@ -2035,7 +2035,7 @@
   },
   "shadowverse:Ayre": {
     "NAME": "Ayer, Ashen Brawler",
-    "DESCRIPTION": "Deal !D! damage. NL Draw !M! cards or until your hand is full."
+    "DESCRIPTION": "Deal !D! damage. NL Draw until you have !M! cards."
   },
   "shadowverse:Lucius": {
     "NAME": "Lucius, Vampire Slayer",
@@ -3256,7 +3256,7 @@
   },
   "shadowverse:Garven": {
     "NAME": "Garven, Iron Dreadnought",
-    "DESCRIPTION": "Deal !D! damage !M! times. NL Repeat 1 time for each card with a different Trait played this combat.",
+    "DESCRIPTION": "Deal !D! damage !M! times. NL The amount of times equals each card with a different Trait played this combat.",
     "EXTENDED_DESCRIPTION": [
       "(Deal damage ",
       " times)"
@@ -4066,7 +4066,7 @@
   },
   "shadowverse:BirthOfRavenous": {
     "NAME": "Birth of the Ravenous",
-    "DESCRIPTION": "Gain the following effect: If you have 3 or less cards in your hand, draw 1 additional card next turn. NL Exhaust."
+    "DESCRIPTION": "Gain the following effect: If you have played 3 or less cards this turn, draw 1 additional card next turn. NL Exhaust."
   },
   "shadowverse:AdherentOfDesire": {
     "NAME": "Adherent of Desire",
@@ -5295,7 +5295,7 @@
   },
   "shadowverse:LeciaNano": {
     "NAME": "Lecia & Nano",
-    "DESCRIPTION": "Gain !B! Blocks and !M! Artifact . NL Put 1 *Twilight *Blade into your hand. NL Last_Words :When exhausted, put 1 *Lecia, *Sky *Saber 、 *Nano, *the *Dawnblade into your hand. NL Exhaust . NL Ethereal ."
+    "DESCRIPTION": "Gain !B! Blocks and !M! Artifact . NL Put 1 *Twilight *Blade into your hand. NL Last_Words :When exhausted, put 1 *Lecia, *Sky *Saber and *Nano, *the *Dawnblade into your hand. NL Exhaust . NL Ethereal ."
   },
   "shadowverse:TwilightBlade": {
     "NAME": "Twilight Blade",
@@ -5303,5 +5303,58 @@
     "EXTENDED_DESCRIPTION": [
       " NL (Deal !D! damage)"
     ]
+  },
+  "shadowverse:DimensionCrack": {
+    "NAME": "Dimension Crack",
+    "DESCRIPTION": "Choose 2 of the following and add 2 copies of them to your draw pile ： NL *Analyzing *Artifact, *Ancient *Artifact, *Keenedge *Artifact, *Airstrike *Artifact. NL Enhance 3: Add them to your hand instead。 NL Exhaust . ",
+    "UPGRADE_DESCRIPTION": "Choose 2 of the following and add 2 copies of them to your draw pile  ： NL *Analyzing *Artifact, *Ancient *Artifact, *Keenedge *Artifact, *Airstrike *Artifact. NL Exhausts when used !stslib:ex! times. "
+  },
+   "shadowverse:FighterFortitude": {
+    "NAME": "Fighter's Fortitude",
+    "DESCRIPTION": "Lose !M! HP、Gain 1 Dexterity。"
+  },
+  "shadowverse:Garuda4_Cry": {
+    "NAME": "Garuda, Winged Radiance (Crystallized)",
+    "DESCRIPTION": "Countdown 1: Draw 1 card. "
+  },
+  "shadowverse:Garuda4": {
+    "NAME": "Garuda, Winged Radiance",
+    "DESCRIPTION": "Crystallize 0 : Countdown 1: Draw 1 card. NL  NL --------------------- NL  NL Deal !D! Damage。 NL Select 1 Amulet in your hand, give it the following effect: It's cost and Countdown are 0 this turn and when played, deal damage equal to 10 times it's original cost to a random enemy. "
+  },
+  "shadowverse:MagicalBishop": {
+    "NAME": "Magical Bishop",
+    "DESCRIPTION": "Chess. NL Whenever you play a Chess card, deal 3 Damage to all enemies。 NL Add !M! *Magical *Pawns to your hand. "
+  },
+  "shadowverse:SepticShrink": {
+    "NAME": "Septic Shrink",
+    "DESCRIPTION": "Academic NL Deal !D! Damage。 NL Burial Rite 1, Gain [E]. NL Deal !D! Damage to all enemies if you've performed Burial Rite 5 or more times this combat. ",
+    "EXTENDED_DESCRIPTION": [
+      " NL ( Number of Burial Rites:",
+      ". )" 
+      ]
+  },
+  "shadowverse:BellWitch": {
+    "NAME": "Bell Witch",
+    "DESCRIPTION": "Academic · Mysteria NL Gain !B! Block. NL Add 1 *Mysterian *Missile and *Mysterian *Circle to your hand. "
+  },
+  "shadowverse:ThicketOfGnarledHands": {
+    "NAME": "Thicket of Gnarled Hands",
+    "DESCRIPTION": "Accelerate 0 : Add an Attack or Power card from your discard pile to your hand, Deal !D! Damage to a random enemy. NL  NL --------------------- NL  NL Deal !M! Damage to all enemies X times, gain !M! Block Y times. NL X and Y are equal to the total number of other cards you played this combat (except this card) divided randomly. ",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Number of cards played this combat",
+      " . )"
+    ]
+  },
+   "shadowverse:Gawain": {
+    "NAME": "Gawain, Oath to Glory",
+    "DESCRIPTION": "Deal !D! Damage。 NL Rally 5：Draw 1 card. NL Rally 10：If this card is drawn, upgrade it. NL Rally 15：Double the damage. NL Rally 20：Gain 1 Buffer. ",
+    "EXTENDED_DESCRIPTION": [
+      " NL （Rally Count：",
+      ")"
+    ]
+  },
+   "shadowverse:Weiss": {
+    "NAME": "Weiss, Discerning Professor",
+    "DESCRIPTION": "Academic NL You are immune to Debuffs this turn. NL Enemies cannot gain Buffs this turn. "
   }
 }

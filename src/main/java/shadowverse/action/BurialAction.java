@@ -147,7 +147,7 @@ public class BurialAction extends AbstractGameAction {
             for (AbstractPower pow : this.p.powers){
                 if (pow instanceof MyroelPower){
                     for (int i=0;i<this.amount;i++){
-                        if (pow.amount >= this.amount){
+                        if (pow.amount > 0){
                             pow.amount --;
                             pow.updateDescription();
                             addToBot(new VFXAction(p, new CleaveEffect(), 0.1F));

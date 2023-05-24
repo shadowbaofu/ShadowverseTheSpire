@@ -102,7 +102,10 @@ public class AnneAndGrea extends AbstractEnhanceCard {
         }
         addToBot(new SFXAction("AnneAndGrea"));
         addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(this.damage, true), DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.FIRE));
-        addToBot(new MakeTempCardInHandAction(new MajesticSorcery()));
+        AbstractCard ms = new MajesticSorcery();
+        if (upgraded)
+            ms.upgrade();
+        addToBot(new MakeTempCardInHandAction(ms));
     }
 
 

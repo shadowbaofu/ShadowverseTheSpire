@@ -546,14 +546,14 @@
   },
    "shadowverse:Juratio": {
     "NAME": "Juratio, Blessed Signet",
-    "FLAVOR": "Forge the oath, Juratio.",
+    "FLAVOR": "Forge the oath, Juratio!",
     "DESCRIPTIONS": [
       "At the start of combat, apply #yWeak and #yVulnerable to all enemies #b1 and you gain #yRegen #b2."
     ]
   },
    "shadowverse:Lagedor": {
     "NAME": "L'Age d'Or, Enchanted Wheel",
-    "FLAVOR": "Round the azure, L'Age d'Or.",
+    "FLAVOR": "Round the azure, L'Age d'Or!",
     "DESCRIPTIONS": [
       "At the start of your first two turns, randomly add #yLoot card to your hand. At the start of your 3rd turn, gain #b14 Block."
     ]

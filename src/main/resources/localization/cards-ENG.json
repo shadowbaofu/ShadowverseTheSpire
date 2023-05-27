@@ -5347,7 +5347,7 @@
   },
    "shadowverse:Gawain": {
     "NAME": "Gawain, Oath to Glory",
-    "DESCRIPTION": "Deal !D! Damage. NL Rally 5 ：Draw 1 card. NL Rally 10 ：If this card is drawn, upgrade it. NL Rally 15 ：Double the damage. NL Rally 20 ：Gain 1 Buffer. ",
+    "DESCRIPTION": "Deal !D! Damage. NL Rally 5： Draw 1 card. NL Rally 10： If this card is drawn, upgrade it. NL Rally 15： Double the damage. NL Rally 20： Gain 1 Buffer. ",
     "EXTENDED_DESCRIPTION": [
       " NL （Rally Count：",
       ")"

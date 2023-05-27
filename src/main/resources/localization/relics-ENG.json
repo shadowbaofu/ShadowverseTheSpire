@@ -555,7 +555,7 @@
     "NAME": "L'Age d'Or, Enchanted Wheel",
     "FLAVOR": "Round the azure, L'Age d'Or!",
     "DESCRIPTIONS": [
-      "At the start of your first two turns, randomly add #yLoot card to your hand. At the start of your 3rd turn, gain #b14 Block."
+      "At the start of your first three turns, randomly add #yLoot card to your hand. At the start of your 4th turn, gain #b14 Block."
     ]
   }
 }

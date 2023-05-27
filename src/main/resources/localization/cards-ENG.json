@@ -1590,7 +1590,7 @@
   },
   "shadowverse:SoulTaker": {
     "NAME": "Lara, Soul Taker",
-    "DESCRIPTION": "Gain !B! Block. NL Add a copy of a random Attack card (except *Lara, *Soul *Taker) from your discard pile and add it to your hand. Change its cost to 0 and give it Ethereal and Exhaust."
+    "DESCRIPTION": "Gain !B! Block. NL Add a copy of a random Attack card (except *Lara, *Soul *Taker) from your discard pile to your hand. Change its cost to 0 and give it Ethereal and Exhaust."
   },
   "shadowverse:OneTailFox": {
     "NAME": "One-Tailed Fox",

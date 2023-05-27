@@ -3646,7 +3646,7 @@
   },
   "shadowverse:MarkUnleashed": {
     "NAME": "Mark Unleashed",
-    "DESCRIPTION": "Heal 1 HP ( Limit ). NL Deal !D! damage !M! times the amount of HP healed this combat."
+    "DESCRIPTION": "Heal 1 HP ( Limit ). NL Deal !D! damage. This damage is equal to !M! times the amount of HP healed this combat."
   },
   "shadowverse:MarkOfBalance": {
     "NAME": "Mark of Balance",

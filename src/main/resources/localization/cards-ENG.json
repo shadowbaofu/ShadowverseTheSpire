@@ -5017,8 +5017,8 @@
   },
   "shadowverse:SacredSheep": {
     "NAME": "Sacred Sheep",
-    "DESCRIPTION": "The next 3 damage you take becomes 0. NL Ethereal.",
-    "UPGRADE_DESCRIPTION":"The next 3 damage you take becomes 0."
+    "DESCRIPTION": "Gain 3 #yBuffer. NL Ethereal.",
+    "UPGRADE_DESCRIPTION":"Gain 3 #yBuffer."
   },
   "shadowverse:Judith": {
     "NAME": "Judith, Cosmic Observer",

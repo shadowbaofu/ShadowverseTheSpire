@@ -7,6 +7,7 @@
  import com.megacrit.cardcrawl.cards.AbstractCard;
  import com.megacrit.cardcrawl.characters.AbstractPlayer;
  import com.megacrit.cardcrawl.core.CardCrawlGame;
+ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
  import com.megacrit.cardcrawl.localization.CardStrings;
  import com.megacrit.cardcrawl.monsters.AbstractMonster;
  import shadowverse.characters.AbstractShadowversePlayer;
@@ -44,14 +45,16 @@
        flash();
        
        this.magicNumber = ++this.baseMagicNumber;
-       addToBot((AbstractGameAction)new SFXAction("spell_boost"));
+       addToBot(new SFXAction("spell_boost"));
      } 
    }
  
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
      for (int i = 0; i < this.magicNumber; i++) {
-       addToBot((AbstractGameAction)new AttackDamageRandomEnemyAction((AbstractCard)this, AbstractGameAction.AttackEffect.FIRE));
+       addToBot(new AttackDamageRandomEnemyAction(this, AbstractGameAction.AttackEffect.FIRE));
+         if ((AbstractDungeon.getCurrRoom()).monsters.areMonstersBasicallyDead())
+             AbstractDungeon.actionManager.clearPostCombatActions();
      }
    }
  
@@ -68,7 +71,7 @@
  
    
    public AbstractCard makeCopy() {
-     return (AbstractCard)new FireChain();
+     return new FireChain();
    }
  }
 

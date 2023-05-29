@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.powers.WeakPower;
 import shadowverse.characters.AbstractShadowversePlayer;
@@ -105,8 +106,22 @@ public class Radiel extends CustomCard {
         this.rawDescription = cardStrings.DESCRIPTION;
         this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + rally() + cardStrings.EXTENDED_DESCRIPTION[1];
         this.initializeDescription();
+        AbstractPower strength = AbstractDungeon.player.getPower("Strength");
+        if (strength != null)
+            strength.amount *= this.magicNumber;
+        super.applyPowers();
+        if (strength != null)
+            strength.amount /= this.magicNumber;
     }
 
+    public void calculateCardDamage(AbstractMonster mo) {
+        AbstractPower strength = AbstractDungeon.player.getPower("Strength");
+        if (strength != null)
+            strength.amount *= this.magicNumber;
+        super.calculateCardDamage(mo);
+        if (strength != null)
+            strength.amount /= this.magicNumber;
+    }
 
     @Override
     public AbstractCard makeCopy() {

@@ -92,7 +92,7 @@ public class ThicketOfGnarledHands
             addToBot(new DamageRandomEnemyAction(new DamageInfo(abstractPlayer, this.damage), AbstractGameAction.AttackEffect.POISON));
         } else {
             int rand = AbstractDungeon.cardRandomRng.random(AbstractDungeon.actionManager.cardsPlayedThisCombat.size());
-            int rand2 = this.magicNumber - rand;
+            int rand2 = AbstractDungeon.actionManager.cardsPlayedThisCombat.size() - rand;
             addToBot(new VFXAction(new ShockWaveEffect(abstractPlayer.hb.cX, abstractPlayer.hb.cY, Color.GREEN, ShockWaveEffect.ShockWaveType.ADDITIVE)));
             addToBot(new DamageAllEnemiesAction(abstractPlayer, DamageInfo.createDamageMatrix(rand*this.magicNumber, true), this.damageTypeForTurn, AbstractGameAction.AttackEffect.FIRE, true));
             addToBot(new GainBlockAction(abstractPlayer,rand2*this.magicNumber));

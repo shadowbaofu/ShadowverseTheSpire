@@ -25,7 +25,7 @@ public class SepticShrink extends CustomCard {
     public static final String IMG_PATH = "img/cards/SepticShrink.png";
 
     public SepticShrink() {
-        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Necromancer.Enums.COLOR_PURPLE, CardRarity.COMMON, CardTarget.ENEMY);
+        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Necromancer.Enums.COLOR_PURPLE, CardRarity.UNCOMMON, CardTarget.ENEMY);
         this.baseDamage = 9;
         this.tags.add(AbstractShadowversePlayer.Enums.ACADEMIC);
     }

@@ -43,9 +43,9 @@ public class RejuvenatingResurrection extends CustomCard {
 
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction) new SFXAction("RejuvenatingResurrection"));
+        addToBot(new SFXAction("RejuvenatingResurrection"));
         if (this.upgraded) {
-            addToBot((AbstractGameAction) new MoveCardsAction(abstractPlayer.hand, abstractPlayer.discardPile, card -> card.type == CardType.ATTACK || card.type==CardType.POWER, 1, abstractCards -> {
+            addToBot(new MoveCardsAction(abstractPlayer.hand, abstractPlayer.discardPile, card -> card.type == CardType.ATTACK || card.type==CardType.POWER, 1, abstractCards -> {
                 for (AbstractCard c :
                         abstractCards) {
                     if (c.canUpgrade())
@@ -53,7 +53,7 @@ public class RejuvenatingResurrection extends CustomCard {
                 }
             }));
         } else {
-            addToBot((AbstractGameAction) new MoveCardsAction(abstractPlayer.hand, abstractPlayer.discardPile, card -> card.type == CardType.ATTACK, 1, abstractCards -> {
+            addToBot(new MoveCardsAction(abstractPlayer.hand, abstractPlayer.discardPile, card -> card.type == CardType.ATTACK, 1, abstractCards -> {
                 for (AbstractCard c :
                         abstractCards) {
                     if (c.canUpgrade())

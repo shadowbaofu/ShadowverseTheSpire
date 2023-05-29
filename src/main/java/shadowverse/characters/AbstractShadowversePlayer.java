@@ -131,7 +131,10 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
         super.useCard(c, monster, energyOnUse);
         costUsedAmt += c.costForTurn;
         if (!this.hasPower(Cemetery.POWER_ID))
-            this.powers.add((AbstractPower) new Cemetery(this, 0));
+            this.powers.add(new Cemetery(this, 0));
+        if (AbstractDungeon.actionManager.cardsPlayedThisTurn.size() % 4 == 0){
+            magachiyoCount++;
+        }
     }
 
     public void damage(DamageInfo info) {
@@ -195,9 +198,6 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
         super.applyEndOfTurnTriggers();
         AbstractDungeon.actionManager.addToBottom(new RemoveMinionAction());
         wrathLastTurn = 0;
-        if (AbstractDungeon.actionManager.cardsPlayedThisTurn.size() > 3){
-            magachiyoCount++;
-        }
     }
 
 

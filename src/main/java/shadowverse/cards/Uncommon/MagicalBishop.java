@@ -29,7 +29,7 @@ public class MagicalBishop
     public static final String IMG_PATH = "img/cards/MagicalBishop.png";
 
     public MagicalBishop() {
-        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.POWER, Witchcraft.Enums.COLOR_BLUE, CardRarity.RARE, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.POWER, Witchcraft.Enums.COLOR_BLUE, CardRarity.UNCOMMON, CardTarget.SELF);
         this.isEthereal = true;
         this.cardsToPreview = new MagicalPawn();
         this.baseMagicNumber = 1;

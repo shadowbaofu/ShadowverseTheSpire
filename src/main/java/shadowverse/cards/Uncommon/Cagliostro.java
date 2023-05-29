@@ -31,14 +31,14 @@ public class Cagliostro
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Witchcraft.Enums.COLOR_BLUE, CardRarity.UNCOMMON, CardTarget.SELF,2);
         this.tags.add(AbstractShadowversePlayer.Enums.EARTH_RITE);
         this.cardsToPreview = new ArsMagna();
-        this.baseBlock = 5;
+        this.baseBlock = 8;
     }
 
 
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBlock(3);
+            upgradeBlock(4);
         }
     }
 

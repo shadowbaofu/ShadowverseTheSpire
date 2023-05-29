@@ -44,10 +44,10 @@ import shadowverse.characters.Necromancer;
  
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new ClawEffect(abstractMonster.hb.cX, abstractMonster.hb.cY, Color.DARK_GRAY, Color.WHITE), 0.1F));
-     addToBot((AbstractGameAction)new NecromanceAction(20,
-             (AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE),
-             (AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage+this.magicNumber, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE)));
+     addToBot(new VFXAction(new ClawEffect(abstractMonster.hb.cX, abstractMonster.hb.cY, Color.DARK_GRAY, Color.WHITE), 0.1F));
+     addToBot(new NecromanceAction(20,
+             new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE),
+             new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage+this.magicNumber, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE)));
    }
  
    

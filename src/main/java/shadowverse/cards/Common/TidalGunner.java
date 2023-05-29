@@ -39,7 +39,7 @@ public class TidalGunner extends CustomCard {
 
     public TidalGunner() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ENEMY);
-        this.baseDamage = 6;
+        this.baseDamage = 8;
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(AbstractShadowversePlayer.Enums.CONDEMNED);

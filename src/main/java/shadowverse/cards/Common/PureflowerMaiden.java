@@ -29,7 +29,7 @@ import shadowverse.powers.PureflowerMaidenPower;
 
    public PureflowerMaiden() {
      super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.COMMON, CardTarget.SELF);
-     this.baseBlock = 6;
+     this.baseBlock = 9;
      this.tags.add(AbstractShadowversePlayer.Enums.ACADEMIC);
    }
  

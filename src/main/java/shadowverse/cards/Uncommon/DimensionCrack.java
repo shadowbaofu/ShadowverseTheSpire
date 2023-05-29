@@ -36,7 +36,7 @@ public class DimensionCrack
     }
 
     public DimensionCrack() {
-        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Nemesis.Enums.COLOR_SKY, CardRarity.COMMON, CardTarget.SELF,3);
+        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Nemesis.Enums.COLOR_SKY, CardRarity.UNCOMMON, CardTarget.SELF,3);
         ExhaustiveVariable.setBaseValue(this, 1);
     }
 
@@ -76,6 +76,11 @@ public class DimensionCrack
     public void enhanceUse(AbstractPlayer p, AbstractMonster m) {
         AbstractCard[] list = new AbstractCard[returnChoice().size()];
         returnChoice().toArray(list);
+        if (upgraded){
+            for (AbstractCard c : list){
+                c.upgrade();
+            }
+        }
         addToBot(new Choose2DifferentAction(true,2,list));
     }
 
@@ -83,6 +88,11 @@ public class DimensionCrack
     public void baseUse(AbstractPlayer p, AbstractMonster m) {
         AbstractCard[] list = new AbstractCard[returnChoice().size()];
         returnChoice().toArray(list);
+        if (upgraded){
+            for (AbstractCard c : list){
+                c.upgrade();
+            }
+        }
         addToBot(new ChoiceToDrawPileAction(true,list));
     }
 

@@ -5333,10 +5333,6 @@
       ". )" 
       ]
   },
-  "shadowverse:BellWitch": {
-    "NAME": "Bell Witch",
-    "DESCRIPTION": "Academic · Mysteria NL Gain !B! Block. NL Add 1 *Mysterian *Missile and *Mysterian *Circle to your hand. "
-  },
   "shadowverse:ThicketOfGnarledHands": {
     "NAME": "Thicket of Gnarled Hands",
     "DESCRIPTION": "Accelerate 0 : Add an Attack or Power card from your discard pile to your hand, Deal !D! Damage to a random enemy. NL  NL --------------------- NL  NL Deal !M! Damage to all enemies X times, gain !M! Block Y times. NL X and Y are equal to the total number of other cards you played this combat (except this card) divided randomly. ",

@@ -32,7 +32,7 @@ public class OliviaSylvia
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.RARE, CardTarget.ALL);
         this.baseBlock = 10;
         this.baseDamage = 0;
-        this.baseMagicNumber = 7;
+        this.baseMagicNumber = 5;
         this.magicNumber = this.baseMagicNumber;
     }
 

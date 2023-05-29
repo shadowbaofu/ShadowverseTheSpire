@@ -1209,8 +1209,8 @@
   },
   "shadowverse:Minthe": {
     "NAME": "灵魂守门人·命忒",
-    "DESCRIPTION": "获得20点 墓地 。 NL 回合开始时失去20点 墓地 。 NL 虚无 。",
-    "UPGRADE_DESCRIPTION": "获得20点 墓地 。 NL 回合开始时失去20点 墓地 。"
+    "DESCRIPTION": "获得20点 墓地 。 NL 本回合内每次发动 死灵术 时回复对应 墓地 。 NL 回合开始时失去20点 墓地 。 NL 虚无 。",
+    "UPGRADE_DESCRIPTION": "获得20点 墓地 。 NL 本回合内每次发动 死灵术 时回复对应 墓地 。 NL 回合开始时失去20点 墓地 。"
   },
   "shadowverse:Fafnir": {
     "NAME": "尸龙·法芙娜",
@@ -4748,10 +4748,10 @@
   },
   "shadowverse:Magachiyo": {
     "NAME": "剪定的罪人·祸千代",
-    "DESCRIPTION": "八狱 NL 造成 !D! 点 伤害 。 NL 使本回合中已使用的卡片张数+1。 NL 如果本场战斗已经使用的卡片数为4张以上的回合为3以上，则获得2点 力量 和 敏捷 ，并且手牌所有 八狱 攻击牌基础数值+ !M! 。",
+    "DESCRIPTION": "八狱 NL 造成 !D! 点 伤害 。 NL 使本回合中已使用的卡片张数+1。 NL 如果本场战斗已经使用的卡片数为4张以上的次数为3以上，则获得2点 力量 和 敏捷 ，并且手牌所有 八狱 攻击牌基础数值+ !M! 。",
     "EXTENDED_DESCRIPTION": [
       " NL (已达成 ",
-      " 个回合。)"
+      " 次。)"
     ]
   },
   "shadowverse:LeafshadeAssassin": {
@@ -4983,7 +4983,7 @@
   },
   "shadowverse:Radiel": {
     "NAME": "武皇执行者·雷帝尔",
-    "DESCRIPTION": "八狱 NL 造成 !D! 点伤害。 NL 协作 20：改为造成3次伤害。 NL 给予 !M! 层 易伤 和 虚弱。 NL 如果手牌、抽牌堆、弃牌堆、消耗堆中已 升级 的攻击牌或能力牌数量为7以上，改为给予全体敌人负面效果。",
+    "DESCRIPTION": "八狱 NL 造成 !D! 点伤害(受 !M! 倍力量影响)。 NL 协作 20：改为造成3次伤害。 NL 给予 !M! 层 易伤 和 虚弱。 NL 如果手牌、抽牌堆、弃牌堆、消耗堆中已 升级 的攻击牌或能力牌数量为7以上，改为给予全体敌人负面效果。",
     "EXTENDED_DESCRIPTION": [
       " NL （协作数：",
       ")"
@@ -5301,8 +5301,8 @@
   },
   "shadowverse:DimensionCrack": {
     "NAME": "次元崩坏",
-    "DESCRIPTION": "抉择 ： NL 从 *解析的创造物 、 *古老的创造物 、 *锋锐的创造物 、 *锋锐的创造物 中选择2种分别加入2张到抽牌堆中。 NL 爆能强化 3:改为加入手中。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "抉择 ： NL 从 *解析的创造物 、 *古老的创造物 、 *神秘的创造物 、 *绚烂的创造物 中选择2种分别加入2张到抽牌堆中。 NL 爆能强化 3:改为加入手中。 NL 消耗性 !stslib:ex! 。"
+    "DESCRIPTION": "抉择 ： NL 从 *解析的创造物 、 *古老的创造物 、 *锋锐的创造物 、 *迅袭的创造物 中选择2种分别加入2张到抽牌堆中。 NL 爆能强化 3:改为加入手中。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "抉择 ： NL 从 *解析的创造物+ 、 *古老的创造物+ 、 *锋锐的创造物+ 、 *迅袭的创造物+ 中选择2种分别加入2张到抽牌堆中。 NL 爆能强化 3:改为加入手中。 NL 消耗性 !stslib:ex! 。"
   },
   "shadowverse:MagicalBishop": {
     "NAME": "奇幻主教",

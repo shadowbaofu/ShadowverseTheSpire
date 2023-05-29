@@ -37,7 +37,7 @@ public class StormWrackedFirstMate extends CustomCard {
 
     public StormWrackedFirstMate() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.SELF);
-        this.baseBlock = 6;
+        this.baseBlock = 8;
         this.tags.add(AbstractShadowversePlayer.Enums.CONDEMNED);
     }
 

@@ -29,7 +29,7 @@ public class Gruinne extends CustomCard {
 
     public Gruinne() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Witchcraft.Enums.COLOR_BLUE, CardRarity.COMMON, CardTarget.SELF);
-        this.baseBlock = 4;
+        this.baseBlock = 5;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
         this.cardsToPreview = new VeridicRitual();

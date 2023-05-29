@@ -20,6 +20,7 @@ import shadowverse.cardmods.ImmoralDesireMod2;
 import shadowverse.cardmods.UnseenStrengthMod;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Necromancer;
+import shadowverse.characters.Nemesis;
 
 import java.util.ArrayList;
 
@@ -34,7 +35,7 @@ public class UnseenStrength
     public static final String[] TEXT = (CardCrawlGame.languagePack.getUIString("shadowverse:applyEffect")).TEXT;
 
     public UnseenStrength() {
-        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Necromancer.Enums.COLOR_PURPLE, CardRarity.SPECIAL, CardTarget.NONE);
+        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Nemesis.Enums.COLOR_SKY, CardRarity.SPECIAL, CardTarget.NONE);
         this.exhaust = true;
         this.selfRetain = true;
         this.tags.add(AbstractShadowversePlayer.Enums.ACADEMIC);

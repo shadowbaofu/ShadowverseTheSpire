@@ -35,8 +35,8 @@ public class VerdantLieutenant extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBlock(2);
-            upgradeDamage(2);
+            upgradeBlock(3);
+            upgradeDamage(3);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }

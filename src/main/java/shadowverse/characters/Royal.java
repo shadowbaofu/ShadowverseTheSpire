@@ -12,7 +12,6 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.beyond.SpireHeart;
 import com.megacrit.cardcrawl.events.city.Vampires;
 import com.megacrit.cardcrawl.helpers.CardHelper;
@@ -22,14 +21,15 @@ import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
-import shadowverse.Shadowverse;
+import shadowverse.cards.Royal.Basic.Defend_R;
+import shadowverse.cards.Royal.Basic.FloralFencer;
+import shadowverse.cards.Royal.Basic.OathlessKnight;
+import shadowverse.cards.Royal.Basic.Strike_R;
 import shadowverse.helper.BanCardHelper;
-import shadowverse.cards.Basic.*;
 import shadowverse.effect.ShadowverseEnergyOrb;
 import shadowverse.patch.CharacterSelectScreenPatches;
 
 import java.util.ArrayList;
-import java.util.Collection;
 
 
 public class Royal extends AbstractShadowversePlayer {

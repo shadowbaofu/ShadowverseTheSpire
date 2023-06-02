@@ -12,7 +12,6 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.beyond.SpireHeart;
 import com.megacrit.cardcrawl.events.city.Vampires;
 import com.megacrit.cardcrawl.helpers.CardHelper;
@@ -22,18 +21,15 @@ import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
-import shadowverse.Shadowverse;
-import shadowverse.cards.Basic.DarkGeneral;
-import shadowverse.cards.Basic.Defend_V;
-import shadowverse.cards.Basic.RazoryClaw;
-import shadowverse.cards.Basic.Strike_V;
-import shadowverse.cards.Rare.NightVampire;
+import shadowverse.cards.Vampire.Basic.DarkGeneral;
+import shadowverse.cards.Vampire.Basic.Defend_V;
+import shadowverse.cards.Vampire.Basic.RazoryClaw;
+import shadowverse.cards.Vampire.Basic.Strike_V;
 import shadowverse.effect.ShadowverseEnergyOrb;
 import shadowverse.helper.BanCardHelper;
 import shadowverse.patch.CharacterSelectScreenPatches;
 
 import java.util.ArrayList;
-import java.util.Collection;
 
 public class Vampire extends AbstractShadowversePlayer{
     public static class Enums

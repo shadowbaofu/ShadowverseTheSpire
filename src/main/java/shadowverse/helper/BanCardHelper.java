@@ -1,9 +1,16 @@
 package shadowverse.helper;
 
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import shadowverse.cards.Common.*;
-import shadowverse.cards.Rare.*;
-import shadowverse.cards.Uncommon.*;
+import shadowverse.cards.Royal.Ambush.*;
+import shadowverse.cards.Royal.Default.*;
+import shadowverse.cards.Royal.Evolve.*;
+import shadowverse.cards.Royal.Festive.*;
+import shadowverse.cards.Royal.Hero.*;
+import shadowverse.cards.Royal.Levin.*;
+import shadowverse.cards.Royal.Loot.*;
+import shadowverse.cards.Royal.Minion.*;
+import shadowverse.cards.Royal.NatMech.*;
+import shadowverse.cards.Royal.Rally.*;
 
 import java.util.ArrayList;
 

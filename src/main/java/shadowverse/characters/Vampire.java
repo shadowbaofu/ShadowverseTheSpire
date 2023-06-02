@@ -58,6 +58,8 @@ public class Vampire extends AbstractShadowversePlayer{
         super(name, Enums.Vampire, new ShadowverseEnergyOrb(null, null,null,BASE_LAYER), (AbstractAnimation)new SpriterAnimation(((CharacterSelectScreenPatches.characters[4]).skins[(CharacterSelectScreenPatches.characters[4]).reskinCount]).scmlURL));
         initializeClass(null, ((CharacterSelectScreenPatches.characters[4]).skins[(CharacterSelectScreenPatches.characters[4]).reskinCount]).SHOULDER1, ((CharacterSelectScreenPatches.characters[4]).skins[(CharacterSelectScreenPatches.characters[4]).reskinCount]).SHOULDER2, ((CharacterSelectScreenPatches.characters[4]).skins[(CharacterSelectScreenPatches.characters[4]).reskinCount]).CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
         bigAnimation.setVisible(false);
+        this.cardPool=BanCardHelper.vampireCardGroupPool;
+        this.banGroupNumber=5;
     }
 
     @Override

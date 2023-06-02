@@ -25,6 +25,7 @@ import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import shadowverse.cards.Basic.*;
 import shadowverse.cards.Curse.CurseOfPurgation;
 import shadowverse.effect.ShadowverseEnergyOrb;
+import shadowverse.helper.BanCardHelper;
 import shadowverse.patch.CharacterSelectScreenPatches;
 
 
@@ -54,6 +55,8 @@ public class Nemesis extends AbstractShadowversePlayer{
         initializeClass(null, ((CharacterSelectScreenPatches.characters[6]).skins[(CharacterSelectScreenPatches.characters[6]).reskinCount]).SHOULDER1, ((CharacterSelectScreenPatches.characters[6]).skins[(CharacterSelectScreenPatches.characters[6]).reskinCount]).SHOULDER2, ((CharacterSelectScreenPatches.characters[6]).skins[(CharacterSelectScreenPatches.characters[6]).reskinCount]).CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
         bigAnimation.setVisible(false);
         bigAnimation.skeleton.setSkin("skin_01");
+        this.cardPool= BanCardHelper.nemesisCardGroupPool;
+        this.banGroupNumber=5;
     }
 
     @Override

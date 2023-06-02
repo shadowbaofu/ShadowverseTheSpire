@@ -27,6 +27,7 @@ import shadowverse.cards.Basic.FairyWhisperer;
 import shadowverse.cards.Basic.Strike_E;
 import shadowverse.cards.Basic.SylvanJustice;
 import shadowverse.effect.ShadowverseEnergyOrb;
+import shadowverse.helper.BanCardHelper;
 import shadowverse.patch.CharacterSelectScreenPatches;
 
 import java.util.ArrayList;
@@ -53,6 +54,8 @@ public class Elf extends AbstractShadowversePlayer{
         super(name, Enums.Elf, new ShadowverseEnergyOrb(null, null,null,BASE_LAYER), (AbstractAnimation)new SpriterAnimation(((CharacterSelectScreenPatches.characters[1]).skins[(CharacterSelectScreenPatches.characters[1]).reskinCount]).scmlURL));
         initializeClass(null, ((CharacterSelectScreenPatches.characters[1]).skins[(CharacterSelectScreenPatches.characters[1]).reskinCount]).SHOULDER1, ((CharacterSelectScreenPatches.characters[1]).skins[(CharacterSelectScreenPatches.characters[1]).reskinCount]).SHOULDER2, ((CharacterSelectScreenPatches.characters[1]).skins[(CharacterSelectScreenPatches.characters[1]).reskinCount]).CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
         bigAnimation.setVisible(false);
+        this.cardPool= BanCardHelper.elfCardGroupPool;
+        this.banGroupNumber=5;
     }
 
     @Override

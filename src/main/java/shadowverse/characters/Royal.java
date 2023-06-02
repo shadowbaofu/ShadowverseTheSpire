@@ -58,6 +58,8 @@ public class Royal extends AbstractShadowversePlayer {
         super(name, Enums.Royal, new ShadowverseEnergyOrb(null, null, null, BASE_LAYER), (AbstractAnimation) new SpriterAnimation(((CharacterSelectScreenPatches.characters[3]).skins[(CharacterSelectScreenPatches.characters[3]).reskinCount]).scmlURL));
         initializeClass(null, ((CharacterSelectScreenPatches.characters[3]).skins[(CharacterSelectScreenPatches.characters[3]).reskinCount]).SHOULDER1, ((CharacterSelectScreenPatches.characters[3]).skins[(CharacterSelectScreenPatches.characters[3]).reskinCount]).SHOULDER2, ((CharacterSelectScreenPatches.characters[3]).skins[(CharacterSelectScreenPatches.characters[3]).reskinCount]).CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
         bigAnimation.setVisible(false);
+        this.cardPool = BanCardHelper.royalCardGroupPool;
+        this.banGroupNumber = 5;
     }
 
     @Override
@@ -172,30 +174,7 @@ public class Royal extends AbstractShadowversePlayer {
         ((CharacterSelectScreenPatches.characters[3]).skins[(CharacterSelectScreenPatches.characters[3]).reskinCount]).playHurtSound(lastDamageTaken);
     }
 
-    @Override
-    public ArrayList<AbstractCard> getCardPool(ArrayList<AbstractCard> tmpPool) {
-        int presize;
-        if (!CardCrawlGame.loadingSave && AbstractDungeon.floorNum < 2) {
-            int roll;
-            Shadowverse.groupActive = new boolean[Shadowverse.allGroupNumber];
-            Shadowverse.groupActive[0] = true;
-            tmpPool.addAll(BanCardHelper.royalCardGroupPool.get(0));
-            for (int i = 0; i < Shadowverse.banGroupNumber; i++) {
-                for (roll = AbstractDungeon.cardRng.random(Shadowverse.allGroupNumber - 1); Shadowverse.groupActive[roll]; roll = AbstractDungeon.cardRng.random(Shadowverse.allGroupNumber - 1)) {
-                }
-                Shadowverse.groupActive[roll] = true;
-                tmpPool.addAll((Collection) shadowverse.helper.BanCardHelper.royalCardGroupPool.get(roll));
-            }
-        } else {
-            tmpPool.addAll(BanCardHelper.royalCardGroupPool.get(0));
-            for (presize = 0; presize < Shadowverse.allGroupNumber; ++presize) {
-                if (Shadowverse.groupActive[presize]) {
-                    tmpPool.addAll((Collection) BanCardHelper.royalCardGroupPool.get(presize));
-                }
-            }
-        }
-        return tmpPool;
-    }
+
 
     public static shadowverse.animation.AbstractAnimation getBigAnimation() {
         return bigAnimation;

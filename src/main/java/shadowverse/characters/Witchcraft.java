@@ -24,6 +24,7 @@ import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import shadowverse.cards.Basic.Insight;
  import shadowverse.effect.ShadowverseEnergyOrb;
+ import shadowverse.helper.BanCardHelper;
  import shadowverse.patch.CharacterSelectScreenPatches;
 
  import java.util.ArrayList;
@@ -57,6 +58,8 @@ import shadowverse.cards.Basic.Insight;
      super(name, Enums.WITCHCRAFT, new ShadowverseEnergyOrb(null, null,null,BASE_LAYER), (AbstractAnimation)new SpriterAnimation(((CharacterSelectScreenPatches.characters[0]).skins[(CharacterSelectScreenPatches.characters[0]).reskinCount]).scmlURL));
      initializeClass(null, ((CharacterSelectScreenPatches.characters[0]).skins[(CharacterSelectScreenPatches.characters[0]).reskinCount]).SHOULDER1, ((CharacterSelectScreenPatches.characters[0]).skins[(CharacterSelectScreenPatches.characters[0]).reskinCount]).SHOULDER2, ((CharacterSelectScreenPatches.characters[0]).skins[(CharacterSelectScreenPatches.characters[0]).reskinCount]).CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
      bigAnimation.setVisible(false);
+     this.cardPool= BanCardHelper.witchCardGroupPool;
+     this.banGroupNumber=5;
    }
  
    

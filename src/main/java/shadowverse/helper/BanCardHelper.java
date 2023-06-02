@@ -9,9 +9,13 @@ import java.util.ArrayList;
 
 public class BanCardHelper {
     private static boolean init;
-    public static ArrayList<ArrayList<AbstractCard>> royalCardGroupPool = new ArrayList();
+    public static ArrayList<ArrayList<AbstractCard>> royalCardGroupPool = new ArrayList<>();
     public static ArrayList<ArrayList<AbstractCard>> witchCardGroupPool = new ArrayList<>();
     public static ArrayList<ArrayList<AbstractCard>> vampireCardGroupPool = new ArrayList<>();
+    public static ArrayList<ArrayList<AbstractCard>> bishopCardGroupPool = new ArrayList<>();
+    public static ArrayList<ArrayList<AbstractCard>> elfCardGroupPool = new ArrayList<>();
+    public static ArrayList<ArrayList<AbstractCard>> nemesisCardGroupPool = new ArrayList<>();
+    public static ArrayList<ArrayList<AbstractCard>> necroCardGroupPool = new ArrayList<>();
 
     public BanCardHelper() {
     }

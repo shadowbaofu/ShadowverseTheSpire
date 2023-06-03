@@ -13,7 +13,7 @@ import java.util.ArrayList;
 public class RareClassReward extends CustomReward {
     public static final String ID = "shadowverse:RareClassReward";
 
-    public static final String[] TEXT = (CardCrawlGame.languagePack.getUIString(ID)).TEXT;
+    public static final String[] TEXT = (CardCrawlGame.languagePack.getUIString("shadowverse:ClassReward")).TEXT;
     public CardGroup group;
 
     public RareClassReward(AbstractCard.CardColor color) {

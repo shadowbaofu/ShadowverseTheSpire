@@ -5283,10 +5283,7 @@
   },
   "shadowverse:TwilightBlade": {
     "NAME": "暮光之刃",
-    "DESCRIPTION": "消耗 。 保留 。 NL 对所有敌人造成(当前层数+X* !M! )点伤害。",
-    "EXTENDED_DESCRIPTION": [
-      " NL (造成 !D! 点伤害)"
-    ]
+    "DESCRIPTION": "消耗 。 保留 。 NL 对所有敌人造成一次等同于当前房间层数的伤害，再造成 !D! 点伤害X次。"
   },
   "shadowverse:DimensionCrack": {
     "NAME": "次元崩坏",

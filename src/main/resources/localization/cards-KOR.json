@@ -4601,18 +4601,7 @@
   },
   "shadowverse:BanCardView": {
     "NAME": "",
-    "DESCRIPTION": "금지된 카드 목록을 보려면 누르세요",
-    "EXTENDED_DESCRIPTION": [
-      "기본",
-      "추종자",
-      "진화",
-      "보물",
-      "레비온",
-      "기계자연",
-      "잠복",
-      "금화",
-      "히어로"
-    ]
+    "DESCRIPTION": "금지된 카드 목록을 보려면 누르세요"
   },
   "shadowverse:GlitteringGold": {
     "NAME": "찬란한 금화",
@@ -5348,5 +5337,106 @@
   "shadowverse:Weiss": {
     "NAME": "선별의 교사 바이스",
     "DESCRIPTION": "학원 NL 이번 턴, 적에게서 디버프를 받지 않는다.  NL 이번 턴, 적은 버프를 얻지 못한다. "
+  },
+  "shadowverse:BishopPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "基本",
+      "护符1",
+      "护符2",
+      "诅咒",
+      "机械&狮子",
+      "回复1",
+      "回复2",
+      "守护"
+    ]
+  },
+  "shadowverse:ElfPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "基本",
+      "妖精",
+      "离场",
+      "长连击",
+      "自然&机械",
+      "回手",
+      "短连击",
+      "密林&载具"
+    ]
+  },
+  "shadowverse:NecroPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "基本",
+      "葬送",
+      "幽灵",
+      "谢幕曲",
+      "机械",
+      "自然",
+      "死灵术",
+      "墓地"
+    ]
+  },
+  "shadowverse:NemesisPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "基本",
+      "造物",
+      "八狱",
+      "机械",
+      "洗抽",
+      "人偶",
+      "共鸣",
+      "堆尸"
+    ]
+  },
+  "shadowverse:RoyalPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "基本",
+      "潜伏",
+      "进化",
+      "宴乐",
+      "英雄",
+      "雷维翁",
+      "财宝",
+      "自然&机械",
+      "协作"
+    ]
+  },
+  "shadowverse:VampirePool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "基本",
+      "学园",
+      "渴望",
+      "蝙蝠",
+      "进化",
+      "自然&机械",
+      "自残",
+      "复仇",
+      "狂乱"
+    ]
+  },
+  "shadowverse:WitchPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "基本",
+      "学园",
+      "西洋棋",
+      "土之印1",
+      "土之印2",
+      "机械",
+      "自然",
+      "增幅1",
+      "增幅2"
+    ]
   }
 }

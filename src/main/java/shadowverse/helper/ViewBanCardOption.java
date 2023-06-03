@@ -16,7 +16,6 @@ import com.megacrit.cardcrawl.helpers.TipHelper;
 import com.megacrit.cardcrawl.helpers.input.InputHelper;
 import com.megacrit.cardcrawl.localization.UIStrings;
 import shadowverse.Shadowverse;
-import shadowverse.cards.BanCardView;
 import shadowverse.characters.AbstractShadowversePlayer;
 
 import java.util.ArrayList;
@@ -136,9 +135,9 @@ public class ViewBanCardOption {
             ArrayList<AbstractCard> list = new ArrayList<>();
             Shadowverse.logger.info("start open");
 
-            for (int i = 0; i < ((AbstractShadowversePlayer) AbstractDungeon.player).cardPool.size(); ++i) {
+            for (int i = 0; i < ((AbstractShadowversePlayer) AbstractDungeon.player).cardPool.getGroupCount(); ++i) {
                 if (Shadowverse.groupActive[i]) {
-                    list.add(new BanCardView(i));
+                    list.add(((AbstractShadowversePlayer) AbstractDungeon.player).cardPool.copy(i));
                     Shadowverse.logger.info(((AbstractCard) list.get(list.size() - 1)).name);
                 }
             }

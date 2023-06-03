@@ -25,7 +25,7 @@ import shadowverse.cards.Royal.Basic.Defend_R;
 import shadowverse.cards.Royal.Basic.FloralFencer;
 import shadowverse.cards.Royal.Basic.OathlessKnight;
 import shadowverse.cards.Royal.Basic.Strike_R;
-import shadowverse.helper.BanCardHelper;
+import shadowverse.cards.Royal.RoyalPool;
 import shadowverse.effect.ShadowverseEnergyOrb;
 import shadowverse.patch.CharacterSelectScreenPatches;
 
@@ -58,8 +58,7 @@ public class Royal extends AbstractShadowversePlayer {
         super(name, Enums.Royal, new ShadowverseEnergyOrb(null, null, null, BASE_LAYER), (AbstractAnimation) new SpriterAnimation(((CharacterSelectScreenPatches.characters[3]).skins[(CharacterSelectScreenPatches.characters[3]).reskinCount]).scmlURL));
         initializeClass(null, ((CharacterSelectScreenPatches.characters[3]).skins[(CharacterSelectScreenPatches.characters[3]).reskinCount]).SHOULDER1, ((CharacterSelectScreenPatches.characters[3]).skins[(CharacterSelectScreenPatches.characters[3]).reskinCount]).SHOULDER2, ((CharacterSelectScreenPatches.characters[3]).skins[(CharacterSelectScreenPatches.characters[3]).reskinCount]).CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
         bigAnimation.setVisible(false);
-        this.cardPool = BanCardHelper.royalCardGroupPool;
-        this.banGroupNumber = 5;
+        this.cardPool = new RoyalPool(0);
     }
 
     @Override

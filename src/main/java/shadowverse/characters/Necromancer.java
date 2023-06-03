@@ -25,8 +25,8 @@ import shadowverse.cards.Necromancer.Basic.Defend_N;
 import shadowverse.cards.Necromancer.Basic.SpartoiSergent;
 import shadowverse.cards.Necromancer.Basic.Strike_N;
 import shadowverse.cards.Necromancer.Basic.UndyingResentment;
+import shadowverse.cards.Necromancer.NecroPool;
 import shadowverse.effect.ShadowverseEnergyOrb;
-import shadowverse.helper.BanCardHelper;
 import shadowverse.patch.CharacterSelectScreenPatches;
 
 import java.util.ArrayList;
@@ -53,8 +53,7 @@ public class Necromancer extends AbstractShadowversePlayer{
         super(name, Enums.Necromancer, new ShadowverseEnergyOrb(null, null,null,BASE_LAYER), (AbstractAnimation)new SpriterAnimation(((CharacterSelectScreenPatches.characters[2]).skins[(CharacterSelectScreenPatches.characters[2]).reskinCount]).scmlURL));
         initializeClass(null, ((CharacterSelectScreenPatches.characters[2]).skins[(CharacterSelectScreenPatches.characters[2]).reskinCount]).SHOULDER1, ((CharacterSelectScreenPatches.characters[2]).skins[(CharacterSelectScreenPatches.characters[2]).reskinCount]).SHOULDER2, ((CharacterSelectScreenPatches.characters[2]).skins[(CharacterSelectScreenPatches.characters[2]).reskinCount]).CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
         bigAnimation.setVisible(false);
-        this.cardPool= BanCardHelper.necroCardGroupPool;
-        this.banGroupNumber=5;
+        this.cardPool= new NecroPool(0);
     }
 
     @Override

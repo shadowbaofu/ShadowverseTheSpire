@@ -11,8 +11,8 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import shadowverse.action.ChoiceAction;
-import shadowverse.cards.Necromancer.Default.DeadSoulTaker;
-import shadowverse.cards.Bishop.Default.ImperialSaint;
+import shadowverse.cards.Neutral.Temp.DeadSoulTaker;
+import shadowverse.cards.Neutral.Temp.ImperialSaint;
 import shadowverse.cards.Neutral.Temp.*;
 
 import java.util.ArrayList;

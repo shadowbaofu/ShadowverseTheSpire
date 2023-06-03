@@ -25,8 +25,8 @@ import shadowverse.cards.Bishop.Basic.BlackenedScripture;
 import shadowverse.cards.Bishop.Basic.Defend_B;
 import shadowverse.cards.Bishop.Basic.PriestOfTheCudgel;
 import shadowverse.cards.Bishop.Basic.Strike_B;
+import shadowverse.cards.Bishop.BishopPool;
 import shadowverse.effect.ShadowverseEnergyOrb;
-import shadowverse.helper.BanCardHelper;
 import shadowverse.patch.CharacterSelectScreenPatches;
 
 import java.util.ArrayList;
@@ -51,8 +51,7 @@ public class Bishop extends AbstractShadowversePlayer{
     public Bishop(String name) {
         super(name, Enums.Bishop, new ShadowverseEnergyOrb(null, null,null,BASE_LAYER), (AbstractAnimation)new SpriterAnimation(((CharacterSelectScreenPatches.characters[5]).skins[(CharacterSelectScreenPatches.characters[5]).reskinCount]).scmlURL));
         initializeClass(null, ((CharacterSelectScreenPatches.characters[5]).skins[(CharacterSelectScreenPatches.characters[5]).reskinCount]).SHOULDER1, ((CharacterSelectScreenPatches.characters[5]).skins[(CharacterSelectScreenPatches.characters[5]).reskinCount]).SHOULDER2, ((CharacterSelectScreenPatches.characters[5]).skins[(CharacterSelectScreenPatches.characters[5]).reskinCount]).CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
-        this.cardPool= BanCardHelper.bishopCardGroupPool;
-        this.banGroupNumber=5;
+        this.cardPool= new BishopPool(0);
     }
 
     @Override

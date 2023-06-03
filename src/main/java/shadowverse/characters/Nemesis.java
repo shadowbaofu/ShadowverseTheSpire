@@ -25,10 +25,9 @@ import shadowverse.cards.Nemesis.Basic.Defend_Nm;
 import shadowverse.cards.Nemesis.Basic.DimensionCut;
 import shadowverse.cards.Nemesis.Basic.MagisteelLion;
 import shadowverse.cards.Nemesis.Basic.Strike_Nm;
+import shadowverse.cards.Nemesis.NemesisPool;
 import shadowverse.effect.ShadowverseEnergyOrb;
-import shadowverse.helper.BanCardHelper;
 import shadowverse.patch.CharacterSelectScreenPatches;
-
 
 import java.util.ArrayList;
 
@@ -56,8 +55,7 @@ public class Nemesis extends AbstractShadowversePlayer{
         initializeClass(null, ((CharacterSelectScreenPatches.characters[6]).skins[(CharacterSelectScreenPatches.characters[6]).reskinCount]).SHOULDER1, ((CharacterSelectScreenPatches.characters[6]).skins[(CharacterSelectScreenPatches.characters[6]).reskinCount]).SHOULDER2, ((CharacterSelectScreenPatches.characters[6]).skins[(CharacterSelectScreenPatches.characters[6]).reskinCount]).CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
         bigAnimation.setVisible(false);
         bigAnimation.skeleton.setSkin("skin_01");
-        this.cardPool= BanCardHelper.nemesisCardGroupPool;
-        this.banGroupNumber=5;
+        this.cardPool= new NemesisPool(0);
     }
 
     @Override

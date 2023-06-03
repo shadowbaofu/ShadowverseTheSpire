@@ -5,7 +5,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import shadowverse.cards.Necromancer.Default.DeadSoulTaker;
+import shadowverse.cards.Neutral.Temp.DeadSoulTaker;
 import shadowverse.cards.Bishop.Amulet2.Jatelant;
 import shadowverse.cards.Elf.Left.PrimalGigant;
 

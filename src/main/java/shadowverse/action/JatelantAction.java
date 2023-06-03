@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
-import shadowverse.cards.Necromancer.Default.DeadSoulTaker;
+import shadowverse.cards.Neutral.Temp.DeadSoulTaker;
 import shadowverse.cards.Bishop.Amulet2.Jatelant;
 import shadowverse.cards.Elf.Left.PrimalGigant;
 import shadowverse.characters.AbstractShadowversePlayer;

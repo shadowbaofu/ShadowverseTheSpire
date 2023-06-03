@@ -4,7 +4,25 @@ import basemod.BaseMod;
 import basemod.ReflectionHacks;
 import basemod.helpers.RelicType;
 import basemod.interfaces.*;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.Color;
 import com.evacipated.cardcrawl.modthespire.Loader;
+import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
+import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
+import com.google.gson.Gson;
+import com.megacrit.cardcrawl.audio.Sfx;
+import com.megacrit.cardcrawl.audio.SoundMaster;
+import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.dungeons.*;
+import com.megacrit.cardcrawl.helpers.CardHelper;
+import com.megacrit.cardcrawl.localization.*;
+import com.megacrit.cardcrawl.monsters.MonsterInfo;
+import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
+import com.megacrit.cardcrawl.vfx.ThoughtBubble;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import shadowverse.cards.Bishop.Amulet1.*;
 import shadowverse.cards.Bishop.Amulet2.*;
 import shadowverse.cards.Bishop.Basic.BlackenedScripture;
@@ -53,8 +71,11 @@ import shadowverse.cards.Nemesis.Pile.*;
 import shadowverse.cards.Nemesis.Puppet.*;
 import shadowverse.cards.Nemesis.Resonance.*;
 import shadowverse.cards.Nemesis.Tokens.*;
-import shadowverse.cards.Neutral.Temp.Muse;
+import shadowverse.cards.Neutral.Curse.*;
 import shadowverse.cards.Neutral.Neutral.*;
+import shadowverse.cards.Neutral.Status.*;
+import shadowverse.cards.Neutral.Temp.Mysteria;
+import shadowverse.cards.Neutral.Temp.*;
 import shadowverse.cards.Royal.Ambush.*;
 import shadowverse.cards.Royal.Basic.Defend_R;
 import shadowverse.cards.Royal.Basic.FloralFencer;
@@ -95,41 +116,20 @@ import shadowverse.cards.Witch.Mech.*;
 import shadowverse.cards.Witch.Natura.*;
 import shadowverse.cards.Witch.Spellboost1.*;
 import shadowverse.cards.Witch.Spellboost2.*;
-import shadowverse.helper.BanCardHelper;
-import shadowverse.cards.Neutral.Status.*;
-import shadowverse.helper.ViewBanCardScreen;
-import shadowverse.relics.Alice;
-import shadowverseCharbosses.bosses.KMR.KMR;
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.graphics.Color;
-import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
-import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
-import com.google.gson.Gson;
-import com.megacrit.cardcrawl.audio.Sfx;
-import com.megacrit.cardcrawl.audio.SoundMaster;
-import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.core.Settings;
-import com.megacrit.cardcrawl.dungeons.*;
-import com.megacrit.cardcrawl.helpers.CardHelper;
-import com.megacrit.cardcrawl.localization.*;
-import com.megacrit.cardcrawl.monsters.MonsterInfo;
-import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
-import com.megacrit.cardcrawl.vfx.ThoughtBubble;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import shadowverse.cards.Neutral.Curse.*;
-import shadowverse.cards.Neutral.Temp.Mysteria;
-import shadowverse.cards.Neutral.Temp.*;
 import shadowverse.characters.*;
 import shadowverse.events.*;
+import shadowverse.helper.ViewBanCardScreen;
 import shadowverse.monsters.*;
 import shadowverse.patch.CharacterSelectScreenPatches;
 import shadowverse.potions.*;
+import shadowverse.relics.Alice;
 import shadowverse.relics.*;
+import shadowverseCharbosses.bosses.KMR.KMR;
 
 import java.nio.charset.StandardCharsets;
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Properties;
 
 import static com.badlogic.gdx.graphics.Color.YELLOW;
 
@@ -220,7 +220,6 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
     }
 
     public void receivePostInitialize() {
-        BanCardHelper.init();
         loadSettings();
         BaseMod.addEvent(PinyaEvent.ID, PinyaEvent.class);
         BaseMod.addEvent(GemFortune.ID, GemFortune.class, TheCity.ID);
@@ -2679,7 +2678,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
     }
 
     static {
-        groupActive = new boolean[allGroupNumber];
+        groupActive = new boolean[10];
     }
 }
 

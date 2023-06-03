@@ -4600,18 +4600,7 @@
   },
   "shadowverse:BanCardView": {
     "NAME": "",
-    "DESCRIPTION": "点击查看此体系包含卡",
-    "EXTENDED_DESCRIPTION": [
-      "基本",
-      "随从",
-      "进化",
-      "财宝",
-      "雷维翁",
-      "机械自然",
-      "潜伏",
-      "金币",
-      "英雄"
-      ]
+    "DESCRIPTION": "点击查看此体系包含卡"
   },
   "shadowverse:GlitteringGold": {
   "NAME": "闪耀的金币",
@@ -5347,5 +5336,106 @@
   "shadowverse:Weiss": {
     "NAME": "选别的教员·韦斯",
     "DESCRIPTION": "学园 NL 本回合内你不会受到敌人施加的负面效果影响。 NL 本回合内敌人不会受到正面效果影响。"
+  },
+  "shadowverse:BishopPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "基本",
+      "护符1",
+      "护符2",
+      "诅咒",
+      "机械&狮子",
+      "回复1",
+      "回复2",
+      "守护"
+    ]
+  },
+  "shadowverse:ElfPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "基本",
+      "妖精",
+      "离场",
+      "长连击",
+      "自然&机械",
+      "回手",
+      "短连击",
+      "密林&载具"
+    ]
+  },
+  "shadowverse:NecroPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "基本",
+      "葬送",
+      "幽灵",
+      "谢幕曲",
+      "机械",
+      "自然",
+      "死灵术",
+      "墓地"
+    ]
+  },
+  "shadowverse:NemesisPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "基本",
+      "造物",
+      "八狱",
+      "机械",
+      "洗抽",
+      "人偶",
+      "共鸣",
+      "堆尸"
+    ]
+  },
+  "shadowverse:RoyalPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "基本",
+      "潜伏",
+      "进化",
+      "宴乐",
+      "英雄",
+      "雷维翁",
+      "财宝",
+      "自然&机械",
+      "协作"
+    ]
+  },
+  "shadowverse:VampirePool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "基本",
+      "学园",
+      "渴望",
+      "蝙蝠",
+      "进化",
+      "自然&机械",
+      "自残",
+      "复仇",
+      "狂乱"
+    ]
+  },
+  "shadowverse:WitchPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "基本",
+      "学园",
+      "西洋棋",
+      "土之印1",
+      "土之印2",
+      "机械",
+      "自然",
+      "增幅1",
+      "增幅2"
+    ]
   }
 }

@@ -1,4 +1,4 @@
- package shadowverse.cards.Bishop.Default;
+ package shadowverse.cards.Neutral.Temp;
 
 
  import basemod.abstracts.CustomCard;

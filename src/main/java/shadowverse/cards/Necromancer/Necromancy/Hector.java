@@ -1,4 +1,4 @@
-package shadowverse.cards.Necromancer.Default;
+package shadowverse.cards.Necromancer.Necromancy;
 
 
 import basemod.abstracts.CustomCard;

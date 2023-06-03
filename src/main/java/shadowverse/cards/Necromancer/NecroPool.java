@@ -77,7 +77,6 @@ public class NecroPool extends AbstractBanPool {
         Default.addCard(new Cornelius());
         Default.addCard(new DeathNote());
         Default.addCard(new DiscipleOfSilence());
-        Default.addCard(new Hector());
         Default.addCard(new ImmortalThane());
         Default.addCard(new ImpiousResurrection());
         Default.addCard(new LadyGray());
@@ -105,9 +104,13 @@ public class NecroPool extends AbstractBanPool {
         Ghosts.addCard(new Arcus());
         Ghosts.addCard(new Baccherus());
         Ghosts.addCard(new Ferry());
+        Ghosts.addCard(new GhostHunter());
+        Ghosts.addCard(new GloamingTombs());
         Ghosts.addCard(new MasqueradeGhost());
         Ghosts.addCard(new Miyako(0));
+        Ghosts.addCard(new NecroImpulse());
         Ghosts.addCard(new TrickDullahan());
+        Ghosts.addCard(new TrothCurse());
         LastWords.addCard(new AbyssalColonel());
         LastWords.addCard(new Cerberus());
         LastWords.addCard(new Chris());
@@ -145,6 +148,7 @@ public class NecroPool extends AbstractBanPool {
         Necromancy.addCard(new DeathscytheHound());
         Necromancy.addCard(new Fafnir());
         Necromancy.addCard(new FoulTempest());
+        Necromancy.addCard(new Hector());
         Necromancy.addCard(new Krampus());
         Necromancy.addCard(new Orthrus());
         Necromancy.addCard(new WightKing());
@@ -152,16 +156,12 @@ public class NecroPool extends AbstractBanPool {
         Shadows.addCard(new BoneChimera());
         Shadows.addCard(new DeathTyrant());
         Shadows.addCard(new GhastlyBanishment());
-        Shadows.addCard(new GhostHunter());
-        Shadows.addCard(new GloamingTombs());
         Shadows.addCard(new Gremory());
         Shadows.addCard(new Hades());
         Shadows.addCard(new HinterlandGhoul());
         Shadows.addCard(new Minthe());
-        Shadows.addCard(new NecroImpulse());
         Shadows.addCard(new PrinceCatacomb());
         Shadows.addCard(new SpartoiSoldier());
-        Shadows.addCard(new TrothCurse());
         pool.add(Default);
         pool.add(Burial);
         pool.add(Ghosts);

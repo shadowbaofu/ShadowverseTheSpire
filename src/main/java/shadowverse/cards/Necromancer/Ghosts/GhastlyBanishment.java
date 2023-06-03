@@ -1,4 +1,4 @@
-package shadowverse.cards.Necromancer.Shadows;
+package shadowverse.cards.Necromancer.Ghosts;
 
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;

@@ -22,6 +22,7 @@ import shadowverse.cards.Necromancer.Burial.TheLovers;
 import shadowverse.cards.Neutral.Temp.InstantPotion;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Necromancer;
+import shadowverse.powers.MementoPower;
 
 
 public class BoneDominator
@@ -73,11 +74,20 @@ public class BoneDominator
     }
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
         if (Shadowverse.Accelerate(this) && this.type == CardType.SKILL) {
             addToBot(new SFXAction("BoneDominator_Acc"));
             addToBot(new DrawCardAction(1));
             addToBot(new BurialAction(1, new GainBlockAction(abstractPlayer, this.magicNumber)));
+            int attackAmt = 0;
+            for (AbstractCard c : abstractPlayer.hand.group) {
+                if (c != this && c.type == CardType.ATTACK)
+                    attackAmt++;
+            }
+            if (attackAmt >= 1) {
+                if (abstractPlayer.hasPower(MementoPower.POWER_ID)) {
+                    addToBot(new GainBlockAction(abstractPlayer, this.magicNumber));
+                }
+            }
         } else {
             addToBot(new SFXAction("BoneDominator"));
             addToBot(new GainBlockAction(abstractPlayer, this.block));

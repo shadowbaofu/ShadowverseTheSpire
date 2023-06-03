@@ -10,6 +10,7 @@
  import com.megacrit.cardcrawl.monsters.AbstractMonster;
  import shadowverse.action.BurialAction;
  import shadowverse.characters.Necromancer;
+ import shadowverse.powers.MementoPower;
 
 
  public class DemonicProcession extends CustomCard {
@@ -51,6 +52,16 @@
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
        addToBot(new BurialAction(1,new DrawPileToHandAction(this.magicNumber, AbstractCard.CardType.ATTACK)));
+       int attackAmt = 0;
+       for (AbstractCard c : abstractPlayer.hand.group) {
+           if (c != this && c.type == CardType.ATTACK)
+               attackAmt++;
+       }
+       if (attackAmt >= 1) {
+           if (abstractPlayer.hasPower(MementoPower.POWER_ID)) {
+               addToBot(new DrawPileToHandAction(this.magicNumber, AbstractCard.CardType.ATTACK));
+           }
+       }
    }
  
    

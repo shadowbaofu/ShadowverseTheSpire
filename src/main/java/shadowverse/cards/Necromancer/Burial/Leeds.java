@@ -21,6 +21,7 @@ import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import shadowverse.action.BurialAction;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Necromancer;
+import shadowverse.powers.MementoPower;
 
 
 public class Leeds extends CustomCard {
@@ -72,6 +73,15 @@ public class Leeds extends CustomCard {
         }
         addToBot(new GainBlockAction(abstractPlayer, this.block));
         addToBot(new BurialAction(1, new DamageRandomEnemyAction(new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL)));
+        int attackAmt = 0;
+        for (AbstractCard c : abstractPlayer.hand.group) {
+            if (c != this && c.type == CardType.ATTACK)
+                attackAmt++;
+        }
+        if (attackAmt >= 2) {
+            if (abstractPlayer.hasPower(MementoPower.POWER_ID))
+                addToBot(new DamageRandomEnemyAction(new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        }
         if (AbstractDungeon.player instanceof AbstractShadowversePlayer) {
             AbstractShadowversePlayer w = (AbstractShadowversePlayer) AbstractDungeon.player;
             int count = w.burialCount;

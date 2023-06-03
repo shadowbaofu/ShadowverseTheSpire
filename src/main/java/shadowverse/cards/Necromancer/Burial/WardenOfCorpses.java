@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 import shadowverse.action.BurialAction;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Necromancer;
+import shadowverse.powers.MementoPower;
 
 
 public class WardenOfCorpses extends CustomCard {
@@ -43,6 +44,17 @@ public class WardenOfCorpses extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new BurialAction(1, new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE)));
         addToBot(new VFXAction(new CleaveEffect()));
+        int attackAmt = 0;
+        for (AbstractCard c : p.hand.group) {
+            if (c != this && c.type == CardType.ATTACK)
+                attackAmt++;
+        }
+        if (attackAmt >= 2) {
+            if (p.hasPower(MementoPower.POWER_ID)){
+                addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
+                addToBot(new VFXAction(new CleaveEffect()));
+            }
+        }
         addToBot(new DrawCardAction(2));
     }
 

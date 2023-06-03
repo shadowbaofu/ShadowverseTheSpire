@@ -1484,6 +1484,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("SepticShrink", new Sfx(voicePath + "SepticShrink.wav"));
             reflectedMap.put("Gawain", new Sfx(voicePath + "Gawain.wav"));
             reflectedMap.put("Weiss", new Sfx(voicePath + "Weiss.wav"));
+            reflectedMap.put("DeathscytheHound",new Sfx(voicePath + "DeathscytheHound.wav"));
         }
     }
 
@@ -2632,6 +2633,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard(new SepticShrink());
         BaseMod.addCard(new Gawain());
         BaseMod.addCard(new Weiss());
+        BaseMod.addCard(new DeathscytheHound());
         logger.info("Success");
     }
 

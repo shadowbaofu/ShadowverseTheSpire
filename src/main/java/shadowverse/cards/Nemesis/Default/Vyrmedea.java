@@ -18,6 +18,7 @@ import shadowverse.action.BurialAction;
 import shadowverse.cards.Neutral.Temp.EdgeArtifact;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Nemesis;
+import shadowverse.powers.MementoPower;
 import shadowverse.powers.VyrmedeaPower;
 
 import java.util.ArrayList;
@@ -64,6 +65,16 @@ public class Vyrmedea
         AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
         c.setCostForTurn(0);
         addToBot(new BurialAction(1,new MakeTempCardInHandAction(c)));
+        int attackAmt = 0;
+        for (AbstractCard card : p.hand.group) {
+            if (card != this && card.type == CardType.ATTACK)
+                attackAmt++;
+        }
+        if (attackAmt >= 2) {
+            if (p.hasPower(MementoPower.POWER_ID)) {
+                addToBot(new MakeTempCardInHandAction(c));
+            }
+        }
     }
 
 

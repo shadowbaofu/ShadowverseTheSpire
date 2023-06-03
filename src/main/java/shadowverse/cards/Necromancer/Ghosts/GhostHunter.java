@@ -14,6 +14,7 @@ import shadowverse.action.BurialAction;
 import shadowverse.cards.Neutral.Status.Ghost;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Necromancer;
+import shadowverse.powers.MementoPower;
 
 
 public class GhostHunter extends CustomCard {
@@ -43,6 +44,15 @@ public class GhostHunter extends CustomCard {
         addToBot(new SFXAction("GhostHunter"));
         addToBot(new GainBlockAction(abstractPlayer, this.block));
         addToBot(new BurialAction(1, new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy())));
+        int attackAmt = 0;
+        for (AbstractCard c : abstractPlayer.hand.group) {
+            if (c != this && c.type == CardType.ATTACK)
+                attackAmt++;
+        }
+        if (attackAmt >= 2) {
+            if (abstractPlayer.hasPower(MementoPower.POWER_ID))
+                addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
+        }
     }
 
 

@@ -18,6 +18,7 @@ import shadowverse.action.BurialAction;
 import shadowverse.action.ReanimateAction;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Necromancer;
+import shadowverse.powers.MementoPower;
 
 
 public class Cernunnos extends CustomCard {
@@ -47,6 +48,16 @@ public class Cernunnos extends CustomCard {
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot(new BurialAction(1, new DrawCardAction(this.magicNumber)));
+        int attackAmt = 0;
+        for (AbstractCard c : abstractPlayer.hand.group) {
+            if (c != this && c.type == CardType.ATTACK)
+                attackAmt++;
+        }
+        if (attackAmt >= 2) {
+            if (abstractPlayer.hasPower(MementoPower.POWER_ID)) {
+                addToBot(new DrawCardAction(this.magicNumber));
+            }
+        }
         if ((UnlockTracker.betaCardPref.getBoolean(this.cardID, false)))
             addToBot(new SFXAction("Cernunnos_L"));
         else

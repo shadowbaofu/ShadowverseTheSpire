@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import shadowverse.action.BurialAction;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Necromancer;
+import shadowverse.powers.MementoPower;
 
 
 public class SepticShrink extends CustomCard {
@@ -56,8 +57,17 @@ public class SepticShrink extends CustomCard {
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot(new SFXAction("SepticShrink"));
-        addToBot(new DamageAction(abstractMonster,new DamageInfo(abstractPlayer,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         addToBot(new BurialAction(1, new GainEnergyAction(1)));
+        int attackAmt = 0;
+        for (AbstractCard c : abstractPlayer.hand.group) {
+            if (c != this && c.type == CardType.ATTACK)
+                attackAmt++;
+        }
+        if (attackAmt >= 2) {
+            if (abstractPlayer.hasPower(MementoPower.POWER_ID))
+                addToBot(new GainEnergyAction(1));
+        }
         if (AbstractDungeon.player instanceof AbstractShadowversePlayer) {
             AbstractShadowversePlayer w = (AbstractShadowversePlayer) AbstractDungeon.player;
             int count = w.burialCount;

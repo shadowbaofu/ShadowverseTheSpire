@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.vfx.combat.ThrowDaggerEffect;
 import com.megacrit.cardcrawl.vfx.combat.WhirlwindEffect;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Elf;
+import shadowverse.powers.WimaelPower;
 
 public class Wimael extends CustomCard {
     public static final String ID = "shadowverse:Wimael";
@@ -28,7 +29,6 @@ public class Wimael extends CustomCard {
         super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Elf.Enums.COLOR_GREEN, CardRarity.RARE, CardTarget.ENEMY);
         this.baseDamage = 20;
         this.tags.add(AbstractShadowversePlayer.Enums.CONDEMNED);
-        this.selfRetain = true;
     }
 
 
@@ -40,14 +40,14 @@ public class Wimael extends CustomCard {
     }
 
     @Override
-    public void onRetained() {
-        addToBot(new ReduceCostAction(this));
+    public void triggerOnOtherCardPlayed(AbstractCard c) {
+        if (c.type == CardType.SKILL){
+            flash();
+            addToBot(new SFXAction("spell_boost"));
+            addToBot(new ReduceCostAction(this));
+        }
     }
 
-    @Override
-    public void triggerWhenDrawn() {
-        addToBot(new MakeTempCardInHandAction(this.makeStatEquivalentCopy(),1));
-    }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction("Wimael"));
@@ -57,6 +57,8 @@ public class Wimael extends CustomCard {
                 addToTop(new VFXAction(new ThrowDaggerEffect(m.hb.cX, m.hb.cY),0.2F));
         }
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
+        addToBot(new ApplyPowerAction(p,p,new WimaelPower(p,1),1));
+        this.cost = 3;
     }
 
     public AbstractCard makeCopy() {

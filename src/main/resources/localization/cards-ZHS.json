@@ -4762,7 +4762,7 @@
   },
   "shadowverse:Wimael": {
     "NAME": "香风执行者·威默尔",
-    "DESCRIPTION": "八狱 · 保留 NL 每当被保留时，耗能减少1。 NL 每当被抽到时，增加1张复制品到手中。 NL 造成 !D! 点伤害。"
+    "DESCRIPTION": "八狱 NL 每当打出技能牌时，耗能减少1。 NL 造成 !D! 点伤害。 NL 下回合增加1张本回合耗能为0且带有消耗的复制品到手中。"
   },
   "shadowverse:BenevolentElf": {
     "NAME": "恩眷精灵",

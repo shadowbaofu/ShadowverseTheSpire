@@ -430,7 +430,7 @@
   },
   "shadowverse:InfernalGaze": {
     "NAME": "Infernal Gaze",
-    "DESCRIPTION": "Draw 1 card. NL All the enemies lose !M! Strength for 1 turn. NL Exhaust."
+    "DESCRIPTION": "Draw 1 card. NL All enemies lose !M! Strength this turn. NL Exhaust."
   },
   "shadowverse:HeavenFall": {
     "NAME": "Heavenfall",
@@ -459,11 +459,11 @@
   },
   "shadowverse:HellBeast": {
     "NAME": "Heretical HellBeast",
-    "DESCRIPTION": "Whenever an enemy deals 2 damage to you, gain !B! Block. NL Apply !M! Vulnerable and Weak to all enemies."
+    "DESCRIPTION": "Lose 2 HP for each enemy, gain !B! Block. NL Apply !M! Vulnerable and Weak to all enemies."
   },
   "shadowverse:Behemoth": {
     "NAME": "Gluttonous Behemoth",
-    "DESCRIPTION": "Deal !M! damage to all enemies at the end of this turn."
+    "DESCRIPTION": "Deal !M! damage to all enemies at the end of your turn."
   },
   "shadowverse:DemonOfPurgatory": {
     "NAME": "Demon of Purgatory",
@@ -471,7 +471,7 @@
   },
   "shadowverse:Desire": {
     "NAME": "Scion of Desire",
-    "DESCRIPTION": "At the end of your turn, heal HP equal to the highest amount of damage you took this turn."
+    "DESCRIPTION": "At the start of your next, heal HP equal to the highest amount of damage you took this turn in one attack."
   },
   "shadowverse:Satan": {
     "NAME": "Prince of Cocytus",
@@ -517,11 +517,11 @@
   },
   "shadowverse:StarBright": {
     "NAME": "Starbright Deity",
-    "DESCRIPTION": "Put into your hand copies of the 3 left-most cards in your hand, in the order they were added."
+    "DESCRIPTION": "Add to your hand copies of the 3 left-most cards in your hand, in the order they were added."
   },
   "shadowverse:TheWorld": {
     "NAME": "XXI. Zelgenea, The World",
-    "DESCRIPTION": "This card cannot be upgraded. NL Gain !B! Block. NL If your HP is lower than 3/4ths of your Max HP, deal !D! damage to the enemy with highest HP, heal 5 HP and draw 2 cards. NL Invocation: At the start of your turn, if it's your 5th turn or later, Exhaust this card and put a *XXI. *Zelgenea, *The *World *Reversed into your hand."
+    "DESCRIPTION": "This card cannot be upgraded. NL Gain !B! Block. NL If your HP is lower than 75% of your Max HP, deal !D! damage to the enemy with the highest HP, heal 5 HP and draw 2 cards. NL Invocation: At the start of your turn, if it's your 5th turn or later, Exhaust this card and put a *XXI. *Zelgenea, *The *World *Reversed into your hand."
   },
   "shadowverse:TheWorld_I": {
     "NAME": "XXI. Zelgenea, The World Reversed",
@@ -533,7 +533,7 @@
   },
   "shadowverse:SlashOfOne": {
     "NAME": "Slash of the One",
-    "DESCRIPTION": "Deal !D! damage. NL Change the cost of this card to 1 after you play an Attack card. Change it to 2 after you play another Attack card."
+    "DESCRIPTION": "Deal !D! damage. NL Change the cost of this card to 1 after you play an Attack card. Change it to 2 if you play another Attack card."
   },
   "shadowverse:Dis": {
     "NAME": "Dis's Damnation",
@@ -557,7 +557,7 @@
   },
   "shadowverse:Ignorant": {
     "NAME": "Rite of the Ignorant",
-    "DESCRIPTION": "At the start of your turn, draw !M! card(s) and Spellboost them X times. X equals a random number between 1 and 7. At the end of your turn, Exhaust the cards you drew by this effect. NL Exhaust."
+    "DESCRIPTION": "At the start of your turn, after drawing, draw !M! card(s) and Spellboost them X times. X equals a random number between 1 and 7. At the end of your turn, Exhaust the cards you drew by this effect. NL Exhaust."
   },
   "shadowverse:Omniscient": {
     "NAME": "Scourge of the Omniscient",
@@ -820,7 +820,7 @@
   },
   "shadowverse:OmenOfUnkilling2": {
     "NAME": "Izudia, Unkilling Annihilation",
-    "DESCRIPTION": "At the end of your turn, a random enemy loses 6 Strength. NL This effect lasts for 3 turns and does not stack. NL Add a *Annihilating *Onslaught to your hand."
+    "DESCRIPTION": "At the end of your turn, a random enemy loses 6 Strength. NL This effect lasts for 3 turns and does not stack. NL Add an *Annihilating *Onslaught to your hand."
   },
   "shadowverse:AriasWhirlwind": {
     "NAME": "Aria's Whirlwind",
@@ -841,7 +841,7 @@
   },
   "shadowverse:ElfGuard": {
     "NAME": "Elf Guard",
-    "DESCRIPTION": "Gain !B!  Block. NL If at least 2 other cards were played this turn, gain !M! Plated Armor."
+    "DESCRIPTION": "Gain !B! Block. NL If at least 2 other cards were played this turn, gain !M! Plated Armor."
   },
   "shadowverse:Whisp": {
     "NAME": "Fairy Wisp",
@@ -4022,7 +4022,7 @@
   },
   "shadowverse:ShootOfUnkilling": {
     "NAME": "Annihilating Onslaught",
-    "DESCRIPTION": "An enemy loses !M! Strength. NL Enhance 3: At the start of your next turn, if an enemy that intends to attack and deals 0 damage, deal damage equal to its max HP. NL Exhaust."
+    "DESCRIPTION": "An enemy loses !M! Strength. NL Enhance 3: If an enemy intends to attack and the attack damage is 0, then at the start of your next turn, deal damage equal to it's max HP. NL Exhaust."
   },
   "shadowverse:LightOfHollow": {
     "NAME": "Remnant of Hollowness",
@@ -4723,7 +4723,7 @@
   },
   "shadowverse:DiamondMaster": {
     "NAME": "Diamond Master",
-    "DESCRIPTION": "Gain !B! Block. NL If you have Blur, you will not lose Block at the start of your turn. NL If your next attack damage is doubled, double your attack damage this turn. NL If both of the previous effects are activated, deal damage to all enemies equal to your Block.",
+    "DESCRIPTION": "Gain !B! Block. NL If you have Blur, you no longer lose Block at the start of your turn. NL If your next attack damage is doubled, all other attacks do double damage this turn. NL If both effects (Blur and Pen Nib) are activated, deal damage to all enemies equal to your Block.",
     "EXTENDED_DESCRIPTION": [
       " NL (Deal !D! damage)"
     ]
@@ -4734,7 +4734,7 @@
   },
   "shadowverse:BejeweledShrine": {
     "NAME": "Bejeweled Shrine",
-    "DESCRIPTION": "Draw 1 card. NL At start of your turn, randomly gain 1 Blur or double your next attack damage. NL At the end of your turn, if both of the previous effects are active, you do not lose your Block and double damage and gain 1 Strength and Dexterity. NL If you have played 5 or more amulets with Countdown, gain 3 instead of 1."
+    "DESCRIPTION": "Draw 1 card. NL At start of your turn, randomly gain 1 Blur or Pen Nib. NL At the end of your turn, if both effects (Blur and Pen Nib) are active, you no longer lose Block, all attacks are doubled this turn and gain 1 Strength and Dexterity. NL If you have played 5 or more amulets with Countdown, gain 3 instead."
   },
   "shadowverse:ImpiousBishop": {
     "NAME": "Impious Bishop",
@@ -4742,7 +4742,7 @@
   },
   "shadowverse:Magachiyo": {
     "NAME": "Magachiyo, Barbed Convict",
-    "DESCRIPTION": "Condemned NL Deal !D! Damage. NL Add 1 to the number of cards played this turn.  NL If you played at least 4 cards in 3 or more rounds, gain 2 Strength and Dexterity and add plus !M! to Condemned Attack cards in hand.",
+    "DESCRIPTION": "Condemned NL Deal !D! Damage. NL Add 1 to the number of cards played this turn.  NL If you have played at least 4 cards in 3 or more turns, gain 2 Strength and Dexterity and add !M! Damage and Block to Condemned Attack cards in hand.",
     "EXTENDED_DESCRIPTION": [
       " NL (You played 4 card for ",
       " rounds. )"
@@ -5077,8 +5077,8 @@
   },
   "shadowverse:Castelle": {
     "NAME": "Castelle, Budding Mage",
-    "DESCRIPTION": "Academic NL Gain !B! Block, deal !D! damage. NL If X is 10 or more. put 1 *Verdant *Prayer into hand.(X is non-strike Forestcraft Attack cards played in this combat)",
-    "UPGRADE_DESCRIPTION": "Academic NL Gain !B! block, deal !D! damage. NL If X is 10 or more. put 1 *Verdant *Prayer+ into hand.(X is non-strike Forestcraft Attack cards played in this combat)",
+    "DESCRIPTION": "Academic NL Gain !B! Block, deal !D! damage. NL If X is 10 or more. put 1 *Verdant *Prayer into hand.(X is equal to the number of non-Strike Forestcraft Attack cards played in this combat)",
+    "UPGRADE_DESCRIPTION": "Academic NL Gain !B! block, deal !D! damage. NL If X is 10 or more. put 1 *Verdant *Prayer+ into hand.(X is equal to the number of non-Strike Forestcraft Attack cards played in this combat)",
     "EXTENDED_DESCRIPTION": [
       " NL (X is",
       " .)"

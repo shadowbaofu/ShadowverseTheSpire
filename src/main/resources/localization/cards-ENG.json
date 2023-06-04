@@ -5381,7 +5381,7 @@
       "Machina",
       "Natura",
       "Necromancy",
-      "Cemetary"
+      "Reanimate"
     ]
   },
   "shadowverse:NemesisPool": {
@@ -5390,7 +5390,7 @@
     "EXTENDED_DESCRIPTION": [
       "Basic",
       "Artifact",
-      "Eightsoul",
+      "Condemned",
       "Machina",
       "Manipulate",
       "Puppet",

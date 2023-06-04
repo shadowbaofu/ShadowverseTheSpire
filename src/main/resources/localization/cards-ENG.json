@@ -4742,15 +4742,15 @@
   },
   "shadowverse:Magachiyo": {
     "NAME": "Magachiyo, Barbed Convict",
-    "DESCRIPTION": "Condemned NL Deal !D! Damage. NL Add 1 to the number of cards played this turn.  NL If you played at least 4 cards in 3 or more rounds, gain 2 Strength and Dexterity and add plus !M! to Condemned Attack cards in hand.",
+    "DESCRIPTION": "Condemned NL Deal !D! Damage. NL Add 1 to the number of cards played this turn.  NL If you played at least 4 cards in a single turn for 3 or more turns, gain 2 Strength, 2 Dexterity and increase the damage and block of all Condemned Attack cards in hand by !M!.",
     "EXTENDED_DESCRIPTION": [
       " NL (You played 4 card for ",
-      " rounds. )"
+      " turns. )"
     ]
   },
   "shadowverse:LeafshadeAssassin": {
     "NAME": "Leafshade Assassin",
-    "DESCRIPTION": "Condemned NL Gain !B! Block. NL Add 1 to the number of cards played this turn. NL Whenever you play a card this  turn, if it's at least the 4th card you've played this turn, deal !M! damage to random enemy."
+    "DESCRIPTION": "Condemned NL Gain !B! Block. NL Add 1 to the number of cards played this turn. NL Whenever you play a card this turn, if it's at least the 4th card you've played this turn, deal !M! damage to random enemy."
   },
   "shadowverse:VerdantLieutenant": {
     "NAME": "Verdant Lieutenant",
@@ -4767,7 +4767,7 @@
   },
   "shadowverse:Wimael": {
     "NAME": "Wimael, Redolent Enforcer",
-    "DESCRIPTION": "Condemned / Retain NL Reduce the cost of this card by 1 whenever it is Retained.  NL When you draw this card, put copy of this card in your hand. NL Deal !D! damage. "
+    "DESCRIPTION": "Condemned / Retain NL Reduce the cost of this card by 1 whenever you play a Skill.  NL When you draw this card, put a copy of this card in your hand. It costs 0 this turn. NL Deal !D! damage. "
   },
   "shadowverse:BenevolentElf": {
     "NAME": "Benevolent Elf",

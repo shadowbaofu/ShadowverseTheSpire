@@ -1209,8 +1209,8 @@
   },
   "shadowverse:Minthe": {
     "NAME": "Minthe of the Underworld",
-    "DESCRIPTION": "Gain 20 Shadows. NL Lose 20 Shadows at the start of your next turn. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "Gain 20 Shadows. NL Lose 20 Shadows at the start of your next turn."
+    "DESCRIPTION": "Gain 20 Shadows. NL Whenever you perform Necromancy this turn, gain Shadows equal to the Necromancy cost. NL Lose 20 Shadows at the start of your next turn. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Gain 20 Shadows. NL Whenever you perform Necromancy this turn, gain Shadows equal to the Necromancy cost. NL Lose 20 Shadows at the start of your next turn."
   },
   "shadowverse:Fafnir": {
     "NAME": "Corpsewyrm Fafnir",

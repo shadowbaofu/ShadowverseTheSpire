@@ -207,7 +207,7 @@
       "NAMES": [
         "maneuver"
       ],
-      "DESCRIPTION": "Cards with #yManeuver can't be played from hand directly. If another Attack card with cost higher than the #yManeuver value is played while this card is in hand, the Attack card will lose its effects and #yExhaust, then this card can be played. If this card is #yExhaust , it will return the Attack card into your hand with 0 cost to play this turn."
+      "DESCRIPTION": "Cards with #yManeuver can't be played from hand directly. If another Attack card with a cost greater or equal than the #yManeuver value is played while this card is in hand, the Attack card will lose its effects and #yExhaust, then this card can be played. If this card is #yExhausted, the Attack card returns to your hand and costs 0 this turn."
     },
     {
       "PROPER_NAME": "Cannon Hermit Crab",

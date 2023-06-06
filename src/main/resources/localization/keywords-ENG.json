@@ -207,7 +207,7 @@
       "NAMES": [
         "maneuver"
       ],
-      "DESCRIPTION": "Cards with #yManeuver can't be played from hand directly. If another Attack card with cost higher than the #yManeuver value is played while this card is in hand, the Attack card will lose its effects and #yExhaust, then this card can be played. If this card is #yExhaust , it will return the Attack card into your hand with 0 cost to play this turn."
+      "DESCRIPTION": "Cards with #yManeuver can't be played directly. If another Attack card with cost equal or higher than the #yManeuver value is played while this card is in hand, the Attack card will lose its effects and #yExhaust, then this card can be played. If this card is #yExhausted, the Attack card returns to your hand and costs 0 this turn."
     },
     {
       "PROPER_NAME": "Cannon Hermit Crab",
@@ -231,7 +231,7 @@
         "skybound art",
         "skybound_art"
       ],
-      "DESCRIPTION": "#ySkybound #yArt effects activate if your turn number is equal to or greater than the #ySkybound #yArt value. Can be upgraded for multiple times, and each time the #ySkybound #yArt value of the cards decreases by 1."
+      "DESCRIPTION": "#ySkybound #yArt effects activate if your turn number is equal to or greater than the #ySkybound #yArt value. Can be upgraded multiple times, each time lowering the #ySkybound #yArt value by 1, allowing you to activate it sooner."
     },
     {
       "PROPER_NAME": "Super Skybound Art",
@@ -239,7 +239,7 @@
         "super skybound art",
         "super_skybound_art"
       ],
-      "DESCRIPTION": "#ySuper #ySkybound #yArt effects activate if your turn number is equal to or greater than the #ySuper #ySkybound #yArt value. Can be upgraded for multiple times, and each time the #ySuper #ySkybound #yArt value of the cards decreases by 1."
+      "DESCRIPTION": "#ySuper #ySkybound #yArt effects activate if your turn number is equal to or greater than the #ySuper #ySkybound #yArt value. Can be upgraded multiple times, each time lowering the #ySuper #ySkybound #yArt value by 1, allowing you to activate it sooner."
     },
     {
       "PROPER_NAME": "Rally",

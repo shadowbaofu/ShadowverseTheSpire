@@ -1063,7 +1063,7 @@
   },
   "shadowverse:Irya": {
     "NAME": "Illya, Queen of Night",
-    "DESCRIPTION": "Gain !B! Block. NL Gain the following effect: If you deal damage to yourself, gain 1 Strength and 1 Dexterity at the start of your next turn. If you are attacked and have any Block remaining, gain 4 Block at the start of your next turn. NL Union_Burst !M! Deal !D! damage and heal 3 HP."
+    "DESCRIPTION": "Gain !B! Block. NL Gain the following effect: If you deal damage to yourself, gain 1 Strength and 1 Dexterity at the start of your next turn. If you are attacked and have any Block remaining, gain 4 Block at the start of your next turn. NL Union_Burst !M!: Deal !D! damage and heal 3 HP."
   },
   "shadowverse:Kokkoro": {
     "NAME": "Kokkoro, Faithful Guide",
@@ -1799,7 +1799,7 @@
   },
   "shadowverse:FloodBehemoth": {
     "NAME": "Flood Behemoth",
-    "DESCRIPTION": "Gain !B! block. NL Whenever you are attacked this turn, deal !M! damage to all enemies."
+    "DESCRIPTION": "Gain !B! Block. NL Whenever you are attacked this turn, deal !M! damage to all enemies."
   },
   "shadowverse:BeastEmpress": {
     "NAME": "Nerea, Beast Empress",
@@ -1870,7 +1870,7 @@
   },
   "shadowverse:Neun": {
     "NAME": "Neun, Daybreak Vampire",
-    "DESCRIPTION": "Machina. NL Gain !B! Block. NL Destroy 1 card, then add 2 *Assembly *Droids to your hand. NL If you've played 10 or more Machina non-Skill cards in this combat, gain 2 Metallicize the next time you play a Machina card."
+    "DESCRIPTION": "Machina. NL Gain !B! Block. NL Destroy 1 card, then add 2 *Assembly *Droids to your hand. NL If you've played 10 or more Machina non-Skill cards in this combat, gain 2 Metallicize whenever you play a Machina card."
   },
   "shadowverse:CreepingMadness": {
     "NAME": "Creeping Madness",
@@ -1975,7 +1975,7 @@
   },
   "shadowverse:TerrorNight": {
     "NAME": "A Horrible Night",
-    "DESCRIPTION": "Discard 3 cards. Add 1 *The Nightmare Begins, *Bloody Claw and *Cursed Aura to your hand. NL If you've played another *A *Horrible *Night this combat, deal !D! damage to all enemies instead. NL Exhaust."
+    "DESCRIPTION": "Discard 3 cards. Add 1 *The *Nightmare *Begins, *Bloody *Claw and *Cursed *Aura to your hand. NL If you've played another *A *Horrible *Night this combat, deal !D! damage to all enemies instead. NL Exhaust."
   },
   "shadowverse:Urias": {
     "NAME": "Urias, Final Vampire",
@@ -3014,7 +3014,7 @@
   },
   "shadowverse:SunnyDayEncounter": {
     "NAME": "Sunny Day Encounter",
-    "DESCRIPTION": "Natura. NL Draw !M! Attack cards. NL If you have a Natura card in your hand, add 1 *Naterran *Great *Tree to your hand. NL Rally 7: Gain [E]. NL ",
+    "DESCRIPTION": "Natura. NL Add !M! Attack cards from the draw pile to your hand. NL If you have a Natura card in your hand, add 1 *Naterran *Great *Tree to your hand. NL Rally 7: Gain [E]. NL ",
     "EXTENDED_DESCRIPTION": [
       "(Rally: ",
       ")"
@@ -4417,7 +4417,7 @@
   },
   "shadowverse:Vanpi_Q": {
     "NAME": "Vania, Crimson Majesty",
-    "DESCRIPTION": "Gain !B! Block. NL Lose 1 HP and add a *Forest *Bat to your hand. NL All enemies lose 1 HP and gain 1 Temporary Strength. NL If Wrath or Vengeance is active, add a *Summon *Bloodkin to your hand, double the damage dealt by *Forest *Bats this turn, apply 2 layers of Poison to all enemies and all enemies lose 2 HP."
+    "DESCRIPTION": "Gain !B! Block. NL Lose 1 HP and add a *Forest *Bat to your hand. NL All enemies lose 1 HP and gain 1 Temporary Strength. NL If Wrath or Vengeance is active, add a *Summon *Bloodkin to your hand, double the damage dealt by *Forest *Bats this turn, apply 2 Poison to all enemies and all enemies lose 2 HP."
   },
   "shadowverse:Cerberus2": {
     "NAME": "Cerberus, Infernal Hound",
@@ -5046,7 +5046,7 @@
   },
   "shadowverse:Seox": {
     "NAME": "Seox, Heavenly Howl",
-    "DESCRIPTION": "Reduce Skybound_Art when upgraded. NL Deal !D! damage twice. NL Skybound_Art 3: Deal !D! damage 4 times. NL Super_Skybound_Art 6: Deal !D! damage 6 times.",
+    "DESCRIPTION": "Can be upgraded multiple times to lower Skybound_Art values. NL Deal !D! damage twice. NL Skybound_Art 3: Deal !D! damage 4 times. NL Super_Skybound_Art 6: Deal !D! damage 6 times.",
     "EXTENDED_DESCRIPTION": [
       "Deal !D! damage twice. NL Skybound_Art",
       ": Deal !D! damage 4 times. NL Super_Skybound_Art ",
@@ -5170,7 +5170,7 @@
   },
   "shadowverse:Vulgus": {
     "NAME": "Vulgus, Infernal Headmistress",
-    "DESCRIPTION": "Academic NL Gain !B! Block. NL Double next attack's damage if Vengeance is active. NL If your HP is above 50% of your max HP, set your HP to half your max HP. NL You cannot have more HP than that amount this combat. NL You do not take more than 30% of your max HP as damage at a time for the rest of combat."
+    "DESCRIPTION": "Academic NL Gain !B! Block. NL Your next attack damage is doubled if Vengeance is active. NL If your HP is above 50% of your Max HP, your HP becomes equal to half your Max HP. NL You cannot have more than half your Max HP this combat. NL You cannot take damage greater than 30% of your max HP at a time for the rest of this combat."
   },
   "shadowverse:Kira": {
     "NAME": "Kira, Resilient Maiden",

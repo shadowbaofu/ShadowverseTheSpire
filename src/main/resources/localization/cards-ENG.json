@@ -1905,7 +1905,7 @@
   },
   "shadowverse:Flauros": {
     "NAME": "Flauros",
-    "DESCRIPTION": "Gain !B! Block. NL Last_Words: Heal !M! HP when this card is played or Exhausted. NL Invocation: If you lose HP 4 or more times during your turn, add it to your hand and apply this card's effect."
+    "DESCRIPTION": "Gain !B! Block. NL Last_Words: Heal !M! HP when this card is played or Exhausted. NL Invocation: If you lose HP 4 or more times during your turn, add it to your hand and apply this card's effect at the end of your turn."
   },
   "shadowverse:DevilOfVengeance": {
     "NAME": "Devil of Vengeance",
@@ -2589,8 +2589,8 @@
   },
   "shadowverse:ShadowCommander": {
     "NAME": "Shadow Commander",
-    "DESCRIPTION": "Deal damage equal to the damage from target. NL Put 1 *Shadow *Soldier into your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Deal damage 2 times equal to the damage from target. NL Put 1 *Shadow *Soldier into your hand. NL Exhaust."
+    "DESCRIPTION": "If the enemy intends to attack, deal damage equal to their damage. NL Put 1 *Shadow *Soldier into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "If an enemy intends to attack, deal damage equal to twice their damage. NL Put 1 *Shadow *Soldier into your hand. NL Exhaust."
   },
   "shadowverse:ShadowSoldier": {
     "NAME": "Shadow Soldier",

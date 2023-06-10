@@ -560,9 +560,9 @@
   },
   "shadowverse:FortuneWell": {
     "NAME": "Fortune Well",
-    "FLAVOR": "你这井怎么不能井异画啊！",
+    "FLAVOR": "Why can't you make a different painting?!",
     "DESCRIPTIONS": [
-      "When picked up or battle 6 (8 with the first time) times, choose 1 rare card from 3 into your deck.",
+      "Upon pickup, obtain 1 rare card and additional card reward. At the end of your 8th combat after obtaining this relic, obtain 1 rare card. Every 6 combats afterward, obtain 1 rare card. ",
       "Choose a bonus card"
     ]
   }

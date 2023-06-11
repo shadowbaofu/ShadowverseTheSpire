@@ -3193,12 +3193,12 @@
   },
   "shadowverse:Cybercannoneer": {
     "NAME": "加农炮破坏者",
-    "DESCRIPTION": "机械 。 NL 造成 !D! 点伤害。 NL 爆能强化 2 \b将 !M! 张 *生产机械 置入手牌。"
+    "DESCRIPTION": "机械 。 NL 造成 !D! 点伤害。 NL 爆能强化 2 \b将 !M! 张 *生产器械 置入手牌。"
   },
   "shadowverse:StampedingFortress": {
     "NAME": "虐袭城塞",
     "DESCRIPTION": "机械 。 NL 造成 !D! 点伤害，获得 !B! 点 格挡 。",
-    "UPGRADE_DESCRIPTION": "机械 。 NL 打出后解除升级 。 NL 造成 !D! 点伤害，获得 !B! 点 格挡 。 NL 如果手牌中有其他 机械 牌，将 !M! 张 *生产机械 置入手牌。"
+    "UPGRADE_DESCRIPTION": "机械 。 NL 打出后解除升级 。 NL 造成 !D! 点伤害，获得 !B! 点 格挡 。 NL 如果手牌中有其他 机械 牌，将 !M! 张 *生产器械 置入手牌。"
   },
   "shadowverse:MeetTheLevinSisters": {
     "NAME": "雷维翁姐妹登场！",

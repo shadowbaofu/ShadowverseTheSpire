@@ -118,6 +118,7 @@ import shadowverse.cards.Witch.Spellboost1.*;
 import shadowverse.cards.Witch.Spellboost2.*;
 import shadowverse.characters.*;
 import shadowverse.events.*;
+import shadowverse.helper.AugmentHelper;
 import shadowverse.helper.ViewBanCardScreen;
 import shadowverse.monsters.*;
 import shadowverse.patch.CharacterSelectScreenPatches;
@@ -1485,6 +1486,9 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("Gawain", new Sfx(voicePath + "Gawain.wav"));
             reflectedMap.put("Weiss", new Sfx(voicePath + "Weiss.wav"));
             reflectedMap.put("DeathscytheHound",new Sfx(voicePath + "DeathscytheHound.wav"));
+        }
+        if (Loader.isModLoaded("CardAugments")) {
+            AugmentHelper.register();
         }
     }
 

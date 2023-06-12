@@ -14,10 +14,12 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
+import com.megacrit.cardcrawl.vfx.combat.LightningEffect;
 import com.megacrit.cardcrawl.vfx.combat.SweepingBeamEffect;
 import shadowverse.Shadowverse;
 import shadowverse.cards.AbstractAmuletCard;
 import shadowverse.cards.AbstractCrystalizeCard;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Bishop;
 import shadowverse.orbs.AmuletOrb;
 
@@ -65,6 +67,8 @@ public class HolyLightningBird
 
         }else {
             addToBot(new DamageAction(abstractMonster,new DamageInfo(p,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
+            if (!abstractMonster.isDeadOrEscaped())
+                addToBot(new VFXAction(new LightningEffect(abstractMonster.drawX, abstractMonster.drawY), 0.05F));
             int count = 0;
             for (AbstractCard c: AbstractDungeon.actionManager.cardsPlayedThisCombat){
                 if (c instanceof AbstractAmuletCard || (c instanceof AbstractCrystalizeCard && c.type==CardType.POWER)){
@@ -73,6 +77,9 @@ public class HolyLightningBird
             }
             if (count >= 5){
                 addToBot(new GainEnergyAction(1));
+            }
+            if (EnergyPanel.getCurrentEnergy() < 4){
+                addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
             }
         }
     }

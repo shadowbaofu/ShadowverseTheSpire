@@ -1446,7 +1446,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("Arka", new Sfx(voicePath + "Arka.wav"));
             reflectedMap.put("Vulgus", new Sfx(voicePath + "Vulgus.wav"));
             reflectedMap.put("PureflowerMaiden", new Sfx(voicePath + "PureflowerMaiden.wav"));
-            reflectedMap.put("PureflowerMaidenpPower", new Sfx(voicePath + "PureflowerMaidenPower.wav"));
+            reflectedMap.put("PureflowerMaidenPower", new Sfx(voicePath + "PureflowerMaidenPower.wav"));
             reflectedMap.put("Kira", new Sfx(voicePath + "Kira.wav"));
             reflectedMap.put("Verdilia", new Sfx(voicePath + "Verdilia.wav"));
             reflectedMap.put("CyclicalGuidance", new Sfx(voicePath + "CyclicalGuidance.wav"));
@@ -1486,6 +1486,10 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("Gawain", new Sfx(voicePath + "Gawain.wav"));
             reflectedMap.put("Weiss", new Sfx(voicePath + "Weiss.wav"));
             reflectedMap.put("DeathscytheHound",new Sfx(voicePath + "DeathscytheHound.wav"));
+            reflectedMap.put("DiamondMaster", new Sfx(voicePath + "DiamondMaster.wav"));
+            reflectedMap.put("LegendSwordCommander", new Sfx(voicePath + "LegendSwordCommander.wav"));
+            reflectedMap.put("JudgementSpearMaster", new Sfx(voicePath + "JudgementSpearMaster.wav"));
+            reflectedMap.put("JudgementSpearMaster_Acc", new Sfx(voicePath + "JudgementSpearMaster_Acc.wav"));
         }
         if (Loader.isModLoaded("CardAugments")) {
             AugmentHelper.register();
@@ -2638,6 +2642,9 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard(new Gawain());
         BaseMod.addCard(new Weiss());
         BaseMod.addCard(new DeathscytheHound());
+        BaseMod.addCard(new PinionPrayer());
+        BaseMod.addCard(new JudgmentSpearMaster());
+        BaseMod.addCard(new HolyLightningBird());
         logger.info("Success");
     }
 

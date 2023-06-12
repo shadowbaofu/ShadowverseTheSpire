@@ -4857,7 +4857,7 @@
     "DESCRIPTION": "八狱 NL 获得「每当 葬送 时，对全体敌人造成10点伤害。(一回合上限3次)」效果。 NL 葬送 2张牌 ， 亡者召还 1,2 。 NL 虚无 。",
     "UPGRADE_DESCRIPTION":"八狱 NL 获得「每当 葬送 时，对全体敌人造成10点伤害。(一回合上限3次)」效果。 NL 葬送 2张牌 ， 亡者召还 1,2 。"
   },
-  "shadowverse:DeathScytheHound": {
+  "shadowverse:DeathscytheHound": {
     "NAME": "死镰猎犬",
     "DESCRIPTION": "对全体敌人造成 !D! 点伤害。 NL 死灵术 8 再造成一次伤害。"
   },
@@ -5435,5 +5435,18 @@
       "增幅1",
       "增幅2"
     ]
+  },
+  "shadowverse:PinionPrayer": {
+    "NAME": "吟唱：白翼祈祷",
+    "DESCRIPTION": "倒计时 2 NL 增加1张 *神圣猎鹰 到手中。",
+    "UPGRADE_DESCRIPTION":"倒计时 2 NL 增加1张 *神圣猎鹰+ 到手中。"
+  },
+  "shadowverse:JudgmentSpearMaster": {
+    "NAME": "审判之圣枪执行者",
+    "DESCRIPTION": "结晶 1 · 倒计时 1 NL 本回合耗能变为0返回手中。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL 获得 !B! 点 格挡 。"
+  },
+  "shadowverse:HolyLightningBird": {
+    "NAME": "雷导神鸟",
+    "DESCRIPTION": "结晶 0 · 倒计时 1 NL 获得 !M! 点能量。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL 如果本场战斗已打出5张以上拥有倒数的护符，获得1点能量。"
   }
 }

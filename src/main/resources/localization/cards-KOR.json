@@ -4858,7 +4858,7 @@
     "DESCRIPTION": "팔옥 NL 「장송할때마다 모든 적에게 피해를 10 준다(1턴에 3번까지)」의 효과를 얻는다. NL 장송 2: 소생 1,2. NL 소멸.",
     "UPGRADE_DESCRIPTION":"팔옥 NL 「장송할때마다 모든 적에게 피해를 10 준다(1턴에 3번까지)」의 효과를 얻는다. NL 장송 2: 소생 1,2."
   },
-  "shadowverse:DeathScytheHound": {
+  "shadowverse:DeathscytheHound": {
     "NAME": "데스사이즈 하운드",
     "DESCRIPTION": "적 전체에게 피해를 !D! 준다. NL 사령술 8 반복한다."
   },
@@ -5437,7 +5437,20 @@
       "기계",
       "자연",
       "주문증폭1",
-      "增幅2"
+      "주문증폭2"
     ]
+  },
+  "shadowverse:PinionPrayer": {
+    "NAME": "영창:신조를 부르는 피리",
+    "DESCRIPTION": "카운트다운 2: *신성한 *매 1장을 얻습니다.",
+    "UPGRADE_DESCRIPTION": "카운트다운 2: *신성한 *매+ 1장을 얻습니다."
+  },
+  "shadowverse:JudgmentSpearMaster": {
+    "NAME": "심판의 창을 다루는 자",
+    "DESCRIPTION": "결정화 1: 카운트다운 1: 이 카드를 손에 넣고 그 비용을 0으로 합니다. NL NL --------------------- NL NL 피해를 !D! 줍니다. NL 방어도를 !B! 얻습니다. "
+  },
+  "shadowverse:HolyLightningBird": {
+    "NAME": "雷導の神鳥",
+    "DESCRIPTION": "결정화 0: 카운트다운 1: NL エナジー !M! を得る。 NL  NL --------------------- NL  NL 피해를 !D! 줍니다. NL  카운트다운 마법진을 5장 이상 사용했다면, エナジー1を得る。"
   }
 }

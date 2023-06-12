@@ -1,4 +1,4 @@
- package shadowverse.cards.Bishop.Amulet2;
+ package shadowverse.cards.Bishop.Amulet1;
  
 
 

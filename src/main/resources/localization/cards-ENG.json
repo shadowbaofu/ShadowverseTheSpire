@@ -4862,7 +4862,7 @@
     "DESCRIPTION": "Condemned NL Gain the following effect: Whenever you perform Burial_Rite, deal 10 damage to all enemies (up to 3 times per turn). NL Burial_Rite 2: Reanimate 1 and Reanimate 2. NL Banish. ",
     "UPGRADE_DESCRIPTION":"Condemned NL Gain the following effect: Whenever you perform Burial_Rite, deal 10 damage to all enemies (up to 3 times per turn). NL Burial_Rite 2: Reanimate 1 and Reanimate 2. "
   },
-  "shadowverse:DeathScytheHound": {
+  "shadowverse:DeathscytheHound": {
     "NAME": "Deathscythe Hound",
     "DESCRIPTION": "Deal !D! Damage to all enemies. NL Necromancy 8: Repeat the previous effect once. "
   },
@@ -5442,5 +5442,18 @@
       "Spellboost1",
       "Spellboost2"
     ]
+  },
+  "shadowverse:PinionPrayer": {
+    "NAME": "Pinion Prayer",
+    "DESCRIPTION": "Countdown 2: Add a *Holy *Falcon to your hand.",
+    "UPGRADE_DESCRIPTION": "Countdown 2: Add a *Holy *Falcon+ to your hand."
+  },
+  "shadowverse:JudgmentSpearMaster": {
+    "NAME": "Master Adjudicator",
+    "DESCRIPTION": "Crystallize 1: Countdown 1: Return this card to your hand and change its cost to 0. NL NL --------------------- NL NL Deal !D! damage. NL Gain !B! Block ."
+  },
+  "shadowverse:HolyLightningBird": {
+    "NAME": "Holy Lighting Bird",
+    "DESCRIPTION": "Crystallize 0: Countdown 1: 1 Gain !M! energy. NL  NL --------------------- NL  NL Deal !D! Damage. NL If you have played 5 or more amulets with Countdown, gain 1 energy."
   }
 }

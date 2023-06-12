@@ -68,9 +68,9 @@ public class VampirePool  extends AbstractBanPool {
         BanGroup Bat = new BanGroup("OldBloodKing");
         BanGroup Evolve = new BanGroup("Signa");
         BanGroup NatMech = new BanGroup("Mono");
-        BanGroup Self = new BanGroup("Garodeth");
+        BanGroup Self = new BanGroup("OmenOfLust");
         BanGroup Vengeance = new BanGroup("SexyVampire");
-        BanGroup Wrath = new BanGroup("OmenOfLust");
+        BanGroup Wrath = new BanGroup("Garodeth");
         Default.addCard(new AdherentOfDesire());
         Default.addCard(new Aluzard());
         Default.addCard(new Baal());

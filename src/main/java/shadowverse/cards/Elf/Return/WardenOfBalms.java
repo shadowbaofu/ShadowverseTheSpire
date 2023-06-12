@@ -63,9 +63,6 @@ public class WardenOfBalms extends CustomCard {
             addToBot(new GainBlockAction(p, this.block));
             addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(this.magicNumber, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE, true));
             addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(this.magicNumber, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE, true));
-            if (EnergyPanel.getCurrentEnergy() < 6){
-                addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
-            }
         }
     }
 

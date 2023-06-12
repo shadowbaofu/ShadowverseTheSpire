@@ -1,9 +1,12 @@
-package shadowverse.cards.Bishop.Evil;
+package shadowverse.cards.Bishop.Amulet2;
 
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -11,31 +14,34 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
+import com.megacrit.cardcrawl.vfx.combat.SweepingBeamEffect;
 import shadowverse.Shadowverse;
+import shadowverse.cards.AbstractAmuletCard;
 import shadowverse.cards.AbstractCrystalizeCard;
-import shadowverse.cards.Neutral.Curse.Indulgence;
 import shadowverse.characters.Bishop;
 import shadowverse.orbs.AmuletOrb;
 
-public class DirtyPriest
+public class HolyLightningBird
         extends CustomCard implements AbstractCrystalizeCard {
-    public static final String ID = "shadowverse:DirtyPriest";
-    public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:DirtyPriest");
+    public static final String ID = "shadowverse:HolyLightningBird";
+    public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:HolyLightningBird");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String IMG_PATH = "img/cards/DirtyPriest.png";
+    public static final String IMG_PATH = "img/cards/HolyLightningBird.png";
 
-    public DirtyPriest() {
-        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.COMMON, CardTarget.SELF);
-        this.baseBlock = 12;
-        this.cardsToPreview = new Indulgence();
+    public HolyLightningBird() {
+        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.RARE, CardTarget.ENEMY);
+        this.baseDamage = 20;
+        this.baseMagicNumber = 1;
+        this.magicNumber = this.baseMagicNumber;
     }
 
 
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBlock(3);
+            upgradeDamage(8);
+            upgradeMagicNumber(1);
         }
     }
 
@@ -56,28 +62,34 @@ public class DirtyPriest
 
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
         if (this.type==CardType.POWER && this.costForTurn == 0){
-            addToBot(new SFXAction("DirtyPriest_Acc"));
+
         }else {
-            addToBot(new SFXAction("DirtyPriest"));
-            addToBot(new GainBlockAction(p,this.block));
-            addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
-            addToBot(new MakeTempCardInDrawPileAction(this.cardsToPreview,1,true,true,false));
-            addToBot(new MakeTempCardInDiscardAction(this.cardsToPreview,1));
+            addToBot(new DamageAction(abstractMonster,new DamageInfo(p,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
+            int count = 0;
+            for (AbstractCard c: AbstractDungeon.actionManager.cardsPlayedThisCombat){
+                if (c instanceof AbstractAmuletCard || (c instanceof AbstractCrystalizeCard && c.type==CardType.POWER)){
+                    count++;
+                }
+            }
+            if (count >= 5){
+                addToBot(new GainEnergyAction(1));
+            }
         }
     }
 
 
     public AbstractCard makeCopy() {
-        return (AbstractCard) new DirtyPriest();
+        return (AbstractCard) new HolyLightningBird();
     }
 
     @Override
     public void onStartOfTurn(AmuletOrb paramOrb) {
-        addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
+
     }
 
     @Override
     public void onEvoke(AmuletOrb paramOrb) {
+        addToBot(new GainEnergyAction(this.magicNumber));
     }
 
     @Override
@@ -91,6 +103,7 @@ public class DirtyPriest
 
     @Override
     public void onOtherCardPlayed(AbstractCard c, AmuletOrb paramOrb) {
+
     }
 
     @Override
@@ -100,7 +113,7 @@ public class DirtyPriest
 
     @Override
     public int returnCountDown() {
-        return 2;
+        return 1;
     }
 }
 

@@ -64,9 +64,6 @@ public class ImpiousBishop
             addToBot(new ApplyPowerAction(p,p,new NextTurnBlockPower(p,this.block),this.block));
             addToBot(new HealAction(p,p,3));
             addToBot(new MakeTempCardInDiscardAction(this.cardsToPreview,2));
-            if (EnergyPanel.getCurrentEnergy() < 4){
-                addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
-            }
         }
     }
 

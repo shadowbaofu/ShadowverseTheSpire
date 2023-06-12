@@ -1,8 +1,9 @@
-package shadowverse.cards.Bishop.Default;
+package shadowverse.cards.Bishop.Amulet2;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.*;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -13,26 +14,26 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
-import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import shadowverse.Shadowverse;
 import shadowverse.cards.AbstractCrystalizeCard;
 import shadowverse.characters.Bishop;
 import shadowverse.orbs.AmuletOrb;
 import shadowverse.orbs.Minion;
 
-public class PrimalShipwright
+public class JudgmentSpearMaster
         extends CustomCard implements AbstractCrystalizeCard {
-    public static final String ID = "shadowverse:PrimalShipwright";
-    public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:PrimalShipwright");
+    public static final String ID = "shadowverse:JudgmentSpearMaster";
+    public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:JudgmentSpearMaster");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String IMG_PATH = "img/cards/PrimalShipwright.png";
+    public static final String IMG_PATH = "img/cards/JudgmentSpearMaster.png";
     public boolean crystalize;
 
-    public PrimalShipwright() {
-        super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.UNCOMMON, CardTarget.ENEMY);
-        this.baseDamage = 0;
-        this.baseMagicNumber = 3;
+    public JudgmentSpearMaster() {
+        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.UNCOMMON, CardTarget.ENEMY);
+        this.baseDamage = 15;
+        this.baseBlock = 8;
+        this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
     }
 
@@ -40,7 +41,8 @@ public class PrimalShipwright
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeMagicNumber(2);
+            upgradeDamage(5);
+            upgradeBlock(2);
         }
     }
 
@@ -48,32 +50,15 @@ public class PrimalShipwright
     public void update() {
         if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT&&
                 Shadowverse.Accelerate(this)&&!this.crystalize){
-            setCostForTurn(0);
+            setCostForTurn(1);
             this.type = CardType.POWER;
         }else {
             if (this.type==CardType.POWER){
-                setCostForTurn(3);
+                setCostForTurn(2);
                 this.type = CardType.ATTACK;
             }
         }
         super.update();
-    }
-
-    public int rally() {
-        int rally = 0;
-
-        for (AbstractOrb o : AbstractDungeon.actionManager.orbsChanneledThisCombat) {
-            if (o instanceof Minion) {
-                rally++;
-            }
-        }
-
-        for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisCombat) {
-            if (c.type == CardType.ATTACK && !(c.hasTag(CardTags.STRIKE))) {
-                rally++;
-            }
-        }
-        return rally;
     }
 
     public void onMoveToDiscard() {
@@ -83,38 +68,20 @@ public class PrimalShipwright
         applyPowers();
     }
 
-    @Override
-    public void applyPowers() {
-        super.applyPowers();
-        int realBaseDamage = this.baseDamage;
-        this.baseDamage = rally() * this.magicNumber;
-        super.applyPowers();
-        this.baseDamage = realBaseDamage;
-        this.isDamageModified = (this.damage != this.baseDamage);
-    }
-
-    public void calculateCardDamage(AbstractMonster mo) {
-        int realBaseDamage = this.baseDamage;
-        this.baseDamage = rally() * this.magicNumber;
-        super.calculateCardDamage(mo);
-        this.baseDamage = realBaseDamage;
-        this.isDamageModified = (this.damage != this.baseDamage);
-    }
-
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
-        if (this.type==CardType.POWER && this.costForTurn == 0){
-            addToBot(new SFXAction("PrimalShipwright_Acc"));
+        if (this.type==CardType.POWER && this.costForTurn == 1){
+            addToBot(new SFXAction("JudgmentSpearMaster_Acc"));
         }else {
             this.crystalize = false;
-            addToBot(new SFXAction("PrimalShipwright"));
-            calculateCardDamage(abstractMonster);
-            addToBot(new DamageAction(abstractMonster, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+            addToBot(new SFXAction("JudgmentSpearMaster"));
+            addToBot(new GainBlockAction(p,this.block));
+            addToBot(new DamageAction(abstractMonster, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         }
     }
 
 
     public AbstractCard makeCopy() {
-        return (AbstractCard) new PrimalShipwright();
+        return (AbstractCard) new JudgmentSpearMaster();
     }
 
     @Override
@@ -128,7 +95,7 @@ public class PrimalShipwright
             c.upgrade();
         c.setCostForTurn(0);
         c.type = CardType.ATTACK;
-        ((PrimalShipwright)c).crystalize = true;
+        ((JudgmentSpearMaster)c).crystalize = true;
         AbstractDungeon.player.hand.addToTop(c);
     }
 
@@ -152,7 +119,7 @@ public class PrimalShipwright
 
     @Override
     public int returnCountDown() {
-        return 3;
+        return 1;
     }
 }
 

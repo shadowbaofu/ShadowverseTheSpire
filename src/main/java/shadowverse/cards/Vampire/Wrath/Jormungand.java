@@ -1,4 +1,4 @@
-package shadowverse.cards.Vampire.Self;
+package shadowverse.cards.Vampire.Wrath;
 
 
 import basemod.abstracts.CustomCard;

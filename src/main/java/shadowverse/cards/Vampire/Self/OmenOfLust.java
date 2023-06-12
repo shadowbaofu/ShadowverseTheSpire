@@ -1,4 +1,4 @@
-package shadowverse.cards.Vampire.Wrath;
+package shadowverse.cards.Vampire.Self;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;

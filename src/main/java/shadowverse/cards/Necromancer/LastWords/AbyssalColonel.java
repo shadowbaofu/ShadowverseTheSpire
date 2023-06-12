@@ -72,9 +72,6 @@ public class AbyssalColonel
         } else {
             addToBot(new GainBlockAction(abstractPlayer, this.block));
             addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
-            if (EnergyPanel.getCurrentEnergy() < 8){
-                addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
-            }
         }
     }
 

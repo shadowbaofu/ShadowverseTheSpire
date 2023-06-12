@@ -4861,7 +4861,7 @@
     "DESCRIPTION": "八獄 NL 自分は「 葬送 する度、敵全体に10ダメージを与える(上限は1ターンに3回)」を持つ。 NL カード2枚を 葬送 し、 リアニメイト 1、2。 NL エセリアル 。",
     "UPGRADE_DESCRIPTION":"八獄 NL 自分は「 葬送 する度、敵全体に10ダメージを与える(上限は1ターンに3回)」を持つ。 NL カード2枚を 葬送 し、 リアニメイト 1、2。"
   },
-  "shadowverse:DeathScytheHound": {
+  "shadowverse:DeathscytheHound": {
     "NAME": "デスサイズハウンド",
     "DESCRIPTION": "敵全体に !D! ダメージを与える。 NL ネクロマンス 8 もう一回ダメージを与える。"
   },
@@ -5442,5 +5442,18 @@
       "スペル1",
       "スペル2"
     ]
+  },
+  "shadowverse:PinionPrayer": {
+    "NAME": "詠唱：白翼への祈り",
+    "DESCRIPTION": "カウントダウン 2 NL *ホーリーファルコン を1枚手札に加える。",
+    "UPGRADE_DESCRIPTION":"カウントダウン 2 NL *ホーリーファルコン+ を1枚手札に加える。"
+  },
+  "shadowverse:JudgmentSpearMaster": {
+    "NAME": "ジャッジメントスピアマスター",
+    "DESCRIPTION": "結晶 1 · カウントダウン 1 NL これを手札に加え、このターンこれのコストは0。 NL  NL --------------------- NL  NL !D! ダメージを与える。 NL !B! ブロック を得る。"
+  },
+  "shadowverse:HolyLightningBird": {
+    "NAME": "雷導の神鳥",
+    "DESCRIPTION": "結晶 0 · カウントダウン 1 NL エナジー !M! を得る。 NL  NL --------------------- NL  NL !D! ダメージを与える。 NL この戦闘中に カウントダウン を持つアミュレットを5枚以上プレイしていたなら、エナジー1を得る。"
   }
 }

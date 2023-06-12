@@ -1,4 +1,4 @@
-package shadowverse.cards.Bishop.Amulet2;
+package shadowverse.cards.Bishop.Amulet1;
 
 import basemod.abstracts.CustomCard;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.MoveCardsAction;

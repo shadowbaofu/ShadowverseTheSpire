@@ -1,10 +1,14 @@
 package shadowverse.cards.Neutral.Temp;
 
 import basemod.abstracts.CustomCard;
+import com.evacipated.cardcrawl.mod.stslib.powers.abstracts.TwoAmountPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -16,6 +20,7 @@ import shadowverse.cards.AbstractNoCountDownAmulet;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.orbs.AmuletOrb;
 import shadowverse.powers.NaterranTree;
+import shadowverse.powers.UnerielPower;
 
 public class NaterranGreatTree
         extends CustomCard implements AbstractNoCountDownAmulet {
@@ -58,6 +63,13 @@ public class NaterranGreatTree
             addToBot(new DrawCardAction(abstractPlayer, this.magicNumber));
             if (AbstractDungeon.player instanceof AbstractShadowversePlayer) {
                 ((AbstractShadowversePlayer) AbstractDungeon.player).amuletCount++;
+            }
+            if (AbstractDungeon.player.hasPower(UnerielPower.POWER_ID)){
+                AbstractPower uPower = AbstractDungeon.player.getPower(UnerielPower.POWER_ID);
+                for (int i = 0; i < uPower.amount; i++){
+                    AbstractDungeon.actionManager.addToBottom(new SFXAction("UnerielPower2"));
+                    AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(AbstractDungeon.player, DamageInfo.createDamageMatrix(((TwoAmountPower)uPower).amount2, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE, true));
+                }
             }
         }
     }

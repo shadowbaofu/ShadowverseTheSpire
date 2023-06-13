@@ -87,6 +87,7 @@ public class BishopPool extends AbstractBanPool {
         Default.addCard(new SummitTemple());
         Default.addCard(new ThemisDecree());
         Default.addCard(new TheStrength());
+        Default.addCard(new SacredPlea());
         Amulet1.addCard(new Agnes());
         Amulet1.addCard(new AngelRat());
         Amulet1.addCard(new Charaton());
@@ -106,7 +107,6 @@ public class BishopPool extends AbstractBanPool {
         Amulet2.addCard(new GodLovingSmite());
         Amulet2.addCard(new HallowedDogma());
         Amulet2.addCard(new Jatelant());
-        Amulet2.addCard(new SacredPlea());
         Amulet2.addCard(new Saren(0));
         Amulet2.addCard(new Selena());
         Amulet2.addCard(new SkullFane());

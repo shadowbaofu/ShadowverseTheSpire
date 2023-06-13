@@ -1684,7 +1684,7 @@
       " 번 반복한다. "
     ]
   },
-  "shadowverse:BenevolentElf": {
+  "shadowverse:BenevolentElfPower": {
     "NAME": "베네딕션 엘프",
     "DESCRIPTIONS": [
       "이번 턴 종료시 체력이 6 이하인 모든 적을 소멸시킵니다. 내 체력이 최대치라면, 6 대신 18 이하인 적까지 소멸시킵니다."

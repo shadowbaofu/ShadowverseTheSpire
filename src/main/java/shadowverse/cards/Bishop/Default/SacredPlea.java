@@ -1,4 +1,4 @@
-package shadowverse.cards.Bishop.Amulet2;
+package shadowverse.cards.Bishop.Default;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;

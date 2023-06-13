@@ -1684,7 +1684,7 @@
       " 次。"
     ]
   },
-  "shadowverse:BenevolentElf": {
+  "shadowverse:BenevolentElfPower": {
     "NAME": "恩眷精灵",
     "DESCRIPTIONS": [
       "本回合结束时，消灭所有生命值为 #b6 以下的敌人。如果你的生命值为最大生命值，改为消灭生命值为 #b18 以下的敌人。"

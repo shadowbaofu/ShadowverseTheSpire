@@ -1684,7 +1684,7 @@
       " 回行う。"
     ]
   },
-  "shadowverse:BenevolentElf": {
+  "shadowverse:BenevolentElfPower": {
     "NAME": "ベネディクションエルフ",
     "DESCRIPTIONS": [
       "ターン終了時、HPが #b6 以下の敵を即死させる。自分のHPが最大値なら、6ではなく #b18 。"

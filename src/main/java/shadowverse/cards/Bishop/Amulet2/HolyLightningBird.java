@@ -78,7 +78,7 @@ public class HolyLightningBird
             if (count >= 5){
                 addToBot(new GainEnergyAction(1));
             }
-            if (EnergyPanel.getCurrentEnergy() < 4){
+            if (this.type == CardType.POWER){
                 addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
             }
         }

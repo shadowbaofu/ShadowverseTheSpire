@@ -3856,7 +3856,7 @@
   },
   "shadowverse:ShadowCorrosion": {
     "NAME": "그림자의 잠식",
-    "DESCRIPTION": "자연. NL 상대에게 이하의 효과를 부여합니다 : 턴 시작시, 이번 전투에서 사용된 *나테라의 *신목 3배에 해당하는 생명력을 잃습니다. NL 이미 이 효과를 가지고 있었다면 대신 즉시 그만큼 피해를 입힙니다. NL 소멸."
+    "DESCRIPTION": "자연. NL 상대에게 이하의 효과를 부여합니다 : 턴 시작시, 이번 전투에서 사용된 *나테라의 *신목 4배에 해당하는 생명력을 잃습니다. NL 이미 이 효과를 가지고 있었다면 대신 즉시 그만큼 피해를 입힙니다. NL 소멸."
   },
   "shadowverse:Valdain": {
     "NAME": "저주받은 그림자 바이디",
@@ -4558,7 +4558,7 @@
   },
   "shadowverse:MasqueradeGhost": {
     "NAME": "마스커레이드 고스트",
-    "DESCRIPTION": "피해를 !D! 주고, *유령 1장을 얻습니다. NL 이번 턴 *유령 의 피해량이  !M! 증가하고, 소멸시킬 때마다 *자이언트 *고스트 를 얻습니다. NL 유언 : 다음 턴 시작에 비용이 0이고 유언이 없는 *마스커레이드 *고스트 를 얻습니다. NL 소멸"
+    "DESCRIPTION": "피해를 !D! 주고, *유령 1장을 얻습니다. NL 이번 턴 *유령 의 피해량이  !M! 증가하고, 소멸시킬 때마다 *자이언트 *고스트 를 얻습니다. NL 유언 : 다음 턴 시작에 비용이 0이고 유언이 없는 *마스커레이드 *고스트 를 얻습니다."
   },
   "shadowverse:MasqueradeGhost_Copy": {
     "NAME": "마스커레이드 고스트",
@@ -5452,5 +5452,23 @@
   "shadowverse:HolyLightningBird": {
     "NAME": "雷導の神鳥",
     "DESCRIPTION": "결정화 0: 카운트다운 1: NL エナジー !M! を得る。 NL  NL --------------------- NL  NL 피해를 !D! 줍니다. NL  카운트다운 마법진을 5장 이상 사용했다면, エナジー1を得る。"
+  },
+  "shadowverse:DragonWarrior": {
+    "NAME": "龙族勇士",
+    "DESCRIPTION": "造成 !D! 点伤害。",
+    "UPGRADE_DESCRIPTION":"造成 !D! 点伤害。 NL 再造成 !M! 点伤害。"
+  },
+  "shadowverse:DragonOracle": {
+    "NAME": "龙之启示",
+    "DESCRIPTION": "获得1点觉醒值。 NL 下回合获得 [E] 。 NL 如果已 觉醒 ，额外抽 !M! 张牌。",
+    "UPGRADE_DESCRIPTION":"获得1点觉醒值。 NL 下回合获得 [E] [E] 。 NL 如果已 觉醒 ，额外抽 !M! 张牌。"
+  },
+  "shadowverse:Strike_D": {
+    "NAME": "打击",
+    "DESCRIPTION": "造成 !D! 点伤害。"
+  },
+  "shadowverse:Defend_D": {
+    "NAME": "防御",
+    "DESCRIPTION": "获得 !B! 点 格挡 。"
   }
 }

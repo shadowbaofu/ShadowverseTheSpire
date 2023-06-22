@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 import shadowverse.cards.Bishop.Amulet1.*;
 import shadowverse.cards.Bishop.MechLion.*;
+import shadowverse.cards.Dragon.Armed.Rola;
 import shadowverse.cards.Elf.NatMech.MachineClaw;
 import shadowverse.cards.Elf.NatMech.AvatarOfFruition;
 import shadowverse.cards.Elf.NatMech.GuardOfMachinatree;

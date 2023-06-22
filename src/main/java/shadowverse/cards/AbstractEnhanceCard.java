@@ -2,6 +2,7 @@ package shadowverse.cards;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -61,7 +62,7 @@ public abstract class AbstractEnhanceCard extends CustomCard {
                 this.exFreeOnce = this.freeToPlayOnce;
                 setCostForTurn(enhanceCost);
             } else {
-                if (this.ex > 0){
+                if (this.ex > 0) {
                     setCostForTurn(baseCost);
                     this.cost = this.exCost;
                     this.costForTurn = this.exCostForTurn;
@@ -70,6 +71,16 @@ public abstract class AbstractEnhanceCard extends CustomCard {
                 this.ex = 0;
             }
         }
+    }
+
+    @Override
+    public AbstractCard makeStatEquivalentCopy() {
+        AbstractEnhanceCard c = (AbstractEnhanceCard) super.makeStatEquivalentCopy();
+        c.exCost = this.exCost;
+        c.exCostForTurn = this.exCostForTurn;
+        c.exFreeOnce = this.exFreeOnce;
+        c.ex = this.ex;
+        return c;
     }
 
     @Override

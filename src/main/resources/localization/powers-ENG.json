@@ -1295,7 +1295,7 @@
     "NAME": "Shadow's Corrosion",
     "DESCRIPTIONS": [
       "At the start of turn, lose #b",
-      " HP. Whenever you play #b1 #yNaterran #yGreat #yTree, + #b3 damage."
+      " HP. Whenever you play #b1 #yNaterran #yGreat #yTree, + #b4 damage."
     ]
   },
   "shadowverse:DualbladePower": {
@@ -1842,6 +1842,18 @@
     "NAME": "Weiss, Discerning Professor",
     "DESCRIPTIONS": [
       "Immune to all Debuffs this turn. Enemies will not gain Buffs this turn."
+    ]
+  },
+  "shadowverse:OverflowPower": {
+    "NAME": "未觉醒",
+    "DESCRIPTIONS": [
+      "觉醒值达到3时进入觉醒状态，回合开始时获得 [E] 。当前觉醒值 #b",
+      " /3。",
+      "回合开始时获得 [E] 。 觉醒值达到3时进入完全觉醒状态，回合开始时获得 [E] [E] 。 当前觉醒值 #b",
+      " /3。",
+      "回合开始时获得 [E] [E] 。",
+      "觉醒",
+      "完全觉醒"
     ]
   }
 }

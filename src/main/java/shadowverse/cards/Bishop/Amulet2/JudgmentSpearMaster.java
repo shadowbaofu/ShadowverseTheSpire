@@ -80,7 +80,7 @@ public class JudgmentSpearMaster
             addToBot(new SFXAction("JudgmentSpearMaster"));
             addToBot(new GainBlockAction(p,this.block));
             addToBot(new DamageAction(abstractMonster, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-            if (EnergyPanel.getCurrentEnergy() < 4 && this.costForTurn > 0){
+            if (this.type == CardType.POWER){
                 addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
             }
         }

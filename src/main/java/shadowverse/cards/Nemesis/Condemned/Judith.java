@@ -72,6 +72,8 @@ public class Judith extends CustomCard {
                 setCostForTurn(2);
             }else if (Shadowverse.Enhance(1)){
                 setCostForTurn(1);
+            } else {
+                setCostForTurn(0);
             }
         }
         else {

@@ -3858,7 +3858,7 @@
   },
   "shadowverse:ShadowCorrosion": {
     "NAME": "Shadow's Corrosion",
-    "DESCRIPTION": "Natura. NL Apply the following effect to an enemy: At the start of your turn, lose HP equal to triple the number of played *Naterran *Great *Trees played this combat. NL If the enemy already has this effect, deal the same amount of damage directly instead. NL Exhaust."
+    "DESCRIPTION": "Natura. NL Apply the following effect to an enemy: At the start of your turn, lose HP equal to quadruple the number of played *Naterran *Great *Trees played this combat. NL If the enemy already has this effect, deal the same amount of damage directly instead. NL Exhaust."
   },
   "shadowverse:Valdain": {
     "NAME": "Valdain, Cursed Shadow",
@@ -4560,7 +4560,7 @@
   },
   "shadowverse:MasqueradeGhost": {
     "NAME": "Masquerade Ghost",
-    "DESCRIPTION": "Deal !D! damage and put a *Ghost into your hand. NL Until the end of this turn, *Ghosts deal !M! additional damage. NL Until the end of this turn, whenever a *Ghost is exhausted, add a *Gargantuan *Ghost to your hand. NL Last_Words: At the start of your next turn, put a 0 cost *Masquerade *Ghost without Last_Words into your hand. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage and put a *Ghost into your hand. NL Until the end of this turn, *Ghosts deal !M! additional damage. NL Until the end of this turn, whenever a *Ghost is exhausted, add a *Gargantuan *Ghost to your hand. NL Last_Words: At the start of your next turn, put a 0 cost *Masquerade *Ghost without Last_Words into your hand."
   },
   "shadowverse:MasqueradeGhost_Copy": {
     "NAME": "Masquerade Ghost",
@@ -5455,5 +5455,23 @@
   "shadowverse:HolyLightningBird": {
     "NAME": "Holy Lighting Bird",
     "DESCRIPTION": "Crystallize 0: Countdown 1: 1 Gain !M! energy. NL  NL --------------------- NL  NL Deal !D! Damage. NL If you have played 5 or more amulets with Countdown, gain 1 energy."
+  },
+  "shadowverse:DragonWarrior": {
+    "NAME": "龙族勇士",
+    "DESCRIPTION": "造成 !D! 点伤害。",
+    "UPGRADE_DESCRIPTION":"造成 !D! 点伤害。 NL 再造成 !M! 点伤害。"
+  },
+  "shadowverse:DragonOracle": {
+    "NAME": "龙之启示",
+    "DESCRIPTION": "获得1点觉醒值。 NL 下回合获得 [E] 。 NL 如果已 觉醒 ，额外抽 !M! 张牌。",
+    "UPGRADE_DESCRIPTION":"获得1点觉醒值。 NL 下回合获得 [E] [E] 。 NL 如果已 觉醒 ，额外抽 !M! 张牌。"
+  },
+  "shadowverse:Strike_D": {
+    "NAME": "打击",
+    "DESCRIPTION": "造成 !D! 点伤害。"
+  },
+  "shadowverse:Defend_D": {
+    "NAME": "防御",
+    "DESCRIPTION": "获得 !B! 点 格挡 。"
   }
 }

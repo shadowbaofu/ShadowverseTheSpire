@@ -35,6 +35,19 @@ import shadowverse.cards.Bishop.MechLion.*;
 import shadowverse.cards.Bishop.Recover1.*;
 import shadowverse.cards.Bishop.Recover2.*;
 import shadowverse.cards.Bishop.Ward.*;
+import shadowverse.cards.Dragon.Armed.Rola;
+import shadowverse.cards.Dragon.Basic.Defend_D;
+import shadowverse.cards.Dragon.Basic.DragonOracle;
+import shadowverse.cards.Dragon.Basic.DragonWarrior;
+import shadowverse.cards.Dragon.Basic.Strike_D;
+import shadowverse.cards.Dragon.Default.*;
+import shadowverse.cards.Dragon.Discard1.ScaleboundPlight;
+import shadowverse.cards.Dragon.Discard2.AugiteWyrm;
+import shadowverse.cards.Dragon.Natura.LightningVelociraptor;
+import shadowverse.cards.Dragon.Natura.WhirlwindPteranodon;
+import shadowverse.cards.Dragon.Natura.WildMana;
+import shadowverse.cards.Dragon.Ramp.Python;
+import shadowverse.cards.Dragon.Tempo.IvoryDragon;
 import shadowverse.cards.Elf.Basic.Defend_E;
 import shadowverse.cards.Elf.Basic.FairyWhisperer;
 import shadowverse.cards.Elf.Basic.Strike_E;
@@ -144,6 +157,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
     public static final Color NEMESIS_SKY = CardHelper.getColor(18, 108, 146);
     public static final Color ROYAL_YELLOW = CardHelper.getColor(152, 156, 1);
     public static final Color BISHOP_WHITE = CardHelper.getColor(239, 236, 186);
+    public static final Color DRAGON_BROWN = CardHelper.getColor(117, 72, 29);
     public static final Logger logger = LogManager.getLogger(Shadowverse.class.getName());
     public static Properties ShadowverseDefaults = new Properties();
     public static Map<String, String> tempmusic = new HashMap<>();
@@ -188,6 +202,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addColor(Nemesis.Enums.COLOR_SKY, NEMESIS_SKY, NEMESIS_SKY, NEMESIS_SKY, NEMESIS_SKY, NEMESIS_SKY, NEMESIS_SKY, NEMESIS_SKY, "img/512nemesis/bg_attack_default_gray.png", "img/512nemesis/bg_skill_default_gray.png", "img/512nemesis/bg_power_default_gray.png", "img/512nemesis/card_default_gray_orb.png", "img/1024nemesis/bg_attack_default_gray.png", "img/1024nemesis/bg_skill_default_gray.png", "img/1024nemesis/bg_power_default_gray.png", "img/1024nemesis/card_default_gray_orb.png", "img/512nemesis/card_small_orb.png");
         BaseMod.addColor(Royal.Enums.COLOR_YELLOW, ROYAL_YELLOW, ROYAL_YELLOW, ROYAL_YELLOW, ROYAL_YELLOW, ROYAL_YELLOW, ROYAL_YELLOW, ROYAL_YELLOW, "img/512royal/bg_attack_default_gray.png", "img/512royal/bg_skill_default_gray.png", "img/512royal/bg_power_default_gray.png", "img/512royal/card_default_gray_orb.png", "img/1024royal/bg_attack_default_gray.png", "img/1024royal/bg_skill_default_gray.png", "img/1024royal/bg_power_default_gray.png", "img/1024royal/card_default_gray_orb.png", "img/512royal/card_small_orb.png");
         BaseMod.addColor(Bishop.Enums.COLOR_WHITE, BISHOP_WHITE, BISHOP_WHITE, BISHOP_WHITE, BISHOP_WHITE, BISHOP_WHITE, BISHOP_WHITE, BISHOP_WHITE, "img/512bishop/bg_attack_default_gray.png", "img/512bishop/bg_skill_default_gray.png", "img/512bishop/bg_power_default_gray.png", "img/512bishop/card_default_gray_orb.png", "img/1024bishop/bg_attack_default_gray.png", "img/1024bishop/bg_skill_default_gray.png", "img/1024bishop/bg_power_default_gray.png", "img/1024bishop/card_default_gray_orb.png", "img/512bishop/card_small_orb.png");
+        BaseMod.addColor(Dragon.Enums.COLOR_BROWN, DRAGON_BROWN, DRAGON_BROWN, DRAGON_BROWN, DRAGON_BROWN, DRAGON_BROWN, DRAGON_BROWN, DRAGON_BROWN, "img/512dragon/bg_attack_default_gray.png", "img/512dragon/bg_skill_default_gray.png", "img/512dragon/bg_power_default_gray.png", "img/512dragon/card_default_gray_orb.png", "img/1024dragon/bg_attack_default_gray.png", "img/1024dragon/bg_skill_default_gray.png", "img/1024dragon/bg_power_default_gray.png", "img/1024dragon/card_default_gray_orb.png", "img/512dragon/card_small_orb.png");
         logger.info("Success subscribe");
     }
 
@@ -1358,7 +1373,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("RagingCommanderPower", new Sfx(voicePath + "RagingCommanderPower.wav"));
             reflectedMap.put("Genomuel", new Sfx(voicePath + "Genomuel.wav"));
             reflectedMap.put("Erralde", new Sfx(voicePath + "Erralde.wav"));
-            reflectedMap.put("ExecutorOfTheOath ", new Sfx(voicePath + "ExecutorOfTheOath .wav"));
+            reflectedMap.put("ExecutorOfTheOath ", new Sfx(voicePath + "ExecutorOfTheOath.wav"));
             reflectedMap.put("AgentOfTheCommandments", new Sfx(voicePath + "AgentOfTheCommandments.wav"));
             reflectedMap.put("AgentOfTheCommandmentsPower", new Sfx(voicePath + "AgentOfTheCommandmentsPower.wav"));
             reflectedMap.put("Uneriel", new Sfx(voicePath + "Uneriel.wav"));
@@ -1488,8 +1503,25 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("DeathscytheHound",new Sfx(voicePath + "DeathscytheHound.wav"));
             reflectedMap.put("DiamondMaster", new Sfx(voicePath + "DiamondMaster.wav"));
             reflectedMap.put("LegendSwordCommander", new Sfx(voicePath + "LegendSwordCommander.wav"));
-            reflectedMap.put("JudgmentSpearMaster", new Sfx(voicePath + "JudgementSpearMaster.wav"));
-            reflectedMap.put("JudgmentSpearMaster_Acc", new Sfx(voicePath + "JudgementSpearMaster_Acc.wav"));
+            reflectedMap.put("JudgmentSpearMaster", new Sfx(voicePath + "JudgmentSpearMaster.wav"));
+            reflectedMap.put("JudgmentSpearMaster_Acc", new Sfx(voicePath + "JudgmentSpearMaster_Acc.wav"));
+            reflectedMap.put("Monika_Hurt", new Sfx(voicePath + "Monika_Hurt.wav"));
+            reflectedMap.put("Monika_Hurt2", new Sfx(voicePath + "Monika_Hurt2.wav"));
+            reflectedMap.put("Monika_Hurt3", new Sfx(voicePath + "Monika_Hurt3.wav"));
+            reflectedMap.put("Monika_Select", new Sfx(voicePath + "Monika_Select.wav"));
+            reflectedMap.put("Kaya_Hurt", new Sfx(voicePath + "Kaya_Hurt.wav"));
+            reflectedMap.put("Kaya_Hurt2", new Sfx(voicePath + "Kaya_Hurt2.wav"));
+            reflectedMap.put("Kaya_Hurt3", new Sfx(voicePath + "Kaya_Hurt3.wav"));
+            reflectedMap.put("Kaya_Select", new Sfx(voicePath + "Kaya_Select.wav"));
+            reflectedMap.put("Grea_Hurt", new Sfx(voicePath + "Grea_Hurt.wav"));
+            reflectedMap.put("Grea_Hurt2", new Sfx(voicePath + "Grea_Hurt2.wav"));
+            reflectedMap.put("Grea_Hurt3", new Sfx(voicePath + "Grea_Hurt3.wav"));
+            reflectedMap.put("Grea_Select", new Sfx(voicePath + "Grea_Select.wav"));
+            reflectedMap.put("Inori_Hurt", new Sfx(voicePath + "Inori_Hurt.wav"));
+            reflectedMap.put("Inori_Hurt2", new Sfx(voicePath + "Inori_Hurt2.wav"));
+            reflectedMap.put("Inori_Hurt3", new Sfx(voicePath + "Inori_Hurt3.wav"));
+            reflectedMap.put("Inori_Select", new Sfx(voicePath + "Inori_Select.wav"));
+            reflectedMap.put("DragonWarrior", new Sfx(voicePath + "DragonWarrior.wav"));
         }
         if (Loader.isModLoaded("CardAugments")) {
             AugmentHelper.register();
@@ -1575,7 +1607,9 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addRelic(new Gliesaray(), RelicType.SHARED);
         BaseMod.addRelic(new FortuneWell(), RelicType.SHARED);
         BaseMod.addRelicToCustomPool(new Juratio(), Bishop.Enums.COLOR_WHITE);
-        BaseMod.addRelicToCustomPool(new Lagedor(), Bishop.Enums.COLOR_WHITE);
+        BaseMod.addRelicToCustomPool(new Lagedor(), Royal.Enums.COLOR_YELLOW);
+        BaseMod.addRelicToCustomPool(new MonikaBOSS(), Royal.Enums.COLOR_YELLOW);
+        BaseMod.addRelicToCustomPool(new Offensive8(), Dragon.Enums.COLOR_BROWN);
     }
 
     class Keywords {
@@ -2645,6 +2679,24 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard(new PinionPrayer());
         BaseMod.addCard(new JudgmentSpearMaster());
         BaseMod.addCard(new HolyLightningBird());
+        BaseMod.addCard(new Strike_D());
+        BaseMod.addCard(new Defend_D());
+        BaseMod.addCard(new DragonOracle());
+        BaseMod.addCard(new DragonWarrior());
+        BaseMod.addCard(new BlazingBreath());
+        BaseMod.addCard(new SeabrandDragon());
+        BaseMod.addCard(new DraconicFervor());
+        BaseMod.addCard(new Rahab());
+        BaseMod.addCard(new DragonicCall());
+        BaseMod.addCard(new WardenOfTheAdamantClaw());
+        BaseMod.addCard(new ScaleboundPlight());
+        BaseMod.addCard(new IvoryDragon());
+        BaseMod.addCard(new LightningVelociraptor());
+        BaseMod.addCard(new WildMana());
+        BaseMod.addCard(new WhirlwindPteranodon());
+        BaseMod.addCard(new HellFlameDragon());
+        BaseMod.addCard(new Python());
+        BaseMod.addCard(new AugiteWyrm());
         logger.info("Success");
     }
 
@@ -2657,6 +2709,8 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCharacter(new Nemesis(("Nemesis")), "img/character/Nemesis/button.png", "img/character/Nemesis/background.png", Nemesis.Enums.Nemesis);
         BaseMod.addCharacter(new Royal(("Royal")), "img/character/Royal/button.png", "img/character/Royal/background.png", Royal.Enums.Royal);
         BaseMod.addCharacter(new Bishop(("Bishop")), "img/character/Bishop/button.png", "img/character/Bishop/background.png", Bishop.Enums.Bishop);
+        BaseMod.addCharacter(new Dragon(("Dragon")), "img/character/Dragon/button.png", "img/character/Dragon/background.png", Dragon.Enums.Dragon);
+
     }
 
     public static void saveSettings() {

@@ -3863,7 +3863,7 @@
   },
   "shadowverse:ShadowCorrosion": {
     "NAME": "影之侵蚀",
-    "DESCRIPTION": "自然 。 NL 给予敌人「回合开始时，失去本场战斗已打出的 *那塔拉的大树 3倍的生命」效果。 NL 如果敌人已拥有此效果，改为直接造成本场战斗已打出的 *那塔拉的大树 3倍的伤害。 NL 消耗 。"
+    "DESCRIPTION": "自然 。 NL 给予敌人「回合开始时，失去本场战斗已打出的 *那塔拉的大树 4倍的生命」效果。 NL 如果敌人已拥有此效果，改为直接造成本场战斗已打出的 *那塔拉的大树 4倍的伤害。 NL 消耗 。"
   },
   "shadowverse:Valdain": {
     "NAME": "诅咒之影·拜迪",
@@ -4557,7 +4557,7 @@
   },
   "shadowverse:MasqueradeGhost": {
     "NAME": "假面亡魂",
-    "DESCRIPTION": "造成 !D! 点伤害，增加1张 *怨灵 到手中。 NL 本回合 *怨灵 造成的伤害增加 !M! 点，且当被消耗时增加1张 *巨型狂灵 到手中。 NL 谢幕曲 ：下回合开始时增加1张耗能为0且没有 谢幕曲 的 *假面亡魂 到手中。 NL 消耗 。"
+    "DESCRIPTION": "造成 !D! 点伤害，增加1张 *怨灵 到手中。 NL 本回合 *怨灵 造成的伤害增加 !M! 点，且当被消耗时增加1张 *巨型狂灵 到手中。 NL 谢幕曲 ：下回合开始时增加1张耗能为0且没有 谢幕曲 的 *假面亡魂 到手中。"
   },
   "shadowverse:MasqueradeGhost_Copy": {
     "NAME": "假面亡魂",
@@ -5448,5 +5448,81 @@
   "shadowverse:HolyLightningBird": {
     "NAME": "雷导神鸟",
     "DESCRIPTION": "结晶 0 · 倒计时 1 NL 获得 !M! 点能量。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL 如果本场战斗已打出5张以上拥有倒数的护符，获得1点能量。"
+  },
+  "shadowverse:DragonWarrior": {
+    "NAME": "龙族勇士",
+    "DESCRIPTION": "造成 !D! 点伤害。",
+    "UPGRADE_DESCRIPTION":"造成 !D! 点伤害。 NL 再造成 !M! 点伤害。"
+  },
+  "shadowverse:DragonOracle": {
+    "NAME": "龙之启示",
+    "DESCRIPTION": "获得1点觉醒值。 NL 下回合获得 [E] 。 NL 如果已 觉醒 ，额外抽 !M! 张牌。",
+    "UPGRADE_DESCRIPTION":"获得1点觉醒值。 NL 下回合获得 [E] [E] 。 NL 如果已 觉醒 ，额外抽 !M! 张牌。"
+  },
+  "shadowverse:Strike_D": {
+    "NAME": "打击",
+    "DESCRIPTION": "造成 !D! 点伤害。"
+  },
+  "shadowverse:Defend_D": {
+    "NAME": "防御",
+    "DESCRIPTION": "获得 !B! 点 格挡 。"
+  },
+  "shadowverse:BlazingBreath": {
+    "NAME": "灼热吐息",
+    "DESCRIPTION": "造成 !D! 点伤害。"
+  },
+  "shadowverse:SeabrandDragon": {
+    "NAME": "海剑龙",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果已 觉醒 ，改为造成双倍伤害。"
+  },
+  "shadowverse:DraconicFervor": {
+    "NAME": "龙之斗气",
+    "DESCRIPTION": "获得1点觉醒值。 NL 下回合获得 [E] 。 NL 获得 !B! 点 格挡 ，抽 !M! 张牌。"
+  },
+  "shadowverse:Rahab": {
+    "NAME": "勒哈布",
+    "DESCRIPTION": "获得 !B! 点 格挡。 NL 回合结束时每有1点剩余能量获得1点 力量 。"
+  },
+  "shadowverse:DragonicCall": {
+    "NAME": "聚龙之唤",
+    "DESCRIPTION": "抽 !M! 张牌。 NL 如果已 觉醒 ，额外抽1张牌。"
+  },
+  "shadowverse:WardenOfTheAdamantClaw": {
+    "NAME": "刚爪的看守",
+    "DESCRIPTION": "八狱 NL 获得 !B! 点 格挡 。 NL 爆能强化 2:再获得 !M! 点 格挡 并抽3张牌。"
+  },
+  "shadowverse:ScaleboundPlight": {
+    "NAME": "蛇龙之契",
+    "DESCRIPTION": "丢弃 !M! 张牌，抽 !M! 张牌。 NL 如果已 觉醒 ，额外抽1张牌。"
+  },
+  "shadowverse:IvoryDragon": {
+    "NAME": "银白幼龙",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 如果已 觉醒 ，额外抽1张牌。"
+  },
+  "shadowverse:LightningVelociraptor": {
+    "NAME": "雷电迅猛龙",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加1张 *那塔拉的大树 到手中 NL 如果已 觉醒 ，额外增加1张。"
+  },
+  "shadowverse:WildMana": {
+    "NAME": "狂野玛纳",
+    "DESCRIPTION": "自然 。 NL 增加一张 *那塔拉的大树 到手中。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "自然 。 NL 增加一张 *那塔拉的大树 到手中。"
+  },
+  "shadowverse:WhirlwindPteranodon": {
+    "NAME": "旋风翼龙",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 谢幕曲 :增加1张 *那塔拉的大树 到手中。 NL 如果有 那塔拉的大树 ，则移除该能力并获得1点觉醒值。"
+  },
+  "shadowverse:HellFlameDragon": {
+    "NAME": "地狱火魔龙",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 消耗 。"
+  },
+  "shadowverse:Python": {
+    "NAME": "培冬",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 从抽牌堆中选择最多10张牌消耗。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "固有 。 NL 获得 !B! 点 格挡 。 NL 从抽牌堆中选择最多10张牌消耗。 NL 消耗 。"
+  },
+  "shadowverse:AugiteWyrm": {
+    "NAME": "碎石龙",
+    "DESCRIPTION": "激奏 0:丢弃1张牌，抽1张牌。 NL 如果已 觉醒 ，额外抽1张牌。 NL  NL --------------------- NL  NL 对全体敌人造成 !D! 点伤害。"
   }
 }

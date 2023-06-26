@@ -33,7 +33,7 @@ import shadowverse.powers.OverflowPower;
 
    public AugiteWyrm() {
      super(ID, NAME, IMG_PATH, 4, DESCRIPTION, CardType.ATTACK, Dragon.Enums.COLOR_BROWN, CardRarity.COMMON, CardTarget.ALL_ENEMY);
-     this.baseDamage = 36;
+     this.baseDamage = 30;
      this.isMultiDamage = true;
    }
  

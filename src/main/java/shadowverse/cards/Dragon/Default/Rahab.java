@@ -22,7 +22,7 @@ import shadowverse.powers.RahabPower;
    public static final String IMG_PATH = "img/cards/Rahab.png";
 
    public Rahab() {
-     super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Dragon.Enums.COLOR_BROWN, CardRarity.UNCOMMON, CardTarget.ENEMY);
+     super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Dragon.Enums.COLOR_BROWN, CardRarity.UNCOMMON, CardTarget.SELF);
      this.baseBlock = 12;
    }
  

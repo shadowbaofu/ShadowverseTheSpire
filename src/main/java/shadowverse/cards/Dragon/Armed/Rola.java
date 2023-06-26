@@ -1,7 +1,6 @@
 package shadowverse.cards.Dragon.Armed;
 
 
-import basemod.abstracts.CustomCard;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -18,13 +17,13 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import shadowverse.Shadowverse;
-import shadowverse.cards.AbstractNeutralCard;
+import shadowverse.cards.AbstractEnhanceCard;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Dragon;
 import shadowverse.powers.CutthroatPower;
 
 
-public class Rola extends CustomCard {
+public class Rola extends AbstractEnhanceCard {
     public static final String ID = "shadowverse:Rola";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:Rola");
     public static final String NAME = cardStrings.NAME;
@@ -33,7 +32,7 @@ public class Rola extends CustomCard {
     private static final Texture LEADER_SKIN_VERSION = ImageMaster.loadImage("img/cards/Rola_L.png");
 
     public Rola() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Dragon.Enums.COLOR_BROWN, CardRarity.RARE, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Dragon.Enums.COLOR_BROWN, CardRarity.RARE, CardTarget.SELF,3);
         this.baseBlock = 6;
         this.baseDamage = 18;
         this.tags.add(AbstractShadowversePlayer.Enums.MACHINE);
@@ -62,7 +61,13 @@ public class Rola extends CustomCard {
         super.update();
     }
 
-    public void use(AbstractPlayer p, AbstractMonster m) {
+    @Override
+    public void exEnhanceUse(AbstractPlayer p, AbstractMonster m) {
+
+    }
+
+    @Override
+    public void enhanceUse(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, this.block));
         for (AbstractCard card : p.hand.group) {
             if (card.hasTag(AbstractShadowversePlayer.Enums.MACHINE) && card != this) {
@@ -70,31 +75,39 @@ public class Rola extends CustomCard {
                 break;
             }
         }
-        if (this.costForTurn == 3) {
-            if ((UnlockTracker.betaCardPref.getBoolean(this.cardID, false)))
-                addToBot(new SFXAction("Rola_L_EH"));
-            else
-                addToBot(new SFXAction("Rola_EH"));
-            if (p.hasPower(CutthroatPower.POWER_ID)){
-                addToBot(new GainEnergyAction(2));
-            }
-            int count = 0;
-            for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-                if (!mo.isDeadOrEscaped())
-                    count++;
-            }
-            if (count == 1) {
-                addToBot(new DamageAction(AbstractDungeon.getCurrRoom().monsters.getRandomMonster(true), new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
-                addToBot(new DamageAction(AbstractDungeon.getCurrRoom().monsters.getRandomMonster(true), new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
-            } else {
-                addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(this.damage, true), DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.FIRE, true));
-            }
-        } else {
-            if ((UnlockTracker.betaCardPref.getBoolean(this.cardID, false)))
-                addToBot(new SFXAction("Rola_L"));
-            else
-                addToBot(new SFXAction("Rola"));
+        if ((UnlockTracker.betaCardPref.getBoolean(this.cardID, false)))
+            addToBot(new SFXAction("Rola_L_EH"));
+        else
+            addToBot(new SFXAction("Rola_EH"));
+        if (p.hasPower(CutthroatPower.POWER_ID)){
+            addToBot(new GainEnergyAction(2));
         }
+        int count = 0;
+        for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
+            if (!mo.isDeadOrEscaped())
+                count++;
+        }
+        if (count == 1) {
+            addToBot(new DamageAction(AbstractDungeon.getCurrRoom().monsters.getRandomMonster(true), new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
+            addToBot(new DamageAction(AbstractDungeon.getCurrRoom().monsters.getRandomMonster(true), new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
+        } else {
+            addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(this.damage, true), DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.FIRE, true));
+        }
+    }
+
+    @Override
+    public void baseUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new GainBlockAction(p, this.block));
+        for (AbstractCard card : p.hand.group) {
+            if (card.hasTag(AbstractShadowversePlayer.Enums.MACHINE) && card != this) {
+                addToBot(new GainBlockAction(p, this.block));
+                break;
+            }
+        }
+        if ((UnlockTracker.betaCardPref.getBoolean(this.cardID, false)))
+            addToBot(new SFXAction("Rola_L"));
+        else
+            addToBot(new SFXAction("Rola"));
     }
 
 

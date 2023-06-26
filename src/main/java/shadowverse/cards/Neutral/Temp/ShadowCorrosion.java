@@ -19,6 +19,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
  import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
  import com.megacrit.cardcrawl.vfx.combat.ClawEffect;
  import shadowverse.characters.AbstractShadowversePlayer;
+ import shadowverse.characters.Dragon;
  import shadowverse.powers.ShadowCorrosionPower;
 
  public class ShadowCorrosion
@@ -30,7 +31,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
    public static final String IMG_PATH = "img/cards/ShadowCorrosion.png";
 
    public ShadowCorrosion() {
-     super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.ENEMY);
+     super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Dragon.Enums.COLOR_BROWN, CardRarity.SPECIAL, CardTarget.ENEMY);
      this.baseMagicNumber = 0;
      this.magicNumber = this.baseMagicNumber;
      this.exhaust = true;

@@ -75,7 +75,7 @@ public class CharacterSelectScreenPatches {
              new AbstractVampireSkin(),
              new AbstractBishopSkin(),
              new AbstractNemesisSkin(),
-            //new AbstractDragonSkin()
+             new AbstractDragonSkin()
     };
 
     public static Color BLACK_OUTLINE_COLOR = new Color(0.0F, 0.0F, 0.0F, 0.5F);

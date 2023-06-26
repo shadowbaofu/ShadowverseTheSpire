@@ -103,9 +103,7 @@ import shadowverse.powers.HeavenlyAegisPower;
      boolean hasPlaton = false;
      for (AbstractOrb o: AbstractDungeon.player.orbs){
        if (o instanceof AmuletOrb){
-         if (((AmuletOrb) o).amulet instanceof RelicGod){
-           break;
-         } else if (((AmuletOrb) o).amulet instanceof RelicSphere && o!=paramOrb) {
+         if (((AmuletOrb) o).amulet instanceof RelicSphere && o!=paramOrb) {
            break;
          } else {
            if (((AmuletOrb) o).amulet instanceof RelicPrism)

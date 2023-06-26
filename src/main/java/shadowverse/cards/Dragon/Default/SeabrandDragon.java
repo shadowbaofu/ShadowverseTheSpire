@@ -38,15 +38,14 @@ import shadowverse.powers.OverflowPower;
  
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-
+     int damage = this.damage;
      if (abstractPlayer.hasPower(OverflowPower.POWER_ID)) {
        TwoAmountPower p = (TwoAmountPower) abstractPlayer.getPower(OverflowPower.POWER_ID);
        if (p.amount2 > 0) {
-         addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage*2, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+         damage *= 2;
        }
-     }else {
-       addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
      }
+     addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
    }
  
    

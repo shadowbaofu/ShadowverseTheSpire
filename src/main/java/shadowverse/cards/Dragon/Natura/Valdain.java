@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -119,7 +118,7 @@ public class Valdain extends AbstractRightClickCard2 implements BranchableUpgrad
                 Valdain.this.name = NAME + "+";
                 Valdain.this.initializeTitle();
                 Valdain.this.upgradeName();
-                Valdain.this.baseBlock = 20;
+                Valdain.this.baseBlock = 18;
                 Valdain.this.upgradedBlock = true;
                 Valdain.this.cardsToPreview.upgrade();
                 Valdain.this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;

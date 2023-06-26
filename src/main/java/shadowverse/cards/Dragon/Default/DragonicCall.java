@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.EnergizedPower;
+import com.megacrit.cardcrawl.powers.NoDrawPower;
 import shadowverse.characters.Dragon;
 import shadowverse.powers.OverflowPower;
 
@@ -25,7 +26,7 @@ import shadowverse.powers.OverflowPower;
    public static final String IMG_PATH = "img/cards/DragonicCall.png";
 
    public DragonicCall() {
-     super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Dragon.Enums.COLOR_BROWN, CardRarity.UNCOMMON, CardTarget.NONE);
+     super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Dragon.Enums.COLOR_BROWN, CardRarity.UNCOMMON, CardTarget.NONE);
      this.baseMagicNumber = 2;
      this.magicNumber = this.baseMagicNumber;
    }
@@ -47,6 +48,7 @@ import shadowverse.powers.OverflowPower;
          addToBot(new DrawCardAction(1));
        }
      }
+     addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new NoDrawPower(abstractPlayer)));
    }
  
  

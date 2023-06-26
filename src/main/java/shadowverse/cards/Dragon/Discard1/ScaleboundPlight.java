@@ -24,7 +24,7 @@ import shadowverse.powers.OverflowPower;
    public static final String IMG_PATH = "img/cards/ScaleboundPlight.png";
 
    public ScaleboundPlight() {
-     super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Dragon.Enums.COLOR_BROWN, CardRarity.BASIC, CardTarget.NONE);
+     super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Dragon.Enums.COLOR_BROWN, CardRarity.COMMON, CardTarget.NONE);
      this.baseMagicNumber = 1;
      this.magicNumber = this.baseMagicNumber;
    }

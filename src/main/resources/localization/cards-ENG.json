@@ -5253,8 +5253,8 @@
   },
   "shadowverse:Cornelius": {
     "NAME": "Cornelius, the Corpse King",
-    "DESCRIPTION": "Academic NL Gain !B! Block. NL Apply 2 Weak and Vulnerable to ALL enemies. NL Add 4 different non-Shadowcraft Attack cards with 1 cost , Exhaust and they cost 0 this turn to your hand.",
-    "UPGRADE_DESCRIPTION":"Academic NL Gain !B! Block. NL Apply 2 Weak and Vulnerable to ALL enemies. NL Add 4 different non-Shadowcraft Attack cards with 1 cost, Exhaust and they cost 0  to your hand. NL Add 1 *Corpse *King's *Command to your hand."
+    "DESCRIPTION": "Academic NL Gain !B! Block. NL Apply 2 Weak and Vulnerable to ALL enemies. NL Add 4 different non-Shadowcraft Attack cards with 1 cost , Exhaust and they cost 0 this turn to your hand. NL Exhaust .",
+    "UPGRADE_DESCRIPTION":"Academic NL Gain !B! Block. NL Apply 2 Weak and Vulnerable to ALL enemies. NL Add 4 different non-Shadowcraft Attack cards with 1 cost, Exhaust and they cost 0  to your hand. NL Add 1 *Corpse *King's *Command to your hand. NL Exhaust ."
   },
   "shadowverse:CorpseKingCommand": {
     "NAME": "Corpse King's Command ",

@@ -37,10 +37,6 @@ import shadowverse.characters.Dragon;
        upgradeMagicNumber(2);
      } 
    }
- 
-   
-   public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-   }
 
    @Override
    public void exEnhanceUse(AbstractPlayer p, AbstractMonster m) {
@@ -49,6 +45,7 @@ import shadowverse.characters.Dragon;
 
    @Override
    public void enhanceUse(AbstractPlayer p, AbstractMonster m) {
+     addToBot(new GainBlockAction(p,p,this.block));
      addToBot(new GainBlockAction(p,p,this.magicNumber));
      addToBot(new DrawCardAction(3));
    }

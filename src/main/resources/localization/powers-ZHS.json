@@ -1869,5 +1869,55 @@
       "回合开始时，获得剩余能量的力量 #b",
       " 次。"
     ]
+  },
+  "shadowverse:ShipsbanePlesiosaurusPower": {
+    "NAME": "狂涛蛇颈龙",
+    "DESCRIPTIONS": [
+      "每当丢弃手牌时，对随机敌人造成 #b4 点伤害。"
+    ]
+  },
+  "shadowverse:DracomancerRitesPower": {
+    "NAME": "龙巫女的仪式",
+    "DESCRIPTIONS": [
+      "每当丢弃1张手牌时，抽 #b",
+      " 张牌。"
+    ]
+  },
+  "shadowverse:GoldenDragonDenPower": {
+    "NAME": "黄金龙的巢穴",
+    "DESCRIPTIONS": [
+      "回合开始时，随机丢弃 #b",
+      " 张耗能最小的牌，并抽 #b",
+      " 张牌。"
+    ]
+  },
+  "shadowverse:PolyphonicRoarPower": {
+    "NAME": "不绝的龙吼",
+    "DESCRIPTIONS": [
+      "回合开始时，增加 #b",
+      " 张耗能为0的 #y风暴巨龙 到手中。",
+      " 张耗能为0的 #y风暴巨龙+ 到手中。"
+    ]
+  },
+  "shadowverse:ResplendentPhoenixPower": {
+    "NAME": "凤凰庭院",
+    "DESCRIPTIONS": [
+      "抽到的卡牌耗能变为一半。"
+    ]
+  },
+  "shadowverse:LumiorePower": {
+    "NAME": "金色威信·璐米欧儿",
+    "DESCRIPTIONS": [
+      "每当丢弃1张手牌时，对全体敌人造成 #b",
+      " 点伤害。"
+    ]
+  },
+  "shadowverse:NoirNBlancPower": {
+    "NAME": "黑白乱舞·诺尔与卜朗",
+    "DESCRIPTIONS": [
+      "回合结束时，如果已 #y完全觉醒 ，获得 #b1 层 #y残影 、 #y人工制品 、 #y免疫能力伤害 和 #b",
+      " 点格挡。下回合开始，如果格挡没有完全消失，对随机敌人造成 #b",
+      " 点伤害。"
+    ]
   }
 }

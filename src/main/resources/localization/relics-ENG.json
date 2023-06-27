@@ -383,7 +383,7 @@
     "NAME": "Cross Craft",
     "FLAVOR": "New Limited Time Format: Cross Craft! Build decks with cards from 2 different classes!",
     "DESCRIPTIONS": [
-      "Enemies will drop an additional reward of a card belonging to a Shadowverse class other than your own.",
+      "Enemies will drop an additional card reward belonging to a Shadowverse class other than your own.",
       "Enemies drop an additional card reward from ",
       " .",
       "#yRunecraft",
@@ -392,7 +392,8 @@
       "#yBloodcraft",
       "#yPortalcraft",
       "#ySwordcraft",
-      "#yHavencraft"
+      "#yHavencraft",
+      "#yDragoncraft"
     ]
   },
   "shadowverse:Offensive7": {
@@ -560,24 +561,24 @@
   },
   "shadowverse:FortuneWell": {
     "NAME": "Fortune Well",
-    "FLAVOR": "你这井怎么不能井异画啊！",
+    "FLAVOR": "Why can't you make a different painting!?",
     "DESCRIPTIONS": [
-      "When picked up or battle 6 (8 with the first time) times, choose 1 rare card from 3 into your deck.",
+      "Upon pick up, after 8 combats and then every 6 combats afterward, choose and add 1 Rare card to your deck.",
       "Choose a bonus card"
     ]
   },
   "shadowverse:MonikaBOSS": {
-    "NAME": "フリューゲルコート",
-    "FLAVOR": "モニカが着用しているコート。 その豪奢な仕立ては、背中に続く者たちの心身を奮い立たせ、 ありとあらゆる攻撃力を大幅に向上させる。",
+    "NAME": "Flugel Coat",
+    "FLAVOR": "The coat worn by Monika. Its luxurious tailoring inspires the minds and bodies of those who follow at its back and greatly improves all kinds of offensive capabilities.",
     "DESCRIPTIONS": [
-      " #y先攻の証 と置き換える。 戦闘ごとに #b2 回かつ1ターンに1度、これを右クリックすることで #yEP を手札に加える。 EPをプレイする度、すべてのフォロワーを #g+1/+1 する。"
+      "Replaces #yToken #yOf #y1st. Right click once per turn and up to #y2 times per combat to add 1 #yEvolution #yPoint to your hand. When you play an Evolution point, all followers gain #g+1/+1."
     ]
   },
   "shadowverse:Offensive8": {
-    "NAME": "先手印记",
-    "FLAVOR": "您为先手，不更换手牌。",
+    "NAME": "Token of 1st",
+    "FLAVOR": "I go first, no need to redraw.",
     "DESCRIPTIONS": [
-      "以 #b1 点觉醒值开始战斗。"
+      "Start each combat with #b1 Overflow point."
     ]
   }
 }

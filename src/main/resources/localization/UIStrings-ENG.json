@@ -151,51 +151,51 @@
   },
   "shadowverse:SpellboostMod": {
     "TEXT": [
-      "增幅",
+      "Increase",
       "",
-      "本牌耗能增加 #b2 。 NL 魔力增幅  \b耗能减少1 [E] 。"
+      "This card costs #b2 more. NL Spellboost  \bReduce cost by 1 [E] ."
     ],
     "EXTRA_TEXT": [
-      " NL 魔力增幅  \b耗能减少1 [E] 。"
+      " NL Spellboost  \bReduce cost by 1 [E] ."
     ]
   },
   "shadowverse:EarthMod": {
     "TEXT": [
-      "土之",
+      "Earth Rite",
       "",
-      "打出时，获得 #b1 层 土之印记 。"
+      "When played, gain #b1 Earth Essence."
     ],
     "EXTRA_TEXT": [
-      " NL 获得1层 土之印记 。"
+      " NL Gain 1 Earth Essence."
     ]
   },
   "shadowverse:MachinaMod": {
     "TEXT": [
-      "机械化",
+      "Machination",
       "",
-      "机械 ，造成的伤害与获得的 #y格挡 减少 #b25% 。打出时增加 #b1 张 #y生产器械 到手中。"
+      "Machina，The damage dealt and the #yblock gained are reduced by #b25%. When played, add #b1 copy of #yRepair #yMode to your hand."
     ],
     "EXTRA_TEXT": [
-      "机械 NL ",
-      " NL 增加1张 *生产器械 到手中。"
+      "Machina NL ",
+      " NL Adds 1 *Repair *Mode to your hand."
     ]
   },
   "shadowverse:NaturaMod": {
     "TEXT": [
-      "纯真的",
+      "Natural",
       "",
-      "自然 ，造成的伤害与获得的 #y格挡 减少 #b33% 。打出时增加 #b1 张 #y那塔拉的大树 到手中。"
+      "Natura, the damage dealt and the #yBlock gained are reduced by #b33%. When played, add #b1 copy of #yNaterran #yGreat #yTree to your hand."
     ],
     "EXTRA_TEXT": [
-      "自然 NL ",
-      " NL 增加1张 *那塔拉的大树 到手中。"
+      "Natura NL ",
+      " NL Add 1 *Naterran *Great *Tree to your hand."
     ]
   },
   "shadowverse:ArtifactMod": {
     "TEXT": [
-      "量产型",
+      "Artifact",
       "",
-      "创造物 。打出时增加 #b2 张 #y解析的创造物 到抽牌堆中。"
+      "Creation. When played, add #b2 #y解析的创造物 到抽牌堆中。"
     ],
     "EXTRA_TEXT": [
       "创造物 NL ",

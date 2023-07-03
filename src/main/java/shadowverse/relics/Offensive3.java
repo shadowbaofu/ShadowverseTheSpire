@@ -38,12 +38,13 @@ import shadowverse.powers.Cemetery;
        }
        if (playerNecromance>=3){
            flash();
-           addToBot((AbstractGameAction)new NecromanceAction(3,null,
-                   (AbstractGameAction)new MakeTempCardInHandAction(new Zombie(),1)));
+           addToBot(new NecromanceAction(3,null,
+                   new MakeTempCardInHandAction(new Zombie(),1)));
        }
      }
 
-   public AbstractRelic makeCopy() {
+
+     public AbstractRelic makeCopy() {
      return (AbstractRelic)new Offensive3();
    }
  }

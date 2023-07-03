@@ -26,7 +26,7 @@ public class Wimael extends CustomCard {
     public static final String IMG_PATH = "img/cards/Wimael.png";
 
     public Wimael() {
-        super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Elf.Enums.COLOR_GREEN, CardRarity.RARE, CardTarget.ENEMY);
+        super(ID, NAME, IMG_PATH, 4, DESCRIPTION, CardType.ATTACK, Elf.Enums.COLOR_GREEN, CardRarity.RARE, CardTarget.ENEMY);
         this.baseDamage = 20;
         this.tags.add(AbstractShadowversePlayer.Enums.CONDEMNED);
     }
@@ -41,7 +41,7 @@ public class Wimael extends CustomCard {
 
     @Override
     public void triggerOnOtherCardPlayed(AbstractCard c) {
-        if (c.type == CardType.SKILL && c.baseBlock == 0){
+        if (c.type == CardType.SKILL && c.baseBlock <= 0){
             flash();
             addToBot(new SFXAction("spell_boost"));
             addToBot(new ReduceCostAction(this));

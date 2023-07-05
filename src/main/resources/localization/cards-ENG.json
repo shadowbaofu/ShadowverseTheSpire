@@ -6178,7 +6178,7 @@
     "DESCRIPTION": "Deal 50 damage. NL Kill all minions, deal 10 damage for each one killed. NL Exhaust all attack cards in your hand, deal 10 damage for each one exhausted. NL Deal !D! damage twice."
   },
   "shadowverse:Hiro": {
-    "NAME": "Dragon Oracle",
+    "NAME": "Hiro Ryuugasaki's Dragon Oracle",
     "DESCRIPTION": "Innate. NL Gain 1 Overflow point. NL Gain [E] next turn. NL If Overflow is active, draw !M! additional card.",
     "UPGRADE_DESCRIPTION": "Innate. NL Gain 1 Overflow point. NL Gain [E] [E] next turn. NL If Overflow is active, draw !M! additional card."
   }

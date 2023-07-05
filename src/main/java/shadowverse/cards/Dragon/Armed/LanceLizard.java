@@ -29,7 +29,7 @@ import shadowverse.characters.Dragon;
 
    public LanceLizard() {
      super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Dragon.Enums.COLOR_BROWN, CardRarity.COMMON, CardTarget.ENEMY);
-     this.baseDamage = 15;
+     this.baseDamage = 9;
      this.tags.add(AbstractShadowversePlayer.Enums.ARMED);
      this.cardsToPreview = new DragonWeapon();
    }

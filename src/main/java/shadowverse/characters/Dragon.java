@@ -37,9 +37,9 @@ public class Dragon extends AbstractShadowversePlayer{
     {
         @SpireEnum
         public static PlayerClass Dragon;
-        @SpireEnum(name = "ELF_GREEN_BROWN")
+        @SpireEnum(name = "DRAGON_BROWN_COLOR")
         public static AbstractCard.CardColor COLOR_BROWN;
-        @SpireEnum(name = "ELF_GREEN_BROWN")
+        @SpireEnum(name = "DRAGON_BROWN_COLOR")
         public static CardLibrary.LibraryType TYPE_BROWN;
 
 
@@ -57,10 +57,10 @@ public class Dragon extends AbstractShadowversePlayer{
     @Override
     public ArrayList<String> getStartingDeck() {
         ArrayList<String> starterDeck = new ArrayList<>(); int i;
-        for (i = 0; i < 4; i++) {
+        for (i = 0; i < 5; i++) {
             starterDeck.add(Strike_D.ID);
         }
-        for (i = 0; i < 4; i++) {
+        for (i = 0; i < 5; i++) {
             starterDeck.add(Defend_D.ID);
         }
         starterDeck.add(DragonOracle.ID);

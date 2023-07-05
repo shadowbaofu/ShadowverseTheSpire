@@ -25,6 +25,7 @@ public class WardenOfHonor
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/WardenOfHonor.png";
+    private boolean played;
 
     public WardenOfHonor() {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.SELF);
@@ -47,7 +48,7 @@ public class WardenOfHonor
     @Override
     public void update() {
         if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
-                Shadowverse.Accelerate(this)) {
+                Shadowverse.Accelerate(this) && !played) {
             setCostForTurn(0);
             this.type = CardType.POWER;
         } else {
@@ -61,23 +62,25 @@ public class WardenOfHonor
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         if (this.type == CardType.POWER && this.costForTurn == 0) {
-            addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new DrawCardNextTurnPower(abstractPlayer,1),1));
+            addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new DrawCardNextTurnPower(abstractPlayer, 1), 1));
         } else {
             this.upgrade();
             addToBot(new GainBlockAction(abstractPlayer, this.block));
             addToBot(new GainBlockAction(abstractPlayer, this.block));
             AbstractCard copy = this.makeCopy();
-            if(abstractPlayer.hasRelic(KagemitsuSword.ID)){
+            if (abstractPlayer.hasRelic(KagemitsuSword.ID)) {
                 copy.upgrade();
             }
-            addToBot(new MakeTempCardInDiscardAction(copy,1));
+            addToBot(new MakeTempCardInDiscardAction(copy, 1));
         }
-        if (EnergyPanel.getCurrentEnergy() < 4 && this.costForTurn > 0){
-            addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
-        }
-
+        played = true;
     }
 
+    @Override
+    public void onMoveToDiscard() {
+        super.onMoveToDiscard();
+        played = false;
+    }
 
     public AbstractCard makeCopy() {
         return (AbstractCard) new WardenOfHonor();

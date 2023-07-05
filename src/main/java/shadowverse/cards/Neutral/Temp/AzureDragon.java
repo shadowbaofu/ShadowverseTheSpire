@@ -27,7 +27,7 @@ import shadowverse.characters.Dragon;
    public static final String IMG_PATH = "img/cards/AzureDragon.png";
 
    public AzureDragon() {
-     super(ID, NAME, IMG_PATH, 5, DESCRIPTION, CardType.ATTACK, Dragon.Enums.COLOR_BROWN, CardRarity.SPECIAL, CardTarget.ENEMY);
+     super(ID, NAME, IMG_PATH, 4, DESCRIPTION, CardType.ATTACK, Dragon.Enums.COLOR_BROWN, CardRarity.SPECIAL, CardTarget.ENEMY);
      this.baseDamage = 28;
      this.exhaust = true;
      this.selfRetain = true;
@@ -60,11 +60,7 @@ import shadowverse.characters.Dragon;
    }
 
    public AbstractCard makeCopy() {
-     AbstractCard tmp = new AzureDragon();
-     if (CardCrawlGame.dungeon != null && AbstractDungeon.currMapNode != null &&
-             (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT)
-       setCostForTurn(this.cost - GameActionManager.totalDiscardedThisTurn);
-     return tmp;
+     return new AzureDragon();
    }
 
  }

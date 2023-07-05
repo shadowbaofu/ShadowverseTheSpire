@@ -148,6 +148,10 @@ public class Valdain extends AbstractRightClickCard2 implements BranchableUpgrad
         return list;
     }
 
+    public void atTurnStart(){
+        hasFusion = false;
+    }
+
     @Override
     protected void onRightClick() {
         if (this.chosenBranch()==1){

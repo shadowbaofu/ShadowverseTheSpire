@@ -49,7 +49,7 @@ public class DiscardRandomMinimumAction extends AbstractGameAction {
                         ((DiscardPower) power).triggerOnDiscard(tmp);
                     }
                 }
-                tickDuration();
+                this.isDone = true;
                 return;
             }
             for (int i = 0; i < this.amount; i++) {

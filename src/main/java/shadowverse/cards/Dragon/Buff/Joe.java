@@ -29,6 +29,8 @@ public class Joe
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/Joe.png";
     public static final String[] TEXT = (CardCrawlGame.languagePack.getUIString("shadowverse:applyEffect")).TEXT;
+    private boolean played;
+
 
     public Joe() {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Dragon.Enums.COLOR_BROWN, CardRarity.RARE, CardTarget.ALL);
@@ -52,7 +54,7 @@ public class Joe
     @Override
     public void update() {
         if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
-                Shadowverse.Accelerate(this)) {
+                Shadowverse.Accelerate(this) && !played) {
             setCostForTurn(0);
             this.type = CardType.POWER;
         } else {
@@ -91,9 +93,15 @@ public class Joe
             if (abstractPlayer.hasPower(DexterityPower.POWER_ID) && abstractPlayer.getPower(DexterityPower.POWER_ID).amount >= 6) {
                 addToBot(new DamageAllEnemiesAction(abstractPlayer, DamageInfo.createDamageMatrix(this.magicNumber, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE));
             }
+            played = true;
         }
     }
 
+    @Override
+    public void onMoveToDiscard() {
+        super.onMoveToDiscard();
+        played = false;
+    }
 
     public AbstractCard makeCopy() {
         return (AbstractCard) new Joe();

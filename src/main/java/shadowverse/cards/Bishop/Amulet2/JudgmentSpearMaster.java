@@ -30,7 +30,7 @@ public class JudgmentSpearMaster
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/JudgmentSpearMaster.png";
-    public boolean crystalize;
+    private boolean played;
 
     public JudgmentSpearMaster() {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.UNCOMMON, CardTarget.ENEMY);
@@ -53,7 +53,7 @@ public class JudgmentSpearMaster
     @Override
     public void update() {
         if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT&&
-                Shadowverse.Accelerate(this)&&!this.crystalize){
+                Shadowverse.Accelerate(this) && !played){
             setCostForTurn(1);
             this.type = CardType.POWER;
         }else {
@@ -69,6 +69,7 @@ public class JudgmentSpearMaster
         this.costForTurn = this.cost;
         this.isCostModifiedForTurn = false;
         this.type = CardType.ATTACK;
+        played = false;
         applyPowers();
     }
 
@@ -76,13 +77,10 @@ public class JudgmentSpearMaster
         if (this.type==CardType.POWER && this.costForTurn == 1){
             addToBot(new SFXAction("JudgmentSpearMaster_Acc"));
         }else {
-            this.crystalize = false;
             addToBot(new SFXAction("JudgmentSpearMaster"));
             addToBot(new GainBlockAction(p,this.block));
             addToBot(new DamageAction(abstractMonster, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-            if (this.type == CardType.POWER){
-                addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
-            }
+            played = true;
         }
     }
 
@@ -102,7 +100,7 @@ public class JudgmentSpearMaster
             c.upgrade();
         c.setCostForTurn(0);
         c.type = CardType.ATTACK;
-        ((JudgmentSpearMaster)c).crystalize = true;
+        played = true;
         AbstractDungeon.player.hand.addToTop(c);
     }
 

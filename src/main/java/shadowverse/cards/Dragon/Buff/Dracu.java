@@ -19,6 +19,7 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.vfx.combat.InflameEffect;
 import shadowverse.Shadowverse;
 import shadowverse.cards.Neutral.Temp.HowlingConflagration;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Dragon;
 
 
@@ -66,21 +67,27 @@ public class Dracu
     }
 
     public void applyPowers() {
-        AbstractPower strength = AbstractDungeon.player.getPower(DexterityPower.POWER_ID);
-        if (strength != null)
-            strength.amount *= this.magicNumber;
+        int amount = 0;
+        if (AbstractDungeon.player.hasPower(DexterityPower.POWER_ID)){
+            amount += this.magicNumber * AbstractDungeon.player.getPower(DexterityPower.POWER_ID).amount;
+        }
+        int realBaseDamage = this.baseDamage;
+        this.baseDamage += amount * this.magicNumber / this.magicNumber;
         super.applyPowers();
-        if (strength != null)
-            strength.amount /= this.magicNumber;
+        this.baseDamage = realBaseDamage;
+        this.isDamageModified = (this.damage != this.baseDamage);
     }
 
     public void calculateCardDamage(AbstractMonster mo) {
-        AbstractPower strength = AbstractDungeon.player.getPower(DexterityPower.POWER_ID);
-        if (strength != null)
-            strength.amount *= this.magicNumber;
-        super.calculateCardDamage(mo);
-        if (strength != null)
-            strength.amount /= this.magicNumber;
+        int amount = 0;
+        if (AbstractDungeon.player.hasPower(DexterityPower.POWER_ID)){
+            amount += this.magicNumber * AbstractDungeon.player.getPower(DexterityPower.POWER_ID).amount;
+        }
+        int realBaseDamage = this.baseDamage;
+        this.baseDamage += amount * this.magicNumber / this.magicNumber;
+        super.applyPowers();
+        this.baseDamage = realBaseDamage;
+        this.isDamageModified = (this.damage != this.baseDamage);
     }
 
     @Override

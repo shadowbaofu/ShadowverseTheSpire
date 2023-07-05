@@ -39,6 +39,7 @@ import shadowverse.cards.Dragon.Armed.*;
 import shadowverse.cards.Dragon.Basic.Defend_D;
 import shadowverse.cards.Dragon.Basic.DragonOracle;
 import shadowverse.cards.Dragon.Basic.DragonWarrior;
+import shadowverse.cards.Dragon.Basic.Hiro;
 import shadowverse.cards.Dragon.Basic.Strike_D;
 import shadowverse.cards.Dragon.Buff.*;
 import shadowverse.cards.Dragon.Default.*;
@@ -284,6 +285,9 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addPotion(ReduceCountDownPotion.class, Color.WHITE, Color.GOLD, Color.WHITE, ReduceCountDownPotion.POTION_ID, Bishop.Enums.Bishop);
         BaseMod.addPotion(IndulgencePotion.class, Color.DARK_GRAY, Color.FIREBRICK, null, IndulgencePotion.POTION_ID, Bishop.Enums.Bishop);
         BaseMod.addPotion(SacredHealingPotion.class, Color.WHITE, Color.GOLD, null, SacredHealingPotion.POTION_ID, Bishop.Enums.Bishop);
+        BaseMod.addPotion(OverflowPotion.class,Color.BROWN,Color.ORANGE,Color.ORANGE,OverflowPotion.POTION_ID,Dragon.Enums.Dragon);
+        BaseMod.addPotion(ArmedPotion.class, Color.GOLD, Color.ORANGE, null, ArmedPotion.POTION_ID, Dragon.Enums.Dragon);
+        BaseMod.addPotion(BurnPotion.class, Color.RED, Color.FIREBRICK, Color.FIREBRICK, BurnPotion.POTION_ID, Dragon.Enums.Dragon);
         tempmusic.put("GrandBattle", "sounds/GrandBattle.mp3");
         tempmusic.put("Aiolon", "sounds/Aiolon.mp3");
         tempmusic.put("StormOverRivayle", "sounds/StormOverRivayle.mp3");
@@ -1611,6 +1615,31 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("Joe", new Sfx(voicePath + "Joe.wav"));
             reflectedMap.put("Joe_Acc", new Sfx(voicePath + "Joe_Acc.wav"));
             reflectedMap.put("Romelia", new Sfx(voicePath + "Romelia.wav"));
+            reflectedMap.put("Roy", new Sfx(voicePath + "Roy.wav"));
+            reflectedMap.put("Roy2", new Sfx(voicePath + "Roy2.wav"));
+            reflectedMap.put("DragonlifeBlade", new Sfx(voicePath + "DragonlifeBlade.wav"));
+            reflectedMap.put("DragonstrifeBlade", new Sfx(voicePath + "DragonstrifeBlade.wav"));
+            reflectedMap.put("Jerva", new Sfx(voicePath + "Jerva.wav"));
+            reflectedMap.put("Jerva2", new Sfx(voicePath + "Jerva2.wav"));
+            reflectedMap.put("OmenOfDisdain", new Sfx(voicePath + "OmenOfDisdain.wav"));
+            reflectedMap.put("OmenOfDisdain_Eh", new Sfx(voicePath + "OmenOfDisdain_Eh.wav"));
+            reflectedMap.put("OmenOfDisdain2", new Sfx(voicePath + "OmenOfDisdain2.wav"));
+            reflectedMap.put("FangsOfArdentDestruction", new Sfx(voicePath + "FangsOfArdentDestruction.wav"));
+            reflectedMap.put("Masamune", new Sfx(voicePath + "Masamune.wav"));
+            reflectedMap.put("Masamune2", new Sfx(voicePath + "Masamune2.wav"));
+            reflectedMap.put("Aiela", new Sfx(voicePath + "Aiela.wav"));
+            reflectedMap.put("Aiela2", new Sfx(voicePath + "Aiela2.wav"));
+            reflectedMap.put("Aiela3", new Sfx(voicePath + "Aiela3.wav"));
+            reflectedMap.put("WhitefrostWhisper", new Sfx(voicePath + "WhitefrostWhisper.wav"));
+            reflectedMap.put("Filene", new Sfx(voicePath + "Filene.wav"));
+            reflectedMap.put("Filene2", new Sfx(voicePath + "Filene2.wav"));
+            reflectedMap.put("Filene3", new Sfx(voicePath + "Filene3.wav"));
+            reflectedMap.put("Forte", new Sfx(voicePath + "Forte.wav"));
+            reflectedMap.put("Forte2", new Sfx(voicePath + "Forte2.wav"));
+            reflectedMap.put("Forte3", new Sfx(voicePath + "Forte3.wav"));
+            reflectedMap.put("Forte4", new Sfx(voicePath + "Forte4.wav"));
+            reflectedMap.put("Forte4Power", new Sfx(voicePath + "Forte4Power.wav"));
+            reflectedMap.put("Forte5", new Sfx(voicePath + "Forte5.wav"));
         }
         if (Loader.isModLoaded("CardAugments")) {
             AugmentHelper.register();
@@ -1699,6 +1728,14 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addRelicToCustomPool(new Lagedor(), Royal.Enums.COLOR_YELLOW);
         BaseMod.addRelicToCustomPool(new MonikaBOSS(), Royal.Enums.COLOR_YELLOW);
         BaseMod.addRelicToCustomPool(new Offensive8(), Dragon.Enums.COLOR_BROWN);
+        BaseMod.addRelicToCustomPool(new TotalDomination(),Dragon.Enums.COLOR_BROWN);
+        BaseMod.addRelicToCustomPool(new MaoAndFengtian(),Dragon.Enums.COLOR_BROWN);
+        BaseMod.addRelicToCustomPool(new shadowverse.relics.Hiro(),Dragon.Enums.COLOR_BROWN);
+        BaseMod.addRelicToCustomPool(new Enkia(),Dragon.Enums.COLOR_BROWN);
+        BaseMod.addRelicToCustomPool(new DragonQueenCastle(),Dragon.Enums.COLOR_BROWN);
+        BaseMod.addRelicToCustomPool(new KayaBOSS(),Dragon.Enums.COLOR_BROWN);
+        BaseMod.addRelicToCustomPool(new GreaBOSS(),Dragon.Enums.COLOR_BROWN);
+        BaseMod.addRelicToCustomPool(new InoriBOSS(),Dragon.Enums.COLOR_BROWN);
     }
 
     class Keywords {
@@ -2885,7 +2922,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard(new DragonAwakening());
         BaseMod.addCard(new Sandstorm());
         BaseMod.addCard(new WhimsicalMermaid());
-        BaseMod.addCard(new PrimeDragonKeeper());
+        BaseMod.addCard(new PrimeConflagration());
         BaseMod.addCard(new BlazingDragonewt());
         BaseMod.addCard(new CoralShark());
         BaseMod.addCard(new WindsweptDragonewt());
@@ -2895,6 +2932,21 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard(new Dracu());
         BaseMod.addCard(new Joe());
         BaseMod.addCard(new Romelia());
+        BaseMod.addCard(new CelestialDragoon());
+        BaseMod.addCard(new Gunbein());
+        BaseMod.addCard(new Roy());
+        BaseMod.addCard(new GenesisDragon());
+        BaseMod.addCard(new Jerva());
+        BaseMod.addCard(new FangsOfArdentDestruction());
+        BaseMod.addCard(new OmenOfDisdain());
+        BaseMod.addCard(new Masamune());
+        BaseMod.addCard(new DevotedDragon());
+        BaseMod.addCard(new Aiela());
+        BaseMod.addCard(new WhitefrostWhisper());
+        BaseMod.addCard(new Filene());
+        BaseMod.addCard(new Forte());
+        BaseMod.addCard(new InfiniflameDragon());
+        BaseMod.addCard(new Hiro());
         logger.info("Success");
     }
 

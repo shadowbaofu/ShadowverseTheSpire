@@ -57,7 +57,7 @@ public class ZoePower extends AbstractPower {
     public void onVictory(){
         AbstractPlayer p = AbstractDungeon.player;
         if (p.currentHealth > 0){
-            p.currentHealth+=this.amount;
+            p.heal(this.amount);
             p.update();
         }
     }

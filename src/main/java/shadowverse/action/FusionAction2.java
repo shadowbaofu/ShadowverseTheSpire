@@ -63,7 +63,7 @@ public class FusionAction2 extends AbstractGameAction {
                 return;
             }
             for (AbstractCard c : this.p.hand.group) {
-                if (c.color != color || CardLibrary.getCard(c.cardID).type != type) {
+                if (c.color != color || (CardLibrary.getCard(c.cardID) != null && CardLibrary.getCard(c.cardID).type != type)) {
                     this.cannotFusion.add(c);
                 }
                 if (cost != null) {

@@ -49,6 +49,7 @@ public class Garyu extends AbstractEnhanceCard {
     public Garyu() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Dragon.Enums.COLOR_BROWN, CardRarity.RARE, CardTarget.ENEMY, 2, 4);
         this.baseDamage = 8;
+        this.exhaust = true;
     }
 
 

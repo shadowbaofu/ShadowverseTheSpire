@@ -23,6 +23,7 @@ public class WardenOfBalms extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/WardenOfBalms.png";
+    private boolean played;
 
     public WardenOfBalms() {
         super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Elf.Enums.COLOR_GREEN, CardRarity.UNCOMMON, CardTarget.SELF);
@@ -43,7 +44,7 @@ public class WardenOfBalms extends CustomCard {
 
     public void update() {
         if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
-                Shadowverse.Accelerate(this)) {
+                Shadowverse.Accelerate(this) && !played) {
             setCostForTurn(0);
             this.type = CardType.POWER;
         } else {
@@ -63,10 +64,14 @@ public class WardenOfBalms extends CustomCard {
             addToBot(new GainBlockAction(p, this.block));
             addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(this.magicNumber, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE, true));
             addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(this.magicNumber, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE, true));
-            if (EnergyPanel.getCurrentEnergy() < 6 && this.costForTurn > 0){
-                addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
-            }
+            played = true;
         }
+    }
+
+    @Override
+    public void onMoveToDiscard() {
+        super.onMoveToDiscard();
+        played = false;
     }
 
     public AbstractCard makeCopy() {

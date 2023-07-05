@@ -56,7 +56,7 @@ public class TerrorFormer
     protected void onRightClick() {
         if (!this.hasFusion && AbstractDungeon.player!=null){
             addToBot(new SelectCardsInHandAction(8,TEXT[0],true,true,card -> {
-                return CardLibrary.getCard(card.cardID).type==CardType.ATTACK&&card.color==Elf.Enums.COLOR_GREEN&&CardLibrary.getCard(card.cardID).cost>0&&card!=this;
+                return CardLibrary.getCard(card.cardID) != null && CardLibrary.getCard(card.cardID).type==CardType.ATTACK&&card.color==Elf.Enums.COLOR_GREEN&&CardLibrary.getCard(card.cardID).cost>0&&card!=this;
             }, abstractCards -> {
                 if (abstractCards.size()>1){
                     addToBot(new DrawCardAction(1));

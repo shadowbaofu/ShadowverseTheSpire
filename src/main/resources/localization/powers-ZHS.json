@@ -1997,5 +1997,35 @@
       "回合开始时，获得 #b2 点 #y临时敏捷 和 #b1 点能量。此效果在 #b",
       " 回合后失效。"
     ]
+  },
+  "shadowverse:DragonTagPower": {
+    "NAME": "龙",
+    "DESCRIPTIONS": [
+      "汝为龙，有罪！"
+    ]
+  },
+  "shadowverse:JervaPower": {
+    "NAME": "龙魂战将·吉尔沃",
+    "DESCRIPTIONS": [
+      "本场战斗中你的生命值不能高于最大生命值的一半。战斗结束时返还因这个效果失去的生命值。 NL 回合结束时对随机敌人造成其最大生命值 #b25% 的伤害(不会低于 #b25 点)。"
+    ]
+  },
+  "shadowverse:Jerva2Power": {
+    "NAME": "造极霸龙·吉尔沃",
+    "DESCRIPTIONS": [
+      "回合结束时，如果本回合没有打出任何攻击牌，对随机敌人造成其最大生命值 #b25% 的伤害(不会低于 #b25 点)。"
+    ]
+  },
+  "shadowverse:Masamune2Power": {
+    "NAME": "独眼龙·伊达政宗",
+    "DESCRIPTIONS": [
+      "每当打出攻击牌时，对随机敌人造成 #b4 点伤害。"
+    ]
+  },
+  "shadowverse:Forte4Power": {
+    "NAME": "黑翼霸者·法露特",
+    "DESCRIPTIONS": [
+      "获得力量或敏捷时，依顺序触发以下效果，上限为3次: NL (1)下回合开始时额外获得 #b1 点能量 NL (2)给予随机敌人 #b2 层易伤和虚弱 NL (3)获得 #b1 层缓冲。"
+    ]
   }
 }

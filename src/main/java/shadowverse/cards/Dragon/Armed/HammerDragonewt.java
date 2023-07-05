@@ -28,7 +28,7 @@ public class HammerDragonewt extends CustomCard {
     public static final String IMG_PATH = "img/cards/HammerDragonewt.png";
 
     public HammerDragonewt() {
-        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Dragon.Enums.COLOR_BROWN, CardRarity.UNCOMMON, CardTarget.ENEMY);
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Dragon.Enums.COLOR_BROWN, CardRarity.UNCOMMON, CardTarget.ENEMY);
         this.baseDamage = 4;
         this.tags.add(AbstractShadowversePlayer.Enums.ARMED);
         this.tags.add(AbstractShadowversePlayer.Enums.LASTWORD);

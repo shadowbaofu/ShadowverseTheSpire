@@ -29,7 +29,7 @@ public class BounceActionM extends AbstractGameAction {
         if (this.duration == Settings.ACTION_DUR_MED) {
             CardGroup tmp = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
             for (AbstractCard c : this.p.discardPile.group) {
-                if (CardLibrary.getCard(c.cardID).type == AbstractCard.CardType.ATTACK || CardLibrary.getCard(c.cardID).type == AbstractCard.CardType.POWER)
+                if (CardLibrary.getCard(c.cardID) != null && (CardLibrary.getCard(c.cardID).type == AbstractCard.CardType.ATTACK || CardLibrary.getCard(c.cardID).type == AbstractCard.CardType.POWER))
                     tmp.addToRandomSpot(c);
             }
             if (tmp.size() == 0) {

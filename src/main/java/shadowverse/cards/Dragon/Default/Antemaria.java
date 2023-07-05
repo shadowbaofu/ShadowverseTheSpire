@@ -21,6 +21,7 @@ import com.megacrit.cardcrawl.vfx.combat.ViolentAttackEffect;
 import shadowverse.Shadowverse;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Dragon;
+import shadowverse.relics.Enkia;
 
 
  public class Antemaria extends CustomCard {
@@ -63,9 +64,9 @@ import shadowverse.characters.Dragon;
    }
 
    public void triggerOnGlowCheck() {
-     if (!AbstractDungeon.actionManager.cardsPlayedThisCombat.isEmpty() && (AbstractDungeon.actionManager.cardsPlayedThisCombat
+     if ((!AbstractDungeon.actionManager.cardsPlayedThisCombat.isEmpty() && (AbstractDungeon.actionManager.cardsPlayedThisCombat
              .get(AbstractDungeon.actionManager.cardsPlayedThisCombat
-                     .size() - 1)).hasTag(AbstractShadowversePlayer.Enums.CONDEMNED)) {
+                     .size() - 1)).hasTag(AbstractShadowversePlayer.Enums.CONDEMNED)) || AbstractDungeon.player.hasRelic(Enkia.ID)) {
        this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
      } else {
        this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
@@ -79,9 +80,9 @@ import shadowverse.characters.Dragon;
      }else {
        addToBot(new SFXAction("Antemaria"));
        addToBot(new VFXAction(new ViolentAttackEffect(abstractMonster.hb.cX, abstractMonster.hb.cY, Color.ORANGE), 0.8F));
-       if (!AbstractDungeon.actionManager.cardsPlayedThisCombat.isEmpty() && (AbstractDungeon.actionManager.cardsPlayedThisCombat
+       if ((AbstractDungeon.actionManager.cardsPlayedThisCombat.size() > 1 && (AbstractDungeon.actionManager.cardsPlayedThisCombat
                .get(AbstractDungeon.actionManager.cardsPlayedThisCombat
-                       .size() - 1)).hasTag(AbstractShadowversePlayer.Enums.CONDEMNED)){
+                       .size() - 2)).hasTag(AbstractShadowversePlayer.Enums.CONDEMNED)) || AbstractDungeon.player.hasRelic(Enkia.ID)){
          addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage*2, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
        }else {
          addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));

@@ -25,6 +25,8 @@ public class DirtyPriest
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/DirtyPriest.png";
+    private boolean played;
+
 
     public DirtyPriest() {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.COMMON, CardTarget.SELF);
@@ -43,7 +45,7 @@ public class DirtyPriest
     @Override
     public void update() {
         if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT&&
-                Shadowverse.Accelerate(this)){
+                Shadowverse.Accelerate(this) && !played){
             setCostForTurn(0);
             this.type = CardType.POWER;
         }else {
@@ -64,12 +66,15 @@ public class DirtyPriest
             addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
             addToBot(new MakeTempCardInDrawPileAction(this.cardsToPreview,1,true,true,false));
             addToBot(new MakeTempCardInDiscardAction(this.cardsToPreview,1));
-            if (this.type == CardType.POWER){
-                addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
-            }
+            played = true;
         }
     }
 
+    @Override
+    public void onMoveToDiscard() {
+        super.onMoveToDiscard();
+        played = false;
+    }
 
     public AbstractCard makeCopy() {
         return (AbstractCard) new DirtyPriest();

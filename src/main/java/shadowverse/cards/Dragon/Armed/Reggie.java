@@ -52,7 +52,7 @@ public class Reggie extends CustomCard {
                 damage *= 2;
             }
         }
-        addToBot(new DamageAction(abstractMonster,new DamageInfo(abstractPlayer,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        addToBot(new DamageAction(abstractMonster,new DamageInfo(abstractPlayer,damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         if (!upgraded){
             if ((abstractPlayer.hasPower(StrengthPower.POWER_ID)&& abstractPlayer.getPower(StrengthPower.POWER_ID).amount > 0) || this.hasTag(AbstractShadowversePlayer.Enums.ARMED)) {
                 addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new OverflowPower(abstractPlayer,1)));

@@ -24,7 +24,7 @@ import shadowverse.characters.Dragon;
 
    public DragonWarrior() {
      super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Dragon.Enums.COLOR_BROWN, CardRarity.BASIC, CardTarget.ENEMY);
-     this.baseDamage = 13;
+     this.baseDamage = 11;
      this.baseMagicNumber = 6;
      this.magicNumber = this.baseMagicNumber;
    }

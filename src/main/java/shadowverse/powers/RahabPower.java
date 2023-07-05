@@ -28,14 +28,14 @@ public class RahabPower extends AbstractPower {
 
     @Override
     public void atEndOfTurn(boolean isPlayer) {
-        if (isPlayer){
+        if (isPlayer) {
             int count = EnergyPanel.getCurrentEnergy();
-            addToBot(new ApplyPowerAction(this.owner,this.owner,new StrengthPower(this.owner,this.amount * count),
-                    this.amount * count));
-            addToBot(new RemoveSpecificPowerAction(this.owner,this.owner,this));
+            if (count > 0)
+                addToBot(new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, this.amount * count),
+                        this.amount * count));
+            addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this));
         }
     }
-
 
 
     public void updateDescription() {

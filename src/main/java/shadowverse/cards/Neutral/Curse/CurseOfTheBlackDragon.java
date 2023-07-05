@@ -29,7 +29,7 @@ public class CurseOfTheBlackDragon extends CustomCard {
 
     public CurseOfTheBlackDragon() {
         super(ID, NAME, IMG_PATH, -2, DESCRIPTION, CardType.CURSE, CardColor.CURSE, CardRarity.SPECIAL, CardTarget.NONE);
-        this.baseDamage = 8;
+        this.baseDamage = 6;
         this.selfRetain = true;
     }
 
@@ -50,7 +50,7 @@ public class CurseOfTheBlackDragon extends CustomCard {
             AbstractCreature m = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
             if (m != null){
                 addToBot(new VFXAction(new ClawEffect(m.hb.cX, m.hb.cY, Color.SCARLET, Color.PURPLE), 0.1F));
-                addToBot(new DamageAction(m,new DamageInfo(AbstractDungeon.player,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
+                addToBot(new DamageAction(m,new DamageInfo(AbstractDungeon.player,this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.NONE));
             }
         } else {
             addToBot(new LoseHPAction(AbstractDungeon.player, AbstractDungeon.player, 1));

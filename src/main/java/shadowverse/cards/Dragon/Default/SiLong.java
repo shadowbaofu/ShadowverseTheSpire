@@ -26,10 +26,11 @@ import shadowverse.powers.OverflowPower;
    public static final String NAME = cardStrings.NAME;
    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
    public static final String IMG_PATH = "img/cards/SiLong.png";
+   private boolean trigger;
 
    public SiLong() {
      super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Dragon.Enums.COLOR_BROWN, CardRarity.RARE, CardTarget.SELF);
-     this.baseBlock = 12;
+     this.baseBlock = 9;
      this.cardsToPreview = new TidalTyranny();
      this.tags.add(AbstractShadowversePlayer.Enums.FES);
    }
@@ -38,7 +39,7 @@ import shadowverse.powers.OverflowPower;
    public void upgrade() {
      if (!this.upgraded) {
        upgradeName();
-       upgradeBlock(4);
+       upgradeBlock(3);
        this.cardsToPreview.upgrade();
        this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
        initializeDescription();
@@ -49,7 +50,10 @@ import shadowverse.powers.OverflowPower;
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
      addToBot(new SFXAction("SiLong"));
      addToBot(new GainBlockAction(abstractPlayer,this.block));
-     addToBot(new HealAction(abstractPlayer,abstractPlayer,3));
+     if (!trigger){
+       addToBot(new HealAction(abstractPlayer,abstractPlayer,3));
+       trigger = true;
+     }
      addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new OverflowPower(abstractPlayer,1)));
      addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
    }

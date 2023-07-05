@@ -21,6 +21,7 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.vfx.combat.BiteEffect;
 import shadowverse.Shadowverse;
 import shadowverse.action.NaturalDiscardAction;
+import shadowverse.action.WildfireAction;
 import shadowverse.cards.Neutral.Temp.NaterranGreatTree;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Dragon;
@@ -72,12 +73,7 @@ public class WildfireTyrannosaur extends CustomCard {
             addToBot(new DamageAction(abstractMonster,new DamageInfo(abstractPlayer,this.magicNumber, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.NONE));
             addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
         } else {
-            int amount = -1;
-            for (AbstractCard c : abstractPlayer.hand.group) {
-                if (c.hasTag(AbstractShadowversePlayer.Enums.NATURAL))
-                    amount++;
-            }
-            addToBot(new NaturalDiscardAction(abstractPlayer, abstractPlayer, amount, false, false, new DamageAllEnemiesAction(abstractPlayer, DamageInfo.createDamageMatrix(this.damage, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE)));
+            addToBot(new WildfireAction(this.damage));
         }
     }
 

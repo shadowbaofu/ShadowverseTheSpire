@@ -24,14 +24,14 @@ import shadowverse.characters.Dragon;
 
    public Ghandagoza() {
      super(ID, NAME, IMG_PATH, 4, DESCRIPTION, CardType.ATTACK, Dragon.Enums.COLOR_BROWN, CardRarity.COMMON, CardTarget.ENEMY);
-     this.baseDamage = 20;
+     this.baseDamage = 18;
    }
  
    
    public void upgrade() {
      if (!this.upgraded) {
        upgradeName();
-       upgradeDamage(8);
+       upgradeDamage(2);
      } 
    }
  

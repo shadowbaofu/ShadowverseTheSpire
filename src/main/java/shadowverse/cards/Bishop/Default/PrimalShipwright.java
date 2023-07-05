@@ -28,7 +28,7 @@ public class PrimalShipwright
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/PrimalShipwright.png";
-    public boolean crystalize;
+    private boolean played;
 
     public PrimalShipwright() {
         super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.UNCOMMON, CardTarget.ENEMY);
@@ -49,7 +49,7 @@ public class PrimalShipwright
     @Override
     public void update() {
         if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT&&
-                Shadowverse.Accelerate(this)&&!this.crystalize){
+                Shadowverse.Accelerate(this) && !played){
             setCostForTurn(0);
             this.type = CardType.POWER;
         }else {
@@ -83,6 +83,7 @@ public class PrimalShipwright
         this.isCostModifiedForTurn = false;
         this.type = CardType.ATTACK;
         applyPowers();
+        played = false;
     }
 
     @Override
@@ -107,13 +108,10 @@ public class PrimalShipwright
         if (this.type==CardType.POWER && this.costForTurn == 0){
             addToBot(new SFXAction("PrimalShipwright_Acc"));
         }else {
-            this.crystalize = false;
             addToBot(new SFXAction("PrimalShipwright"));
             calculateCardDamage(abstractMonster);
             addToBot(new DamageAction(abstractMonster, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
-            if (this.type == CardType.POWER){
-                addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
-            }
+            played = true;
         }
     }
 
@@ -133,7 +131,7 @@ public class PrimalShipwright
             c.upgrade();
         c.setCostForTurn(0);
         c.type = CardType.ATTACK;
-        ((PrimalShipwright)c).crystalize = true;
+        played = true;
         AbstractDungeon.player.hand.addToTop(c);
     }
 

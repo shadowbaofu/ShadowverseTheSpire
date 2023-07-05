@@ -40,7 +40,7 @@
    public void triggerOnOtherCardPlayed(AbstractCard c) {
      if (c.type == CardType.SKILL) {
        flash();
-       addToBot((AbstractGameAction)new SFXAction("spell_boost"));
+       addToBot(new SFXAction("spell_boost"));
        
        this.magicNumber = ++this.baseMagicNumber;
      } 
@@ -58,17 +58,17 @@
  
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     addToBot((AbstractGameAction)new DrawCardAction((AbstractCreature)abstractPlayer, 1));
+     addToBot(new DrawCardAction(abstractPlayer, 1));
      if (Settings.FAST_MODE) {
-       addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new BlizzardEffect(this.magicNumber + 1, 
+       addToBot(new VFXAction(new BlizzardEffect(this.magicNumber + 1, 
                AbstractDungeon.getMonsters().shouldFlipVfx()), 0.25F));
      } else {
-       addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new BlizzardEffect(this.magicNumber + 1, AbstractDungeon.getMonsters().shouldFlipVfx()), 1.0F));
+       addToBot(new VFXAction(new BlizzardEffect(this.magicNumber + 1, AbstractDungeon.getMonsters().shouldFlipVfx()), 1.0F));
      } 
      if (this.upgraded) {
-       addToBot((AbstractGameAction)new JudgementAction((AbstractCreature)abstractMonster, 10 + this.magicNumber * 5));
+       addToBot(new JudgementAction(abstractMonster, 10 + this.magicNumber * 5));
      } else {
-       addToBot((AbstractGameAction)new JudgementAction((AbstractCreature)abstractMonster, 10 + this.magicNumber * 3));
+       addToBot(new JudgementAction(abstractMonster, 10 + this.magicNumber * 3));
      } 
      this.baseMagicNumber = 0;
      this.magicNumber = this.baseMagicNumber;

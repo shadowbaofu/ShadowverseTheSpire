@@ -28,6 +28,7 @@ public class AbyssalColonel
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/AbyssalColonel.png";
+    private boolean played;
 
     public AbyssalColonel() {
         super(ID, NAME, IMG_PATH, 4, DESCRIPTION, CardType.ATTACK, Necromancer.Enums.COLOR_PURPLE, CardRarity.UNCOMMON, CardTarget.ENEMY);
@@ -54,7 +55,7 @@ public class AbyssalColonel
     @Override
     public void update() {
         if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
-                Shadowverse.Accelerate(this)) {
+                Shadowverse.Accelerate(this) && !played) {
             setCostForTurn(1);
             this.type = CardType.POWER;
         } else {
@@ -72,10 +73,14 @@ public class AbyssalColonel
         } else {
             addToBot(new GainBlockAction(abstractPlayer, this.block));
             addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
-            if (EnergyPanel.getCurrentEnergy() < 8 && this.costForTurn > 0){
-                addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
-            }
+            played = true;
         }
+    }
+
+    @Override
+    public void onMoveToDiscard() {
+        super.onMoveToDiscard();
+        played = false;
     }
 
     @Override

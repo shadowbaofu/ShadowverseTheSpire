@@ -17,6 +17,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Dragon;
 import shadowverse.powers.OverflowPower;
+import shadowverse.relics.Enkia;
 
 
  public class HotheadedMarauder extends CustomCard {
@@ -41,9 +42,9 @@ import shadowverse.powers.OverflowPower;
    }
 
    public void triggerOnGlowCheck() {
-     if (!AbstractDungeon.actionManager.cardsPlayedThisCombat.isEmpty() && (AbstractDungeon.actionManager.cardsPlayedThisCombat
+     if ((!AbstractDungeon.actionManager.cardsPlayedThisCombat.isEmpty() && (AbstractDungeon.actionManager.cardsPlayedThisCombat
              .get(AbstractDungeon.actionManager.cardsPlayedThisCombat
-                     .size() - 1)).hasTag(AbstractShadowversePlayer.Enums.CONDEMNED)) {
+                     .size() - 1)).hasTag(AbstractShadowversePlayer.Enums.CONDEMNED)) || AbstractDungeon.player.hasRelic(Enkia.ID)) {
        this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
      } else {
        this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
@@ -53,9 +54,9 @@ import shadowverse.powers.OverflowPower;
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
      addToBot(new SFXAction("HotheadedMarauder"));
      addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-     if (!AbstractDungeon.actionManager.cardsPlayedThisCombat.isEmpty() && (AbstractDungeon.actionManager.cardsPlayedThisCombat
+     if ((AbstractDungeon.actionManager.cardsPlayedThisCombat.size() > 1 && (AbstractDungeon.actionManager.cardsPlayedThisCombat
              .get(AbstractDungeon.actionManager.cardsPlayedThisCombat
-                     .size() - 1)).hasTag(AbstractShadowversePlayer.Enums.CONDEMNED)){
+                     .size() - 2)).hasTag(AbstractShadowversePlayer.Enums.CONDEMNED)) || AbstractDungeon.player.hasRelic(Enkia.ID)){
        addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new OverflowPower(abstractPlayer,1)));
      }
    }

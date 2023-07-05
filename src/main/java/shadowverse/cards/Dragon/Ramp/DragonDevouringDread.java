@@ -90,7 +90,7 @@ public class DragonDevouringDread extends AbstractRightClickCard2 {
     protected void onRightClick() {
         if (!this.hasFusion && AbstractDungeon.player!=null){
             addToBot(new SelectCardsInHandAction(9,TEXT[0],true,true, card -> {
-                return CardLibrary.getCard(card.cardID).type==CardType.ATTACK&&CardLibrary.getCard(card.cardID).cost > 2&&card!=this;
+                return CardLibrary.getCard(card.cardID) != null && CardLibrary.getCard(card.cardID).type==CardType.ATTACK&&CardLibrary.getCard(card.cardID).cost > 2&&card!=this;
             }, abstractCards -> {
                 for (AbstractCard c:abstractCards){
                     addToBot(new ExhaustSpecificCardAction(c,AbstractDungeon.player.hand));

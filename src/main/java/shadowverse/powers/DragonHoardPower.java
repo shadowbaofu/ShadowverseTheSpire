@@ -50,19 +50,19 @@ public class DragonHoardPower
                 flash();
                 addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this));
                 for (AbstractCard c : AbstractDungeon.player.hand.group){
-                    if (CardLibrary.getCard(c.cardID).type == AbstractCard.CardType.ATTACK){
+                    if (CardLibrary.getCard(c.cardID) != null && CardLibrary.getCard(c.cardID).type == AbstractCard.CardType.ATTACK){
                         addToBot(new ExhaustSpecificCardAction(c,AbstractDungeon.player.hand));
                         addToBot(new MakeTempCardInHandAction(new InfernoDragon()));
                     }
                 }
                 for (AbstractCard c : AbstractDungeon.player.drawPile.group){
-                    if (CardLibrary.getCard(c.cardID).type == AbstractCard.CardType.ATTACK){
+                    if (CardLibrary.getCard(c.cardID) != null && CardLibrary.getCard(c.cardID).type == AbstractCard.CardType.ATTACK){
                         addToBot(new ExhaustSpecificCardAction(c,AbstractDungeon.player.drawPile));
                         addToBot(new MakeTempCardInDrawPileAction(new InfernoDragon(),1,true,true));
                     }
                 }
                 for (AbstractCard c : AbstractDungeon.player.discardPile.group){
-                    if (CardLibrary.getCard(c.cardID).type == AbstractCard.CardType.ATTACK){
+                    if (CardLibrary.getCard(c.cardID) != null && CardLibrary.getCard(c.cardID).type == AbstractCard.CardType.ATTACK){
                         addToBot(new ExhaustSpecificCardAction(c,AbstractDungeon.player.discardPile));
                         addToBot(new MakeTempCardInDiscardAction(new InfernoDragon(),1));
                     }
@@ -77,19 +77,19 @@ public class DragonHoardPower
             flash();
             addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this));
             for (AbstractCard c : AbstractDungeon.player.hand.group){
-                if (CardLibrary.getCard(c.cardID).type == AbstractCard.CardType.ATTACK){
+                if (CardLibrary.getCard(c.cardID) != null && CardLibrary.getCard(c.cardID).type == AbstractCard.CardType.ATTACK){
                     addToBot(new ExhaustSpecificCardAction(c,AbstractDungeon.player.hand));
                     addToBot(new MakeTempCardInHandAction(new InfernoDragon()));
                 }
             }
             for (AbstractCard c : AbstractDungeon.player.drawPile.group){
-                if (CardLibrary.getCard(c.cardID).type == AbstractCard.CardType.ATTACK){
+                if (CardLibrary.getCard(c.cardID) != null && CardLibrary.getCard(c.cardID).type == AbstractCard.CardType.ATTACK){
                     addToBot(new ExhaustSpecificCardAction(c,AbstractDungeon.player.drawPile));
                     addToBot(new MakeTempCardInDrawPileAction(new InfernoDragon(),1,true,true));
                 }
             }
             for (AbstractCard c : AbstractDungeon.player.discardPile.group){
-                if (CardLibrary.getCard(c.cardID).type == AbstractCard.CardType.ATTACK){
+                if (CardLibrary.getCard(c.cardID) != null && CardLibrary.getCard(c.cardID).type == AbstractCard.CardType.ATTACK){
                     addToBot(new ExhaustSpecificCardAction(c,AbstractDungeon.player.discardPile));
                     addToBot(new MakeTempCardInDiscardAction(new InfernoDragon(),1));
                 }

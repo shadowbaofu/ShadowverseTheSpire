@@ -103,16 +103,12 @@ import shadowverse.powers.HeavenlyAegisPower;
      boolean hasPlaton = false;
      for (AbstractOrb o: AbstractDungeon.player.orbs){
        if (o instanceof AmuletOrb){
-         if (((AmuletOrb) o).amulet instanceof RelicSphere && o!=paramOrb) {
-           break;
-         } else {
            if (((AmuletOrb) o).amulet instanceof RelicPrism)
              hasPrism = true;
            if (((AmuletOrb) o).amulet instanceof RelicTorus)
              hasTorus = true;
            if (((AmuletOrb) o).amulet instanceof RelicPlaton)
              hasPlaton = true;
-         }
        }
      }
      if (hasPrism && hasTorus && hasPlaton){

@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Dragon;
+import shadowverse.relics.Enkia;
 
 
  public class ScorchedEarthTyrant extends CustomCard {
@@ -42,9 +43,9 @@ import shadowverse.characters.Dragon;
    }
 
    public void triggerOnGlowCheck() {
-     if (!AbstractDungeon.actionManager.cardsPlayedThisCombat.isEmpty() && (AbstractDungeon.actionManager.cardsPlayedThisCombat
+     if ((!AbstractDungeon.actionManager.cardsPlayedThisCombat.isEmpty() && (AbstractDungeon.actionManager.cardsPlayedThisCombat
              .get(AbstractDungeon.actionManager.cardsPlayedThisCombat
-                     .size() - 1)).hasTag(AbstractShadowversePlayer.Enums.CONDEMNED)) {
+                     .size() - 1)).hasTag(AbstractShadowversePlayer.Enums.CONDEMNED) ) || AbstractDungeon.player.hasRelic(Enkia.ID)) {
        this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
      } else {
        this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
@@ -55,9 +56,9 @@ import shadowverse.characters.Dragon;
      addToBot(new SFXAction("ScorchedEarthTyrant"));
      addToBot(new GainBlockAction(abstractPlayer,this.block));
      addToBot(new DamageAllEnemiesAction(abstractPlayer, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.FIRE));
-     if (!AbstractDungeon.actionManager.cardsPlayedThisCombat.isEmpty() && (AbstractDungeon.actionManager.cardsPlayedThisCombat
+     if ((AbstractDungeon.actionManager.cardsPlayedThisCombat.size() > 1 && (AbstractDungeon.actionManager.cardsPlayedThisCombat
              .get(AbstractDungeon.actionManager.cardsPlayedThisCombat
-                     .size() - 1)).hasTag(AbstractShadowversePlayer.Enums.CONDEMNED)){
+                     .size() - 2)).hasTag(AbstractShadowversePlayer.Enums.CONDEMNED)) || AbstractDungeon.player.hasRelic(Enkia.ID)){
        addToBot(new DamageAllEnemiesAction(abstractPlayer, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.FIRE));
      }
    }

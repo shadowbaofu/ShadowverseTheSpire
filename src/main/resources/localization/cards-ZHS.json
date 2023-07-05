@@ -5208,8 +5208,8 @@
   },
   "shadowverse:Lucius_N": {
     "NAME": "传奇教师·路西乌斯",
-    "DESCRIPTION": "学园 NL 造成 !D! 点伤害 。 NL 根据当前角色触发以下效果: NL 精灵·巫师:获得1点能量 NL 死灵术士·复仇者:增加2张 *怨灵 到手中 NL 皇家护卫:给予2层 易伤 NL 吸血鬼·主教:回复3点生命",
-    "UPGRADE_DESCRIPTION":"学园 NL 造成 !D! 点伤害 。 NL 根据当前角色触发以下效果: NL 精灵·巫师:获得1点能量 NL 死灵术士·复仇者:增加2张 *怨灵 到手中 NL 皇家护卫:给予2层 易伤 NL 吸血鬼·主教:回复3点生命 NL 根据目标敌人类型触发以下效果: NL 普通则额外造成4点伤害，精英则获得1点能量 NL 首领则增加2张 *古老的创造物 到手中。"
+    "DESCRIPTION": "学园 NL 造成 !D! 点伤害 。 NL 根据当前角色触发以下效果: NL 精灵·巫师:获得1点能量 NL 死灵术士·复仇者:增加2张 *怨灵 到手中 NL 皇家护卫·龙族:给予2层 易伤 NL 吸血鬼·主教:回复3点生命",
+    "UPGRADE_DESCRIPTION":"学园 NL 造成 !D! 点伤害 。 NL 根据当前角色触发以下效果: NL 精灵·巫师:获得1点能量 NL 死灵术士·复仇者:增加2张 *怨灵 到手中 NL 皇家护卫·龙族:给予2层 易伤 NL 吸血鬼·主教:回复3点生命 NL 根据目标敌人类型触发以下效果: NL 普通则额外造成4点伤害，精英则获得1点能量 NL 首领则增加2张 *古老的创造物 到手中。"
   },
   "shadowverse:BellWitch": {
     "NAME": "手铃魔术师",
@@ -5327,7 +5327,7 @@
   },
   "shadowverse:Gawain": {
     "NAME": "誓约的荣光·高文",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 协作 5：额外抽1张牌。 NL 协作 10：抽到这张卡时自动升级。 NL 协作 15：造成双倍伤害。 NL 协作 20：获得1层缓冲。",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 协作 5：额外抽1张牌。 NL 协作 10：抽到这张卡时自动升级。 NL 协作 15：造成双倍伤害。 NL 协作 20：获得1层缓冲。 NL 消耗性 !stslib:ex! 。",
     "EXTENDED_DESCRIPTION": [
       " NL （协作数：",
       ")"
@@ -5620,8 +5620,8 @@
   },
   "shadowverse:SiLong": {
     "NAME": "独尊龙·四龙",
-    "DESCRIPTION": "宴乐 NL 获得 !B! 点 格挡 ，回复3点生命。 NL 增加1张 *波涛的暴压 到手中。 NL 获得1点觉醒值。",
-    "UPGRADE_DESCRIPTION": "宴乐 NL 获得 !B! 点 格挡 ，回复3点生命。 NL 增加1张 *波涛的暴压+ 到手中。 NL 获得1点觉醒值。"
+    "DESCRIPTION": "宴乐 NL 获得 !B! 点 格挡 。 NL 限定 回复3点生命。 NL 增加1张 *波涛的暴压 到手中。 NL 获得1点觉醒值。",
+    "UPGRADE_DESCRIPTION": "宴乐 NL 获得 !B! 点 格挡 。 NL 限定 回复3点生命。 NL 增加1张 *波涛的暴压+ 到手中。 NL 获得1点觉醒值。"
   },
   "shadowverse:TidalTyranny": {
     "NAME": "波涛的暴压",
@@ -5791,7 +5791,7 @@
   },
   "shadowverse:Georgius": {
     "NAME": "圣乔治",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 对全体敌人造成 !D! 点伤害 。 NL 如果已 觉醒 则再造成一次伤害。 NL 如果已 完全觉醒 则再造成一次伤害。"
+    "DESCRIPTION": "对全体敌人造成 !D! 点伤害 。 NL 赋予全体敌人龙属性。 NL 如果已 觉醒 则再造成一次伤害。 NL 如果已 完全觉醒 则再造成一次伤害。"
   },
   "shadowverse:Ethica": {
     "NAME": "红炎龙爪·艾琪卡",
@@ -5815,12 +5815,12 @@
   },
   "shadowverse:Garyu": {
     "NAME": "霸道龙人·卧龙",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 爆能强化 2: 抉择 NL *霸道金龙 NL *霸道银龙 NL 选择1张耗能变为0加入手中。 NL 爆能强化 4:改为全部加入手中并获得2点 力量 和 敏捷 。",
-    "UPGRADE_DESCRIPTION":"造成 !D! 点伤害。 NL 爆能强化 2: 抉择 NL *霸道金龙+ NL *霸道银龙+ NL 选择1张耗能变为0加入手中。 NL 爆能强化 4:改为全部加入手中并获得2点 力量 和 敏捷 。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 爆能强化 2: 抉择 NL *霸道金龙 NL *霸道银龙 NL 选择1张耗能变为0加入手中。 NL 爆能强化 4:改为全部加入手中并获得2点 力量 和 敏捷 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"造成 !D! 点伤害。 NL 爆能强化 2: 抉择 NL *霸道金龙+ NL *霸道银龙+ NL 选择1张耗能变为0加入手中。 NL 爆能强化 4:改为全部加入手中并获得2点 力量 和 敏捷 。 NL 消耗 。"
   },
   "shadowverse:RowenCard": {
     "NAME": "龙枪战士·罗文",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 增加1张 *黑龙诅咒 到手中。 NL 爆能强化 2: 倒计时 2:造成的伤害 + 3。 NL 消耗性 !stslib:ex! 。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 增加1张 *黑龙诅咒 到手中。 NL 爆能强化 2: 倒计时 2:造成的伤害 + 2。 NL 消耗性 !stslib:ex! 。"
   },
   "shadowverse:WildfangDragonewt": {
     "NAME": "荒牙龙少女",
@@ -5884,8 +5884,8 @@
   },
   "shadowverse:Byron": {
     "NAME": "钢甲龙骑士·拜伦",
-    "DESCRIPTION": "机械 NL 获得 !B! 点 格挡 。 NL 本回合内，每当打出攻击牌时，获得1点 力量 。 NL 如果是 机械 牌，则再获得1点 敏捷 。",
-    "UPGRADE_DESCRIPTION":"机械 NL 获得 !B! 点 格挡 。 NL 增加1张 *生产器械 到手中。 NL 本回合内，每当打出攻击牌时，获得1点 力量 。 NL 如果是 机械 牌，则再获得1点 敏捷 。"
+    "DESCRIPTION": "机械 NL 本回合内，每当打出攻击牌时，获得1点 力量 。 NL 如果是 机械 牌，则再获得1点 敏捷 。",
+    "UPGRADE_DESCRIPTION":"机械 NL 增加1张 *生产器械 到手中。 NL 本回合内，每当打出攻击牌时，获得1点 力量 。 NL 如果是 机械 牌，则再获得1点 敏捷 。"
   },
   "shadowverse:ArmorBurst": {
     "NAME": "装甲解放",
@@ -5927,7 +5927,8 @@
   },
   "shadowverse:Zoe": {
     "NAME": "伟大的调停者·佐伊",
-    "DESCRIPTION": "激奏 0:增加1张没有激奏效果的 *伟大的调停者·佐伊 到弃牌堆中并抽1张牌。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL 失去生命直至1点。 NL 战斗结束时，回复因此失去的生命。 NL 本回合你受到的伤害变为0。 NL 消耗 。"
+    "DESCRIPTION": "激奏 0:增加1张没有激奏效果的 *伟大的调停者·佐伊 到弃牌堆中并抽1张牌。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL 失去生命直至1点。 NL 战斗结束时，回复因此失去的生命。 NL 本回合你受到的伤害变为0。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"激奏 0:增加1张没有激奏效果的 *伟大的调停者·佐伊+ 到弃牌堆中并抽1张牌。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL 失去生命直至1点。 NL 战斗结束时，回复因此失去的生命。 NL 本回合你受到的伤害变为0。 NL 消耗 。"
   },
   "shadowverse:TheJustice": {
     "NAME": "《正义》·伊兰翠",
@@ -5956,8 +5957,8 @@
   },
   "shadowverse:Lindworm": {
     "NAME": "林德沃姆",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !B! 点 格挡 。 NL 果本场战斗已打出过10张以上的非攻击牌且剩余能量为5以上，消耗5点能量并改为 抉择 : NL *圣龙·林德沃姆 NL *邪龙·林德沃姆 NL 从选择的牌中将1张加入手中。",
-    "UPGRADE_DESCRIPTION":"造成 !D! 点伤害。 NL 获得 !B! 点 格挡 。 NL 果本场战斗已打出过10张以上的非攻击牌且剩余能量为5以上，消耗5点能量并改为 抉择 : NL *圣龙·林德沃姆+ NL *邪龙·林德沃姆+ NL 从选择的牌中将1张加入手中。。",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !B! 点 格挡 。 NL 果本场战斗已打出过10张以上的非攻击牌且剩余能量为5以上，改为 抉择 : NL *圣龙·林德沃姆 NL *邪龙·林德沃姆 NL 从选择的牌中将1张加入手中。",
+    "UPGRADE_DESCRIPTION":"造成 !D! 点伤害。 NL 获得 !B! 点 格挡 。 NL 果本场战斗已打出过10张以上的非攻击牌且剩余能量为5以上，改为 抉择 : NL *圣龙·林德沃姆+ NL *邪龙·林德沃姆+ NL 从选择的牌中将1张加入手中。。",
     "EXTENDED_DESCRIPTION": [
       " NL （已打出过",
       "张非攻击牌)"
@@ -5969,7 +5970,7 @@
   },
   "shadowverse:WildfireTyrannosaur": {
     "NAME": "猛焰暴龙",
-    "DESCRIPTION": "自然 · 激奏 0:造成 !M! 点伤害，增加1张 *那塔拉的大树 到手中。 NL  NL --------------------- NL  NL 丢弃手中 自然 牌樟树的卡，每丢弃1张 自然 牌，对全体敌人造成 !D! 点伤害。"
+    "DESCRIPTION": "自然 · 激奏 0:造成 !M! 点伤害，增加1张 *那塔拉的大树 到手中。 NL  NL --------------------- NL  NL 丢弃手中所有 自然 牌，每丢弃1张对全体敌人造成 !D! 点伤害。"
   },
   "shadowverse:InfernoDragon": {
     "NAME": "地狱炎龙",
@@ -6002,7 +6003,7 @@
   },
   "shadowverse:PrimeConflagration": {
     "NAME": "原初的炎热",
-    "DESCRIPTION": "获得1点 敏捷 。 NL 对随机敌人造成 !M! 点伤害。"
+    "DESCRIPTION": "获得1点 敏捷 。 NL 对随机敌人造成 !M! 点伤害。 NL 消耗性 !stslib:ex! 。"
   },
   "shadowverse:BlazingDragonewt": {
     "NAME": "火炎龙斗士",
@@ -6027,7 +6028,7 @@
   "shadowverse:CelestialDragoon": {
     "NAME": "天威的龙巫女",
     "DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得1点 力量 和 敏捷 。",
-    "UPGRADE_DESCRIPTION":"获得 !B! 点 格挡 。 NL 获得1点 力量 和 敏捷 。 NL 造成 !B! 点伤害，只受 敏捷 影响。"
+    "UPGRADE_DESCRIPTION":"获得 !B! 点 格挡 。 NL 获得1点 力量 和 敏捷 。 NL 造成 !B! 点伤害，只受 敏捷 影响。 NL 消耗性 !stslib:ex! 。"
   },
   "shadowverse:HowlingConflagration": {
     "NAME": "爆炎咆哮",
@@ -6044,7 +6045,7 @@
   },
   "shadowverse:Romelia": {
     "NAME": "崇高的雳雷·罗玛洛尼雅",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得2点 临时敏捷 。 NL 倒计时 2:回合开始时，获得2点 临时敏捷 和 [E] 。. NL 消耗 。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得2点 临时敏捷 。 NL 倒计时 2:回合开始时，获得2点 临时敏捷 和 [E] 。 NL 消耗 。"
   },
   "shadowverse:DragonPool": {
     "NAME": "",
@@ -6059,5 +6060,122 @@
       "节奏",
       "Buff"
     ]
+  },
+  "shadowverse:DragonlifeBlade": {
+    "NAME": "活龙剑",
+    "DESCRIPTION": "赋予龙属性。 NL 获得1点 觉醒值 。 NL 下回合获得 [E] 。 NL 消耗 。"
+  },
+  "shadowverse:DragonstrifeBlade": {
+    "NAME": "杀龙剑",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果目标有龙属性，伤害翻倍。 NL 消耗 。"
+  },
+  "shadowverse:Roy": {
+    "NAME": "斩龙剑士·罗伊",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 抉择 : NL *活龙剑 NL *杀龙剑 NL 从选择的牌中增加1张到手中。",
+    "UPGRADE_DESCRIPTION":"获得 !B! 点 格挡 。 NL 抉择 : NL *活龙剑+ NL *杀龙剑+ NL 从选择的牌中增加1张到手中。"
+  },
+  "shadowverse:Roy2": {
+    "NAME": "杀龙剑士·罗伊",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得1点 觉醒值 。 NL 爆能强化 4: 破坏 1张牌，造成双倍伤害，并对全体敌人造成9点伤害。"
+  },
+  "shadowverse:GenesisDragon": {
+    "NAME": "创世龙",
+    "DESCRIPTION": "造成 !D! 点伤害。"
+  },
+  "shadowverse:GenesisDragon2": {
+    "NAME": "天厄的创世龙",
+    "DESCRIPTION": "激奏 2: 获得1点 觉醒值 。 NL 对全体敌人造成18点伤害。 NL  NL ------------------- NL  NL 造成 !D! 点伤害。"
+  },
+  "shadowverse:Jerva": {
+    "NAME": "龙魂战将·吉尔沃",
+    "DESCRIPTION": "生命值变为最大生命值的一半。之后在本场战斗中你的生命值不会高于最大生命值的一半，战斗结束时回复因此失去的生命值。 NL 回合结束时对随机敌人造成其最大生命值25%的伤害(不会低于25点)。 NL 虚无 。",
+    "UPGRADE_DESCRIPTION":"生命值变为最大生命值的一半。之后在本场战斗中你的生命值不会高于最大生命值的一半，战斗结束时回复因此失去的生命值。 NL 回合结束时对随机敌人造成其最大生命值25%的伤害(不会低于25点)。"
+  },
+  "shadowverse:Jerva2": {
+    "NAME": "造极霸龙·吉尔沃",
+    "DESCRIPTION": "回合结束时，如果本回合没有打出任何攻击牌，回合结束时对随机敌人造成其最大生命值25%的伤害(不会低于25点)。 NL 虚无 。"
+  },
+  "shadowverse:OmenOfDisdain": {
+    "NAME": "侮蔑绝杰·嘉尔缪",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 消耗手中所有 *灼伤 ，每消耗1张对随机敌人造成 !M! 点伤害。 NL 爆能强化 3:改为每消耗1张对全体敌人造成 !M! 点伤害。 NL 随后增加1张 *灼伤 到手中，额外对全体敌人造成 !M! 点伤害。"
+  },
+  "shadowverse:OmenOfDisdain2": {
+    "NAME": "烈绝侮蔑·嘉尔缪",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 消耗手中所有 *灼伤 ，增加对应数量的 *烈绝的灭牙 到手中。 NL 增加1张 *灼伤 、 *烈绝的灭牙 和带有消耗的 *污蔑的炎爪 到手中。"
+  },
+  "shadowverse:FangsOfArdentDestruction": {
+    "NAME": "烈绝的灭牙",
+    "DESCRIPTION": "获得 !M! 点 力量 和 敏捷 。 NL 增加1张 *灼伤 到手中。 NL 虚无 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"获得 !M! 点 力量 和 敏捷 。 NL 增加1张 *灼伤+ 到手中。 NL 虚无 。 NL 消耗 。"
+  },
+  "shadowverse:Masamune": {
+    "NAME": "暴龙·伊达政宗",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果已 完全觉醒 ，下一次受到的伤害变为0。 NL 消耗性 !stslib:ex! 。"
+  },
+  "shadowverse:Masamune2": {
+    "NAME": "独眼龙·伊达政宗",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果已 觉醒 ，下一次受到的伤害变为0。 NL 如果已 完全觉醒 ，获得「每当打出攻击牌时，对随机敌人造成4点伤害」效果。 NL 消耗性 !stslib:ex! 。"
+  },
+  "shadowverse:DevotedDragon": {
+    "NAME": "羁绊霸龙",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 消耗 。"
+  },
+  "shadowverse:Aiela": {
+    "NAME": "龙骑士·艾拉",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 谢幕曲 :当这张卡被 消耗 时，获得1点 觉醒值 。"
+  },
+  "shadowverse:Aiela2": {
+    "NAME": "龙剑少女·艾拉",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得1点 觉醒值 。"
+  },
+  "shadowverse:Aiela3": {
+    "NAME": "绊龙剑士·艾拉",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得 [E] 。 NL 获得1点 觉醒值 。 NL 如果打出这张牌后剩余能量为2点以上，则消耗2点能量并增加1张 *羁绊霸龙 到手中。"
+  },
+  "shadowverse:WhitefrostWhisper": {
+    "NAME": "银冰吐息",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 给予 !M! 层 虚弱 。 NL 消耗手中所有状态牌、诅咒牌。 NL 如果目标已受伤，获得 [E] 。 NL 消耗 。"
+  },
+  "shadowverse:Filene": {
+    "NAME": "银冰龙人·菲琳",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加1张 *银冰吐息 到手中。",
+    "UPGRADE_DESCRIPTION":"获得 !B! 点 格挡 。 NL 增加1张 *银冰吐息+ 到手中。"
+  },
+  "shadowverse:Filene2": {
+    "NAME": "绝对零度·菲琳",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加2张 *银冰吐息 到手中。"
+  },
+  "shadowverse:Filene3": {
+    "NAME": "暴雪之心·菲琳",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加1张 *银冰吐息 到手中。 NL 限定 如果已 觉醒 ，击晕全体敌人。"
+  },
+  "shadowverse:Forte": {
+    "NAME": "黑龙骑士·法露特",
+    "DESCRIPTION": "造成 !D! 点伤害。"
+  },
+  "shadowverse:Forte2": {
+    "NAME": "天空霸者·法露特",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得3点 力量 和1点 敏捷 。"
+  },
+  "shadowverse:Forte3": {
+    "NAME": "霸道君临者·法露特",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 给予2层 易伤 和 虚弱 。"
+  },
+  "shadowverse:Forte4": {
+    "NAME": "黑翼霸者·法露特",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 力量 或 敏捷 时，依顺序触发以下效果，上限为3次: NL (1)下回合开始时额外获得1点能量 NL (2)给予随机敌人2层 易伤 和 虚弱 NL (3)获得1层缓冲。"
+  },
+  "shadowverse:Forte5": {
+    "NAME": "黑苍之绊·法露特&米莉亚姆",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 限定 获得2点 力量 和 敏捷 。 NL 如果已 觉醒 ，再造成1次伤害。"
+  },
+  "shadowverse:InfiniflameDragon": {
+    "NAME": "无尽炎龙",
+    "DESCRIPTION": "造成50点伤害。 NL 消灭所有爪牙敌人，每消灭1只造成10点伤害。 NL 消耗手中所有攻击牌，每消耗1张造成10点伤害。 NL 造成 !D! 点伤害2次。"
+  },
+  "shadowverse:Hiro": {
+    "NAME": "龙之启示",
+    "DESCRIPTION": "固有 。 NL 获得1点觉醒值。 NL 下回合获得 [E] 。 NL 如果已 觉醒 ，额外抽 !M! 张牌。",
+    "UPGRADE_DESCRIPTION":"固有 。 NL 获得1点觉醒值。 NL 下回合获得 [E] [E] 。 NL 如果已 觉醒 ，额外抽 !M! 张牌。"
   }
 }

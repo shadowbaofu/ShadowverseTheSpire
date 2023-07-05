@@ -55,32 +55,32 @@ public class ShadowBahmut
             }
         }
         if (abstractMonster != null)
-            addToBot(new VFXAction( new WeightyImpactEffect(abstractMonster.hb.cX, abstractMonster.hb.cY)));
+            addToBot(new VFXAction(new WeightyImpactEffect(abstractMonster.hb.cX, abstractMonster.hb.cY)));
         addToBot(new WaitAction(0.8F));
         for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
             if (!mo.isDeadOrEscaped() && mo.hasPower(MinionPower.POWER_ID)) {
                 addToBot(new SuicideAction(mo));
             }
         }
-       if (abstractMonster != null)
-           addToBot(new VFXAction(new WeightyImpactEffect(abstractMonster.hb.cX, abstractMonster.hb.cY)));
-       addToBot(new WaitAction(0.8F));
-       if (abstractMonster.currentHealth>this.damage){
-           abstractMonster.currentHealth -= Math.min(this.damage, abstractMonster.currentHealth - 1);
-           abstractMonster.update();
-       }else {
-           addToBot(new JudgementAction(abstractMonster, this.damage));
-       }
-       for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-           if (!mo.isDeadOrEscaped() && mo.hasPower(MinionPower.POWER_ID)) {
-               addToBot(new SuicideAction(mo));
-           }
-       }
-   }
- 
-   
-   public AbstractCard makeCopy() {
-     return (AbstractCard)new ShadowBahmut();
-   }
- }
+        if (abstractMonster != null)
+            addToBot(new VFXAction(new WeightyImpactEffect(abstractMonster.hb.cX, abstractMonster.hb.cY)));
+        addToBot(new WaitAction(0.8F));
+        if (abstractMonster.currentHealth > this.damage) {
+            abstractMonster.currentHealth -= Math.min(this.damage, abstractMonster.currentHealth - 1);
+            abstractMonster.update();
+        } else {
+            addToBot(new JudgementAction(abstractMonster, this.damage));
+        }
+        for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
+            if (!mo.isDeadOrEscaped() && mo.hasPower(MinionPower.POWER_ID)) {
+                addToBot(new SuicideAction(mo));
+            }
+        }
+    }
+
+
+    public AbstractCard makeCopy() {
+        return (AbstractCard) new ShadowBahmut();
+    }
+}
 

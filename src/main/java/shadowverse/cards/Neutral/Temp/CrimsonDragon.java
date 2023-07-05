@@ -25,7 +25,7 @@ import shadowverse.characters.Dragon;
    public static final String IMG_PATH = "img/cards/CrimsonDragon.png";
 
    public CrimsonDragon() {
-     super(ID, NAME, IMG_PATH, 5, DESCRIPTION, CardType.ATTACK, Dragon.Enums.COLOR_BROWN, CardRarity.SPECIAL, CardTarget.SELF);
+     super(ID, NAME, IMG_PATH, 4, DESCRIPTION, CardType.ATTACK, Dragon.Enums.COLOR_BROWN, CardRarity.SPECIAL, CardTarget.SELF);
      this.baseBlock = 24;
      this.exhaust = true;
      this.selfRetain = true;
@@ -60,11 +60,7 @@ import shadowverse.characters.Dragon;
    }
 
    public AbstractCard makeCopy() {
-     AbstractCard tmp = new CrimsonDragon();
-     if (CardCrawlGame.dungeon != null && AbstractDungeon.currMapNode != null &&
-             (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT)
-       setCostForTurn(this.cost - GameActionManager.totalDiscardedThisTurn);
-     return tmp;
+     return new CrimsonDragon();
    }
 
  }

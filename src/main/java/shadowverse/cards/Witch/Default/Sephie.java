@@ -58,7 +58,7 @@ public class Sephie extends AbstractRightClickCard2 {
     protected void onRightClick() {
         if (!this.hasFusion && AbstractDungeon.player!=null){
             addToBot(new SelectCardsInHandAction(9,TEXT[0],true,true, card -> {
-                return CardLibrary.getCard(card.cardID).type != CardType.SKILL && card != this;
+                return CardLibrary.getCard(card.cardID) != null && CardLibrary.getCard(card.cardID).type != CardType.SKILL && card != this;
             }, abstractCards -> {
                 if (abstractCards.size()>0){
                     this.hasFusion = true;

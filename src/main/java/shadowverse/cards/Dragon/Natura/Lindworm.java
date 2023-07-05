@@ -92,12 +92,11 @@ public class Lindworm extends CustomCard {
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         int count = 0;
         for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisCombat) {
-            if (c.type != CardType.ATTACK && c.hasTag(AbstractShadowversePlayer.Enums.ARMED)) {
+            if (c.type != CardType.ATTACK) {
                 count++;
             }
         }
-        if (count > 9 && (EnergyPanel.getCurrentEnergy() + this.costForTurn >= 5)) {
-            EnergyPanel.useEnergy(5 - this.costForTurn);
+        if (count > 9 && (EnergyPanel.getCurrentEnergy() >= 5)) {
             AbstractCard v = new VirtuousLindworm();
             AbstractCard i = new IniquitousLindworm();
             addToBot(new ChoiceAction(v, i));

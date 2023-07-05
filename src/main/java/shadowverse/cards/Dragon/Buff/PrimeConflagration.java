@@ -2,6 +2,7 @@ package shadowverse.cards.Dragon.Buff;
 
 
 import basemod.abstracts.CustomCard;
+import com.evacipated.cardcrawl.mod.stslib.variables.ExhaustiveVariable;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -34,6 +35,7 @@ public class PrimeConflagration
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Dragon.Enums.COLOR_BROWN, CardRarity.UNCOMMON, CardTarget.ALL);
         this.baseMagicNumber = 4;
         this.magicNumber = this.baseMagicNumber;
+        ExhaustiveVariable.setBaseValue(this, 2);
     }
 
 
@@ -41,6 +43,7 @@ public class PrimeConflagration
         if (!this.upgraded) {
             upgradeName();
             upgradeMagicNumber(2);
+            ExhaustiveVariable.upgrade(this, 1);
         }
     }
 

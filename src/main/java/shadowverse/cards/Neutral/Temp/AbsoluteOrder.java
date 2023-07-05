@@ -69,6 +69,8 @@ public class AbsoluteOrder extends CustomCard {
             token.remove(0);
         }else if (p.chosenClass == Necromancer.Enums.Necromancer){
             token.remove(2);
+        }else if (p.chosenClass == Dragon.Enums.Dragon){
+            token.remove(1);
         }
         for (AbstractCard c:AbstractDungeon.actionManager.cardsPlayedThisCombat){
             if (c instanceof AbsoluteOrder){

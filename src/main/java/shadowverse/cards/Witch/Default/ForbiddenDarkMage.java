@@ -34,6 +34,7 @@ public class ForbiddenDarkMage
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/ForbiddenDarkMage.png";
+    private boolean played;
 
     public ForbiddenDarkMage() {
         super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Witchcraft.Enums.COLOR_BLUE, CardRarity.RARE, CardTarget.ENEMY);
@@ -55,7 +56,7 @@ public class ForbiddenDarkMage
     @Override
     public void update() {
         if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT&&
-                Shadowverse.Accelerate(this)){
+                Shadowverse.Accelerate(this) && !played){
             setCostForTurn(0);
             this.type = CardType.POWER;
         }else {
@@ -108,12 +109,15 @@ public class ForbiddenDarkMage
             addToBot(new VFXAction(new WeightyImpactEffect(abstractMonster.hb.cX, abstractMonster.hb.cY)));
             calculateCardDamage(abstractMonster);
             addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
-            if (EnergyPanel.getCurrentEnergy() < 6){
-                addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
-            }
+            played = true;
         }
     }
 
+    @Override
+    public void onMoveToDiscard() {
+        super.onMoveToDiscard();
+        played = false;
+    }
 
     public AbstractCard makeCopy() {
         return (AbstractCard) new ForbiddenDarkMage();

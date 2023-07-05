@@ -3,6 +3,7 @@
 
 
 import basemod.abstracts.CustomCard;
+import com.evacipated.cardcrawl.mod.stslib.variables.ExhaustiveVariable;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -32,6 +33,7 @@ import shadowverse.characters.Dragon;
    public CelestialDragoon() {
      super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Dragon.Enums.COLOR_BROWN, CardRarity.RARE, CardTarget.ENEMY);
      this.baseBlock = 3;
+     ExhaustiveVariable.setBaseValue(this, 3);
    }
  
    

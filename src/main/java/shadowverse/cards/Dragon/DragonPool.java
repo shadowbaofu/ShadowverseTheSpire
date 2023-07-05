@@ -69,7 +69,7 @@ public class DragonPool extends AbstractBanPool {
         BanGroup Discard2 = new BanGroup("Lumiore");
         BanGroup Natura = new BanGroup("Valdain");
         BanGroup Ramp = new BanGroup("ResplendentPhoenix");
-        BanGroup Tempo = new BanGroup("DragonsongFlute");
+        BanGroup Tempo = new BanGroup("OmenOfDisdain");
         BanGroup Buff = new BanGroup("Dracu");
         Default.addCard(new Antemaria());
         Default.addCard(new BlazingBreath());
@@ -88,6 +88,10 @@ public class DragonPool extends AbstractBanPool {
         Default.addCard(new SeabrandDragon());
         Default.addCard(new SiLong());
         Default.addCard(new WardenOfTheAdamantClaw());
+        Default.addCard(new Roy());
+        Default.addCard(new Aiela());
+        Default.addCard(new Masamune());
+        Default.addCard(new Filene());
         Discard1.addCard(new DracomancerRites());
         Discard1.addCard(new DraconicCounsel());
         Discard1.addCard(new DragoonMedic());
@@ -139,6 +143,8 @@ public class DragonPool extends AbstractBanPool {
         Ramp.addCard(new TheJustice());
         Ramp.addCard(new WaterwyrmBlessing());
         Ramp.addCard(new Zoe());
+        Ramp.addCard(new Jerva());
+        Ramp.addCard(new GenesisDragon());
         Tempo.addCard(new AdherentOfArdor());
         Tempo.addCard(new ArdentTorch());
         Tempo.addCard(new DiscipleOfDisdain());
@@ -149,6 +155,8 @@ public class DragonPool extends AbstractBanPool {
         Tempo.addCard(new PrimeDragonKeeper());
         Tempo.addCard(new ServantOfDisdain());
         Tempo.addCard(new SneerOfDisdain());
+        Tempo.addCard(new OmenOfDisdain());
+        Tempo.addCard(new Forte());
         Armed.addCard(new ArmorBurst());
         Armed.addCard(new Byron());
         Armed.addCard(new DraconicArmor());

@@ -46,6 +46,8 @@ public class Ceridwen extends CustomCard implements BranchableUpgradeCard {
     private float rotationTimer;
     private int previewIndex;
 
+    private boolean played;
+
     public static ArrayList<AbstractCard> returnProphecy() {
         ArrayList<AbstractCard> list = new ArrayList<>();
         list.add(new EternalPotion());
@@ -59,13 +61,13 @@ public class Ceridwen extends CustomCard implements BranchableUpgradeCard {
     }
 
     public void update() {
-        if (branch3){
-            if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT&&
-                    Shadowverse.Accelerate(this)){
+        if (branch3) {
+            if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
+                    Shadowverse.Accelerate(this) && !played) {
                 setCostForTurn(0);
                 this.type = CardType.POWER;
-            }else {
-                if (this.type==CardType.POWER){
+            } else {
+                if (this.type == CardType.POWER) {
                     setCostForTurn(3);
                     this.type = CardType.ATTACK;
                 }
@@ -92,6 +94,11 @@ public class Ceridwen extends CustomCard implements BranchableUpgradeCard {
         ((UpgradeBranch) ((BranchableUpgradeCard) this).possibleBranches().get(chosenBranch())).upgrade();
     }
 
+    @Override
+    public void onMoveToDiscard() {
+        super.onMoveToDiscard();
+        played = false;
+    }
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         switch (chosenBranch()) {
@@ -111,23 +118,21 @@ public class Ceridwen extends CustomCard implements BranchableUpgradeCard {
                 addToBot(new ChoiceAction2(eternal, instant));
                 break;
             case 2:
-                if (this.type==CardType.POWER && this.costForTurn == 0){
+                if (this.type == CardType.POWER && this.costForTurn == 0) {
                     addToBot(new SFXAction("Ceridwen3_Acc"));
-                    addToBot(new BurialAction(1,new DrawCardAction(1)));
-                    addToBot(new DamageRandomEnemyAction(new DamageInfo(abstractPlayer,4, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.FIRE));
-                    if (abstractPlayer.hasPower(MementoPower.POWER_ID)){
-                        addToBot(new DamageRandomEnemyAction(new DamageInfo(abstractPlayer,4, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.FIRE));
+                    addToBot(new BurialAction(1, new DrawCardAction(1)));
+                    addToBot(new DamageRandomEnemyAction(new DamageInfo(abstractPlayer, 4, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.FIRE));
+                    if (abstractPlayer.hasPower(MementoPower.POWER_ID)) {
+                        addToBot(new DamageRandomEnemyAction(new DamageInfo(abstractPlayer, 4, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.FIRE));
                     }
-                }else {
+                } else {
                     addToBot(new SFXAction("Ceridwen3"));
                     addToBot(new GainBlockAction(abstractPlayer, this.block));
                     if (this.costForTurn > 0) {
                         addToBot(new ReanimateAction(4));
                         addToBot(new CeridwenAction(4));
                     }
-                    if (EnergyPanel.getCurrentEnergy() < 6){
-                        addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
-                    }
+                    played = true;
                 }
                 break;
         }

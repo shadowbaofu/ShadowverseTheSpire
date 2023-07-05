@@ -1997,5 +1997,35 @@
       "턴 시작시, 임시 민첩을 #b2 얻고 에너지를 #b1 얻습니다. 이 효과는 #b",
       " 턴동안 지속됩니다. "
     ]
+  },
+  "shadowverse:DragonTagPower": {
+    "NAME": "용",
+    "DESCRIPTIONS": [
+      "그대는, 용이니라！"
+    ]
+  },
+  "shadowverse:JervaPower": {
+    "NAME": "드래고닉 메일 길바",
+    "DESCRIPTIONS": [
+      "이번 전투동안 체력이 절반 이상으로 늘지 않습니다. 전투 종료시 이렇게 잃은 체력을 회복합니다. NL 턴 종료시 무작위 적에게 내 최대체력의 #b25%(최소 #b25) 만큼의 피해를 줍니다."
+    ]
+  },
+  "shadowverse:Jerva2Power": {
+    "NAME": "용을 초월한 자 길바",
+    "DESCRIPTIONS": [
+      "턴 종료시 이번 턴 아무 공격카드도 사용하지 않았다면 무작위 적에게 내 최대체력의 #b25%(최소 #b25) 만큼의 피해를 줍니다."
+    ]
+  },
+  "shadowverse:Masamune2Power": {
+    "NAME": "독안룡 다테 마사무네",
+    "DESCRIPTIONS": [
+      "공격 카드를 사용할 때마다 무작위 적에게 피해를 #b4 줍니다."
+    ]
+  },
+  "shadowverse:Forte4Power": {
+    "NAME": "흑익의 지배자 포르테",
+    "DESCRIPTIONS": [
+      "힘이나 민첩을 얻을때마다 이하의 효과를 차례대로 1번씩 발동합니다: NL (1)다음 턴 에너지를 #b1 얻습니다 NL (2) 무작위 적에게 약화와 취약을 #b2 부여합니다 NL (3)버퍼를 #b1 얻습니다. "
+    ]
   }
 }

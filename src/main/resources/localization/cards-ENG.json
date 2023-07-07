@@ -299,7 +299,7 @@
   },
   "shadowverse:SonicFour": {
     "NAME": "Delta Cannon",
-    "DESCRIPTION": "Machina. NL Retain. NL Deal !D! damage. NL If you have played at least 4 Machina cards this turn, put 1 *Delta *Cannon into your hand (only once per turn). NL Exhaust."
+    "DESCRIPTION": "Machina. NL Retain. NL Deal !D! damage. NL If you have played at least 4 Machina cards during your turn, put 1 *Delta *Cannon into your hand at the end of your turn (only once per turn, not stackable). NL Exhaust."
   },
   "shadowverse:Tetra": {
     "NAME": "Tetra, Sapphire Rebel",

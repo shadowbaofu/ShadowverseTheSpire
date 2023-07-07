@@ -21,9 +21,6 @@ import com.megacrit.cardcrawl.vfx.combat.ClawEffect;
 import rs.lazymankits.interfaces.cards.BranchableUpgradeCard;
 import rs.lazymankits.interfaces.cards.UpgradeBranch;
 import shadowverse.Shadowverse;
-import shadowverse.cards.Dragon.Ramp.Jerva;
-import shadowverse.cards.Neutral.Temp.DragonlifeBlade;
-import shadowverse.cards.Neutral.Temp.DragonstrifeBlade;
 import shadowverse.cards.Neutral.Temp.FangsOfArdentDestruction;
 import shadowverse.characters.Dragon;
 

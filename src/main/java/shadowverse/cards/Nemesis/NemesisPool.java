@@ -102,6 +102,9 @@ public class NemesisPool extends AbstractBanPool {
         Artifact.addCard(new Robopup());
         Artifact.addCard(new RoboticUser());
         Artifact.addCard(new Zerk());
+        Artifact.addCard(new SisterlyBonds());
+        Artifact.addCard(new Lazuli());
+        Artifact.addCard(new Evamia());
         Condemned.addCard(new ANewDiscovery());
         Condemned.addCard(new BlackrustUnderling());
         Condemned.addCard(new Cutthroat());
@@ -154,6 +157,8 @@ public class NemesisPool extends AbstractBanPool {
         Resonance.addCard(new Norn());
         Resonance.addCard(new Rosa());
         Resonance.addCard(new Yuwan());
+        Resonance.addCard(new Shin());
+        Resonance.addCard(new ChaosAura());
         Tokens.addCard(new AdherentOfMelody());
         Tokens.addCard(new Chastity());
         Tokens.addCard(new DestructionRefrain());

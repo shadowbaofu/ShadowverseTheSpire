@@ -138,6 +138,13 @@ public class Ceridwen extends CustomCard implements BranchableUpgradeCard {
         }
     }
 
+    public void triggerOnGlowCheck() {
+        if (Shadowverse.Accelerate(this) && this.type == CardType.POWER) {
+            this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();
+        } else {
+            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+        }
+    }
 
     public AbstractCard makeCopy() {
         return new Ceridwen();

@@ -104,6 +104,14 @@ public class PrimalShipwright
         this.isDamageModified = (this.damage != this.baseDamage);
     }
 
+    public void triggerOnGlowCheck() {
+        if (Shadowverse.Accelerate(this) && this.type == CardType.POWER) {
+            this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();
+        } else {
+            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+        }
+    }
+
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
         if (this.type==CardType.POWER && this.costForTurn == 0){
             addToBot(new SFXAction("PrimalShipwright_Acc"));

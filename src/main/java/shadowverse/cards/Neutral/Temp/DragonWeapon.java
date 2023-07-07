@@ -6,6 +6,7 @@ import com.evacipated.cardcrawl.mod.stslib.actions.common.SelectCardsInHandActio
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import shadowverse.cardmods.ArmedMod;
@@ -40,7 +41,7 @@ public class DragonWeapon
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot(new SelectCardsInHandAction(1, TEXT[0], false, true, card -> {
-            return card.type == CardType.ATTACK;
+            return CardLibrary.getCard(card.cardID)!= null && CardLibrary.getCard(card.cardID).type == CardType.ATTACK;
         }, abstractCards -> {
             for (AbstractCard c : abstractCards) {
                 CardModifierManager.addModifier(c, new ArmedMod());

@@ -47,9 +47,11 @@ public class DragonQueenCastle
         }
     }
 
-    public void atTurnStart() {
+    @Override
+    public void atBattleStart() {
         this.activated = true;
     }
+
 
     public boolean checkTrigger() {
         return this.activated;

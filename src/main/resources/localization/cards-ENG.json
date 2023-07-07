@@ -62,10 +62,10 @@
   },
   "shadowverse:FireChain": {
     "NAME": "Fire Chain",
-    "DESCRIPTION": "Spellboost: \bRepeat 1 time(s). NL Deal !D! damage to a random enemy for each Spellboost.",
+    "DESCRIPTION": "Deal !D! damage to a random enemy for each Spellboost. NL Spellboost: \bRepeat 1 more time.",
     "EXTENDED_DESCRIPTION": [
-      " NL (Apply",
-      " time !D! damage.)"
+      " NL (Deal !D! damage ",
+      " times.)"
     ]
   },
   "shadowverse:GigantChimera": {

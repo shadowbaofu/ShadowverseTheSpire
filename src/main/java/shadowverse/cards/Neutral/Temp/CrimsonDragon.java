@@ -35,7 +35,7 @@ import shadowverse.characters.Dragon;
    public void upgrade() {
      if (!this.upgraded) {
        upgradeName();
-       upgradeDamage(4);
+       upgradeBlock(4);
      } 
    }
 

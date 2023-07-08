@@ -16,6 +16,7 @@ import shadowverse.Shadowverse;
 import shadowverse.action.BurialAction;
 import shadowverse.cards.Necromancer.Burial.DemonicProcession;
 import shadowverse.cards.Necromancer.Burial.SpiritCurator;
+import shadowverse.cards.Necromancer.Default.HungrySlash;
 import shadowverse.cards.Necromancer.Ghosts.Ferry;
 import shadowverse.cards.Necromancer.Shadows.HinterlandGhoul;
 import shadowverse.cards.Necromancer.Burial.TheLovers;

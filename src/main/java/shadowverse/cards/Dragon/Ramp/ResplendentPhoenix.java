@@ -26,7 +26,7 @@ public class ResplendentPhoenix
     private static final Texture LEADER_SKIN_VERSION = ImageMaster.loadImage("img/cards/ResplendentPhoenix_L.png");
 
     public ResplendentPhoenix() {
-        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.POWER, Dragon.Enums.COLOR_BROWN, CardRarity.UNCOMMON, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.POWER, Dragon.Enums.COLOR_BROWN, CardRarity.UNCOMMON, CardTarget.SELF);
         this.jokePortrait = new TextureAtlas.AtlasRegion(LEADER_SKIN_VERSION, 0, 0, LEADER_SKIN_VERSION.getWidth(), LEADER_SKIN_VERSION.getHeight());
     }
 
@@ -34,7 +34,7 @@ public class ResplendentPhoenix
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBaseCost(1);
+            upgradeBaseCost(2);
         }
     }
 

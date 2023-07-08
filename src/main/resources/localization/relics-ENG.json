@@ -560,6 +560,7 @@
     ]
   },
   "shadowverse:FortuneWell": {
+    "NAME": "Fortune Well",
     "FLAVOR": "Why can't you make a different painting!?",
     "DESCRIPTIONS": [
       "Upon pick up, choose and add 1 Rare card to your deck and obtain an additional card reward. After 8 combats and then every 6 combats afterward, choose and add 1 Rare card to your deck.",

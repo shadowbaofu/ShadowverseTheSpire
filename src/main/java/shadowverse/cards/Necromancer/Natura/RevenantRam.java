@@ -48,14 +48,14 @@ import shadowverse.powers.Cemetery;
 
    @Override
    public void triggerOnExhaust() {
-     addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)AbstractDungeon.player, (AbstractCreature)AbstractDungeon.player, (AbstractPower)new Cemetery((AbstractCreature)AbstractDungeon.player, 1), 1));
+     addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new Cemetery(AbstractDungeon.player, 1), 1));
    }
  
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
      AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
-     AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new GainBlockAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, this.block));
-     addToBot((AbstractGameAction)new MakeTempCardInHandAction(c, 1));
+     AbstractDungeon.actionManager.addToBottom(new GainBlockAction(abstractPlayer, abstractPlayer, this.block));
+     addToBot(new MakeTempCardInHandAction(c, 1));
    }
  
    

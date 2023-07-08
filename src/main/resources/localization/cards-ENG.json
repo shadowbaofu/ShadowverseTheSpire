@@ -2298,7 +2298,7 @@
   "shadowverse:Yuwan": {
     "NAME": "Yuwan, Dimensional Avenger",
     "DESCRIPTION": "Gain !B! Block. NL Exhaust 1 card in your hand, add a copy of that card to your draw pile and draw 1 card. NL If Resonance has been active 5 or more times this combat, deal !M! damage to a random enemy next turn. NL If 10 or more times, deal !M! damage again.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Exhaust 1 card in your hand, add a copy of that card to your draw pile and draw 1 card. NL Add 1 *Analyzing *Artifact to your hand. NL If Resonance has been active 5 or more times this combat, deal !M! damage to a random enemy next turn. NL If 10 or more times, deal !M! damage again.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Exhaust 1 card in your hand, add a copy of that card to your draw pile and draw 1 card. NL Add 1 *Analyzing *Artifact to your hand. NL If Resonance has been active 5 or more times this combat, deal !M! damage to a random enemy next turn. NL If 10 or more times, deal !M! damage again."
     "EXTENDED_DESCRIPTION": [
       " NL ( Resonance has been active ",
       " times.)"

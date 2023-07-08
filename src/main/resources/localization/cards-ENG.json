@@ -2298,7 +2298,7 @@
   "shadowverse:Yuwan": {
     "NAME": "Yuwan, Dimensional Avenger",
     "DESCRIPTION": "Gain !B! Block. NL Exhaust 1 card in your hand, add a copy of that card to your draw pile and draw 1 card. NL If Resonance has been active 5 or more times this combat, deal !M! damage to a random enemy next turn. NL If 10 or more times, deal !M! damage again.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Exhaust 1 card in your hand, add a copy of that card to your draw pile and draw 1 card. NL Add 1 *Analyzing *Artifact to your hand. NL If Resonance has been active 5 or more times this combat, deal !M! damage to a random enemy next turn. NL If 10 or more times, deal !M! damage again.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Exhaust 1 card in your hand, add a copy of that card to your draw pile and draw 1 card. NL Add 1 *Analyzing *Artifact to your hand. NL If Resonance has been active 5 or more times this combat, deal !M! damage to a random enemy next turn. NL If 10 or more times, deal !M! damage again."
     "EXTENDED_DESCRIPTION": [
       " NL ( Resonance has been active ",
       " times.)"
@@ -5055,7 +5055,7 @@
   },
   "shadowverse:Alice": {
     "NAME": "Alice, Wandering Dreamer",
-    "DESCRIPTION": "Deal !D! damage. NL If you have upgraded more than 3 Attack cards this combat，upgrade this card and draw 2 cards. NL If you have upgraded more than 7 Attack cards, double the damage. ",
+    "DESCRIPTION": "Deal !D! damage. NL If you have upgraded more than 3 Attack cards this combat, upgrade this card and draw 2 cards. NL If you have upgraded more than 7 Attack cards, double the damage. ",
     "UPGRADE_DESCRIPTION": "Deal !D! damage and gain 1 Energy. NL If you have upgraded more than 3 Attack cards in this combat draw 2 cards. NL If you have upgraded more than 7 Attack cards, double the damage. "
   },
   "shadowverse:CrimsonDesire": {
@@ -5304,7 +5304,7 @@
   },
   "shadowverse:Garuda4_Cry": {
     "NAME": "Garuda, Winged Radiance (Crystallized)",
-    "DESCRIPTION": "Countdown 1: Draw 1 card. "
+    "DESCRIPTION": "Countdown 1 : Draw 1 card. "
   },
   "shadowverse:Garuda4": {
     "NAME": "Garuda, Winged Radiance",

@@ -52,11 +52,11 @@ public class OmenOfCraving extends AbstractNeutralCard implements BranchableUpgr
                 dupCheck = false;
                 AbstractCard c = new RavenousSweetness();
                 if (AbstractDungeon.player.discardPile.contains((AbstractCard)this)) {
-                    addToBot((AbstractGameAction)new ExhaustSpecificCardAction(this, AbstractDungeon.player.discardPile));
-                    addToBot((AbstractGameAction)new MakeTempCardInHandAction(c, 1));
+                    addToBot(new ExhaustSpecificCardAction(this, AbstractDungeon.player.discardPile));
+                    addToBot(new MakeTempCardInHandAction(c, 1));
                 } else if (AbstractDungeon.player.drawPile.contains((AbstractCard)this)) {
-                    addToBot((AbstractGameAction)new ExhaustSpecificCardAction(this, AbstractDungeon.player.drawPile));
-                    addToBot((AbstractGameAction)new MakeTempCardInHandAction(c, 1));
+                    addToBot(new ExhaustSpecificCardAction(this, AbstractDungeon.player.drawPile));
+                    addToBot(new MakeTempCardInHandAction(c, 1));
                 }
             }else if (AbstractDungeon.actionManager.turn < 4){
                 dupCheck = true;
@@ -68,21 +68,21 @@ public class OmenOfCraving extends AbstractNeutralCard implements BranchableUpgr
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         switch (chosenBranch()){
             case 0:
-                addToBot((AbstractGameAction)new SFXAction("OmenOfCraving"));
-                addToBot((AbstractGameAction)new VampireDamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
-                addToBot((AbstractGameAction)new GainBlockAction(abstractPlayer,this.block));
-                addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,new StrengthPower(abstractPlayer,2),2));
-                addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,new BlurPower(abstractPlayer,1),1));
+                addToBot(new SFXAction("OmenOfCraving"));
+                addToBot(new VampireDamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
+                addToBot(new GainBlockAction(abstractPlayer,this.block));
+                addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new StrengthPower(abstractPlayer,2),2));
+                addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new BlurPower(abstractPlayer,1),1));
                 if (AbstractDungeon.actionManager.turn >= 4){
-                    addToBot((AbstractGameAction)new DrawCardAction(5));
+                    addToBot(new DrawCardAction(5));
                 }
                 break;
             case 1:
-                addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
-                addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,new StrengthPower(abstractPlayer,2),2));
-                addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,new DexterityPower(abstractPlayer,-2),-2));
-                addToBot((AbstractGameAction)new HealAction(abstractPlayer,abstractPlayer,6));
-                addToBot((AbstractGameAction)new SFXAction("OmenOfCraving2"));
+                addToBot(new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
+                addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new StrengthPower(abstractPlayer,2),2));
+                addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new DexterityPower(abstractPlayer,-2),-2));
+                addToBot(new HealAction(abstractPlayer,abstractPlayer,6));
+                addToBot(new SFXAction("OmenOfCraving2"));
                 break;
         }
     }

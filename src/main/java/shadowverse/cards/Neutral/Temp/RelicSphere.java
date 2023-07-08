@@ -58,11 +58,11 @@ import shadowverse.powers.HeavenlyAegisPower;
  
    
    public void use(AbstractPlayer p, AbstractMonster m) {
-     addToBot((AbstractGameAction)new SFXAction("RelicSphere"));
+     addToBot(new SFXAction("RelicSphere"));
      if (m != null && !m.isDeadOrEscaped()) {
-       addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new MiracleEffect(Color.SKY.cpy(),Color.WHITE.cpy(),"HEAL_3")));
-       addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m, (AbstractCreature)p, (AbstractPower)new WeakPower((AbstractCreature)m, this.magicNumber, false), this.magicNumber));
-       addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m, (AbstractCreature)p, (AbstractPower)new FrailPower((AbstractCreature)m, this.magicNumber, false), this.magicNumber));
+       addToBot(new VFXAction(new MiracleEffect(Color.SKY.cpy(),Color.WHITE.cpy(),"HEAL_3")));
+       addToBot(new ApplyPowerAction(m, p, new WeakPower(m, this.magicNumber, false), this.magicNumber));
+       addToBot(new ApplyPowerAction(m, p, new FrailPower(m, this.magicNumber, false), this.magicNumber));
      }
      boolean hasGod = false;
      for (AbstractOrb o :p.orbs){
@@ -74,9 +74,9 @@ import shadowverse.powers.HeavenlyAegisPower;
        }
      }
      if (hasGod){
-       addToBot((AbstractGameAction)new JudgementAction((AbstractCreature)m, 27));
+       addToBot(new JudgementAction(m, 27));
      }else {
-       addToBot((AbstractGameAction)new JudgementAction((AbstractCreature)m, 9));
+       addToBot(new JudgementAction(m, 9));
      }
    }
  
@@ -103,30 +103,24 @@ import shadowverse.powers.HeavenlyAegisPower;
      boolean hasPlaton = false;
      for (AbstractOrb o: AbstractDungeon.player.orbs){
        if (o instanceof AmuletOrb){
-         if (((AmuletOrb) o).amulet instanceof RelicGod){
-           break;
-         } else if (((AmuletOrb) o).amulet instanceof RelicSphere && o!=paramOrb) {
-           break;
-         } else {
            if (((AmuletOrb) o).amulet instanceof RelicPrism)
              hasPrism = true;
            if (((AmuletOrb) o).amulet instanceof RelicTorus)
              hasTorus = true;
            if (((AmuletOrb) o).amulet instanceof RelicPlaton)
              hasPlaton = true;
-         }
        }
      }
      if (hasPrism && hasTorus && hasPlaton){
        for (AbstractOrb o: AbstractDungeon.player.orbs){
          if (o instanceof AmuletOrb){
              if (((AmuletOrb) o).amulet instanceof RelicPrism || ((AmuletOrb) o).amulet instanceof RelicTorus ||((AmuletOrb) o).amulet instanceof RelicPlaton )
-               addToBot((AbstractGameAction)new EvokeSpecificOrbAction(o));
+               addToBot(new EvokeSpecificOrbAction(o));
          }
        }
-       addToBot((AbstractGameAction)new EvokeSpecificOrbAction(paramOrb));
-       addToBot((AbstractGameAction)new PlaceAmulet(this.cardsToPreview.makeStatEquivalentCopy(),null));
-       addToBot((AbstractGameAction)new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,(AbstractPower)new HeavenlyAegisPower(AbstractDungeon.player)));
+       addToBot(new EvokeSpecificOrbAction(paramOrb));
+       addToBot(new PlaceAmulet(this.cardsToPreview.makeStatEquivalentCopy(),null));
+       addToBot(new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,new HeavenlyAegisPower(AbstractDungeon.player)));
      }
    }
 

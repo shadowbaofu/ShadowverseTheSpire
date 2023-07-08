@@ -42,10 +42,10 @@ public class WightKing extends CustomCard {
 
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction) new SFXAction("WightKing"));
-        addToBot((AbstractGameAction) new NecromanceAction(4,
-                (AbstractGameAction) new GainBlockAction(abstractPlayer, this.block),
-                new AbstractGameAction[]{(AbstractGameAction) new GainBlockAction(abstractPlayer, this.block + 3), (AbstractGameAction) new ApplyPowerAction(abstractPlayer, abstractPlayer, (AbstractPower) new PlatedArmorPower(abstractPlayer, this.magicNumber), this.magicNumber)}));
+        addToBot(new SFXAction("WightKing"));
+        addToBot(new NecromanceAction(4,
+                new GainBlockAction(abstractPlayer, this.block),
+                new AbstractGameAction[]{new GainBlockAction(abstractPlayer, this.block + 3), new ApplyPowerAction(abstractPlayer, abstractPlayer, (AbstractPower) new PlatedArmorPower(abstractPlayer, this.magicNumber), this.magicNumber)}));
     }
 
 

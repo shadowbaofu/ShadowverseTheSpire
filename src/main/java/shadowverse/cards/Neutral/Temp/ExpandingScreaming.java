@@ -56,7 +56,7 @@ import shadowverse.characters.Necromancer;
  
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     addToBot((AbstractGameAction)new SFXAction("ExpandingScreaming"));
+     addToBot(new SFXAction("ExpandingScreaming"));
      AbstractCard omenOfSilence = null;
      for (AbstractCard card: abstractPlayer.exhaustPile.group){
        if (card instanceof OmenOfSilence && ((OmenOfSilence) card).chosenBranch()==1)
@@ -66,7 +66,7 @@ import shadowverse.characters.Necromancer;
        omenOfSilence.cost = 1;
        omenOfSilence.costForTurn = 1;
        omenOfSilence.isCostModified = false;
-       addToBot((AbstractGameAction) new NecromanceAction(3, null, (AbstractGameAction) new MakeTempCardInHandAction(omenOfSilence.makeStatEquivalentCopy())));
+       addToBot( new NecromanceAction(3, null,  new MakeTempCardInHandAction(omenOfSilence.makeStatEquivalentCopy())));
      }
      int count = 0;
      for (AbstractCard c: AbstractDungeon.actionManager.cardsPlayedThisCombat){
@@ -77,7 +77,7 @@ import shadowverse.characters.Necromancer;
      if (count > 11-abstractPlayer.hand.group.size()){
        count = 11-abstractPlayer.hand.group.size();
      }
-     addToBot((AbstractGameAction)new MakeTempCardInHandAction(new OmenOfSilence2Copy(),count));
+     addToBot(new MakeTempCardInHandAction(new OmenOfSilence2Copy(),count));
    }
  
    

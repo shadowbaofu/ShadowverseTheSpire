@@ -51,7 +51,7 @@ public class Lucius_N
         if (p instanceof Necromancer || p instanceof Nemesis){
             addToBot(new MakeTempCardInHandAction(new Ghost(),2));
         }
-        if (p instanceof Royal){
+        if (p instanceof Royal || p instanceof Dragon) {
             addToBot(new ApplyPowerAction(m,p,new VulnerablePower(m,2,false),2));
         }
         if (p instanceof Vampire || p instanceof Bishop){

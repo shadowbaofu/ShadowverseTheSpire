@@ -38,24 +38,24 @@ public class BoostPotion extends CustomPotion {
     @Override
     public void use(AbstractCreature abstractCreature) {
         if ((AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT)
-        for (AbstractCard c : AbstractDungeon.player.hand.group) {
-            if (c.hasTag(AbstractShadowversePlayer.Enums.SPELL_BOOST)) {
-                for (int i = 0; i < this.potency; i++) {
-                    c.flash();
-                    addToBot((AbstractGameAction)new SFXAction("spell_boost"));
-                    addToBot((AbstractGameAction)new ReduceCostAction(c));
-                }  continue;
-            }
-            if (c.hasTag(AbstractShadowversePlayer.Enums.SPELL_BOOST_ATTACK)) {
-                for (int i = 0; i < this.potency; i++) {
-                    c.flash();
-                    c.magicNumber = ++c.baseMagicNumber;
-                    addToBot((AbstractGameAction)new SFXAction("spell_boost"));
+            for (AbstractCard c : AbstractDungeon.player.hand.group) {
+                if (c.hasTag(AbstractShadowversePlayer.Enums.SPELL_BOOST)) {
+                    for (int i = 0; i < this.potency; i++) {
+                        c.flash();
+                        addToBot(new SFXAction("spell_boost"));
+                        addToBot(new ReduceCostAction(c));
+                    }
+                    continue;
+                }
+                if (c.hasTag(AbstractShadowversePlayer.Enums.SPELL_BOOST_ATTACK)) {
+                    for (int i = 0; i < this.potency; i++) {
+                        c.flash();
+                        c.magicNumber = ++c.baseMagicNumber;
+                        addToBot(new SFXAction("spell_boost"));
+                    }
                 }
             }
-        }
     }
-
 
 
     @Override

@@ -11,12 +11,12 @@
   },
   "shadowverse:ChooseToReduceCost": {
     "TEXT": [
-      "reduce the cost"
+      "Select a card to reduce the cost"
     ]
   },
   "shadowverse:Burial": {
     "TEXT": [
-      "Burial Rite"
+      "Choose a card to Burial Rite"
     ]
   },
   "shadowverse:AndrealphusMod": {
@@ -31,7 +31,7 @@
   },
   "shadowverse:ImmoralDesireMod1": {
     "TEXT": [
-      " NL Last_Words: Deal damage equal to the base damage of this card to all the enemies when Exhausted. "
+      " NL Last_Words: Deal damage equal to the base damage of this card to all enemies when Exhausted. "
     ]
   },
   "shadowverse:ImmoralDesireMod2": {
@@ -64,7 +64,7 @@
   },
   "shadowverse:AmuletText": {
     "TEXT": [
-      "I can't place any more Amulet."
+      "I can't place any more Amulets."
     ]
   },
   "shadowverse:ReduceCountDown": {
@@ -104,7 +104,7 @@
   },
   "shadowverse:ArtifactTag": {
     "TEXT": [
-      "AF"
+      "Artifact"
     ]
   },
   "shadowverse:MachineTag": {
@@ -114,7 +114,7 @@
   },
   "shadowverse:NobilisMod": {
     "TEXT": [
-      " NL Last_Words: Apply 4 poison to all the enemies when Exhausted. "
+      " NL Last_Words: Apply 4 poison to all enemies when Exhausted. "
     ]
   },
   "ViewBanCardScreen": {
@@ -142,6 +142,140 @@
    "shadowverse:GarudaMod": {
     "TEXT": [
       " NL When you play this, deal it's original cost x 10 damage to a random enemy."
+    ]
+  },
+  "shadowverse": {
+    "TEXT": [
+      "Shadowverse"
+    ]
+  },
+  "shadowverse:SpellboostMod": {
+    "TEXT": [
+      "Empowered",
+      "",
+      "Increase this card's cost by #b2 . NL Spellboost: \bSubtract 1 [E] from this card's cost."
+    ],
+    "EXTRA_TEXT": [
+      " NL Spellboost: \bSubtract 1 [E] ."
+    ]
+  },
+  "shadowverse:EarthMod": {
+    "TEXT": [
+      "Runed",
+      "",
+      "When played, Gain #b1 Earth Essence."
+    ],
+    "EXTRA_TEXT": [
+      " NL Gain 1 Earth Essence."
+    ]
+  },
+  "shadowverse:MachinaMod": {
+    "TEXT": [
+      "Motorize",
+      "",
+      "Machina，Damage and #yBlock reduced by #b25%. When played, add #b1 copy of #yAssembly #yDroid to your hand."
+    ],
+    "EXTRA_TEXT": [
+      "Machina NL ",
+      " NL Adds 1 *Assembly *Droid to hand."
+    ]
+  },
+  "shadowverse:NaturaMod": {
+    "TEXT": [
+      "Naturalized",
+      "",
+      "Natura，Damage and #yBlock are reduced by 33%. When played, add #b1 copy of #yNaterran #yGreat #yTree to your hand."
+    ],
+    "EXTRA_TEXT": [
+      "Natura NL ",
+      " NL Adds 1 *Naterran *Great *Tree to your hand."
+    ]
+  },
+  "shadowverse:ArtifactMod": {
+    "TEXT": [
+      "Manufacted",
+      "",
+      "Artifact. When played, add #b2 copies of #yAnalyzing #yArtifact to your draw pile."
+    ],
+    "EXTRA_TEXT": [
+      "Artifact NL ",
+      " NL Adds 2 *Analyzing *Artifacts to your draw pile."
+    ]
+  },
+  "shadowverse:MysteriaMod": {
+    "TEXT": [
+      "Tenured",
+      "",
+      "Mysteria and Academic. When played, randomly add #b1 copy of #yMysterian #yMissile or #yMysterian #yCircle to your hand."
+    ],
+    "EXTRA_TEXT": [
+      "Mysteria Academic NL ",
+      " NL Randomly adds 1 *Mysterian *Missile or *Mysterian *Circle to your hand."
+    ]
+  },
+  "shadowverse:BurialMod": {
+    "TEXT": [
+      "In Procession",
+      "",
+      "When played, Burial Rite #b1 other card and draw #b1 card."
+    ],
+    "EXTRA_TEXT": [
+      " NL Burial Rite 1, Draw 1 card."
+    ]
+  },
+  "shadowverse:WindMod": {
+    "TEXT": [
+      "",
+      "Hurricane",
+      "#yBlock gained is reduced by 33%. When played, perform Necromancy #b6: Deal 10 damage to all enemies."
+    ],
+    "EXTRA_TEXT": [
+      " NL  Necromancy 6 \bDeals 10 damage to all enemies."
+    ]
+  },
+  "shadowverse:ReanimateMod": {
+    "TEXT": [
+      "",
+      "Reanimator",
+      "Increase this card's cost by #b1. When played, Reanimate #b1."
+    ],
+    "EXTRA_TEXT": [
+      " NL Reanimate 1."
+    ]
+  },
+  "shadowverse:CondemnedMod": {
+    "TEXT": [
+      "Imprisoned",
+      "",
+      "Condemned. Damage and Block are increased by #b20%."
+    ],
+    "EXTRA_TEXT": [
+      "Condemned NL "
+    ]
+  },
+  "shadowverse:LootMod": {
+    "TEXT": [
+      "Pilfered",
+      "",
+      "Damage reduced by #b10%. When played, randomly add #b1 copy of a #yLoot card to your hand."
+    ],
+    "EXTRA_TEXT": [
+      " NL Randomly adds #b1 #yLoot card to your hand."
+    ]
+  },
+  "shadowverse:CoinMod": {
+    "TEXT": [
+      "",
+      "Smelted in Gold",
+      "When played, add #b1 copy of #yGlittering #yGold to your hand."
+    ],
+    "EXTRA_TEXT": [
+      " NL Adds 1 *Glittering *Gold to your hand."
+    ]
+  },
+  "shadowverse:ArmedMod": {
+    "TEXT": [
+      "Armed NL "
     ]
   }
 }

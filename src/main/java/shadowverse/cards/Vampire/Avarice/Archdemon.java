@@ -22,7 +22,7 @@ import com.megacrit.cardcrawl.vfx.combat.ClashEffect;
 import shadowverse.Shadowverse;
 import shadowverse.action.ArchdemonAction;
 import shadowverse.cards.Necromancer.Burial.DemonicProcession;
-import shadowverse.cards.Necromancer.Mech.HungrySlash;
+import shadowverse.cards.Necromancer.Default.HungrySlash;
 import shadowverse.cards.Necromancer.Burial.SpiritCurator;
 import shadowverse.cards.Necromancer.Ghosts.Ferry;
 import shadowverse.cards.Necromancer.Burial.TheLovers;
@@ -80,6 +80,14 @@ public class Archdemon
                     applyPowers();
                 }
             }
+        }
+    }
+
+    public void triggerOnGlowCheck() {
+        if (this.type == CardType.SKILL) {
+            this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();
+        } else {
+            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
         }
     }
 

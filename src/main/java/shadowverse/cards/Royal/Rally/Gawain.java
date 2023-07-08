@@ -1,6 +1,7 @@
 package shadowverse.cards.Royal.Rally;
 
 import basemod.abstracts.CustomCard;
+import com.evacipated.cardcrawl.mod.stslib.variables.ExhaustiveVariable;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -31,6 +32,7 @@ public class Gawain extends CustomCard {
     public Gawain() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.ENEMY);
         this.baseDamage = 9;
+        ExhaustiveVariable.setBaseValue(this, 4);
     }
 
 
@@ -39,6 +41,7 @@ public class Gawain extends CustomCard {
         if (!this.upgraded) {
             upgradeName();
             upgradeDamage(4);
+            ExhaustiveVariable.upgrade(this, 1);
         }
     }
 

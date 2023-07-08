@@ -53,7 +53,7 @@ import shadowverse.characters.Necromancer;
      }
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     addToBot((AbstractGameAction)new DestroyAction(1,(AbstractGameAction)new MakeTempCardInHandAction(this.cardsToPreview)));
+     addToBot(new DestroyAction(1,new MakeTempCardInHandAction(this.cardsToPreview)));
    }
  
    

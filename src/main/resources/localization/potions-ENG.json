@@ -16,7 +16,7 @@
   "shadowverse:BoostPotion": {
     "NAME": "Boost Potion",
     "DESCRIPTIONS": [
-      "#ySpellboost cards in your hand #b",
+      "#ySpellboost the cards in your hand #b",
       " times."
     ]
   },
@@ -31,7 +31,7 @@
     "NAME": "Mana Supplement",
     "DESCRIPTIONS": [
       "Retain #b",
-      " cards by the end of your turn for the rest of combat."
+      " cards at the end of your turn for the rest of combat."
     ]
   },
   "shadowverse:CemeteryPotion": {
@@ -52,7 +52,7 @@
     "NAME": "Rose Brew",
     "DESCRIPTIONS": [
       "Add #b",
-      " #yThron #yBurst+ to your hand."
+      " #yThorn #yBurst+ to your hand."
     ]
   },
   "shadowverse:NaterranPotion": {
@@ -114,7 +114,7 @@
   "shadowverse:ReduceCountDownPotion": {
     "NAME": "Chanting Crystal",
     "DESCRIPTIONS": [
-      "Reduce all your #yAmulet's #yCountdown by #b",
+      "Reduce all your #yAmulet #yCountdowns by #b",
       " ."
     ]
   },
@@ -130,6 +130,27 @@
     "DESCRIPTIONS": [
       "Heal #b",
       "% HP."
+    ]
+ },
+  "shadowverse:OverflowPotion": {
+    "NAME": "Overflow Potion",
+    "DESCRIPTIONS": [
+      "Gain #b",
+      "#yOverflow points."
+    ]
+  },
+  "shadowverse:ArmedPotion": {
+    "NAME": "Potion of Arms",
+    "DESCRIPTIONS": [
+      "Gain #b9 #yBlock, Arm #b",
+      " cards."
+    ]
+  },
+  "shadowverse:BurnPotion": {
+    "NAME": "Hellfire Potion",
+    "DESCRIPTIONS": [
+      "Add #b3 #yBurns to your hand. Add #b",
+      " #yHellflame #yDragons to your hand."
     ]
   }
 }

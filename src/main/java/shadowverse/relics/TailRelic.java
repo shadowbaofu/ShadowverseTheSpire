@@ -20,7 +20,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
    public static final String ID = "shadowverse:TailRelic";
    public static final String IMG = "img/relics/TailRelic.png";
    public static final String OUTLINE_IMG = "img/relics/outline/TailRelic_Outline.png";
-   public static AbstractCard c = (AbstractCard)new OneTailFox();
+   public static AbstractCard c = new OneTailFox();
    private static boolean check = true;
 
    public TailRelic() {
@@ -39,11 +39,11 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
    public void atBattleStart() {
      if (this.counter < 9 && check) {
          flash();
-         addToTop((AbstractGameAction) new RelicAboveCreatureAction((AbstractCreature) AbstractDungeon.player, (AbstractRelic) this));
-         addToBot((AbstractGameAction) new MakeTempCardInDrawPileAction(c, 1, true, true));
+         addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, (AbstractRelic) this));
+         addToBot(new MakeTempCardInDrawPileAction(c, 1, true, true));
      }else if (!this.grayscale && check){
          flash();
-         AbstractDungeon.player.masterDeck.addToTop((AbstractCard)new Ginsetsu());
+         AbstractDungeon.player.masterDeck.addToTop(new Ginsetsu());
          this.grayscale = true;
          this.check = false;
      }

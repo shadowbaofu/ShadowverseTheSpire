@@ -60,21 +60,21 @@ public class SexyVampire extends CustomCard {
             int current = AbstractDungeon.player.currentHealth;
             if (!AbstractDungeon.player.hasPower(VengeanceHealthPower.POWER_ID)&&current>half){
                 this.superFlash();
-                addToBot((AbstractGameAction)new WaitAction(1.2F));
+                addToBot(new WaitAction(1.2F));
                 AbstractDungeon.player.currentHealth = half;
                 AbstractDungeon.player.update();
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ChangeStanceAction((AbstractStance) new Vengeance()));
-                addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature)AbstractDungeon.player, (AbstractCreature)AbstractDungeon.player, (AbstractPower) new VengeanceHealthPower((AbstractCreature) AbstractDungeon.player,half,current)));
-                addToBot((AbstractGameAction)new ExhaustSpecificCardAction(this,AbstractDungeon.player.hand));
+                addToBot( new ChangeStanceAction(new Vengeance()));
+                addToBot( new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, (AbstractPower) new VengeanceHealthPower( AbstractDungeon.player,half,current)));
+                addToBot(new ExhaustSpecificCardAction(this,AbstractDungeon.player.hand));
             }
         }
     }
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new SFXAction("SexyVampire"));
-        addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new BiteEffect(abstractMonster.hb.cX, abstractMonster.hb.cY - 40.0F * Settings.scale, Color.SCARLET.cpy()), 0.4F));
-        addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
-        addToBot((AbstractGameAction)new HealAction(abstractPlayer,abstractPlayer,this.magicNumber));
+        addToBot(new SFXAction("SexyVampire"));
+        addToBot(new VFXAction(new BiteEffect(abstractMonster.hb.cX, abstractMonster.hb.cY - 40.0F * Settings.scale, Color.SCARLET.cpy()), 0.4F));
+        addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
+        addToBot(new HealAction(abstractPlayer,abstractPlayer,this.magicNumber));
     }
 
 

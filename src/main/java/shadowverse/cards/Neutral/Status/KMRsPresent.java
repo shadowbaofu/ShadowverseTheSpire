@@ -38,6 +38,7 @@ import java.util.ArrayList;
      list.add(new DeadSoulTaker());
      list.add(new AbyssDoomLord());
      list.add(new ImperialSaint());
+     list.add(new InfiniflameDragon());
      list.add(new SummonDivineTreasure());
      return list;
    }

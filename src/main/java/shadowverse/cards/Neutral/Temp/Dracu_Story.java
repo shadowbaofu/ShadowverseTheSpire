@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DexterityPower;
+import shadowverse.characters.Dragon;
 
 
 public class Dracu_Story extends CustomCard {
@@ -24,7 +25,7 @@ public class Dracu_Story extends CustomCard {
     public static final String IMG_PATH = "img/cards/Dracu.png";
 
     public Dracu_Story() {
-        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.ENEMY);
+        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Dragon.Enums.COLOR_BROWN, CardRarity.SPECIAL, CardTarget.ENEMY);
         this.baseDamage = 18;
         this.exhaust = true;
     }
@@ -41,7 +42,7 @@ public class Dracu_Story extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new SFXAction("Dracu_Story"));
+        addToBot(new SFXAction("Dracu_Story"));
         addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
         if (abstractPlayer.hasPower(DexterityPower.POWER_ID)){
             if (abstractPlayer.getPower(DexterityPower.POWER_ID).amount>=5){

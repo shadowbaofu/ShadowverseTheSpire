@@ -37,8 +37,8 @@ public class Wight extends CustomCard {
 
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot((AbstractGameAction)new SFXAction("Wight"));
-        addToBot((AbstractGameAction)new ApplyPowerAction(p,p,(AbstractPower)new WightPower(p,this.magicNumber),this.magicNumber));
+        addToBot(new SFXAction("Wight"));
+        addToBot(new ApplyPowerAction(p,p,(AbstractPower)new WightPower(p,this.magicNumber),this.magicNumber));
     }
 
     public AbstractCard makeCopy() {

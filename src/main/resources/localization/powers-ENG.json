@@ -1843,17 +1843,194 @@
     "DESCRIPTIONS": [
       "Immune to all Debuffs this turn. Enemies will not gain Buffs this turn."
     ]
-  },
-  "shadowverse:OverflowPower": {
-    "NAME": "未觉醒",
+   },
+  "shadowverse:WimaelPower": {
+    "NAME": "Wimael, Redolent Enforcer",
     "DESCRIPTIONS": [
-      "觉醒值达到3时进入觉醒状态，回合开始时获得 [E] 。当前觉醒值 #b",
+      "Increased by #b at the start of your turn",
+      " Add #y Wimael, Redolent Enforcer with 0 cost and Exhaust this turn to your hand."
+    ]
+  },
+   "shadowverse:OverflowPower": {
+    "NAME": "Unawakened",
+    "DESCRIPTIONS": [
+      "Enters Overflow when you have 3 Overflow points, afterward gain [E] at the start of your turn. Overflow Points: #b",
       " /3。",
-      "回合开始时获得 [E] 。 觉醒值达到3时进入完全觉醒状态，回合开始时获得 [E] [E] 。 当前觉醒值 #b",
+      "Gain [E] at the start of every turn.  Enters Full Overflow when you have 3 Overflow points again, afterward gain [E] [E] at the start of your turn. Overflow Points: #b",
       " /3。",
-      "回合开始时获得 [E] [E] 。",
-      "觉醒",
-      "完全觉醒"
+      "Gain [E] [E] at the start of your turn.",
+      "Overflow",
+      "Full Overflow"
+    ]
+  },
+"shadowverse:RahabPower": {
+    "NAME": "Rahab",
+    "DESCRIPTIONS": [
+      "At the start of your turn, gain Strength equal to your remaining energy. #b",
+      " Energy leftover. "
+    ]
+ },
+  "shadowverse:ShipsbanePlesiosaurusPower": {
+    "NAME": "Shipsbane Plesiosaurus",
+    "DESCRIPTIONS": [
+      "Whenever a card is discarded from your hand, deal #b4 damage to a random enemy. "
+    ]
+  },
+   "shadowverse:DracomancerRitesPower": {
+    "NAME": "Dracomancer's Rites",
+    "DESCRIPTIONS": [
+      "Whenever a card is discarded from your hand, draw #b",
+      "cards "
+    ]
+  },
+   "shadowverse:GoldenDragonDenPower": {
+    "NAME": "Golden Dragon's Den",
+    "DESCRIPTIONS": [
+      "At the start of your turn, randomly discard #b",
+      " cards with the lowest cost in your hand and draw #b",
+      " cards. "
+    ]
+  },
+   "shadowverse:PolyphonicRoarPower": {
+    "NAME": "Polyphonic Roar",
+    "DESCRIPTIONS": [
+      "At the start of your turn, add #b",
+      " #yStorm #yDragon(s) that cost 0 to your hand.",
+      " #yStorm #yDragon+(s) that cost 0 to your hand. "
+    ]
+  },
+  "shadowverse:ResplendentPhoenixPower": {
+    "NAME": "Resplendent Phoenix",
+    "DESCRIPTIONS": [
+      "All cards you draw cost half energy (rounded up). "
+    ]
+  },
+   "shadowverse:LumiorePower": {
+    "NAME": "Lumiore, Prestigious Gold",
+    "DESCRIPTIONS": [
+      "For each card you discard from your hand, deal #b",
+      " points of Damage. "
+    ]
+  },
+  "shadowverse:NoirNBlancPower": {
+    "NAME": "Noir and Blanc, Brothers",
+    "DESCRIPTIONS": [
+      "At the end of your turn, if in #yFull #yOverflow, gain #b1 #yAfterimage, #yArtifact, #yPower #yDamage #yImmune and #b",
+      " Block. At the start of your next turn, if you had any remaining Block, randomly deal #b",
+      " points of Damage. "
+    ]
+  },
+   "shadowverse:PrimeDragonKeeperPower": {
+    "NAME": "Prime Dragon Keeper",
+    "DESCRIPTIONS": [
+      "Whenever you play a Dragoncraft attack card that costs 1 or less, a random enemy takes #b",
+      " Damage. If #yOverflow is active, at the end of your turn gain #b",
+      " #yFlame #yBarrier. "
+    ]
+  },
+  "shadowverse:DragonsongFlutePower": {
+    "NAME": "Dragonsong Flute",
+    "DESCRIPTIONS": [
+      "Whenever a #yStatus, #yCurse, or Attack that costs 1 or less is drawn, exhaust it and add #b1 #yHellflame #yDragon(s) to your hand. "
+    ]
+  },
+   "shadowverse:RowenPower": {
+    "NAME": "Rowen, Dragon Lance",
+    "DESCRIPTIONS": [
+      "Attack damage increased by #b",
+      " points. Effect expires after #b",
+      " turns. "
+    ]
+  },
+   "shadowverse:WildfangDragonewtPower": {
+    "NAME": "Wildfang Dragonewt",
+    "DESCRIPTIONS": [
+      "Whenever a card is discarded from your hand this turn, a random enemy takes #b",
+      " Damage. "
+    ]
+  },
+  "shadowverse:ByronPower": {
+    "NAME": "Byron, Fullmetal Dragoon",
+    "DESCRIPTIONS": [
+      "When playing an Attack card this turn, gain #b",
+      " #yStrength. If it's a Machina card, gain #b",
+      " #yDexterity ."
+    ]
+  },
+  "shadowverse:LavateinnDragonAttackFormPower": {
+    "NAME": "Lævateinn Dragon, Attack Form",
+    "DESCRIPTIONS": [
+      "For each Armed attack card played this turn, gain #b",
+      " #yStrength and #yDexterity ."
+    ]
+  },
+  "shadowverse:LavateinnDragonDefenseFormPower": {
+    "NAME": "Lævateinn Dragon, Defense Form",
+    "DESCRIPTIONS": [
+      "At the end of the turn, heal 2 HP. Reduce damage taken this turn by #b",
+      " points. "
+    ]
+  },
+  "shadowverse:ZoePower": {
+    "NAME": "Zooey, Arbiter of the Skies",
+    "DESCRIPTIONS": [
+      "Until the end of the turn, reduce damage you take to 0. Regain #b",
+      " HP. "
+    ]
+  },
+  "shadowverse:DragonplateWarriorPower": {
+    "NAME": "Dragonplate Warrior",
+    "DESCRIPTIONS": [
+      "Whenever a non-attack card is played, all enemies take #b",
+      " Points of damage."
+    ]
+  },
+  "shadowverse:DragonHoardPower": {
+    "NAME": "Dragon's Hoard",
+    "DESCRIPTIONS": [
+      "At the start of each turn and when an attack card is played, subtract #b1 from the Countdown. After the Countdown reaches 0, lose this effect and all attacks in the hand, draw and discard piles are exhausted and replaced with #yHellfire #yDragons for each exhausted."
+    ]
+  },
+  "shadowverse:RomeliaPower": {
+    "NAME": "Romelia, Lightning Striker",
+    "DESCRIPTIONS": [
+      "At the start of your turn, gain #b2 Dexterity temporarily and #b1 Energy. This effect is active for #b",
+      " turns before expiring."
+    ]
+  },
+  "shadowverse:DragonTagPower": {
+    "NAME": "Dragon",
+    "DESCRIPTIONS": [
+      "Guiltmarked as a Dragon."
+    ]
+  },
+  "shadowverse:JervaPower": {
+    "NAME": "Jerva of Draconic Mail",
+    "DESCRIPTIONS": [
+      "Health capped at 50% of your max HP. HP lost this way is restored at the end of combat. NL At the end of the turn, deal damage to a random enemy equal to #b25% of it's max HP (No less than #b25 damage)"
+    ]
+  },
+  "shadowverse:Jerva2Power": {
+    "NAME": "Jerva, Wyrm Transcendent",
+    "DESCRIPTIONS": [
+      "At the end of your turn, if you did not play any attacks, deal damage to a random enemy equal to #b25% of it's max HP. (No less than #b25 damage)"
+    ]
+  },
+  "shadowverse:Masamune2Power": {
+    "NAME": "Masamune, One-Eyed Dragon",
+    "DESCRIPTIONS": [
+      "Whenever you play an Attack card, deal #b4 damage to a random enemy."
+    ]
+  },
+  "shadowverse:Forte4Power": {
+    "NAME": "Forte, Darkwing Ruler",
+    "DESCRIPTIONS": [
+      "When Strength and Dexterity are gained, the following effects will activate in order, up to 3 times each: NL 1. Gain #b1 extra Energy next turn. NL 2. Apply #b2 Weak and Vulnerable to a random enemy. NL 3. Gain #b1 Buffer, preventing the next time you would lose HP."
+   },
+  "shadowverse:FafnirPower": {
+    "NAME": "Fafnir, Cunning Wyrm",
+    "DESCRIPTIONS": [
+      "At the end of your turn, deal #b20 damage to a random enemy. Reduce this by #b4 for each Attack card played during your turn."
     ]
   }
 }

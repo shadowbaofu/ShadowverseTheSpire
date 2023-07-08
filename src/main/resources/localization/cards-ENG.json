@@ -463,7 +463,7 @@
   },
   "shadowverse:Behemoth": {
     "NAME": "Gluttonous Behemoth",
-    "DESCRIPTION": "Deal !M! damage to all enemies at the end of this turn."
+    "DESCRIPTION": "Deal !M! damage to all enemies at the end of your turn."
   },
   "shadowverse:DemonOfPurgatory": {
     "NAME": "Demon of Purgatory",
@@ -517,7 +517,8 @@
   },
   "shadowverse:StarBright": {
     "NAME": "Starbright Deity",
-    "DESCRIPTION": "Add to your hand copies of the 3 leftmost cards in your hand, in the order they were added."
+
+    "DESCRIPTION": "Add to your hand copies of the 3 left-most cards in your hand, in the order they were added."
   },
   "shadowverse:TheWorld": {
     "NAME": "XXI. Zelgenea, The World",

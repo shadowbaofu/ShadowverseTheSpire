@@ -49,16 +49,20 @@ public class CassimPower
 
     public void onChangeStance(AbstractStance oldStance, AbstractStance newStance) {
         if (newStance.ID.equals(Resonance.STANCE_ID)){
-            addToBot((AbstractGameAction)new SFXAction("CassimPower"));
-            addToBot((AbstractGameAction)new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(this.amount, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE));
-            addToBot((AbstractGameAction) new SFXAction("ATTACK_HEAVY"));
-            addToBot((AbstractGameAction) new VFXAction((AbstractCreature) this.owner, (AbstractGameEffect) new CleaveEffect(), 0.1F));
+            addToBot(new SFXAction("CassimPower"));
+            addToBot(new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(this.amount, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE));
+            addToBot( new SFXAction("ATTACK_HEAVY"));
+            addToBot( new VFXAction( this.owner,  new CleaveEffect(), 0.1F));
         }
     }
 
     @Override
     public void atStartOfTurn() {
         addToBot(new DrawCardAction(1));
+    }
+
+    @Override
+    public void atStartOfTurnPostDraw() {
         addToBot(new RemoveSpecificPowerAction(this.owner,this.owner,this));
     }
 }

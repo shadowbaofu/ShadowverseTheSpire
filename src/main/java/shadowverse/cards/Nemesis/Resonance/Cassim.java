@@ -46,15 +46,15 @@ public class Cassim
 
 
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new SFXAction("Cassim"));
-        addToBot((AbstractGameAction)new DamageAction(abstractMonster,new DamageInfo(p,this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) p, (AbstractCreature) p, (AbstractPower) new CassimPower((AbstractCreature) p, this.magicNumber), this.magicNumber));
-        addToBot((AbstractGameAction)new SelectCardsInHandAction(1,TEXT[0],false,false, card -> {
+        addToBot(new SFXAction("Cassim"));
+        addToBot(new DamageAction(abstractMonster,new DamageInfo(p,this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        addToBot( new ApplyPowerAction(p, p, new CassimPower(p, this.magicNumber), this.magicNumber));
+        addToBot(new SelectCardsInHandAction(1,TEXT[0],false,false, card -> {
             return true;
         }, abstractCards ->{
             for (AbstractCard c:abstractCards){
-                addToBot((AbstractGameAction)new ExhaustSpecificCardAction(c,p.hand));
-                addToBot((AbstractGameAction)new MakeTempCardInDrawPileAction(c.makeStatEquivalentCopy(),1,true,true,false));
+                addToBot(new ExhaustSpecificCardAction(c,p.hand));
+                addToBot(new MakeTempCardInDrawPileAction(c.makeStatEquivalentCopy(),1,true,true,false));
             }
         } ));
     }

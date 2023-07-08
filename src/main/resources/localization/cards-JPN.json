@@ -722,7 +722,7 @@
   },
   "shadowverse:NaterranFuture": {
     "NAME": "ナテラの未来",
-    "DESCRIPTION": "自然 。 NL *那塔拉的大树 !M! を手札に加える。 NL 廃棄 。"
+    "DESCRIPTION": "自然 。 NL *ナテラの大樹 !M! を手札に加える。 NL 廃棄 。"
   },
   "shadowverse:GemLight": {
     "NAME": "ジェムライト",
@@ -3863,7 +3863,7 @@
   },
   "shadowverse:ShadowCorrosion": {
     "NAME": "影の侵食",
-    "DESCRIPTION": "自然 。 NL 敵は「ターン開始時、この戦闘中にプレイしていた *ナテラの大樹 の数かける3のHPを失う」を持つ。 NL 敵がすでにこれを持っているなら、この戦闘中にプレイしていた  *ナテラの大樹 の数かける3のダメージを与える。 NL 廃棄 。"
+    "DESCRIPTION": "自然 。 NL 敵は「ターン開始時、この戦闘中にプレイしていた *ナテラの大樹 の数かける4のHPを失う」を持つ。 NL 敵がすでにこれを持っているなら、この戦闘中にプレイしていた  *ナテラの大樹 の数かける4のダメージを与える。 NL 廃棄 。"
   },
   "shadowverse:Valdain": {
     "NAME": "呪われし影・ヴァイディ",
@@ -4608,9 +4608,9 @@
   },
   "shadowverse:GlitteringGold": {
     "NAME": "輝く金貨",
-    "DESCRIPTION": "宴乐 ， 保留 ， 廃棄 。 NL  !B! ブロック を得る。 NL 如果已使用的次数为： NL 0,3,6：获得 [E] 。 NL 1,4,7：获得5金币。 NL 2,5,8：回复2点生命。 NL 更多：再获得 !D! 点 格挡 。",
+    "DESCRIPTION": "宴楽 ， 保留 ， 廃棄 。 NL  !B! ブロック を得る。 NL 如果已使用的次数为： NL 0,3,6：获得 [E] 。 NL 1,4,7：获得5金币。 NL 2,5,8：回复2点生命。 NL 更多：再获得 !D! 点 格挡 。",
     "EXTENDED_DESCRIPTION": [
-      "宴乐 ， 保留 ， 廃棄 。 NL  !B! ブロック を得る。 NL ",
+      "宴楽 ， 保留 ， 廃棄 。 NL  !B! ブロック を得る。 NL ",
       "获得 [E] 。",
       "获得5金币。",
       "回复2点生命。",
@@ -4766,7 +4766,7 @@
   },
   "shadowverse:Wimael": {
     "NAME": "香風の執行者・ウィムエル",
-    "DESCRIPTION": "八獄 · 保留 NL 保留 される度、コストを1下げる。 NL これが引かれる度、これの複製品1枚を手札に加える。 NL !D! ダメージを与える。"
+    "DESCRIPTION": "八獄 NL ブロックがないスキルをプレイする度、コストを1下げる 。 NL !D! ダメージを与える。 NL 次のターン開始時、コスト０かつ 廃棄 を持つ複製品1枚を手札に加える。"
   },
   "shadowverse:BenevolentElf": {
     "NAME": "ベネディクションエルフ",
@@ -4861,7 +4861,7 @@
     "DESCRIPTION": "八獄 NL 自分は「 葬送 する度、敵全体に10ダメージを与える(上限は1ターンに3回)」を持つ。 NL カード2枚を 葬送 し、 リアニメイト 1、2。 NL エセリアル 。",
     "UPGRADE_DESCRIPTION":"八獄 NL 自分は「 葬送 する度、敵全体に10ダメージを与える(上限は1ターンに3回)」を持つ。 NL カード2枚を 葬送 し、 リアニメイト 1、2。"
   },
-  "shadowverse:DeathScytheHound": {
+  "shadowverse:DeathscytheHound": {
     "NAME": "デスサイズハウンド",
     "DESCRIPTION": "敵全体に !D! ダメージを与える。 NL ネクロマンス 8 もう一回ダメージを与える。"
   },
@@ -5252,8 +5252,8 @@
   },
   "shadowverse:Cornelius": {
     "NAME": "屍術王・コルネリウス",
-    "DESCRIPTION": "学園 NL !B! ブロック を得る 。 NL 敵全体に 弱体化 と 脱力 2を与える。 NL コスト1のネクロマンサーでないアタックをランダムに4枚を手札に加える。",
-    "UPGRADE_DESCRIPTION":"学園 NL !B! ブロック を得る 。 NL 敵全体に 弱体化 と 脱力 2を与える。 NL コスト1のネクロマンサーでないアタックをランダムに4枚を手札に加える。 NL *王たる屍術 1枚を手札に加える。"
+    "DESCRIPTION": "学園 NL !B! ブロック を得る 。 NL 敵全体に 弱体化 と 脱力 2を与える。 NL コスト1のネクロマンサーでないアタックをランダムに4枚を手札に加える。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION":"学園 NL !B! ブロック を得る 。 NL 敵全体に 弱体化 と 脱力 2を与える。 NL コスト1のネクロマンサーでないアタックをランダムに4枚を手札に加える。 NL *王たる屍術 1枚を手札に加える。 NL 廃棄 。"
   },
   "shadowverse:CorpseKingCommand": {
     "NAME": "王たる屍術",
@@ -5331,7 +5331,7 @@
   },
   "shadowverse:Gawain": {
     "NAME": "約束の栄光・ガウェイン",
-    "DESCRIPTION": "!D! ダメージを与える。 NL 連携 5：追加でカード1枚を引く。 NL 連携 10：これが引かれた場合、アップグレードする。 NL 連携 15：ダメージを2倍にする。 NL 連携 20：次に受けるダメージを0にする。",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 連携 5：追加でカード1枚を引く。 NL 連携 10：これが引かれた場合、アップグレードする。 NL 連携 15：ダメージを2倍にする。 NL 連携 20：次に受けるダメージを0にする。 NL あと !stslib:ex! 回使って廃棄する。",
     "EXTENDED_DESCRIPTION": [
       " NL （連携数：",
       ")"
@@ -5345,101 +5345,961 @@
     "NAME": "",
     "DESCRIPTION": "",
     "EXTENDED_DESCRIPTION": [
-      "基本",
-      "护符1",
-      "护符2",
-      "诅咒",
-      "机械&狮子",
-      "回复1",
-      "回复2",
-      "守护"
+      "ベーシック",
+      "アミュレット1",
+      "アミュレット2",
+      "邪神",
+      "機械&獅子",
+      "回復1",
+      "回復2",
+      "守護"
     ]
   },
   "shadowverse:ElfPool": {
     "NAME": "",
     "DESCRIPTION": "",
     "EXTENDED_DESCRIPTION": [
-      "基本",
-      "妖精",
-      "离场",
-      "长连击",
-      "自然&机械",
-      "回手",
-      "短连击",
-      "密林&载具"
+      "ベーシック",
+      "フェアリー",
+      "セッカ",
+      "コンボ1",
+      "自然&機械",
+      "バウンス",
+      "コンボ2",
+      "密林&乗り物"
     ]
   },
   "shadowverse:NecroPool": {
     "NAME": "",
     "DESCRIPTION": "",
     "EXTENDED_DESCRIPTION": [
-      "基本",
+      "ベーシック",
       "葬送",
-      "幽灵",
-      "谢幕曲",
-      "机械",
+      "ゴースト",
+      "ラストワード",
+      "機械",
       "自然",
-      "死灵术",
-      "墓地"
+      "ネクロマンス",
+      "墓場"
     ]
   },
   "shadowverse:NemesisPool": {
     "NAME": "",
     "DESCRIPTION": "",
     "EXTENDED_DESCRIPTION": [
-      "基本",
-      "造物",
-      "八狱",
-      "机械",
-      "洗抽",
-      "人偶",
-      "共鸣",
-      "堆尸"
+      "ベーシック",
+      "アーティファクト1",
+      "八獄",
+      "機械",
+      "アーティファクト2",
+      "人形",
+      "共鳴",
+      "連携"
     ]
   },
   "shadowverse:RoyalPool": {
     "NAME": "",
     "DESCRIPTION": "",
     "EXTENDED_DESCRIPTION": [
-      "基本",
+      "ベーシック",
       "潜伏",
-      "进化",
-      "宴乐",
-      "英雄",
-      "雷维翁",
-      "财宝",
-      "自然&机械",
-      "协作"
+      "進化",
+      "宴楽",
+      "ヒーロー",
+      "レヴィオン",
+      "財宝",
+      "フォロワー",
+      "自然&機械",
+      "連携"
     ]
   },
   "shadowverse:VampirePool": {
     "NAME": "",
     "DESCRIPTION": "",
     "EXTENDED_DESCRIPTION": [
-      "基本",
-      "学园",
-      "渴望",
-      "蝙蝠",
-      "进化",
-      "自然&机械",
-      "自残",
-      "复仇",
-      "狂乱"
+      "ベーシック",
+      "学園",
+      "渇望",
+      "コウモリ",
+      "進化",
+      "自然&機械",
+      "狂乱1",
+      "復讐",
+      "狂乱2"
     ]
   },
   "shadowverse:WitchPool": {
     "NAME": "",
     "DESCRIPTION": "",
     "EXTENDED_DESCRIPTION": [
-      "基本",
-      "学园",
-      "西洋棋",
-      "土之印1",
-      "土之印2",
-      "机械",
+      "ベーシック",
+      "学園",
+      "チェス",
+      "秘術1",
+      "秘術2",
+      "機械",
       "自然",
-      "增幅1",
-      "增幅2"
+      "スペル1",
+      "スペル2"
     ]
+  },
+  "shadowverse:PinionPrayer": {
+    "NAME": "詠唱：白翼への祈り",
+    "DESCRIPTION": "カウントダウン 2 NL *ホーリーファルコン を1枚手札に加える。",
+    "UPGRADE_DESCRIPTION":"カウントダウン 2 NL *ホーリーファルコン+ を1枚手札に加える。"
+  },
+  "shadowverse:JudgmentSpearMaster": {
+    "NAME": "ジャッジメントスピアマスター",
+    "DESCRIPTION": "結晶 1 · カウントダウン 1 NL これを手札に加え、このターンこれのコストは0。 NL  NL --------------------- NL  NL !D! ダメージを与える。 NL !B! ブロック を得る。"
+  },
+  "shadowverse:HolyLightningBird": {
+    "NAME": "雷導の神鳥",
+    "DESCRIPTION": "結晶 0 · カウントダウン 1 NL エナジー !M! を得る。 NL  NL --------------------- NL  NL !D! ダメージを与える。 NL この戦闘中に カウントダウン を持つアミュレットを5枚以上プレイしていたなら、エナジー1を得る。"
+  },
+  "shadowverse:DragonWarrior": {
+    "NAME": "ドラゴンウォーリア",
+    "DESCRIPTION": "!D! ダメージを与える。",
+    "UPGRADE_DESCRIPTION":"!D! ダメージを与える。 NL さらに !M! ダメージを与える。"
+  },
+  "shadowverse:DragonOracle": {
+    "NAME": "竜の託宣",
+    "DESCRIPTION": "覚醒ポイント1を得る。 NL 次のターン開始時、 [E] を得る。 NL 覚醒 なら、追加でカード !M! 枚を引く。",
+    "UPGRADE_DESCRIPTION":"覚醒ポイント1を得る。 NL 次のターン開始時、 [E] [E] を得る。 NL 覚醒 なら、追加でカード !M! 枚を引く。"
+  },
+  "shadowverse:Strike_D": {
+    "NAME": "ストライク",
+    "DESCRIPTION": "!D! ダメージを与える。"
+  },
+  "shadowverse:Defend_D": {
+    "NAME": "防御",
+    "DESCRIPTION": "!B! ブロック を得る。"
+  },
+  "shadowverse:BlazingBreath": {
+    "NAME": "ブレイジングブレス",
+    "DESCRIPTION": "!D! ダメージを与える。"
+  },
+  "shadowverse:SeabrandDragon": {
+    "NAME": "海剣竜",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 覚醒 なら、ダメージを倍にする。"
+  },
+  "shadowverse:DraconicFervor": {
+    "NAME": "竜の闘気",
+    "DESCRIPTION": "覚醒ポイント1を得る。 NL 次のターン開始時、 [E] を得る。 NL B! ブロック を得、カードを !M! 枚引く。"
+  },
+  "shadowverse:Rahab": {
+    "NAME": "ラハブ",
+    "DESCRIPTION": "!B! ブロック を得る。 NL ターン終了時、残りエナジー１につき、 筋力 1を得る。"
+  },
+  "shadowverse:DragonicCall": {
+    "NAME": "ドラゴニックコール",
+    "DESCRIPTION": "カードを !M! 枚を引く。 NL 覚醒 なら，额外抽1张牌。 NL 本回合不能再抽牌 。"
+  },
+  "shadowverse:WardenOfTheAdamantClaw": {
+    "NAME": "剛爪の看守",
+    "DESCRIPTION": "八獄 NL  !B! ブロック を得る 。 NL エンハンス 2:さらに !M! ブロック を得、カードを3枚引く。"
+  },
+  "shadowverse:ScaleboundPlight": {
+    "NAME": "蛇竜の契り",
+    "DESCRIPTION": "カードを !M! 枚捨て、 !M! 枚引く。 NL 覚醒 なら、追加で1枚を引く。"
+  },
+  "shadowverse:IvoryDragon": {
+    "NAME": "アイボリードラゴン",
+    "DESCRIPTION": " !B! ブロック を得る 。 NL 覚醒 なら、追加で1枚を引く。"
+  },
+  "shadowverse:LightningVelociraptor": {
+    "NAME": "雷電のヴェロキラプトル",
+    "DESCRIPTION": "自然 NL !B! ブロック を得る 。 NL *ナテラの大樹 1枚を手札に加える。 NL 覚醒 なら、追加で1枚を手札に加える。"
+  },
+  "shadowverse:WildMana": {
+    "NAME": "ワイルド・マナ",
+    "DESCRIPTION": "自然 。 NL *ナテラの大樹 1枚を手札に加える。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION": "自然 。 NL *ナテラの大樹 1枚を手札に加える。"
+  },
+  "shadowverse:WhirlwindPteranodon": {
+    "NAME": "旋風のプテラノドン",
+    "DESCRIPTION": "自然 NL !B! ブロック を得る 。 NL ラストワード : *ナテラの大樹 1枚を手札に加える。 NL ナテラの大樹 を持つなら、それを失い、覚醒ポイント1を得る。"
+  },
+  "shadowverse:HellFlameDragon": {
+    "NAME": "ヘルフレイムドラゴン",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 廃棄 。"
+  },
+  "shadowverse:Python": {
+    "NAME": "ピュートーン",
+    "DESCRIPTION": " !B! ブロック を得る 。 NL 山札からカードを10枚まで選択して廃棄する。 NL 廃棄 。"
+  },
+  "shadowverse:AugiteWyrm": {
+    "NAME": "砕石竜",
+    "DESCRIPTION": "アクセラレート 0:カードを1枚捨て、1枚引く。 NL 覚醒 なら、追加で1枚を引く。 NL  NL --------------------- NL  NL 敵全体に !D! ダメージを与える。"
+  },
+  "shadowverse:HotheadedMarauder": {
+    "NAME": "倒壊の襲撃者",
+    "DESCRIPTION": "八獄 NL !D! ダメージを与える。 NL 直前にプレイしたカードが 八獄 カードなら、覚醒ポイント1を得る。"
+  },
+  "shadowverse:RazorClawedThief": {
+    "NAME": "亀裂の盗人",
+    "DESCRIPTION": "八獄 NL !D! ダメージを与える。 NL ラストワード これをプレイしたら、廃棄かつラストワードを持たない *亀裂の盗人 1枚を手札に加える。"
+  },
+  "shadowverse:RazorClawedThief_Copy": {
+    "NAME": "亀裂の盗人",
+    "DESCRIPTION": "八獄 NL !D! ダメージを与える。 NL 廃棄。"
+  },
+  "shadowverse:ScorchedEarthTyrant": {
+    "NAME": "焦土の無頼漢",
+    "DESCRIPTION": "八獄 NL  !B! ブロック を得る 。 NL 敵全体に !D! ダメージを与える。 NL 直前にプレイしたカードが 八獄 カードなら、さらにダメージを1回与える。"
+  },
+  "shadowverse:Antemaria": {
+    "NAME": "遊猟の咎人・アンテマリア",
+    "DESCRIPTION": "八獄 NL アクセラレート 0:ランダムな敵に !M! ダメージをを与える。 NL  NL --------------------- NL  NL !D! ダメージを与える。 NL 直前にプレイしたカードが 八獄 カードなら、ダメージを倍にする。"
+  },
+  "shadowverse:Drazael": {
+    "NAME": "禁牙の執行者・ドラズエル",
+    "DESCRIPTION": "八獄 NL アクセラレート 0:カード1枚を引く。 NL  NL --------------------- NL  NL アーティファクト 1を得、HPを5回復する。 NL 敵全体は 筋力 と 敏捷性 を5失う。 NL !B! ブロック を得、これを 廃棄 する。"
+  },
+  "shadowverse:DragonewtMight": {
+    "NAME": "ドラゴニュートの怪力",
+    "DESCRIPTION": "カードを1枚捨て、1枚引く。ランダムな敵に !D! ダメージを与える。 NL このカードを捨てた時、カードを !M! 枚引く。"
+  },
+  "shadowverse:TouchingThoughts": {
+    "NAME": "触れ合う想い",
+    "DESCRIPTION": "自然 NL *ナテラの大樹 !M! 枚を手札に加える。 NL 覚醒 なら、 [E] を得る。 NL 廃棄 。"
+  },
+  "shadowverse:ManagarmrScout": {
+    "NAME": "マーナガルムの斥候",
+    "DESCRIPTION": "自然 NL !D! ダメージを与える。 NL *ナテラの大樹 2枚を手札に加える。"
+  },
+  "shadowverse:DragonCounsel": {
+    "NAME": "竜の知恵",
+    "DESCRIPTION": "手札からコスト最小のカードをランダムに1枚捨てる。 NL カード !M! 枚引く。"
+  },
+  "shadowverse:Ghandagoza": {
+    "NAME": "古今独歩の大拳豪・ガンダゴウザ",
+    "DESCRIPTION": "!D! ダメージを2回与える。"
+  },
+  "shadowverse:Dagon": {
+    "NAME": "深海の覇王・ダゴン",
+    "DESCRIPTION": "!D! ダメージを3回与える。 NL !M! 倍の 筋力 ボーナスが適用される。"
+  },
+  "shadowverse:ImperialDragoon": {
+    "NAME": "インペリアルドラグーン",
+    "DESCRIPTION": "手札をすべて捨てる。 NL 1枚につき、敵全体に !D! ダメージを与える。"
+  },
+  "shadowverse:ShipsbanePlesiosaurus": {
+    "NAME": "波濤のプレシオサウルス",
+    "DESCRIPTION": "自然 NL 手札を捨てる度、ランダムな敵に4ダメージを与える。 NL 覚醒 なら、 *EP 1枚を手札に加える。",
+    "UPGRADE_DESCRIPTION": "自然 NL 手札を捨てる度、ランダムな敵に4ダメージを与える。 NL 覚醒 なら、 *EP 1枚を手札に加える。 NL 手札1枚を捨て、カード2枚を引く。 NL これによって 自然 カードを捨てたなら、 !B! ブロック を得る 。"
+  },
+  "shadowverse:DraconicCounsel": {
+    "NAME": "竜の助言",
+    "DESCRIPTION": "手札1枚を捨て、カード !M! 枚を引く。 NL 覚醒 なら、コスト0かつ覚醒効果を持たない廃棄・エセリアルを持つこれの複製品1枚を手札に加える。"
+  },
+  "shadowverse:DraconicCounsel_Copy": {
+    "NAME": "竜の助言",
+    "DESCRIPTION": "手札1枚を捨て、カード !M! 枚を引く。 NL エセリアル 。 NL 廃棄 。"
+  },
+  "shadowverse:DracomancerRites": {
+    "NAME": "竜巫女の儀式",
+    "DESCRIPTION": "自分が手札を捨てるたび、捨てた枚数と同じだけカードを引く。 NL エセリアル 。",
+    "UPGRADE_DESCRIPTION": "自分が手札を捨てるたび、捨てた枚数と同じだけカードを引く。"
+  },
+  "shadowverse:Kit": {
+    "NAME": "煌牙の戦士・キット",
+    "DESCRIPTION": "!D! ダメージを与える。 NL このカードを捨てた時，ランダムな敵に !D! ダメージを与える。"
+  },
+  "shadowverse:OrbedCancer": {
+    "NAME": "オーブキャンサー",
+    "DESCRIPTION": "アクセラレート 1:手札1枚を捨て、カード !M! 枚を引く。 NL  NL ------------------- NL  NL !B! ブロック を2回得る。"
+  },
+  "shadowverse:PumpkinDragon": {
+    "NAME": "パンプキンドラゴン",
+    "DESCRIPTION": "アクセラレート 1:カードを !M! 枚引く。 NL  NL ------------------- NL  NL !B! ブロック を得る。 NL カードを !M! 枚引く。"
+  },
+  "shadowverse:MermaidSinger": {
+    "NAME": "マーメイドシンガー",
+    "DESCRIPTION": " !B! ブロック を得る 。 NL このカードを捨てた時， !B! ブロック を得る 。"
+  },
+  "shadowverse:GoldenDragonDen": {
+    "NAME": "黄金竜の棲家",
+    "DESCRIPTION": "ターン開始時、手札からコスト最小のカードをランダムに1枚捨てる。カードを1枚引く。",
+    "UPGRADE_DESCRIPTION": "天賦 。 NL ターン開始時、手札からコスト最小のカードをランダムに1枚捨てる。カードを1枚引く。"
+  },
+  "shadowverse:SiLong": {
+    "NAME": "独尊竜・スーロン",
+    "DESCRIPTION": "宴楽 NL !B! ブロック を得る 。 NL 限定 HPを3回復する。 NL *波濤の暴圧 1枚を手札に加える。 NL 覚醒ポイント1を得る。",
+    "UPGRADE_DESCRIPTION": "宴楽 NL !B! ブロック を得る 。 NL 限定 HPを3回復する。 NL *波濤の暴圧+ 1枚を手札に加える。 NL 覚醒ポイント1を得る。"
+  },
+  "shadowverse:TidalTyranny": {
+    "NAME": "波濤の暴圧",
+    "DESCRIPTION": "宴楽 NL ランダムな敵に !D! ダメージを与える。 NL 覚醒 なら、 *EP 1枚を手札に加える。 NL 廃棄 。"
+  },
+  "shadowverse:WaterwyrmBlessing": {
+    "NAME": "竜の真恵",
+    "DESCRIPTION": "覚醒ポイント1を得る。 NL 次のターン開始時、 [E] を得る。 NL 覚醒 なら、追加でカードを !M! 枚引く。"
+  },
+  "shadowverse:WindblastDragon": {
+    "NAME": "突風のドラゴン",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 廃棄 。"
+  },
+  "shadowverse:PolyphonicRoar": {
+    "NAME": "連なる咆哮",
+    "DESCRIPTION": "ターン開始時、コスト０の *突風のドラゴン 1枚を手札に加える。",
+    "UPGRADE_DESCRIPTION": "ターン開始時、コスト０の *突風のドラゴン+ 1枚を手札に加える"
+  },
+  "shadowverse:OtohimeVanguard": {
+    "NAME": "竜帝の近衛兵",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 廃棄 。"
+  },
+  "shadowverse:DragonEmpressOtohime": {
+    "NAME": "憤怒の竜帝・乙姫",
+    "DESCRIPTION": "アクセラレート 0: *竜帝の近衛兵 1枚を手札に加える。 NL  NL --------------------- NL  NL  !B! ブロック を得る 。 NL *竜帝の近衛兵 4枚を手札に加える。",
+    "UPGRADE_DESCRIPTION": "アクセラレート 0: *竜帝の近衛兵+ 1枚を手札に加える。 NL  NL --------------------- NL  NL  !B! ブロック を得る 。 NL *竜帝の近衛兵+ 4枚を手札に加える。"
+  },
+  "shadowverse:ResplendentPhoenix": {
+    "NAME": "万華の鳳凰",
+    "DESCRIPTION": "引いたカードのコストを半分にする。"
+  },
+  "shadowverse:PoseidonGuard": {
+    "NAME": "ポセイドンの兵士",
+    "DESCRIPTION": " !B! ブロック を得る 。 NL 廃棄 。"
+  },
+  "shadowverse:Poseidon": {
+    "NAME": "ポセイドン",
+    "DESCRIPTION": "アクセラレート 1: *ポセイドンの兵士 1枚を手札に加える。 NL  NL --------------------- NL  NL  !B! ブロック を得る 。 NL *ポセイドンの兵士 2枚を手札に加える。",
+    "UPGRADE_DESCRIPTION": "アクセラレート 1: *ポセイドンの兵士+ 1枚を手札に加える。 NL  NL --------------------- NL  NL  !B! ブロック を得る 。 NL *ポセイドンの兵士+ 2枚を手札に加える。"
+  },
+  "shadowverse:EncounterFromTheDeep": {
+    "NAME": "深海の接近",
+    "DESCRIPTION": "山札からカード1枚を選択し、ランダムな敵にそのコスト !D! 倍のダメージを与える。 NL 選択したカードのコストが3以上なら、それのダメージを+10する。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION": "山札からカード1枚を選択し、ランダムな敵にそのコスト !D! 倍のダメージを与える。 NL 選択したカードのコストが3以上なら、それのダメージを+10する。"
+  },
+  "shadowverse:Argente": {
+    "NAME": "銀色の清純・アルジャンテ",
+    "DESCRIPTION": " !B! ブロック を得る。 NL 手札2枚を捨て、覚醒ポイント1を得る。 NL この戦闘中に「自分の手札を捨てる」自分の能力が（これを含めず）2回以上働いていたなら、追加でカード3枚を引く。",
+    "EXTENDED_DESCRIPTION": [
+      "（自分の手札を捨てた回数は",
+      ")"
+    ]
+  },
+  "shadowverse:Lumiore": {
+    "NAME": "金色の威信・リュミオール",
+    "DESCRIPTION": "!B! ブロック と [E] を得る。 NL このターン、自分が手札を捨てるたび、敵全体に !M! ×捨てた枚数のダメージを与える。 NL この戦闘中に「自分の手札を捨てる」自分の能力が（これを含めず）4回以上働いていたなら、手札2枚を捨て、カード3枚を引く。",
+    "EXTENDED_DESCRIPTION": [
+      "（自分の手札を捨てた回数は",
+      ")"
+    ]
+  },
+  "shadowverse:NoirNBlanc": {
+    "NAME": "黒白の乱舞・ノール＆ブラン",
+    "DESCRIPTION": "!D! ダメージを与える。 NL このカードを捨てた時，ランダムな敵に6ダメージを与える。 NL このカードを捨てたまたはプレイしたターンの終了時、 超覚醒 なら、 !M! ブロック 、ブラー 、 アーティファクト 1、 能力によるダメージは無効 を得る。次のターン開始時、ブロックがまだ残っているなら、ランダムな敵に !M! ダメージを与える。"
+  },
+  "shadowverse:DragoonMedic": {
+    "NAME": "治癒のドラグーン",
+    "DESCRIPTION": " !B! ブロック を得る 。 NL 次のターン開始時、 !M! ブロック を得る。 NL このカードを捨てた時，次のターン開始時、 !M! ブロック を得る。"
+  },
+  "shadowverse:VerdantRebirth": {
+    "NAME": "森羅の産声",
+    "DESCRIPTION": "自然 NL !D! ダメージを与える。 NL *ナテラの大樹 1枚を手札に加える。 NL ナテラの大樹 を持つなら、追加で !M! ダメージを与える。"
+  },
+  "shadowverse:DisdainfulRending": {
+    "NAME": "侮蔑の炎爪",
+    "DESCRIPTION": "!D! ダメージを与える。 NL *火傷 1枚を手札に加える。"
+  },
+  "shadowverse:RowenRoar": {
+    "NAME": "ローウェンの咆哮",
+    "DESCRIPTION": "覚醒ポイント1を得る。 NL 次のターン開始時、 [E] を得る。",
+    "UPGRADE_DESCRIPTION":"覚醒ポイント1を得る。 NL 次のターン開始時、 [E] [E] を得る"
+  },
+  "shadowverse:ValdainClaw": {
+    "NAME": "ヴァイディの爪牙",
+    "DESCRIPTION": "ランダムな敵に 弱体化 と 脱力 !M! を与える。"
+  },
+  "shadowverse:CursedFuror": {
+    "NAME": "ドラゴニックレイジ",
+    "DESCRIPTION": "*ローウェンの咆哮 NL *ヴァイディの爪牙 NL チョイス :覚醒ポイント1を得る。 NL 次のターン開始時、 [E] を得る、ランダムな敵に 弱体化 と 脱力 !M! を与える。 NL 覚醒 なら、チョイス ではなくすべて発動する。"
+  },
+  "shadowverse:ServantOfDisdain": {
+    "NAME": "侮蔑の従者",
+    "DESCRIPTION": " !B! ブロック を得る 。 NL 手札の *火傷 を 廃棄 する。1枚につき、カード1枚を引く。"
+  },
+  "shadowverse:DiscipleOfDisdain": {
+    "NAME": "侮蔑の信者",
+    "DESCRIPTION": "!D! ダメージを与える。 NL *火傷 1枚を手札に加える。 NL カード1枚を引く。"
+  },
+  "shadowverse:ArdentTorch": {
+    "NAME": "灯火の烈絶",
+    "DESCRIPTION": "*火傷 1枚を手札に加える。 NL カード1枚を引く。 NL 手札にある *火傷 1枚につき、カード1枚を引く。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION":"*火傷 1枚を手札に加える。 NL カード1枚を引く。 NL 手札にある *火傷 1枚につき、カード1枚を引く"
+  },
+  "shadowverse:AdherentOfArdor": {
+    "NAME": "烈絶の崇拝者",
+    "DESCRIPTION": "!D! ダメージを与える。 NL *火傷 2枚を手札に加える。 NL 覚醒 なら、さらにダメージ1回を与え、 *火傷 1枚を手札に加える。"
+  },
+  "shadowverse:SneerOfDisdain": {
+    "NAME": "侮蔑の嘲笑",
+    "DESCRIPTION": "!D! ダメージを与える。 NL エンハンス 2:手札の *火傷 を全て廃棄する。1枚につき、 !M! ブロック を得る。そして *火傷 1枚を手札に加える。"
+  },
+  "shadowverse:PrimeDragonKeeper": {
+    "NAME": "原初の竜使い",
+    "DESCRIPTION": "コスト1以下のドラゴンアタックをプレイする度、ランダムな敵に !M! ダメージを与える。 NL 覚醒 なら、ターン終了時に ファイアバリア !M! を得る。",
+    "UPGRADE_DESCRIPTION":"天賦 。 NL コスト1以下のドラゴンアタックをプレイする度、ランダムな敵に !M! ダメージを与える。 NL 覚醒 なら、ターン終了時に ファイアバリア !M! を得る。"
+  },
+  "shadowverse:DragonsongFlute": {
+    "NAME": "竜呼びの笛",
+    "DESCRIPTION": "覚醒 なら、手札のコスト1以下のアタック、状態異常と呪いカードを全て廃棄する。1枚につき、 *ヘルフレイムドラゴン 1枚を手札に加える。 NL 覚醒 なら、コスト1以下のアタック、状態異常と呪いカードを引く度、それを廃棄して *ヘルフレイムドラゴン 1枚を手札に加える。 NL エセリアル 。",
+    "UPGRADE_DESCRIPTION":"覚醒 なら、手札のコスト1以下のアタック、状態異常と呪いカードを全て廃棄する。1枚につき、 *ヘルフレイムドラゴン 1枚を手札に加える。 NL 覚醒 なら、コスト1以下のアタック、状態異常と呪いカードを引く度、それを廃棄して *ヘルフレイムドラゴン 1枚を手札に加える。"
+  },
+  "shadowverse:DragonWeapon": {
+    "NAME": "ドラゴウェポン",
+    "DESCRIPTION": "武装 NL 手札1枚を選択して 武装 種類と「プレイする時に1 ブロック を得る」を与える。",
+    "UPGRADE_DESCRIPTION":"武装 · 保留 NL 选手札1枚を選択して 武装 種類と「プレイする時に1 ブロック を得る」を与える。"
+  },
+  "shadowverse:DraconicArmor": {
+    "NAME": "ドラゴニックアーマー",
+    "DESCRIPTION": "武装 NL 山札からランダムな 武装 アタック !M! 枚を手札に加える。 NL *ドラゴウェポン 1枚を手札に加える。"
+  },
+  "shadowverse:SwiftbladeDragonewt": {
+    "NAME": "瞬刃のドラゴニュート",
+    "DESCRIPTION": "武装 NL !D! ダメージを与える。 NL  *ドラゴウェポン 1枚を手札に加える。 NL この戦闘中にプレイしていた 武装 アタックの枚数が4以上なら、追加でダメージ1回を与える。",
+    "EXTENDED_DESCRIPTION": [
+      " NL （プレイしていた 武装 アタックは",
+      "枚)"
+    ]
+  },
+  "shadowverse:Draconir": {
+    "NAME": "ナックルドラゴン・ドラグニル",
+    "DESCRIPTION": "武装 NL  !B! ブロック を得る 。 NL *ドラゴウェポン 1枚を手札に加える。 NL この戦闘中にプレイしていた 武装 アタックの枚数が4以上なら、 *奇跡 と *EP それぞれ1枚を手札に加える。",
+    "EXTENDED_DESCRIPTION": [
+      " NL （プレイしていた 武装 アタックは",
+      "枚)"
+    ]
+  },
+  "shadowverse:LanceLizard": {
+    "NAME": "ランスリザード",
+    "DESCRIPTION": "武装 NL !D! ダメージを与える。 NL *ドラゴウェポン 1枚を手札に加える。 NLこの戦闘中にプレイしていた 武装 アタックの枚数が4以上なら、与えたダメージ分の ブロック を得る。",
+    "EXTENDED_DESCRIPTION": [
+      " NL （プレイしていた 武装 アタックは",
+      "枚)"
+    ]
+  },
+  "shadowverse:DragonSmash": {
+    "NAME": "ドラゴンスマッシュ",
+    "DESCRIPTION": "武装 NL ランダムな敵に !D! ダメージを与える。 NL *ドラゴウェポン 1枚を手札に加える。"
+  },
+  "shadowverse:HammerDragonewt": {
+    "NAME": "ハンマードラゴニュート",
+    "DESCRIPTION": "武装 NL !D! ダメージを与える。 NL ラストワード :これをプレイする時、 *ドラゴンスマッシュ 1枚を手札に加える。 NL この戦闘中にプレイしていた 武装 アタックの枚数が4以上なら、ダメージを倍にし、 筋力 と 敏捷性 1を得る。",
+    "UPGRADE_DESCRIPTION":"武装 NL !D! ダメージを与える。 NL ラストワード :これをプレイする時、 *ドラゴンスマッシュ+ 1枚を手札に加える。 NL この戦闘中にプレイしていた 武装 アタックの枚数が4以上なら、ダメージを倍にし、 筋力 と 敏捷性 1を得る",
+    "EXTENDED_DESCRIPTION": [
+      " NL （プレイしていた 武装 アタックは",
+      "枚)"
+    ]
+  },
+  "shadowverse:Georgius": {
+    "NAME": "ゲオルギウス",
+    "DESCRIPTION": "敵全体に !D! ダメージを与える。 NL 敵全体に「竜」属性を与える。 NL 覚醒 なら、さらにダメージ1回を与える。 NL 超覚醒 なら、さらにダメージ1回を与える。"
+  },
+  "shadowverse:Ethica": {
+    "NAME": "紅炎の竜爪・エチカ",
+    "DESCRIPTION": "敵全体に !D! ダメージを与える。 NL 覚醒 なら、 *奇跡 と *EP それぞれ1枚を手札に加える。"
+  },
+  "shadowverse:SpringwellDragonKeeper": {
+    "NAME": "水呼びの竜使い",
+    "DESCRIPTION": "手札1枚を捨て、 !D! ダメージを与える。 NL エンハンス 2: !B! ブロック を得る 。"
+  },
+  "shadowverse:WyrmfireEngineer": {
+    "NAME": "竜炎の設計士",
+    "DESCRIPTION": "!D! ダメージを与える。 NL コスト1の *機動二輪車 1枚を手札に加える。 NL 覚醒 なら、それではなく、次のダメージを+5する。"
+  },
+  "shadowverse:GoldenDragon": {
+    "NAME": "覇道の金龍",
+    "DESCRIPTION": " !B! ブロック を得る 。 NL HPを2回復する。 NL 廃棄 。"
+  },
+  "shadowverse:SilverDragon": {
+    "NAME": "覇道の銀龍",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 手札に *覇道の金龍 があるなら、もう1回ダメージを与える。 NL 敵全体に !M! ダメージをを与える。 NL 廃棄 。"
+  },
+  "shadowverse:Garyu": {
+    "NAME": "覇道の龍人・ガリュウ",
+    "DESCRIPTION": "!D! ダメージを与える。 NL エンハンス 2: チョイス NL *覇道の金龍 NL *覇道の銀龍 NL 選択したカード1枚をコスト0にして手札に加える。 NL エンハンス 4: チョイス ではなく、全て手札に加え、 筋力 と 敏捷性 2を得る。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION":"!D! ダメージを与える。 NL エンハンス 2: チョイス NL *覇道の金龍+ NL *覇道の銀龍+ NL 選択したカード1枚をコスト0にして手札に加える。 NL エンハンス 4: チョイス ではなく、全て手札に加え、 筋力 と 敏捷性 2を得る。 NL 廃棄 。"
+  },
+  "shadowverse:RowenCard": {
+    "NAME": "竜槍の戦士・ローウェン",
+    "DESCRIPTION": "!D! ダメージを与える。 NL *黒龍の呪い 1枚を手札に加え。 NL エンハンス 2: カウントダウン 2:与えるダメージを+2する。 NL あと !stslib:ex! 回使って廃棄する。"
+  },
+  "shadowverse:WildfangDragonewt": {
+    "NAME": "荒牙の竜少女",
+    "DESCRIPTION": "このターン、自分が手札を捨てるたび、ランダムな敵に捨てた枚数× !M! と同じダメージを与える。"
+  },
+  "shadowverse:Heliodragon": {
+    "NAME": "日輪のドラゴン",
+    "DESCRIPTION": "このカードを捨てたとき，廃棄を持つ *アイボリードラゴン 1枚を手札に加える。 NL !B! ブロック を得る 。 NL このターンに捨てたカード1枚につき、ブロックを+ !M! する。"
+  },
+  "shadowverse:RockbackAnkylosaurus": {
+    "NAME": "岩石のアンキロサウルス",
+    "DESCRIPTION": "自然 NL 手札1枚を捨て、ランダムな敵に !D! ダメージを与える。 NL これによって 自然 カードを捨てたなら、敵全体に !M! ダメージを与える。 NL ラストワード :これをプレイする時。カード1枚を引く。"
+  },
+  "shadowverse:SteelcapPachycephalosaurus": {
+    "NAME": "金剛のパキケファロサウルス",
+    "DESCRIPTION": "自然 NL !D! ダメージを与える。 NL このターンにカードを捨てていれば、 [E] を得、 *EP 1枚を手札に加える。"
+  },
+  "shadowverse:AzureDragon": {
+    "NAME": "憤怒の碧竜",
+    "DESCRIPTION": "保留 。 NL !D! ダメージを与える。 NL このターンに捨てたカード1枚につき、コストを-1する。 NL 廃棄 。"
+  },
+  "shadowverse:CrimsonDragon": {
+    "NAME": "悲哀の赤竜",
+    "DESCRIPTION": "保留 。 NL !B! ブロック を得る。 NL 手札1枚を捨て、カード2枚を引く。 NL このターンに捨てたカード1枚につき、コストを-1する 。 NL 廃棄 。"
+  },
+  "shadowverse:TurncoatDragonSummoner": {
+    "NAME": "大逆のドラゴサモナー",
+    "DESCRIPTION": "このカードを捨てたとき、 *悲哀の赤竜 1枚を手札に加える。 NL !B! ブロック を得る。 NL *憤怒の碧竜 1枚を手札に加える。",
+    "UPGRADE_DESCRIPTION":"このカードを捨てたとき、 *悲哀の赤竜+ 1枚を手札に加える。!B! ブロック を得る。 NL *憤怒の碧竜+ 1枚を手札に加える。"
+  },
+  "shadowverse:SoaringDragonewt": {
+    "NAME": "飛翔の竜人",
+    "DESCRIPTION": "スキルをプレイする時、これを アップグレード する。 NL !D! ダメージを与える。 NL 手札からコスト最小のカードをランダムに1枚捨てる。カードを1枚引く。",
+    "UPGRADE_DESCRIPTION":"打出后解除升级 . NL !D! ダメージを与える。 NL 手札からコスト最小のカードをランダムに1枚捨てる。カードを1枚引く。これを2回繰り返す。"
+  },
+  "shadowverse:WiseDragonewtScholar": {
+    "NAME": "聡明のドラゴニュートスカラー",
+    "DESCRIPTION": "!D! ダメージを与える。 NL カードを1枚捨て、1枚引く。",
+    "UPGRADE_DESCRIPTION":"!D! ダメージを与える。 NL カードを1枚捨て、1枚引く。 NL カードを1枚捨て、1枚引く。"
+  },
+  "shadowverse:LiliumHatchling": {
+    "NAME": "リリウムの幼竜",
+    "DESCRIPTION": " !B! ブロック を得る 。 NL HPを2回復する。 NL 廃棄 。"
+  },
+  "shadowverse:LiliumDragon": {
+    "NAME": "リリウムの巨竜",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 敵のバフを1種類除去する。 NL (先に アーティファクト から除去)  NL このターン、敵は 筋力 3を失う。 NL 廃棄 。"
+  },
+  "shadowverse:DraconicCreation": {
+    "NAME": "竜の創造",
+    "DESCRIPTION": "手札2枚を捨てる。 NL *リリウムの幼竜 と *リリウムの巨竜 それぞれ1枚を手札に加える。 NL エセリアル 。 NL 廃棄 。"
+  },
+  "shadowverse:Lilium": {
+    "NAME": "竜の魔女・リリウム",
+    "DESCRIPTION": "手札1枚を捨て、 [E] [E] を得る。 NL *竜の創造 1枚を手札に加える。",
+    "UPGRADE_DESCRIPTION":"札1枚を捨て、 [E] [E] を得る。 NL *竜の創造+ 1枚を手札に加える。"
+  },
+  "shadowverse:IronscaleSerpentDrake": {
+    "NAME": "堅殻のドラゴスネーク",
+    "DESCRIPTION": " !B! ブロック を得る 。 NL これが 武装 カードなら追加で !B! ブロック を得る 。 NL 筋力 を持つなら、追加で !B! ブロック を得る 。"
+  },
+  "shadowverse:Byron": {
+    "NAME": "フルメタルドラグーン・バイロン",
+    "DESCRIPTION": "機械 NL このターン、アタックをプレイする度、 筋力 1を得る。 NL それが 機械 カードなら、さらに 敏捷性 1を得る。",
+    "UPGRADE_DESCRIPTION":"機械 NL *プロダクトマシーン 1枚を手札に加える。 NL このターン、アタックをプレイする度、 筋力 1を得る。 NL それが 機械 カードなら、さらに 敏捷性 1を得る。"
+  },
+  "shadowverse:ArmorBurst": {
+    "NAME": "アーマーパージ",
+    "DESCRIPTION": "捨札にある 武装 アタック1枚を選択し、それのコストを-1して手札に戻す。 NL *ドラゴウェポン 1枚を手札に加える。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION":"捨札にある 武装 アタック1枚を選択し、それのコストを-1して手札に戻す。 NL *ドラゴウェポン 1枚を手札に加える",
+    "EXTENDED_DESCRIPTION": [
+      "武装アタックがない。"
+    ]
+  },
+  "shadowverse:Reggie": {
+    "NAME": "烈覇のアルチザン・レジー",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 覚醒 なら、ダメージを倍にする。 NL これが 武装 カードまたは 筋力 を持つなら、覚醒ポイント1を得る。",
+    "UPGRADE_DESCRIPTION":"!D! ダメージを与える。 NL 覚醒 なら、ダメージを倍にする。 NL 筋力 、 敏捷性 と覚醒ポイント1を得る。"
+  },
+  "shadowverse:LavateinnDragonAttackForm": {
+    "NAME": "レーヴァテインドラゴン・アタックモード",
+    "DESCRIPTION": "武装 NL 敵全体に !D! ダメージを与える。 NL このターン、 武装 アタックをプレイする度、 筋力 と 敏捷性 1を得る。 NL 廃棄 。"
+  },
+  "shadowverse:LavateinnDragonDefenseForm": {
+    "NAME": "レーヴァテインドラゴン・ディフェンスモード",
+    "DESCRIPTION": "武装 NL  !B! ブロック を得る 。 NL カード2枚を引く。 NL このターン、受けるダメージを-2する。 NL ターン終了時、HPを3回復する。 NL 廃棄 。"
+  },
+  "shadowverse:LavateinnDragonBlastForm": {
+    "NAME": "レーヴァテインドラゴン・ブラストモード",
+    "DESCRIPTION": "武装 NL [E] を得る。 NL !D! ダメージを与える。 NL この戦闘中にプレイしていた 武装 アタック1枚につき、ダメージを + !M! する。 NL 廃棄 。"
+  },
+  "shadowverse:LavateinnDragon": {
+    "NAME": "レーヴァテインドラゴン",
+    "DESCRIPTION": "武装 NL !D! ダメージを与える。 NL 手札に *ドラゴウェポン があるなら、それを廃棄して *EP 1枚を手札に加える。 NL この戦闘中にプレイしていた 武装 アタックの枚数が4以上なら、ダメージを与えるのではなく、 チョイス : NL *レーヴァテインドラゴン・アタックモード NL *レーヴァテインドラゴン・ディフェンスモード NL *レーヴァテインドラゴン・ブラストモード NL 選択したカード1枚を手札に加える。",
+    "UPGRADE_DESCRIPTION":"武装 NL !D! ダメージを与える。 NL 手札に *ドラゴウェポン があるなら、それを廃棄して *EP 1枚を手札に加える。 NL *ドラゴンウェポン 1枚を手札に加える。 NL この戦闘中にプレイしていた 武装 アタックの枚数が4以上なら、ダメージを与えるのではなく、 チョイス : NL *レーヴァテインドラゴン・アタックモード NL *レーヴァテインドラゴン・ディフェンスモード NL *レーヴァテインドラゴン・ブラストモード NL 選択したカード1枚を手札に加える。",
+    "EXTENDED_DESCRIPTION": [
+      " NL （プレイしていた 武装 アタックは",
+      "枚)"
+    ]
+  },
+  "shadowverse:Zoe_Copy": {
+    "NAME": "大いなる調停者・ゾーイ",
+    "DESCRIPTION": "!D! ダメージを与える。 NL HPが1になるようにHPを失う。 NL 戦闘終了時、これによって失ったHPを回復する。 NL このターン、受けるダメージを0にする。 NL 廃棄 。"
+  },
+  "shadowverse:Zoe": {
+    "NAME": "大いなる調停者・ゾーイ",
+    "DESCRIPTION": "アクセラレート 0:アクセラレートを持たない *大いなる調停者・ゾーイ 1枚を捨札に加え、カード1枚を引く。 NL  NL --------------------- NL  NL !D! ダメージを与える。 NL HPが1になるようにHPを失う。 NL 戦闘終了時、これによって失ったHPを回復する。 NL このターン、受けるダメージを0にする。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION":"アクセラレート 0:アクセラレートを持たない *大いなる調停者・ゾーイ+ 1枚を捨札に加え、カード1枚を引く。 NL  NL --------------------- NL  NL !D! ダメージを与える。 NL HPが1になるようにHPを失う。 NL 戦闘終了時、これによって失ったHPを回復する。 NL このターン、受けるダメージを0にする。 NL 廃棄 。"
+  },
+  "shadowverse:TheJustice": {
+    "NAME": "《正義》・イランツァ",
+    "DESCRIPTION": "下記の効果からランダムに1種類が働く。 NL !B! ブロック を得る。HPを8回復してカード3枚を引く。 NL !D! ダメージを与える。"
+  },
+  "shadowverse:DragonDevouringDread": {
+    "NAME": "竜喰らう禁忌",
+    "DESCRIPTION": "融合 ：元のコストが3以上のアタック。 NL これに 融合 した時、エナジー1を得る。 NL 2回目なら、覚醒ポイント1を得る。 NL 3回目なら、カード2枚を引く。 NL  NL --------------------- NL  NL 手札の状態異常と呪いを全て廃棄する。 NL 敵全体に 弱体化 と 脱力 !M! を与える。 NL エナジー !M! を得る。 NL これに融合する度、それを+1する。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION":"保留 · 融合 ：元のコストが3以上のアタック。 NL これに 融合 した時、エナジー1を得る。 NL 2回目なら、覚醒ポイント1を得る。 NL 3回目なら、カード2枚を引く。 NL  NL --------------------- NL  NL 手札の状態異常と呪いを全て廃棄する。 NL 敵全体に 弱体化 と 脱力 !M! を与える。 NL エナジー !M! を得る。 NL これに融合する度、それを+1する。 NL 廃棄 。"
+  },
+  "shadowverse:NewfoundAllies": {
+    "NAME": "未知との遭遇",
+    "DESCRIPTION": "自然 NL 山札からランダムな 自然 アタック !M! 枚を手札に加える。 NL *ナテラの大樹 を持つなら、追加で1枚を手札に加える。"
+  },
+  "shadowverse:DragonplateWarrior": {
+    "NAME": "竜鎧の戦士",
+    "DESCRIPTION": "!B! ブロック を得る 。 NL 自分は「アタックでないのカードをプレイする度、敵全体に !M! ダメージを与える」を持つ。 NL 廃棄 。"
+  },
+  "shadowverse:IniquitousLindworm": {
+    "NAME": "邪竜・リントヴルム",
+    "DESCRIPTION": "防御不能のダメージを !D! 与える。 NL 廃棄 。"
+  },
+  "shadowverse:VirtuousLindworm": {
+    "NAME": "圣竜・リントヴルム",
+    "DESCRIPTION": " !B! ブロック を得る 。 NL HPを5回復する。 NL 次のターン開始時、追加でカード5枚を引く。 NL 廃棄 。"
+  },
+  "shadowverse:Lindworm": {
+    "NAME": "リントヴルム",
+    "DESCRIPTION": "!D! ダメージを与える。 NL  !B! ブロック を得る 。 NL この戦闘中にプレイしていたアタックでないカードが10枚以上かつ残りエナジーが5以上なら、それではなく チョイス : NL *圣竜・リントヴルム NL *邪竜・リントヴルム NL 選択したカードから1枚を手札に加える。",
+    "UPGRADE_DESCRIPTION":"!D! ダメージを与える。 NL  !B! ブロック を得る 。 NL この戦闘中にプレイしていたアタックでないカードが10枚以上かつ残りエナジーが5以上なら、それではなく チョイス : NL *圣竜・リントヴルム+ NL *邪竜・リントヴルム+ NL 選択したカードから1枚を手札に加える。",
+    "EXTENDED_DESCRIPTION": [
+      " NL （プレイしていたアタックでないカードは",
+      "枚)"
+    ]
+  },
+  "shadowverse:Djeana": {
+    "NAME": "勇躍の獣人・ジーナ",
+    "DESCRIPTION": "自然 · 融合 : *ナテラの大樹 。 NL これに 融合 した時、覚醒ポイント1を得る。 NL !B! ブロック を得る 。"
+  },
+  "shadowverse:WildfireTyrannosaur": {
+    "NAME": "猛火のティラノサウルス",
+    "DESCRIPTION": "自然 · アクセラレート 0: !M! ダメージを与え、 *ナテラの大樹 1枚を手札に加える。 NL  NL --------------------- NL  NL 手札の 自然 カードを全て捨て、1枚につき敵全体に !D! ダメージを与える。"
+  },
+  "shadowverse:InfernoDragon": {
+    "NAME": "インフェルノドラゴン",
+    "DESCRIPTION": "!D! ダメージを与える。 NL  !B! ブロック を得る 。 NL 廃棄 。"
+  },
+  "shadowverse:DragonHoard": {
+    "NAME": "竜の財宝",
+    "DESCRIPTION": "カウントダウン 16 :手札、捨札、山札のアタックを全て廃棄し、それと同じ数の *インフェルノドラゴン を手札、捨札、山札に加える。 NL アタックをプレイする度、 カウントダウン を1減らす。 NL エンハンス 2: カウントダウン を８減らし、 *ヘルフレイムドラゴン 2枚を手札に加える。",
+    "UPGRADE_DESCRIPTION":"天賦 · カウントダウン 16 :手札、捨札、山札のアタックを全て廃棄し、それと同じ数の *インフェルノドラゴン を手札、捨札、山札に加える。 NL アタックをプレイする度、 カウントダウン を1減らす。 NL エンハンス 2: カウントダウン を８減らし、 *ヘルフレイムドラゴン 2枚を手札に加える。"
+  },
+  "shadowverse:HypersonicDragonewt": {
+    "NAME": "残影のドラゴニュート",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 覚醒 なら、さらにダメージを1回与える。。"
+  },
+  "shadowverse:DragonAwakening": {
+    "NAME": "竜の覚醒",
+    "DESCRIPTION": "限定 敏捷性 1を得る 。 NL エンハンス 1:カードを !M! 枚引く。"
+  },
+  "shadowverse:Sandstorm": {
+    "NAME": "デザートストーム",
+    "DESCRIPTION": "限定 敏捷性 1を得る 。 NL エンハンス 1:敵全体に !M! ダメージを与える。"
+  },
+  "shadowverse:WhimsicalMermaid": {
+    "NAME": "メルヘンマーメイド",
+    "DESCRIPTION": "限定 敏捷性 1を得る 。 NL !B! ブロック を得る 。 NL カードを1枚引く。 NL 敏捷性 が2以上なら、追加で1枚を引く。"
+  },
+  "shadowverse:Gunbein": {
+    "NAME": "貫禄のドラゴニュート・ガンベイン",
+    "DESCRIPTION": "学園 · アクセラレート 0: 限定 敏捷性 1を得る 。 NL ランダムな敵に4ダメージを与える。 NL  NL --------------------- NL  NL  !B! ブロック を得る 。 NL 敏捷性 が2以上なら、さらに ブロック 1回を得る。"
+  },
+  "shadowverse:PrimeConflagration": {
+    "NAME": "原初の炎熱",
+    "DESCRIPTION": "敏捷性 1を得る 。 NL ランダムな敵に !M! ダメージを与える。 NL あと !stslib:ex! 回使って廃棄する。"
+  },
+  "shadowverse:BlazingDragonewt": {
+    "NAME": "火炎の竜闘士",
+    "DESCRIPTION": "限定 敏捷性 1を得る 。 NL  !B! ブロック を得る 。 NL カードを1枚捨て、1枚引く。"
+  },
+  "shadowverse:CoralShark": {
+    "NAME": "コーラルシャーク",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 敏捷性 が2以上なら、 !B! ブロック を得る 。"
+  },
+  "shadowverse:WindsweptDragonewt": {
+    "NAME": "ウィンディドラゴニュート",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 敏捷性 が2以上なら、ダメージを倍にする。"
+  },
+  "shadowverse:PropheticDragon": {
+    "NAME": "オラクルドラゴン",
+    "DESCRIPTION": "アクセラレート 0: 敏捷性 が2以上の場合のみ アクセラレート できる。 NL 覚醒ポイント1を得る。 NL 覚醒 なら、カード1枚を引く。 NL  NL --------------------- NL  NL !B! ブロック を3回得る。"
+  },
+  "shadowverse:GrandSlamTamer": {
+    "NAME": "グランドスラムの竜使い",
+    "DESCRIPTION": "学園 · 限定 敏捷性 1を得る 。 NL  !B! ブロック を得る 。 NL 敏捷性 が2以上なら、 *ヘルフレイムドラゴン 1枚を手札に加える。 NL 4以上なら、それのダメージを倍にする。"
+  },
+  "shadowverse:CelestialDragoon": {
+    "NAME": "天威のドラグーン",
+    "DESCRIPTION": " !B! ブロック を得る 。 NL 筋力 と 敏捷性 1を得る。 NL あと !stslib:ex! 回使って廃棄する。",
+    "UPGRADE_DESCRIPTION":" !B! ブロック を得る 。 NL 筋力 と 敏捷性 1を得る。 NL !B! ダメージを与える。 NL あと !stslib:ex! 回使って廃棄する。"
+  },
+  "shadowverse:HowlingConflagration": {
+    "NAME": "爆炎の咆哮",
+    "DESCRIPTION": "ランダムな敵に !M! ダメージを与える。 NL このターンだけ、 敏捷性 1を得る。 NL 廃棄 。"
+  },
+  "shadowverse:Dracu": {
+    "NAME": "焦熱の竜翼・ドラーク",
+    "DESCRIPTION": "アクセラレート 0:敏捷性 1を得、 *爆炎の咆哮 1枚を手札に加える。 NL  NL --------------------- NL  NL 敵全体に !D! ダメージを与える。 NL ( !M! 倍の 敏捷性 ボーナスが適用される。) NL 敏捷性 が4以上なら、さらに敵全体に20ダメージを与える。",
+    "UPGRADE_DESCRIPTION":"アクセラレート 0:敏捷性 1を得、 *爆炎の咆哮+ 1枚を手札に加える。 NL  NL --------------------- NL  NL 敵全体に !D! ダメージを与える。 NL ( !M! 倍の 敏捷性 ボーナスが適用される。) NL 敏捷性 が4以上なら、さらに敵全体に20ダメージを与える。"
+  },
+  "shadowverse:Joe": {
+    "NAME": "熱血の竜教師・ジジョ",
+    "DESCRIPTION": "学園 · 結晶 0:手札1枚を廃棄し、それの複製品1枚を山札に加える。 NL これの複製品1枚を捨捨札に加える。 NL 敏捷性 1を得、次のターン開始時追加でカード1枚を引く。 NL 廃棄したカードが 学園 カードなら、さらに1枚を引く。 NL  NL --------------------- NL  NL  !B! ブロック を得る 。 NL 敏捷性 が4以上なら、敵全体に !D! ダメージを与える。 NL 6以上なら、敵全体に !M! ダメージを与える。"
+  },
+  "shadowverse:Romelia": {
+    "NAME": "気高き雷・ロマロニア",
+    "DESCRIPTION": "!D! ダメージを与える。 NL このターンだけ、 敏捷性 2を得る。 NL カウントダウン 2:ターン開始時、このターンだけ、 敏捷性 2を得る。エナジー1を得る。 NL 廃棄 。"
+  },
+  "shadowverse:DragonPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "ベーシック",
+      "武装",
+      "ディスカード1",
+      "ディスカード2",
+      "自然",
+      "ランプ",
+      "テンポ",
+      "バフ"
+    ]
+  },
+  "shadowverse:DragonlifeBlade": {
+    "NAME": "活竜剣",
+    "DESCRIPTION": "「竜」属性を与える。 NL 覚醒ポイント1を得る。 NL 次のターン開始時、 [E] を得る。 NL 廃棄 。"
+  },
+  "shadowverse:DragonstrifeBlade": {
+    "NAME": "殺竜剣",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 「竜」属性を持つ敵なら、ダメージを倍にする。 NL 廃棄 。"
+  },
+  "shadowverse:Roy": {
+    "NAME": "斬竜剣士・ロイ",
+    "DESCRIPTION": "!B! ブロック を得る 。 NL チョイス : NL *活竜剣 NL *殺竜剣 NL 選択したカードから1枚を手札に加える。",
+    "UPGRADE_DESCRIPTION":"!B! ブロック を得る 。 NL チョイス : NL *活竜剣+ NL *殺竜剣+ NL 選択したカードから1枚を手札に加える。"
+  },
+  "shadowverse:Roy2": {
+    "NAME": "殺竜剣士・ロイ",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 覚醒ポイント1を得る。 NL エンハンス 4:カード1枚を 破壊 してダメージを倍にする。さらに敵全体に9ダメージを与える。"
+  },
+  "shadowverse:GenesisDragon": {
+    "NAME": "ジェネシスドラゴン",
+    "DESCRIPTION": "!D! ダメージを与える。"
+  },
+  "shadowverse:GenesisDragon2": {
+    "NAME": "天災のジェネシスドラゴン",
+    "DESCRIPTION": "アクセラレート 2:覚醒ポイント1を得る。 NL 敵全体に18ダメージを与える。 NL  NL ------------------- NL  NL !D! ダメージを与える。"
+  },
+  "shadowverse:Jerva": {
+    "NAME": "ドラゴニックメイル・ギルヴァ",
+    "DESCRIPTION": "最大値の半分になるまでHPを失い、これを廃棄する。その後、HPは最大値の半分を超えることはない。戦闘終了後、この効果によって失ったHPを回復する。 NL ターン終了時、ランダムな敵にそのHP最大値の25%ダメージを与える(最低25点)。 NL エセリアル 。",
+    "UPGRADE_DESCRIPTION":"最大値の半分になるまでHPを失い、これを廃棄する。その後、HPは最大値の半分を超えることはない。戦闘終了後、この効果によって失ったHPを回復する。 NL ターン終了時、ランダムな敵にそのHP最大値の25%ダメージを与える(最低25点)"
+  },
+  "shadowverse:Jerva2": {
+    "NAME": "ドラゴンイクシード・ギルヴァ",
+    "DESCRIPTION": "ターン終了時、このターン中にアタックをプレイしていないなら、ランダムな敵にそのHP最大値の25%ダメージを与える(最低25点)。 NL エセリアル 。"
+  },
+  "shadowverse:OmenOfDisdain": {
+    "NAME": "侮蔑の絶傑・ガルミーユ",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 手札の *火傷 を全て廃棄する。1枚につき、ランダムな敵に !M! ダメージを与える。 NL エンハンス 3:ランダムな敵ではなく、敵全体に !M! ダメージを与える。 NL その後、 *火傷 1枚を手札に加え、敵全体に !M! ダメージを与える。"
+  },
+  "shadowverse:OmenOfDisdain2": {
+    "NAME": "烈絶の侮蔑・ガルミーユ",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 手札の *火傷 を全て廃棄する。，それと同じ数の *烈絶の滅牙 を手札に加える。 NL *火傷 、 *烈絶の滅牙 と廃棄を持つ *侮蔑の炎爪 それぞれ1枚を手札に加える。"
+  },
+  "shadowverse:FangsOfArdentDestruction": {
+    "NAME": "烈絶の滅牙",
+    "DESCRIPTION": "筋力 と 敏捷性 !M! を得る。 NL *火傷 1枚を手札に加える。 NL エセリアル 。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION":"筋力 と 敏捷性 !M! を得る。 NL *火傷+ 1枚を手札に加える。 NL エセリアル 。 NL 廃棄 。"
+  },
+  "shadowverse:Masamune": {
+    "NAME": "暴竜・伊達政宗",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 超覚醒 なら、次に受けるダメージを0にする。 NL あと !stslib:ex! 回使って廃棄する。"
+  },
+  "shadowverse:Masamune2": {
+    "NAME": "独眼竜·伊達政宗",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 覚醒 なら、次に受けるダメージを0にする。 NL 超覚醒 なら、自分は「アタックをプレイする度、ランダムな敵に4ダメージを与える」を持つ。 NL あと !stslib:ex! 回使って廃棄する。"
+  },
+  "shadowverse:DevotedDragon": {
+    "NAME": "絆の覇竜",
+    "DESCRIPTION": " !B! ブロック を得る 。 NL 廃棄 。"
+  },
+  "shadowverse:Aiela": {
+    "NAME": "ドラゴンナイト・アイラ",
+    "DESCRIPTION": " !B! ブロック を得る 。 NL ラストワード :これが 廃棄 される時、覚醒ポイント1を得る。"
+  },
+  "shadowverse:Aiela2": {
+    "NAME": "竜剣の少女・アイラ",
+    "DESCRIPTION": " !B! ブロック を得る。 NL 覚醒ポイント1を得る。"
+  },
+  "shadowverse:Aiela3": {
+    "NAME": "絆の竜剣士・アイラ",
+    "DESCRIPTION": " !B! ブロック を得る 。 NL [E] を得る。 NL 覚醒ポイント1を得る。 NL これをプレイした後、残りエナジーが2以上なら、エナジー2を消費して *絆の覇竜 1枚を手札に加える。"
+  },
+  "shadowverse:WhitefrostWhisper": {
+    "NAME": "銀氷の吐息",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 脱力 !M! を与える。 NL 手札の状態異常と呪いを全て廃棄する。 NL 敵がダメージを受けているなら、 [E] を得る。 NL 廃棄 。"
+  },
+  "shadowverse:Filene": {
+    "NAME": "銀氷のドラゴニュート・フィルレイン",
+    "DESCRIPTION": "!B! ブロック を得る 。 NL *銀氷の吐息 1枚を手札に加える。",
+    "UPGRADE_DESCRIPTION":"!B! ブロック を得る 。 NL *銀氷の吐息+ 1枚を手札に加える。"
+  },
+  "shadowverse:Filene2": {
+    "NAME": "絶対零度・フィルレイン",
+    "DESCRIPTION": " !B! ブロック を得る 。 NL *銀氷の吐息 2枚を手札に加える。"
+  },
+  "shadowverse:Filene3": {
+    "NAME": "ブリザードハート・フィルレイン",
+    "DESCRIPTION": " !B! ブロック を得る 。 NL *銀氷の吐息 1枚を手札に加える。 NL 限定 覚醒 なら、全ての敵をスタンする。"
+  },
+  "shadowverse:Forte": {
+    "NAME": "ダークドラグーン・フォルテ",
+    "DESCRIPTION": "!D! ダメージを与える。"
+  },
+  "shadowverse:Forte2": {
+    "NAME": "天空の覇者・フォルテ",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 筋力 3と 敏捷性 1を得る。"
+  },
+  "shadowverse:Forte3": {
+    "NAME": "覇道の君臨者・フォルテ",
+    "DESCRIPTION": " !B! ブロック を得る 。 NL 弱体化 と 脱力 2を与える。"
+  },
+  "shadowverse:Forte4": {
+    "NAME": "黒翼の覇者・フォルテ",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 筋力 や 敏捷性 を得る度、时，下記が順に1つ働く。上限は3つ。: NL (1)次のターン開始時、エナジー1を得る NL (2)ランダムな敵に 弱体化 と 脱力 2を与える。 NL (3)次に受けるダメージを0にする。"
+  },
+  "shadowverse:Forte5": {
+    "NAME": "黒蒼の絆・フォルテ＆ミリアム",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 限定 筋力 と 敏捷性 2を得る。 NL 覚醒 なら、さらにダメージを1回与える　。"
+  },
+  "shadowverse:InfiniflameDragon": {
+    "NAME": "インフィニットフレイムドラゴン",
+    "DESCRIPTION": "50ダメージを与える。 NL ミニオン をすべて即死させる。1体につき、10ダメージを与える。 NL 手札のアタックを全て廃棄する。1枚につき、10ダメージを与える。 NL !D! ダメージを2回与える。"
+  },
+  "shadowverse:Hiro": {
+    "NAME": "竜の託宣",
+    "DESCRIPTION": "天賦 。 NL 覚醒ポイント1を得る。 NL 次のターン開始時、 [E] を得る。 NL 覚醒 なら、追加でカード !M! 枚を引く。",
+    "UPGRADE_DESCRIPTION":"天賦 。 NL 覚醒ポイント1を得る。 NL 次のターン開始時、 [E] [E] を得る。 NL 覚醒 なら、追加でカード !M! 枚を引く。。"
+  },
+  "shadowverse:Oberon": {
+    "NAME": "オベロン",
+    "DESCRIPTION": "アクセラレート 1:この戦闘中に中にプレイしたカードが30枚以上なら、アクセラレート できる。 NL コスト０、廃棄を持つ2回ダメージを与えられる *オベロン 1枚を手札に加える。 NL  NL ------------------- NL  NL !D! ダメージを与える。",
+    "UPGRADE_DESCRIPTION":"アクセラレート 1:この戦闘中に中にプレイしたカードが30枚以上なら、アクセラレート できる。 NL コスト０、廃棄を持つ2回ダメージを与えられる *オベロン+ 1枚を手札に加える。 NL  NL ------------------- NL  NL !D! ダメージを与える。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (プレイしたカードの枚数は ",
+      " 。)"
+    ]
+  },
+  "shadowverse:Oberon_Copy": {
+    "NAME": "オベロン",
+    "DESCRIPTION": "!D! ダメージを2回与える。 NL 廃棄 。"
+  },
+  "shadowverse:MasterMageLevi2": {
+    "NAME": "巡りの大魔術師・レヴィ",
+    "DESCRIPTION": "*紅蓮の魔術 1枚を手札に加える。 NL 土の印 の数×3のダメージを与える。 NL 土の秘術 2 :敵全体に !D! ダメージを与える。 NL この戦闘中に消費した 土の印 の数が7以上なら、 *奇跡 と *EP それぞれ1枚を手札に加える。。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (消費した 土の印 は",
+      "。)"
+    ]
+  },
+  "shadowverse:BindingRitual": {
+    "NAME": "束縛術式",
+    "DESCRIPTION": "土の印 !M! を得る。 NL カード1枚を引く。 NL このターン、ランダムな敵は 筋力 !M! を失う。"
+  },
+  "shadowverse:ColossalSummoning": {
+    "NAME": "ギガンティックサモン",
+    "DESCRIPTION": " !B! ブロック を得る 。 NL この戦闘中に消費した 土の印 の数が7以上なら、ブロックを得るのではなく、コスト０かつ廃棄を持つ *ジェネシスドラゴン 1枚を手札に加える。",
+    "UPGRADE_DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      " NL (消費した 土の印 は",
+      "。)"
+    ]
+  },
+  "shadowverse:Fafnir_D": {
+    "NAME": "邪智の竜・ファフニール",
+    "DESCRIPTION": "敵全体に !D! ダメージを与える。 NL *火傷 1枚を捨札に加える。 NL 自分は「ターン終了時、ランダムな敵に20ダメージを与える。このターン中にプレイしていたアタック1枚につき、このダメージを-4する」を持つ。"
+  },
+  "shadowverse:PlatinumDragonblader": {
+    "NAME": "白金の竜剣士",
+    "DESCRIPTION": " !B! ブロック を得る 。 NL 超覚醒 なら、次のダメージを倍にする。"
+  },
+  "shadowverse:HellfireStrike": {
+    "NAME": "魔炎の斬撃",
+    "DESCRIPTION": "!D! ダメージを与える。(このカードは ストライク 扱いとする) NL ネクロマンス 4:敵全体に !M! ダメージを与える。"
+  },
+  "shadowverse:Charon": {
+    "NAME": "冥河の渡し守・カローン",
+    "DESCRIPTION": "!B! ブロック を得る 。 NL ネクロマンス 5:カード1枚を引き、それのコストをこのターンだけ0にする。",
+    "UPGRADE_DESCRIPTION": "!B! ブロック を得る 。 NL ネクロマンス 5:カード1枚を引き、それのコストを0にする。"
+  },
+  "shadowverse:Cerberus3": {
+    "NAME": "冥境の咆犬・ケルベロス",
+    "DESCRIPTION": "!B! ブロック を得る 。 NL このターンだけコスト0かつ廃棄を持つ *冥界の闘犬・オルトロス+ 到手中。 NL 直前にプレイしたカードが アップグレード されたカードなら、それではなく *冥河の渡し守・カローン+ 1枚を手札に加える。。"
+  },
+  "shadowverse:Gadel": {
+    "NAME": "ラヴェナスキング・ガデル",
+    "DESCRIPTION": "!B! ブロック を得る 。 NL *EP 1枚を手札に加える。 NL カード1枚を 破壊 し、 !M! 枚引く。"
+  },
+  "shadowverse:Leoparion": {
+    "NAME": "パンサーレオ",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 何度でも アップグレード できる。 NL 廃棄 。"
+  },
+  "shadowverse:PeckishOwlcat": {
+    "NAME": "渇望のオウルキャット",
+    "DESCRIPTION": " !B! ブロック を得る 。 NL 何度でも アップグレード できる。 NL 廃棄 。"
+  },
+  "shadowverse:Doublame": {
+    "NAME": "ファントムデュオ・バニー＆バロン",
+    "DESCRIPTION": " !B! ブロック を得る 。 NL チョイス : NL *パンサーレオ NL *渇望のオウルキャット NL 選択したカードから1枚を手札に加える。廃棄札の *EP の数によってそれをアップグレードする。 NL 廃棄札にある *EP 数が5以上なら、 *EP 1枚を手札に加える。"
+  },
+  "shadowverse:Jeanne6": {
+    "NAME": "神託の旅立ち・ジャンヌ",
+    "DESCRIPTION": "敵全体に !D! ダメージを与える。 NL エナジー2を得る。 NL 手札を全てアップグレードする。 NL 能力によるダメージは無効 １を得る。 NL このターンにプレイしていたカードが2以上なら、 !B! ブロック を得る 。 NL 廃棄 。"
+  },
+  "shadowverse:JewelShine": {
+    "NAME": "ジュエルシャイン",
+    "DESCRIPTION": "山札からランダムなパワー !M! 枚を手札に加える。 NL この戦闘中にプレイしていたカウントダウンを持つアミュレットが5枚以上なら、 筋力 1と 敏捷性 3を得、これを 廃棄 する。"
+  },
+  "shadowverse:SpineLucille": {
+    "NAME": "神秘の遺物・スピネ＆ルチル",
+    "DESCRIPTION": "AF NL !D! ダメージを与える。 NL 廃棄札に6種類以上の AF カードがあるなら、敵全体に !M! ダメージを与える。 NL 廃棄 。"
+  },
+  "shadowverse:SisterlyBonds": {
+    "NAME": "遺物の同調",
+    "DESCRIPTION": "チョイス : NL *スピネのアーティファクト NL *神秘の遺物・スピネ＆ルチル NL 選択したカードから1枚を手札に加える。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION": "チョイス : NL *スピネのアーティファクト NL *神秘の遺物・スピネ＆ルチル NL 選択したカードから1枚を手札に加える。"
+  },
+  "shadowverse:Lazuli": {
+    "NAME": "ゲートリベレーター・ラズリ",
+    "DESCRIPTION": "AF NL !B! ブロック を得る 。 NL *レディアントアーティファクト !M! 枚を山札に加える。 NL 山札からランダムなスキル1枚を手札に加える。 NL 廃棄札に6種類以上の AF カードがあるなら、 *EP 1枚を手札に加える。"
+  },
+  "shadowverse:Evamia": {
+    "NAME": "紡ぎ繋ぐ糸・エヴァミア",
+    "DESCRIPTION": "AF NL !B! ブロック を得る 。 N *ミスティックアーティファクト !M! 枚を山札に加える。  NL 廃棄札に6種類以上の AF カードがあるなら、 限定 次に受けるダメージを0にする。"
+  },
+  "shadowverse:Shin": {
+    "NAME": "混沌の終幕・シン",
+    "DESCRIPTION": "!B! ブロック を得る 。 NL この戦闘中に 共鳴 になった回数が5回以上なら、敵全体に 弱体化 と 脱力 2を与える。 NL 10回以上なら、敵全体に !D! ダメージを与える。 NL 15回以上なら、 !M! ブロック を得る。 NL 20回以上なら、このターンだけ手札のコストを-1する。",
+    "EXTENDED_DESCRIPTION": [
+      " NL ( 共鳴 になった回数は",
+      ")"
+    ]
+  },
+  "shadowverse:ChaosAura": {
+    "NAME": "カオスオーラ",
+    "DESCRIPTION": "この戦闘中にプレイしていた *カオスオーラ の枚数が5以下なら、ランダムな敵にプレイしていた *カオスオーラ の枚数ける !D! のダメージを与える、カード1枚を引く。 NL 如5枚以上なら、それではなく、下記からランダムに1つが働く: NL （1）ランダムな敵に !M! ダメージを与え、 !B! ブロック を得る。 NL (2)ランダムな敵に 弱体化 2を与える NL (3)このターンだけ手札のコストを-1する NL 5ターン目以降なら、ランダムではなく、全て働く。 NL これの複製品3枚を山札に加える。 NL 廃棄 。"
+  },
+  "shadowverse:Odin2": {
+    "NAME": "グナロクの開幕・オーディン",
+    "DESCRIPTION": "アクセラレート 2: 無形 1を得る。 NL 手札のアタックを全て廃棄する。 アクセラレート を持たない效果的 *グナロクの開幕・オーディン 1枚を手札に加え、それのコストを廃棄したアタックと同じ数だけ下げる。 NL  NL ------------------- NL  NL !D! ダメージを与える。 NL 無形 1を得る。 NL 廃棄 。"
+  },
+  "shadowverse:Odin2_Copy": {
+    "NAME": "ラグナロクの開幕・オーディン",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 無形 1を得る。 NL 廃棄 。"
+  },
+  "shadowverse:Grimnir2": {
+    "NAME": "颶風の天槍・グリームニル",
+    "DESCRIPTION": "ランダムな敵に !D! ダメージを2回与える。 NL 廃棄札にある *EP の数が7枚以上なら、2回ではく4回、さらに毎回のダメージを+12する。"
   }
 }

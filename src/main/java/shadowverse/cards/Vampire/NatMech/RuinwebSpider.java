@@ -29,6 +29,7 @@ public class RuinwebSpider
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/RuinwebSpider.png";
+    private boolean played;
 
     public RuinwebSpider() {
         super(ID, NAME, IMG_PATH, 5, DESCRIPTION, CardType.ATTACK, Vampire.Enums.COLOR_SCARLET, CardRarity.RARE, CardTarget.ALL_ENEMY);
@@ -52,7 +53,7 @@ public class RuinwebSpider
     @Override
     public void update() {
         if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT&&
-                Shadowverse.Accelerate(this)){
+                Shadowverse.Accelerate(this) && !played){
             setCostForTurn(0);
             this.type = CardType.POWER;
         }else {
@@ -72,12 +73,23 @@ public class RuinwebSpider
             for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
                 addToBot(new VFXAction(new EntangleEffect(abstractPlayer.hb.cX - 70.0F * Settings.scale, abstractPlayer.hb.cY + 10.0F * Settings.scale, mo.hb.cX, mo.hb.cY), 0.5F));
             }
-            if (EnergyPanel.getCurrentEnergy() < 10){
-                addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
-            }
+            played = true;
         }
     }
 
+    public void triggerOnGlowCheck() {
+        if (Shadowverse.Accelerate(this) && this.type == CardType.POWER) {
+            this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();
+        } else {
+            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+        }
+    }
+
+    @Override
+    public void onMoveToDiscard() {
+        super.onMoveToDiscard();
+        played = false;
+    }
 
     public AbstractCard makeCopy() {
         return  new RuinwebSpider();

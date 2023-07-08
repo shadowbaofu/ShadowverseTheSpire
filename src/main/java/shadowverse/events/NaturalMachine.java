@@ -13,6 +13,11 @@ import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 import shadowverse.cards.Bishop.Amulet1.*;
 import shadowverse.cards.Bishop.MechLion.*;
+import shadowverse.cards.Dragon.Armed.Byron;
+import shadowverse.cards.Dragon.Armed.Rola;
+import shadowverse.cards.Dragon.Discard1.RockbackAnkylosaurus;
+import shadowverse.cards.Dragon.Discard1.SteelcapPachycephalosaurus;
+import shadowverse.cards.Dragon.Natura.*;
 import shadowverse.cards.Elf.NatMech.MachineClaw;
 import shadowverse.cards.Elf.NatMech.AvatarOfFruition;
 import shadowverse.cards.Elf.NatMech.GuardOfMachinatree;
@@ -126,8 +131,6 @@ public class NaturalMachine extends AbstractImageEvent {
                         colorless.addToBottom(new Mother());
                         colorless.addToBottom(new Technolord());
                         colorless.addToBottom(new Machinus());
-                        colorless.addToBottom(new Valdain());
-                        colorless.addToBottom(new Rola());
                         if (p.chosenClass != Witchcraft.Enums.WITCHCRAFT) {
                             white.addToBottom(new Geoelementist());
                             blue.addToBottom(new Stormelementalist());
@@ -235,6 +238,21 @@ public class NaturalMachine extends AbstractImageEvent {
                             gold.addToBottom(new Vice());
                             gold.addToBottom(new Limonia());
                             gold.addToBottom(new MusePrincess());
+                        }
+                        if (p.chosenClass != Dragon.Enums.Dragon){
+                            white.addToBottom(new WildMana());
+                            white.addToBottom(new LightningVelociraptor());
+                            white.addToBottom(new ManagarmrScout());
+                            white.addToBottom(new NewfoundAllies());
+                            white.addToBottom(new WhirlwindPteranodon());
+                            white.addToBottom(new RockbackAnkylosaurus());
+                            white.addToBottom(new TouchingThoughts());
+                            blue.addToBottom(new Djeana());
+                            blue.addToBottom(new VerdantRebirth());
+                            blue.addToBottom(new SteelcapPachycephalosaurus());
+                            gold.addToBottom(new Valdain());
+                            gold.addToBottom(new Rola());
+                            gold.addToBottom(new Byron());
                         }
                         colorless.shuffle();
                         white.shuffle();

@@ -17,7 +17,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import shadowverse.Shadowverse;
 import shadowverse.cards.Necromancer.Burial.DemonicProcession;
-import shadowverse.cards.Necromancer.Mech.HungrySlash;
+import shadowverse.cards.Necromancer.Default.HungrySlash;
 import shadowverse.cards.Necromancer.Burial.SpiritCurator;
 import shadowverse.cards.Necromancer.Ghosts.Ferry;
 import shadowverse.cards.Necromancer.Burial.TheLovers;

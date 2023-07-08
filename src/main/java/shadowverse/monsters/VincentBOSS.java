@@ -18,9 +18,10 @@ import com.megacrit.cardcrawl.powers.*;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.ExplosionSmallEffect;
 import com.megacrit.cardcrawl.vfx.combat.ViceCrushEffect;
+import shadowverse.action.ChangeSpriteAction;
 import shadowverse.powers.*;
 
-public class VincentBOSS extends CustomMonster {
+public class VincentBOSS extends CustomMonster implements SpriteCreature {
     public static final String ID = "shadowverse:VincentBOSS";
     private static final MonsterStrings monsterStrings = CardCrawlGame.languagePack.getMonsterStrings("shadowverse:VincentBOSS");
     public static final String NAME = monsterStrings.NAME;
@@ -47,10 +48,10 @@ public class VincentBOSS extends CustomMonster {
 
     private boolean firstTurn = true;
 
-
+    public SpriterAnimation extra = new SpriterAnimation("img/monsters/VincentBOSS/extra/extra.scml");
 
     public VincentBOSS() {
-        super(NAME, ID, 450, 0.0F, -30F, 230.0F, 450.0F, null, 80.0F, -30.0F);
+        super(NAME, ID, 450, 0.0F, -30F, 230.0F, 520.0F, null, 80.0F, -30.0F);
         this.animation = new SpriterAnimation("img/monsters/VincentBOSS/VincentBOSS.scml");
         this.type = EnemyType.BOSS;
         if (AbstractDungeon.ascensionLevel >= 8) {
@@ -86,9 +87,9 @@ public class VincentBOSS extends CustomMonster {
             this.strAmt = 1;
             this.rapidFireAmt = 4;
         }
-        this.damage.add(new DamageInfo((AbstractCreature)this, aDmg));
-        this.damage.add(new DamageInfo((AbstractCreature)this, bDmg));
-        this.damage.add(new DamageInfo((AbstractCreature)this,fireDmg));
+        this.damage.add(new DamageInfo(this, aDmg));
+        this.damage.add(new DamageInfo(this, bDmg));
+        this.damage.add(new DamageInfo(this,fireDmg));
     }
 
     @Override
@@ -96,73 +97,74 @@ public class VincentBOSS extends CustomMonster {
         CardCrawlGame.music.unsilenceBGM();
         AbstractDungeon.scene.fadeOutAmbiance();
         AbstractDungeon.getCurrRoom().playBgmInstantly("StormOverRivayle");
-        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)this, (AbstractCreature)this, (AbstractPower)new TimeWarpPower((AbstractCreature)this)));
-        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new TalkAction((AbstractCreature)this, DIALOG[0]));
-        addToBot((AbstractGameAction)new SFXAction("Vincent"));
-        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)AbstractDungeon.player, (AbstractCreature)this, (AbstractPower)new JudgmentWordPower((AbstractCreature)AbstractDungeon.player)));
-        addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)AbstractDungeon.player,(AbstractCreature)this,(AbstractPower)new NoDamage((AbstractCreature)AbstractDungeon.player)));
-        addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)AbstractDungeon.player,(AbstractCreature)this,(AbstractPower)new ManaPower((AbstractCreature)AbstractDungeon.player,0)));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, (AbstractPower)new TimeWarpPower(this)));
+        AbstractDungeon.actionManager.addToBottom(new TalkAction(this, DIALOG[0]));
+        addToBot(new SFXAction("Vincent_Start"));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, (AbstractPower)new JudgmentWordPower(AbstractDungeon.player)));
+        addToBot(new ApplyPowerAction(AbstractDungeon.player,this,(AbstractPower)new NoDamage(AbstractDungeon.player)));
+        addToBot(new ApplyPowerAction(AbstractDungeon.player,this,(AbstractPower)new ManaPower(AbstractDungeon.player,0)));
     }
 
     @Override
     public void takeTurn() {
         switch (this.nextMove) {
             case 1:
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ShoutAction((AbstractCreature)this, DIALOG[4], 1.0F, 2.0F));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new SFXAction("Vincent_A4"));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new DamageAction((AbstractCreature)AbstractDungeon.player, this.damage
+                AbstractDungeon.actionManager.addToBottom(new ShoutAction(this, DIALOG[4], 1.0F, 2.0F));
+                AbstractDungeon.actionManager.addToBottom( new SFXAction("Vincent_A4"));
+                AbstractDungeon.actionManager.addToBottom(new DamageAction(AbstractDungeon.player, this.damage
                         .get(1), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)AbstractDungeon.player, (AbstractCreature)this, (AbstractPower)new FreezePower((AbstractCreature)AbstractDungeon.player)));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, (AbstractPower)new FreezePower(AbstractDungeon.player)));
                 setMove((byte)2, Intent.ATTACK,((DamageInfo)this.damage.get(0)).base);
                 break;
             case 2:
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new TalkAction((AbstractCreature)this, DIALOG[2]));
-                addToBot((AbstractGameAction)new SFXAction("Vincent_A2"));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new VFXAction((AbstractGameEffect)new ViceCrushEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY), 0.5F));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new DamageAction((AbstractCreature)AbstractDungeon.player, this.damage
+                AbstractDungeon.actionManager.addToBottom(new TalkAction(this, DIALOG[2]));
+                addToBot(new SFXAction("Vincent_A2"));
+                AbstractDungeon.actionManager.addToBottom(new ChangeSpriteAction(extra, this, 2.0F));
+                AbstractDungeon.actionManager.addToBottom(new VFXAction(new ViceCrushEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY), 0.5F));
+                AbstractDungeon.actionManager.addToBottom(new DamageAction(AbstractDungeon.player, this.damage
                         .get(0), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
                 setMove((byte)3, Intent.DEFEND_BUFF);
                 break;
             case 3:
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new GainBlockAction((AbstractCreature)this, (AbstractCreature)this, this.blockAmt));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)this, (AbstractCreature)this, (AbstractPower)new StrengthPower((AbstractCreature)this, this.strAmt), this.strAmt));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)AbstractDungeon.player, (AbstractCreature)this, (AbstractPower)new RapidFirePower((AbstractCreature)AbstractDungeon.player,this.rapidFireAmt,this)));
+                AbstractDungeon.actionManager.addToBottom(new GainBlockAction(this, this, this.blockAmt));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, (AbstractPower)new StrengthPower(this, this.strAmt), this.strAmt));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, (AbstractPower)new RapidFirePower(AbstractDungeon.player,this.rapidFireAmt,this)));
                 setMove( (byte)4, Intent.STRONG_DEBUFF);
                 break;
             case 4:
-                addToBot((AbstractGameAction)new SFXAction("JudgmentWord"));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new TalkAction((AbstractCreature)this, DIALOG[3]));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new RemoveDebuffsAction((AbstractCreature)this));
+                addToBot(new SFXAction("JudgmentWord"));
+                AbstractDungeon.actionManager.addToBottom(new TalkAction(this, DIALOG[3]));
+                AbstractDungeon.actionManager.addToBottom(new RemoveDebuffsAction(this));
                 for (AbstractPower p : AbstractDungeon.player.powers) {
                     if (p instanceof ManaPower){
                         if (p.amount>0){
-                            addToBot((AbstractGameAction)new ReducePowerAction(AbstractDungeon.player,AbstractDungeon.player,p,1));
+                            addToBot(new ReducePowerAction(AbstractDungeon.player,AbstractDungeon.player,p,1));
                             break;
                         }
                     }
                     if (p.type == AbstractPower.PowerType.BUFF&&p.ID!=StrengthPower.POWER_ID&&p.ID!=DexterityPower.POWER_ID&&p.ID!=JudgmentWordPower.POWER_ID&&p.ID!= Cemetery.POWER_ID&&p.ID!=NaterranTree.POWER_ID)
-                        addToTop((AbstractGameAction)new RemoveSpecificPowerAction(AbstractDungeon.player, AbstractDungeon.player, p.ID));
+                        addToTop(new RemoveSpecificPowerAction(AbstractDungeon.player, AbstractDungeon.player, p.ID));
                 }
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)AbstractDungeon.player, (AbstractCreature)this, (AbstractPower)new JudgmentWordPower((AbstractCreature)AbstractDungeon.player)));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, (AbstractPower)new JudgmentWordPower(AbstractDungeon.player)));
                 setMove((byte)5, Intent.ATTACK_DEBUFF,((DamageInfo)this.damage.get(2)).base,this.fireAmt,true);
                 break;
             case 5:
-                addToBot((AbstractGameAction)new SFXAction("Vincent_A3"));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new TalkAction((AbstractCreature)this, DIALOG[6]));
+                addToBot(new SFXAction("Vincent_A3"));
+                AbstractDungeon.actionManager.addToBottom(new TalkAction(this, DIALOG[6]));
                 for (int i = 0;i<this.fireAmt;i++) {
-                    AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new DamageAction((AbstractCreature) AbstractDungeon.player, this.damage
+                    AbstractDungeon.actionManager.addToBottom( new DamageAction( AbstractDungeon.player, this.damage
                             .get(2), AbstractGameAction.AttackEffect.FIRE, true));
-                    addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new ExplosionSmallEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY), 0.1F));
+                    addToBot(new VFXAction(new ExplosionSmallEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY), 0.1F));
                 }
                 setMove((byte)6, Intent.DEFEND_BUFF);
                 break;
             case 6:
-                addToBot((AbstractGameAction)new SFXAction("Vincent_E3"));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new TalkAction((AbstractCreature)this, DIALOG[5]));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new GainBlockAction((AbstractCreature)this, (AbstractCreature)this, this.blockAmt));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)this, (AbstractCreature)this, (AbstractPower)new StrengthPower((AbstractCreature)this, this.strAmt), this.strAmt));
+                addToBot(new SFXAction("Vincent_E3"));
+                AbstractDungeon.actionManager.addToBottom(new TalkAction(this, DIALOG[5]));
+                AbstractDungeon.actionManager.addToBottom(new GainBlockAction(this, this, this.blockAmt));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, (AbstractPower)new StrengthPower(this, this.strAmt), this.strAmt));
                 if (!this.hasPower(TimeWarpPower.POWER_ID)){
-                    AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)this, (AbstractCreature)this, (AbstractPower)new TimeWarpPower((AbstractCreature)this)));
+                    AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, (AbstractPower)new TimeWarpPower(this)));
                 }else {
                     for (AbstractPower power:this.powers){
                         if (power instanceof TimeWarpPower){
@@ -175,17 +177,17 @@ public class VincentBOSS extends CustomMonster {
                 setMove((byte)7, Intent.STRONG_DEBUFF);
                 break;
             case 7:
-                addToBot((AbstractGameAction)new SFXAction("Vincent_E1"));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new TalkAction((AbstractCreature)this, DIALOG[7]));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)AbstractDungeon.player, (AbstractCreature)this, (AbstractPower)new FreezePower((AbstractCreature)AbstractDungeon.player)));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)AbstractDungeon.player, (AbstractCreature)this, (AbstractPower)new VulnerablePower((AbstractCreature)AbstractDungeon.player,this.debuffAmt,true),this.debuffAmt));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)AbstractDungeon.player, (AbstractCreature)this, (AbstractPower)new RapidFirePower((AbstractCreature)AbstractDungeon.player,this.rapidFireAmt,this)));
+                addToBot(new SFXAction("Vincent_E1"));
+                AbstractDungeon.actionManager.addToBottom(new TalkAction(this, DIALOG[7]));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, (AbstractPower)new FreezePower(AbstractDungeon.player)));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, (AbstractPower)new VulnerablePower(AbstractDungeon.player,this.debuffAmt,true),this.debuffAmt));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, (AbstractPower)new RapidFirePower(AbstractDungeon.player,this.rapidFireAmt,this)));
                 setMove((byte)8, Intent.DEFEND_BUFF);
                 break;
             case 8:
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new GainBlockAction((AbstractCreature)this, (AbstractCreature)this, this.blockAmt));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)this, (AbstractCreature)this, (AbstractPower)new StrengthPower((AbstractCreature)this, this.strAmt), this.strAmt));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)AbstractDungeon.player, (AbstractCreature)this, (AbstractPower)new RapidFirePower((AbstractCreature)AbstractDungeon.player,this.rapidFireAmt,this)));
+                AbstractDungeon.actionManager.addToBottom(new GainBlockAction(this, this, this.blockAmt));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, (AbstractPower)new StrengthPower(this, this.strAmt), this.strAmt));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, (AbstractPower)new RapidFirePower(AbstractDungeon.player,this.rapidFireAmt,this)));
                 setMove((byte)1, Intent.ATTACK_DEBUFF,((DamageInfo)this.damage.get(1)).base);
                 break;
         }
@@ -208,5 +210,15 @@ public class VincentBOSS extends CustomMonster {
         CardCrawlGame.screenShake.rumble(4.0F);
         onBossVictoryLogic();
         onFinalBossVictoryLogic();
+    }
+
+    @Override
+    public void setAnimation(SpriterAnimation animation) {
+        this.animation = animation;
+    }
+
+    @Override
+    public SpriterAnimation getAnimation() {
+        return (SpriterAnimation) this.animation;
     }
 }

@@ -22,7 +22,6 @@ public class MagicalBishop
 
     public MagicalBishop() {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.POWER, Witchcraft.Enums.COLOR_BLUE, CardRarity.UNCOMMON, CardTarget.SELF);
-        this.isEthereal = true;
         this.cardsToPreview = new MagicalPawn();
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;

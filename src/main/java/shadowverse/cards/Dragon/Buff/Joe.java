@@ -66,6 +66,14 @@ public class Joe
         super.update();
     }
 
+    public void triggerOnGlowCheck() {
+        if (Shadowverse.Accelerate(this) && this.type == CardType.POWER) {
+            this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();
+        } else {
+            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+        }
+    }
+
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         if (Shadowverse.Accelerate(this) && this.type == CardType.POWER) {

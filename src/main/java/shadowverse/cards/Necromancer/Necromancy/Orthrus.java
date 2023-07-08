@@ -42,10 +42,10 @@ import shadowverse.characters.Necromancer;
  
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     addToBot((AbstractGameAction)new SFXAction("Orthrus"));
-     addToBot((AbstractGameAction)new NecromanceAction(3,
-             (AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE),
-             (AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage+this.magicNumber, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE)));
+     addToBot(new SFXAction("Orthrus"));
+     addToBot(new NecromanceAction(3,
+             new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE),
+             new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage+this.magicNumber, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE)));
    }
  
    

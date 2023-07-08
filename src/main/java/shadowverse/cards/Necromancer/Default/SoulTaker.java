@@ -40,8 +40,8 @@ public class SoulTaker extends CustomCard {
 
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction) new SFXAction("SoulTaker"));
-        addToBot((AbstractGameAction)new GainBlockAction(abstractPlayer,this.block));
+        addToBot(new SFXAction("SoulTaker"));
+        addToBot(new GainBlockAction(abstractPlayer,this.block));
         ArrayList<AbstractCard> list = new ArrayList<>();
         for (AbstractCard c:abstractPlayer.discardPile.group){
             if (c.type==CardType.ATTACK&&!(c instanceof SoulTaker))

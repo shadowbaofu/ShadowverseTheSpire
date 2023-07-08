@@ -11,12 +11,12 @@
   },
   "shadowverse:ChooseToReduceCost": {
     "TEXT": [
-      "reduce the cost"
+      "Select a card to reduce the cost"
     ]
   },
   "shadowverse:Burial": {
     "TEXT": [
-      "Burial Rite"
+      "Choose a card to Burial Rite"
     ]
   },
   "shadowverse:AndrealphusMod": {
@@ -31,7 +31,7 @@
   },
   "shadowverse:ImmoralDesireMod1": {
     "TEXT": [
-      " NL Last_Words: Deal damage equal to the base damage of this card to all the enemies when Exhausted. "
+      " NL Last_Words: Deal damage equal to the base damage of this card to all enemies when Exhausted. "
     ]
   },
   "shadowverse:ImmoralDesireMod2": {
@@ -64,7 +64,7 @@
   },
   "shadowverse:AmuletText": {
     "TEXT": [
-      "I can't place any more Amulet."
+      "I can't place any more Amulets."
     ]
   },
   "shadowverse:ReduceCountDown": {
@@ -104,7 +104,7 @@
   },
   "shadowverse:ArtifactTag": {
     "TEXT": [
-      "AF"
+      "Artifact"
     ]
   },
   "shadowverse:MachineTag": {
@@ -114,7 +114,7 @@
   },
   "shadowverse:NobilisMod": {
     "TEXT": [
-      " NL Last_Words: Apply 4 poison to all the enemies when Exhausted. "
+      " NL Last_Words: Apply 4 poison to all enemies when Exhausted. "
     ]
   },
   "ViewBanCardScreen": {
@@ -146,131 +146,136 @@
   },
   "shadowverse": {
     "TEXT": [
-      "影之诗"
+      "Shadowverse"
     ]
   },
   "shadowverse:SpellboostMod": {
     "TEXT": [
-      "增幅",
+      "Empowered",
       "",
-      "本牌耗能增加 #b2 。 NL 魔力增幅  \b耗能减少1 [E] 。"
+      "Increase this card's cost by #b2 . NL Spellboost: \bSubtract 1 [E] from this card's cost."
     ],
     "EXTRA_TEXT": [
-      " NL 魔力增幅  \b耗能减少1 [E] 。"
+      " NL Spellboost: \bSubtract 1 [E] ."
     ]
   },
   "shadowverse:EarthMod": {
     "TEXT": [
-      "土之",
+      "Runed",
       "",
-      "打出时，获得 #b1 层 土之印记 。"
+      "When played, Gain #b1 Earth Essence."
     ],
     "EXTRA_TEXT": [
-      " NL 获得1层 土之印记 。"
+      " NL Gain 1 Earth Essence."
     ]
   },
   "shadowverse:MachinaMod": {
     "TEXT": [
-      "机械化",
+      "Motorize",
       "",
-      "机械 ，造成的伤害与获得的 #y格挡 减少 #b25% 。打出时增加 #b1 张 #y生产器械 到手中。"
+      "Machina，Damage and #yBlock reduced by #b25%. When played, add #b1 copy of #yAssembly #yDroid to your hand."
     ],
     "EXTRA_TEXT": [
-      "机械 NL ",
-      " NL 增加1张 *生产器械 到手中。"
+      "Machina NL ",
+      " NL Adds 1 *Assembly *Droid to hand."
     ]
   },
   "shadowverse:NaturaMod": {
     "TEXT": [
-      "纯真的",
+      "Naturalized",
       "",
-      "自然 ，造成的伤害与获得的 #y格挡 减少 #b33% 。打出时增加 #b1 张 #y那塔拉的大树 到手中。"
+      "Natura，Damage and #yBlock are reduced by 33%. When played, add #b1 copy of #yNaterran #yGreat #yTree to your hand."
     ],
     "EXTRA_TEXT": [
-      "自然 NL ",
-      " NL 增加1张 *那塔拉的大树 到手中。"
+      "Natura NL ",
+      " NL Adds 1 *Naterran *Great *Tree to your hand."
     ]
   },
   "shadowverse:ArtifactMod": {
     "TEXT": [
-      "量产型",
+      "Manufacted",
       "",
-      "创造物 。打出时增加 #b2 张 #y解析的创造物 到抽牌堆中。"
+      "Artifact. When played, add #b2 copies of #yAnalyzing #yArtifact to your draw pile."
     ],
     "EXTRA_TEXT": [
-      "创造物 NL ",
-      " NL 增加2张 *解析的创造物 到抽牌堆中。"
+      "Artifact NL ",
+      " NL Adds 2 *Analyzing *Artifacts to your draw pile."
     ]
   },
   "shadowverse:MysteriaMod": {
     "TEXT": [
-      "新生",
+      "Tenured",
       "",
-      "马纳历亚 学园 。打出时随机在手牌中增加 #b1 张 #y马纳历亚的魔弹 或 #y马纳历亚的防阵 。"
+      "Mysteria and Academic. When played, randomly add #b1 copy of #yMysterian #yMissile or #yMysterian #yCircle to your hand."
     ],
     "EXTRA_TEXT": [
-      "马纳历亚 学园  NL ",
-      " NL 随机在手牌中增加1张 *马纳历亚的魔弹 或 *马纳历亚的防阵 。"
+      "Mysteria Academic NL ",
+      " NL Randomly adds 1 *Mysterian *Missile or *Mysterian *Circle to your hand."
     ]
   },
   "shadowverse:BurialMod": {
     "TEXT": [
-      "送葬的",
+      "In Procession",
       "",
-      "打出时 葬送 #b1 张牌，抽 #b1 张牌。"
+      "When played, Burial Rite #b1 other card and draw #b1 card."
     ],
     "EXTRA_TEXT": [
-      " NL 葬送 1张牌，抽1张牌。"
+      " NL Burial Rite 1, Draw 1 card."
     ]
   },
   "shadowverse:WindMod": {
     "TEXT": [
       "",
-      "飓风",
-      "获得的 #y格挡 减少 #b33% ，打出时 死灵术 #b6 对全体敌人造成 #b10 点伤害。"
+      "Hurricane",
+      "#yBlock gained is reduced by 33%. When played, perform Necromancy #b6: Deal 10 damage to all enemies."
     ],
     "EXTRA_TEXT": [
-      " NL  死灵术 6 \b对全体敌人造成10点伤害。"
+      " NL  Necromancy 6 \bDeals 10 damage to all enemies."
     ]
   },
   "shadowverse:ReanimateMod": {
     "TEXT": [
       "",
-      "苏生",
-      "本牌耗能增加 #b1 。打出时 亡者召还 #b1 。"
+      "Reanimator",
+      "Increase this card's cost by #b1. When played, Reanimate #b1."
     ],
     "EXTRA_TEXT": [
-      " NL 亡者召还 1。"
+      " NL Reanimate 1."
     ]
   },
   "shadowverse:CondemnedMod": {
     "TEXT": [
-      "入狱的",
+      "Imprisoned",
       "",
-      "八狱 ，造成的伤害与获得的 #y格挡 增加 #b20% 。"
+      "Condemned. Damage and Block are increased by #b20%."
     ],
     "EXTRA_TEXT": [
-      "八狱 NL "
+      "Condemned NL "
     ]
   },
   "shadowverse:LootMod": {
     "TEXT": [
-      "劫掠的",
+      "Pilfered",
       "",
-      "造成的伤害 减少 #b10% 。打出时随机增加 #b1 张 #y财宝牌 到手中。"
+      "Damage reduced by #b10%. When played, randomly add #b1 copy of a #yLoot card to your hand."
     ],
     "EXTRA_TEXT": [
-      " NL 随机增加 #b1 张 #y财宝牌 到手中。"
+      " NL Randomly adds #b1 #yLoot card to your hand."
     ]
   },
   "shadowverse:CoinMod": {
     "TEXT": [
       "",
-      "与金币",
-      "打出时增加 #b1 张 #y闪耀的金币 到手中。"
+      "Smelted in Gold",
+      "When played, add #b1 copy of #yGlittering #yGold to your hand."
     ],
     "EXTRA_TEXT": [
-      " NL 增加1张 *闪耀的金币 到手中。"
+      " NL Adds 1 *Glittering *Gold to your hand."
+    ]
+  },
+  "shadowverse:ArmedMod": {
+    "TEXT": [
+      "Armed NL "
     ]
   }
 }

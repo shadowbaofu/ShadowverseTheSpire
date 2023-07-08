@@ -68,31 +68,31 @@ public class Yuwan
     }
 
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new SFXAction("Yuwan"));
-        addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new BorderFlashEffect(Color.ROYAL, true)));
-        addToBot((AbstractGameAction)new VFXAction((AbstractCreature) p, (AbstractGameEffect)new IntenseZoomEffect(p.hb.cX, p.hb.cY, false), 0.5F, true));
-        addToBot((AbstractGameAction)new GainBlockAction(p,this.block));
-        addToBot((AbstractGameAction)new ApplyPowerAction(p,p,(AbstractPower)new YuwanPower(p,this.magicNumber)));
-        addToBot((AbstractGameAction)new SelectCardsInHandAction(1,TEXT[0],false,false,card -> {
+        addToBot(new SFXAction("Yuwan"));
+        addToBot(new VFXAction(new BorderFlashEffect(Color.ROYAL, true)));
+        addToBot(new VFXAction(p, new IntenseZoomEffect(p.hb.cX, p.hb.cY, false), 0.5F, true));
+        addToBot(new GainBlockAction(p,this.block));
+        addToBot(new ApplyPowerAction(p,p,(AbstractPower)new YuwanPower(p,this.magicNumber)));
+        addToBot(new SelectCardsInHandAction(1,TEXT[0],false,false,card -> {
             return true;
         }, abstractCards ->{
             for (AbstractCard c:abstractCards){
-                addToBot((AbstractGameAction)new ExhaustSpecificCardAction(c,p.hand));
-                addToBot((AbstractGameAction)new MakeTempCardInDrawPileAction(c.makeStatEquivalentCopy(),1,true,true,false));
+                addToBot(new ExhaustSpecificCardAction(c,p.hand));
+                addToBot(new MakeTempCardInDrawPileAction(c.makeStatEquivalentCopy(),1,true,true,false));
             }
         } ));
         if ((p.drawPile.size()+1)%2==0&&!p.stance.ID.equals(Resonance.STANCE_ID)){
-            addToBot((AbstractGameAction)new ChangeStanceAction((AbstractStance)new Resonance()));
+            addToBot(new ChangeStanceAction(new Resonance()));
             if (p instanceof AbstractShadowversePlayer)
                 ((AbstractShadowversePlayer) p).resonanceCount++;
         }else if ((p.drawPile.size()+1)%2!=0&& p.stance.ID.equals(Resonance.STANCE_ID)){
-            addToBot((AbstractGameAction)new ChangeStanceAction((AbstractStance)new NeutralStance()));
+            addToBot(new ChangeStanceAction(new NeutralStance()));
             if (p instanceof AbstractShadowversePlayer)
                 ((AbstractShadowversePlayer) p).resonanceCount--;
         }
-        addToBot((AbstractGameAction)new DrawCardAction(1));
+        addToBot(new DrawCardAction(1));
         if (this.upgraded){
-            addToBot((AbstractGameAction)new MakeTempCardInHandAction(new AnalyzeArtifact()));
+            addToBot(new MakeTempCardInHandAction(new AnalyzeArtifact()));
         }
     }
 

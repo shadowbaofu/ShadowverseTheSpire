@@ -2026,6 +2026,12 @@
     "NAME": "Forte, Darkwing Ruler",
     "DESCRIPTIONS": [
       "When Strength and Dexterity are gained, the following effects will activate in order, up to 3 times each: NL 1. Gain #b1 extra Energy next turn. NL 2. Apply #b2 Weak and Vulnerable to a random enemy. NL 3. Gain #b1 Buffer, preventing the next time you would lose HP."
+      ]
+   },
+  "shadowverse:FafnirPower": {
+    "NAME": "Fafnir, Cunning Wyrm",
+    "DESCRIPTIONS": [
+      "At the end of your turn, deal #b20 damage to a random enemy. Reduce this by #b4 for each Attack card played during your turn."
     ]
   }
 }

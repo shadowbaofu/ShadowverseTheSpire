@@ -207,7 +207,7 @@
       "NAMES": [
         "maneuver"
       ],
-      "DESCRIPTION": "Cards with #yManeuver can't be played from hand directly. If another Attack card with cost higher than the #yManeuver value is played while this card is in hand, the Attack card will lose its effects and #yExhaust, then this card can be played. If this card is #yExhaust , it will return the Attack card into your hand with 0 cost to play this turn."
+      "DESCRIPTION": "Cards with #yManeuver can't be played from hand directly. If another Attack card with a cost greater or equal than the #yManeuver value is played while this card is in hand, the Attack card will lose its effects and #yExhaust, then this card can be played. If this card is #yExhausted, the Attack card returns to your hand and costs 0 this turn."
     },
     {
       "PROPER_NAME": "Cannon Hermit Crab",
@@ -448,15 +448,21 @@
     },
     {
       "NAMES": [
-        "觉醒"
+        "Overflow"
       ],
-      "DESCRIPTION": "觉醒值达到3点时进入觉醒状态。回合开始时获得 [E] 。"
+      "DESCRIPTION": "Overflow becomes active when you gain 3 Overflow points. You gain [E] at the start of every turn."
     },
     {
       "NAMES": [
-        "完全觉醒"
+        "Full Overflow"
       ],
-      "DESCRIPTION": "处于觉醒状态时觉醒值达到3点时进入完全觉醒状态。回合开始时获得 [E] [E] 。"
+      "DESCRIPTION": "When you gain 3 Overflow points while Overflow is active, Full Overflow becomes active for you. Gain [E] [E] at the start of every turn."
+    },
+    {
+      "NAMES": [
+        "Armed"
+      ],
+      "DESCRIPTION": "Armed. The trait used by Light Tenryu, the protagonist of Shadowverse Flame. After playing an Armed card, you will gain 1 Block each time it is Armed."
     }
   ]
 }

@@ -38,9 +38,9 @@ public class IrongearCorpsman extends CustomCard {
 
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot((AbstractGameAction)new SFXAction("IrongearCorpsman"));
-        addToBot((AbstractGameAction)new GainBlockAction(p,this.block));
-        addToBot((AbstractGameAction)new NecromanceAction(6,null,(AbstractGameAction)new NecroCopyAction(AbstractShadowversePlayer.Enums.MACHINE)));
+        addToBot(new SFXAction("IrongearCorpsman"));
+        addToBot(new GainBlockAction(p,this.block));
+        addToBot(new NecromanceAction(6,null,new NecroCopyAction(AbstractShadowversePlayer.Enums.MACHINE)));
     }
 
     public AbstractCard makeCopy() {

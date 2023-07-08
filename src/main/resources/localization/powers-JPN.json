@@ -1852,15 +1852,186 @@
     ]
   },
   "shadowverse:OverflowPower": {
-    "NAME": "未觉醒",
+    "NAME": "未覚醒",
     "DESCRIPTIONS": [
-      "觉醒值达到3时进入觉醒状态，回合开始时获得 [E] 。当前觉醒值 #b",
+      "覚醒ポイントが3になると覚醒状態になり、ターン開始時に [E] を得る。覚醒ポイントは #b",
       " /3。",
-      "回合开始时获得 [E] 。 觉醒值达到3时进入完全觉醒状态，回合开始时获得 [E] [E] 。 当前觉醒值 #b",
+      "ターン開始時に [E] 。覚醒ポイントが3になると超覚醒状態になり，ターン開始時に [E] [E] を得る。 覚醒ポイントは #b",
       " /3。",
-      "回合开始时获得 [E] [E] 。",
-      "觉醒",
-      "完全觉醒"
+      "ターン開始時に [E] [E] を得る。",
+      "覚醒",
+      "超覚醒"
+    ]
+  },
+  "shadowverse:RahabPower": {
+    "NAME": "ラハブ",
+    "DESCRIPTIONS": [
+      "ターン開始時、残りエナジー× #b",
+      " の筋力を得る。"
+    ]
+  },
+  "shadowverse:ShipsbanePlesiosaurusPower": {
+    "NAME": "波濤のプレシオサウルス",
+    "DESCRIPTIONS": [
+      "手札を捨てる度、ランダムな敵に #b4 ダメージを与える。"
+    ]
+  },
+  "shadowverse:DracomancerRitesPower": {
+    "NAME": "竜巫女の儀式",
+    "DESCRIPTIONS": [
+      "自分が手札を捨てるたび、1枚につき、カードを #b",
+      " 引く。"
+    ]
+  },
+  "shadowverse:GoldenDragonDenPower": {
+    "NAME": "黄金竜の棲家",
+    "DESCRIPTIONS": [
+      "ターン開始時、手札からランダムにコスト最小のカードを #b",
+      " 枚捨て、カードを #b",
+      " 枚引く。"
+    ]
+  },
+  "shadowverse:PolyphonicRoarPower": {
+    "NAME": "連なる咆哮",
+    "DESCRIPTIONS": [
+      "ターン開始時、 #b",
+      " 枚のコスト0の #y突風のドラゴン を手札に加える。",
+      " 枚のコスト0の #y突風のドラゴン+ を手札に加える。"
+    ]
+  },
+  "shadowverse:ResplendentPhoenixPower": {
+    "NAME": "鳳凰の庭園",
+    "DESCRIPTIONS": [
+      "引いたカードのコストを半分にする。"
+    ]
+  },
+  "shadowverse:LumiorePower": {
+    "NAME": "金色の威信・リュミオール",
+    "DESCRIPTIONS": [
+      "自分が手札を捨てるたび、敵全体に #b",
+      " ×捨てた枚数のダメージを与える。"
+    ]
+  },
+  "shadowverse:NoirNBlancPower": {
+    "NAME": "黒白の乱舞・ノール＆ブラ",
+    "DESCRIPTIONS": [
+      "ターン終了時、 #y超覚醒 なら #yブラー 、 #yアーティファクト 、 #y能力によるダメージは無効 と #b",
+      " ブロックを得る。次のターン開始時、ブロックがまだ残っているなら、ランダムな敵に #b",
+      " ダメージを与える。"
+    ]
+  },
+  "shadowverse:PrimeDragonKeeperPower": {
+    "NAME": "原初の竜使い",
+    "DESCRIPTIONS": [
+      "コスト1以下のドラゴンアタックをプレイする度、ランダムな敵に #b",
+      " ダメージを与える。 #y觉醒 なら、ターン終了時、 #yファイアバリア #b",
+      " を得る。"
+    ]
+  },
+  "shadowverse:DragonsongFlutePower": {
+    "NAME": "竜呼びの笛",
+    "DESCRIPTIONS": [
+      "コスト1以下のアタック、状態異常と呪いカードを引く度、それを廃棄して #yヘルフレイムドラゴン #b1 枚を手札に加える"
+    ]
+  },
+  "shadowverse:RowenPower": {
+    "NAME": "竜殺しの槍",
+    "DESCRIPTIONS": [
+      "ダメージを+ #b",
+      " する。あと #b",
+      " ターン続く。"
+    ]
+  },
+  "shadowverse:WildfangDragonewtPower": {
+    "NAME": "荒牙の竜少女",
+    "DESCRIPTIONS": [
+      "このターン、自分が手札を捨てるたび、ランダムな敵に捨てた枚数×  #b",
+      " と同じダメージを与える。"
+    ]
+  },
+  "shadowverse:ByronPower": {
+    "NAME": "フルメタルドラグーン・バイロン",
+    "DESCRIPTIONS": [
+      "このターン、アタックをプレイする度、 筋力 #b",
+      " を得る。それが 機械 カードなら、さらに 敏捷性 #b",
+      " を得る。"
+    ]
+  },
+  "shadowverse:LavateinnDragonAttackFormPower": {
+    "NAME": "レーヴァテインドラゴン・アタックモード",
+    "DESCRIPTIONS": [
+      "武装 アタックをプレイする度、 筋力 と 敏捷性 #b",
+      " を得る。"
+    ]
+  },
+  "shadowverse:LavateinnDragonDefenseFormPower": {
+    "NAME": "レーヴァテインドラゴン・",
+    "DESCRIPTIONS": [
+      "ターン終了時、HPを3回復する。このターン中に受けるダメージを- #b",
+      " する。"
+    ]
+  },
+  "shadowverse:ZoePower": {
+    "NAME": "大いなる調停者・ゾーイ",
+    "DESCRIPTIONS": [
+      "ターン終了まで、受けるダメージを0にする。戦闘終了後、HPを #b",
+      " 回復する。"
+    ]
+  },
+  "shadowverse:DragonplateWarriorPower": {
+    "NAME": "竜鎧の戦士",
+    "DESCRIPTIONS": [
+      "アタックでないカードをプレイする度、敵全体に #b",
+      " ダメージを与える。"
+    ]
+  },
+  "shadowverse:DragonHoardPower": {
+    "NAME": "竜の財宝",
+    "DESCRIPTIONS": [
+      "ターン開始時、またはアタックをプレイする時、カウントダウンを #b1 減らす。カウントダウン終了後、これを失い、手札、捨札、山札のアタックを全て廃棄し、それと同じ数の *インフェルノドラゴン を手札、捨札、山札に加える。"
+    ]
+  },
+  "shadowverse:RomeliaPower": {
+    "NAME": "遺されし電撃",
+    "DESCRIPTIONS": [
+      "ターン開始時、このターンだけの #y敏捷性 #b2 と エナジー #b1 を得る。あと #b",
+      " ターンでこの効果を失う。"
+    ]
+  },
+  "shadowverse:DragonTagPower": {
+    "NAME": "竜",
+    "DESCRIPTIONS": [
+      "汝は竜、罪あり！"
+    ]
+  },
+  "shadowverse:JervaPower": {
+    "NAME": "ドラゴニックメイル・ギルヴァ",
+    "DESCRIPTIONS": [
+      "HPは最大値の半分を超えることはない。戦闘終了後、この効果によって失ったHPを回復する。 NL ターン終了時、ランダムな敵にそのHP最大値の #b25% ダメージを与える(最低 #b25 点)。"
+    ]
+  },
+  "shadowverse:Jerva2Power": {
+    "NAME": "ドラゴンイクシード・ギルヴァ",
+    "DESCRIPTIONS": [
+      "ターン終了時、このターン中にアタックをプレイしていないなら、ランダムな敵にそのHP最大値の #b25% ダメージを与える(最低 #b25 点)。"
+    ]
+  },
+  "shadowverse:Masamune2Power": {
+    "NAME": "独眼竜·伊達政宗",
+    "DESCRIPTIONS": [
+      "アタックをプレイする度、ランダムな敵に #b4 ダメージを与える。"
+    ]
+  },
+  "shadowverse:Forte4Power": {
+    "NAME": "黒翼の覇者・フォルテ",
+    "DESCRIPTIONS": [
+      " 筋力 や 敏捷性 を得る度、时，下記が順に1つ働く。上限は3つ。: NL (1)次のターン開始時、エナジー #b1 を得る NL (2)ランダムな敵に #y弱体化 と #y脱力 #b2 を与える。 NL (3)次に受けるダメージを #b0 にする。"
+    ]
+  },
+  "shadowverse:FafnirPower": {
+    "NAME": "邪智の竜・ファフニール",
+    "DESCRIPTIONS": [
+      "ターン終了時、ランダムな敵に #b20 ダメージを与える。このターン中にプレイしていたアタック1枚につき、このダメージを #b-4 する"
     ]
   }
 }

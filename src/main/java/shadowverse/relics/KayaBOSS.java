@@ -44,7 +44,8 @@
 
      @Override
      public void atBattleStart() {
-         addToBot(new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,new OverflowPower(AbstractDungeon.player,3),3));
+         addToBot(new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,new OverflowPower(AbstractDungeon.player,1),1));
+         addToBot(new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,new OverflowPower(AbstractDungeon.player,2),2));
          addToBot(new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,new WraithFormPower(AbstractDungeon.player,-1),-1));
      }
 

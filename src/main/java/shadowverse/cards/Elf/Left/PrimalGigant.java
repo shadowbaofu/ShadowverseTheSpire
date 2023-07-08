@@ -65,11 +65,11 @@ public class PrimalGigant extends CustomCard {
 
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        if (Shadowverse.Accelerate((AbstractCard) this) && this.type == CardType.SKILL) {
-            addToBot((AbstractGameAction) new HealAction(abstractPlayer, abstractPlayer, 4));
+        if (Shadowverse.Accelerate(this) && this.type == CardType.SKILL) {
+            addToBot(new HealAction(abstractPlayer, abstractPlayer, 4));
         } else {
-            addToBot((AbstractGameAction) new PrimalGigantAction());
-            addToBot((AbstractGameAction) new GainBlockAction(abstractPlayer, this.block));
+            addToBot(new PrimalGigantAction());
+            addToBot(new GainBlockAction(abstractPlayer, this.block));
         }
     }
 

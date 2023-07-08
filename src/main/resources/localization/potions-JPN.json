@@ -131,5 +131,26 @@
       "HPを #b",
       "% 回復する。"
     ]
+  },
+  "shadowverse:OverflowPotion": {
+    "NAME": "覚醒ポーション",
+    "DESCRIPTIONS": [
+      "#y覚醒ポイント #b",
+      " を得る。"
+    ]
+  },
+  "shadowverse:ArmedPotion": {
+    "NAME": "武装ポーション",
+    "DESCRIPTIONS": [
+      "#b9 #yブロック を得、カード #b",
+      " 枚を武装する。"
+    ]
+  },
+  "shadowverse:BurnPotion": {
+    "NAME": "インフェルノポーション",
+    "DESCRIPTIONS": [
+      " #y火傷 #b3 枚と #yインフェルノドラゴン #b",
+      " 枚を手札に加える。"
+    ]
   }
 }

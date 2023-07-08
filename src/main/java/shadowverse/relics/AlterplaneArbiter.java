@@ -35,7 +35,8 @@ public class AlterplaneArbiter extends CustomRelic {
             Vampire.Enums.COLOR_SCARLET,
             Nemesis.Enums.COLOR_SKY,
             Royal.Enums.COLOR_YELLOW,
-            Bishop.Enums.COLOR_WHITE
+            Bishop.Enums.COLOR_WHITE,
+            Dragon.Enums.COLOR_BROWN
     };
     public static AbstractPlayer.PlayerClass[] CLASSES = {
             Witchcraft.Enums.WITCHCRAFT,
@@ -44,7 +45,8 @@ public class AlterplaneArbiter extends CustomRelic {
             Vampire.Enums.Vampire,
             Nemesis.Enums.Nemesis,
             Royal.Enums.Royal,
-            Bishop.Enums.Bishop
+            Bishop.Enums.Bishop,
+            Dragon.Enums.Dragon
     };
 
     public AlterplaneArbiter() {
@@ -72,6 +74,8 @@ public class AlterplaneArbiter extends CustomRelic {
                 s += this.DESCRIPTIONS[8] + this.DESCRIPTIONS[2];
             } else if (COLORS[this.counter] == Bishop.Enums.COLOR_WHITE) {
                 s += this.DESCRIPTIONS[9] + this.DESCRIPTIONS[2];
+            }else if (COLORS[this.counter] == Dragon.Enums.COLOR_BROWN){
+                s += this.DESCRIPTIONS[10] + this.DESCRIPTIONS[2];
             }
         }
         return s;

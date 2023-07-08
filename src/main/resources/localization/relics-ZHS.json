@@ -392,7 +392,8 @@
       "#y吸血鬼",
       "#y复仇者",
       "#y皇家护卫",
-      "#y主教"
+      "#y主教",
+      "#y龙族"
     ]
   },
   "shadowverse:Offensive7": {
@@ -556,6 +557,84 @@
     "FLAVOR": "旋转蔚蓝吧，黄金时代。",
     "DESCRIPTIONS": [
       "第1、2回合开始时随机获得1张 #y财宝牌 。第3回合开始时获得 #b14 点 格挡 。"
+    ]
+  },
+  "shadowverse:FortuneWell": {
+    "NAME": "幸运井",
+    "FLAVOR": "你这井怎么不能井异画啊！",
+    "DESCRIPTIONS": [
+      "拾起时，以及每6（第一次为8）次战斗结束后可从3张随机稀有牌中选择一张加入卡组。拾起时，额外获得一次普通选牌奖励。若为二层以上则初始计数为4。",
+      "选择一张加入卡组"
+    ]
+  },
+  "shadowverse:MonikaBOSS": {
+    "NAME": "羽翼大衣",
+    "FLAVOR": "莫妮卡穿着的大衣。奢华的剪裁能刺激追随者们的身心。",
+    "DESCRIPTIONS": [
+      "拾起时替换 #y先手印记 。每场战斗限 #b2 次，每回合限一次，右击时#b1 张 #y进化点 到手中。 NL 每当打出 #y进化点 时，所有随从获得 #g+1/+1 。"
+    ]
+  },
+  "shadowverse:Offensive8": {
+    "NAME": "先手印记",
+    "FLAVOR": "您为先手，不更换手牌。",
+    "DESCRIPTIONS": [
+      "以 #b1 点觉醒值开始战斗。"
+    ]
+  },
+  "shadowverse:TotalDomination": {
+    "NAME": "霸极",
+    "FLAVOR": "被五指之爪‧霸极所撕裂的人，直到燃烧殆尽为止，绝不停息。",
+    "DESCRIPTIONS": [
+      "战斗开始时增加 #b2 张 #y灼伤 到抽牌堆，增加 #b2 张 #y灼伤 到弃牌堆。每回合开始时额外获得 [E] 。"
+    ]
+  },
+  "shadowverse:MaoAndFengtian": {
+    "NAME": "真凰·凤天",
+    "FLAVOR": "二刃一对的双剑「真凰」与「凤天」，开疆僻土，橫扫一切阻碍。",
+    "DESCRIPTIONS": [
+      "每场战斗中打出第2张衍生物攻击牌时，抽 #b2 张牌，获得 [E] 。"
+    ]
+  },
+  "shadowverse:Hiro": {
+    "NAME": "超开心",
+    "FLAVOR": "傻豆巴死给塔诺西。",
+    "DESCRIPTIONS": [
+      "拾起时，将卡组中的 #y龙之启示 替换成 #y龙之启示(龙崎阳羽版)。"
+    ]
+  },
+  "shadowverse:Enkia": {
+    "NAME": "穿孔焰·恩奇亚",
+    "FLAVOR": "爆裂贯穿吧，恩奇亚",
+    "DESCRIPTIONS": [
+      "你始终视为打出过 #y八狱 牌。"
+    ]
+  },
+  "shadowverse:DragonQueenCastle": {
+    "NAME": "龙宫城",
+    "FLAVOR": "守护乙姬大人！",
+    "DESCRIPTIONS": [
+      "每场战斗1次，耗能为 #b3 以上的攻击牌多打出1次。"
+    ]
+  },
+  "shadowverse:KayaBOSS": {
+    "NAME": "炎龙铁拳",
+    "FLAVOR": "嘉夜戴在手上，宛如巨大龙腕的拳套。 据说它呼应了穿戴者的强烈情绪，其喷涌而出的业火，能将敌对之人燃烧殆尽。",
+    "DESCRIPTIONS": [
+      "拾起时替换 #y先手印记 。 NL 战斗开始时，获得 #b3 点 #y觉醒值 。回合结束时，失去 #b1 点 #y敏捷 。"
+    ]
+  },
+  "shadowverse:GreaBOSS": {
+    "NAME": "龙之护身符",
+    "FLAVOR": "能够提升古蕾雅能力的龙之护身符。在宝石的加护下，龙族公主的火焰更加猛烈，将一切敌人燃烧殆尽。",
+    "DESCRIPTIONS": [
+      "拾起时替换 #y先手印记 。 NL 以 #b1 点觉醒值开始战斗。回合开始时，如果已 #y觉醒 增加1张 #y古蕾娅的炎热之术 到手中。"
+    ]
+  },
+  "shadowverse:InoriBOSS": {
+    "NAME": "祈梨的小锤",
+    "FLAVOR": "祈梨爱用的锤子。与外观完全不同，经过帆稀的改造后，其强度甚至能承受住龙族觉醒的力量。",
+    "DESCRIPTIONS": [
+      "拾起时替换 #y先手印记 。 NL 以 #b1 点觉醒值开始战斗。战斗开始时，击晕全体敌人。"
     ]
   }
 }

@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import shadowverse.action.NecromanceAction;
-import shadowverse.cards.Temp.Zombie;
+import shadowverse.cards.Neutral.Temp.Zombie;
 import shadowverse.powers.Cemetery;
 
 
@@ -38,12 +38,13 @@ import shadowverse.powers.Cemetery;
        }
        if (playerNecromance>=3){
            flash();
-           addToBot((AbstractGameAction)new NecromanceAction(3,null,
-                   (AbstractGameAction)new MakeTempCardInHandAction(new Zombie(),1)));
+           addToBot(new NecromanceAction(3,null,
+                   new MakeTempCardInHandAction(new Zombie(),1)));
        }
      }
 
-   public AbstractRelic makeCopy() {
+
+     public AbstractRelic makeCopy() {
      return (AbstractRelic)new Offensive3();
    }
  }

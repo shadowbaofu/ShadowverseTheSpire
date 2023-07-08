@@ -63,14 +63,6 @@ public class AmaryllisPower extends AbstractPower implements OnLoseTempHpPower, 
         return damage;
     }
 
-    @Override
-    public int onAttackedToChangeDamage(DamageInfo info, int damageAmount) {
-        if (isUpgraded){
-            if (info.owner == this.owner)
-                return damageAmount+1;
-        }
-        return damageAmount;
-    }
 
     @Override
     public int onLoseTempHp(DamageInfo damageInfo, int i) {
@@ -107,5 +99,42 @@ public class AmaryllisPower extends AbstractPower implements OnLoseTempHpPower, 
             }
         }
         return i;
+    }
+
+    @Override
+    public void atEndOfTurn(boolean isPlayer) {
+        if (AbstractDungeon.player.hasPower(CurseOfSufferingPower.POWER_ID)){
+            if (TempHPField.tempHp.get(AbstractDungeon.player) > 1){
+                if (abilitiesToTrigger.size()>0){
+                    int rand = AbstractDungeon.aiRng.random(0, abilitiesToTrigger.size()-1);
+                    switch (abilitiesToTrigger.get(rand)) {
+                        case "a":
+                            addToBot(new SFXAction("AmaryllisPower"));
+                            addToBot(new HealAction(this.owner, this.owner, 1));
+                            break;
+                        case "b":
+                            addToBot(new SFXAction("AmaryllisPower"));
+                            addToBot(new ApplyPowerAction(this.owner, this.owner, new DrawCardNextTurnPower(this.owner, 1), 1));
+                            break;
+                        case "c":
+                            addToBot(new SFXAction("AmaryllisPower"));
+                            for (AbstractCard c : AbstractDungeon.player.drawPile.group) {
+                                if (c.hasTag(AbstractShadowversePlayer.Enums.SPELL_BOOST)) {
+                                    addToBot(new SFXAction("spell_boost"));
+                                    c.flash();
+                                    addToBot(new ReduceCostAction(c));
+                                }
+                                if (c.hasTag(AbstractShadowversePlayer.Enums.SPELL_BOOST_ATTACK)) {
+                                    c.flash();
+                                    c.magicNumber = ++c.baseMagicNumber;
+                                    addToBot(new SFXAction("spell_boost"));
+                                }
+                            }
+                            break;
+                    }
+                    abilitiesToTrigger.remove(rand);
+                }
+            }
+        }
     }
 }

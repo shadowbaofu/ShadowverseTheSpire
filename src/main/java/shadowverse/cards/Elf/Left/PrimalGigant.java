@@ -55,13 +55,21 @@ public class PrimalGigant extends CustomCard {
         super.update();
     }
 
+    public void triggerOnGlowCheck() {
+        if (Shadowverse.Accelerate(this)) {
+            this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();
+        } else {
+            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+        }
+    }
+
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        if (Shadowverse.Accelerate((AbstractCard) this) && this.type == CardType.SKILL) {
-            addToBot((AbstractGameAction) new HealAction(abstractPlayer, abstractPlayer, 4));
+        if (Shadowverse.Accelerate(this) && this.type == CardType.SKILL) {
+            addToBot(new HealAction(abstractPlayer, abstractPlayer, 4));
         } else {
-            addToBot((AbstractGameAction) new PrimalGigantAction());
-            addToBot((AbstractGameAction) new GainBlockAction(abstractPlayer, this.block));
+            addToBot(new PrimalGigantAction());
+            addToBot(new GainBlockAction(abstractPlayer, this.block));
         }
     }
 

@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import shadowverse.Shadowverse;
 import shadowverse.cards.AbstractCrystalizeCard;
 import shadowverse.cards.Neutral.Curse.Indulgence;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Bishop;
 import shadowverse.orbs.AmuletOrb;
 
@@ -24,6 +25,8 @@ public class DirtyPriest
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/DirtyPriest.png";
+    private boolean played;
+
 
     public DirtyPriest() {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.COMMON, CardTarget.SELF);
@@ -42,7 +45,7 @@ public class DirtyPriest
     @Override
     public void update() {
         if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT&&
-                Shadowverse.Accelerate(this)){
+                Shadowverse.Accelerate(this) && !played){
             setCostForTurn(0);
             this.type = CardType.POWER;
         }else {
@@ -63,12 +66,23 @@ public class DirtyPriest
             addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
             addToBot(new MakeTempCardInDrawPileAction(this.cardsToPreview,1,true,true,false));
             addToBot(new MakeTempCardInDiscardAction(this.cardsToPreview,1));
-            if (EnergyPanel.getCurrentEnergy() < 4){
-                addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
-            }
+            played = true;
         }
     }
 
+    @Override
+    public void onMoveToDiscard() {
+        super.onMoveToDiscard();
+        played = false;
+    }
+
+    public void triggerOnGlowCheck() {
+        if (Shadowverse.Accelerate(this) && this.type == CardType.POWER) {
+            this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();
+        } else {
+            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+        }
+    }
 
     public AbstractCard makeCopy() {
         return (AbstractCard) new DirtyPriest();

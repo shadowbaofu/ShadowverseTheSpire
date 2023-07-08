@@ -44,7 +44,7 @@ public class Hades extends CustomCard {
         this.tags.add(AbstractShadowversePlayer.Enums.LASTWORD);
         this.tags.add(AbstractShadowversePlayer.Enums.ACCELERATE);
         this.exhaust = true;
-        this.cardsToPreview = (AbstractCard)new Path();
+        this.cardsToPreview = new Path();
     }
 
     @Override
@@ -58,9 +58,9 @@ public class Hades extends CustomCard {
 
     @Override
     public void triggerOnExhaust() {
-        addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)AbstractDungeon.player, (AbstractCreature)AbstractDungeon.player, (AbstractPower)new PathPower((AbstractCreature)AbstractDungeon.player, 42), 42));
+        addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, (AbstractPower)new PathPower(AbstractDungeon.player, 42), 42));
         if (this.type==CardType.ATTACK)
-            addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)AbstractDungeon.player,(AbstractCreature)AbstractDungeon.player,(AbstractPower)new Cemetery((AbstractCreature)AbstractDungeon.player,this.magicNumber),this.magicNumber));
+            addToBot(new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,(AbstractPower)new Cemetery(AbstractDungeon.player,this.magicNumber),this.magicNumber));
     }
 
     public void triggerOnOtherCardPlayed(AbstractCard c) {
@@ -85,14 +85,23 @@ public class Hades extends CustomCard {
         super.update();
     }
 
+    public void triggerOnGlowCheck() {
+        if (Shadowverse.Accelerate(this)) {
+            this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();
+        } else {
+            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+        }
+    }
+
+
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        if (Shadowverse.Accelerate((AbstractCard)this) && this.type == CardType.SKILL) {
-            addToBot((AbstractGameAction)new SFXAction("Hades_Acc"));
-            addToBot((AbstractGameAction)new DamageAllEnemiesAction((AbstractCreature)abstractPlayer, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.FIRE));
+        if (Shadowverse.Accelerate(this) && this.type == CardType.SKILL) {
+            addToBot(new SFXAction("Hades_Acc"));
+            addToBot(new DamageAllEnemiesAction(abstractPlayer, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.FIRE));
         }else {
-            addToBot((AbstractGameAction)new SFXAction("Hades"));
-            addToBot((AbstractGameAction)new GainBlockAction(abstractPlayer,abstractPlayer,this.block));
+            addToBot(new SFXAction("Hades"));
+            addToBot(new GainBlockAction(abstractPlayer,abstractPlayer,this.block));
         }
     }
 

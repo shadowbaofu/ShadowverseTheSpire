@@ -84,7 +84,7 @@ public class OmenOfSilence extends CustomCard implements BranchableUpgradeCard {
         switch (chosenBranch()) {
             case 0:
                 AbstractDungeon.effectsQueue.add(new StanceAuraEffect("Divinity"));
-                addToBot((AbstractGameAction) new SFXAction("OmenOfSilence"));
+                addToBot(new SFXAction("OmenOfSilence"));
                 int playerNecromance = 0;
                 if (abstractPlayer.hasPower(Cemetery.POWER_ID)) {
                     for (AbstractPower p : abstractPlayer.powers) {
@@ -93,11 +93,11 @@ public class OmenOfSilence extends CustomCard implements BranchableUpgradeCard {
                     }
                 }
                 if (playerNecromance >= 3) {
-                    addToBot((AbstractGameAction) new NecromanceAction(3, null, (AbstractGameAction) new SilenceAction()));
+                    addToBot(new NecromanceAction(3, null, new SilenceAction()));
                 }
                 break;
             case 1:
-                addToBot((AbstractGameAction) new SFXAction("OmenOfSilence2"));
+                addToBot(new SFXAction("OmenOfSilence2"));
                 int amt = 0;
                 for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisCombat) {
                     if (c.cardID.contains("OmenOfSilence"))
@@ -107,11 +107,11 @@ public class OmenOfSilence extends CustomCard implements BranchableUpgradeCard {
                 if (amt>10) {
                     AbstractMonster mo = AbstractDungeon.getRandomMonster();
                     if (!mo.isDeadOrEscaped()) {
-                        addToBot((AbstractGameAction) new ApplyPowerAction(mo, abstractPlayer, new VulnerablePower(abstractMonster, 3, false), 3));
-                        addToBot((AbstractGameAction) new ApplyPowerAction(mo, abstractPlayer, new WeakPower(abstractMonster, 3, false), 3));
+                        addToBot(new ApplyPowerAction(mo, abstractPlayer, new VulnerablePower(abstractMonster, 3, false), 3));
+                        addToBot(new ApplyPowerAction(mo, abstractPlayer, new WeakPower(abstractMonster, 3, false), 3));
                     }
                 }
-                addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+                addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
                 break;
         }
     }
@@ -119,7 +119,7 @@ public class OmenOfSilence extends CustomCard implements BranchableUpgradeCard {
     @Override
     public void triggerOnExhaust() {
         if (chosenBranch()==1){
-            addToBot((AbstractGameAction)new MakeTempCardInHandAction(new ExpandingScreaming()));
+            addToBot(new MakeTempCardInHandAction(new ExpandingScreaming()));
         }
     }
 

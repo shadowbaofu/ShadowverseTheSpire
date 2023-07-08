@@ -32,7 +32,7 @@ import shadowverse.stance.Vengeance;
 
    public DarkGeneral() {
      super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Vampire.Enums.COLOR_SCARLET, CardRarity.BASIC, CardTarget.ENEMY);
-     this.baseDamage = 10;
+     this.baseDamage = 11;
      this.jokePortrait = new TextureAtlas.AtlasRegion(LEADER_SKIN_VERSION, 0, 0, LEADER_SKIN_VERSION.getWidth(), LEADER_SKIN_VERSION.getHeight());
    }
  
@@ -47,14 +47,14 @@ import shadowverse.stance.Vengeance;
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
      if ((UnlockTracker.betaCardPref.getBoolean(this.cardID, false))) {
-       addToBot((AbstractGameAction)new SFXAction("DarkGeneral_L"));
+       addToBot(new SFXAction("DarkGeneral_L"));
      }else {
-       addToBot((AbstractGameAction)new SFXAction("DarkGeneral"));
+       addToBot(new SFXAction("DarkGeneral"));
      }
      if (abstractPlayer.stance.ID.equals(Vengeance.STANCE_ID)||abstractPlayer.hasPower(EpitaphPower.POWER_ID)){
-       addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage*2, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
+       addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage*2, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
      }else
-       addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
+       addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
    }
  
    

@@ -1,11 +1,11 @@
 {
   "shadowverse:Witchcraft": {
     "NAMES": ["Runecraft","Kyoka","Karyl","Anne","Kyoka (Halloween)"],
-    "TEXT": ["Runecraft uses the power of spells against opponents. Their 'Spellboost' cards become cheaper and stronger everytime they use Skill card. NL Cast spells to Spellboost your hand and overwhelm your opponent."]
+    "TEXT": ["Runecraft uses the power of spells against opponents. Their 'Spellboost' cards become cheaper and stronger every time you use Skill cards. NL Cast spells to Spellboost your hand and overwhelm your opponent."]
   },
   "shadowverse:Elf": {
     "NAMES": ["Forestcraft","Arisa","Kokkoro"],
-    "TEXT": ["Forestcraft strategies use bands of fairies in battle. They have cards that fill your hand with lots of low-cost 'Fairy' cards. NL You can easily play multiple cards in one turn and activate other Forestcraft cards' abilities, giving you more power. "]
+    "TEXT": ["Forestcraft strategies use bands of fairies in battle. They have cards that fill your hand with lots of low-cost 'Fairy' cards. NL Playing multiple cards in one turn can activate fairly powerful Forestcraft cards' effects. "]
   },
   "shadowverse:Necromancer": {
     "NAMES": ["Shadowcraft","Luna","Miyako","Shinobu"],
@@ -14,7 +14,7 @@
   "shadowverse:Vampire": {
     "NAMES": ["Bloodcraft","Illya","Io","Vania"],
     "TEXT": [
-      "The Bloodcraft class has cards that lower your defense in order to activate powerful effects. NL Paying attention to the remaining HP of both you and your enemies is the key to victory.",
+      "The Bloodcraft class has cards that lower your health in order to activate powerful effects. NL Paying attention to the remaining HP of both you and your foes is the key to victory.",
       "Vengeance",
       "You will enter this state once you have no more than 1/2 of your HP left. Certain cards have extra effects with Vengeance."
     ]
@@ -22,13 +22,13 @@
   "shadowverse:Nemesis": {
     "NAMES": ["Portalcraft","Orchis","Ralmia","Ameth","Omniscient Kaiser"],
     "TEXT": [
-      "Portalcraft shifts reality with potent strategies. They can use the power of 'Resonance' and Artifact ('AF') cards to skillfully manipulate the battle. NL Try to activate multiple effects at once when you add AF cards to your deck and hand.",
+      "Portalcraft shifts reality with potent strategies. They can use the power of 'Resonance' and Artifact ('AF') cards to skillfully manipulate the battle. NL Take advantage of these effects by adding Artifacts to your draw pile and hand.",
       "Resonance",
       "Resonance effects occur when your draw pile has an even number of remaining cards. Certain cards have extra effects with Resonance."
     ]
   },
   "shadowverse:Royal": {
-    "NAMES": ["Swordcraft","Pecorine","Shizuru"],
+    "NAMES": ["Swordcraft","Pecorine","Shizuru","Monika"],
     "TEXT": [
       "Many loyal Followers stand at the ready of a Swordcraft leader. Summon Commanders and Officers to strengthen your army. NL Play them alongside each other to gain an advantage in battle."
     ]
@@ -36,7 +36,13 @@
   "shadowverse:Bishop": {
     "NAMES": ["Havencraft","Saren","Yukari","Saren (Summer)"],
     "TEXT": [
-      "The main strategy of Havencraft is to play Countdown 'Amulets' which will activate a few turns after they're played. NL You can overwhelm the opponent by using cards that sped up or activate the Amulets."
+      "The main strategy of Havencraft is to play Countdown 'Amulets' which will activate a few turns after they're played. NL You can overwhelm the opponent by using cards that speed up the countdown or destroy the Amulets to activate them."
+    ]
+  },
+    "shadowverse:Dragon": {
+    "NAMES": ["Dragoncraft","Kaya","Grea","Inori"],
+    "TEXT": [
+      "Entering a state of Overflow by gaining 3 Overflow points is a characteristic of Dragoncraft. Accumulate Overflow points to bolster and increase your maximum energy, then overwhelm your foes with high cost cards. "
     ]
   }
 }

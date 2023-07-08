@@ -1295,7 +1295,7 @@
     "NAME": "影之侵蚀",
     "DESCRIPTIONS": [
       "回合开始时失去 #b",
-      " 点生命。每打出 #b1 张 #y那塔拉的大树 时本伤害增加 #b3 点。"
+      " 点生命。每打出 #b1 张 #y那塔拉的大树 时本伤害增加 #b4 点。"
     ]
   },
   "shadowverse:DualbladePower": {
@@ -1684,7 +1684,7 @@
       " 次。"
     ]
   },
-  "shadowverse:BenevolentElf": {
+  "shadowverse:BenevolentElfPower": {
     "NAME": "恩眷精灵",
     "DESCRIPTIONS": [
       "本回合结束时，消灭所有生命值为 #b6 以下的敌人。如果你的生命值为最大生命值，改为消灭生命值为 #b18 以下的敌人。"
@@ -1849,6 +1849,189 @@
     "DESCRIPTIONS": [
       "回合开始时增加 #b",
       " 张本回合耗能为0且带有消耗的 #y香风执行者·威默尔 到手中。"
+    ]
+  },
+  "shadowverse:OverflowPower": {
+    "NAME": "未觉醒",
+    "DESCRIPTIONS": [
+      "觉醒值达到3时进入觉醒状态，回合开始时获得 [E] 。当前觉醒值 #b",
+      " /3。",
+      "回合开始时获得 [E] 。 觉醒值达到3时进入完全觉醒状态，回合开始时获得 [E] [E] 。 当前觉醒值 #b",
+      " /3。",
+      "回合开始时获得 [E] [E] 。",
+      "觉醒",
+      "完全觉醒"
+    ]
+  },
+  "shadowverse:RahabPower": {
+    "NAME": "勒哈布",
+    "DESCRIPTIONS": [
+      "回合开始时，获得剩余能量的力量 #b",
+      " 次。"
+    ]
+  },
+  "shadowverse:ShipsbanePlesiosaurusPower": {
+    "NAME": "狂涛蛇颈龙",
+    "DESCRIPTIONS": [
+      "每当丢弃手牌时，对随机敌人造成 #b4 点伤害。"
+    ]
+  },
+  "shadowverse:DracomancerRitesPower": {
+    "NAME": "龙巫女的仪式",
+    "DESCRIPTIONS": [
+      "每当丢弃1张手牌时，抽 #b",
+      " 张牌。"
+    ]
+  },
+  "shadowverse:GoldenDragonDenPower": {
+    "NAME": "黄金龙的巢穴",
+    "DESCRIPTIONS": [
+      "回合开始时，随机丢弃 #b",
+      " 张耗能最小的牌，并抽 #b",
+      " 张牌。"
+    ]
+  },
+  "shadowverse:PolyphonicRoarPower": {
+    "NAME": "不绝的龙吼",
+    "DESCRIPTIONS": [
+      "回合开始时，增加 #b",
+      " 张耗能为0的 #y风暴巨龙 到手中。",
+      " 张耗能为0的 #y风暴巨龙+ 到手中。"
+    ]
+  },
+  "shadowverse:ResplendentPhoenixPower": {
+    "NAME": "凤凰庭院",
+    "DESCRIPTIONS": [
+      "抽到的卡牌耗能变为一半。"
+    ]
+  },
+  "shadowverse:LumiorePower": {
+    "NAME": "金色威信·璐米欧儿",
+    "DESCRIPTIONS": [
+      "每当丢弃1张手牌时，对全体敌人造成 #b",
+      " 点伤害。"
+    ]
+  },
+  "shadowverse:NoirNBlancPower": {
+    "NAME": "黑白乱舞·诺尔与卜朗",
+    "DESCRIPTIONS": [
+      "回合结束时，如果已 #y完全觉醒 ，获得 #b1 层 #y残影 、 #y人工制品 、 #y免疫能力伤害 和 #b",
+      " 点格挡。下回合开始，如果格挡没有完全消失，对随机敌人造成 #b",
+      " 点伤害。"
+    ]
+  },
+  "shadowverse:PrimeDragonKeeperPower": {
+    "NAME": "原初驭龙使",
+    "DESCRIPTIONS": [
+      "每当打出耗能为1以下的龙族攻击牌时，对随机敌人造成 #b",
+      " 点伤害。如果已 #y觉醒 ,回合结束时获得 #b",
+      " 点 #y火焰屏障 。"
+    ]
+  },
+  "shadowverse:DragonsongFlutePower": {
+    "NAME": "唤龙魔笛",
+    "DESCRIPTIONS": [
+      "每当抽到耗能为1以下的攻击、状态或诅咒牌时，将其消耗并增加 #b1 张 #y地狱火魔龙 到手中。"
+    ]
+  },
+  "shadowverse:RowenPower": {
+    "NAME": "屠龙之枪",
+    "DESCRIPTIONS": [
+      "造成的攻击伤害增加 #b",
+      " 点。此效果 #b",
+      " 回合后失效。"
+    ]
+  },
+  "shadowverse:WildfangDragonewtPower": {
+    "NAME": "荒牙龙少女",
+    "DESCRIPTIONS": [
+      "本回合内每当丢弃1张手牌时，对随机敌人造成 #b",
+      " 点伤害。"
+    ]
+  },
+  "shadowverse:ByronPower": {
+    "NAME": "钢甲龙骑士·拜伦",
+    "DESCRIPTIONS": [
+      "本回合内，打出攻击牌时获得 #b",
+      " 点 #y力量 。如果是机械牌，额外获得 #b",
+      " 点 #y敏捷 。"
+    ]
+  },
+  "shadowverse:LavateinnDragonAttackFormPower": {
+    "NAME": "莱瓦汀龙·攻击模式",
+    "DESCRIPTIONS": [
+      "本回合内每打出1张武装攻击牌，获得 #b",
+      " 点 #y力量 和 #y敏捷 。"
+    ]
+  },
+  "shadowverse:LavateinnDragonDefenseFormPower": {
+    "NAME": "莱瓦汀龙·防御模式",
+    "DESCRIPTIONS": [
+      "回合结束时，回复2点生命。本回合受到的伤害减少 #b",
+      " 点。"
+    ]
+  },
+  "shadowverse:ZoePower": {
+    "NAME": "伟大的调停者·佐伊",
+    "DESCRIPTIONS": [
+      "回合结束为止，你受到的伤害变为0。只在打出的回合有效。战斗结束时，回复 #b",
+      " 点生命。"
+    ]
+  },
+  "shadowverse:DragonplateWarriorPower": {
+    "NAME": "龙铠战士",
+    "DESCRIPTIONS": [
+      "每当打出非攻击牌时，对全体敌人造成 #b",
+      " 点伤害。"
+    ]
+  },
+  "shadowverse:DragonHoardPower": {
+    "NAME": "龙之财宝",
+    "DESCRIPTIONS": [
+      "回合开始或打出攻击牌时，减少 #b1 倒计时。 倒计时结束后，失去本效果，消耗手牌、弃牌堆、抽牌堆中所有攻击牌，并增加对应数量的 #y地狱炎龙 到手牌、弃牌堆、抽牌堆中。"
+    ]
+  },
+  "shadowverse:RomeliaPower": {
+    "NAME": "遗留的电击",
+    "DESCRIPTIONS": [
+      "回合开始时，获得 #b2 点 #y临时敏捷 和 #b1 点能量。此效果在 #b",
+      " 回合后失效。"
+    ]
+  },
+  "shadowverse:DragonTagPower": {
+    "NAME": "龙",
+    "DESCRIPTIONS": [
+      "汝为龙，有罪！"
+    ]
+  },
+  "shadowverse:JervaPower": {
+    "NAME": "龙魂战将·吉尔沃",
+    "DESCRIPTIONS": [
+      "本场战斗中你的生命值不能高于最大生命值的一半。战斗结束时返还因这个效果失去的生命值。 NL 回合结束时对随机敌人造成其最大生命值 #b25% 的伤害(不会低于 #b25 点)。"
+    ]
+  },
+  "shadowverse:Jerva2Power": {
+    "NAME": "造极霸龙·吉尔沃",
+    "DESCRIPTIONS": [
+      "回合结束时，如果本回合没有打出任何攻击牌，对随机敌人造成其最大生命值 #b25% 的伤害(不会低于 #b25 点)。"
+    ]
+  },
+  "shadowverse:Masamune2Power": {
+    "NAME": "独眼龙·伊达政宗",
+    "DESCRIPTIONS": [
+      "每当打出攻击牌时，对随机敌人造成 #b4 点伤害。"
+    ]
+  },
+  "shadowverse:Forte4Power": {
+    "NAME": "黑翼霸者·法露特",
+    "DESCRIPTIONS": [
+      "获得力量或敏捷时，依顺序触发以下效果，上限为3次: NL (1)下回合开始时额外获得 #b1 点能量 NL (2)给予随机敌人 #b2 层易伤和虚弱 NL (3)获得 #b1 层缓冲。"
+    ]
+  },
+  "shadowverse:FafnirPower": {
+    "NAME": "邪智之龙·法芙娜",
+    "DESCRIPTIONS": [
+      "回合结束时，对随机敌人造成 #b20 点伤害。本回合每打出1张攻击牌，此伤害减少 #b4 点。"
     ]
   }
 }

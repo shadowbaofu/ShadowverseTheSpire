@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardHelper;
+import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
@@ -22,6 +23,7 @@ public class ArmedPotion extends CustomPotion {
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString("shadowverse:ArmedPotion");
     public static final String NAME = potionStrings.NAME;
     public static final String[] DESCRIPTIONS = potionStrings.DESCRIPTIONS;
+    public static final String[] TEXT = (CardCrawlGame.languagePack.getUIString("shadowverse:applyEffect")).TEXT;
 
 
     public ArmedPotion() {
@@ -42,7 +44,7 @@ public class ArmedPotion extends CustomPotion {
         if ((AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT) {
             addToBot(new GainBlockAction(AbstractDungeon.player,9));
             addToBot(new SelectCardsInHandAction(this.potency, TEXT[0], false, true, card -> {
-                return card.type == AbstractCard.CardType.ATTACK;
+                return CardLibrary.getCard(card.cardID)!= null && CardLibrary.getCard(card.cardID).type == AbstractCard.CardType.ATTACK;
             }, abstractCards -> {
                 for (AbstractCard c : abstractCards) {
                     CardModifierManager.addModifier(c, new ArmedMod());

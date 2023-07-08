@@ -42,15 +42,15 @@ public class Rosa
 
 
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new SFXAction("Rosa"));
+        addToBot(new SFXAction("Rosa"));
         addToBot(new GainBlockAction(p,this.block));
-        addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) p, (AbstractCreature) p, (AbstractPower) new RosaPower((AbstractCreature) p, this.magicNumber), this.magicNumber));
-        addToBot((AbstractGameAction)new SelectCardsInHandAction(1,TEXT[0],false,false, card -> {
+        addToBot( new ApplyPowerAction( p,  p,  new RosaPower( p, this.magicNumber), this.magicNumber));
+        addToBot(new SelectCardsInHandAction(1,TEXT[0],false,false, card -> {
             return true;
         }, abstractCards ->{
             for (AbstractCard c:abstractCards){
-                addToBot((AbstractGameAction)new ExhaustSpecificCardAction(c,p.hand));
-                addToBot((AbstractGameAction)new MakeTempCardInDrawPileAction(c.makeStatEquivalentCopy(),1,true,true,false));
+                addToBot(new ExhaustSpecificCardAction(c,p.hand));
+                addToBot(new MakeTempCardInDrawPileAction(c.makeStatEquivalentCopy(),1,true,true,false));
             }
         } ));
     }

@@ -1653,6 +1653,13 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("Doublame", new Sfx(voicePath + "Doublame.wav"));
             reflectedMap.put("Jeanne6", new Sfx(voicePath + "Jeanne6.wav"));
             reflectedMap.put("JewelShine", new Sfx(voicePath + "JewelShine.wav"));
+            reflectedMap.put("SisterlyBonds", new Sfx(voicePath + "SisterlyBonds.wav"));
+            reflectedMap.put("Evamia", new Sfx(voicePath + "Evamia.wav"));
+            reflectedMap.put("Shin", new Sfx(voicePath + "Shin.wav"));
+            reflectedMap.put("ChaosAura", new Sfx(voicePath + "ChaosAura.wav"));
+            reflectedMap.put("Odin2", new Sfx(voicePath + "Odin2.wav"));
+            reflectedMap.put("Odin2_Acc", new Sfx(voicePath + "Odin2_Acc.wav"));
+            reflectedMap.put("Grimnir2", new Sfx(voicePath + "Grimnir2.wav"));
         }
         if (Loader.isModLoaded("CardAugments")) {
             AugmentHelper.register();
@@ -2974,6 +2981,13 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard(new PeckishOwlcat(0));
         BaseMod.addCard(new Doublame());
         BaseMod.addCard(new JewelShine());
+        BaseMod.addCard(new SpineLucille());
+        BaseMod.addCard(new SisterlyBonds());
+        BaseMod.addCard(new Lazuli());
+        BaseMod.addCard(new Evamia());
+        BaseMod.addCard(new Shin());
+        BaseMod.addCard(new ChaosAura());
+        BaseMod.addCard(new Odin2_Copy());
         logger.info("Success");
     }
 

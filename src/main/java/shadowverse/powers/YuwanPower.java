@@ -47,18 +47,18 @@ public class YuwanPower
     }
 
     public void atStartOfTurnPostDraw() {
-        addToBot((AbstractGameAction)new RemoveSpecificPowerAction(this.owner,this.owner,this));
-        AbstractCreature m = (AbstractCreature) AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
+        addToBot(new RemoveSpecificPowerAction(this.owner,this.owner,this));
+        AbstractCreature m = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
         if (this.owner instanceof AbstractShadowversePlayer){
             int resonanceCount = ((AbstractShadowversePlayer) this.owner).resonanceCount;
             if (resonanceCount>=5){
-                addToBot((AbstractGameAction)new SFXAction("YuwanPower"));
-                addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new BorderFlashEffect(Color.ROYAL, true)));
-                addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new MiracleEffect(Color.SKY.cpy(),Color.WHITE.cpy(),"HEAL_3")));
-                addToBot(new DamageAction(m, new DamageInfo((AbstractCreature)this.owner, this.amount, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.POISON));
+                addToBot(new SFXAction("YuwanPower"));
+                addToBot(new VFXAction(new BorderFlashEffect(Color.ROYAL, true)));
+                addToBot(new VFXAction(new MiracleEffect(Color.SKY.cpy(),Color.WHITE.cpy(),"HEAL_3")));
+                addToBot(new DamageAction(m, new DamageInfo(this.owner, this.amount, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.POISON));
             }
             if (resonanceCount>=10){
-                addToBot(new DamageAction(m, new DamageInfo((AbstractCreature)this.owner, this.amount, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.POISON));
+                addToBot(new DamageAction(m, new DamageInfo(this.owner, this.amount, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.POISON));
             }
         }
     }

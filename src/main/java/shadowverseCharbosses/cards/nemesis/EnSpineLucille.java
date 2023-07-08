@@ -31,9 +31,9 @@ public class EnSpineLucille extends AbstractBossCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new EnemyRainbowCardEffect()));
-        addToBot((AbstractGameAction)new SFXAction("SpineLucille"));
-        addToBot((AbstractGameAction)new DamageAction((AbstractCreature)p, new DamageInfo((AbstractCreature)m, this.damage), AbstractGameAction.AttackEffect.FIRE));
+        addToBot(new VFXAction(new EnemyRainbowCardEffect()));
+        addToBot(new SFXAction("SpineLucille"));
+        addToBot(new DamageAction(p, new DamageInfo(m, this.damage), AbstractGameAction.AttackEffect.FIRE));
     }
 
     public void upgrade() {

@@ -62,16 +62,16 @@
   },
   "shadowverse:FireChain": {
     "NAME": "Fire Chain",
-    "DESCRIPTION": "Spellboost: \bRepeat 1 time(s). NL Deal !D! damage to a random enemy for each Spellboost.",
+    "DESCRIPTION": "Deal !D! damage to a random enemy for each Spellboost. NL Spellboost: \bRepeat 1 more time.",
     "EXTENDED_DESCRIPTION": [
-      " NL (Apply",
-      " time !D! damage.)"
+      " NL (Deal !D! damage ",
+      " times.)"
     ]
   },
   "shadowverse:GigantChimera": {
     "NAME": "Giant Chimera",
-    "DESCRIPTION": "Spellboost: Deal \b+7 more damage. NL Deal a pool of !D! damage to all enemies, starting with the enemy with the lowest HP. Deal damage equal to the enemy's HP and Block in order.",
-    "UPGRADE_DESCRIPTION": "Spellboost: Deal \b+9 more damage. NL Deal a pool of !D! damage to all enemies, starting with the enemy with the lowest HP. Deal damage equal to the enemy's HP and Block in order."
+    "DESCRIPTION": "Deal a pool of !D! damage to all enemies, starting with the enemy with the lowest HP. Deal damage equal to the enemy's HP and Block in order. NL Spellboost: Deal \b+7 more damage.",
+    "UPGRADE_DESCRIPTION": "Deal a pool of !D! damage to all enemies, starting with the enemy with the lowest HP. Deal damage equal to the enemy's HP and Block in order. NL Spellboost: Deal \b+9 more damage."
   },
   "shadowverse:OmenOfTruth": {
     "NAME": "Raio, Omen of Truth",
@@ -120,8 +120,8 @@
   },
   "shadowverse:TruthsAdjudication": {
     "NAME": "Truth's Adjudication",
-    "DESCRIPTION": "Retain. NL Exhaust. NL Gain 3X Block. Deal 3Y damage to a random enemy. Heal Z HP. NL X, Y and Z equal the number of Spellboosts, split randomly between the three effects.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Exhaust. NL Gain 4X Block. Deal 4Y damage to a random enemy. Heal 2Z HP. NL X, Y and Z equal the number of Spellboosts, split randomly between the three effects.",
+    "DESCRIPTION": "Retain. NL Exhaust. NL Gain 3(X) Block. Deal 3(Y) damage to a random enemy. Heal Z HP. NL X, Y and Z equal the number of Spellboosts, split randomly between the three effects.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Exhaust. NL Gain 4(X) Block. Deal 4(Y) damage to a random enemy. Heal 2(Z) HP. NL X, Y and Z equal the number of Spellboosts, split randomly between the three effects.",
     "EXTENDED_DESCRIPTION": [
       " NL (Current Spellboosts: ",
       " )"
@@ -299,7 +299,7 @@
   },
   "shadowverse:SonicFour": {
     "NAME": "Delta Cannon",
-    "DESCRIPTION": "Machina. NL Retain. NL Deal !D! damage. NL If you have played at least 4 Machina cards this turn, put 1 *Delta *Cannon into your hand at the end of your turn (not stackable). NL Exhaust."
+    "DESCRIPTION": "Machina. NL Retain. NL Deal !D! damage. NL If you have played at least 4 Machina cards during your turn, put 1 *Delta *Cannon into your hand next turn (only once per turn, not stackable). NL Exhaust."
   },
   "shadowverse:Tetra": {
     "NAME": "Tetra, Sapphire Rebel",
@@ -2069,7 +2069,7 @@
   },
   "shadowverse:BelphometCard3": {
     "NAME": "Belphomet, Ultimate Creator",
-    "DESCRIPTION": "Machina. NL Fusion: Machina. NL When cards are fused to this card, if it's the 2nd or 4th time, use 1 Energy and put 1 *Armored *Tentacle into your hand. If it's the 3rd or 5th time, use 1 Energy and put 1 *Assault *Tentacle into your hand. NL NL ---------- NL NL Gain !B! Block. NL Put 1 *Tisiphone, *Malignance *Lives into your hand. If fused with at least 1 card, put 1 *Alecto, *Dissonance *Lives into your hand. If fused with at least 2 cards, put 1 *Megaera, *Indignance *Lives into your hand."
+    "DESCRIPTION": "Machina. NL Fusion: Machina. NL The 2nd or 4th time cards are fused to this card, use 1 Energy and put 1 *Armored *Tentacle into your hand. The 3rd or 5th time, use 1 Energy and put 1 *Assault *Tentacle into your hand. NL NL ---------- NL NL Gain !B! Block. NL Put 1 *Tisiphone, *Malignance *Lives into your hand. If fused with at least 1 card, put 1 *Alecto, *Dissonance *Lives into your hand. If at least 2 cards, put 1 *Megaera, *Indignance *Lives into your hand."
   },
   "shadowverse:TisiphoneCard": {
     "NAME": "Tisiphone, the Malignant",
@@ -2297,8 +2297,8 @@
   },
   "shadowverse:Yuwan": {
     "NAME": "Yuwan, Dimensional Avenger",
-    "DESCRIPTION": "Gain !B! Block. NL Exhaust 1 card in your hand, add a copy of that card to your draw pile and draw 1 card. NL If Resonance has been active 5 times or more this combat, deal !M! damage to a random enemy next turn. NL If 10 or more times, deal !M! damage again.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Exhaust 1 card in your hand, add a copy of that card to your draw pile and draw 1 card. NL Add 1 *Analyzing *Artifact to your hand. NL If Resonance has been active 5 times or more this combat, deal !M! damage to a random enemy next turn. NL If 10 or more times, deal !M! damage again.",
+    "DESCRIPTION": "Gain !B! Block. NL Exhaust 1 card in your hand, add a copy of that card to your draw pile and draw 1 card. NL If Resonance has been active 5 or more times this combat, deal !M! damage to a random enemy next turn. NL If 10 or more times, deal !M! damage again.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Exhaust 1 card in your hand, add a copy of that card to your draw pile and draw 1 card. NL Add 1 *Analyzing *Artifact to your hand. NL If Resonance has been active 5 or more times this combat, deal !M! damage to a random enemy next turn. NL If 10 or more times, deal !M! damage again."
     "EXTENDED_DESCRIPTION": [
       " NL ( Resonance has been active ",
       " times.)"
@@ -5055,7 +5055,7 @@
   },
   "shadowverse:Alice": {
     "NAME": "Alice, Wandering Dreamer",
-    "DESCRIPTION": "Deal !D! damage. NL If you have upgraded more than 3 Attack cards this combat，upgrade this card and draw 2 cards. NL If you have upgraded more than 7 Attack cards, double the damage. ",
+    "DESCRIPTION": "Deal !D! damage. NL If you have upgraded more than 3 Attack cards this combat, upgrade this card and draw 2 cards. NL If you have upgraded more than 7 Attack cards, double the damage. ",
     "UPGRADE_DESCRIPTION": "Deal !D! damage and gain 1 Energy. NL If you have upgraded more than 3 Attack cards in this combat draw 2 cards. NL If you have upgraded more than 7 Attack cards, double the damage. "
   },
   "shadowverse:CrimsonDesire": {
@@ -5304,7 +5304,7 @@
   },
   "shadowverse:Garuda4_Cry": {
     "NAME": "Garuda, Winged Radiance (Crystallized)",
-    "DESCRIPTION": "Countdown 1: Draw 1 card. "
+    "DESCRIPTION": "Countdown 1 : Draw 1 card. "
   },
   "shadowverse:Garuda4": {
     "NAME": "Garuda, Winged Radiance",
@@ -6200,7 +6200,7 @@
     "DESCRIPTION": "Add 1 *Crimson *Sorcery to your hand. NL Deal 3 damage for each Earth_Essence you have. NL Earth_Rite 2: Deal !D! damage to all enemies. NL If you have consumed 7 or more Earth Essences this combat, add 1 *Miracle and *Evolution *Point to your hand.",
     "EXTENDED_DESCRIPTION": [
       " NL (Consumed ",
-      " Earth Essence)"
+      " Earth Essence.)"
     ]
   },
   "shadowverse:BindingRitual": {
@@ -6260,5 +6260,46 @@
   "shadowverse:JewelShine": {
     "NAME": "Jewel Shine",
     "DESCRIPTION": "Put !M! Power from the draw pile into your hand NL Gain 1 Strength, gain 3 Dexterity and Exhaust this card if 5 or more Amulets with Countdown have been played this combat."
+ },
+  "shadowverse:SpineLucille": {
+    "NAME": "Spinaria & Lucille, Keepers",
+    "DESCRIPTION": "AF. NL Deal !D! damage. NL If there are six Artifacts with different names in the exhaust pile, deal !M! damage to all enemies. NL Exhaust."
+  },
+  "shadowverse:SisterlyBonds": {
+    "NAME": "Sisterly Bonds",
+    "DESCRIPTION": "Choose: NL *Spinaria's *Artifact NL *Spinaria *& *Lucille, *Keepers NL Add 1 of the chosen cards to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Choose: NL *Spinaria's *Artifact NL *Spinaria *& *Lucille, *Keepers NL Add 1 of the chosen cards to your hand."
+  },
+  "shadowverse:Lazuli": {
+    "NAME": "Lazuli, Gateway Liberator",
+    "DESCRIPTION": "AF. NL Gain !B! Block. NL Shuffle !M! *Radiant *Artifacts into the draw pile. NL Put 1 Skill card from the draw pile into your hand. NL If there are 6 or more Artifacts with different names in your exhaust pile, add 1 *Evolution *Point to your hand."
+  },
+  "shadowverse:Evamia": {
+    "NAME": "Evamia, Spinner of Threads",
+    "DESCRIPTION": "AF. NL Gain !B! Block. NL Shuffle !M! *Mystic *Artifacts into the draw pile. NL If there are 6 or more Artifacts with different names in your exhaust pile, prevent the next time you would lose HP."
+  },
+  "shadowverse:Shin": {
+    "NAME": "Shin, Enemy of Chaos",
+    "DESCRIPTION": "Gain !B! Block. NL If Resonance has been active 5 or more times this combat, apply 2 Weak and Vulnerable to all enemies. NL If 10 or more times, deal !D! damage to all enemies. NL If 15 or more times, gain !M! additional Block. NL If 20 or more times, subtract 1 from the cost of all cards this combat.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Resonance has been active",
+      " times.)"
+    ]
+  },
+  "shadowverse:ChaosAura": {
+    "NAME": "Chaos, Conflagrate",
+    "DESCRIPTION": "Deal !D! damage for each *Chaos, *Conflagrate played to a random enemy and draw 1 card. NL Shuffle 3 copies of this card into the draw pile. NL If 5 or more have been played, randomly activate the following effects instead: NL 1. Deal !M! damage to a random enemy. Gain !B! Block. NL 2. Apply 2 Vulnerable to a random enemy. NL 3. All cards in your hand cost 1 less this turn. NL If it's the 5th turn or later, apply ALL 3 effects instead. NL Exhaust."
+  },
+  "shadowverse:Odin2": {
+    "NAME": "Odin, Advent of Ragnarok",
+    "DESCRIPTION": "Accelerate 2: Gain 1 Intangible. NL Exhaust all Attack cards in your hand, add an *Odin, *Advent *of *Ragnarok to your hand without Accelerate to your hand. It costs 1 less for each card Exhausted. NL  NL ------------------- NL  NL Deal !D! damage. NL Gain 1 Intangible."
+  },
+  "shadowverse:Odin2_Copy": {
+    "NAME": "Odin, Advent of Ragnarok",
+    "DESCRIPTION": "Deal !D! damage. NL Gain 1 Intangible."
+  },
+  "shadowverse:Grimnir2": {
+    "NAME": "Grimnir, Divine Stormspear",
+    "DESCRIPTION": "Deal !D! damage to a random enemy twice. NL If there are 7 or more *Evolution Points in the exhaust pile, deal !D! damage to a random enemy 4 times instead and increase this card's damage by 12."
   }
 }

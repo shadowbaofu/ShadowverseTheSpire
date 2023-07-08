@@ -49,7 +49,7 @@ public class RosaPower
 
     public void onChangeStance(AbstractStance oldStance, AbstractStance newStance) {
         if (newStance.ID.equals(Resonance.STANCE_ID)){
-            addToBot((AbstractGameAction)new SFXAction("RosaPower"));
+            addToBot(new SFXAction("RosaPower"));
             addToBot(new GainBlockAction(this.owner,this.amount));
         }
     }
@@ -57,6 +57,10 @@ public class RosaPower
     @Override
     public void atStartOfTurn() {
         addToBot(new DrawCardAction(1));
+    }
+
+    @Override
+    public void atStartOfTurnPostDraw() {
         addToBot(new RemoveSpecificPowerAction(this.owner,this.owner,this));
     }
 }

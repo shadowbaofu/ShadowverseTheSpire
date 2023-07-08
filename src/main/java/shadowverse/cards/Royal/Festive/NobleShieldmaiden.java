@@ -68,6 +68,14 @@ public class NobleShieldmaiden extends CustomCard {
         super.update();
     }
 
+    public void triggerOnGlowCheck() {
+        if (Shadowverse.Accelerate(this) && this.type == CardType.SKILL) {
+            this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();
+        } else {
+            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+        }
+    }
+
     @Override
     public AbstractCard makeCopy() {
         return new NobleShieldmaiden();

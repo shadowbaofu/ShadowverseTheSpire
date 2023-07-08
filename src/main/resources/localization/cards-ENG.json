@@ -5055,7 +5055,7 @@
   },
   "shadowverse:Alice": {
     "NAME": "Alice, Wandering Dreamer",
-    "DESCRIPTION": "Deal !D! damage. NL If you have upgraded more than 3 Attack cards this combat，upgrade this card and draw 2 cards. NL If you have upgraded more than 7 Attack cards, double the damage. ",
+    "DESCRIPTION": "Deal !D! damage. NL If you have upgraded more than 3 Attack cards this combat, upgrade this card and draw 2 cards. NL If you have upgraded more than 7 Attack cards, double the damage. ",
     "UPGRADE_DESCRIPTION": "Deal !D! damage and gain 1 Energy. NL If you have upgraded more than 3 Attack cards in this combat draw 2 cards. NL If you have upgraded more than 7 Attack cards, double the damage. "
   },
   "shadowverse:CrimsonDesire": {

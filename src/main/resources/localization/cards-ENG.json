@@ -517,6 +517,10 @@
   },
   "shadowverse:StarBright": {
     "NAME": "Starbright Deity",
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4ef61467c616804746e19a9e6819b87330b2d36c
     "DESCRIPTION": "Add to your hand copies of the 3 left-most cards in your hand, in the order they were added."
   },
   "shadowverse:TheWorld": {

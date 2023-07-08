@@ -39,8 +39,8 @@
    public void onPlayerEndTurn() {
      if (this.counter == 8) {
        flash();
-       addToBot((AbstractGameAction)new RelicAboveCreatureAction((AbstractCreature)AbstractDungeon.player, (AbstractRelic)this));
-       addToBot((AbstractGameAction)new DamageAllEnemiesAction(null, 
+       addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, (AbstractRelic)this));
+       addToBot(new DamageAllEnemiesAction(null, 
              
              DamageInfo.createDamageMatrix(61, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.BLUNT_HEAVY));
        stopPulse();

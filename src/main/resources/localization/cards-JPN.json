@@ -1209,8 +1209,8 @@
   },
   "shadowverse:Minthe": {
     "NAME": "魂の番人・ミント",
-    "DESCRIPTION": "墓場 20を得る。 NL ターン開始時、 墓場 20を失う。 NL エセリアル 。",
-    "UPGRADE_DESCRIPTION": "墓場 20を得る。 NL ターン開始時、 墓場 20を失う"
+    "DESCRIPTION": "墓場 20を得る。 NL このターン、自分が ネクロマンス をした時、 墓場 を+ ネクロマンス の値する。 NL ターン開始時、 墓場 20を失う。 NL エセリアル 。",
+    "UPGRADE_DESCRIPTION": "墓場 20を得る。 NL このターン、自分が ネクロマンス をした時、 墓場 を+ ネクロマンス の値する。  NL ターン開始時、 墓場 20を失う"
   },
   "shadowverse:Fafnir": {
     "NAME": "屍竜・ファフニール",
@@ -3863,7 +3863,7 @@
   },
   "shadowverse:ShadowCorrosion": {
     "NAME": "影の侵食",
-    "DESCRIPTION": "自然 。 NL 敵は「ターン開始時、この戦闘中にプレイしていた *ナテラの大樹 の数かける3のHPを失う」を持つ。 NL 敵がすでにこれを持っているなら、この戦闘中にプレイしていた  *ナテラの大樹 の数かける3のダメージを与える。 NL 廃棄 。"
+    "DESCRIPTION": "自然 。 NL 敵は「ターン開始時、この戦闘中にプレイしていた *ナテラの大樹 の数かける4のHPを失う」を持つ。 NL 敵がすでにこれを持っているなら、この戦闘中にプレイしていた  *ナテラの大樹 の数かける4のダメージを与える。 NL 廃棄 。"
   },
   "shadowverse:Valdain": {
     "NAME": "呪われし影・ヴァイディ",
@@ -4604,18 +4604,7 @@
   },
   "shadowverse:BanCardView": {
     "NAME": "",
-    "DESCRIPTION": "カードパック一覧",
-    "EXTENDED_DESCRIPTION": [
-      "ベーシック",
-      "フォロワー",
-      "進化",
-      "財宝",
-      "レヴィオン",
-      "機械・自然",
-      "潜伏",
-      "金貨",
-      "ヒーロー"
-    ]
+    "DESCRIPTION": "カードパック一覧"
   },
   "shadowverse:GlitteringGold": {
     "NAME": "輝く金貨",
@@ -4752,7 +4741,7 @@
   },
   "shadowverse:Magachiyo": {
     "NAME": "剪定の咎人・マガチヨ",
-    "DESCRIPTION": "八獄 NL !D! ダメージを与える。 NL このターン中にプレイしていたカードの数を+1する。 NL この戦闘中に1ターンにプレイしていたカードの数が4以上のターン数が3以上なら、 筋力 と 敏捷性 2を得、手札の 八獄 アタックのダメージとブロックを+ !M! する。",
+    "DESCRIPTION": "八獄 NL !D! ダメージを与える。 NL このターン中にプレイしていたカードの数を+1する。 NL この戦闘中に1ターンに4枚のカードをプレイしていた回数が3以上なら、 筋力 と 敏捷性 2を得、手札の 八獄 アタックのダメージとブロックを+ !M! する。",
     "EXTENDED_DESCRIPTION": [
       " NL (4枚プレイのターン数は ",
       " 。)"
@@ -4777,7 +4766,7 @@
   },
   "shadowverse:Wimael": {
     "NAME": "香風の執行者・ウィムエル",
-    "DESCRIPTION": "八獄 · 保留 NL 保留 される度、コストを1下げる。 NL これが引かれる度、これの複製品1枚を手札に加える。 NL !D! ダメージを与える。"
+    "DESCRIPTION": "八獄 NL ブロックがないスキルをプレイする度、コストを1下げる 。 NL !D! ダメージを与える。 NL 次のターン開始時、コスト０かつ 廃棄 を持つ複製品1枚を手札に加える。"
   },
   "shadowverse:BenevolentElf": {
     "NAME": "ベネディクションエルフ",
@@ -4872,7 +4861,7 @@
     "DESCRIPTION": "八獄 NL 自分は「 葬送 する度、敵全体に10ダメージを与える(上限は1ターンに3回)」を持つ。 NL カード2枚を 葬送 し、 リアニメイト 1、2。 NL エセリアル 。",
     "UPGRADE_DESCRIPTION":"八獄 NL 自分は「 葬送 する度、敵全体に10ダメージを与える(上限は1ターンに3回)」を持つ。 NL カード2枚を 葬送 し、 リアニメイト 1、2。"
   },
-  "shadowverse:DeathScytheHound": {
+  "shadowverse:DeathscytheHound": {
     "NAME": "デスサイズハウンド",
     "DESCRIPTION": "敵全体に !D! ダメージを与える。 NL ネクロマンス 8 もう一回ダメージを与える。"
   },
@@ -4987,7 +4976,7 @@
   },
   "shadowverse:Radiel": {
     "NAME": "武皇の執行者・レーディエル",
-    "DESCRIPTION": "八獄 NL !D! ダメージを与える。 NL 連携 20 ダメージを3回与える。 NL 弱体化 と 脱力 !M! を与える。 NL 手札、山札、捨札、廃棄札の アップグレード したアタックまたはパワーが7枚以上なら、デバフを敵全体に与える。",
+    "DESCRIPTION": "八獄 NL !D! ダメージを与える( !M! 倍の 筋力 ボーナスが適用される)。 NL 連携 20 ダメージを3回与える。 NL 弱体化 と 脱力 !M! を与える。 NL 手札、山札、捨札、廃棄札の アップグレード したアタックまたはパワーが7枚以上なら、デバフを敵全体に与える。",
     "EXTENDED_DESCRIPTION": [
       " NL （連携数：",
       ")"
@@ -5263,8 +5252,8 @@
   },
   "shadowverse:Cornelius": {
     "NAME": "屍術王・コルネリウス",
-    "DESCRIPTION": "学園 NL !B! ブロック を得る 。 NL 敵全体に 弱体化 と 脱力 2を与える。 NL コスト1のネクロマンサーでないアタックをランダムに4枚を手札に加える。",
-    "UPGRADE_DESCRIPTION":"学園 NL !B! ブロック を得る 。 NL 敵全体に 弱体化 と 脱力 2を与える。 NL コスト1のネクロマンサーでないアタックをランダムに4枚を手札に加える。 NL *王たる屍術 1枚を手札に加える。"
+    "DESCRIPTION": "学園 NL !B! ブロック を得る 。 NL 敵全体に 弱体化 と 脱力 2を与える。 NL コスト1のネクロマンサーでないアタックをランダムに4枚を手札に加える。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION":"学園 NL !B! ブロック を得る 。 NL 敵全体に 弱体化 と 脱力 2を与える。 NL コスト1のネクロマンサーでないアタックをランダムに4枚を手札に加える。 NL *王たる屍術 1枚を手札に加える。 NL 廃棄 。"
   },
   "shadowverse:CorpseKingCommand": {
     "NAME": "王たる屍術",
@@ -5342,7 +5331,7 @@
   },
   "shadowverse:Gawain": {
     "NAME": "約束の栄光・ガウェイン",
-    "DESCRIPTION": "!D! ダメージを与える。 NL 連携 5：追加でカード1枚を引く。 NL 連携 10：これが引かれた場合、アップグレードする。 NL 連携 15：ダメージを2倍にする。 NL 連携 20：次に受けるダメージを0にする。",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 連携 5：追加でカード1枚を引く。 NL 連携 10：これが引かれた場合、アップグレードする。 NL 連携 15：ダメージを2倍にする。 NL 連携 20：次に受けるダメージを0にする。 NL あと !stslib:ex! 回使って廃棄する。",
     "EXTENDED_DESCRIPTION": [
       " NL （連携数：",
       ")"
@@ -5351,5 +5340,138 @@
   "shadowverse:Weiss": {
     "NAME": "選別の教員・ヴァイス",
     "DESCRIPTION": "学園 NL このターン、敵からのデバフを受けない。 NL このターン、敵はバフを受けない。"
+  },
+  "shadowverse:BishopPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "ベーシック",
+      "アミュレット1",
+      "アミュレット2",
+      "邪神",
+      "機械&獅子",
+      "回復1",
+      "回復2",
+      "守護"
+    ]
+  },
+  "shadowverse:ElfPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "ベーシック",
+      "フェアリー",
+      "セッカ",
+      "コンボ1",
+      "自然&機械",
+      "バウンス",
+      "コンボ2",
+      "密林&乗り物"
+    ]
+  },
+  "shadowverse:NecroPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "ベーシック",
+      "葬送",
+      "ゴースト",
+      "ラストワード",
+      "機械",
+      "自然",
+      "ネクロマンス",
+      "墓場"
+    ]
+  },
+  "shadowverse:NemesisPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "ベーシック",
+      "アーティファクト1",
+      "八獄",
+      "機械",
+      "アーティファクト2",
+      "人形",
+      "共鳴",
+      "連携"
+    ]
+  },
+  "shadowverse:RoyalPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "ベーシック",
+      "潜伏",
+      "進化",
+      "宴楽",
+      "ヒーロー",
+      "レヴィオン",
+      "財宝",
+      "フォロワー",
+      "自然&機械",
+      "連携"
+    ]
+  },
+  "shadowverse:VampirePool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "ベーシック",
+      "学園",
+      "渇望",
+      "コウモリ",
+      "進化",
+      "自然&機械",
+      "狂乱1",
+      "復讐",
+      "狂乱2"
+    ]
+  },
+  "shadowverse:WitchPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "ベーシック",
+      "学園",
+      "チェス",
+      "秘術1",
+      "秘術2",
+      "機械",
+      "自然",
+      "スペル1",
+      "スペル2"
+    ]
+  },
+  "shadowverse:PinionPrayer": {
+    "NAME": "詠唱：白翼への祈り",
+    "DESCRIPTION": "カウントダウン 2 NL *ホーリーファルコン を1枚手札に加える。",
+    "UPGRADE_DESCRIPTION":"カウントダウン 2 NL *ホーリーファルコン+ を1枚手札に加える。"
+  },
+  "shadowverse:JudgmentSpearMaster": {
+    "NAME": "ジャッジメントスピアマスター",
+    "DESCRIPTION": "結晶 1 · カウントダウン 1 NL これを手札に加え、このターンこれのコストは0。 NL  NL --------------------- NL  NL !D! ダメージを与える。 NL !B! ブロック を得る。"
+  },
+  "shadowverse:HolyLightningBird": {
+    "NAME": "雷導の神鳥",
+    "DESCRIPTION": "結晶 0 · カウントダウン 1 NL エナジー !M! を得る。 NL  NL --------------------- NL  NL !D! ダメージを与える。 NL この戦闘中に カウントダウン を持つアミュレットを5枚以上プレイしていたなら、エナジー1を得る。"
+  },
+  "shadowverse:DragonWarrior": {
+    "NAME": "龙族勇士",
+    "DESCRIPTION": "造成 !D! 点伤害。",
+    "UPGRADE_DESCRIPTION":"造成 !D! 点伤害。 NL 再造成 !M! 点伤害。"
+  },
+  "shadowverse:DragonOracle": {
+    "NAME": "龙之启示",
+    "DESCRIPTION": "获得1点觉醒值。 NL 下回合获得 [E] 。 NL 如果已 觉醒 ，额外抽 !M! 张牌。",
+    "UPGRADE_DESCRIPTION":"获得1点觉醒值。 NL 下回合获得 [E] [E] 。 NL 如果已 觉醒 ，额外抽 !M! 张牌。"
+  },
+  "shadowverse:Strike_D": {
+    "NAME": "打击",
+    "DESCRIPTION": "造成 !D! 点伤害。"
+  },
+  "shadowverse:Defend_D": {
+    "NAME": "防御",
+    "DESCRIPTION": "获得 !B! 点 格挡 。"
   }
 }

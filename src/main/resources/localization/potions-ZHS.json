@@ -131,5 +131,26 @@
       "回复 #b",
       "% 生命。"
     ]
+  },
+  "shadowverse:OverflowPotion": {
+    "NAME": "觉醒药水",
+    "DESCRIPTIONS": [
+      "获得 #b",
+      " 点 #y觉醒值 。"
+    ]
+  },
+  "shadowverse:ArmedPotion": {
+    "NAME": "武装药水",
+    "DESCRIPTIONS": [
+      "获得 #b9 点 #y格挡 ，武装 #b",
+      " 张牌。"
+    ]
+  },
+  "shadowverse:BurnPotion": {
+    "NAME": "炎狱药水",
+    "DESCRIPTIONS": [
+      "增加 #b3 张 #y灼伤 到手中。增加 #b",
+      " 张 #y地狱炎龙 到手中。"
+    ]
   }
 }

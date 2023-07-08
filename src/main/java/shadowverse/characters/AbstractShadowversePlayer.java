@@ -5,31 +5,27 @@ import basemod.abstracts.CustomPlayer;
 import basemod.animations.AbstractAnimation;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
-import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
-import com.evacipated.cardcrawl.modthespire.lib.SpirePostfixPatch;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.unique.AttackFromDeckToHandAction;
-import com.megacrit.cardcrawl.actions.unique.LoseEnergyAction;
 import com.megacrit.cardcrawl.actions.watcher.ChangeStanceAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
-import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.stances.AbstractStance;
 import com.megacrit.cardcrawl.stances.NeutralStance;
-import com.megacrit.cardcrawl.vfx.combat.HealEffect;
 import shadowverse.Shadowverse;
 import shadowverse.action.RemoveMinionAction;
 import shadowverse.action.TreAction;
+import shadowverse.cards.AbstractBanPool;
+import shadowverse.cards.BanGroup;
 import shadowverse.powers.*;
 import shadowverse.stance.Vengeance;
 
-import java.util.Iterator;
+import java.util.ArrayList;
 
 public abstract class AbstractShadowversePlayer extends CustomPlayer {
 
@@ -78,6 +74,8 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
         public static AbstractCard.CardTags GILDED;
         @SpireEnum
         public static AbstractCard.CardTags ACADEMIC;
+        @SpireEnum
+        public static AbstractCard.CardTags ARMED;
     }
 
     public int earthCount = 0;
@@ -97,6 +95,9 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
     public int skullFaneAccCount = 0;
     public int magachiyoCount = 0;
     public int burialCount = 0;
+    public int discardCount = 0;
+
+    public AbstractBanPool cardPool;
 
     public AbstractShadowversePlayer(String name, PlayerClass playerClass, String[] orbTextures, String orbVfxPath, float[] layerSpeeds, AbstractAnimation animation) {
         super(name, playerClass, orbTextures, orbVfxPath, layerSpeeds, animation);
@@ -125,13 +126,17 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
         this.skullFaneAccCount = 0;
         this.magachiyoCount = 0;
         this.burialCount = 0;
+        this.discardCount = 0;
     }
 
     public void useCard(AbstractCard c, AbstractMonster monster, int energyOnUse) {
         super.useCard(c, monster, energyOnUse);
         costUsedAmt += c.costForTurn;
         if (!this.hasPower(Cemetery.POWER_ID))
-            this.powers.add((AbstractPower) new Cemetery(this, 0));
+            this.powers.add(new Cemetery(this, 0));
+        if (AbstractDungeon.actionManager.cardsPlayedThisTurn.size() % 4 == 0) {
+            magachiyoCount++;
+        }
     }
 
     public void damage(DamageInfo info) {
@@ -195,9 +200,6 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
         super.applyEndOfTurnTriggers();
         AbstractDungeon.actionManager.addToBottom(new RemoveMinionAction());
         wrathLastTurn = 0;
-        if (AbstractDungeon.actionManager.cardsPlayedThisTurn.size() > 3){
-            magachiyoCount++;
-        }
     }
 
 
@@ -211,5 +213,33 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
 
     public static shadowverse.animation.AbstractAnimation getBigAnimation() {
         return null;
+    }
+
+    @Override
+    public ArrayList<AbstractCard> getCardPool(ArrayList<AbstractCard> tmpPool) {
+        int presize;
+        int allGroupNumber = this.cardPool.getGroupCount();
+        int banGroupNumber = this.cardPool.getActiveCount();
+        ArrayList<BanGroup> pool = this.cardPool.getPool();
+        if (!CardCrawlGame.loadingSave && AbstractDungeon.floorNum < 2) {
+            int roll;
+            Shadowverse.groupActive = new boolean[allGroupNumber];
+            Shadowverse.groupActive[0] = true;
+            tmpPool.addAll(pool.get(0).group);
+            for (int i = 0; i < banGroupNumber; i++) {
+                for (roll = AbstractDungeon.cardRng.random(allGroupNumber - 1); Shadowverse.groupActive[roll]; roll = AbstractDungeon.cardRng.random(allGroupNumber - 1)) {
+                }
+                Shadowverse.groupActive[roll] = true;
+                tmpPool.addAll(pool.get(roll).group);
+            }
+        } else {
+            tmpPool.addAll(pool.get(0).group);
+            for (presize = 0; presize < allGroupNumber; ++presize) {
+                if (Shadowverse.groupActive[presize]) {
+                    tmpPool.addAll(pool.get(presize).group);
+                }
+            }
+        }
+        return tmpPool;
     }
 }

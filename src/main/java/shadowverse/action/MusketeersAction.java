@@ -2,13 +2,12 @@ package shadowverse.action;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.screens.CardRewardScreen;
-import shadowverse.cards.Status.EvolutionPoint;
-import shadowverse.cards.Temp.*;
+import shadowverse.cards.Neutral.Status.EvolutionPoint;
+import shadowverse.cards.Neutral.Temp.*;
 import shadowverse.powers.AramisPower;
 
 import java.util.ArrayList;
@@ -64,7 +63,7 @@ public class MusketeersAction
                         c.upgrade();
                     }
                     if (c instanceof Aramis) {
-                        addToBot((AbstractGameAction) new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new AramisPower(AbstractDungeon.player, 1, c)));
+                        addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new AramisPower(AbstractDungeon.player, 1, c)));
                     }
                     if (c instanceof DArtagnan){
                         c.baseDamage *= 2;
@@ -96,7 +95,7 @@ public class MusketeersAction
                         disCard.upgrade();
                     }
                     if (disCard instanceof Aramis) {
-                        addToBot((AbstractGameAction) new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new AramisPower(AbstractDungeon.player, 1, disCard)));
+                        addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new AramisPower(AbstractDungeon.player, 1, disCard)));
                     }
                     if (this.amount == 1) {
                         if (AbstractDungeon.player.hand.group.size()<10){
@@ -113,7 +112,7 @@ public class MusketeersAction
             }
             tickDuration();
             if (secondTime) {
-                addToBot((AbstractGameAction) new MusketeersAction(false, false,card));
+                addToBot(new MusketeersAction(false, false,card));
                 this.secondTime = false;
             }
         }

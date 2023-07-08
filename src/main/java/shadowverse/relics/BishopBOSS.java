@@ -42,15 +42,15 @@
      public void atBattleStart() {
          this.isActive = false;
          flash();
-         addToBot((AbstractGameAction)new RelicAboveCreatureAction((AbstractCreature)AbstractDungeon.player, this));
-         addToBot((AbstractGameAction)new IncreaseMaxOrbAction(1));
+         addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+         addToBot(new IncreaseMaxOrbAction(1));
          addToBot(new AbstractGameAction() {
              public void update() {
                  if (!BishopBOSS.this.isActive && AbstractDungeon.player.isBloodied) {
                      BishopBOSS.this.flash();
                      BishopBOSS.this.pulse = true;
-                     addToBot((AbstractGameAction)new GainEnergyAction(1));
-                     AbstractDungeon.player.addPower((AbstractPower)new BerserkPower((AbstractCreature)AbstractDungeon.player, 1));
+                     addToBot(new GainEnergyAction(1));
+                     AbstractDungeon.player.addPower((AbstractPower)new BerserkPower(AbstractDungeon.player, 1));
                      BishopBOSS.this.isActive = true;
                      AbstractDungeon.onModifyPower();
                  }
@@ -64,8 +64,8 @@
          this.pulse = true;
          if (!this.isActive && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT) {
              AbstractPlayer p = AbstractDungeon.player;
-             addToTop((AbstractGameAction)new ApplyPowerAction((AbstractCreature)p, (AbstractCreature)p, (AbstractPower)new BerserkPower((AbstractCreature)p, 1), 1));
-             addToTop((AbstractGameAction)new RelicAboveCreatureAction((AbstractCreature)AbstractDungeon.player, this));
+             addToTop(new ApplyPowerAction(p, p, (AbstractPower)new BerserkPower(p, 1), 1));
+             addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
              this.isActive = true;
              AbstractDungeon.player.hand.applyPowers();
          }
@@ -74,7 +74,7 @@
      public void onNotBloodied() {
          if (this.isActive && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT) {
              AbstractPlayer p = AbstractDungeon.player;
-             addToTop((AbstractGameAction) new RemoveSpecificPowerAction(p,p,BerserkPower.POWER_ID));
+             addToTop( new RemoveSpecificPowerAction(p,p,BerserkPower.POWER_ID));
          }
          stopPulse();
          this.isActive = false;

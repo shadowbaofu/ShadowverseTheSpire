@@ -10,10 +10,10 @@ import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.vfx.cardManip.ExhaustCardEffect;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
@@ -44,7 +44,7 @@ public class BurialAction extends AbstractGameAction {
                 return;
             }
             for (AbstractCard c : this.p.hand.group) {
-                if (c.type!= AbstractCard.CardType.ATTACK) {
+                if (CardLibrary.getCard(c.cardID) != null && CardLibrary.getCard(c.cardID).type!= AbstractCard.CardType.ATTACK) {
                     this.cannotChose.add(c);
                 }
             }
@@ -78,10 +78,6 @@ public class BurialAction extends AbstractGameAction {
                 returnCards();
                 if (null!=action){
                     addToBot(action);
-                    for (AbstractPower power:this.p.powers){
-                        if (power instanceof MementoPower)
-                            addToBot(action);
-                    }
                 }
                 addToBot(new ApplyPowerAction(p, p, new Cemetery(p, 1), 1));
                 if (this.p.hasPower(CarnivalNecromancerPower.POWER_ID)){
@@ -107,7 +103,7 @@ public class BurialAction extends AbstractGameAction {
         }
         if (!AbstractDungeon.handCardSelectScreen.wereCardsRetrieved) {
             for (AbstractCard c : AbstractDungeon.handCardSelectScreen.selectedCards.group) {
-                if (c.type== AbstractCard.CardType.ATTACK){
+                if (CardLibrary.getCard(c.cardID) != null && CardLibrary.getCard(c.cardID).type== AbstractCard.CardType.ATTACK){
                     AbstractDungeon.effectList.add(new ExhaustCardEffect(c));
                     this.p.hand.removeCard(c);
                     AbstractDungeon.actionManager.cardsPlayedThisCombat.add(c);
@@ -121,10 +117,6 @@ public class BurialAction extends AbstractGameAction {
             AbstractDungeon.handCardSelectScreen.selectedCards.group.clear();
             if (null!=action){
                 addToBot(action);
-                for (AbstractPower power:this.p.powers){
-                    if (power instanceof MementoPower)
-                        addToBot(action);
-                }
             }
             addToBot(new ApplyPowerAction(p, p, new Cemetery(p, 1), 1));
             if (this.p.hasPower(CarnivalNecromancerPower.POWER_ID)){

@@ -5683,7 +5683,7 @@
   },
   "shadowverse:Lumiore": {
     "NAME": "Lumiore, Prestigious Gold",
-    "DESCRIPTION": "Gain !B! Block. Gain [E} NL Deal !M! damage to all enemies for each card discarded this turn. NL If you discarded cards 2 or more times this combat, discard 2 cards and draw 3 cards.",
+    "DESCRIPTION": "Gain !B! Block. Gain [E] NL Deal !M! damage to all enemies for each card discarded this turn. NL If you discarded cards 2 or more times this combat, discard 2 cards and draw 3 cards.",
     "EXTENDED_DESCRIPTION": [
       "（Number of times you discarded：",
       " )"
@@ -5756,7 +5756,7 @@
   },
   "shadowverse:DraconicArmor": {
     "NAME": "Draconic Armor",
-    "DESCRIPTION": "Armed NL Put !M! Armed Attack card(s) from your draw pile to your hand. NL Add 1 *Draconic *Weapon to your hand."
+    "DESCRIPTION": "Armed NL Randomly add !M! Armed Attack card(s) from your draw pile to your hand. NL Add 1 *Draconic *Weapon to your hand."
   },
   "shadowverse:SwiftbladeDragonewt": {
     "NAME": "Swiftblade Dragonewt",
@@ -6180,7 +6180,7 @@
     "DESCRIPTION": "Deal 50 damage. NL Kill all minions and deal 10 damage for each one killed. NL Exhaust all attack cards in your hand and deal 10 damage for each one exhausted. NL Deal !D! damage twice."
   },
   "shadowverse:Hiro": {
-    "NAME": "Hiro Ryuugasaki's Dragon Oracle",
+    "NAME": "Hiro's Dragon Oracle",
     "DESCRIPTION": "Innate. NL Gain 1 Overflow point. NL Gain [E] next turn. NL If Overflow is active, draw !M! additional card.",
     "UPGRADE_DESCRIPTION": "Innate. NL Gain 1 Overflow point. NL Gain [E] [E] next turn. NL If Overflow is active, draw !M! additional card."
   },

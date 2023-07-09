@@ -5947,7 +5947,7 @@
   },
   "shadowverse:NewfoundAllies": {
     "NAME": "Newfound Allies",
-    "DESCRIPTION": "Natura NL Put !M! Natura Attack card from the draw pile to your hand. NL If you have the power *Naterran *Great *Tree active, add 1 more."
+    "DESCRIPTION": "Natura NL Randomly add !M! Natura Attack card from the draw pile to your hand. NL If you have the power *Naterran *Great *Tree active, add 1 more."
   },
   "shadowverse:DragonplateWarrior": {
     "NAME": "Dragonplate Warrior",
@@ -5966,7 +5966,7 @@
     "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL If at least 10 non-Attack cards have been played this combat, and you have at least 5 energy, use 5 energy and instead Choose: NL *Virtuous *Lindworm or NL *Iniquitous *Lindworm NL and add it to your hand.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL If at least 10 non-Attack cards have been played this combat, and you have at least 5 energy, use 5 energy and instead Choose: NL *Virtuous *Lindworm+ or NL *Iniquitous *Lindworm+ NL and add it to your hand.",
     "EXTENDED_DESCRIPTION": [
-      " NL （Played",
+      " NL （Played ",
       " non-Attack cards)"
     ]
   },

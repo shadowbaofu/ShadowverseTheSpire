@@ -5592,7 +5592,7 @@
   },
   "shadowverse:DraconicCounsel": {
     "NAME": "Draconic Counsel",
-    "DESCRIPTION": "Discard 1 card and draw 1 card. NL If Overflow is active，add 1 copy of this card without the Overflow effect to your hand. It costs 0."
+    "DESCRIPTION": "Discard 1 card and draw 1 card. NL If Overflow is active, add 1 copy of this card without the Overflow effect to your hand. It costs 0."
   },
   "shadowverse:DraconicCounsel_Copy": {
     "NAME": "Draconic Counsel",

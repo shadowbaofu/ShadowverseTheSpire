@@ -21,10 +21,10 @@ public class GigantSkull extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION; public static final String IMG_PATH = "img/cards/GigantSkull.png";
     public GigantSkull() {
         super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Necromancer.Enums.COLOR_PURPLE, CardRarity.RARE, CardTarget.ALL_ENEMY);
-        this.baseDamage = 28;
+        this.baseDamage = 32;
         this.isMultiDamage = true;
         this.tags.add(AbstractShadowversePlayer.Enums.MACHINE);
-        this.cardsToPreview = (AbstractCard)new VoidCard();
+        this.cardsToPreview = new VoidCard();
     }
 
     @Override

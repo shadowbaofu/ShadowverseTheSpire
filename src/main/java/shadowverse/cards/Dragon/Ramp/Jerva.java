@@ -57,10 +57,9 @@ public class Jerva extends CustomCard implements BranchableUpgradeCard {
                     addToBot(new WaitAction(1.2F));
                     AbstractDungeon.player.currentHealth = half;
                     AbstractDungeon.player.update();
-                    addToBot( new ChangeStanceAction(new Vengeance()));
-                    addToBot( new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new JervaPower(AbstractDungeon.player,half,current)));
-                    addToBot(new ExhaustSpecificCardAction(this,AbstractDungeon.player.hand));
+                    addToBot(new ChangeStanceAction(new Vengeance()));
                 };
+                addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new JervaPower(AbstractDungeon.player,half,current)));
                 break;
             case 1:
                 addToBot(new SFXAction("Jerva2"));

@@ -43,7 +43,7 @@ public class ArmedPotion extends CustomPotion {
     public void use(AbstractCreature abstractCreature) {
         if ((AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT) {
             addToBot(new GainBlockAction(AbstractDungeon.player,9));
-            addToBot(new SelectCardsInHandAction(this.potency, TEXT[0], false, true, card -> {
+            addToBot(new SelectCardsInHandAction(this.potency, TEXT[0], true, true, card -> {
                 return CardLibrary.getCard(card.cardID)!= null && CardLibrary.getCard(card.cardID).type == AbstractCard.CardType.ATTACK;
             }, abstractCards -> {
                 for (AbstractCard c : abstractCards) {

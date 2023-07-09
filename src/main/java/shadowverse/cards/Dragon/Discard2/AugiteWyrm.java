@@ -40,7 +40,7 @@ public class AugiteWyrm extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(6);
+            upgradeDamage(4);
         }
     }
 

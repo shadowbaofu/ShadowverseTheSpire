@@ -42,7 +42,7 @@ import shadowverse.powers.OverflowPower;
  
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new EnergizedPower(abstractPlayer,this.magicNumber)));
+     addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new EnergizedPower(abstractPlayer,1)));
      addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new OverflowPower(abstractPlayer,1)));
      addToBot(new GainBlockAction(abstractPlayer,this.block));
      addToBot(new DrawCardAction(this.magicNumber));

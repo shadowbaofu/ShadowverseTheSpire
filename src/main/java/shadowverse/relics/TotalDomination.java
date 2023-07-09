@@ -17,7 +17,7 @@
    public static final String OUTLINE_IMG = "img/relics/outline/TotalDomination_Outline.png";
 
    public TotalDomination() {
-     super("shadowverse:TotalDomination", ImageMaster.loadImage("img/relics/TotalDomination.png"), RelicTier.RARE, LandingSound.MAGICAL);
+     super(ID, ImageMaster.loadImage(IMG), RelicTier.RARE, LandingSound.MAGICAL);
    }
 
    public String getUpdatedDescription() {

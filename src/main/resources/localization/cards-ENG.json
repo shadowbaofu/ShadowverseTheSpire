@@ -5600,7 +5600,7 @@
   },
   "shadowverse:DracomancerRites": {
     "NAME": "Dracomancer's Rites",
-    "DESCRIPTION": "Whenever you discard cards from your hand, draw the same number of cards. NL Etheral.",
+    "DESCRIPTION": "Whenever you discard cards from your hand, draw the same number of cards. NL Ethereal.",
     "UPGRADE_DESCRIPTION": "Whenever you discard cards from your hand, draw the same number of cards."
   },
   "shadowverse:Kit": {
@@ -5942,8 +5942,8 @@
   },
   "shadowverse:DragonDevouringDread": {
     "NAME": "Dragon-Devouring Dread",
-    "DESCRIPTION": "Fusion: Attack cards that cost at least 3. NL When you fuse cards to this card, if it's the 1st time, gain 1 Strength. NL If it's the 2nd time, gain 1 Overflow point. NL If it's the 3rd time, draw 2 cards. NL NL --------------------- NL NL Exhaust all Status and Curse cards in your hand. NL Apply !M! Weak and Vulnerable to all enemies. NL Gain !M! Strength. NL Increase this value by 1 for each card Fused. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain - Fusion: Attack cards that cost at least 3. NL When you fuse cards to this card, if it's the 1st time, gain 1 Strength. NL If it's the 2nd time, gain 1 Overflow point. NL If it's the 3rd time, draw 2 cards. NL NL --------------------- NL NL Exhaust all Status and Curse cards in your hand. NL Apply !M! Weak and Vulnerable to all enemies. NL Gain !M! Strength. NL Increase this value by 1 for each card Fused. NL Exhaust."
+    "DESCRIPTION": "Fusion: Attacks that cost at least 3. NL The 1st time you fuse cards to this card, gain 1 Energy. NL The 2nd time, gain 1 Overflow point. NL The 3rd time, draw 2 cards. NL NL --------------------- NL NL Exhaust all Status and Curses in your hand. NL Apply !M! Weak and Vulnerable to all enemies. NL Gain !M! Strength. NL Increase this value by 1 for each card Fused. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain - Fusion: Attacks that cost at least 3. NL The 1st time you fuse cards to this card, gain 1 Energy. NL The 2nd time, gain 1 Overflow point. NL The 3rd time, draw 2 cards. NL NL --------------------- NL NL Exhaust all Status and Curses in your hand. NL Apply !M! Weak and Vulnerable to all enemies. NL Gain !M! Strength. NL Increase this value by 1 for each card Fused. NL Exhaust."
   },
   "shadowverse:NewfoundAllies": {
     "NAME": "Newfound Allies",

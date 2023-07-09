@@ -136,14 +136,14 @@
     "NAME": "Overflow Potion",
     "DESCRIPTIONS": [
       "Gain #b",
-      "#yOverflow points."
+      " #yOverflow points."
     ]
   },
   "shadowverse:ArmedPotion": {
     "NAME": "Potion of Arms",
     "DESCRIPTIONS": [
-      "Gain #b9 #yBlock, Arm #b",
-      " cards."
+      "Gain #b9 #yBlock, select #b",
+      " cards and give them the Armed trait."
     ]
   },
   "shadowverse:BurnPotion": {

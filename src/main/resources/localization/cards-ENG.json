@@ -496,8 +496,8 @@
   },
   "shadowverse:Machinus": {
     "NAME": "Natur Al'machinus",
-    "DESCRIPTION": "Machina · Natura. NL Fusion: Machina or Natura. NL Deal !D! damage, gain !B! Block. NL Increase this card's damage by 7 and draw 1 Natura or Machina card from your draw pile for every card fused. NL If this card is fused with both a Machina and a Natura card, reduce the cost of the cards added by 1.",
-    "UPGRADE_DESCRIPTION": "Machina · Natura. NL Fusion: Machina or Natura. NL Deal !D! damage, gain !B! Block. NL Increase this card's damage by 9 and draw 1 Natura or Machina card from your draw pile for every card fused. NL If this card is fused with both a Machina and a Natura card, reduce the cost of the cards added by 1."
+    "DESCRIPTION": "Machina · Natura. NL Fusion: Machina or Natura. NL Deal !D! damage, gain !B! Block. NL Increase this card's damage by 7 and randomly add 1 Natura or Machina card from your draw pile for every card fused. NL If this card is fused with both a Machina and a Natura card, reduce the cost of the cards added by 1.",
+    "UPGRADE_DESCRIPTION": "Machina · Natura. NL Fusion: Machina or Natura. NL Deal !D! damage, gain !B! Block. NL Increase this card's damage by 9 and randomly add 1 Natura or Machina card from your draw pile for every card fused. NL If this card is fused with both a Machina and a Natura card, reduce the cost of the cards added by 1."
   },
   "shadowverse:WitchSnap": {
     "NAME": "Witch Snap",

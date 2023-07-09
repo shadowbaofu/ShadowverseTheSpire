@@ -5464,8 +5464,8 @@
   },
   "shadowverse:DragonOracle": {
     "NAME": "Dragon Oracle",
-    "DESCRIPTION": "Gain 1 Overflow point. NL Gain [E] next turn. NL If Overflow is active，draw !M! card.",
-    "UPGRADE_DESCRIPTION": "Gain 1 Overflow point. NL Gain [E] [E] next turn. NL If Overflow is active，draw !M! card."
+    "DESCRIPTION": "Gain 1 Overflow point. NL Gain [E] next turn. NL If Overflow is active, draw !M! card.",
+    "UPGRADE_DESCRIPTION": "Gain 1 Overflow point. NL Gain [E] [E] next turn. NL If Overflow is active, draw !M! card."
   },
   "shadowverse:Strike_D": {
     "NAME": "Strike",

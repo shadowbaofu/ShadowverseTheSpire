@@ -131,5 +131,26 @@
       "체력을 #b",
       "% 회복합니다."
     ]
+ },
+  "shadowverse:OverflowPotion": {
+    "NAME": "각성 물약",
+    "DESCRIPTIONS": [
+      "#y각성치를 #b",
+      " 얻습니다."
+    ]
+  },
+  "shadowverse:ArmedPotion": {
+    "NAME": "무장 물약",
+    "DESCRIPTIONS": [
+      "#y방어도를 #b9 얻고, 카드 #b",
+      " 장을 무장시킵니다."
+    ]
+  },
+  "shadowverse:BurnPotion": {
+    "NAME": "지옥불 물약",
+    "DESCRIPTIONS": [
+      "#y화상 #b3 장을 얻습니다. #y지옥의 #y화염룡 #b",
+      " 장을 얻습니다."
+    ]
   }
 }

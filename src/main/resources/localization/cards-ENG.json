@@ -5678,7 +5678,7 @@
     "DESCRIPTION": "Gain !B! Block. NL Discard 2 cards from your hand, gain 1 Overflow point. NL If you discarded cards 2 or more times this combat, draw 3 cards.",
     "EXTENDED_DESCRIPTION": [
       "（Number of times you discarded：",
-      ")"
+      " )"
     ]
   },
   "shadowverse:Lumiore": {
@@ -5686,7 +5686,7 @@
     "DESCRIPTION": "Gain !B! Block. Gain [E} NL Deal !M! damage to all enemies for each card discarded this turn. NL If you discarded cards 2 or more times this combat, discard 2 cards and draw 3 cards.",
     "EXTENDED_DESCRIPTION": [
       "（Number of times you discarded：",
-      ")"
+      " )"
     ]
   },
   "shadowverse:NoirNBlanc": {
@@ -5771,7 +5771,7 @@
     "DESCRIPTION": "Armed NL Gain !B! Block. NL Add !M! *Draconic *Weapon to your hand. NL If 4 or more Armed Attack cards have been played this combat, add 1 *Miracle and 1 *Evolution *Point to your hand.",
     "EXTENDED_DESCRIPTION": [
       " NL （Has played",
-      "Armed Attack cards)"
+      " Armed Attack cards)"
     ]
   },
   "shadowverse:LanceLizard": {
@@ -5779,7 +5779,7 @@
     "DESCRIPTION": "Armed NL Deal !D! damage. NL Add 1 *Draconic *Weapon to your hand. NL If 4 or more Armed Attack cards have been played this combat, gain !B! Block and deal !D! damage again.",
     "EXTENDED_DESCRIPTION": [
       " NL （Has played",
-      "Armed Attack cards)"
+      " Armed Attack cards)"
     ]
   },
   "shadowverse:DragonSmash": {
@@ -5792,7 +5792,7 @@
     "UPGRADE_DESCRIPTION": "Armed NL Deal !D! damage. NL Last_Words: When this card is played, Add 1 *Draconic *Smash+ to your hand. NL If 4 or more Armed Attack cards have been played this combat, double the damage and gain 1 Strength and Dexterity.",
     "EXTENDED_DESCRIPTION": [
       " NL （Has played",
-      "Armed Attack cards)"
+      " Armed Attack cards)"
     ]
   },
   "shadowverse:Georgius": {
@@ -5801,7 +5801,7 @@
   },
   "shadowverse:Ethica": {
     "NAME": "Ethica, Firebrand Claw",
-    "DESCRIPTION": "Deal !D! damage to all enemies. NL If OVerflow is active, add 1 *Miracle and 1 *Evolution *Point to your hand."
+    "DESCRIPTION": "Deal !D! damage to all enemies. NL If Overflow is active, add 1 *Miracle and 1 *Evolution *Point to your hand."
   },
   "shadowverse:SpringwellDragonKeeper": {
     "NAME": "Springwell Dragon Keeper",
@@ -5924,7 +5924,7 @@
     "UPGRADE_DESCRIPTION": "Armed NL Deal !D! damage. NL If you have any *Draconic *Weapons in your hand, exhaust 1 and add an *Evolution *Point to your hand. NL Add 1 *Draconic *Weapon to your hand. NL If at least 4 Armed Attack cards were played this combat, instead Choose: NL *Lævateinn *Dragon, *Attack *Form NL *Lævateinn *Dragon, *Defense Form NL or *Lævateinn *Dragon, *Blast *Form NL And add it to your hand.",
     "EXTENDED_DESCRIPTION": [
       " NL Played",
-      "Armed Attack Cards)"
+      " Armed Attack Cards)"
     ]
   },
   "shadowverse:Zoe_Copy": {
@@ -5967,7 +5967,7 @@
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL If at least 10 non-Attack cards have been played this combat, and you have at least 5 energy, use 5 energy and instead Choose: NL *Virtuous *Lindworm+ or NL *Iniquitous *Lindworm+ NL and add it to your hand.",
     "EXTENDED_DESCRIPTION": [
       " NL （Played",
-      "non-Attack cards)"
+      " non-Attack cards)"
     ]
   },
   "shadowverse:Djeana": {

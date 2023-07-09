@@ -5797,7 +5797,7 @@
   },
   "shadowverse:Georgius": {
     "NAME": "Georgius",
-    "DESCRIPTION": "Deal !D! damage to all enemies. NL Repeat once if Overflow is active. NL Repeat twice if Full Overflow is active."
+    "DESCRIPTION": "Deal !D! damage to all enemies. NL Mark all enemies as Dragons. NL Repeat once if Overflow is active. NL Repeat twice if Full Overflow is active."
   },
   "shadowverse:Ethica": {
     "NAME": "Ethica, Firebrand Claw",
@@ -5933,7 +5933,8 @@
   },
   "shadowverse:Zoe": {
     "NAME": "Zooey, Arbiter of the Skies",
-    "DESCRIPTION": "Accelerate 0: Add 1 *Zooey, *Arbiter *of *the *Skies without Accelerate to your discard pile and draw 1 card. NL NL --------------------- NL NL Deal !D! damage. Lose HP until you have only 1 HP left. NL Restore this lost HP at the end of combat. NL You take no further damage this turn. NL Exhaust."
+    "DESCRIPTION": "Accelerate 0: Add 1 *Zooey, *Arbiter *of *the *Skies without Accelerate to your discard pile and draw 1 card. NL NL --------------------- NL NL Deal !D! damage. Lose HP until you have only 1 HP left. NL Restore this lost HP at the end of combat. NL You take no further damage this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Accelerate 0: Add 1 *Zooey, *Arbiter *of *the *Skies+ without Accelerate to your discard pile and draw 1 card. NL NL --------------------- NL NL Deal !D! damage. Lose HP until you have only 1 HP left. NL Restore this lost HP at the end of combat. NL You take no further damage this turn. NL Exhaust."
   },
   "shadowverse:TheJustice": {
     "NAME": "XI. Erntz, Justice",

@@ -22,6 +22,7 @@ import rs.lazymankits.interfaces.cards.BranchableUpgradeCard;
 import rs.lazymankits.interfaces.cards.UpgradeBranch;
 import shadowverse.Shadowverse;
 import shadowverse.cards.Neutral.Temp.FangsOfArdentDestruction;
+import shadowverse.cards.Royal.Loot.Barbaros;
 import shadowverse.characters.Dragon;
 
 import java.util.ArrayList;
@@ -169,7 +170,6 @@ public class OmenOfDisdain extends CustomCard implements BranchableUpgradeCard {
                 break;
         }
     }
-
 
     public AbstractCard makeCopy() {
         return (AbstractCard) new OmenOfDisdain();

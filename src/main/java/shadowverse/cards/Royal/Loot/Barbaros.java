@@ -20,6 +20,7 @@ import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
 import shadowverse.Shadowverse;
 import shadowverse.cards.AbstractEnhanceCard;
 import shadowverse.cards.AbstractRightClickCard2;
+import shadowverse.cards.Nemesis.Condemned.Judith;
 import shadowverse.cards.Neutral.Temp.DreadPirateFlag;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
@@ -96,14 +97,15 @@ public class Barbaros
         super.update();
     }
 
-    public AbstractCard makeStatEquivalentCopy() {
-        AbstractEnhanceCard c = (AbstractEnhanceCard) super.makeStatEquivalentCopy();
+    public AbstractCard makeStatEquivalentCopy () {
+        Barbaros c = (Barbaros) super.makeStatEquivalentCopy();
         c.exCost = this.exCost;
         c.exCostForTurn = this.exCostForTurn;
         c.exFreeOnce = this.exFreeOnce;
         c.ex = this.ex;
         return c;
     }
+
 
     public void triggerOnGlowCheck() {
         if (Shadowverse.Enhance(enhanceCost)) {

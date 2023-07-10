@@ -99,6 +99,10 @@ public class Lindworm extends CustomCard {
         if (count > 9 && (EnergyPanel.getCurrentEnergy() >= 5)) {
             AbstractCard v = new VirtuousLindworm();
             AbstractCard i = new IniquitousLindworm();
+            if (upgraded){
+                v.upgrade();
+                i.upgrade();
+            }
             addToBot(new ChoiceAction(v, i));
         } else {
             addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));

@@ -15,6 +15,7 @@ import shadowverse.Shadowverse;
 import shadowverse.cards.AbstractAmuletCard;
 import shadowverse.cards.AbstractEnhanceCard;
 import shadowverse.cards.Neutral.Temp.*;
+import shadowverse.cards.Royal.Loot.Barbaros;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Bishop;
 import shadowverse.orbs.AmuletOrb;
@@ -102,14 +103,15 @@ public class OrchidExaminationHall extends AbstractAmuletCard {
         }
     }
 
-    public AbstractCard makeStatEquivalentCopy() {
-        AbstractEnhanceCard c = (AbstractEnhanceCard) super.makeStatEquivalentCopy();
+    public AbstractCard makeStatEquivalentCopy () {
+        OrchidExaminationHall c = (OrchidExaminationHall) super.makeStatEquivalentCopy();
         c.exCost = this.exCost;
         c.exCostForTurn = this.exCostForTurn;
         c.exFreeOnce = this.exFreeOnce;
         c.ex = this.ex;
         return c;
     }
+
 
     public void triggerOnGlowCheck() {
         if (Shadowverse.Enhance(enhanceCost)) {

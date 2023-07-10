@@ -6290,7 +6290,11 @@
   },
   "shadowverse:ChaosAura": {
     "NAME": "Chaos, Conflagrate",
-    "DESCRIPTION": "Deal !D! damage for each *Chaos, *Conflagrate played to a random enemy and draw 1 card. NL Shuffle 3 copies of this card into the draw pile. NL If 5 or more have been played, randomly activate the following effects instead: NL 1. Deal !M! damage to a random enemy. Gain !B! Block. NL 2. Apply 2 Vulnerable to a random enemy. NL 3. All cards in your hand cost 1 less this turn. NL If it's the 5th turn or later, apply ALL 3 effects instead. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage for each *Chaos, *Conflagrate played to a random enemy and draw 1 card. NL Shuffle 3 copies of this card into the draw pile. NL If 5 or more have been played, randomly activate the following effects instead: NL 1. Deal !M! damage to a random enemy. Gain !B! Block. NL 2. Apply 2 Vulnerable to a random enemy. NL 3. All cards in your hand cost 1 less this turn. NL If it's the 5th turn or later, apply ALL 3 effects instead. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (*Chaos, *Conflagrate played",
+      " times.)"
+    ]
   },
   "shadowverse:Odin2": {
     "NAME": "Odin, Advent of Ragnarok",

@@ -183,7 +183,7 @@ public class Judith extends CustomCard {
     }
 
     public AbstractCard makeStatEquivalentCopy() {
-        AbstractEnhanceCard c = (AbstractEnhanceCard) super.makeStatEquivalentCopy();
+        Judith c = (Judith) super.makeStatEquivalentCopy();
         c.exCost = this.exCost;
         c.exCostForTurn = this.exCostForTurn;
         c.exFreeOnce = this.exFreeOnce;

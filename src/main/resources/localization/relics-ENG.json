@@ -618,7 +618,7 @@
   },
   "shadowverse:KayaBOSS": {
     "NAME": "Dragon's Fist",
-    "FLAVOR": "Kaya wore it on her hands like a glove, fitted with a huge dragon's wrist. It is said that it responds to the strong emotions of the wearer, and the karmic fire that erupts from it can burn hostile foes into nothing.",
+    "FLAVOR": "Kaya wore it on her hands like a glove, fitted with a huge dragon's wrist. It is said that it responds to the strong emotions of the wearer.",
     "DESCRIPTIONS": [
       "Replaces *Token *of *1st. NL At the start of each combat gain #b3 #yOverflow points. Lose #b1 #yDexterity each turn."
     ]

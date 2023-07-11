@@ -5671,7 +5671,7 @@
   "shadowverse:EncounterFromTheDeep": {
     "NAME": "Encounter From The Deep",
     "DESCRIPTION": "Select a card in your draw pile, deal damage equal to !D! times its cost to a random enemy. NL If that card costs 3 or more energy, deal 10 additional damage. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Select a card in your draw pile, deal damage equal to !D! times its cost to a random enemy. NL If that card costs 3 or more energy, deal 10 additional damage. NL Exhaust."
+    "UPGRADE_DESCRIPTION": "Select a card in your draw pile, deal damage equal to !D! times its cost to a random enemy. NL If that card costs 3 or more energy, deal 10 additional damage."
   },
   "shadowverse:Argente": {
     "NAME": "Argente, Purest Silver",

@@ -6182,7 +6182,7 @@
   "shadowverse:Hiro": {
     "NAME": "Hiro's Dragon Oracle",
     "DESCRIPTION": "Innate. NL Gain 1 Overflow point. NL Gain [E] next turn. NL If Overflow is active, draw !M! additional card.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Gain 1 Overflow point. NL Gain [E] [E] next turn. NL If Overflow is active, draw !M! additional card."
+    "UPGRADE_DESCRIPTION": "Innate. NL Gain 1 Overflow point. NL Gain [E] [E] next turn. NL If Overflow is active, draw !M! additional cards."
   },
   "shadowverse:Oberon": {
     "NAME": "Oberon",

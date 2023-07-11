@@ -5559,7 +5559,7 @@
   },
   "shadowverse:DragonewtMight": {
     "NAME": "Dragonewt's Might",
-    "DESCRIPTION": "Discard 1 card, draw 1 card. Deal !D! damage to a random enemy. NL When this card is discarded from your hand，draw !M! card(s)."
+    "DESCRIPTION": "Discard 1 card, draw 1 card. Deal !D! damage to a random enemy. NL When this card is discarded from your hand, draw !M! card(s)."
   },
   "shadowverse:TouchingThoughts": {
     "NAME": "Touching Thoughts",

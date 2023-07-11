@@ -2069,7 +2069,7 @@
   },
   "shadowverse:BelphometCard3": {
     "NAME": "Belphomet, Ultimate Creator",
-    "DESCRIPTION": "Machina. NL Fusion: Machina. NL The 2nd or 4th time cards are fused to this card, use 1 Energy and put 1 *Armored *Tentacle into your hand. The 3rd or 5th time, use 1 Energy and put 1 *Assault *Tentacle into your hand. NL NL ---------- NL NL Gain !B! Block. NL Put 1 *Tisiphone, *Malignance *Lives into your hand. If fused with at least 1 card, put 1 *Alecto, *Dissonance *Lives into your hand. If at least 2 cards, put 1 *Megaera, *Indignance *Lives into your hand."
+    "DESCRIPTION": "Machina. NL Fusion: Machina. NL The 2nd or 4th time cards are fused to this card, use 1 Energy and put 1 *Armored *Tentacle into your hand. The 3rd or 5th time, use 1 Energy and put 1 *Assault *Tentacle into your hand.  NL ---------- NL  Gain !B! Block. NL Put 1 *Tisiphone, *Malignance *Lives into your hand. If fused with at least 1 card, put 1 *Alecto, *Dissonance *Lives into your hand. If at least 2 cards, put 1 *Megaera, *Indignance *Lives into your hand."
   },
   "shadowverse:TisiphoneCard": {
     "NAME": "Tisiphone, the Malignant",
@@ -4812,7 +4812,7 @@
   },
   "shadowverse:Sephie": {
     "NAME": "Sephie, Depraved Convict",
-    "DESCRIPTION": "Condemned / Retain NL Fusion: Non-Strike Attack cards. NL Whenever you fuse at least 2 cards at once to this card and you have at least 1 energy, spend 1 energy to put a 0 cost *Volunteer *Test *Subject into your hand. NL If a Condemned card was fused this way, no energy is spent. NL NL --------------------- NL NL Deal !D! Damage. Put a 0 cost *Volunteer *Test *Subject into your hand. NL If you played at least 5 *Volunteer *Test *Subject, add !M! damage to them for each one in your hand."
+    "DESCRIPTION": "Condemned / Retain NL Fusion: Non-Strike Attack cards. NL Whenever you fuse at least 2 cards at once to this card and you have at least 1 energy, spend 1 energy to put a 0 cost *Volunteer *Test *Subject into your hand. NL If a Condemned card was fused this way, no energy is spent. NL ---------------- NL Deal !D! Damage. Put a 0 cost *Volunteer *Test *Subject into your hand. NL If you played at least 5 *Volunteer *Test *Subject, add !M! damage to them for each one in your hand."
   },
   "shadowverse:SkullFish": {
     "NAME": "Skullfish",
@@ -5942,8 +5942,8 @@
   },
   "shadowverse:DragonDevouringDread": {
     "NAME": "Dragon-Devouring Dread",
-    "DESCRIPTION": "Fusion: Attacks that cost at least 3. NL The 1st time you fuse cards to this card, gain 1 Energy. NL The 2nd time, gain 1 Overflow point. NL The 3rd time, draw 2 cards. NL NL --------------------- NL NL Exhaust all Status and Curses in your hand. NL Apply !M! Weak and Vulnerable to all enemies. NL Gain !M! Strength. NL Increase this value by 1 for each card Fused. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain - Fusion: Attacks that cost at least 3. NL The 1st time you fuse cards to this card, gain 1 Energy. NL The 2nd time, gain 1 Overflow point. NL The 3rd time, draw 2 cards. NL NL --------------------- NL NL Exhaust all Status and Curses in your hand. NL Apply !M! Weak and Vulnerable to all enemies. NL Gain !M! Strength. NL Increase this value by 1 for each card Fused. NL Exhaust."
+    "DESCRIPTION": "Fusion: Attacks that cost at least 3. NL The 1st time you fuse cards to this card, gain 1 Energy. NL The 2nd time, gain 1 Overflow point. NL The 3rd time, draw 2 cards. NL NL --------------- NL NL Exhaust all Status and Curses in your hand. NL Apply !M! Weak and Vulnerable to all enemies. NL Gain !M! Strength. NL Increase this value by 1 for each card Fused. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain - Fusion: Attacks that cost at least 3. NL The 1st time you fuse cards to this card, gain 1 Energy. NL The 2nd time, gain 1 Overflow point. NL The 3rd time, draw 2 cards.  NL ---------------- NL  Exhaust all Status and Curses in your hand. NL Apply !M! Weak and Vulnerable to all enemies. NL Gain !M! Strength. NL Increase this value by 1 for each card Fused. NL Exhaust."
   },
   "shadowverse:NewfoundAllies": {
     "NAME": "Newfound Allies",

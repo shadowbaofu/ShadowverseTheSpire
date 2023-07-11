@@ -5677,7 +5677,7 @@
     "NAME": "Argente, Purest Silver",
     "DESCRIPTION": "Gain !B! Block. NL Discard 2 cards from your hand, gain 1 Overflow point. NL If you discarded cards 2 or more times this combat, draw 3 cards.",
     "EXTENDED_DESCRIPTION": [
-      "（Number of times you discarded：",
+      "（ Number of times you discarded：",
       " )"
     ]
   },
@@ -5685,13 +5685,13 @@
     "NAME": "Lumiore, Prestigious Gold",
     "DESCRIPTION": "Gain !B! Block. Gain [E] NL Deal !M! damage to all enemies for each card discarded this turn. NL If you discarded cards 2 or more times this combat, discard 2 cards and draw 3 cards.",
     "EXTENDED_DESCRIPTION": [
-      "（Number of times you discarded：",
+      "（ Number of times you discarded：",
       " )"
     ]
   },
   "shadowverse:NoirNBlanc": {
     "NAME": "Noir & Blanc, Brothers",
-    "DESCRIPTION": "Deal !D! Damage. NL When this card is discarded, deal 6 damage to a random enemy. NL After playing or discarding this card, if Overflow is active at the end of your turn, gain !B! Block, 1 Afterimage, Artifact and Power_Damage_Immune. If you did not lose all of your Block, deal !M! damage to a random enemy next turn."
+    "DESCRIPTION": "Deal !D! Damage. NL When this card is discarded, deal 6 damage to a random enemy. NL After playing or discarding this card, if Full Overflow is active at the end of your turn, gain !B! Block, 1 Afterimage, Artifact and Power_Damage_Immune. If you did not lose all of your Block, deal !M! damage to a random enemy next turn."
   },
   "shadowverse:DragoonMedic": {
     "NAME": "Dragoon Medic",

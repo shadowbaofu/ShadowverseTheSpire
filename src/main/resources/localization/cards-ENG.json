@@ -5826,7 +5826,7 @@
   },
   "shadowverse:RowenCard": {
     "NAME": "Rowen, Dragon Lance",
-    "DESCRIPTION": "Deal !D! damage. NL Add 1 *Curse *Of *The *Black *Dragon to your hand. NL Enhance 2: Countdown 2: All damage you deal is increased by 3. NL Exhaust !stslib:ex!."
+    "DESCRIPTION": "Deal !D! damage. NL Add 1 *Curse *Of *The *Black *Dragon to your hand. NL Enhance 2: Countdown 2: All damage you deal is increased by !M! . NL Exhaust !stslib:ex!."
   },
   "shadowverse:WildfangDragonewt": {
     "NAME": "Wildfang Dragonewt",
@@ -5984,8 +5984,8 @@
   },
   "shadowverse:DragonHoard": {
     "NAME": "Dragon's Hoard",
-    "DESCRIPTION": "Countdown 16: Exhaust all attacks in your hand, discard and draw piles and replace them with *Inferno *Dragons. NL Whenever you play an attack card, subtract 1 from this card's Countdown. NL Enhance 2: Subtract 8 from this card's Countdown and add 2 *Hellflame *Dragons to your hand.",
-    "UPGRADE_DESCRIPTION": "Innate - Countdown 16: Exhaust all attacks in your hand, discard and draw piles and replace them with *Inferno *Dragons. NL Whenever you play an attack card, subtract 1 from this card's Countdown. NL Enhance 2: Subtract 8 from this card's Countdown and add 2 *Hellflame *Dragons to your hand."
+    "DESCRIPTION": "Countdown 20: Exhaust all attacks in your hand, discard and draw piles and replace them with *Inferno *Dragons. NL Whenever you play an attack card, subtract 1 from this card's Countdown. NL Enhance 2: Subtract 10 from this card's Countdown and add 2 *Hellflame *Dragons to your hand.",
+    "UPGRADE_DESCRIPTION": "Innate - Countdown 20: Exhaust all attacks in your hand, discard and draw piles and replace them with *Inferno *Dragons. NL Whenever you play an attack card, subtract 1 from this card's Countdown. NL Enhance 2: Subtract 10 from this card's Countdown and add 2 *Hellflame *Dragons to your hand."
   },
   "shadowverse:HypersonicDragonewt": {
     "NAME": "Hypersonic Dragonewt",

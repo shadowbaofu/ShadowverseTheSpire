@@ -37,7 +37,7 @@ public class DragonHoard extends AbstractEnhanceCard {
 
     public DragonHoard() {
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.POWER, Dragon.Enums.COLOR_BROWN, CardRarity.UNCOMMON, CardTarget.SELF, 2);
-        this.cardsToPreview = new Heliodragon();
+        this.cardsToPreview = new InfernoDragon();
     }
 
     public void update() {
@@ -74,12 +74,12 @@ public class DragonHoard extends AbstractEnhanceCard {
     @Override
     public void enhanceUse(AbstractPlayer p, AbstractMonster m) {
         addToBot(new MakeTempCardInHandAction(new HellFlameDragon(),2));
-        addToBot(new ApplyPowerAction(p,p,new DragonHoardPower(p,8)));
+        addToBot(new ApplyPowerAction(p,p,new DragonHoardPower(p,10)));
     }
 
     @Override
     public void baseUse(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p,p,new DragonHoardPower(p,16)));
+        addToBot(new ApplyPowerAction(p,p,new DragonHoardPower(p,20)));
     }
 
 

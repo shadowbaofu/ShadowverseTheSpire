@@ -28,7 +28,7 @@ import shadowverse.characters.Dragon;
    public static final String[] TEXT = uiStrings.TEXT;
 
    public Python() {
-     super(ID, NAME, IMG_PATH, 4, DESCRIPTION, CardType.ATTACK, Dragon.Enums.COLOR_BROWN, CardRarity.RARE, CardTarget.SELF);
+     super(ID, NAME, IMG_PATH, 5, DESCRIPTION, CardType.ATTACK, Dragon.Enums.COLOR_BROWN, CardRarity.RARE, CardTarget.SELF);
      this.baseBlock = 27;
      this.exhaust = true;
    }

@@ -43,25 +43,11 @@ import shadowverse.characters.Nemesis;
      } 
    }
 
-   public void applyPowers() {
-     super.applyPowers();
-     int amount = 0;
-     for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisCombat){
-       if (c instanceof ChaosAura){
-         amount++;
-       }
-     }
-     this.rawDescription = cardStrings.DESCRIPTION;
-     this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + amount;
-     this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[1];
-     initializeDescription();
-   }
-
 
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
      addToBot(new SFXAction("ChaosAura"));
      int amount = -1;
-     for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisCombat){
+     for (AbstractCard c : abstractPlayer.exhaustPile.group){
        if (c instanceof ChaosAura){
          amount++;
        }
@@ -69,6 +55,7 @@ import shadowverse.characters.Nemesis;
      if (amount < 5){
        addToBot(new DamageRandomEnemyAction(new DamageInfo(abstractPlayer,this.damage * amount,this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
        addToBot(new DrawCardAction(1));
+       addToBot(new MakeTempCardInDrawPileAction(this.makeStatEquivalentCopy(),3,true,true));
      }else {
        AbstractMonster m = AbstractDungeon.getRandomMonster();
        if (AbstractDungeon.actionManager.turn > 4){
@@ -96,7 +83,6 @@ import shadowverse.characters.Nemesis;
          }
        }
      }
-     addToBot(new MakeTempCardInDrawPileAction(this.makeStatEquivalentCopy(),3,true,true));
    }
  
    

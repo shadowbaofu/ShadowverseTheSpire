@@ -49,13 +49,15 @@ public class CurseOfTheBlackDragon extends CustomCard {
         if (overflow) {
             AbstractCreature m = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
             if (m != null){
+                calculateCardDamage((AbstractMonster) m);
                 addToBot(new VFXAction(new ClawEffect(m.hb.cX, m.hb.cY, Color.SCARLET, Color.PURPLE), 0.1F));
-                addToBot(new DamageAction(m,new DamageInfo(AbstractDungeon.player,this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.NONE));
+                addToBot(new DamageAction(m,new DamageInfo(AbstractDungeon.player,this.damage, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.NONE));
             }
         } else {
             addToBot(new LoseHPAction(AbstractDungeon.player, AbstractDungeon.player, 1));
         }
     }
+
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {

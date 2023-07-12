@@ -36,6 +36,8 @@ import shadowverse.powers.RowenPower;
    public RowenCard() {
      super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Dragon.Enums.COLOR_BROWN, CardRarity.RARE, CardTarget.ENEMY,2);
      this.baseDamage = 9;
+     this.baseMagicNumber = 2;
+     this.magicNumber = this.baseMagicNumber;
      this.cardsToPreview = new CurseOfTheBlackDragon();
      ExhaustiveVariable.setBaseValue(this, 2);
    }
@@ -44,6 +46,7 @@ import shadowverse.powers.RowenPower;
    public void upgrade() {
      if (!this.upgraded) {
        upgradeName();
+       upgradeMagicNumber(1);
        ExhaustiveVariable.upgrade(this, 1);
      } 
    }
@@ -58,7 +61,7 @@ import shadowverse.powers.RowenPower;
      addToBot(new SFXAction("RowenCard_Eh"));
      addToBot(new DamageAction(m,new DamageInfo(p,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
      addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
-     addToBot(new ApplyPowerAction(p,p,new RowenPower(p,2,2)));
+     addToBot(new ApplyPowerAction(p,p,new RowenPower(p,2,this.magicNumber)));
    }
 
    @Override

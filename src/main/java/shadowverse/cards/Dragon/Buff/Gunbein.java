@@ -34,7 +34,7 @@ public class Gunbein
     public Gunbein() {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Dragon.Enums.COLOR_BROWN, CardRarity.COMMON, CardTarget.SELF);
         this.baseBlock = 10;
-        this.tags.add(AbstractShadowversePlayer.Enums.ARMED);
+        this.tags.add(AbstractShadowversePlayer.Enums.ACADEMIC);
     }
 
 

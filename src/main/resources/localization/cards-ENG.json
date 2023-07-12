@@ -569,7 +569,7 @@
   },
   "shadowverse:Mother": {
     "NAME": "Viridia Magna",
-    "DESCRIPTION": "Natura. NL Apply !M! Poison. NL If you have played more than 1 *Naterran *Great *Tree(s) this combat, apply !M! more Poison. NL If you have played more than 3 *Naterran *Great *Tree this combat, gain !B! Block.",
+    "DESCRIPTION": "Natura. NL Apply !M! Poison. NL If you have played at least 1 *Naterran *Great *Tree(s) this combat, apply !M! more Poison. NL If you have played more than 3 *Naterran *Great *Tree this combat, gain !B! Block.",
     "EXTENDED_DESCRIPTION": [
       " NL (*Naterran *Great *Trees played: ",
       ")"
@@ -4290,7 +4290,7 @@
   },
   "shadowverse:MagnaSaber": {
     "NAME": "Magna Saber",
-    "DESCRIPTION": "Festive. NL Maneuver: Cost 2 or less. NL Deal !D! Damage. NL Deal !M! Damage to all enemies. NL The card exhausted to Maneuver this card will not return to your hand. Instead, add 1 copy of this card to your hand and change its cost to 0 until played."
+    "DESCRIPTION": "Machina / Festive. NL Maneuver: Cost 2 or less. NL Deal !D! Damage. NL Deal !M! Damage to all enemies. NL The card exhausted to Maneuver this card will not return to your hand. Instead, add 1 copy of this card to your hand and change its cost to 0 until played."
   },
   "shadowverse:AllFeeling": {
     "NAME": "All-Feeling Divine",

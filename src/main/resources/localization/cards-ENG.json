@@ -5643,7 +5643,7 @@
   },
   "shadowverse:PolyphonicRoar": {
     "NAME": "Polyphonic Roar",
-    "DESCRIPTION": "At the start of your turn, add 1 *Windblast Dragon to your hand. It costs 0 this turn.",
+    "DESCRIPTION": "At the start of your turn, add 1 *Windblast *Dragon to your hand. It costs 0 this turn.",
     "UPGRADE_DESCRIPTION": "At the start of your turn, add 1 *Windblast *Dragon+ to your hand. It costs 0 this turn."
   },
   "shadowverse:OtohimeVanguard": {
@@ -5716,7 +5716,7 @@
   },
   "shadowverse:CursedFuror": {
     "NAME": "Cursed Furor",
-    "DESCRIPTION": "Choose: NL *Rowen's *Roar NL *Valdain's Claw. NL If Overflow is active, play this card as both, gaining 1 Overflow Point and then [E] next turn, and applying !M! Weak and Vulnerable to a random enemy in sequence."
+    "DESCRIPTION": "Choose: NL *Rowen's *Roar NL *Valdain's *Claw. NL If Overflow is active, play this card as both, gaining 1 Overflow Point and then [E] next turn, and applying !M! Weak and Vulnerable to a random enemy in sequence."
   },
   "shadowverse:ServantOfDisdain": {
     "NAME": "Servant of Disdain",
@@ -5762,7 +5762,7 @@
     "NAME": "Swiftblade Dragonewt",
     "DESCRIPTION": "Armed NL Deal !D! damage. NL Add 1 *Draconic *Weapon to your hand. NL If 4 or more Armed attack cards have been played this combat, deal !D! damage again.",
     "EXTENDED_DESCRIPTION": [
-      " NL （Has played",
+      " NL （Has played ",
       "Armed Attack Cards)"
     ]
   },
@@ -5770,7 +5770,7 @@
     "NAME": "Draconir, Knuckle Dragon",
     "DESCRIPTION": "Armed NL Gain !B! Block. NL Add !M! *Draconic *Weapon to your hand. NL If 4 or more Armed Attack cards have been played this combat, add 1 *Miracle and 1 *Evolution *Point to your hand.",
     "EXTENDED_DESCRIPTION": [
-      " NL （Has played",
+      " NL （Has played ",
       " Armed Attack cards)"
     ]
   },
@@ -5778,7 +5778,7 @@
     "NAME": "Lance Lizard",
     "DESCRIPTION": "Armed NL Deal !D! damage. NL Add 1 *Draconic *Weapon to your hand. NL If 4 or more Armed Attack cards have been played this combat, gain !B! Block and deal !D! damage again.",
     "EXTENDED_DESCRIPTION": [
-      " NL （Has played",
+      " NL （Has played ",
       " Armed Attack cards)"
     ]
   },
@@ -5791,7 +5791,7 @@
     "DESCRIPTION": "Armed NL Deal !D! damage. NL Last_Words: When this card is played, Add 1 *Draconic *Smash to your hand. NL If 4 or more Armed Attack cards have been played this combat, double the damage and gain 1 Strength and Dexterity.",
     "UPGRADE_DESCRIPTION": "Armed NL Deal !D! damage. NL Last_Words: When this card is played, Add 1 *Draconic *Smash+ to your hand. NL If 4 or more Armed Attack cards have been played this combat, double the damage and gain 1 Strength and Dexterity.",
     "EXTENDED_DESCRIPTION": [
-      " NL （Has played",
+      " NL （Has played ",
       " Armed Attack cards)"
     ]
   },
@@ -5920,10 +5920,10 @@
   },
   "shadowverse:LavateinnDragon": {
     "NAME": "Lævateinn Dragon",
-    "DESCRIPTION": "Armed NL Deal !D! damage. NL If you have any *Draconic *Weapons in your hand, exhaust 1 and add an *Evolution *Point to your hand. NL If at least 4 Armed Attack cards were played this combat, instead Choose: NL *Lævateinn *Dragon, *Attack *Form NL *Lævateinn *Dragon, *Defense Form NL or *Lævateinn *Dragon, *Blast *Form NL And add it to your hand.",
-    "UPGRADE_DESCRIPTION": "Armed NL Deal !D! damage. NL If you have any *Draconic *Weapons in your hand, exhaust 1 and add an *Evolution *Point to your hand. NL Add 1 *Draconic *Weapon to your hand. NL If at least 4 Armed Attack cards were played this combat, instead Choose: NL *Lævateinn *Dragon, *Attack *Form NL *Lævateinn *Dragon, *Defense Form NL or *Lævateinn *Dragon, *Blast *Form NL And add it to your hand.",
+    "DESCRIPTION": "Armed NL Deal !D! damage. NL If you have any *Draconic *Weapons in your hand, exhaust 1 and add an *Evolution *Point to your hand. NL If at least 4 Armed Attack cards were played this combat, instead Choose: NL *Lævateinn *Dragon, *Attack *Form NL *Lævateinn *Dragon, *Defense *Form NL or *Lævateinn *Dragon, *Blast *Form NL And add it to your hand.",
+    "UPGRADE_DESCRIPTION": "Armed NL Deal !D! damage. NL If you have any *Draconic *Weapons in your hand, exhaust 1 and add an *Evolution *Point to your hand. NL Add 1 *Draconic *Weapon to your hand. NL If at least 4 Armed Attack cards were played this combat, instead Choose: NL *Lævateinn *Dragon, *Attack *Form NL *Lævateinn *Dragon, *Defense *Form NL or *Lævateinn *Dragon, *Blast *Form NL And add it to your hand.",
     "EXTENDED_DESCRIPTION": [
-      " NL Played",
+      " NL Played ",
       " Armed Attack Cards)"
     ]
   },
@@ -6029,7 +6029,7 @@
   },
   "shadowverse:GrandSlamTamer": {
     "NAME": "Grand Slam Tamer",
-    "DESCRIPTION": "Academic. Gain 1 Dexterity (Limit). NL Gain !B! Block. NL If you have at least 2 Dexterity, add 1 *Hellflame *Dragon to your hand, NL If you have at least 4 Dexterity, double the damage."
+    "DESCRIPTION": "Academic. Gain 1 Dexterity (Limit). NL Gain !B! Block. NL If you have at least 2 Dexterity, add 1 *Hellflame *Dragon to your hand, NL If you have at least 4 Dexterity, double that *Hellflame *Dragon's damage."
   },
   "shadowverse:CelestialDragoon": {
     "NAME": "Celestial Dragoon",

@@ -102,8 +102,10 @@ public class NaturalMachine extends AbstractImageEvent {
         super.update();
         if (this.pickCard && !AbstractDungeon.isScreenUp && !AbstractDungeon.gridSelectScreen.selectedCards.isEmpty()) {
             for (int i = 0; i < 3; i++) {
-                AbstractCard c = AbstractDungeon.gridSelectScreen.selectedCards.get(i).makeCopy();
-                AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(c, (float) Settings.WIDTH / (i * 2.0F), (float) Settings.HEIGHT / 2.0F));
+                if (AbstractDungeon.gridSelectScreen.selectedCards.size() >= i){
+                    AbstractCard c = AbstractDungeon.gridSelectScreen.selectedCards.get(i).makeCopy();
+                    AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(c, (float) Settings.WIDTH / (i * 2.0F), (float) Settings.HEIGHT / 2.0F));
+                }
             }
             AbstractDungeon.gridSelectScreen.selectedCards.clear();
         }

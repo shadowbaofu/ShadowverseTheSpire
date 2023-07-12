@@ -5737,7 +5737,7 @@
   },
   "shadowverse:SneerOfDisdain": {
     "NAME": "Sneer of Disdain",
-    "DESCRIPTION": "Deal !D! damage. NL Enhance 2: Exhaust all *Burns in your hand and deal !M! damage for each exhausted, then add 1 *Burn to your hand."
+    "DESCRIPTION": "Deal !D! damage. NL Enhance 2: Exhaust all *Burns in your hand and gain !M! Block for each exhausted, then add 1 *Burn to your hand."
   },
   "shadowverse:PrimeDragonKeeper": {
     "NAME": "Prime Dragon Keeper",

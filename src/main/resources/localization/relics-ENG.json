@@ -36,7 +36,7 @@
     ]
   },
   "shadowverse:Genius": {
-    "NAME": "Genius Among Geniuses",
+    "NAME": "'Genius Among Geniuses' Flair",
     "FLAVOR": "You'll lose on turn 8!",
     "DESCRIPTIONS": [
       "At the end of the 8th turn, deal #b61 damage to all enemies."
@@ -142,7 +142,7 @@
     ]
   },
   "shadowverse:Mimori": {
-    "NAME": "Not-So-Ordinary",
+    "NAME": "'Not-So-Ordinary' Flair",
     "FLAVOR": "Nice to meet you! I'm Mimori Amamiya!",
     "DESCRIPTIONS": [
       "Damage dealt + #b10%, damage taken - #b10%. By the end of your turn, if you have played at least 5 cards, damage dealt + #b10% (Up to 5 times). If you take any unblocked damage, damage dealt - #b10%."
@@ -205,7 +205,7 @@
     ]
   },
   "shadowverse:Alice": {
-    "NAME": "One-of-a-Kind Idol",
+    "NAME": "'One-of-a-Kind Idol' Flair",
     "FLAVOR": "Alice Kurobane's concert is about to begin!",
     "DESCRIPTIONS": [
       "Whenever a #yNecromancy effect is activated, deal #b3 damage to ALL enemies."
@@ -233,7 +233,7 @@
     ]
   },
   "shadowverse:Lusia": {
-    "NAME": "Don't Waste My Time",
+    "NAME": "'Don't Waste My Time' Flair",
     "FLAVOR": "Shadowverse is only a tool.",
     "DESCRIPTIONS": [
       "Gain [E] when #yVengeance is activated."
@@ -596,7 +596,7 @@
     ]
   },
   "shadowverse:Hiro": {
-    "NAME": "Overjoyousness",
+    "NAME": "'Shadowverse is Life!' Flair",
     "FLAVOR": "Shadowverse is fun!",
     "DESCRIPTIONS": [
       "Upon pickup, replace the #yDragon #yOracle in your deck with #yHiro #yRyuugasaki's #yDragon #yOracle"
@@ -620,21 +620,21 @@
     "NAME": "Dragon's Fist",
     "FLAVOR": "Kaya wore it on her hands like a glove, fitted with a huge dragon's wrist. It is said that it responds to the strong emotions of the wearer.",
     "DESCRIPTIONS": [
-      "Replaces *Token *of *1st. NL At the start of each combat gain #b3 #yOverflow points. Lose #b1 #yDexterity each turn."
+      "Replaces #yToken #yof #y1st. NL At the start of each combat gain #b3 #yOverflow points. Lose #b1 #yDexterity each turn."
     ]
   },
   "shadowverse:GreaBOSS": {
     "NAME": "Dragon Amulet",
     "FLAVOR": "A dragon talisman that enhances Grea's abilities. Under the protection of its gems, the Dragon Princess' flames become more intense, burning all in their path.",
     "DESCRIPTIONS": [
-      "Replaces *Token *of *1st. NL Start each combat with #b1 Overflow point. At the start of each turn, if #yOverflow is active for you, add 1 #yGrea's #Ember to your hand."
+      "Replaces #yToken #yof #y1st. NL Start each combat with #b1 Overflow point. At the start of each turn, if #yOverflow is active for you, add 1 #yGrea's #yEmber to your hand."
     ]
   },
   "shadowverse:InoriBOSS": {
     "NAME": "Inori's Piko Hammer",
-    "FLAVOR": "Inori's favorite hammer. Completely different from its original appearance after being transformed by Homare, its strength can withstand even the power of the Dragon Clan's awakening.",
+    "FLAVOR": "Inori's favorite hammer. Completely different from its original appearance after being transformed by Homare.",
     "DESCRIPTIONS": [
-      "Replaces *Token *of *1st. NL Start each combat with #b1 Overflow point. Start each combat with all enemies Stunned."
+      "Replaces #yToken #yof #y1st. NL Start each combat with #b1 Overflow point. Start each combat with all enemies Stunned."
     ]
   }
 }

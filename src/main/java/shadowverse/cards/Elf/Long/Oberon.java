@@ -63,7 +63,7 @@ public class Oberon
     @Override
     public void update() {
         if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
-                Shadowverse.Accelerate(this) && AbstractDungeon.player.hasPower(DexterityPower.POWER_ID) && AbstractDungeon.actionManager.cardsPlayedThisCombat.size() >= 30) {
+                Shadowverse.Accelerate(this) && AbstractDungeon.actionManager.cardsPlayedThisCombat.size() >= 30) {
             setCostForTurn(1);
             this.type = CardType.SKILL;
         } else {

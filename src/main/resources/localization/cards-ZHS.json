@@ -147,7 +147,11 @@
   },
   "shadowverse:MasterMageLevi": {
     "NAME": "伟大的魔法师·里维",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL  土之秘术 :对全体敌人造成 !D! 点伤害。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL  土之秘术 :对全体敌人造成 !D! 点伤害。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (已消耗 ",
+      " 层。)"
+    ]
   },
   "shadowverse:Concentration": {
     "NAME": "精神统一",

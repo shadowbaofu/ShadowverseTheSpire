@@ -147,7 +147,11 @@
   },
   "shadowverse:MasterMageLevi": {
     "NAME": "偉大なる魔術師・レヴィ",
-    "DESCRIPTION": "!D! ダメージを与える。 NL 土の秘術 \b敵全体に !D! ダメージを与える。"
+    "DESCRIPTION": "!D! ダメージを与える。 NL 土の秘術 \b敵全体に !D! ダメージを与える。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (消費した 土の印 は",
+      "。)"
+    ]
   },
   "shadowverse:Concentration": {
     "NAME": "精神統一",

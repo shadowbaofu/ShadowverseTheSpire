@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import shadowverse.action.DrawPileToHandAction_Tag_NOREPEAT;
+import shadowverse.action.DrawPileToHandAction_Tag;
 import shadowverse.cards.Neutral.Temp.MagicalPawn;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Witchcraft;
@@ -38,7 +38,7 @@ public class Check extends CustomCard {
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy(),this.magicNumber));
-        addToBot(new DrawPileToHandAction_Tag_NOREPEAT(2,AbstractShadowversePlayer.Enums.CHESS,null,this));
+        addToBot(new DrawPileToHandAction_Tag(2,AbstractShadowversePlayer.Enums.CHESS,null));
     }
 
 

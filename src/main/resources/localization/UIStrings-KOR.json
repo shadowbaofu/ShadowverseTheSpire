@@ -267,5 +267,10 @@
     "EXTRA_TEXT": [
       " NL *빛나는 *금화 1장을 얻습니다. "
     ]
+  },
+  "shadowverse:ArmedMod": {
+    "TEXT": [
+      "무장 NL "
+    ]
   }
 }

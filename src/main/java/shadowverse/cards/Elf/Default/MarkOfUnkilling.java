@@ -3,6 +3,7 @@ package shadowverse.cards.Elf.Default;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -44,12 +45,14 @@ public class MarkOfUnkilling
 
     @Override
     public void enhanceUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new SFXAction("MarkOfUnkilling"));
         addToBot(new ApplyPowerAction(m, p, new StrengthPower(m, -this.magicNumber), -this.magicNumber));
         addToBot(new DrawCardAction(1));
     }
 
     @Override
     public void baseUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new SFXAction("MarkOfUnkilling"));
         if (m.powers.stream().anyMatch(pow -> pow.type == AbstractPower.PowerType.DEBUFF))
             addToBot(new ApplyPowerAction(m, p, new StrengthPower(m, -this.magicNumber), -this.magicNumber));
         addToBot(new DrawCardAction(1));

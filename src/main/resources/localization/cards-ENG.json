@@ -147,7 +147,11 @@
   },
   "shadowverse:MasterMageLevi": {
     "NAME": "Master Mage Levi",
-    "DESCRIPTION": "Deal !D! damage. NL Earth_Rite: \b Deal !D! damage to all enemies."
+    "DESCRIPTION": "Deal !D! damage. NL Earth_Rite: \b Deal !D! damage to all enemies.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Consumed ",
+      " Earth Essence.)"
+    ]
   },
   "shadowverse:Concentration": {
     "NAME": "Concentration",

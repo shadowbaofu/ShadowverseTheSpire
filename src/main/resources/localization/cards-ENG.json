@@ -6215,7 +6215,7 @@
   },
   "shadowverse:ColossalSummoning": {
     "NAME": "Colossal Summoning",
-    "DESCRIPTION": "Gain !B! Block. NL If you have consumed 7 or more Earth_Essences this combat, instead add 1 *Genesis *Dragon to your hand. It costs 0 and exhausts.",
+    "DESCRIPTION": "Gain !B! Block. NL If you have consumed 7 or more Earth Essences this combat, instead add 1 *Genesis *Dragon to your hand. It costs 0 and exhausts.",
     "UPGRADE_DESCRIPTION": "",
     "EXTENDED_DESCRIPTION": [
       " NL (Consumed ",

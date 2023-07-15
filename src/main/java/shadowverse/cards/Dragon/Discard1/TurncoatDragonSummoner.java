@@ -44,6 +44,8 @@ import java.util.ArrayList;
      if (!this.upgraded) {
        upgradeName();
        upgradeDamage(3);
+       this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+       initializeDescription();
      } 
    }
 

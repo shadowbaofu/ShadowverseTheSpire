@@ -32,7 +32,7 @@ import java.util.ArrayList;
    public SpineLucille() {
      super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.SPECIAL, CardTarget.ENEMY);
      this.baseDamage = 9;
-     this.baseMagicNumber = 36;
+     this.baseMagicNumber = 24;
      this.magicNumber = this.baseMagicNumber;
      this.tags.add(AbstractShadowversePlayer.Enums.ARTIFACT);
      this.exhaust = true;

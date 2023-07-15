@@ -57,7 +57,7 @@ public class Naht extends CustomMonster implements SpriteCreature {
 
     private float spawnX = -100.0F;
 
-    public SpriterAnimation extra = new SpriterAnimation("img/animation/Naht/Naht.scml");
+    public SpriterAnimation extra;
 
     private HashMap<Integer, AbstractMonster> enemySlots = new HashMap<>();
 
@@ -72,8 +72,11 @@ public class Naht extends CustomMonster implements SpriteCreature {
     }
 
     public Naht() {
-        super(NAME, ID, 400, 0.0F, -30F, 340.0F, 420.0F, null, 60.0F, 130.0F);
-        this.animation = new SpriterAnimation("img/monsters/Naht/Naht.scml");
+        super(NAME, ID, 400, 0.0F, -30F, 340.0F, 420.0F, "img/monsters/Naht/class_3302_i_60_000.png", 60.0F, 130.0F);
+        if (Settings.MAX_FPS > 30){
+            this.animation = new SpriterAnimation("img/monsters/Naht/Naht.scml");
+            extra = new SpriterAnimation("img/animation/Naht/Naht.scml");
+        }
         this.dialogX = -100.0F * Settings.scale;
         this.dialogY = 10.0F * Settings.scale;
         this.type = AbstractMonster.EnemyType.BOSS;
@@ -208,7 +211,9 @@ public class Naht extends CustomMonster implements SpriteCreature {
             case 5:
                 AbstractDungeon.actionManager.addToBottom(new ShoutAction(this, DIALOG[4], 1.0F, 2.0F));
                 addToBot(new SFXAction("Naht_A5"));
-                AbstractDungeon.actionManager.addToBottom(new ChangeSpriteAction(extra, this, 2.4F));
+                if (Settings.MAX_FPS > 30){
+                    AbstractDungeon.actionManager.addToBottom(new ChangeSpriteAction(extra, this, 2.4F));
+                }
                 for (AbstractMonster m : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
                     if (m.equals(this) || m.isDying || m.isDead) {
                         continue;

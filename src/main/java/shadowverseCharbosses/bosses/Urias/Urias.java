@@ -33,10 +33,12 @@ public class Urias
     public static shadowverse.animation.AbstractAnimation bigAnimation = new shadowverse.animation.AbstractAnimation("img/monsters/Urias/class_1906.atlas", "img/monsters/Urias/class_1906.json", com.megacrit.cardcrawl.core.Settings.M_W / 1600.0F, com.megacrit.cardcrawl.core.Settings.M_W / 2.0F, com.megacrit.cardcrawl.core.Settings.M_H / 2.0F, 0F, 0F);
 
     public Urias() {
-        super(NAME, ID, 450, -4.0F, -16.0F, 220.0F, 400.0F, null, 0.0F, -20.0F, Vampire.Enums.Vampire);
+        super(NAME, ID, 450, -4.0F, -16.0F, 220.0F, 400.0F, "img/monsters/Urias/images/class_1906_i_60_000.png", 0.0F, -20.0F, Vampire.Enums.Vampire);
         this.energyOrb = new ShadowverseEnergyOrb(null, null,null,BASE_LAYER);
         this.energy = new EnemyEnergyManager(3);
-        this.animation = new SpriterAnimation("img/monsters/Urias/images/Urias.scml");
+        if (Settings.MAX_FPS > 30){
+            this.animation = new SpriterAnimation("img/monsters/Urias/images/Urias.scml");
+        }
         this.type = EnemyType.BOSS;
         this.dialogX = -100.0F * Settings.scale;
         this.dialogY = 10.0F * Settings.scale;

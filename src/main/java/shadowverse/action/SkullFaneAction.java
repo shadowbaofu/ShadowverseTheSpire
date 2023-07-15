@@ -40,13 +40,13 @@ public class SkullFaneAction extends AbstractGameAction {
                 }
             }
             if (orbCount>0){
-                addToBot((AbstractGameAction)new GainBlockAction(AbstractDungeon.player,orbCount*this.block));
-                addToBot((AbstractGameAction)new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,(AbstractPower)new StrengthPower(AbstractDungeon.player,orbCount*this.str)));
+                addToBot(new GainBlockAction(AbstractDungeon.player,orbCount*this.block));
+                addToBot(new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,new StrengthPower(AbstractDungeon.player,orbCount*this.str)));
             }
             for (AbstractOrb orb : AbstractDungeon.player.orbs) {
                 if (orb instanceof AmuletOrb &&!((AmuletOrb) orb).amulet.hasTag(AbstractShadowversePlayer.Enums.MINION)){
                     orb.passiveAmount = 0;
-                    AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new StasisEvokeIfRoomInHandAction((AmuletOrb) orb));
+                    AbstractDungeon.actionManager.addToBottom( new StasisEvokeIfRoomInHandAction((AmuletOrb) orb));
                 }
             }
 

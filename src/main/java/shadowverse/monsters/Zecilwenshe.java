@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.cards.status.Wound;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.MonsterStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -64,8 +65,10 @@ public class Zecilwenshe extends CustomMonster {
     }
 
     public Zecilwenshe(float x,float y) {
-        super(NAME, ID, 100, -0.0F, -20.0F, 205.0F, 540.0F, null,x, y);
-        this.animation = new SpriterAnimation("img/monsters/Zecilwenshe/images/Zecilwenshe.scml");
+        super(NAME, ID, 100, -0.0F, -20.0F, 205.0F, 540.0F, "img/monsters/Zecilwenshe/images/class_2508_i_60_000.png",x, y);
+        if (Settings.MAX_FPS > 30){
+            this.animation = new SpriterAnimation("img/monsters/Zecilwenshe/images/Zecilwenshe.scml");
+        }
         if (AbstractDungeon.ascensionLevel >= 8) {
             setHp(120);
         } else {

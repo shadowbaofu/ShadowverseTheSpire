@@ -1663,6 +1663,11 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("Vincent_Start", new Sfx(voicePath + "Vincent_Start.wav"));
             reflectedMap.put("DragonicCall", new Sfx(voicePath + "DragonicCall.wav"));
             reflectedMap.put("Roy2_Eh", new Sfx(voicePath + "Roy2_Eh.wav"));
+            reflectedMap.put("Shin_Token", new Sfx(voicePath + "Shin_Token.wav"));
+            reflectedMap.put("Zebet_Eh", new Sfx(voicePath + "Zebet_Eh.wav"));
+            reflectedMap.put("Zebet_Ex", new Sfx(voicePath + "Zebet_Ex.wav"));
+            reflectedMap.put("Zebet", new Sfx(voicePath + "Zebet.wav"));
+            reflectedMap.put("Lvbu", new Sfx(voicePath + "Lvbu.wav"));
         }
         if (Loader.isModLoaded("CardAugments")) {
             AugmentHelper.register();
@@ -2991,6 +2996,14 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard(new Shin());
         BaseMod.addCard(new ChaosAura());
         BaseMod.addCard(new Odin2_Copy());
+        BaseMod.addCard(new Shin_Token());
+        BaseMod.addCard(new VengefulMantis());
+        BaseMod.addCard(new VirulentHornet());
+        BaseMod.addCard(new VeiledShudderfly());
+        BaseMod.addCard(new VerdantLieutenant());
+        BaseMod.addCard(new ViciousScorpion());
+        BaseMod.addCard(new Zebet());
+        BaseMod.addCard(new Lvbu());
         logger.info("Success");
     }
 

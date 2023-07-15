@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.MonsterStrings;
 import com.megacrit.cardcrawl.powers.*;
@@ -48,11 +49,14 @@ public class VincentBOSS extends CustomMonster implements SpriteCreature {
 
     private boolean firstTurn = true;
 
-    public SpriterAnimation extra = new SpriterAnimation("img/monsters/VincentBOSS/extra/extra.scml");
+    public SpriterAnimation extra;
 
     public VincentBOSS() {
-        super(NAME, ID, 450, 0.0F, -30F, 230.0F, 520.0F, null, 80.0F, -30.0F);
-        this.animation = new SpriterAnimation("img/monsters/VincentBOSS/VincentBOSS.scml");
+        super(NAME, ID, 450, 0.0F, -30F, 230.0F, 520.0F, "img/monsters/VincentBOSS/class_2513_i_60_000.png", 80.0F, -30.0F);
+        if (Settings.MAX_FPS > 30){
+            this.animation = new SpriterAnimation("img/monsters/VincentBOSS/VincentBOSS.scml");
+            extra = new SpriterAnimation("img/monsters/VincentBOSS/extra/extra.scml");
+        }
         this.type = EnemyType.BOSS;
         if (AbstractDungeon.ascensionLevel >= 8) {
             setHp(500, 500);
@@ -97,12 +101,12 @@ public class VincentBOSS extends CustomMonster implements SpriteCreature {
         CardCrawlGame.music.unsilenceBGM();
         AbstractDungeon.scene.fadeOutAmbiance();
         AbstractDungeon.getCurrRoom().playBgmInstantly("StormOverRivayle");
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, (AbstractPower)new TimeWarpPower(this)));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new TimeWarpPower(this)));
         AbstractDungeon.actionManager.addToBottom(new TalkAction(this, DIALOG[0]));
         addToBot(new SFXAction("Vincent_Start"));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, (AbstractPower)new JudgmentWordPower(AbstractDungeon.player)));
-        addToBot(new ApplyPowerAction(AbstractDungeon.player,this,(AbstractPower)new NoDamage(AbstractDungeon.player)));
-        addToBot(new ApplyPowerAction(AbstractDungeon.player,this,(AbstractPower)new ManaPower(AbstractDungeon.player,0)));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new JudgmentWordPower(AbstractDungeon.player)));
+        addToBot(new ApplyPowerAction(AbstractDungeon.player,this,new NoDamage(AbstractDungeon.player)));
+        addToBot(new ApplyPowerAction(AbstractDungeon.player,this,new ManaPower(AbstractDungeon.player,0)));
     }
 
     @Override
@@ -113,13 +117,15 @@ public class VincentBOSS extends CustomMonster implements SpriteCreature {
                 AbstractDungeon.actionManager.addToBottom( new SFXAction("Vincent_A4"));
                 AbstractDungeon.actionManager.addToBottom(new DamageAction(AbstractDungeon.player, this.damage
                         .get(1), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, (AbstractPower)new FreezePower(AbstractDungeon.player)));
-                setMove((byte)2, Intent.ATTACK,((DamageInfo)this.damage.get(0)).base);
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new FreezePower(AbstractDungeon.player)));
+                setMove((byte)2, Intent.ATTACK,(this.damage.get(0)).base);
                 break;
             case 2:
                 AbstractDungeon.actionManager.addToBottom(new TalkAction(this, DIALOG[2]));
                 addToBot(new SFXAction("Vincent_A2"));
-                AbstractDungeon.actionManager.addToBottom(new ChangeSpriteAction(extra, this, 2.0F));
+                if (Settings.MAX_FPS > 30){
+                    AbstractDungeon.actionManager.addToBottom(new ChangeSpriteAction(extra, this, 2.0F));
+                }
                 AbstractDungeon.actionManager.addToBottom(new VFXAction(new ViceCrushEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY), 0.5F));
                 AbstractDungeon.actionManager.addToBottom(new DamageAction(AbstractDungeon.player, this.damage
                         .get(0), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
@@ -127,8 +133,8 @@ public class VincentBOSS extends CustomMonster implements SpriteCreature {
                 break;
             case 3:
                 AbstractDungeon.actionManager.addToBottom(new GainBlockAction(this, this, this.blockAmt));
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, (AbstractPower)new StrengthPower(this, this.strAmt), this.strAmt));
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, (AbstractPower)new RapidFirePower(AbstractDungeon.player,this.rapidFireAmt,this)));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new StrengthPower(this, this.strAmt), this.strAmt));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new RapidFirePower(AbstractDungeon.player,this.rapidFireAmt,this)));
                 setMove( (byte)4, Intent.STRONG_DEBUFF);
                 break;
             case 4:
@@ -145,8 +151,8 @@ public class VincentBOSS extends CustomMonster implements SpriteCreature {
                     if (p.type == AbstractPower.PowerType.BUFF&&p.ID!=StrengthPower.POWER_ID&&p.ID!=DexterityPower.POWER_ID&&p.ID!=JudgmentWordPower.POWER_ID&&p.ID!= Cemetery.POWER_ID&&p.ID!=NaterranTree.POWER_ID)
                         addToTop(new RemoveSpecificPowerAction(AbstractDungeon.player, AbstractDungeon.player, p.ID));
                 }
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, (AbstractPower)new JudgmentWordPower(AbstractDungeon.player)));
-                setMove((byte)5, Intent.ATTACK_DEBUFF,((DamageInfo)this.damage.get(2)).base,this.fireAmt,true);
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new JudgmentWordPower(AbstractDungeon.player)));
+                setMove((byte)5, Intent.ATTACK_DEBUFF,(this.damage.get(2)).base,this.fireAmt,true);
                 break;
             case 5:
                 addToBot(new SFXAction("Vincent_A3"));
@@ -162,9 +168,9 @@ public class VincentBOSS extends CustomMonster implements SpriteCreature {
                 addToBot(new SFXAction("Vincent_E3"));
                 AbstractDungeon.actionManager.addToBottom(new TalkAction(this, DIALOG[5]));
                 AbstractDungeon.actionManager.addToBottom(new GainBlockAction(this, this, this.blockAmt));
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, (AbstractPower)new StrengthPower(this, this.strAmt), this.strAmt));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new StrengthPower(this, this.strAmt), this.strAmt));
                 if (!this.hasPower(TimeWarpPower.POWER_ID)){
-                    AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, (AbstractPower)new TimeWarpPower(this)));
+                    AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new TimeWarpPower(this)));
                 }else {
                     for (AbstractPower power:this.powers){
                         if (power instanceof TimeWarpPower){
@@ -179,16 +185,16 @@ public class VincentBOSS extends CustomMonster implements SpriteCreature {
             case 7:
                 addToBot(new SFXAction("Vincent_E1"));
                 AbstractDungeon.actionManager.addToBottom(new TalkAction(this, DIALOG[7]));
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, (AbstractPower)new FreezePower(AbstractDungeon.player)));
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, (AbstractPower)new VulnerablePower(AbstractDungeon.player,this.debuffAmt,true),this.debuffAmt));
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, (AbstractPower)new RapidFirePower(AbstractDungeon.player,this.rapidFireAmt,this)));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new FreezePower(AbstractDungeon.player)));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new VulnerablePower(AbstractDungeon.player,this.debuffAmt,true),this.debuffAmt));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new RapidFirePower(AbstractDungeon.player,this.rapidFireAmt,this)));
                 setMove((byte)8, Intent.DEFEND_BUFF);
                 break;
             case 8:
                 AbstractDungeon.actionManager.addToBottom(new GainBlockAction(this, this, this.blockAmt));
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, (AbstractPower)new StrengthPower(this, this.strAmt), this.strAmt));
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, (AbstractPower)new RapidFirePower(AbstractDungeon.player,this.rapidFireAmt,this)));
-                setMove((byte)1, Intent.ATTACK_DEBUFF,((DamageInfo)this.damage.get(1)).base);
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new StrengthPower(this, this.strAmt), this.strAmt));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new RapidFirePower(AbstractDungeon.player,this.rapidFireAmt,this)));
+                setMove((byte)1, Intent.ATTACK_DEBUFF,(this.damage.get(1)).base);
                 break;
         }
     }
@@ -197,7 +203,7 @@ public class VincentBOSS extends CustomMonster implements SpriteCreature {
     protected void getMove(int i) {
         if (this.firstTurn) {
             this.firstTurn = false;
-            setMove((byte)1, Intent.ATTACK_DEBUFF,((DamageInfo)this.damage.get(1)).base);
+            setMove((byte)1, Intent.ATTACK_DEBUFF,(this.damage.get(1)).base);
             return;
         }
     }

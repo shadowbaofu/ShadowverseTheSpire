@@ -78,6 +78,7 @@ public class Odin extends AbstractNeutralCard implements BranchableUpgradeCard {
                 break;
             case 1:
                 if (Shadowverse.Accelerate(this) && this.type == CardType.SKILL){
+                    addToBot(new SFXAction("Odin2_Acc"));
                     addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new IntangiblePlayerPower(abstractPlayer, 1), 1));
                     int costToReduce = 0;
                     for (AbstractCard card : abstractPlayer.hand.group){
@@ -90,7 +91,7 @@ public class Odin extends AbstractNeutralCard implements BranchableUpgradeCard {
                     o.setCostForTurn(4-costToReduce);
                     addToBot(new MakeTempCardInHandAction(o));
                 }else {
-                    addToBot(new SFXAction("Odin"));
+                    addToBot(new SFXAction("Odin2"));
                     addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
                     addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new IntangiblePlayerPower(abstractPlayer, 1), 1));
                 }

@@ -45,18 +45,18 @@
      public void triggerOnOtherCardPlayed(AbstractCard c) {
          if (c.exhaust && c.type==CardType.ATTACK) {
              flash();
-             addToBot((AbstractGameAction)new ReduceCostAction((AbstractCard)this));
+             addToBot(new ReduceCostAction(this));
          }
      }
  
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     addToBot((AbstractGameAction)new SFXAction("BlackArtifact"));
-     addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new BlackArtifactPower((AbstractCreature)abstractPlayer, this.magicNumber), this.magicNumber));
+     addToBot(new SFXAction("BlackArtifact"));
+     addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new BlackArtifactPower(abstractPlayer, this.magicNumber), this.magicNumber));
    }
  
    
    public AbstractCard makeCopy() {
-     return (AbstractCard)new BlackArtifact();
+     return new BlackArtifact();
    }
  }

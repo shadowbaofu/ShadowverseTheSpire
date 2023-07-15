@@ -168,6 +168,7 @@ public class RoyalPool  extends AbstractBanPool {
         Minion.addCard(new RoyalBanner());
         Minion.addCard(new SageCommander());
         Minion.addCard(new ShieldPhalanx());
+        Minion.addCard(new Lvbu());
         NatMech.addCard(new BrothersUnited());
         NatMech.addCard(new Cybercannoneer());
         NatMech.addCard(new Garven());

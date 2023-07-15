@@ -6289,12 +6289,9 @@
     ]
   },
   "shadowverse:ChaosAura": {
-    "NAME": "카오스 오라",
-    "DESCRIPTION": "이번 전투중 사용한 *카오스 *오라 가 5장 미만이라면, 사용한 *카오스 *오라 수의 !D! 배만큼의 피해를 무작위 적에게 주고 카드를 1장 뽑습니다. NL 5장 이상이라면 이하의 효과중 하나를 무작위로 발동합니다.: NL （1）무작위 적에게 피해를  !M! 주고 방어도를 !B!  얻습니다. NL (2)무작위 적에게 약화와 취약을 2 부여합니다.NL (3)이번 턴 손패의 모든 카드 비용 -1. NL 이번 턴이 5턴째 이상이면 하나 대신 모두 발동합니다. NL 이 카드의 복사본 3장을 뽑을 카드더미에 넣습니다. NL 소멸.",
-    "EXTENDED_DESCRIPTION": [
-      " NL (사용한 *카오스 *오라: ",
-      ")"
-    ]
+    "NAME": "Chaos, Conflagrate",
+    "DESCRIPTION": "Deal !D! damage for each *Chaos, *Conflagrate in your exhaust pile to a random enemy and draw 1 card. NL Shuffle 3 copies of this card into the draw pile. NL If 5 or more have been played, add 1 *Shin, *Chaotic *Darkness into your hand instead. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage for each *Chaos, *Conflagrate  in your exhaust pile to a random enemy and draw 1 card. NL Shuffle 3 copies of this card into the draw pile. NL If 5 or more have been played, add 1 *Shin, *Chaotic *Darkness+ into your hand instead. NL Exhaust."
   },
   "shadowverse:Odin2": {
     "NAME": "라그나로크의 개막 오딘",
@@ -6307,5 +6304,18 @@
   "shadowverse:Grimnir2": {
     "NAME": "폭풍의 천창 그림니르",
     "DESCRIPTION": "무작위 적에게 피해를 !D! 만큼 2번 줍니다. NL 소멸된 *진화 *포인트가 7장 이상이라면, 대신 피해를 !D! 만큼 4번 주고, 각 피해가 12씩 증가합니다."
+  },
+  "shadowverse:Shin_Token": {
+    "NAME": "Shin, Chaotic Darkness",
+    "DESCRIPTION": "Randomly activate the following effects: NL 1. Deal !D! damage to a random enemy. Gain !B! Block. NL 2. Apply 2 Vulnerable to a random enemy. NL 3. All cards in your hand cost 1 less this turn. NL If it's the 5th turn or later, apply ALL 3 effects instead. NL Exhaust."
+  },
+  "shadowverse:Zebet": {
+    "NAME": "地獄の君主・ゼベット",
+    "DESCRIPTION": "!B! ブロック を得る。 NL *絶速の甲虫 、 *絶死の毒蜂 、 *絶護の魔蠍 、 *絶刃の蟷螂 、 *絶伏の怪蝶 からランダムに1枚を手札に加える。 NL エンハンス 3:さらに1枚を手札に加える。 NL エンハンス 5:さらに2枚を手札に加える。",
+    "UPGRADE_DESCRIPTION":"!B! ブロック を得る。 NL *絶速の甲虫+ 、 *絶死の毒蜂+ 、 *絶護の魔蠍+ 、 *絶刃の蟷螂+ 、 *絶伏の怪蝶+ からランダムに1枚を手札に加える。 NL エンハンス 3:さらに1枚を手札に加える。 NL エンハンス 5:さらに2枚を手札に加える。"
+  },
+  "shadowverse:Lvbu": {
+    "NAME": "天下无双的武人",
+    "DESCRIPTION": "1/1。 NL 打出时，移除其他随从并获得 +X/+Y。X为其他随从的攻击力，Y为其他随从的体力。 NL 如果XY的合计值为20以上你不会受 力量 和 敏捷 以外的负面效果影响，这个随从不会失去体力。 NL 被动：造成攻击力的伤害，获得体力的格挡并失去1点体力。 NL 激发：重新召唤1个这个随从。 NL 消耗 。"
   }
 }

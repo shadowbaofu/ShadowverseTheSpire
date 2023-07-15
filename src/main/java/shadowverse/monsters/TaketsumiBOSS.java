@@ -70,8 +70,10 @@ public class TaketsumiBOSS extends CustomMonster implements SpriteCreature {
     }
 
     public TaketsumiBOSS() {
-        super(NAME, ID, 1200, 0.0F, -30F, 340.0F, 420.0F, null, 60.0F, 130.0F);
-        this.animation = new SpriterAnimation("img/monsters/Taketsumi/Taketsumi.scml");
+        super(NAME, ID, 1200, 0.0F, -30F, 340.0F, 420.0F, "img/monsters/Taketsumi/class_3502_i_60_000.png", 60.0F, 130.0F);
+        if (Settings.MAX_FPS > 30){
+            this.animation = new SpriterAnimation("img/monsters/Taketsumi/Taketsumi.scml");
+        }
         this.dialogX = -100.0F * Settings.scale;
         this.dialogY = 10.0F * Settings.scale;
         this.type = EnemyType.BOSS;

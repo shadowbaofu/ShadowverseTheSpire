@@ -10,7 +10,6 @@ import shadowverseCharbosses.bosses.AbstractBossDeckArchetype;
 import shadowverseCharbosses.bosses.AbstractCharBoss;
 import shadowverseCharbosses.core.EnemyEnergyManager;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.ClearCardQueueAction;
 import com.megacrit.cardcrawl.actions.animations.ShoutAction;
 import com.megacrit.cardcrawl.actions.animations.TalkAction;
@@ -20,7 +19,6 @@ import com.megacrit.cardcrawl.actions.unique.CanLoseAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -45,13 +43,16 @@ public class KMR
     public static final String[] DIALOG = monsterStrings.DIALOG;
     private boolean secondPhase = true;
     private static Texture BASE_LAYER = new Texture("img/ui/layer_nemesis.png");
-    private SpriterAnimation extra = new SpriterAnimation("img/monsters/KMR/extra/KMR.scml");
+    private SpriterAnimation extra;
 
     public KMR() {
         super(NAME, ID, 500, -4.0F, -16.0F, 220.0F, 400.0F, null, 0.0F, -20.0F, Nemesis.Enums.Nemesis);
         this.energyOrb = new ShadowverseEnergyOrb(null, null,null,BASE_LAYER);
         this.energy = new EnemyEnergyManager(5);
         this.animation = new SpriterAnimation("img/monsters/KMR/KMR.scml");
+        if (Settings.MAX_FPS > 30){
+            extra = new SpriterAnimation("img/monsters/KMR/extra/KMR.scml");
+        }
         this.type = EnemyType.BOSS;
         this.dialogX = -100.0F * Settings.scale;
         this.dialogY = 10.0F * Settings.scale;
@@ -71,32 +72,32 @@ public class KMR
     @Override
     public void usePreBattleAction() {
         this.energy.recharge();
-        addToBot((AbstractGameAction) new DelayedActionAction((AbstractGameAction) new CharbossTurnstartDrawAction()));
+        addToBot(new DelayedActionAction(new CharbossTurnstartDrawAction()));
         CardCrawlGame.music.unsilenceBGM();
         AbstractDungeon.scene.fadeOutAmbiance();
         AbstractDungeon.getCurrRoom().playBgmInstantly("GrandBattle");
         (AbstractDungeon.getCurrRoom()).cannotLose = true;
-        AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new SFXAction("KMR1"));
-        AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new TalkAction((AbstractCreature) this, DIALOG[0]));
+        AbstractDungeon.actionManager.addToBottom(new SFXAction("KMR1"));
+        AbstractDungeon.actionManager.addToBottom(new TalkAction(this, DIALOG[0]));
         if (AbstractDungeon.ascensionLevel >= 19) {
-            AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ApplyPowerAction((AbstractCreature) this, (AbstractCreature) this, (AbstractPower) new InvinciblePower((AbstractCreature) this, 300), 300));
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, (AbstractPower) new InvinciblePower(this, 300), 300));
         } else if (AbstractDungeon.ascensionLevel >= 4) {
-            AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ApplyPowerAction((AbstractCreature) this, (AbstractCreature) this, (AbstractPower) new InvinciblePower((AbstractCreature) this, 350), 350));
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, (AbstractPower) new InvinciblePower(this, 350), 350));
         } else {
-            AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ApplyPowerAction((AbstractCreature) this, (AbstractCreature) this, (AbstractPower) new InvinciblePower((AbstractCreature) this, 400), 400));
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, (AbstractPower) new InvinciblePower(this, 400), 400));
         }
-        AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ApplyPowerAction((AbstractCreature) this, (AbstractCreature) this, (AbstractPower) new LionSanctuaryPower((AbstractCreature) this, 3), 3));
-        AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new MakeTempCardInHandAction((AbstractCard)new KMRsPresent()));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, (AbstractPower) new LionSanctuaryPower(this, 3), 3));
+        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction((AbstractCard)new KMRsPresent()));
         this.chosenArchetype.addedPreBattle();
     }
 
     public void takeTurn() {
         if (this.nextMove == 20) {
-            AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new VFXAction((AbstractCreature) this, (AbstractGameEffect) new IntenseZoomEffect(this.hb.cX, this.hb.cY, true), 0.05F, true));
+            AbstractDungeon.actionManager.addToBottom(new VFXAction(this, (AbstractGameEffect) new IntenseZoomEffect(this.hb.cX, this.hb.cY, true), 0.05F, true));
             if (this.secondPhase){
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ChangeStateAction(this, "REBIRTH"));
+                AbstractDungeon.actionManager.addToBottom(new ChangeStateAction(this, "REBIRTH"));
             }else {
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ChangeStateAction(this, "CALAMITY"));
+                AbstractDungeon.actionManager.addToBottom(new ChangeStateAction(this, "CALAMITY"));
             }
             setMove((byte) 0, Intent.NONE);
         } else {
@@ -118,14 +119,16 @@ public class KMR
                 }
                 this.halfDead = false;
                 this.secondPhase = false;
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ShoutAction((AbstractCreature) this, DIALOG[1]));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new SFXAction("KMR2"));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new HealAction((AbstractCreature) this, (AbstractCreature) this, this.maxHealth));
+                AbstractDungeon.actionManager.addToBottom(new ShoutAction(this, DIALOG[1]));
+                AbstractDungeon.actionManager.addToBottom(new SFXAction("KMR2"));
+                AbstractDungeon.actionManager.addToBottom(new HealAction(this, this, this.maxHealth));
                 AbstractBossDeckArchetype archetype = new ArchetypeKMR2();
                 archetype.initialize();
                 this.chosenArchetype = archetype;
                 this.chosenArchetype.addedPreBattle();
-                AbstractDungeon.actionManager.addToBottom(new ChangeSpriteAction(extra, this, 2.1F));
+                if (Settings.MAX_FPS > 30){
+                    AbstractDungeon.actionManager.addToBottom(new ChangeSpriteAction(extra, this, 2.1F));
+                }
                 break;
             case "CALAMITY":
                 this.powers.removeIf(p -> p.type == AbstractPower.PowerType.DEBUFF || p.ID.equals(AbsoluteOnePower.POWER_ID) || p.ID.equals(InvinciblePower.POWER_ID));
@@ -137,11 +140,11 @@ public class KMR
                     this.maxHealth = 800;
                 }
                 this.halfDead = false;
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ApplyPowerAction((AbstractCreature) this, (AbstractCreature) this, (AbstractPower) new InvinciblePower((AbstractCreature) this, 500), 500));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ShoutAction((AbstractCreature) this, DIALOG[2]));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new SFXAction("KMR3"));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new HealAction((AbstractCreature) this, (AbstractCreature) this, this.maxHealth));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new CanLoseAction());
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, (AbstractPower) new InvinciblePower(this, 500), 500));
+                AbstractDungeon.actionManager.addToBottom(new ShoutAction(this, DIALOG[2]));
+                AbstractDungeon.actionManager.addToBottom(new SFXAction("KMR3"));
+                AbstractDungeon.actionManager.addToBottom(new HealAction(this, this, this.maxHealth));
+                AbstractDungeon.actionManager.addToBottom(new CanLoseAction());
                 AbstractBossDeckArchetype archetype3 = new ArchetypeKMR3();
                 archetype3.initialize();
                 this.chosenArchetype = archetype3;
@@ -165,11 +168,11 @@ public class KMR
                     p.onDeath();
                 for (AbstractRelic r : AbstractDungeon.player.relics)
                     r.onMonsterDeath(this);
-                addToTop((AbstractGameAction) new ClearCardQueueAction());
+                addToTop(new ClearCardQueueAction());
                 this.powers.removeIf(p -> p.type == AbstractPower.PowerType.DEBUFF || p.ID.equals(LionSanctuaryPower.POWER_ID));
                 setMove((byte) 20, AbstractMonster.Intent.UNKNOWN);
                 createIntent();
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new SetMoveAction(this, (byte) 20, AbstractMonster.Intent.UNKNOWN));
+                AbstractDungeon.actionManager.addToBottom(new SetMoveAction(this, (byte) 20, AbstractMonster.Intent.UNKNOWN));
                 applyPowers();
             }
         }

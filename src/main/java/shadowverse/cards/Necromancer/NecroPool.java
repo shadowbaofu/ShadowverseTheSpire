@@ -94,6 +94,7 @@ public class NecroPool extends AbstractBanPool {
         Default.addCard(new ResentfulScreaming());
         Default.addCard(new SoulTaker());
         Default.addCard(new Cernunnos());
+        Default.addCard(new Zebet());
         Burial.addCard(new CarnivalNecromancer());
         Burial.addCard(new DemonicProcession());
         Burial.addCard(new EverdarkStrix());

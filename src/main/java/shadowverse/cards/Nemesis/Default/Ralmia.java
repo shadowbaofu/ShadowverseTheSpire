@@ -81,7 +81,7 @@ public class Ralmia
         if (chosenBranch()==0){
             if (c.hasTag(AbstractShadowversePlayer.Enums.ARTIFACT)){
                 flash();
-                addToBot((AbstractGameAction)new SFXAction("Ralmia_EH"));
+                addToBot(new SFXAction("Ralmia_EH"));
                 this.enhance = true;
             }
         }
@@ -90,8 +90,8 @@ public class Ralmia
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         switch (chosenBranch()){
             case 0:
-                addToBot((AbstractGameAction)new SFXAction("Ralmia"));
-                addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new SmallLaserEffect(abstractMonster.hb.cX, abstractMonster.hb.cY, abstractPlayer.hb.cX, abstractPlayer.hb.cY), 0.1F));
+                addToBot(new SFXAction("Ralmia"));
+                addToBot(new VFXAction(new SmallLaserEffect(abstractMonster.hb.cX, abstractMonster.hb.cY, abstractPlayer.hb.cX, abstractPlayer.hb.cY), 0.1F));
                 if (this.enhance&&EnergyPanel.getCurrentEnergy()>=this.costForTurn+2) {
                     int count = 0;
                     ArrayList<String> dup = new ArrayList<>();
@@ -101,17 +101,17 @@ public class Ralmia
                             count++;
                         }
                     }
-                    addToBot((AbstractGameAction) new DamageAction((AbstractCreature) abstractMonster, new DamageInfo((AbstractCreature) abstractPlayer, this.damage*(count+1), this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+                    addToBot( new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage*(count+1), this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
                     EnergyPanel.useEnergy(2);
                     this.enhance = false;
                 }else {
-                    addToBot((AbstractGameAction) new DamageAction((AbstractCreature) abstractMonster, new DamageInfo((AbstractCreature) abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+                    addToBot( new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
                 }
                 break;
             case 1:
-                addToBot((AbstractGameAction)new SFXAction("Ralmia2"));
-                addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new SmallLaserEffect(abstractMonster.hb.cX, abstractMonster.hb.cY, abstractPlayer.hb.cX, abstractPlayer.hb.cY), 0.1F));
-                addToBot((AbstractGameAction) new DamageAction((AbstractCreature) abstractMonster, new DamageInfo((AbstractCreature) abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+                addToBot(new SFXAction("Ralmia2"));
+                addToBot(new VFXAction(new SmallLaserEffect(abstractMonster.hb.cX, abstractMonster.hb.cY, abstractPlayer.hb.cX, abstractPlayer.hb.cY), 0.1F));
+                addToBot( new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
                 ArrayList<AbstractCard> list = new ArrayList<>();
                 ArrayList<String> dup = new ArrayList<>();
                 for (AbstractCard c: abstractPlayer.exhaustPile.group){
@@ -122,7 +122,7 @@ public class Ralmia
                     }
                 }
                 if (list.size()>=6){
-                    addToBot ((AbstractGameAction)new DamageAllEnemiesAction((AbstractCreature)abstractPlayer, DamageInfo.createDamageMatrix(this.magicNumber, true), this.damageTypeForTurn, AbstractGameAction.AttackEffect.FIRE, true));
+                    addToBot (new DamageAllEnemiesAction(abstractPlayer, DamageInfo.createDamageMatrix(this.magicNumber, true), this.damageTypeForTurn, AbstractGameAction.AttackEffect.FIRE, true));
                 }
                 break;
         }
@@ -154,7 +154,7 @@ public class Ralmia
                 Ralmia.this.initializeDescription();
                 Ralmia.this.baseDamage = 9;
                 Ralmia.this.upgradedDamage = true;
-                Ralmia.this.baseMagicNumber = 24;
+                Ralmia.this.baseMagicNumber = 36;
                 Ralmia.this.magicNumber = Ralmia.this.baseMagicNumber;
                 Ralmia.this.upgradedMagicNumber = true;
             }

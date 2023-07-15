@@ -45,6 +45,18 @@ public class WhirlwindAssault
     }
 
 
+    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+        boolean canUse = super.canUse(p, m);
+            if (!canUse)
+                return false;
+            for (AbstractCard c : p.hand.group){
+                if (c.type == CardType.ATTACK && c.cost == 0){
+                    return true;
+                }
+            }
+        return false;
+    }
+
     public void applyPowers() {
         super.applyPowers();
         int count = 0;

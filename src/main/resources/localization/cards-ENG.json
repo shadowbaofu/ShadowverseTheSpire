@@ -6335,8 +6335,8 @@
   },
   "shadowverse:Zebet": {
     "NAME": "Zebet, Lady of the Flies",
-    "DESCRIPTION": "Gain !B! Block. NL Randomly add 1 *Velocious *Beetle, *Virulent *Hornet, *Vicious *Scorpion, *Vengeful *Mantis or *Veiled *Shudderfly to your hand. NL Enhance 3: Add 2 random cards to your hand. NL Enhance 5: Add 4 random cards to your hand.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Randomly add 1 *Velocious *Beetle+, *Virulent *Hornet+, *Vicious *Scorpion+, *Vengeful *Mantis+ or *Veiled *Shudderfly+ to your hand. NL Enhance 3: Add 2 random cards to your hand. NL Enhance 5: Add 4 random cards to your hand."
+    "DESCRIPTION": "Gain !B! Block. NL Randomly add 1 *Velocious *Beetle, *Virulent *Hornet, *Vicious *Scorpion, *Vengeful *Mantis or *Veiled *Shudderfly to your hand. NL Enhance 3: Randomly add 2 of those cards to your hand. NL Enhance 5: Randomly add 4 of those cards to your hand.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Randomly add 1 *Velocious *Beetle+, *Virulent *Hornet+, *Vicious *Scorpion+, *Vengeful *Mantis+ or *Veiled *Shudderfly+ to your hand. NL Enhance 3: Randomly add 2 of those cards to your hand. NL Enhance 5: Randomly add 4 of those cards to your hand."
   },
   "shadowverse:Lvbu": {
     "NAME": "Peerless Warrior",

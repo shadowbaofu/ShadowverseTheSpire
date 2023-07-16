@@ -2113,7 +2113,7 @@
   },
   "shadowverse:ImmoralDesire": {
     "NAME": "Darkest Desire",
-    "DESCRIPTION": "Can only be played if you have 2 other Attacks in hand. NL Select 2 Attacks. NL The first card gains 'Last_Words: When this card is Exhausted, deal damage equal to this card’s base damage to all enemies.' NL The 2nd card gains 'Last_Words: When this card is Exhausted, gain temporary HP equal to this card’s base Block.' NL Exhaust."
+    "DESCRIPTION": "Can only be played if you have 2 other Attacks in hand. NL Select 2 Attacks. NL The 1st card gains 'Last Words: When this card is Exhausted, deal damage equal to this card’s base damage to all enemies.' NL The 2nd card gains 'Last Words: When this card is Exhausted, gain temporary HP equal to this card’s base Block.' NL Exhaust."
   },
   "shadowverse:DimensionCut": {
     "NAME": "Dimension Cut",

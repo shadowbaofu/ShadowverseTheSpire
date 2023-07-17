@@ -149,7 +149,9 @@ public class KMR
                 archetype3.initialize();
                 this.chosenArchetype = archetype3;
                 this.chosenArchetype.addedPreBattle();
-                AbstractDungeon.actionManager.addToBottom(new ChangeSpriteAction(extra, this, 2.1F));
+                if (Settings.MAX_FPS > 30){
+                    AbstractDungeon.actionManager.addToBottom(new ChangeSpriteAction(extra, this, 2.1F));
+                }
                 break;
             default:
                 break;

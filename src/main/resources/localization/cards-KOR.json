@@ -3944,7 +3944,10 @@
   "shadowverse:RejuvenatingResurrection": {
     "NAME": "윤회하는 회생",
     "DESCRIPTION": "버린 카드더미에서 공격 카드를 1장 가져오고, 그 카드를 강화합니다.",
-    "UPGRADE_DESCRIPTION": "버린 카드더미에서 공격이나 파워 카드를 1장 가져오고, 그 카드를 강화합니다."
+    "UPGRADE_DESCRIPTION": "버린 카드더미에서 공격이나 파워 카드를 1장 가져오고, 그 카드를 강화합니다.",
+    "EXTENDED_DESCRIPTION": [
+      "버린 카드더미에 공격이나 파워 카드가 없다!"
+    ]
   },
   "shadowverse:MasterCook": {
     "NAME": "숙달된 요리사",

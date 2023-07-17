@@ -99,21 +99,21 @@ public class Krampus extends CustomCard {
         addToBot(new DrawCardAction(1));
         addToBot(new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,new Cemetery(AbstractDungeon.player,2),2));
         AbstractMonster mo = AbstractDungeon.getCurrRoom().monsters.getRandomMonster();
-        if (!mo.isDeadOrEscaped()&&!mo.halfDead){
-            addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)mo, (AbstractCreature)AbstractDungeon.player, (AbstractPower)new WeakPower((AbstractCreature)mo, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+        if (mo != null && !mo.isDeadOrEscaped()){
+            addToBot(new ApplyPowerAction(mo, AbstractDungeon.player, new WeakPower(mo, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
         }
     }
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        if (Shadowverse.Accelerate((AbstractCard) this) && this.type == CardType.SKILL) {
+        if (Shadowverse.Accelerate( this) && this.type == CardType.SKILL) {
             addToBot(new DamageRandomEnemyAction(new DamageInfo(abstractPlayer,this.magicNumber,this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-            addToBot((AbstractGameAction) new DestroyAction(1, (AbstractGameAction) new DrawCardAction(1)));
+            addToBot( new DestroyAction(1,  new DrawCardAction(1)));
         }else {
             addToBot(new DamageAction(abstractMonster,new DamageInfo(abstractPlayer,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
             addToBot(new DrawCardAction(1));
             AbstractMonster mo = AbstractDungeon.getCurrRoom().monsters.getRandomMonster();
             if (!mo.isDeadOrEscaped()&&!mo.halfDead){
-                addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)mo, (AbstractCreature)AbstractDungeon.player, (AbstractPower)new WeakPower((AbstractCreature)mo, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+                addToBot(new ApplyPowerAction(mo, AbstractDungeon.player, new WeakPower(mo, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
             }
         }
         addToBot(new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,new Cemetery(AbstractDungeon.player,2),2));
@@ -121,6 +121,6 @@ public class Krampus extends CustomCard {
 
 
     public AbstractCard makeCopy() {
-        return (AbstractCard) new Krampus();
+        return  new Krampus();
     }
 }

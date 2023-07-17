@@ -2113,7 +2113,7 @@
   },
   "shadowverse:ImmoralDesire": {
     "NAME": "Darkest Desire",
-    "DESCRIPTION": "Can only be played if you have 2 other Attacks in hand. NL Select 2 Attacks. NL The first card gains 'Last_Words: When this card is Exhausted, deal damage equal to this card’s base damage to all enemies.' NL The 2nd card gains 'Last_Words: When this card is Exhausted, gain temporary HP equal to this card’s base Block.' NL Exhaust."
+    "DESCRIPTION": "Can only be played if you have 2 other Attacks in hand. NL Select 2 Attacks. NL The 1st card gains 'Last Words: When this card is Exhausted, deal damage equal to this card’s base damage to all enemies.' NL The 2nd card gains 'Last Words: When this card is Exhausted, gain temporary HP equal to this card’s base Block.' NL Exhaust."
   },
   "shadowverse:DimensionCut": {
     "NAME": "Dimension Cut",
@@ -5001,7 +5001,7 @@
   },
   "shadowverse:Windslasher": {
     "NAME": "Windslasher",
-    "DESCRIPTION": "Heroic. NL Deal !D! Damage. NL Choose a card in your hand and place it on top of your draw pile. NL Choose a Heroic card in your discard pile. That card costs 0 until played. NL Distress_Call: This card costs 0 this turn."
+    "DESCRIPTION": "Heroic. NL Deal !D! Damage. NL If the last card you played was a Heroic card, randomly put a Heroic card from the discard pile to your hand, it costs 0 this turn. NL Randomly put a Heroic card from the draw pile to your hand. NL Distress_Call: Put 1 more Heroic card from the draw pile to your hand."
   },
   "shadowverse:GeneralMaximus": {
     "NAME": "General Maximus",
@@ -6338,11 +6338,11 @@
   },
   "shadowverse:Zebet": {
     "NAME": "Zebet, Lady of the Flies",
-    "DESCRIPTION": "Gain !B! Block. NL Randomly add 1 *Velocious *Beetle, *Virulent *Hornet, *Vicious *Scorpion, *Vengeful *Mantis or *Veiled *Shudderfly to your hand. NL Enhance 3: Add 2 random cards to your hand. NL Enhance 5: Add 3 random cards to your hand.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Randomly add 1 *Velocious *Beetle+, *Virulent *Hornet+, *Vicious *Scorpion+, *Vengeful *Mantis+ or *Veiled *Shudderfly+ to your hand. NL Enhance 3: Add 2 random cards to your hand. NL Enhance 5: Add 3 random cards to your hand."
+    "DESCRIPTION": "Gain !B! Block. NL Randomly add 1 *Velocious *Beetle, *Virulent *Hornet, *Vicious *Scorpion, *Vengeful *Mantis or *Veiled *Shudderfly to your hand. NL Enhance 3: Randomly add 2 of those cards to your hand. NL Enhance 5: Randomly add 4 of those cards to your hand.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Randomly add 1 *Velocious *Beetle+, *Virulent *Hornet+, *Vicious *Scorpion+, *Vengeful *Mantis+ or *Veiled *Shudderfly+ to your hand. NL Enhance 3: Randomly add 2 of those cards to your hand. NL Enhance 5: Randomly add 4 of those cards to your hand."
   },
   "shadowverse:Lvbu": {
     "NAME": "Peerless Warrior",
-    "DESCRIPTION": "1/1. NL When you play this card, remove all other followers, summon a Peerless Warrior and give it +X/+Y. X is the total attack of those other followers. Y is the total Health of those other followers. If the sum total of X and Y is 20 or more, you are unaffected by debuffs except those that affect Strength or Dexterity and this follower does not lose Health. NL Passive: Deal damage equal to this follower's Attack and gain Block equal to its Health, then reduce Health by 1. NL Evoke: Spawn a copy of this follower. NL Exhaust."
+    "DESCRIPTION": "1/1. NL When you play this card, remove all other followers, summon a Peerless Warrior and give it +X/+Y. X is the total attack of those other followers. Y is the total Health of those other followers. If the total of X or Y is 20 or more, you are unaffected by debuffs except those that affect Strength or Dexterity and this follower does not lose Health. NL Passive: Deal damage equal to this follower's Attack and gain Block equal to its Health, then reduce Health by 1. NL Evoke: Spawn a copy of this follower. NL Exhaust."
   }
 }

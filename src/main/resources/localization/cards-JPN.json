@@ -5753,8 +5753,8 @@
   },
   "shadowverse:DragonWeapon": {
     "NAME": "ドラゴウェポン",
-    "DESCRIPTION": "武装 NL 手札1枚を選択して 武装 種類と「プレイする時に1 ブロック を得る」を与える。",
-    "UPGRADE_DESCRIPTION":"武装 · 保留 NL 选手札1枚を選択して 武装 種類と「プレイする時に1 ブロック を得る」を与える。"
+    "DESCRIPTION": "武装 NL 手札1枚を選択して 武装 種類と「プレイする時に1 ブロック を得る」を与える。 NL エセリアル ",
+    "UPGRADE_DESCRIPTION":"武装 · 保留 NL 选手札1枚を選択して 武装 種類と「プレイする時に1 ブロック を得る」を与える。 NL エセリアル "
   },
   "shadowverse:DraconicArmor": {
     "NAME": "ドラゴニックアーマー",

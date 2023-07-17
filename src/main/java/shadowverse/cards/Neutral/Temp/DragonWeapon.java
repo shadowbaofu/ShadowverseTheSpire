@@ -26,6 +26,7 @@ public class DragonWeapon
     public DragonWeapon() {
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.POWER, Dragon.Enums.COLOR_BROWN, CardRarity.SPECIAL, CardTarget.NONE);
         this.tags.add(AbstractShadowversePlayer.Enums.ARMED);
+        this.isEthereal = true;
     }
 
 

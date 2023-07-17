@@ -5749,8 +5749,8 @@
   },
   "shadowverse:DragonWeapon": {
     "NAME": "龙武装甲",
-    "DESCRIPTION": "武装 NL 选择1张攻击牌赋予 武装 兵种和「打出时获得1点 格挡 」效果。",
-    "UPGRADE_DESCRIPTION":"武装 · 保留 NL 选择1张攻击牌赋予 武装 兵种和「打出时获得1点 格挡 」效果。"
+    "DESCRIPTION": "武装 NL 选择1张攻击牌赋予 武装 兵种和「打出时获得1点 格挡 」效果。 NL 虚无 。",
+    "UPGRADE_DESCRIPTION":"武装 · 保留 NL 选择1张攻击牌赋予 武装 兵种和「打出时获得1点 格挡 」效果。 NL 虚无 。"
   },
   "shadowverse:DraconicArmor": {
     "NAME": "龙族武装",

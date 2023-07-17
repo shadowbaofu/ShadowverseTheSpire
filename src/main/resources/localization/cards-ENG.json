@@ -5758,8 +5758,8 @@
   },
   "shadowverse:DragonWeapon": {
     "NAME": "Draconic Weapon",
-    "DESCRIPTION": "Armed NL Choose 1 Attack card, it gains the Armed trait and will give 1 Block when played.",
-    "UPGRADE_DESCRIPTION": "Armed / Retain NL Choose 1 Attack card, it gains the Armed trait and will give 1 Block when played."
+    "DESCRIPTION": "Armed NL Choose 1 Attack card, it gains the Armed trait and will give 1 Block when played. NL Ethereal .",
+    "UPGRADE_DESCRIPTION": "Armed / Retain NL Choose 1 Attack card, it gains the Armed trait and will give 1 Block when played.NL Ethereal ."
   },
   "shadowverse:DraconicArmor": {
     "NAME": "Draconic Armor",

@@ -6316,13 +6316,33 @@
     "NAME": "Shin, Chaotic Darkness",
     "DESCRIPTION": "Randomly activate the following effects: NL 1. Deal !D! damage to a random enemy. Gain !B! Block. NL 2. Apply 2 Vulnerable to a random enemy. NL 3. All cards in your hand cost 1 less this turn. NL If it's the 5th turn or later, apply ALL 3 effects instead. NL Exhaust."
   },
+   "shadowverse:VengefulMantis": {
+    "NAME": "Vengeful Mantis",
+    "DESCRIPTION": "Deal !D! Damage. NL Whenever you play an attack that Exhausts, increase this card's damage by !M!. NL Exhaust."
+  },
+  "shadowverse:VelociousBeetle": {
+    "NAME": "Velocious Beetle",
+    "DESCRIPTION": "Deal !D! damage. NL Heal HP equal to the damage dealt. NL Exhaust."
+  },
+  "shadowverse:ViciousScorpion": {
+    "NAME": "Vicious Scorpion",
+    "DESCRIPTION": "Gain !B! Block. NL Exhaust."
+  },
+  "shadowverse:VirulentHornet": {
+    "NAME": "Virulent Hornet",
+    "DESCRIPTION": "Apply !M! Poison. NL Exhaust."
+  },
+  "shadowverse:VeiledShudderfly": {
+    "NAME": "Veiled Shudderfly",
+    "DESCRIPTION": "Gain !B! Block. NL Gain 1 Blur. NL Exhaust."
+  },
   "shadowverse:Zebet": {
-    "NAME": "地獄の君主・ゼベット",
-    "DESCRIPTION": "!B! ブロック を得る。 NL *絶速の甲虫 、 *絶死の毒蜂 、 *絶護の魔蠍 、 *絶刃の蟷螂 、 *絶伏の怪蝶 からランダムに1枚を手札に加える。 NL エンハンス 3:さらに1枚を手札に加える。 NL エンハンス 5:さらに2枚を手札に加える。",
-    "UPGRADE_DESCRIPTION":"!B! ブロック を得る。 NL *絶速の甲虫+ 、 *絶死の毒蜂+ 、 *絶護の魔蠍+ 、 *絶刃の蟷螂+ 、 *絶伏の怪蝶+ からランダムに1枚を手札に加える。 NL エンハンス 3:さらに1枚を手札に加える。 NL エンハンス 5:さらに2枚を手札に加える。"
+    "NAME": "Zebet, Lady of the Flies",
+    "DESCRIPTION": "Gain !B! Block. NL Randomly add 1 *Velocious *Beetle, *Virulent *Hornet, *Vicious *Scorpion, *Vengeful *Mantis or *Veiled *Shudderfly to your hand. NL Enhance 3: Add 2 random cards to your hand. NL Enhance 5: Add 3 random cards to your hand.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Randomly add 1 *Velocious *Beetle+, *Virulent *Hornet+, *Vicious *Scorpion+, *Vengeful *Mantis+ or *Veiled *Shudderfly+ to your hand. NL Enhance 3: Add 2 random cards to your hand. NL Enhance 5: Add 3 random cards to your hand."
   },
   "shadowverse:Lvbu": {
-    "NAME": "天下无双的武人",
-    "DESCRIPTION": "1/1。 NL 打出时，移除其他随从并获得 +X/+Y。X为其他随从的攻击力，Y为其他随从的体力。 NL 如果XY的合计值为20以上你不会受 力量 和 敏捷 以外的负面效果影响，这个随从不会失去体力。 NL 被动：造成攻击力的伤害，获得体力的格挡并失去1点体力。 NL 激发：重新召唤1个这个随从。 NL 消耗 。"
+    "NAME": "Peerless Warrior",
+    "DESCRIPTION": "1/1. NL When you play this card, remove all other followers, summon a Peerless Warrior and give it +X/+Y. X is the total attack of those other followers. Y is the total Health of those other followers. If the sum total of X and Y is 20 or more, you are unaffected by debuffs except those that affect Strength or Dexterity and this follower does not lose Health. NL Passive: Deal damage equal to this follower's Attack and gain Block equal to its Health, then reduce Health by 1. NL Evoke: Spawn a copy of this follower. NL Exhaust."
   }
 }

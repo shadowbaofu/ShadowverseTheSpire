@@ -39,7 +39,7 @@ public class TheTemperance
 
     public TheTemperance() {
         super(ID, NAME, IMG_PATH, 4, DESCRIPTION, CardType.POWER, Vampire.Enums.COLOR_SCARLET, CardRarity.RARE, CardTarget.SELF);
-        this.baseMagicNumber = 3;
+        this.baseMagicNumber = 15;
         this.magicNumber = this.baseMagicNumber;
         this.exhaust = true;
     }
@@ -48,7 +48,7 @@ public class TheTemperance
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeMagicNumber(1);
+            upgradeMagicNumber(5);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }

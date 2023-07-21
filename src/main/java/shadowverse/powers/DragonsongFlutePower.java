@@ -1,6 +1,7 @@
 package shadowverse.powers;
 
 import com.badlogic.gdx.graphics.Texture;
+import com.evacipated.cardcrawl.mod.stslib.powers.abstracts.TwoAmountPower;
 import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -35,8 +36,13 @@ public class DragonsongFlutePower extends AbstractPower {
     @Override
     public void onCardDraw(AbstractCard card) {
         if (card.type != AbstractCard.CardType.SKILL && card.type != AbstractCard.CardType.POWER && card.cost < 2){
-            addToBot(new ExhaustSpecificCardAction(card, AbstractDungeon.player.hand));
-            addToBot(new MakeTempCardInHandAction(new HellFlameDragon()));
+            if (this.owner.hasPower(OverflowPower.POWER_ID)) {
+                TwoAmountPower p = (TwoAmountPower) this.owner.getPower(OverflowPower.POWER_ID);
+                if (p.amount2 > 0) {
+                    addToBot(new ExhaustSpecificCardAction(card, AbstractDungeon.player.hand));
+                    addToBot(new MakeTempCardInHandAction(new HellFlameDragon()));
+                }
+            }
         }
     }
 }

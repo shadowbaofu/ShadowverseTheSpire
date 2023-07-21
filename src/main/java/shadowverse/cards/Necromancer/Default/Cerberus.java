@@ -141,11 +141,13 @@ public class Cerberus
             case 2:
                 addToBot(new SFXAction("Cerberus3"));
                 AbstractCard tmp = new Orthrus();
-                AbstractCard c = AbstractDungeon.actionManager.cardsPlayedThisCombat
-                        .get(AbstractDungeon.actionManager.cardsPlayedThisCombat
-                                .size() - 2);
-                if (c.upgraded){
-                    tmp = new Charon();
+                if (AbstractDungeon.actionManager.cardsPlayedThisTurn.size()>1){
+                    AbstractCard c = AbstractDungeon.actionManager.cardsPlayedThisTurn
+                            .get(AbstractDungeon.actionManager.cardsPlayedThisTurn
+                                    .size() - 2);
+                    if (c.upgraded){
+                        tmp = new Charon();
+                    }
                 }
                 tmp.upgrade();
                 tmp.setCostForTurn(0);

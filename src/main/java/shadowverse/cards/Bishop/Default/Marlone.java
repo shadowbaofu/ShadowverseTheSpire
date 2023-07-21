@@ -41,7 +41,7 @@ public class Marlone extends CustomCard implements BranchableUpgradeCard {
     public Marlone() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.UNCOMMON, CardTarget.SELF);
         this.baseBlock = 9;
-        if (branch1){
+        if (branch1) {
             this.cardsToPreview = new MarkOfBalance();
         }
     }
@@ -71,10 +71,10 @@ public class Marlone extends CustomCard implements BranchableUpgradeCard {
                 for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
                     if (!mo.isDeadOrEscaped()) {
                         monsterAmt++;
-                        addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new ClashEffect(mo.hb.cX, mo.hb.cY), 0.1F));
+                        addToBot((AbstractGameAction) new VFXAction((AbstractGameEffect) new ClashEffect(mo.hb.cX, mo.hb.cY), 0.1F));
                     }
                 }
-                addToBot((AbstractGameAction)new DamageAllEnemiesAction((AbstractCreature)p, DamageInfo.createDamageMatrix((this.damage-atkAmt*5)*monsterAmt, true), this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE, true));
+                addToBot((AbstractGameAction) new DamageAllEnemiesAction((AbstractCreature) p, DamageInfo.createDamageMatrix((this.damage - atkAmt * 5) * monsterAmt, true), this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE, true));
                 break;
         }
     }
@@ -96,7 +96,8 @@ public class Marlone extends CustomCard implements BranchableUpgradeCard {
                 Marlone.this.initializeTitle();
                 Marlone.this.baseBlock = 12;
                 Marlone.this.upgradedBlock = true;
-                Marlone.this.cardsToPreview.upgrade();
+                if (Marlone.this.cardsToPreview != null)
+                    Marlone.this.cardsToPreview.upgrade();
                 Marlone.this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
                 Marlone.this.initializeDescription();
             }

@@ -90,7 +90,9 @@ public class Windslasher extends CustomCard {
                             .size() - 2);
             c.setCostForTurn(0);
             if (p.discardPile.group.contains(c)){
-                addToBot(new DiscardToHandAction(c));
+                if (!(c instanceof Windslasher)){
+                    addToBot(new DiscardToHandAction(c));
+                }
             }
         }
     }

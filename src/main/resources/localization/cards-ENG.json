@@ -5866,8 +5866,8 @@
   },
   "shadowverse:SoaringDragonewt": {
     "NAME": "Soaring Dragonewt",
-    "DESCRIPTION": "Whenever you play a Skill card, upgrade this card. NL Deal !D! damage. NL Randomly discard the lowest cost card in your hand and draw 1 card.",
-    "UPGRADE_DESCRIPTION": "Downgrades when played. NL Deal !D! damage. NL Randomly discard the lowest cost card in your hand, draw 1 card. Do this three times."
+    "DESCRIPTION": "Machina NL Whenever you play a Skill card, upgrade this card. NL Deal !D! damage. NL Randomly discard the lowest cost card in your hand and draw 1 card.",
+    "UPGRADE_DESCRIPTION": "Machina NL Downgrades when played. NL Deal !D! damage. NL Randomly discard the lowest cost card in your hand, draw 1 card. Do this three times."
   },
   "shadowverse:WiseDragonewtScholar": {
     "NAME": "Wise Dragonewt Scholar",

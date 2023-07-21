@@ -283,7 +283,7 @@ public class BelphometCard extends AbstractRightClickCard2 implements Branchable
                     }
                     break;
                 case 2:
-                    addToBot(new TagFusionAction(8, false, true, false, this, this.hasFusion, AbstractShadowversePlayer.Enums.MACHINE));
+                    addToBot(new TagFusionAction(8, false, true, true, this, this.hasFusion, AbstractShadowversePlayer.Enums.MACHINE));
                     if (!this.hasFusion) {
                         turnCount++;
                         hasFusion = true;

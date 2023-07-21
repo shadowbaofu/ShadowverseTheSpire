@@ -76,7 +76,7 @@
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
      addToBot(new SFXAction("MasqueradeGhost"));
      addToBot(new DamageAction(abstractMonster,new DamageInfo(abstractPlayer,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
-     addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new MasqueradeGhostPower(abstractPlayer,1,false)));
+     addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new MasqueradeGhostPower(abstractPlayer,this.magicNumber,false)));
      addToBot(new MakeTempCardInHandAction(new Ghost()));
    }
  

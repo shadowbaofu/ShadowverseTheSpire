@@ -74,6 +74,7 @@ public class Zoe
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         if (Shadowverse.Accelerate(this) && this.type == CardType.SKILL) {
+            addToBot(new SFXAction("Zoe_Acc"));
             addToBot(new MakeTempCardInDiscardAction(this.cardsToPreview.makeStatEquivalentCopy(), 1));
             addToBot(new DrawCardAction(1));
         }else {

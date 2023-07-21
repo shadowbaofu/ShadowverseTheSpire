@@ -1610,8 +1610,8 @@
   },
   "shadowverse:Ferry": {
     "NAME": "幽想少女·菲莉",
-    "DESCRIPTION": "葬送 2张牌，本回合内攻击牌重复打出3次。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "葬送 2张牌，本回合内攻击牌重复打出3次。"
+    "DESCRIPTION": "葬送 2张牌，本回合内攻击牌或 *怨灵 重复打出3次。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "葬送 2张牌，本回合内攻击牌 *怨灵 重复打出3次。"
   },
   "shadowverse:StormArrow": {
     "NAME": "暴风箭击",
@@ -4996,7 +4996,7 @@
   },
   "shadowverse:Windslasher": {
     "NAME": "驭风斩击者",
-    "DESCRIPTION": "英雄 。 NL 造成 !D! 点伤害。 NL 如果打出的上一张牌是 英雄 牌，将其本回合耗能变为0加入手中。 NL 随机从抽牌堆中将1张 英雄 牌加入手中。 NL 危难 ：再增加1张。"
+    "DESCRIPTION": "英雄 。 NL 造成 !D! 点伤害。 NL 如果打出的上一张牌是 英雄 牌，将其本回合耗能变为0加入手中( *驭风斩击者 除外)。 NL 随机从抽牌堆中将1张 英雄 牌加入手中。 NL 危难 ：再增加1张。"
   },
   "shadowverse:GeneralMaximus": {
     "NAME": "极限将军",
@@ -5857,8 +5857,8 @@
   },
   "shadowverse:SoaringDragonewt": {
     "NAME": "翱翔的龙人",
-    "DESCRIPTION": "打出技能牌时， 升级 这张牌。 NL 造成 !D! 点伤害。 NL 随机丢弃手中耗能最小的1张牌，抽1张牌。",
-    "UPGRADE_DESCRIPTION":"打出后解除升级 . NL 造成 !D! 点伤害。 NL 随机丢弃手中耗能最小的1张牌，抽1张牌，重复上述2次。"
+    "DESCRIPTION": "机械 NL 打出技能牌时， 升级 这张牌。 NL 造成 !D! 点伤害。 NL 随机丢弃手中耗能最小的1张牌，抽1张牌。",
+    "UPGRADE_DESCRIPTION":"机械 NL 打出后解除升级 . NL 造成 !D! 点伤害。 NL 随机丢弃手中耗能最小的1张牌，抽1张牌，重复上述2次。"
   },
   "shadowverse:WiseDragonewtScholar": {
     "NAME": "聪慧的龙人织术师",

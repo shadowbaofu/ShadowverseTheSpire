@@ -57,9 +57,9 @@ public class MasterMageLevi extends CustomCard implements BranchableUpgradeCard 
             if (AbstractDungeon.player instanceof AbstractShadowversePlayer){
                 count = ((AbstractShadowversePlayer) AbstractDungeon.player).earthCount;
             }
-            this.rawDescription = cardStrings.DESCRIPTION;
-            this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + count;
-            this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[1];
+            this.rawDescription = cardStrings2.DESCRIPTION;
+            this.rawDescription += cardStrings2.EXTENDED_DESCRIPTION[0] + count;
+            this.rawDescription += cardStrings2.EXTENDED_DESCRIPTION[1];
             initializeDescription();
         }
     }

@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import shadowverse.cards.Neutral.Status.Ghost;
 
 public class FerryPower extends AbstractPower {
     public static final String POWER_ID = "shadowverse:FerryPower";
@@ -36,7 +37,7 @@ public class FerryPower extends AbstractPower {
     }
 
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (!card.purgeOnUse && card.type == AbstractCard.CardType.ATTACK) {
+        if (!card.purgeOnUse && (card.type == AbstractCard.CardType.ATTACK || card instanceof Ghost)) {
             flash();
             AbstractMonster m = null;
             if (action.target != null)

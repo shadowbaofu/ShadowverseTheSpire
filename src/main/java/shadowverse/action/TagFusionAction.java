@@ -48,7 +48,7 @@ public class TagFusionAction extends AbstractGameAction {
     @Override
     public void update() {
         if (this.duration == Settings.ACTION_DUR_FAST) {
-            if (hasFusion){
+            if (hasFusion) {
                 this.isDone = true;
                 return;
             }
@@ -92,11 +92,11 @@ public class TagFusionAction extends AbstractGameAction {
         }
         if (!AbstractDungeon.handCardSelectScreen.wereCardsRetrieved) {
             int count = 0;
-            if (AbstractDungeon.handCardSelectScreen.selectedCards.group.size()!=0)
-            for (AbstractCard c : AbstractDungeon.handCardSelectScreen.selectedCards.group) {
-                this.p.hand.moveToExhaustPile(c);
-                count++;
-            }
+            if (AbstractDungeon.handCardSelectScreen.selectedCards.group.size() != 0)
+                for (AbstractCard c : AbstractDungeon.handCardSelectScreen.selectedCards.group) {
+                    this.p.hand.moveToExhaustPile(c);
+                    count++;
+                }
             self.magicNumber += count;
             self.applyPowers();
             returnCards();

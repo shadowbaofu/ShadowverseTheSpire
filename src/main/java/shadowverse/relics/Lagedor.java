@@ -38,21 +38,26 @@ public class Lagedor
         return list;
     }
 
+    public void atBattleStart() {
+        this.counter = 0;
+        addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+    }
 
     public void atTurnStart() {
-        if (!this.grayscale)
+        if (!this.grayscale){
             this.counter++;
-        if (this.counter < 3) {
-            int r1 = AbstractDungeon.cardRandomRng.random(3);
-            AbstractCard c1 = returnProphecy().get(r1);
-            addToBot(new MakeTempCardInHandAction(c1));
-        }
-        if (this.counter == 3) {
-            flash();
-            addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-            addToBot(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, 14));
-            this.counter = -1;
-            this.grayscale = true;
+            if (this.counter < 3) {
+                int r1 = AbstractDungeon.cardRandomRng.random(3);
+                AbstractCard c1 = returnProphecy().get(r1);
+                addToBot(new MakeTempCardInHandAction(c1));
+            }
+            if (this.counter == 3) {
+                flash();
+                addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+                addToBot(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, 14));
+                this.counter = -1;
+                this.grayscale = true;
+            }
         }
     }
 

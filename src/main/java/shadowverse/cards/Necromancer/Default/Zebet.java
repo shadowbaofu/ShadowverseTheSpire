@@ -37,7 +37,7 @@ public class Zebet
     }
 
     public Zebet() {
-        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.SKILL, Necromancer.Enums.COLOR_PURPLE, CardRarity.RARE, CardTarget.SELF, 3, 5);
+        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Necromancer.Enums.COLOR_PURPLE, CardRarity.RARE, CardTarget.SELF, 3, 5);
         this.baseBlock = 12;
     }
 

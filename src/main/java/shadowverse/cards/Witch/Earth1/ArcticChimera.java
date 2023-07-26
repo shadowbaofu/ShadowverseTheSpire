@@ -80,7 +80,7 @@ public class ArcticChimera
                 if (abstractMonster != null)
                     addToBot(new VFXAction(new ClawEffect(abstractMonster.hb.cX, abstractMonster.hb.cY, Color.BLUE, Color.WHITE), 0.1F));
                 addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
-                addToBot(new ReducePowerAction(abstractPlayer, abstractPlayer, abstractPlayer.getPower(EarthEssence.POWER_ID), 1));
+                addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, abstractPlayer.getPower(EarthEssence.POWER_ID), -1));
                 addToBot(new DrawCardAction(1));
                 if (abstractPlayer instanceof AbstractShadowversePlayer) {
                     ((AbstractShadowversePlayer) abstractPlayer).earthCount++;
@@ -93,7 +93,7 @@ public class ArcticChimera
                 addToBot(new GainBlockAction(abstractPlayer, this.block));
                 addToBot(new VFXAction(new BiteEffect(abstractMonster.hb.cX, abstractMonster.hb.cY - 40.0F * Settings.scale, Color.WHITE.cpy()), 0.2F));
                 addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, abstractPlayer.currentBlock + this.block * 3, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
-                addToBot(new ReducePowerAction(abstractPlayer, abstractPlayer, abstractPlayer.getPower(EarthEssence.POWER_ID), 3));
+                addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, abstractPlayer.getPower(EarthEssence.POWER_ID), -3));
                 if (abstractPlayer instanceof AbstractShadowversePlayer) {
                     ((AbstractShadowversePlayer) abstractPlayer).earthCount += 2;
                 }

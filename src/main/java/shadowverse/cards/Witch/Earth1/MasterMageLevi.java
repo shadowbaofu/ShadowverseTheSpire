@@ -99,7 +99,7 @@ public class MasterMageLevi extends CustomCard implements BranchableUpgradeCard 
                 if (abstractPlayer.hasPower(EarthEssence.POWER_ID)){
                     AbstractPower p = abstractPlayer.getPower(EarthEssence.POWER_ID);
                     addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, 3 * p.amount, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
-                    if (p.amount > 2){
+                    if (p.amount >= 2){
                         if (abstractPlayer instanceof AbstractShadowversePlayer) {
                             ((AbstractShadowversePlayer) abstractPlayer).earthCount+=2;
                             addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new EarthEssence(abstractPlayer, -2), -2));

@@ -27,7 +27,11 @@ public class Leoparion
     public Leoparion(int upgrades) {
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Vampire.Enums.COLOR_SCARLET, CardRarity.SPECIAL, CardTarget.ENEMY);
         this.baseDamage = 6;
-        this.timesUpgraded = upgrades;
+        if (upgrades > 0){
+            for (int i = 0; i < upgrades; i++){
+                upgrade();
+            }
+        }
         this.exhaust = true;
     }
 

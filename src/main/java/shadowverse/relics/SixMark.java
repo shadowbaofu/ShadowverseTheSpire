@@ -44,7 +44,7 @@
    
    public void atBattleStart() {
      this.counter = 0;
-     addToBot((AbstractGameAction)new RelicAboveCreatureAction((AbstractCreature)AbstractDungeon.player, (AbstractRelic)this));
+     addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
    }
    
    public void atTurnStart() {
@@ -56,45 +56,45 @@
            case 0:
              flash();
              for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-               addToBot((AbstractGameAction)new RelicAboveCreatureAction((AbstractCreature)mo, this));
-               addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)mo, (AbstractCreature)AbstractDungeon.player, (AbstractPower)new VulnerablePower((AbstractCreature)mo, 1, false), 1, true));
+               addToBot(new RelicAboveCreatureAction(mo, this));
+               addToBot(new ApplyPowerAction(mo, AbstractDungeon.player,new VulnerablePower(mo, 1, false), 1, true));
              }
              break;
            case 1:
              flash();
              for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-               addToBot((AbstractGameAction)new RelicAboveCreatureAction((AbstractCreature)mo, this));
-               addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)mo, (AbstractCreature)AbstractDungeon.player, (AbstractPower)new WeakPower((AbstractCreature)mo, 1, false), 1, true));
+               addToBot(new RelicAboveCreatureAction(mo, this));
+               addToBot(new ApplyPowerAction(mo, AbstractDungeon.player,new WeakPower(mo, 1, false), 1, true));
              }
              break;
            case 2:
              flash();
              for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-               addToBot((AbstractGameAction) new RelicAboveCreatureAction((AbstractCreature) mo, this));
-               addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) mo, (AbstractCreature) AbstractDungeon.player, (AbstractPower) new PoisonPower((AbstractCreature) mo, AbstractDungeon.player, 1), 1, true));
+               addToBot( new RelicAboveCreatureAction( mo, this));
+               addToBot( new ApplyPowerAction( mo,  AbstractDungeon.player, new PoisonPower( mo, AbstractDungeon.player, 1), 1, true));
              }
              break;
            case 3:
              flash();
              for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-               addToBot((AbstractGameAction) new RelicAboveCreatureAction((AbstractCreature) mo, this));
-               addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)mo, (AbstractCreature)AbstractDungeon.player, (AbstractPower)new StrengthPower((AbstractCreature)mo, -1), -1));
+               addToBot( new RelicAboveCreatureAction( mo, this));
+               addToBot(new ApplyPowerAction(mo, AbstractDungeon.player,new StrengthPower(mo, -1), -1));
                if (!mo.hasPower("Artifact"))
-                 addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)mo, (AbstractCreature)AbstractDungeon.player, (AbstractPower)new GainStrengthPower((AbstractCreature)mo, 1), 1, true, AbstractGameAction.AttackEffect.NONE));
+                 addToBot(new ApplyPowerAction(mo, AbstractDungeon.player,new GainStrengthPower(mo, 1), 1, true, AbstractGameAction.AttackEffect.NONE));
              }
              break;
            case 4:
              flash();
              for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-               addToBot((AbstractGameAction) new RelicAboveCreatureAction((AbstractCreature) mo, this));
-               addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)mo, (AbstractCreature)AbstractDungeon.player, (AbstractPower)new BlockReturnPower((AbstractCreature)mo, 1), 1));
+               addToBot( new RelicAboveCreatureAction( mo, this));
+               addToBot(new ApplyPowerAction(mo, AbstractDungeon.player,new BlockReturnPower(mo, 1), 1));
              }
              break;
            case 5:
              flash();
              for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-               addToBot((AbstractGameAction) new RelicAboveCreatureAction((AbstractCreature) mo, this));
-               addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)mo, (AbstractCreature)AbstractDungeon.player, (AbstractPower)new ChokePower((AbstractCreature)mo, 1), 1));
+               addToBot( new RelicAboveCreatureAction( mo, this));
+               addToBot(new ApplyPowerAction(mo, AbstractDungeon.player,new ChokePower(mo, 1), 1));
              }
              break;
            default:
@@ -119,7 +119,7 @@
  
    
    public AbstractRelic makeCopy() {
-     return (AbstractRelic)new SixMark();
+     return new SixMark();
    }
  }
 

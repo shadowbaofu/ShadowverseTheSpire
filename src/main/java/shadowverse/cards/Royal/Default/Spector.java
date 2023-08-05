@@ -1,6 +1,5 @@
 package shadowverse.cards.Royal.Default;
 
-import basemod.abstracts.CustomCard;
 import com.badlogic.gdx.Gdx;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -10,20 +9,17 @@ import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.rooms.AbstractRoom;
-import shadowverse.Shadowverse;
 import shadowverse.cards.Neutral.Temp.*;
+import shadowverse.cards.Witch.AbstractAccelerateCard;
 import shadowverse.characters.Royal;
 import shadowverse.powers.NextTurnV;
 
 import java.util.ArrayList;
 
-public class Spector extends CustomCard {
+public class Spector extends AbstractAccelerateCard {
     public static final String ID = "shadowverse:Spector";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:Spector");
     public static final String NAME = cardStrings.NAME;
@@ -40,23 +36,13 @@ public class Spector extends CustomCard {
     }
 
     public Spector() {
-        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.ENEMY);
+        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.ENEMY, 0, CardType.SKILL);
         this.baseDamage = 25;
         this.exhaust = true;
     }
 
     @Override
     public void update() {
-        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT&&
-                Shadowverse.Accelerate(this)){
-            setCostForTurn(0);
-            this.type = CardType.SKILL;
-        }else {
-            if (this.type==CardType.SKILL){
-                setCostForTurn(2);
-                this.type = CardType.ATTACK;
-            }
-        }
         super.update();
         if (this.hb.hovered) {
             if (this.rotationTimer <= 0.0F) {
@@ -83,14 +69,15 @@ public class Spector extends CustomCard {
 
 
     @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
-        if (Shadowverse.Accelerate((AbstractCard)this) && this.type == CardType.SKILL) {
-            addToBot((AbstractGameAction)new MakeTempCardInHandAction(new DesperadosShot()));
-        }else {
-            addToBot(new SFXAction(ID.replace("shadowverse:", "")));
-            addToBot((AbstractGameAction) new DamageAction((AbstractCreature) m, new DamageInfo((AbstractCreature) p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
-            addToBot((AbstractGameAction) new ApplyPowerAction(p,p,new NextTurnV(p,1)));
-        }
+    public void baseUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new SFXAction(ID.replace("shadowverse:", "")));
+        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+        addToBot(new ApplyPowerAction(p, p, new NextTurnV(p, 1)));
+    }
+
+    @Override
+    public void accUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new MakeTempCardInHandAction(new DesperadosShot()));
     }
 
 

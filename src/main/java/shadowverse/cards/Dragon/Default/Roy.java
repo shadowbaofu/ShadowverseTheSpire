@@ -171,7 +171,7 @@ public class Roy extends CustomCard implements BranchableUpgradeCard {
             @Override
             public void upgrade() {
                 ++Roy.this.timesUpgraded;
-                Roy.this.baseDamage = 20;
+                Roy.this.baseDamage = 24;
                 Roy.this.upgraded = true;
                 Roy.this.textureImg = IMG_PATH2;
                 Roy.this.loadCardImage(IMG_PATH2);

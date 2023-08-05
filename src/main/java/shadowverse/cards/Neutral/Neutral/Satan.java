@@ -1,6 +1,5 @@
 package shadowverse.cards.Neutral.Neutral;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
@@ -12,14 +11,13 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.random.Random;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
+import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import rs.lazymankits.interfaces.cards.BranchableUpgradeCard;
 import rs.lazymankits.interfaces.cards.UpgradeBranch;
-import shadowverse.Shadowverse;
 import shadowverse.action.BlockPerCardAction;
 import shadowverse.action.SatanaelAction;
 import shadowverse.cards.AbstractNeutralCard;
 import shadowverse.cards.Neutral.Temp.*;
-import shadowverse.characters.AbstractShadowversePlayer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -51,6 +49,11 @@ public class Satan extends AbstractNeutralCard implements BranchableUpgradeCard 
         return list;
     }
 
+    public int baseCost;
+    public int accCost;
+    public CardType baseType;
+    public CardType accType;
+    public boolean played;
 
 
     public static AbstractCard returnCocytusCard(Random rng) {
@@ -59,8 +62,11 @@ public class Satan extends AbstractNeutralCard implements BranchableUpgradeCard 
 
     public Satan() {
         super(ID, NAME, IMG_PATH, 4, DESCRIPTION, CardType.POWER, CardColor.COLORLESS, CardRarity.RARE, CardTarget.NONE);
-        this.tags.add(AbstractShadowversePlayer.Enums.ACCELERATE);
         this.exhaust = true;
+        this.accCost = 1;
+        this.baseCost = cost;
+        this.baseType = type;
+        this.accType = CardType.SKILL;
     }
 
 
@@ -70,65 +76,76 @@ public class Satan extends AbstractNeutralCard implements BranchableUpgradeCard 
 
     @Override
     public void update() {
-        if (chosenBranch()==0){
-            if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
-                    Shadowverse.Accelerate(this)) {
-                setCostForTurn(1);
-                this.type = CardType.SKILL;
-            } else {
-                if (this.type == CardType.SKILL) {
-                    if (this.upgraded){
-                        setCostForTurn(3);
-                    }else {
-                        setCostForTurn(4);
+        if (chosenBranch() == 0) {
+            if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT) {
+                if (this.type == baseType) {
+                    this.baseCost = this.costForTurn;
+                } else {
+                    if (this.cost <= this.accCost) {
+                        this.baseCost = this.cost;
                     }
-                    this.type = CardType.POWER;
+                }
+                if (!played) {
+                    if (EnergyPanel.getCurrentEnergy() < baseCost) {
+                        setCostForTurn(accCost);
+                        this.type = accType;
+                    } else {
+                        if (this.type == accType) {
+                            setCostForTurn(baseCost);
+                            this.type = baseType;
+                        }
+                    }
                 }
             }
         }
         super.update();
     }
 
-    public void triggerOnGlowCheck() {
-        if (Shadowverse.Accelerate(this)) {
-            this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();
-        } else {
-            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+    public void onMoveToDiscard() {
+        super.onMoveToDiscard();
+        played = false;
+    }
+
+    public void baseUse(AbstractPlayer p, AbstractMonster m){
+        addToBot(new SFXAction("Satan"));
+        for (AbstractCard c : p.drawPile.group) {
+            addToBot(new ExhaustSpecificCardAction(c, p.drawPile));
+        }
+        ArrayList<AbstractCard> cocytusDeck = returnCocytusDeck();
+        for (AbstractCard ca : cocytusDeck) {
+            addToBot(new MakeTempCardInDrawPileAction(ca, 1, true, true));
         }
     }
 
+    public void accUse(AbstractPlayer p, AbstractMonster m){
+        addToBot(new SFXAction("Satan_Accelerate"));
+        ArrayList<String> l = new ArrayList<String>();
+        while (true) {
+            AbstractCard c = returnCocytusCard(AbstractDungeon.cardRandomRng).makeCopy();
+            if (!l.contains(c.cardID)) {
+                l.add(c.cardID);
+                addToBot(new MakeTempCardInDrawPileAction(c, 1, true, true));
+            }
+            if (l.size() >= 4) {
+                break;
+            }
+        }
+    }
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        switch (chosenBranch()){
+        switch (chosenBranch()) {
             case 0:
-                if (Shadowverse.Accelerate((AbstractCard) this) && this.type == CardType.SKILL) {
-                    addToBot((AbstractGameAction) new SFXAction("Satan_Accelerate"));
-                    ArrayList<String> l = new ArrayList<String>();
-                    while (true) {
-                        AbstractCard c = returnCocytusCard(AbstractDungeon.cardRandomRng).makeCopy();
-                        if (!l.contains(c.cardID)) {
-                            l.add(c.cardID);
-                            addToBot((AbstractGameAction) new MakeTempCardInDrawPileAction(c, 1, true, true));
-                        }
-                        if (l.size() >= 4) {
-                            break;
-                        }
-                    }
+                if (this.type == accType && this.costForTurn == accCost) {
+                    accUse(abstractPlayer, abstractMonster);
                 } else {
-                    addToBot((AbstractGameAction) new SFXAction("Satan"));
-                    for (AbstractCard c : abstractPlayer.drawPile.group) {
-                        addToBot((AbstractGameAction) new ExhaustSpecificCardAction(c, abstractPlayer.drawPile));
-                    }
-                    ArrayList<AbstractCard> cocytusDeck = returnCocytusDeck();
-                    for (AbstractCard ca : cocytusDeck) {
-                        addToBot((AbstractGameAction) new MakeTempCardInDrawPileAction(ca, 1, true, true));
-                    }
+                    baseUse(abstractPlayer, abstractMonster);
                 }
+                played = true;
                 break;
             case 1:
-                addToBot((AbstractGameAction)new SFXAction("Satanael"));
-                addToBot((AbstractGameAction)new BlockPerCardAction(this.block));
-                addToBot((AbstractGameAction)new SatanaelAction());
+                addToBot(new SFXAction("Satanael"));
+                addToBot(new BlockPerCardAction(this.block));
+                addToBot(new SatanaelAction());
                 break;
         }
     }
@@ -144,6 +161,7 @@ public class Satan extends AbstractNeutralCard implements BranchableUpgradeCard 
                 Satan.this.name = NAME + "+";
                 Satan.this.initializeTitle();
                 Satan.this.upgradeBaseCost(3);
+                Satan.this.baseCost = 3;
             }
         });
         list.add(new UpgradeBranch() {
@@ -166,7 +184,15 @@ public class Satan extends AbstractNeutralCard implements BranchableUpgradeCard 
     }
 
     public AbstractCard makeCopy() {
-        return (AbstractCard) new Satan();
+        return new Satan();
+    }
+
+    public void triggerOnGlowCheck() {
+        if (EnergyPanel.getCurrentEnergy() < baseCost && this.type == accType) {
+            this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();
+        } else {
+            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+        }
     }
 }
 

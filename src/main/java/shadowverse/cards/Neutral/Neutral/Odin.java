@@ -136,7 +136,6 @@ public class Odin extends AbstractNeutralCard implements BranchableUpgradeCard {
                 Odin.this.loadCardImage(IMG_PATH2);
                 Odin.this.name = cardStrings2.NAME;
                 Odin.this.initializeTitle();
-                Odin.this.tags.add(AbstractShadowversePlayer.Enums.ACCELERATE);
                 Odin.this.rawDescription = cardStrings2.DESCRIPTION;
                 Odin.this.initializeDescription();
                 Odin.this.previewBranch = 1;

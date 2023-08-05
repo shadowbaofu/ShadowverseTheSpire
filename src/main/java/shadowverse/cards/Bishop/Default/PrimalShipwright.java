@@ -16,28 +16,27 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import shadowverse.Shadowverse;
 import shadowverse.cards.AbstractCrystalizeCard;
+import shadowverse.cards.Witch.AbstractAccelerateCard;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Bishop;
 import shadowverse.orbs.AmuletOrb;
 import shadowverse.orbs.Minion;
 
 public class PrimalShipwright
-        extends CustomCard implements AbstractCrystalizeCard {
+        extends AbstractAccelerateCard implements AbstractCrystalizeCard {
     public static final String ID = "shadowverse:PrimalShipwright";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:PrimalShipwright");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/PrimalShipwright.png";
-    private boolean played;
 
     public PrimalShipwright() {
-        super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.UNCOMMON, CardTarget.ENEMY);
+        super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.UNCOMMON, CardTarget.ENEMY, 0, CardType.POWER);
         this.baseDamage = 0;
         this.baseMagicNumber = 3;
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(AbstractShadowversePlayer.Enums.AMULET_FOR_ONECE);
     }
-
 
     public void upgrade() {
         if (!this.upgraded) {
@@ -46,20 +45,6 @@ public class PrimalShipwright
         }
     }
 
-    @Override
-    public void update() {
-        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT&&
-                Shadowverse.Accelerate(this) && !played){
-            setCostForTurn(0);
-            this.type = CardType.POWER;
-        }else {
-            if (this.type==CardType.POWER){
-                setCostForTurn(3);
-                this.type = CardType.ATTACK;
-            }
-        }
-        super.update();
-    }
 
     public int rally() {
         int rally = 0;
@@ -104,23 +89,18 @@ public class PrimalShipwright
         this.isDamageModified = (this.damage != this.baseDamage);
     }
 
-    public void triggerOnGlowCheck() {
-        if (Shadowverse.Accelerate(this) && this.type == CardType.POWER) {
-            this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();
-        } else {
-            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
-        }
+
+    @Override
+    public void baseUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new SFXAction("PrimalShipwright"));
+        calculateCardDamage(m);
+        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+        played = true;
     }
 
-    public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
-        if (this.type==CardType.POWER && this.costForTurn == 0){
-            addToBot(new SFXAction("PrimalShipwright_Acc"));
-        }else {
-            addToBot(new SFXAction("PrimalShipwright"));
-            calculateCardDamage(abstractMonster);
-            addToBot(new DamageAction(abstractMonster, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
-            played = true;
-        }
+    @Override
+    public void accUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new SFXAction("PrimalShipwright_Acc"));
     }
 
 

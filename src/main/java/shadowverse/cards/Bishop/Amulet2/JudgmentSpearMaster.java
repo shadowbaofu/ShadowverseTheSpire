@@ -1,10 +1,8 @@
 package shadowverse.cards.Bishop.Amulet2;
 
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -13,27 +11,22 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.orbs.AbstractOrb;
-import com.megacrit.cardcrawl.rooms.AbstractRoom;
-import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
-import shadowverse.Shadowverse;
 import shadowverse.cards.AbstractCrystalizeCard;
+import shadowverse.cards.Witch.AbstractAccelerateCard;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Bishop;
 import shadowverse.orbs.AmuletOrb;
-import shadowverse.orbs.Minion;
 
 public class JudgmentSpearMaster
-        extends CustomCard implements AbstractCrystalizeCard {
+        extends AbstractAccelerateCard implements AbstractCrystalizeCard {
     public static final String ID = "shadowverse:JudgmentSpearMaster";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:JudgmentSpearMaster");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/JudgmentSpearMaster.png";
-    private boolean played;
 
     public JudgmentSpearMaster() {
-        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.UNCOMMON, CardTarget.ENEMY);
+        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.UNCOMMON, CardTarget.ENEMY,1,CardType.POWER);
         this.baseDamage = 15;
         this.baseBlock = 8;
         this.baseMagicNumber = 1;
@@ -50,46 +43,19 @@ public class JudgmentSpearMaster
         }
     }
 
+
+
     @Override
-    public void update() {
-        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT&&
-                Shadowverse.Accelerate(this) && !played){
-            setCostForTurn(1);
-            this.type = CardType.POWER;
-        }else {
-            if (this.type==CardType.POWER){
-                setCostForTurn(2);
-                this.type = CardType.ATTACK;
-            }
-        }
-        super.update();
+    public void baseUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new SFXAction("JudgmentSpearMaster"));
+        addToBot(new GainBlockAction(p,this.block));
+        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        played = true;
     }
 
-    public void onMoveToDiscard() {
-        this.costForTurn = this.cost;
-        this.isCostModifiedForTurn = false;
-        this.type = CardType.ATTACK;
-        played = false;
-        applyPowers();
-    }
-
-    public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
-        if (this.type==CardType.POWER && this.costForTurn == 1){
-            addToBot(new SFXAction("JudgmentSpearMaster_Acc"));
-        }else {
-            addToBot(new SFXAction("JudgmentSpearMaster"));
-            addToBot(new GainBlockAction(p,this.block));
-            addToBot(new DamageAction(abstractMonster, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-            played = true;
-        }
-    }
-
-    public void triggerOnGlowCheck() {
-        if (Shadowverse.Accelerate(this) && this.type == CardType.POWER) {
-            this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();
-        } else {
-            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
-        }
+    @Override
+    public void accUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new SFXAction("JudgmentSpearMaster_Acc"));
     }
 
     public AbstractCard makeCopy() {

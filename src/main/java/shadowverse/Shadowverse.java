@@ -1539,6 +1539,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("ImperialDragoon", new Sfx(voicePath + "ImperialDragoon.wav"));
             reflectedMap.put("ImperialDragoon_L", new Sfx(voicePath + "ImperialDragoon_L.wav"));
             reflectedMap.put("DraconicCounsel", new Sfx(voicePath + "DraconicCounsel.wav"));
+            reflectedMap.put("DraconicCounsel_Copy", new Sfx(voicePath + "DraconicCounsel_Copy.wav"));
             reflectedMap.put("Kit", new Sfx(voicePath + "Kit.wav"));
             reflectedMap.put("MermaidSinger", new Sfx(voicePath + "MermaidSinger.wav"));
             reflectedMap.put("SiLong", new Sfx(voicePath + "SiLong.wav"));
@@ -1661,7 +1662,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("Odin2_Acc", new Sfx(voicePath + "Odin2_Acc.wav"));
             reflectedMap.put("Grimnir2", new Sfx(voicePath + "Grimnir2.wav"));
             reflectedMap.put("Vincent_Start", new Sfx(voicePath + "Vincent_Start.wav"));
-            reflectedMap.put("DragonicCall", new Sfx(voicePath + "DragonicCall.wav"));
+            reflectedMap.put("DragonicCall_L", new Sfx(voicePath + "DragonicCall.wav"));
             reflectedMap.put("Roy2_Eh", new Sfx(voicePath + "Roy2_Eh.wav"));
             reflectedMap.put("Shin_Token", new Sfx(voicePath + "Shin_Token.wav"));
             reflectedMap.put("Zebet_Eh", new Sfx(voicePath + "Zebet_Eh.wav"));
@@ -1669,6 +1670,9 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("Zebet", new Sfx(voicePath + "Zebet.wav"));
             reflectedMap.put("Lvbu", new Sfx(voicePath + "Lvbu.wav"));
             reflectedMap.put("CelestialDragoon", new Sfx(voicePath + "CelestialDragoon.wav"));
+            reflectedMap.put("Oz_L", new Sfx(voicePath + "Oz_L.wav"));
+            reflectedMap.put("TheTower", new Sfx(voicePath + "TheTower.wav"));
+            reflectedMap.put("TheTower_I", new Sfx(voicePath + "TheTower_I.wav"));
         }
         if (Loader.isModLoaded("CardAugments")) {
             AugmentHelper.register();
@@ -3005,6 +3009,9 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard(new ViciousScorpion());
         BaseMod.addCard(new Zebet());
         BaseMod.addCard(new Lvbu());
+        BaseMod.addCard(new SlaughteringDragonewt());
+        BaseMod.addCard(new TheTower());
+        BaseMod.addCard(new TheTower_I());
         logger.info("Success");
     }
 

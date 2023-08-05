@@ -10,14 +10,11 @@ import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
-import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.ClashEffect;
 import shadowverse.Shadowverse;
 import shadowverse.action.ArchdemonAction;
@@ -27,7 +24,6 @@ import shadowverse.cards.Necromancer.Burial.SpiritCurator;
 import shadowverse.cards.Necromancer.Ghosts.Ferry;
 import shadowverse.cards.Necromancer.Burial.TheLovers;
 import shadowverse.cards.Neutral.Temp.Archdemon_Acc;
-import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Vampire;
 import shadowverse.powers.ArchdemonPower;
 
@@ -46,7 +42,6 @@ public class Archdemon
         this.baseDamage = 44;
         this.baseMagicNumber = 5;
         this.magicNumber = this.baseMagicNumber;
-        this.tags.add(AbstractShadowversePlayer.Enums.ACCELERATE);
     }
 
 
@@ -128,14 +123,14 @@ public class Archdemon
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         if (this.type == CardType.SKILL&& Shadowverse.Accelerate(this)){
-            addToBot((AbstractGameAction)new SFXAction("Archdemon_Acc"));
-            addToBot((AbstractGameAction)new DrawCardAction(1));
-            addToBot((AbstractGameAction)new ArchdemonAction(this));
+            addToBot(new SFXAction("Archdemon_Acc"));
+            addToBot(new DrawCardAction(1));
+            addToBot(new ArchdemonAction(this));
         }else {
-            addToBot((AbstractGameAction)new SFXAction("Archdemon"));
-            addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,(AbstractPower)new ArchdemonPower(abstractPlayer,this.magicNumber),this.magicNumber));
-            addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new ClashEffect(abstractMonster.hb.cX, abstractMonster.hb.cY)));
-            addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
+            addToBot(new SFXAction("Archdemon"));
+            addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new ArchdemonPower(abstractPlayer,this.magicNumber),this.magicNumber));
+            addToBot(new VFXAction(new ClashEffect(abstractMonster.hb.cX, abstractMonster.hb.cY)));
+            addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
         }
     }
 

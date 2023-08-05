@@ -56,7 +56,7 @@ public class Zwei extends CustomCard implements BranchableUpgradeCard {
             if (this.hb.hovered)
                 if (this.rotationTimer <= 0.0F) {
                     this.rotationTimer = 2.0F;
-                    this.cardsToPreview = (AbstractCard) returnProphecy().get(previewIndex).makeCopy();
+                    this.cardsToPreview = returnProphecy().get(previewIndex).makeCopy();
                     if (this.previewIndex == returnProphecy().size() - 1) {
                         this.previewIndex = 0;
                     } else {
@@ -112,7 +112,7 @@ public class Zwei extends CustomCard implements BranchableUpgradeCard {
 
     public void triggerWhenDrawn() {
         if (this.chosenBranch()==1){
-            if (Shadowverse.Accelerate((AbstractCard) this)) {
+            if (Shadowverse.Accelerate(this)) {
                 super.triggerWhenDrawn();
                 setCostForTurn(1);
                 this.type = CardType.SKILL;
@@ -150,29 +150,29 @@ public class Zwei extends CustomCard implements BranchableUpgradeCard {
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         switch (chosenBranch()) {
             case 0:
-                addToBot((AbstractGameAction) new SFXAction("Zwei"));
-                addToBot((AbstractGameAction) new GainBlockAction(abstractPlayer, this.block));
-                AbstractCard v = (AbstractCard) new Victoria();
+                addToBot(new SFXAction("Zwei"));
+                addToBot(new GainBlockAction(abstractPlayer, this.block));
+                AbstractCard v = new Victoria();
                 if (this.upgraded)
                     v.upgrade();
-                addToBot((AbstractGameAction) new MakeTempCardInHandAction(v));
+                addToBot(new MakeTempCardInHandAction(v));
                 break;
             case 1:
-                if (Shadowverse.Accelerate((AbstractCard) this) && this.type == CardType.SKILL) {
-                    addToBot((AbstractGameAction)new SFXAction("Zwei2_Acc"));
+                if (Shadowverse.Accelerate(this) && this.type == CardType.SKILL) {
+                    addToBot(new SFXAction("Zwei2_Acc"));
                 }else {
-                    addToBot((AbstractGameAction) new SFXAction("Zwei2"));
-                    addToBot((AbstractGameAction) new GainBlockAction(abstractPlayer, this.block));
-                    AbstractCard v2 = (AbstractCard) new Victoria();
-                    addToBot((AbstractGameAction) new MakeTempCardInHandAction(v2));
+                    addToBot(new SFXAction("Zwei2"));
+                    addToBot(new GainBlockAction(abstractPlayer, this.block));
+                    AbstractCard v2 = new Victoria();
+                    addToBot(new MakeTempCardInHandAction(v2));
                 }
-                addToBot((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new Puppet(),2));
+                addToBot(new MakeTempCardInHandAction(new Puppet(),2));
         }
     }
 
 
     public AbstractCard makeCopy() {
-        return (AbstractCard) new Zwei();
+        return new Zwei();
     }
 
     @Override
@@ -216,7 +216,7 @@ public class Zwei extends CustomCard implements BranchableUpgradeCard {
     @Override
     public AbstractCard makeSameInstanceOf() {
         AbstractCard card = null;
-        if (this.chosenBranch()==1&&Shadowverse.Accelerate((AbstractCard) this) && this.type == CardType.SKILL) {
+        if (this.chosenBranch()==1&&Shadowverse.Accelerate(this) && this.type == CardType.SKILL) {
             card = (new Zwei2_Acc()).makeStatEquivalentCopy();
             card.uuid = (new Zwei2_Acc()).uuid;
         } else {

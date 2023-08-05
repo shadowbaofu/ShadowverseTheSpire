@@ -160,6 +160,7 @@ public class DragonPool extends AbstractBanPool {
         Tempo.addCard(new OmenOfDisdain());
         Tempo.addCard(new Forte());
         Tempo.addCard(new DragonsongFlute());
+        Tempo.addCard(new SlaughteringDragonewt());
         Armed.addCard(new ArmorBurst());
         Armed.addCard(new Byron());
         Armed.addCard(new DraconicArmor());

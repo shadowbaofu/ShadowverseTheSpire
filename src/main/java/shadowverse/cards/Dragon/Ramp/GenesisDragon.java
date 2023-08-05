@@ -16,11 +16,10 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
+import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import com.megacrit.cardcrawl.vfx.combat.WeightyImpactEffect;
 import rs.lazymankits.interfaces.cards.BranchableUpgradeCard;
 import rs.lazymankits.interfaces.cards.UpgradeBranch;
-import shadowverse.Shadowverse;
-import shadowverse.cards.Necromancer.Default.Ceridwen;
 import shadowverse.characters.Dragon;
 import shadowverse.powers.OverflowPower;
 
@@ -36,24 +35,43 @@ public class GenesisDragon extends CustomCard implements BranchableUpgradeCard {
     public static final String IMG_PATH = "img/cards/GenesisDragon.png";
     public static final String IMG_PATH2 = "img/cards/GenesisDragon2.png";
     private boolean branch2 = false;
+    public int baseCost;
+    public int accCost;
+    public CardType baseType;
+    public CardType accType;
+    public boolean played;
 
     public GenesisDragon() {
         super(ID, NAME, IMG_PATH, 5, DESCRIPTION, CardType.ATTACK, Dragon.Enums.COLOR_BROWN, CardRarity.UNCOMMON, CardTarget.ENEMY);
         this.baseDamage = 50;
+        this.accCost = 2;
+        this.baseCost = cost;
+        this.baseType = type;
+        this.accType = CardType.SKILL;
     }
 
 
     public void update() {
         super.update();
         if (branch2) {
-            if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
-                    Shadowverse.Accelerate(this)) {
-                setCostForTurn(2);
-                this.type = CardType.SKILL;
-            } else {
-                if (this.type == CardType.SKILL) {
-                    setCostForTurn(5);
-                    this.type = CardType.ATTACK;
+            if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT) {
+                if (this.type == baseType) {
+                    this.baseCost = this.costForTurn;
+                } else {
+                    if (this.cost <= this.accCost) {
+                        this.baseCost = this.cost;
+                    }
+                }
+                if (!played) {
+                    if (EnergyPanel.getCurrentEnergy() < baseCost) {
+                        setCostForTurn(accCost);
+                        this.type = accType;
+                    } else {
+                        if (this.type == accType) {
+                            setCostForTurn(baseCost);
+                            this.type = baseType;
+                        }
+                    }
                 }
             }
             super.update();
@@ -70,24 +88,34 @@ public class GenesisDragon extends CustomCard implements BranchableUpgradeCard {
             case 0:
                 addToBot(new SFXAction("GenesisDragon"));
                 addToBot(new VFXAction(new WeightyImpactEffect(abstractMonster.hb.cX, abstractMonster.hb.cY)));
-                addToBot(new DamageAction(abstractMonster,new DamageInfo(abstractPlayer,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
+                addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
                 break;
             case 1:
-                if (Shadowverse.Accelerate(this) && this.type == CardType.SKILL) {
-                    addToBot(new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(18, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.POISON));
-                    addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new OverflowPower(abstractPlayer, 1)));
-                    addToBot(new SFXAction("GenesisDragon2_Acc"));
+                if (this.type == accType && this.costForTurn == accCost) {
+                    accUse(abstractPlayer, abstractMonster);
                 } else {
-                    addToBot(new SFXAction("GenesisDragon2"));
-                    addToBot(new VFXAction(new WeightyImpactEffect(abstractMonster.hb.cX, abstractMonster.hb.cY)));
-                    addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
+                    baseUse(abstractPlayer, abstractMonster);
                 }
+                played = true;
                 break;
         }
     }
 
+    public void baseUse(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
+        addToBot(new SFXAction("GenesisDragon2"));
+        addToBot(new VFXAction(new WeightyImpactEffect(abstractMonster.hb.cX, abstractMonster.hb.cY)));
+        addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
+    }
+
+    public void accUse(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
+        addToBot(new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(18, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.POISON));
+        addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new OverflowPower(abstractPlayer, 1)));
+        addToBot(new SFXAction("GenesisDragon2_Acc"));
+    }
+
+
     public void triggerOnGlowCheck() {
-        if (Shadowverse.Accelerate(this) && this.type == CardType.SKILL) {
+        if (EnergyPanel.getCurrentEnergy() < baseCost && this.type == accType) {
             this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();
         } else {
             this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();

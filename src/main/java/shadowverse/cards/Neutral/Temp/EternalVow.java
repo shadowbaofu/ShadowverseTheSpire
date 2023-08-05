@@ -1,7 +1,6 @@
 package shadowverse.cards.Neutral.Temp;
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ReduceCostAction;
 import com.megacrit.cardcrawl.actions.common.ReduceCostForTurnAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
@@ -10,7 +9,6 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Necromancer;
 
 public class EternalVow
@@ -38,16 +36,16 @@ public class EternalVow
 
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction) new SFXAction("EternalVow"));
+        addToBot(new SFXAction("EternalVow"));
         for (AbstractCard c : abstractPlayer.hand.group) {
             if (c.color == Necromancer.Enums.COLOR_PURPLE) {
-                if (c.type == CardType.SKILL && c.hasTag(AbstractShadowversePlayer.Enums.ACCELERATE)) {
+                if (c.type == CardType.SKILL) {
                     continue;
                 }
                 if (!this.upgraded) {
-                    addToBot((AbstractGameAction) new ReduceCostForTurnAction(c, 1));
+                    addToBot(new ReduceCostForTurnAction(c, 1));
                 } else {
-                    addToBot((AbstractGameAction) new ReduceCostAction(c));
+                    addToBot(new ReduceCostAction(c));
                 }
                 c.flash();
             }

@@ -8,9 +8,12 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.screens.DeathScreen;
+import com.megacrit.cardcrawl.vfx.combat.HbBlockBrokenEffect;
 
 public class Death extends CustomCard {
     public static final String ID = "shadowverse:Death";
@@ -30,8 +33,14 @@ public class Death extends CustomCard {
     @Override
     public void triggerOnEndOfPlayerTurn() {
         if (AbstractDungeon.player.drawPile.group.size()==0){
-            AbstractDungeon.player.currentHealth = -999999;
-            AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new DamageAction((AbstractCreature)AbstractDungeon.player, new DamageInfo((AbstractCreature)AbstractDungeon.player, 99999999, DamageInfo.DamageType.HP_LOSS), AbstractGameAction.AttackEffect.SLASH_HEAVY));
+            AbstractDungeon.actionManager.addToBottom(new DamageAction(AbstractDungeon.player, new DamageInfo(AbstractDungeon.player, 99999999, DamageInfo.DamageType.HP_LOSS), AbstractGameAction.AttackEffect.SLASH_HEAVY));
+            AbstractDungeon.player.isDead = true;
+            AbstractDungeon.deathScreen = new DeathScreen(AbstractDungeon.getMonsters());
+            AbstractDungeon.player.currentHealth = 0;
+            if (AbstractDungeon.player.currentBlock > 0) {
+                AbstractDungeon.player.loseBlock();
+                AbstractDungeon.effectList.add(new HbBlockBrokenEffect(AbstractDungeon.player.hb.cX - AbstractDungeon.player.hb.width / 2.0F + (-14.0F * Settings.scale), AbstractDungeon.player.hb.cY - AbstractDungeon.player.hb.height / 2.0F + (-14.0F * Settings.scale)));
+            }
         }
     }
 

@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
-import shadowverse.characters.AbstractShadowversePlayer;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -42,7 +41,7 @@ public class ReanimateAction extends AbstractGameAction {
             int max = Collections.max(costTmp);
             for (AbstractCard finalCard : list) {
                 if (finalCard.cost == max) {
-                    if (finalList.size()>0&&finalCard.hasTag(AbstractShadowversePlayer.Enums.ACCELERATE))
+                    if (finalList.size() > 0)
                         continue;
                     finalList.add(finalCard);
                 }

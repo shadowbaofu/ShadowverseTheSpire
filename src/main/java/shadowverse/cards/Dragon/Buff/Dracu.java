@@ -1,7 +1,6 @@
 package shadowverse.cards.Dragon.Buff;
 
 
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.*;
@@ -13,18 +12,15 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.DexterityPower;
-import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.vfx.combat.InflameEffect;
-import shadowverse.Shadowverse;
 import shadowverse.cards.Neutral.Temp.HowlingConflagration;
-import shadowverse.characters.AbstractShadowversePlayer;
+import shadowverse.cards.Witch.AbstractAccelerateCard;
 import shadowverse.characters.Dragon;
 
 
 public class Dracu
-        extends CustomCard {
+        extends AbstractAccelerateCard {
     public static final String ID = "shadowverse:Dracu";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:Dracu");
     public static final String NAME = cardStrings.NAME;
@@ -32,7 +28,7 @@ public class Dracu
     public static final String IMG_PATH = "img/cards/Dracu.png";
 
     public Dracu() {
-        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Dragon.Enums.COLOR_BROWN, CardRarity.RARE, CardTarget.ALL_ENEMY);
+        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Dragon.Enums.COLOR_BROWN, CardRarity.RARE, CardTarget.ALL_ENEMY,0,CardType.SKILL);
         this.baseDamage = 15;
         this.baseMagicNumber = 3;
         this.magicNumber = this.baseMagicNumber;
@@ -49,21 +45,6 @@ public class Dracu
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
-    }
-
-    @Override
-    public void update() {
-        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
-                Shadowverse.Accelerate(this)) {
-            setCostForTurn(0);
-            this.type = CardType.SKILL;
-        } else {
-            if (this.type == CardType.SKILL) {
-                setCostForTurn(2);
-                this.type = CardType.ATTACK;
-            }
-        }
-        super.update();
     }
 
     public void applyPowers() {
@@ -91,28 +72,22 @@ public class Dracu
     }
 
     @Override
-    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        if (Shadowverse.Accelerate(this) && this.type == CardType.SKILL) {
-            addToBot(new SFXAction("Dracu_Acc"));
-            addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new DexterityPower(abstractPlayer, 1), 1));
-            addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
-        } else {
-            addToBot(new SFXAction("Dracu"));
-            addToBot(new VFXAction(new InflameEffect(abstractPlayer)));
-            addToBot(new DamageAllEnemiesAction(abstractPlayer, DamageInfo.createDamageMatrix(this.damage, true), this.damageTypeForTurn, AbstractGameAction.AttackEffect.FIRE));
-            if (abstractPlayer.hasPower(DexterityPower.POWER_ID) && abstractPlayer.getPower(DexterityPower.POWER_ID).amount >= 4) {
-                addToBot(new DamageAllEnemiesAction(abstractPlayer, DamageInfo.createDamageMatrix(20, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE));
-            }
+    public void baseUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new SFXAction("Dracu"));
+        addToBot(new VFXAction(new InflameEffect(p)));
+        addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(this.damage, true), this.damageTypeForTurn, AbstractGameAction.AttackEffect.FIRE));
+        if (p.hasPower(DexterityPower.POWER_ID) && p.getPower(DexterityPower.POWER_ID).amount >= 4) {
+            addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(20, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE));
         }
     }
 
-    public void triggerOnGlowCheck() {
-        if (Shadowverse.Accelerate(this) && this.type == CardType.SKILL) {
-            this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();
-        } else {
-            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
-        }
+    @Override
+    public void accUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new SFXAction("Dracu_Acc"));
+        addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, 1), 1));
+        addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
     }
+
 
     public AbstractCard makeCopy() {
         return (AbstractCard) new Dracu();

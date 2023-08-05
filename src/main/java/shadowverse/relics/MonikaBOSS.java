@@ -72,7 +72,7 @@ public class MonikaBOSS extends CustomRelic implements BetterClickableRelic<Moni
 
     @Override
     public boolean canSpawn() {
-        return AbstractDungeon.player.hasRelic(Offensive6.ID) && (CharacterSelectScreenPatches.characters[3]).reskinCount == 1;
+        return AbstractDungeon.player.hasRelic(Offensive6.ID) && (CharacterSelectScreenPatches.characters[3]).reskinCount == 2;
     }
 
     @Override

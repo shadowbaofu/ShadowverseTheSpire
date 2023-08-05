@@ -42,7 +42,7 @@ public class Beast extends CustomCard {
     }
 
     public void onChoseThisOption() {
-        addToBot((AbstractGameAction)new SFXAction("Beast"));
+        addToBot(new SFXAction("Beast"));
         int count = 0;
         for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisTurn){
             count++;
@@ -55,9 +55,9 @@ public class Beast extends CustomCard {
             }
         }
         if (count > 2){
-            addToBot((AbstractGameAction)new DamageRandomEnemyAction(new DamageInfo(AbstractDungeon.player, (this.baseDamage+sAmt)*2, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
+            addToBot(new DamageRandomEnemyAction(new DamageInfo(AbstractDungeon.player, (this.baseDamage+sAmt)*2, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
         }else {
-            addToBot((AbstractGameAction)new DamageRandomEnemyAction(new DamageInfo(AbstractDungeon.player, this.baseDamage+sAmt, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
+            addToBot(new DamageRandomEnemyAction(new DamageInfo(AbstractDungeon.player, this.baseDamage+sAmt, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
         }
     }
 

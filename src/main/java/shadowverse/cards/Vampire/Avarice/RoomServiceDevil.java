@@ -1,6 +1,5 @@
 package shadowverse.cards.Vampire.Avarice;
 
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
@@ -13,11 +12,12 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import shadowverse.Shadowverse;
+import shadowverse.cards.Witch.AbstractAccelerateCard;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Vampire;
 
 public class RoomServiceDevil
-        extends CustomCard {
+        extends AbstractAccelerateCard {
     public static final String ID = "shadowverse:RoomServiceDevil";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:RoomServiceDevil");
     public static final String NAME = cardStrings.NAME;
@@ -25,13 +25,12 @@ public class RoomServiceDevil
     public static final String IMG_PATH = "img/cards/RoomServiceDevil.png";
 
     public RoomServiceDevil() {
-        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Vampire.Enums.COLOR_SCARLET, CardRarity.COMMON, CardTarget.ENEMY);
+        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Vampire.Enums.COLOR_SCARLET, CardRarity.COMMON, CardTarget.ENEMY, 0, CardType.SKILL);
         this.baseBlock = 5;
         this.baseDamage = 10;
         this.baseMagicNumber = 6;
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(AbstractShadowversePlayer.Enums.FES);
-        this.tags.add(AbstractShadowversePlayer.Enums.ACCELERATE);
     }
 
 
@@ -59,27 +58,21 @@ public class RoomServiceDevil
         super.update();
     }
 
-    public void triggerOnGlowCheck() {
-        if (Shadowverse.Accelerate(this)) {
-            this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();
-        } else {
-            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+    @Override
+    public void baseUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new SFXAction("RoomServiceDevil"));
+        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        if (p.hand.group.size() < 4) {
+            addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+            addToBot(new GainBlockAction(p, this.block));
         }
     }
 
-    public void use(AbstractPlayer p, AbstractMonster m) {
-        if (Shadowverse.Accelerate((AbstractCard) this) && this.type == CardType.SKILL) {
-            addToBot(new SFXAction("RoomServiceDevil_Acc"));
-            addToBot(new DiscardAction(p,p,1,false));
-            addToBot(new DamageAction(m,new DamageInfo(p,this.magicNumber,this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        }else {
-            addToBot(new SFXAction("RoomServiceDevil"));
-            addToBot(new DamageAction(m,new DamageInfo(p,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-            if (p.hand.group.size()<4){
-                addToBot(new DamageAction(m,new DamageInfo(p,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-                addToBot(new GainBlockAction(p,this.block));
-            }
-        }
+    @Override
+    public void accUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new SFXAction("RoomServiceDevil_Acc"));
+        addToBot(new DiscardAction(p, p, 1, false));
+        addToBot(new DamageAction(m, new DamageInfo(p, this.magicNumber, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
     }
 
 

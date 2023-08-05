@@ -345,8 +345,8 @@
   },
   "shadowverse:Oz": {
     "NAME": "奥兹国的大魔女",
-    "DESCRIPTION": "抽牌直到8张。 NL 将手中没有 魔力增幅 效果的 技能牌 耗能降为0。 NL 将2张 *虚空 放入你的抽牌堆中。 NL 回合结束时 消耗 手中的 技能牌。",
-    "UPGRADE_DESCRIPTION": "抽牌直到8张。 NL 将手中没有 魔力增幅 效果的 技能牌 耗能降为0。 NL 将1张 *虚空 放入你的抽牌堆中。 NL 回合结束时 消耗 手中的 技能牌。"
+    "DESCRIPTION": "抽牌直到8张。 NL 将手中没有 魔力增幅 效果的 技能牌 耗能降为0。 NL 回合结束时 消耗 手中的 技能牌。",
+    "UPGRADE_DESCRIPTION": "抽牌直到8张。 NL 将手中没有 魔力增幅 效果的 技能牌 耗能降为0。 NL 回合结束时 消耗 手中的 技能牌。"
   },
   "shadowverse:GrandSummoning": {
     "NAME": "大召唤术",
@@ -3154,11 +3154,11 @@
   },
   "shadowverse:Albert": {
     "NAME": "雷维翁英雄·阿尔贝尔",
-    "DESCRIPTION": "雷维翁 ，英雄 。 NL 造成 !D! 点伤害。 NL 爆能强化 3 :额外造成一次伤害，将所有抽牌堆、弃牌堆中的 雷维翁 攻击牌置入手牌，这些牌本回合消耗变为0。"
+    "DESCRIPTION": "雷维翁 · 英雄 。 NL 造成 !D! 点伤害。 NL 爆能强化 3 :额外造成一次伤害，将所有抽牌堆、弃牌堆中的 雷维翁 攻击牌置入手牌，这些牌本回合消耗变为0。"
   },
   "shadowverse:Albert2": {
     "NAME": "雷灭卿·阿尔贝尔",
-    "DESCRIPTION": "雷维翁 ，英雄 。 NL 造成 !D! 点伤害。 NL 破坏 1张卡，伤害增加6点。 NL 爆能强化 3 :额外造成一次伤害， 破坏 改为 消耗 手中的攻击牌，伤害增加6点，给予全体敌人2层 易伤 和 虚弱 。"
+    "DESCRIPTION": "雷维翁 · 英雄 。 NL 造成 !D! 点伤害。 NL 破坏 1张卡，伤害增加6点。 NL 爆能强化 3 :额外造成一次伤害， 破坏 改为 消耗 手中的攻击牌，伤害增加6点，给予全体敌人2层 易伤 和 虚弱 。"
   },
   "shadowverse:LevinScholar": {
     "NAME": "雷维翁的探索者",
@@ -4598,8 +4598,8 @@
   },
   "shadowverse:Waltz": {
     "NAME": "月下狼王·华兹",
-    "DESCRIPTION": "激奏 1：直到下回合结束为止进入 复仇 。 NL 下回合开始时额外抽1张牌。 NL  NL --------------------- NL  NL 本场战斗会持续发动 复仇 。 NL 造成 !D! 点伤害。",
-    "UPGRADE_DESCRIPTION": "激奏 1：直到下回合结束为止进入 复仇 。 NL 下回合开始时额外抽1张牌。 NL  NL --------------------- NL  NL 本场战斗会持续发动 复仇 。 NL 造成 !D! 点伤害3次。"
+    "DESCRIPTION": "激奏 0：直到下回合结束为止进入 复仇 。 NL 下回合开始时额外抽1张牌。 NL  NL --------------------- NL  NL 本场战斗会持续发动 复仇 。 NL 造成 !D! 点伤害。",
+    "UPGRADE_DESCRIPTION": "激奏 0：直到下回合结束为止进入 复仇 。 NL 下回合开始时额外抽1张牌。 NL  NL --------------------- NL  NL 本场战斗会持续发动 复仇 。 NL 造成 !D! 点伤害3次。"
   },
   "shadowverse:FullMoonLeap": {
     "NAME": "月下纵身",
@@ -5549,7 +5549,11 @@
   },
   "shadowverse:Antemaria": {
     "NAME": "游猎的罪人·安缇玛莉亚",
-    "DESCRIPTION": "八狱 NL 激奏 0:对随机敌人造成 !M! 点伤害。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL 如果打出的上一张牌为 八狱 牌，则伤害翻倍。"
+    "DESCRIPTION": "八狱 NL 激奏 0:对随机敌人造成 !M! 点伤害。 NL 增加1张 *游猎的罪人·安缇玛莉亚 到手中。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL 如果打出的上一张牌为 八狱 牌，则伤害翻倍。"
+  },
+  "shadowverse:Antemaria_Token": {
+    "NAME": "游猎的罪人·安缇玛莉亚",
+    "DESCRIPTION": "八狱 NL 造成 !D! 点伤害，获得造成伤害的 格挡 。 NL 虚无 。 NL 消耗 。"
   },
   "shadowverse:Drazael": {
     "NAME": "禁牙执行者·朵列孜尔",
@@ -5655,7 +5659,7 @@
   },
   "shadowverse:ResplendentPhoenix": {
     "NAME": "万华凤凰",
-    "DESCRIPTION": "抽到的牌耗能变为一半。"
+    "DESCRIPTION": "抽到的牌耗能变为原本耗能的一半。"
   },
   "shadowverse:PoseidonGuard": {
     "NAME": "波塞冬的士兵",
@@ -6335,5 +6339,17 @@
   "shadowverse:Lvbu": {
     "NAME": "天下无双的武人",
     "DESCRIPTION": "1/1。 NL 打出时，移除其他随从并获得 +X/+Y。X为其他随从的攻击力，Y为其他随从的体力。 NL 如果XY的合计值为20以上你不会受 力量 和 敏捷 以外的负面效果影响，这个随从不会失去体力。 NL 被动：造成攻击力的伤害，获得体力的格挡并失去1点体力。 NL 激发：重新召唤1个这个随从。 NL 消耗 。"
+  },
+  "shadowverse:SlaughteringDragonewt": {
+    "NAME": "虐杀的龙人",
+    "DESCRIPTION": "抉择 : NL ·获得 !B! 点 格挡 。消耗所有 *灼伤 ，每消耗1张额外获得 !M! 点 格挡 。 NL ·对全体敌人造成 !D! 点伤害，增加2张 *灼伤 到手中。"
+  },
+  "shadowverse:TheTower": {
+    "NAME": "塔(正位置)",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 消耗所有 *灼伤 。 NL 每消耗1张，获得 !M! 点 格挡 。"
+  },
+  "shadowverse:TheTower_I": {
+    "NAME": "塔(逆位置)",
+    "DESCRIPTION": "对全体敌人造成 !M! 点伤害。 NL 增加2张 *灼伤 到手中。"
   }
 }

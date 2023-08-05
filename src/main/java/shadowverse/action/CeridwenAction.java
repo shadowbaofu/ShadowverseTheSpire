@@ -40,7 +40,7 @@ public class CeridwenAction extends AbstractGameAction {
             int max = Collections.max(costtempCard);
             for (AbstractCard finalCard : list) {
                 if (finalCard.cost == max) {
-                    if (finalList.size()>0&&finalCard.hasTag(AbstractShadowversePlayer.Enums.ACCELERATE))
+                    if (finalList.size()>0)
                         continue;
                     finalList.add(finalCard);
                 }

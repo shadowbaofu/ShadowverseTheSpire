@@ -32,7 +32,7 @@ public class Gawain extends CustomCard {
     public Gawain() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.ENEMY);
         this.baseDamage = 9;
-        ExhaustiveVariable.setBaseValue(this, 4);
+        ExhaustiveVariable.setBaseValue(this, 5);
     }
 
 
@@ -41,7 +41,6 @@ public class Gawain extends CustomCard {
         if (!this.upgraded) {
             upgradeName();
             upgradeDamage(4);
-            ExhaustiveVariable.upgrade(this, 1);
         }
     }
 

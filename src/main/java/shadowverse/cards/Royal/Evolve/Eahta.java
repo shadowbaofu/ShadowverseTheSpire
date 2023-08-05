@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import shadowverse.characters.AbstractShadowversePlayer;
@@ -74,21 +75,21 @@ public class Eahta extends CustomCard {
         if (!this.triggered && this.magicNumber <= 0) {
             this.triggered = true;
             for (AbstractCard c : p.hand.group) {
-                if (c.color == Royal.Enums.COLOR_YELLOW && (c.type == CardType.ATTACK || c.type == CardType.SKILL && c.hasTag(AbstractShadowversePlayer.Enums.ACCELERATE))) {
+                if (c.color == Royal.Enums.COLOR_YELLOW && (CardLibrary.getCard(c.cardID) != null && CardLibrary.getCard(c.cardID).type == CardType.ATTACK)) {
                     addToBot(new ReduceCostAction(c));
                     addToBot(new ReduceCostAction(c));
                     c.flash();
                 }
             }
             for (AbstractCard c : p.drawPile.group) {
-                if (c.color == Royal.Enums.COLOR_YELLOW && (c.type == CardType.ATTACK || c.type == CardType.SKILL && c.hasTag(AbstractShadowversePlayer.Enums.ACCELERATE))) {
+                if (c.color == Royal.Enums.COLOR_YELLOW && (CardLibrary.getCard(c.cardID) != null && CardLibrary.getCard(c.cardID).type == CardType.ATTACK)) {
                     addToBot(new ReduceCostAction(c));
                     addToBot(new ReduceCostAction(c));
                     c.flash();
                 }
             }
             for (AbstractCard c : p.discardPile.group) {
-                if (c.color == Royal.Enums.COLOR_YELLOW && (c.type == CardType.ATTACK || c.type == CardType.SKILL && c.hasTag(AbstractShadowversePlayer.Enums.ACCELERATE))) {
+                if (c.color == Royal.Enums.COLOR_YELLOW && (CardLibrary.getCard(c.cardID) != null && CardLibrary.getCard(c.cardID).type == CardType.ATTACK)) {
                     addToBot(new ReduceCostAction(c));
                     addToBot(new ReduceCostAction(c));
                     c.flash();
@@ -96,7 +97,7 @@ public class Eahta extends CustomCard {
             }
         } else if (this.magicNumber <= 6) {
             for (AbstractCard c : p.hand.group) {
-                if (c.color == Royal.Enums.COLOR_YELLOW && (c.type == CardType.ATTACK || c.type == CardType.SKILL && c.hasTag(AbstractShadowversePlayer.Enums.ACCELERATE))) {
+                if (c.color == Royal.Enums.COLOR_YELLOW && (CardLibrary.getCard(c.cardID) != null && CardLibrary.getCard(c.cardID).type == CardType.ATTACK)) {
                     addToBot(new ReduceCostForTurnAction(c, 2));
                     c.flash();
                 }

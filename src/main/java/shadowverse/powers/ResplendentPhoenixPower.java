@@ -1,9 +1,11 @@
 package shadowverse.powers;
 
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
@@ -25,11 +27,19 @@ public class ResplendentPhoenixPower extends AbstractPower {
 
     @Override
     public void onCardDraw(AbstractCard card) {
-        int cost = card.cost;
+        int cost = 0;
+        if (CardLibrary.getCard(card.cardID) != null){
+            cost = CardLibrary.getCard(card.cardID).cost;
+        }else {
+            cost = card.cost;
+        }
         for (int i = 0 ; i < amount; i++){
             cost = (int) Math.ceil((double)cost /2);
         }
-        card.setCostForTurn(cost);
+        card.cost = cost;
+        card.costForTurn = 0;
+        card.isCostModified = true;
+        card.superFlash(Color.GOLD.cpy());
     }
 
     public void updateDescription() {

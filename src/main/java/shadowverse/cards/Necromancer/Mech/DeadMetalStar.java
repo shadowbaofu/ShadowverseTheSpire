@@ -1,6 +1,5 @@
 package shadowverse.cards.Necromancer.Mech;
 
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
@@ -13,9 +12,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.vfx.SpotlightPlayerEffect;
-import shadowverse.Shadowverse;
 import shadowverse.action.ReanimateAction;
 import shadowverse.cards.Necromancer.Burial.DemonicProcession;
 import shadowverse.cards.Necromancer.Burial.SpiritCurator;
@@ -24,12 +21,13 @@ import shadowverse.cards.Necromancer.Ghosts.Ferry;
 import shadowverse.cards.Necromancer.Burial.TheLovers;
 import shadowverse.cards.Neutral.Temp.InstantPotion;
 import shadowverse.cards.Neutral.Temp.ProductMachine;
+import shadowverse.cards.Witch.AbstractAccelerateCard;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Necromancer;
 
 
 public class DeadMetalStar
-        extends CustomCard {
+        extends AbstractAccelerateCard {
     public static final String ID = "shadowverse:DeadMetalStar";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:DeadMetalStar");
     public static final String NAME = cardStrings.NAME;
@@ -37,13 +35,12 @@ public class DeadMetalStar
     public static final String IMG_PATH = "img/cards/DeadMetalStar.png";
 
     public DeadMetalStar() {
-        super(ID, NAME, IMG_PATH, 4, DESCRIPTION, CardType.ATTACK, Necromancer.Enums.COLOR_PURPLE, CardRarity.RARE, CardTarget.ENEMY);
+        super(ID, NAME, IMG_PATH, 4, DESCRIPTION, CardType.ATTACK, Necromancer.Enums.COLOR_PURPLE, CardRarity.RARE, CardTarget.ENEMY, 1, CardType.SKILL);
         this.baseDamage = 25;
         this.baseBlock = 25;
-        this.tags.add(AbstractShadowversePlayer.Enums.ACCELERATE);
         this.tags.add(AbstractShadowversePlayer.Enums.LASTWORD);
         this.tags.add(AbstractShadowversePlayer.Enums.MACHINE);
-        this.cardsToPreview =  new ProductMachine();
+        this.cardsToPreview = new ProductMachine();
     }
 
 
@@ -54,30 +51,6 @@ public class DeadMetalStar
             upgradeBlock(5);
         }
     }
-
-    @Override
-    public void update() {
-        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
-                Shadowverse.Accelerate(this)) {
-            setCostForTurn(1);
-            this.type = CardType.SKILL;
-        } else {
-            if (this.type == CardType.SKILL) {
-                setCostForTurn(4);
-                this.type = CardType.ATTACK;
-            }
-        }
-        super.update();
-    }
-
-    public void triggerOnGlowCheck() {
-        if (Shadowverse.Accelerate(this)) {
-            this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();
-        } else {
-            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
-        }
-    }
-
 
     public void triggerOnOtherCardPlayed(AbstractCard c) {
         if (c instanceof DemonicProcession || c instanceof TheLovers || c instanceof HungrySlash || c instanceof SpiritCurator || c instanceof Ferry || c instanceof InstantPotion) {
@@ -91,23 +64,24 @@ public class DeadMetalStar
         addToBot(new ReanimateAction(3));
     }
 
-    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
-        if (Shadowverse.Accelerate( this) && this.type == CardType.SKILL) {
-            addToBot(new SFXAction("DeadMetalStar_Acc"));
-            addToBot(new MakeTempCardInHandAction(c, 3));
-        } else {
-            AbstractDungeon.effectsQueue.add(new SpotlightPlayerEffect());
-            addToBot(new SFXAction("DeadMetalStar"));
-            addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
-            addToBot(new GainBlockAction(abstractPlayer, this.block));
-        }
+
+    @Override
+    public void baseUse(AbstractPlayer p, AbstractMonster m) {
+        AbstractDungeon.effectsQueue.add(new SpotlightPlayerEffect());
+        addToBot(new SFXAction("DeadMetalStar"));
+        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+        addToBot(new GainBlockAction(p, this.block));
+    }
+
+    @Override
+    public void accUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new SFXAction("DeadMetalStar_Acc"));
+        addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy(), 3));
     }
 
 
-
     public AbstractCard makeCopy() {
-        return  new DeadMetalStar();
+        return new DeadMetalStar();
     }
 }
 

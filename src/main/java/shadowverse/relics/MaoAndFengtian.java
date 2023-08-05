@@ -36,7 +36,7 @@
              this.counter++;
              beginLongPulse();
          }
-         if (this.counter == 2){
+         if (this.counter == 2 && !this.grayscale){
              addToBot(new DrawCardAction(2));
              addToBot(new GainEnergyAction(1));
              stopPulse();

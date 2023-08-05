@@ -55,8 +55,8 @@ public class ShootOfUnkillingPower
 
     @Override
     public void atStartOfTurn() {
-        addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new MiracleEffect(Color.FOREST.cpy(),Color.WHITE.cpy(),"HEAL_3")));
-        addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new DaggerSprayEffect(AbstractDungeon.getMonsters().shouldFlipVfx()), 1.5F));
+        addToBot(new VFXAction(new MiracleEffect(Color.FOREST.cpy(),Color.WHITE.cpy(),"HEAL_3")));
+        addToBot(new VFXAction(new DaggerSprayEffect(AbstractDungeon.getMonsters().shouldFlipVfx()), 1.5F));
         for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
             if (!mo.isDeadOrEscaped()&&!mo.halfDead) {
                 if ((mo.intent == AbstractMonster.Intent.ATTACK||
@@ -64,11 +64,11 @@ public class ShootOfUnkillingPower
                         mo.intent == AbstractMonster.Intent.ATTACK_DEBUFF||
                         mo.intent == AbstractMonster.Intent.ATTACK_DEFEND)&&
                 mo.getIntentDmg()<=0){
-                    addToBot((AbstractGameAction) new DamageAction((AbstractCreature) mo, new DamageInfo((AbstractCreature) this.owner, mo.maxHealth * this.amount, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.NONE));
+                    addToBot( new DamageAction(mo, new DamageInfo(this.owner, mo.maxHealth * this.amount, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.NONE));
                 }
             }
         }
-        addToBot((AbstractGameAction) new RemoveSpecificPowerAction(this.owner, this.owner, this));
+        addToBot( new RemoveSpecificPowerAction(this.owner, this.owner, this));
     }
 
 }

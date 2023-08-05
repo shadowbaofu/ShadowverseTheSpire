@@ -1,10 +1,8 @@
 package shadowverse.cards.Bishop.Amulet2;
 
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.*;
-import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -12,28 +10,23 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.rooms.AbstractRoom;
-import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import com.megacrit.cardcrawl.vfx.combat.LightningEffect;
-import com.megacrit.cardcrawl.vfx.combat.SweepingBeamEffect;
-import shadowverse.Shadowverse;
 import shadowverse.cards.AbstractAmuletCard;
 import shadowverse.cards.AbstractCrystalizeCard;
-import shadowverse.characters.AbstractShadowversePlayer;
+import shadowverse.cards.Witch.AbstractAccelerateCard;
 import shadowverse.characters.Bishop;
 import shadowverse.orbs.AmuletOrb;
 
 public class HolyLightningBird
-        extends CustomCard implements AbstractCrystalizeCard {
+        extends AbstractAccelerateCard implements AbstractCrystalizeCard {
     public static final String ID = "shadowverse:HolyLightningBird";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:HolyLightningBird");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/HolyLightningBird.png";
-    private boolean played;
 
     public HolyLightningBird() {
-        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.RARE, CardTarget.ENEMY);
+        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.RARE, CardTarget.ENEMY, 0, CardType.SKILL);
         this.baseDamage = 20;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
@@ -48,54 +41,28 @@ public class HolyLightningBird
         }
     }
 
+
     @Override
-    public void update() {
-        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT&&
-                Shadowverse.Accelerate(this)&& !played){
-            setCostForTurn(0);
-            this.type = CardType.POWER;
-        }else {
-            if (this.type==CardType.POWER){
-                setCostForTurn(2);
-                this.type = CardType.ATTACK;
+    public void baseUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
+        if (!m.isDeadOrEscaped())
+            addToBot(new VFXAction(new LightningEffect(m.drawX, m.drawY), 0.05F));
+        int count = 0;
+        for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisCombat) {
+            if (c instanceof AbstractAmuletCard || (c instanceof AbstractCrystalizeCard && c.type == CardType.POWER)) {
+                count++;
             }
         }
-        super.update();
-    }
-
-    public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
-        if (this.type==CardType.POWER && this.costForTurn == 0){
-
-        }else {
-            addToBot(new DamageAction(abstractMonster,new DamageInfo(p,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
-            if (!abstractMonster.isDeadOrEscaped())
-                addToBot(new VFXAction(new LightningEffect(abstractMonster.drawX, abstractMonster.drawY), 0.05F));
-            int count = 0;
-            for (AbstractCard c: AbstractDungeon.actionManager.cardsPlayedThisCombat){
-                if (c instanceof AbstractAmuletCard || (c instanceof AbstractCrystalizeCard && c.type==CardType.POWER)){
-                    count++;
-                }
-            }
-            if (count >= 5){
-                addToBot(new GainEnergyAction(1));
-            }
-            played = true;
+        if (count >= 5) {
+            addToBot(new GainEnergyAction(1));
         }
     }
 
     @Override
-    public void onMoveToDiscard() {
-        super.onMoveToDiscard();
-        played = false;
+    public void accUse(AbstractPlayer p, AbstractMonster m) {
+
     }
 
-    public void triggerOnGlowCheck() {
-        if (Shadowverse.Accelerate(this) && this.type == CardType.POWER) {
-            this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();
-        } else {
-            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
-        }
-    }
 
     public AbstractCard makeCopy() {
         return (AbstractCard) new HolyLightningBird();

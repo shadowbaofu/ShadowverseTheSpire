@@ -42,7 +42,7 @@ import shadowverse.powers.OverflowPower;
  
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     addToBot(new SFXAction("DraconicCounsel"));
+     addToBot(new SFXAction("DraconicCounsel_Copy"));
      addToBot(new DiscardAction(abstractPlayer,abstractPlayer,1,false));
      addToBot(new DrawCardAction(this.magicNumber));
    }

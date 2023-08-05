@@ -41,7 +41,7 @@ public class Beauty extends CustomCard {
     }
 
     public void onChoseThisOption() {
-        addToBot((AbstractGameAction)new SFXAction("Beauty"));
+        addToBot(new SFXAction("Beauty"));
         int count = 0;
         for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisTurn){
             count++;
@@ -54,9 +54,9 @@ public class Beauty extends CustomCard {
             }
         }
         if (count > 2){
-            addToBot((AbstractGameAction)new GainBlockAction(AbstractDungeon.player,(this.baseBlock+dAmt)*2));
+            addToBot(new GainBlockAction(AbstractDungeon.player,(this.baseBlock+dAmt)*2));
         }else {
-            addToBot((AbstractGameAction)new GainBlockAction(AbstractDungeon.player,this.baseBlock+dAmt));
+            addToBot(new GainBlockAction(AbstractDungeon.player,this.baseBlock+dAmt));
         }
     }
 

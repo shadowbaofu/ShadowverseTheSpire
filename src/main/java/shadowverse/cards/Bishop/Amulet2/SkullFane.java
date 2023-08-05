@@ -190,7 +190,6 @@ public class SkullFane
                 SkullFane.this.loadCardImage(IMG_PATH2);
                 SkullFane.this.name = cardStrings2.NAME;
                 SkullFane.this.initializeTitle();
-                SkullFane.this.tags.add(AbstractShadowversePlayer.Enums.ACCELERATE);
                 SkullFane.this.rawDescription = cardStrings2.DESCRIPTION;
                 SkullFane.this.initializeDescription();
                 SkullFane.this.previewBranch = 1;

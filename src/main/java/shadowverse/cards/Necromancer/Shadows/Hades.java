@@ -1,6 +1,5 @@
 package shadowverse.cards.Necromancer.Shadows;
 
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
@@ -12,7 +11,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import shadowverse.Shadowverse;
 import shadowverse.cards.Necromancer.Burial.DemonicProcession;
@@ -22,33 +20,34 @@ import shadowverse.cards.Necromancer.Ghosts.Ferry;
 import shadowverse.cards.Necromancer.Burial.TheLovers;
 import shadowverse.cards.Neutral.Neutral.Path;
 import shadowverse.cards.Neutral.Temp.InstantPotion;
+import shadowverse.cards.Witch.AbstractAccelerateCard;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Necromancer;
 import shadowverse.powers.Cemetery;
 import shadowverse.powers.PathPower;
 
-public class Hades extends CustomCard {
+public class Hades extends AbstractAccelerateCard {
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:Hades");
     public static final String ID = "shadowverse:Hades";
     public static final String NAME = cardStrings.NAME;
-    public static final String DESCRIPTION = cardStrings.DESCRIPTION; public static final String IMG_PATH = "img/cards/Hades.png";
+    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String IMG_PATH = "img/cards/Hades.png";
 
     public Hades() {
-        super(ID, NAME, IMG_PATH, 5, DESCRIPTION, CardType.ATTACK, Necromancer.Enums.COLOR_PURPLE, CardRarity.RARE, CardTarget.ALL_ENEMY);
+        super(ID, NAME, IMG_PATH, 5, DESCRIPTION, CardType.ATTACK, Necromancer.Enums.COLOR_PURPLE, CardRarity.RARE, CardTarget.ALL_ENEMY, 2, CardType.SKILL);
         this.baseDamage = 16;
         this.isMultiDamage = true;
         this.baseMagicNumber = 6;
         this.magicNumber = this.baseMagicNumber;
         this.baseBlock = 40;
         this.tags.add(AbstractShadowversePlayer.Enums.LASTWORD);
-        this.tags.add(AbstractShadowversePlayer.Enums.ACCELERATE);
         this.exhaust = true;
         this.cardsToPreview = new Path();
     }
 
     @Override
     public void upgrade() {
-        if(!this.upgraded){
+        if (!this.upgraded) {
             upgradeName();
             upgradeDamage(6);
             upgradeBlock(10);
@@ -57,13 +56,13 @@ public class Hades extends CustomCard {
 
     @Override
     public void triggerOnExhaust() {
-        addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, (AbstractPower)new PathPower(AbstractDungeon.player, 42), 42));
-        if (this.type==CardType.ATTACK)
-            addToBot(new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,(AbstractPower)new Cemetery(AbstractDungeon.player,this.magicNumber),this.magicNumber));
+        addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new PathPower(AbstractDungeon.player, 42), 42));
+        if (this.type == CardType.ATTACK)
+            addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new Cemetery(AbstractDungeon.player, this.magicNumber), this.magicNumber));
     }
 
     public void triggerOnOtherCardPlayed(AbstractCard c) {
-        if (c instanceof DemonicProcession ||c instanceof TheLovers ||c instanceof HungrySlash ||c instanceof SpiritCurator ||c instanceof Ferry ||c instanceof InstantPotion){
+        if (c instanceof DemonicProcession || c instanceof TheLovers || c instanceof HungrySlash || c instanceof SpiritCurator || c instanceof Ferry || c instanceof InstantPotion) {
             this.type = CardType.ATTACK;
             this.resetAttributes();
         }
@@ -71,12 +70,12 @@ public class Hades extends CustomCard {
 
     @Override
     public void update() {
-        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT&&
-                Shadowverse.Accelerate(this)){
+        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
+                Shadowverse.Accelerate(this)) {
             setCostForTurn(2);
             this.type = CardType.SKILL;
-        }else {
-            if (this.type==CardType.SKILL){
+        } else {
+            if (this.type == CardType.SKILL) {
                 setCostForTurn(5);
                 this.type = CardType.ATTACK;
             }
@@ -92,16 +91,16 @@ public class Hades extends CustomCard {
         }
     }
 
+    @Override
+    public void baseUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new SFXAction("Hades"));
+        addToBot(new GainBlockAction(p, p, this.block));
+    }
 
     @Override
-    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        if (Shadowverse.Accelerate(this) && this.type == CardType.SKILL) {
-            addToBot(new SFXAction("Hades_Acc"));
-            addToBot(new DamageAllEnemiesAction(abstractPlayer, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.FIRE));
-        }else {
-            addToBot(new SFXAction("Hades"));
-            addToBot(new GainBlockAction(abstractPlayer,abstractPlayer,this.block));
-        }
+    public void accUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new SFXAction("Hades_Acc"));
+        addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.FIRE));
     }
 
 

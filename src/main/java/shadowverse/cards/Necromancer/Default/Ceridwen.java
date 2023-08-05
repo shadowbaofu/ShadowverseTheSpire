@@ -55,21 +55,40 @@ public class Ceridwen extends CustomCard implements BranchableUpgradeCard {
         return list;
     }
 
+    public int baseCost;
+    public int accCost;
+    public CardType baseType;
+    public CardType accType;
+
     public Ceridwen() {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Necromancer.Enums.COLOR_PURPLE, CardRarity.UNCOMMON, CardTarget.SELF);
         this.baseBlock = 6;
+        this.accCost = 0;
+        this.baseCost = cost;
+        this.baseType = type;
+        this.accType = CardType.POWER;
     }
 
     public void update() {
         if (branch3) {
-            if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
-                    Shadowverse.Accelerate(this) && !played) {
-                setCostForTurn(0);
-                this.type = CardType.POWER;
-            } else {
-                if (this.type == CardType.POWER) {
-                    setCostForTurn(3);
-                    this.type = CardType.ATTACK;
+            if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT) {
+                if (this.type == baseType) {
+                    this.baseCost = this.costForTurn;
+                } else {
+                    if (this.cost <= this.accCost){
+                        this.baseCost = this.cost;
+                    }
+                }
+                if (!played){
+                    if (EnergyPanel.getCurrentEnergy() < baseCost) {
+                        setCostForTurn(accCost);
+                        this.type = accType;
+                    }else {
+                        if (this.type==accType){
+                            setCostForTurn(baseCost);
+                            this.type = baseType;
+                        }
+                    }
                 }
             }
         }
@@ -118,7 +137,7 @@ public class Ceridwen extends CustomCard implements BranchableUpgradeCard {
                 addToBot(new ChoiceAction2(eternal, instant));
                 break;
             case 2:
-                if (this.type == CardType.POWER && this.costForTurn == 0) {
+                if (this.type == accType && this.costForTurn == accCost) {
                     addToBot(new SFXAction("Ceridwen3_Acc"));
                     addToBot(new BurialAction(1, new DrawCardAction(1)));
                     addToBot(new DamageRandomEnemyAction(new DamageInfo(abstractPlayer, 4, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.FIRE));
@@ -132,8 +151,8 @@ public class Ceridwen extends CustomCard implements BranchableUpgradeCard {
                         addToBot(new ReanimateAction(4));
                         addToBot(new CeridwenAction(4));
                     }
-                    played = true;
                 }
+                played = true;
                 break;
         }
     }

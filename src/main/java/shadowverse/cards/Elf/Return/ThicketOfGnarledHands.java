@@ -1,6 +1,5 @@
 package shadowverse.cards.Elf.Return;
 
-import basemod.abstracts.CustomCard;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
@@ -12,16 +11,15 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.vfx.combat.ShockWaveEffect;
 import shadowverse.Shadowverse;
 import shadowverse.action.BounceAction;
-import shadowverse.characters.AbstractShadowversePlayer;
+import shadowverse.cards.Witch.AbstractAccelerateCard;
 import shadowverse.characters.Elf;
 
 
 public class ThicketOfGnarledHands
-        extends CustomCard {
+        extends AbstractAccelerateCard {
     public static final String ID = "shadowverse:ThicketOfGnarledHands";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:ThicketOfGnarledHands");
     public static final String NAME = cardStrings.NAME;
@@ -29,11 +27,10 @@ public class ThicketOfGnarledHands
     public static final String IMG_PATH = "img/cards/ThicketOfGnarledHands.png";
 
     public ThicketOfGnarledHands() {
-        super(ID, NAME, IMG_PATH, 4, DESCRIPTION, CardType.ATTACK, Elf.Enums.COLOR_GREEN, CardRarity.RARE, CardTarget.ALL);
+        super(ID, NAME, IMG_PATH, 4, DESCRIPTION, CardType.ATTACK, Elf.Enums.COLOR_GREEN, CardRarity.RARE, CardTarget.ALL, 0, CardType.SKILL);
         this.baseMagicNumber = 3;
         this.magicNumber = this.baseMagicNumber;
         this.baseDamage = 6;
-        this.tags.add(AbstractShadowversePlayer.Enums.ACCELERATE);
     }
 
     public void upgrade() {
@@ -43,30 +40,6 @@ public class ThicketOfGnarledHands
             upgradeMagicNumber(1);
         }
     }
-
-    @Override
-    public void update() {
-        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
-                Shadowverse.Accelerate(this)) {
-            setCostForTurn(0);
-            this.type = CardType.SKILL;
-        } else {
-            if (this.type == CardType.SKILL) {
-                setCostForTurn(4);
-                this.type = CardType.ATTACK;
-            }
-        }
-        super.update();
-    }
-
-    public void triggerOnGlowCheck() {
-        if (Shadowverse.Accelerate(this)) {
-            this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();
-        } else {
-            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
-        }
-    }
-
 
     public void applyPowers() {
         super.applyPowers();
@@ -82,7 +55,7 @@ public class ThicketOfGnarledHands
         if (!canUse)
             return false;
         boolean hasAttack = false;
-        if (Shadowverse.Accelerate(this) && this.type == CardType.SKILL) {
+        if (Shadowverse.Accelerate(this) && this.type == accType) {
             for (AbstractCard c : p.discardPile.group) {
                 if (c.type == CardType.ATTACK || c.type == CardType.POWER)
                     hasAttack = true;
@@ -95,17 +68,19 @@ public class ThicketOfGnarledHands
         return canUse;
     }
 
-    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        if (Shadowverse.Accelerate(this) && this.type == CardType.SKILL) {
-            addToBot(new BounceAction(1));
-            addToBot(new DamageRandomEnemyAction(new DamageInfo(abstractPlayer, this.damage), AbstractGameAction.AttackEffect.POISON));
-        } else {
-            int rand = AbstractDungeon.cardRandomRng.random(AbstractDungeon.actionManager.cardsPlayedThisCombat.size());
-            int rand2 = AbstractDungeon.actionManager.cardsPlayedThisCombat.size() - rand;
-            addToBot(new VFXAction(new ShockWaveEffect(abstractPlayer.hb.cX, abstractPlayer.hb.cY, Color.GREEN, ShockWaveEffect.ShockWaveType.ADDITIVE)));
-            addToBot(new DamageAllEnemiesAction(abstractPlayer, DamageInfo.createDamageMatrix(rand*this.magicNumber, true), this.damageTypeForTurn, AbstractGameAction.AttackEffect.FIRE, true));
-            addToBot(new GainBlockAction(abstractPlayer,rand2*this.magicNumber));
-        }
+    @Override
+    public void baseUse(AbstractPlayer p, AbstractMonster m) {
+        int rand = AbstractDungeon.cardRandomRng.random(AbstractDungeon.actionManager.cardsPlayedThisCombat.size());
+        int rand2 = AbstractDungeon.actionManager.cardsPlayedThisCombat.size() - rand;
+        addToBot(new VFXAction(new ShockWaveEffect(p.hb.cX, p.hb.cY, Color.GREEN, ShockWaveEffect.ShockWaveType.ADDITIVE)));
+        addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(rand * this.magicNumber, true), this.damageTypeForTurn, AbstractGameAction.AttackEffect.FIRE, true));
+        addToBot(new GainBlockAction(p, rand2 * this.magicNumber));
+    }
+
+    @Override
+    public void accUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new BounceAction(1));
+        addToBot(new DamageRandomEnemyAction(new DamageInfo(p, this.damage), AbstractGameAction.AttackEffect.POISON));
     }
 
 

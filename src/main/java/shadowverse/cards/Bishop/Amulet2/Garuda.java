@@ -175,7 +175,6 @@ public class Garuda extends CustomCard implements BranchableUpgradeCard {
                 Garuda.this.name = cardStrings2.NAME;
                 Garuda.this.initializeTitle();
                 Garuda.this.upgradeBaseCost(4);
-                Garuda.this.tags.add(AbstractShadowversePlayer.Enums.ACCELERATE);
                 Garuda.this.rawDescription = cardStrings2.DESCRIPTION;
                 Garuda.this.initializeDescription();
                 Garuda.this.previewBranch = 1;

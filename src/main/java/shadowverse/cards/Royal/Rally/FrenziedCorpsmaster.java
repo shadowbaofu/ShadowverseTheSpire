@@ -1,11 +1,9 @@
 package shadowverse.cards.Royal.Rally;
 
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import shadowverse.action.MinionSummonAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -16,11 +14,11 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
-import shadowverse.Shadowverse;
+import shadowverse.cards.Witch.AbstractAccelerateCard;
 import shadowverse.characters.Royal;
 import shadowverse.orbs.*;
 
-public class FrenziedCorpsmaster extends CustomCard {
+public class FrenziedCorpsmaster extends AbstractAccelerateCard {
     public static final String ID = "shadowverse:FrenziedCorpsmaster";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
@@ -29,7 +27,7 @@ public class FrenziedCorpsmaster extends CustomCard {
     public static final int ACCELERATE = 1;
 
     public FrenziedCorpsmaster() {
-        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY);
+        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY, 1, CardType.SKILL);
         this.baseBlock = 8;
         this.baseDamage = 0;
         this.isMultiDamage = true;
@@ -61,46 +59,24 @@ public class FrenziedCorpsmaster extends CustomCard {
         return rally;
     }
 
+
     @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
-        if (Shadowverse.Accelerate(this) && this.type == CardType.SKILL) {
-//            addToBot(new SFXAction("FrenziedCorpsmaster_Acc"));
-            addToBot(new SFXAction(ID.replace("shadowverse:", "")+"_Acc"));
-            AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new SteelcladKnight()));
-            AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new HeavyKnight()));
-        } else {
-//            addToBot(new SFXAction("FrenziedCorpsmaster"));
-            addToBot(new SFXAction(ID.replace("shadowverse:", "")));
-            addToBot(new GainBlockAction(p, this.block));
-            this.baseDamage = rally() * 2;
-            this.calculateCardDamage(null);
-            addToBot(new VFXAction(p, new CleaveEffect(), 0.1F));
-            addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE, true));
-        }
+    public void baseUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new SFXAction(ID.replace("shadowverse:", "")));
+        addToBot(new GainBlockAction(p, this.block));
+        this.baseDamage = rally() * 2;
+        this.calculateCardDamage(null);
+        addToBot(new VFXAction(p, new CleaveEffect(), 0.1F));
+        addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE, true));
     }
 
     @Override
-    public void update() {
-        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT&&
-                Shadowverse.Accelerate(this)){
-            setCostForTurn(1);
-            this.type = CardType.SKILL;
-        }else {
-            if (this.type==CardType.SKILL){
-                setCostForTurn(2);
-                this.type = CardType.ATTACK;
-            }
-        }
-        super.update();
+    public void accUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_Acc"));
+        AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new SteelcladKnight()));
+        AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new HeavyKnight()));
     }
 
-    public void triggerOnGlowCheck() {
-        if (Shadowverse.Accelerate(this)) {
-            this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();
-        } else {
-            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
-        }
-    }
 
     @Override
     public void applyPowers() {

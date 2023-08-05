@@ -345,8 +345,8 @@
   },
   "shadowverse:Oz": {
     "NAME": "Wizardess of Oz",
-    "DESCRIPTION": "Draw cards until you have 8 cards in your hand. NL Change the cost of all Skill cards without Spellboost to 0. NL Put 2 *Void into your draw pile. NL Exhaust all Skill cards in your hand at the end of your turn.",
-    "UPGRADE_DESCRIPTION": "Draw cards until you have 8 cards in your hand. NL Change the cost of all Skill cards without Spellboost to 0. NL Put 1 *Void into your draw pile. NL Exhaust all Skill cards in your hand at the end of your turn."
+    "DESCRIPTION": "Draw cards until you have 8 cards in your hand. NL Change the cost of all Skill cards without Spellboost to 0. NL Exhaust all Skill cards in your hand at the end of your turn.",
+    "UPGRADE_DESCRIPTION": "Draw cards until you have 8 cards in your hand. NL Change the cost of all Skill cards without Spellboost to 0. NL Exhaust all Skill cards in your hand at the end of your turn."
   },
   "shadowverse:GrandSummoning": {
     "NAME": "Grand Summoning",
@@ -4601,8 +4601,8 @@
   },
   "shadowverse:Waltz": {
     "NAME": "Waltz, Moonlight Wolf-King",
-    "DESCRIPTION": "Accelerate 1: Activate Vengeance until the start of your next turn. NL Draw 1 additional card next turn. NL NL --------------------- NL NL Deal !D! damage. Vengeance is now active for you until the end of this combat.",
-    "UPGRADE_DESCRIPTION": "Accelerate 1: Activate Vengeance until the start of your next turn. NL Draw 1 additional card next turn. NL NL --------------------- NL NL Deal !D! damage 3 times. Vengeance is now active for you until the end of this combat."
+    "DESCRIPTION": "Accelerate 0: Activate Vengeance until the start of your next turn. NL Draw 1 additional card next turn. NL NL --------------------- NL NL Deal !D! damage. Vengeance is now active for you until the end of this combat.",
+    "UPGRADE_DESCRIPTION": "Accelerate 0: Activate Vengeance until the start of your next turn. NL Draw 1 additional card next turn. NL NL --------------------- NL NL Deal !D! damage 3 times. Vengeance is now active for you until the end of this combat."
   },
   "shadowverse:FullMoonLeap": {
     "NAME": "Full Moon Leap",
@@ -5558,7 +5558,11 @@
   },
   "shadowverse:Antemaria": {
     "NAME": "Antemaria, Huntress Convict",
-    "DESCRIPTION": "Condemned NL Accelerate 0: Deal !M! damage to a random enemy. NL  NL --------------------- NL  NL Deal !D! damage. NL If the last card played was a Condemned card, double the damage."
+    "DESCRIPTION": "Condemned NL Accelerate 0: Deal !M! damage to a random enemy. NL Put 1 *Antemaria, *Huntress *Convict into your hand. NL  NL --------------------- NL  NL Deal !D! damage. NL If the last card played was a Condemned card, double the damage."
+  },
+  "shadowverse:Antemaria_Token": {
+    "NAME": "Antemaria, Huntress Convict",
+    "DESCRIPTION": "Condemned NL Deal !D! damage. Gain Block of damage dealt. NL Ethereal . NL Exhaust ."
   },
   "shadowverse:Drazael": {
     "NAME": "Drazael, Ravening Enforcer",
@@ -5783,7 +5787,7 @@
   },
   "shadowverse:LanceLizard": {
     "NAME": "Lance Lizard",
-    "DESCRIPTION": "Armed NL Deal !D! damage. NL Add 1 *Draconic *Weapon to your hand. NL If 4 or more Armed Attack cards have been played this combat, gain !B! Block and deal !D! damage again.",
+    "DESCRIPTION": "Armed NL Deal !D! damage. NL Add 1 *Draconic *Weapon to your hand. NL If 4 or more Armed Attack cards have been played this combat, gain Block of damage dealt.",
     "EXTENDED_DESCRIPTION": [
       " NL （Has played ",
       " Armed Attack cards)"
@@ -6045,7 +6049,7 @@
   },
   "shadowverse:HowlingConflagration": {
     "NAME": "Howling Conflagration",
-    "DESCRIPTION": "Deal !M! damage to a random enemy. NL Gain 1 Dexterity until the end of this turn. NL Exhaust."
+    "DESCRIPTION": "Retain . NL Deal !M! damage to a random enemy. NL Gain 1 Dexterity until the end of this turn. NL Exhaust."
   },
   "shadowverse:Dracu": {
     "NAME": "Drache, Fiery Dragonlord",
@@ -6344,5 +6348,17 @@
   "shadowverse:Lvbu": {
     "NAME": "Peerless Warrior",
     "DESCRIPTION": "1/1. NL When you play this card, remove all other followers, summon a Peerless Warrior and give it +X/+Y. X is the total attack of those other followers. Y is the total Health of those other followers. If the total of X or Y is 20 or more, you are unaffected by debuffs except those that affect Strength or Dexterity and this follower does not lose Health. NL Passive: Deal damage equal to this follower's Attack and gain Block equal to its Health, then reduce Health by 1. NL Evoke: Spawn a copy of this follower. NL Exhaust."
+  },
+  "shadowverse:SlaughteringDragonewt": {
+    "NAME": "虐殺のドラゴニュート",
+    "DESCRIPTION": "チョイス : NL · !B! ブロック を得る。 *火傷 を全て廃棄し、1枚につき !M! ブロック を得る。 NL ·敵全体に !D! ダメージ、 *火傷 2枚を手札に加える。"
+  },
+  "shadowverse:TheTower": {
+    "NAME": "塔(正位置)",
+    "DESCRIPTION": " !B! ブロック を得る。 NL *火傷 を全て廃棄し、1枚につき !M! ブロック を得る。"
+  },
+  "shadowverse:TheTower_I": {
+    "NAME": "塔(逆位置)",
+    "DESCRIPTION": "敵全体に !D! ダメージを与え、 *火傷 2枚を手札に加える。"
   }
 }

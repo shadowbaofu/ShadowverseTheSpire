@@ -30,6 +30,7 @@ public class HowlingConflagration
         this.baseMagicNumber = 6;
         this.magicNumber = this.baseMagicNumber;
         this.exhaust = true;
+        this.selfRetain = true;
     }
 
 

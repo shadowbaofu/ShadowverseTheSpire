@@ -68,8 +68,8 @@ public class LvbuOrb extends Minion {
             AbstractDungeon.actionManager.addToBottom(new MinionAttackAction(new DamageInfo(AbstractDungeon.player, damage, DamageInfo.DamageType.NORMAL), true));
         } else {
             AbstractDungeon.actionManager.addToBottom(new MinionAttackAction(new DamageInfo(AbstractDungeon.player, damage, DamageInfo.DamageType.NORMAL), false));
-            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(AbstractDungeon.player,block));
         }
+        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(AbstractDungeon.player,block));
     }
 
     @Override

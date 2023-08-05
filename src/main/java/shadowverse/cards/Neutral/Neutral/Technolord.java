@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
+import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import shadowverse.Shadowverse;
 import shadowverse.action.TechnolordAction;
 import shadowverse.cards.AbstractNeutralCard;
@@ -22,6 +23,11 @@ public class Technolord
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/Technolord.png";
+    public int baseCost;
+    public int accCost;
+    public CardType baseType;
+    public CardType accType;
+    public boolean played;
 
     public Technolord() {
         super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.RARE, CardTarget.ALL_ENEMY);
@@ -29,7 +35,10 @@ public class Technolord
         this.baseMagicNumber = 0;
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(AbstractShadowversePlayer.Enums.MACHINE);
-        this.tags.add(AbstractShadowversePlayer.Enums.ACCELERATE);
+        this.accCost = 1;
+        this.baseCost = cost;
+        this.baseType = type;
+        this.accType = CardType.SKILL;
     }
 
 
@@ -70,31 +79,46 @@ public class Technolord
     }
 
     public void triggerOnGlowCheck() {
-        if (Shadowverse.Accelerate(this)) {
+        if (EnergyPanel.getCurrentEnergy() < baseCost && this.type == accType) {
             this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();
         } else {
             this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
         }
     }
 
-    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        if (Shadowverse.Accelerate((AbstractCard) this) && this.type == CardType.SKILL) {
-            int count = 0;
-            for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisCombat) {
-                if (c.hasTag(AbstractShadowversePlayer.Enums.MACHINE) && c.type != CardType.SKILL)
-                    count++;
-            }
-            this.magicNumber = count;
-            for (int i = 0; i < this.magicNumber; i++) {
-                addToBot((AbstractGameAction) new AttackDamageRandomEnemyAction((AbstractCard) this, AbstractGameAction.AttackEffect.LIGHTNING));
-            }
+    public void use(AbstractPlayer p, AbstractMonster m) {
+        if (this.type == accType && this.costForTurn == accCost) {
+            accUse(p, m);
         } else {
-            addToBot((AbstractGameAction) new TechnolordAction());
+            baseUse(p, m);
+        }
+        played = true;
+    }
+
+    public void baseUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new TechnolordAction());
+    }
+
+    public void accUse(AbstractPlayer p, AbstractMonster m) {
+        int count = 0;
+        for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisCombat) {
+            if (c.hasTag(AbstractShadowversePlayer.Enums.MACHINE) && c.type != CardType.SKILL)
+                count++;
+        }
+        this.magicNumber = count;
+        for (int i = 0; i < this.magicNumber; i++) {
+            addToBot(new AttackDamageRandomEnemyAction(this, AbstractGameAction.AttackEffect.LIGHTNING));
         }
     }
 
+    @Override
+    public void onMoveToDiscard() {
+        super.onMoveToDiscard();
+        played = false;
+    }
+
     public AbstractCard makeCopy() {
-        return (AbstractCard) new Technolord();
+        return new Technolord();
     }
 }
 

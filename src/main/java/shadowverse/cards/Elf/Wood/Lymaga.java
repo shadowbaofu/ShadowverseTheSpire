@@ -1,6 +1,5 @@
 package shadowverse.cards.Elf.Wood;
 
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
@@ -12,21 +11,19 @@ import com.megacrit.cardcrawl.actions.utility.WaitAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import shadowverse.Shadowverse;
 import shadowverse.action.InvocationAction;
 import shadowverse.cards.Neutral.Temp.Lymaga_NoAcc;
-import shadowverse.characters.AbstractShadowversePlayer;
+import shadowverse.cards.Witch.AbstractAccelerateCard;
 import shadowverse.characters.Elf;
 
 
 public class Lymaga
-        extends CustomCard {
+        extends AbstractAccelerateCard {
     public static final String ID = "shadowverse:Lymaga";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:Lymaga");
     public static final String NAME = cardStrings.NAME;
@@ -35,10 +32,9 @@ public class Lymaga
     public static boolean dupCheck = true;
 
     public Lymaga() {
-        super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Elf.Enums.COLOR_GREEN, CardRarity.RARE, CardTarget.ENEMY);
+        super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Elf.Enums.COLOR_GREEN, CardRarity.RARE, CardTarget.ENEMY,0,CardType.SKILL);
         this.baseDamage = 32;
         this.cardsToPreview = new GreenWoodGuardian();
-        this.tags.add(AbstractShadowversePlayer.Enums.ACCELERATE);
         this.exhaust = true;
     }
 
@@ -47,29 +43,6 @@ public class Lymaga
         if (!this.upgraded) {
             upgradeName();
             upgradeDamage(10);
-        }
-    }
-
-    @Override
-    public void update() {
-        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT&&
-                Shadowverse.Accelerate(this)){
-            setCostForTurn(0);
-            this.type = CardType.SKILL;
-        }else {
-            if (this.type==CardType.SKILL){
-                setCostForTurn(3);
-                this.type = CardType.ATTACK;
-            }
-        }
-        super.update();
-    }
-
-    public void triggerOnGlowCheck() {
-        if (Shadowverse.Accelerate(this)) {
-            this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();
-        } else {
-            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
         }
     }
 
@@ -119,21 +92,23 @@ public class Lymaga
     }
 
 
-    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        if (Shadowverse.Accelerate(this) && this.type == CardType.SKILL) {
-            addToBot(new SFXAction("Lymaga_Acc"));
-            AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
-            AbstractCard a = new Lymaga_NoAcc();
-            if (this.upgraded)
-                a.upgrade();
-            addToBot(new MakeTempCardInHandAction(c, 1));
-            addToBot(new MakeTempCardInDiscardAction(a, 1));
-        } else {
-            addToBot(new SFXAction("Lymaga"));
-            addToBot(new WaitAction(0.8F));
-            addToBot(new SFXAction("ATTACK_HEAVY"));
-            addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
-        }
+    @Override
+    public void baseUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new SFXAction("Lymaga"));
+        addToBot(new WaitAction(0.8F));
+        addToBot(new SFXAction("ATTACK_HEAVY"));
+        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
+    }
+
+    @Override
+    public void accUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new SFXAction("Lymaga_Acc"));
+        AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
+        AbstractCard a = new Lymaga_NoAcc();
+        if (this.upgraded)
+            a.upgrade();
+        addToBot(new MakeTempCardInHandAction(c, 1));
+        addToBot(new MakeTempCardInDiscardAction(a, 1));
     }
 
     public AbstractCard makeCopy() {

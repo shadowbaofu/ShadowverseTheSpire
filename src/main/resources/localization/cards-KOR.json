@@ -345,8 +345,8 @@
   },
   "shadowverse:Oz": {
     "NAME": "오즈의 대마녀",
-    "DESCRIPTION": "패가 8장이 될 때까지 카드를 뽑습니다. NL 뽑은 스킬 카드중 주문 증폭이 없는것들의 비용을 0으로 만듭니다. NL *공허 2장을 뽑을 카드 더미에 섞어넣습니다. NL 턴 종료시 손에 있는 모든 스킬카드를 소멸시킵니다.",
-    "UPGRADE_DESCRIPTION": "패가 8장이 될 때까지 카드를 뽑습니다. NL 뽑은 스킬 카드중 주문 증폭이 없는것들의 비용을 0으로 만듭니다. NL *공허 1장을 뽑을 카드 더미에 섞어넣습니다. NL 턴 종료시 손에 있는 모든 스킬카드를 소멸시킵니다."
+    "DESCRIPTION": "패가 8장이 될 때까지 카드를 뽑습니다. NL 뽑은 스킬 카드중 주문 증폭이 없는것들의 비용을 0으로 만듭니다. NL 턴 종료시 손에 있는 모든 스킬카드를 소멸시킵니다.",
+    "UPGRADE_DESCRIPTION": "패가 8장이 될 때까지 카드를 뽑습니다. NL 뽑은 스킬 카드중 주문 증폭이 없는것들의 비용을 0으로 만듭니다. NL 턴 종료시 손에 있는 모든 스킬카드를 소멸시킵니다."
   },
   "shadowverse:GrandSummoning": {
     "NAME": "대소환",
@@ -4599,8 +4599,8 @@
   },
   "shadowverse:Waltz": {
     "NAME": "월하의 늑대인간 왕 발츠",
-    "DESCRIPTION": "가속화 1：다음 턴 종료시까지 복수 상태가 된다. NL 다음 턴 시작시 카드를 1장 뽑는다. NL  NL --------------------- NL  NL 이번 전투동안 복수 상태가 된다. 피해를 !D! 준다.",
-    "UPGRADE_DESCRIPTION": "가속화 1：다음 턴 종료시까지 복수 상태가 된다. NL 다음 턴 시작시 카드를 1장 뽑는다. NL  NL --------------------- NL  NL 이번 전투동안 복수 상태가 된다. 피해를 !D! 만큼 3번 준다."
+    "DESCRIPTION": "가속화 0：다음 턴 종료시까지 복수 상태가 된다. NL 다음 턴 시작시 카드를 1장 뽑는다. NL  NL --------------------- NL  NL 이번 전투동안 복수 상태가 된다. 피해를 !D! 준다.",
+    "UPGRADE_DESCRIPTION": "가속화 0：다음 턴 종료시까지 복수 상태가 된다. NL 다음 턴 시작시 카드를 1장 뽑는다. NL  NL --------------------- NL  NL 이번 전투동안 복수 상태가 된다. 피해를 !D! 만큼 3번 준다."
   },
   "shadowverse:FullMoonLeap": {
     "NAME": "월하의 도약",
@@ -5556,6 +5556,10 @@
     "NAME": "유렵의 죄인 안테마리아",
     "DESCRIPTION": "팔옥 NL 가속화 0:무작위 적에게 피해를 !M! 줍니다. NL  NL --------------------- NL  NL 피해를 !D! 줍니다. NL 직전에 낸 카드가 팔옥 카드라면, 피해를 2배로 줍니다."
   },
+  "shadowverse:Antemaria_Token": {
+    "NAME": "游猎的罪人·安缇玛莉亚",
+    "DESCRIPTION": "八狱 NL 造成 !D! 点伤害，获得造成伤害的 格挡 。 NL 虚无 。 NL 消耗 。"
+  },
   "shadowverse:Drazael": {
     "NAME": "금아의 집행자 드라즈엘",
     "DESCRIPTION": "팔옥 NL 가속화 0:카드를 1장 뽑습니다. NL  NL --------------------- NL  NL 인공물을 1 얻고 체력을 5 회복합니다. NL 모든 적은 힘과 민첩을 5 잃습니다. NL 방어도를 !B! 얻습니다. 소멸."
@@ -6312,13 +6316,45 @@
     "NAME": "Shin, Chaotic Darkness",
     "DESCRIPTION": "Randomly activate the following effects: NL 1. Deal !D! damage to a random enemy. Gain !B! Block. NL 2. Apply 2 Vulnerable to a random enemy. NL 3. All cards in your hand cost 1 less this turn. NL If it's the 5th turn or later, apply ALL 3 effects instead. NL Exhaust."
   },
+  "shadowverse:VengefulMantis": {
+    "NAME": "絶刃の蟷螂",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 廃棄を持つアタックをプレイする度、これのダメージを+ !M! する。 NL 廃棄 。"
+  },
+  "shadowverse:VelociousBeetle": {
+    "NAME": "絶速の甲虫",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 与えたダメージ分HPを回復する。 NL 廃棄 。"
+  },
+  "shadowverse:ViciousScorpion": {
+    "NAME": "絶護の魔蠍",
+    "DESCRIPTION": "!B! ブロック を得る。 NL 廃棄 。"
+  },
+  "shadowverse:VirulentHornet": {
+    "NAME": "絶死の毒蜂",
+    "DESCRIPTION": "毒 !M! を与える。 NL 廃棄 。"
+  },
+  "shadowverse:VeiledShudderfly": {
+    "NAME": "絶伏の怪蝶",
+    "DESCRIPTION": "!B! ブロック を得る。 NL ブラー 1を得る 。 NL 廃棄 。"
+  },
   "shadowverse:Zebet": {
     "NAME": "地獄の君主・ゼベット",
     "DESCRIPTION": "!B! ブロック を得る。 NL *絶速の甲虫 、 *絶死の毒蜂 、 *絶護の魔蠍 、 *絶刃の蟷螂 、 *絶伏の怪蝶 からランダムに1枚を手札に加える。 NL エンハンス 3:さらに1枚を手札に加える。 NL エンハンス 5:さらに2枚を手札に加える。",
     "UPGRADE_DESCRIPTION":"!B! ブロック を得る。 NL *絶速の甲虫+ 、 *絶死の毒蜂+ 、 *絶護の魔蠍+ 、 *絶刃の蟷螂+ 、 *絶伏の怪蝶+ からランダムに1枚を手札に加える。 NL エンハンス 3:さらに1枚を手札に加える。 NL エンハンス 5:さらに2枚を手札に加える。"
   },
   "shadowverse:Lvbu": {
-    "NAME": "天下无双的武人",
-    "DESCRIPTION": "1/1。 NL 打出时，移除其他随从并获得 +X/+Y。X为其他随从的攻击力，Y为其他随从的体力。 NL 如果XY的合计值为20以上你不会受 力量 和 敏捷 以外的负面效果影响，这个随从不会失去体力。 NL 被动：造成攻击力的伤害，获得体力的格挡并失去1点体力。 NL 激发：重新召唤1个这个随从。 NL 消耗 。"
+    "NAME": "天下無双の武人",
+    "DESCRIPTION": "1/1。 NL これをプレイする時、他のフォロワーを全て除去して +X/+Yする。Xは他のフォロワーの攻撃力の合計値，Yは他のフォロワーの体力の合計値。 NL XYの合計値が20以上なら、 筋力 と 敏捷性 以外のデバフを受けなくなり、このフォロワーの体力は減らなくなる。 NL 自動：攻撃力分のダメージを与え、体力分のブロックを得る。体力が1減る。 NL 解放；これの複製品1体を出す。 NL 廃棄 。"
+  },
+  "shadowverse:SlaughteringDragonewt": {
+    "NAME": "虐殺のドラゴニュート",
+    "DESCRIPTION": "チョイス : NL · !B! ブロック を得る。 *火傷 を全て廃棄し、1枚につき !M! ブロック を得る。 NL ·敵全体に !D! ダメージ、 *火傷 2枚を手札に加える。"
+  },
+  "shadowverse:TheTower": {
+    "NAME": "塔(正位置)",
+    "DESCRIPTION": " !B! ブロック を得る。 NL *火傷 を全て廃棄し、1枚につき !M! ブロック を得る。"
+  },
+  "shadowverse:TheTower_I": {
+    "NAME": "塔(逆位置)",
+    "DESCRIPTION": "敵全体に !D! ダメージを与え、 *火傷 2枚を手札に加える。"
   }
 }

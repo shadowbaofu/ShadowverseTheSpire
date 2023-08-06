@@ -30,7 +30,7 @@ public class Oz
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/Oz.png";
-    private static final Texture LEADER_SKIN_VERSION = ImageMaster.loadImage("img/cards/Sekka_L.png");
+    private static final Texture LEADER_SKIN_VERSION = ImageMaster.loadImage("img/cards/Oz_L.png");
 
     public Oz() {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Witchcraft.Enums.COLOR_BLUE, CardRarity.RARE, CardTarget.NONE);

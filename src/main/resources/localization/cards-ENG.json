@@ -6359,6 +6359,6 @@
   },
   "shadowverse:TheTower_I": {
     "NAME": "Reverse",
-    "DESCRIPTION": "Deal !D! damage. Add 2 *Burns to your hand."
+    "DESCRIPTION": "Deal !D! damage to all enemies. Add 2 *Burns to your hand."
   }
 }

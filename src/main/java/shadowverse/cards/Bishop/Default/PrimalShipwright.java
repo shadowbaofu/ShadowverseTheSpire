@@ -1,6 +1,5 @@
 package shadowverse.cards.Bishop.Default;
 
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
@@ -12,11 +11,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
-import com.megacrit.cardcrawl.rooms.AbstractRoom;
-import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
-import shadowverse.Shadowverse;
 import shadowverse.cards.AbstractCrystalizeCard;
-import shadowverse.cards.Witch.AbstractAccelerateCard;
+import shadowverse.cards.AbstractAccelerateCard;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Bishop;
 import shadowverse.orbs.AmuletOrb;
@@ -95,7 +91,6 @@ public class PrimalShipwright
         addToBot(new SFXAction("PrimalShipwright"));
         calculateCardDamage(m);
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
-        played = true;
     }
 
     @Override

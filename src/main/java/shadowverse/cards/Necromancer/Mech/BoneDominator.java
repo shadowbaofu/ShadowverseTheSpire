@@ -17,7 +17,7 @@ import shadowverse.cards.Necromancer.Ghosts.Ferry;
 import shadowverse.cards.Necromancer.Shadows.HinterlandGhoul;
 import shadowverse.cards.Necromancer.Burial.TheLovers;
 import shadowverse.cards.Neutral.Temp.InstantPotion;
-import shadowverse.cards.Witch.AbstractAccelerateCard;
+import shadowverse.cards.AbstractAccelerateCard;
 import shadowverse.characters.Necromancer;
 import shadowverse.powers.MementoPower;
 

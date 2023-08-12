@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import shadowverse.cards.AbstractCrystalizeCard;
-import shadowverse.cards.Witch.AbstractAccelerateCard;
+import shadowverse.cards.AbstractAccelerateCard;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Bishop;
 import shadowverse.orbs.AmuletOrb;
@@ -50,7 +50,6 @@ public class JudgmentSpearMaster
         addToBot(new SFXAction("JudgmentSpearMaster"));
         addToBot(new GainBlockAction(p,this.block));
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        played = true;
     }
 
     @Override

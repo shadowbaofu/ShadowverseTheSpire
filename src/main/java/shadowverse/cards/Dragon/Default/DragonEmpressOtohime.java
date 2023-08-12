@@ -14,7 +14,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
 import com.megacrit.cardcrawl.vfx.combat.MiracleEffect;
 import shadowverse.cards.Neutral.Temp.OtohimeVanguard;
-import shadowverse.cards.Witch.AbstractAccelerateCard;
+import shadowverse.cards.AbstractAccelerateCard;
 import shadowverse.characters.Dragon;
 
 

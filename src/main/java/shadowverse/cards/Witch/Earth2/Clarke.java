@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import shadowverse.action.BlockPerCardAction;
 import shadowverse.cards.Neutral.Temp.VeridicRitual;
-import shadowverse.cards.Witch.AbstractAccelerateCard;
+import shadowverse.cards.AbstractAccelerateCard;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Witchcraft;
 import shadowverse.powers.EarthEssence;

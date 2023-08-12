@@ -1673,6 +1673,9 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("Oz_L", new Sfx(voicePath + "Oz_L.wav"));
             reflectedMap.put("TheTower", new Sfx(voicePath + "TheTower.wav"));
             reflectedMap.put("TheTower_I", new Sfx(voicePath + "TheTower_I.wav"));
+            reflectedMap.put("GenesisDragon", new Sfx(voicePath + "GenesisDragon.wav"));
+            reflectedMap.put("GenesisDragon2", new Sfx(voicePath + "GenesisDragon2.wav"));
+            reflectedMap.put("GenesisDragon2_Acc", new Sfx(voicePath + "GenesisDragon_Acc.wav"));
         }
         if (Loader.isModLoaded("CardAugments")) {
             AugmentHelper.register();

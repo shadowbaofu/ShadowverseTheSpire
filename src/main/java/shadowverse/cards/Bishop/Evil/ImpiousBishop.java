@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.NextTurnBlockPower;
 import shadowverse.cards.AbstractCrystalizeCard;
 import shadowverse.cards.Neutral.Curse.Indulgence;
-import shadowverse.cards.Witch.AbstractAccelerateCard;
+import shadowverse.cards.AbstractAccelerateCard;
 import shadowverse.characters.Bishop;
 import shadowverse.orbs.AmuletOrb;
 
@@ -66,6 +66,7 @@ public class ImpiousBishop
         addToBot(new SFXAction("ImpiousBishop"));
         addToBot(new GainBlockAction(AbstractDungeon.player, this.block));
         addToBot(new HealAction(AbstractDungeon.player, AbstractDungeon.player, 3));
+        played = false;
     }
 
     @Override

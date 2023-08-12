@@ -17,7 +17,7 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.vfx.combat.MindblastEffect;
 import shadowverse.Shadowverse;
 import shadowverse.action.ExhaustSpecificGroupAndDrawAction;
-import shadowverse.cards.Witch.AbstractAccelerateCard;
+import shadowverse.cards.AbstractAccelerateCard;
 import shadowverse.characters.Nemesis;
 
 import java.util.ArrayList;

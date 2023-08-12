@@ -1,8 +1,6 @@
 package shadowverse.cards.Necromancer.Default;
 
 
-import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -14,8 +12,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import shadowverse.Shadowverse;
 import shadowverse.action.ReanimateAction;
-import shadowverse.cards.Witch.AbstractAccelerateCard;
-import shadowverse.characters.AbstractShadowversePlayer;
+import shadowverse.cards.AbstractAccelerateCard;
 import shadowverse.characters.Necromancer;
 
 

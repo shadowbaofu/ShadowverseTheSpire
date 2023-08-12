@@ -54,9 +54,11 @@ public class FlameNGlass2 extends AbstractRightClickCard {
 
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction) new SFXAction("FlameNGlass2"));
-        addToBot((AbstractGameAction) new VFXAction((AbstractGameEffect) new BlizzardEffect(2, AbstractDungeon.getMonsters().shouldFlipVfx()), 1.0F));
-        addToBot((AbstractGameAction) new DamageAction((AbstractCreature) abstractMonster, new DamageInfo((AbstractCreature) abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
+        addToBot(new SFXAction("FlameNGlass2"));
+        if (AbstractDungeon.getCurrRoom().monsters != null){
+            addToBot(new VFXAction(new BlizzardEffect(2, AbstractDungeon.getMonsters().shouldFlipVfx()), 1.0F));
+        }
+        addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
         if (this.fusionBox.size()>1){
             addToBot(new GainEnergyAction(3));
         }
@@ -70,18 +72,18 @@ public class FlameNGlass2 extends AbstractRightClickCard {
     @Override
     protected void onRightClick() {
         if (!this.hasFusion && AbstractDungeon.player!=null){
-            addToBot((AbstractGameAction)new SelectCardsInHandAction(8,TEXT[0],true,true, card -> {
+            addToBot(new SelectCardsInHandAction(8,TEXT[0],true,true, card -> {
                 return card instanceof Flame || card instanceof Glass;
             }, abstractCards -> {
                 for (AbstractCard c:abstractCards){
-                    addToBot((AbstractGameAction) new ExhaustSpecificCardAction(c,AbstractDungeon.player.hand));
+                    addToBot(new ExhaustSpecificCardAction(c,AbstractDungeon.player.hand));
                     if (!this.fusionBox.contains(c.cardID))
                         fusionBox.add(c.cardID);
                 }
                 if (abstractCards.size()>0){
                     for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-                        addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)mo, (AbstractCreature)AbstractDungeon.player, (AbstractPower)new WeakPower((AbstractCreature)mo, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
-                        addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)mo, (AbstractCreature)AbstractDungeon.player, (AbstractPower)new VulnerablePower((AbstractCreature)mo, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+                        addToBot(new ApplyPowerAction(mo, AbstractDungeon.player, new WeakPower(mo, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+                        addToBot(new ApplyPowerAction(mo, AbstractDungeon.player, new VulnerablePower(mo, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
                     }
                 }
             }));

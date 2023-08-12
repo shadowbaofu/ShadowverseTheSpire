@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.LightningEffect;
 import shadowverse.cards.AbstractAmuletCard;
 import shadowverse.cards.AbstractCrystalizeCard;
-import shadowverse.cards.Witch.AbstractAccelerateCard;
+import shadowverse.cards.AbstractAccelerateCard;
 import shadowverse.characters.Bishop;
 import shadowverse.orbs.AmuletOrb;
 
@@ -26,7 +26,7 @@ public class HolyLightningBird
     public static final String IMG_PATH = "img/cards/HolyLightningBird.png";
 
     public HolyLightningBird() {
-        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.RARE, CardTarget.ENEMY, 0, CardType.SKILL);
+        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.RARE, CardTarget.ENEMY, 0, CardType.POWER);
         this.baseDamage = 20;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
@@ -76,6 +76,7 @@ public class HolyLightningBird
     @Override
     public void onEvoke(AmuletOrb paramOrb) {
         addToBot(new GainEnergyAction(this.magicNumber));
+        played = false;
     }
 
     @Override

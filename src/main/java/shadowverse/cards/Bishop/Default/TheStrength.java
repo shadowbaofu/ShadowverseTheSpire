@@ -15,7 +15,7 @@ import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
 import com.megacrit.cardcrawl.vfx.combat.HeartBuffEffect;
 import shadowverse.action.PlaceAmulet;
 import shadowverse.cards.Neutral.Temp.SomnolentStrength;
-import shadowverse.cards.Witch.AbstractAccelerateCard;
+import shadowverse.cards.AbstractAccelerateCard;
 import shadowverse.characters.Bishop;
 import shadowverse.powers.TheStrengthPower;
 

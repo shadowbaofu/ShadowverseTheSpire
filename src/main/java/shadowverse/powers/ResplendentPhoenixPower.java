@@ -36,7 +36,9 @@ public class ResplendentPhoenixPower extends AbstractPower {
         for (int i = 0 ; i < amount; i++){
             cost = (int) Math.ceil((double)cost /2);
         }
-        card.setCostForTurn(cost);
+        if (card.costForTurn > 0){
+            card.setCostForTurn(cost);
+        }
     }
 
     public void updateDescription() {

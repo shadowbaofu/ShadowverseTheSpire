@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import shadowverse.cards.Neutral.Temp.Puppet;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Nemesis;
 
 public class DollsOwner
@@ -26,7 +27,8 @@ public class DollsOwner
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
         this.baseBlock = 5;
-        this.cardsToPreview = (AbstractCard)new Puppet();
+        this.cardsToPreview = new Puppet();
+        this.tags.add(AbstractShadowversePlayer.Enums.LASTWORD);
     }
 
 
@@ -39,19 +41,19 @@ public class DollsOwner
 
     @Override
     public void triggerOnExhaust() {
-        addToBot((AbstractGameAction)new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy(),this.magicNumber));
+        addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy(),this.magicNumber));
     }
 
 
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new SFXAction("DollsOwner"));
-        addToBot((AbstractGameAction)new GainBlockAction(p,this.block));
-        addToBot((AbstractGameAction)new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy(),this.magicNumber));
+        addToBot(new SFXAction("DollsOwner"));
+        addToBot(new GainBlockAction(p,this.block));
+        addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy(),this.magicNumber));
     }
 
 
     public AbstractCard makeCopy() {
-        return (AbstractCard) new DollsOwner();
+        return  new DollsOwner();
     }
 }
 

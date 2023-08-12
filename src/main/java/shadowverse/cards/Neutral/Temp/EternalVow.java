@@ -39,9 +39,6 @@ public class EternalVow
         addToBot(new SFXAction("EternalVow"));
         for (AbstractCard c : abstractPlayer.hand.group) {
             if (c.color == Necromancer.Enums.COLOR_PURPLE) {
-                if (c.type == CardType.SKILL) {
-                    continue;
-                }
                 if (!this.upgraded) {
                     addToBot(new ReduceCostForTurnAction(c, 1));
                 } else {

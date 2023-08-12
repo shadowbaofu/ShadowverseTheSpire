@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.powers.WeakPower;
 import shadowverse.cards.Neutral.Temp.AbyssalColonel_Crystalize;
-import shadowverse.cards.Witch.AbstractAccelerateCard;
+import shadowverse.cards.AbstractAccelerateCard;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Necromancer;
 
@@ -47,14 +47,6 @@ public class AbyssalColonel
         }
     }
 
-
-    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        if (this.type == CardType.POWER && this.costForTurn == 1) {
-
-        } else {
-
-        }
-    }
 
     @Override
     public void baseUse(AbstractPlayer p, AbstractMonster m) {

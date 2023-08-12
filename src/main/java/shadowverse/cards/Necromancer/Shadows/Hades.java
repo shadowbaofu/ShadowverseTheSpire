@@ -20,7 +20,7 @@ import shadowverse.cards.Necromancer.Ghosts.Ferry;
 import shadowverse.cards.Necromancer.Burial.TheLovers;
 import shadowverse.cards.Neutral.Neutral.Path;
 import shadowverse.cards.Neutral.Temp.InstantPotion;
-import shadowverse.cards.Witch.AbstractAccelerateCard;
+import shadowverse.cards.AbstractAccelerateCard;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Necromancer;
 import shadowverse.powers.Cemetery;

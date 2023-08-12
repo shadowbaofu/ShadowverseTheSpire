@@ -1,4 +1,4 @@
-package shadowverse.cards.Witch;
+package shadowverse.cards;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -25,6 +25,7 @@ public abstract class AbstractAccelerateCard extends CustomCard {
         this.accType = accType;
     }
 
+
     @Override
     public void update() {
         super.update();
@@ -47,6 +48,9 @@ public abstract class AbstractAccelerateCard extends CustomCard {
                     }
                 }
             }
+        }else {
+            resetAttributes();
+            this.type = baseType;
         }
     }
 

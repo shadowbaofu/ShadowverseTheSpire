@@ -2496,7 +2496,7 @@
   },
   "shadowverse:DollsOwner": {
     "NAME": "持偶者",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加 !M! 张 *悬丝傀儡 到手中。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 谢幕曲 :打出或被消耗时增加 !M! 张 *悬丝傀儡 到手中。"
   },
   "shadowverse:DestructionRefrain": {
     "NAME": "破坏的歌声",

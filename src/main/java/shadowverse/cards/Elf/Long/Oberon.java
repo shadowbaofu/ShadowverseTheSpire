@@ -14,7 +14,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import shadowverse.cards.Neutral.Temp.Oberon_Copy;
-import shadowverse.cards.Witch.AbstractAccelerateCard;
+import shadowverse.cards.AbstractAccelerateCard;
 import shadowverse.characters.Elf;
 
 ;
@@ -81,14 +81,14 @@ public class Oberon
 
     @Override
     public void baseUse(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new SFXAction("Oberon_Acc"));
-        addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
+        addToBot(new SFXAction("Oberon"));
+        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
     }
 
     @Override
     public void accUse(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new SFXAction("Oberon"));
-        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
+        addToBot(new SFXAction("Oberon_Acc"));
+        addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
     }
 
 

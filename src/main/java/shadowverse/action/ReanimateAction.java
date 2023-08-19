@@ -47,13 +47,10 @@ public class ReanimateAction extends AbstractGameAction {
                 }
             }
             Collections.shuffle(finalList);
-            AbstractCard tempCard = finalList.get(0).makeCopy();
-            if (finalList.get(0).upgraded){
-                tempCard.upgrade();
-            }
+            AbstractCard tempCard = finalList.get(0).makeStatEquivalentCopy();
             tempCard.setCostForTurn(0);
             tempCard.applyPowers();
-            addToBot((AbstractGameAction) new MakeTempCardInHandAction(tempCard));
+            addToBot(new MakeTempCardInHandAction(tempCard));
         }
         p.hand.refreshHandLayout();
         p.hand.applyPowers();

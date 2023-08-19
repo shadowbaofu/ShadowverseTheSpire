@@ -73,6 +73,9 @@ public class GenesisDragon extends CustomCard implements BranchableUpgradeCard {
                         }
                     }
                 }
+            }else {
+                resetAttributes();
+                this.type = baseType;
             }
             super.update();
         }
@@ -120,6 +123,12 @@ public class GenesisDragon extends CustomCard implements BranchableUpgradeCard {
         } else {
             this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
         }
+    }
+
+    @Override
+    public void onMoveToDiscard() {
+        super.onMoveToDiscard();
+        played = false;
     }
 
     public AbstractCard makeCopy() {

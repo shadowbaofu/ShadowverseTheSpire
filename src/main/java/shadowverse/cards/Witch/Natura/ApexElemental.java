@@ -20,6 +20,7 @@ import shadowverse.cards.AbstractAccelerateCard;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Witchcraft;
 import shadowverse.orbs.AmuletOrb;
+import shadowverse.powers.NaterranTree;
 
 public class ApexElemental
         extends AbstractAccelerateCard {
@@ -47,7 +48,7 @@ public class ApexElemental
 
     @Override
     public void accUse(AbstractPlayer p, AbstractMonster m) {
-        boolean powerExists = p.hasPower(NaterranGreatTree.ID);
+        boolean powerExists = p.hasPower(NaterranTree.POWER_ID);
         AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
         if (powerExists) {
             for (AbstractOrb o : p.orbs) {
@@ -68,7 +69,7 @@ public class ApexElemental
 
     @Override
     public void baseUse(AbstractPlayer p, AbstractMonster m) {
-        boolean powerExists = p.hasPower(NaterranGreatTree.ID);
+        boolean powerExists = p.hasPower(NaterranTree.POWER_ID);
         AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
         if (powerExists) {
             for (AbstractOrb o : p.orbs) {

@@ -90,6 +90,9 @@ public class Ceridwen extends CustomCard implements BranchableUpgradeCard {
                         }
                     }
                 }
+            }else {
+                resetAttributes();
+                this.type = baseType;
             }
         }
         super.update();

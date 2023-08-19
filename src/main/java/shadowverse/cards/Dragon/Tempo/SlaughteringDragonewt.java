@@ -46,6 +46,9 @@ public class SlaughteringDragonewt extends CustomCard {
         ArrayList<AbstractCard> stanceChoices = new ArrayList<>();
         stanceChoices.add(new TheTower());
         stanceChoices.add(new TheTower_I());
+        if (upgraded){
+            stanceChoices.stream().forEach(abstractCard -> upgrade());
+        }
         addToBot(new ChooseOneAction(stanceChoices));
     }
 

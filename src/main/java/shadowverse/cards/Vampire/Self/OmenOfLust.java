@@ -55,24 +55,24 @@ public class OmenOfLust
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         switch (chosenBranch()){
             case 0:
-                addToBot((AbstractGameAction) new SFXAction("OmenOfLust"));
+                addToBot(new SFXAction("OmenOfLust"));
                 if (abstractPlayer.hasPower(EpitaphPower.POWER_ID)||abstractPlayer.hasPower(WrathPower.POWER_ID)){
-                    addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractMonster, (AbstractCreature)abstractPlayer, (AbstractPower)new WeakPower((AbstractCreature)abstractMonster, this.magicNumber,false), this.magicNumber));
-                    addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractMonster, (AbstractCreature)abstractPlayer, (AbstractPower)new VulnerablePower((AbstractCreature)abstractMonster, this.magicNumber,false), this.magicNumber));
-                    addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage*2, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+                    addToBot(new ApplyPowerAction(abstractMonster, abstractPlayer, new WeakPower(abstractMonster, this.magicNumber,false), this.magicNumber));
+                    addToBot(new ApplyPowerAction(abstractMonster, abstractPlayer, new VulnerablePower(abstractMonster, this.magicNumber,false), this.magicNumber));
+                    addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage*2, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
                 }else {
-                    addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+                    addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
                 }
-                addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,(AbstractPower)new OmenOfLustPower(abstractPlayer,this.magicNumber),this.magicNumber));
+                addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new OmenOfLustPower(abstractPlayer,this.magicNumber),this.magicNumber));
                 break;
             case 1:
-                addToBot((AbstractGameAction) new SFXAction("OmenOfLust2"));
-                addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-                addToBot((AbstractGameAction)new MakeTempCardInHandAction(new WingsOfDesire()));
+                addToBot(new SFXAction("OmenOfLust2"));
+                addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+                addToBot(new MakeTempCardInHandAction(new WingsOfDesire()));
                 if (abstractPlayer.hasPower(EpitaphPower.POWER_ID)||abstractPlayer.hasPower(WrathPower.POWER_ID)){
-                    addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,(AbstractPower)new StrengthPower(abstractPlayer,this.magicNumber),this.magicNumber));
-                    addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,(AbstractPower)new DexterityPower(abstractPlayer,this.magicNumber),this.magicNumber));
-                    addToBot((AbstractGameAction)new MakeTempCardInDrawPileAction(new LustfulDesire(),7,true,true));
+                    addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new StrengthPower(abstractPlayer,this.magicNumber),this.magicNumber));
+                    addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new DexterityPower(abstractPlayer,this.magicNumber),this.magicNumber));
+                    addToBot(new MakeTempCardInDrawPileAction(new LustfulDesire(),7,true,true));
                 }
                 break;
         }

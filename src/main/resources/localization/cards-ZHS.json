@@ -1924,7 +1924,7 @@
   },
   "shadowverse:LustfulDesire": {
     "NAME": "爱绝奸淫·瓦娜蕾格",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 增加1张 *爱绝的飞翔 到手中。 NL 狂乱 获得 !M! 点 力量 和 敏捷 。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 增加1张 *爱绝的飞翔 到手中。 NL 狂乱 获得 !M! 点 力量 和 敏捷 。 NL 消耗 。"
   },
   "shadowverse:ServantOfLust": {
     "NAME": "奸淫的信徒",

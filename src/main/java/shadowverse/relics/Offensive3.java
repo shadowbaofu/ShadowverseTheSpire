@@ -14,7 +14,7 @@ import shadowverse.powers.Cemetery;
 
 
  public class Offensive3
-   extends CustomRelic
+   extends CustomRelic implements BetterClickableRelic<Offensive3>
  {
    public static final String ID = "shadowverse:Offensive3";
    public static final String IMG = "img/relics/Offensive.png";
@@ -29,18 +29,26 @@ import shadowverse.powers.Cemetery;
    }
 
    public void atTurnStart() {
-       int playerNecromance = 0;
-       if (AbstractDungeon.player.hasPower(Cemetery.POWER_ID)){
-           for (AbstractPower p :AbstractDungeon.player.powers){
-               if (p.ID.equals(Cemetery.POWER_ID))
-                   playerNecromance = p.amount;
+       if (!this.grayscale){
+           int playerNecromance = 0;
+           if (AbstractDungeon.player.hasPower(Cemetery.POWER_ID)){
+               for (AbstractPower p :AbstractDungeon.player.powers){
+                   if (p.ID.equals(Cemetery.POWER_ID))
+                       playerNecromance = p.amount;
+               }
+           }
+           if (playerNecromance>=3){
+               flash();
+               addToBot(new NecromanceAction(3,null,
+                       new MakeTempCardInHandAction(new Zombie(),1)));
            }
        }
-       if (playerNecromance>=3){
-           flash();
-           addToBot(new NecromanceAction(3,null,
-                   new MakeTempCardInHandAction(new Zombie(),1)));
-       }
+     }
+
+
+     @Override
+     public void onEachRightClick() {
+       this.grayscale = !this.grayscale;
      }
 
 

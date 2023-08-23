@@ -44,27 +44,27 @@ public class TheWheelOfFortune
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
         if (!this.upgraded){
             if (p.stance.ID.equals(Resonance.STANCE_ID)){
-                addToBot((AbstractGameAction)new SFXAction("TheWheelOfFortune2"));
+                addToBot(new SFXAction("TheWheelOfFortune2"));
                 for (AbstractMonster m :(AbstractDungeon.getCurrRoom()).monsters.monsters){
-                    addToBot((AbstractGameAction)new ApplyPowerAction(m,p,(AbstractPower)new TheWheelOfFortunePower(m,1,3)));
+                    addToBot(new ApplyPowerAction(m,p,new TheWheelOfFortunePower(m,1,3)));
                 }
             }else {
-                addToBot((AbstractGameAction)new SFXAction("TheWheelOfFortune"));
-                addToBot((AbstractGameAction)new ApplyPowerAction(p,p,(AbstractPower)new StrengthPower(p,1),1));
-                addToBot((AbstractGameAction)new ApplyPowerAction(p,p,(AbstractPower)new DexterityPower(p,1),1));
+                addToBot(new SFXAction("TheWheelOfFortune"));
+                addToBot(new ApplyPowerAction(p,p,new StrengthPower(p,1),1));
+                addToBot(new ApplyPowerAction(p,p,new DexterityPower(p,1),1));
                 for (AbstractMonster m :(AbstractDungeon.getCurrRoom()).monsters.monsters){
                     if (!m.isDeadOrEscaped())
-                        addToBot((AbstractGameAction)new ApplyPowerAction(m,p,(AbstractPower)new WeakPower(m,3,false),3));
+                        addToBot(new ApplyPowerAction(m,p,new WeakPower(m,3,false),3));
                 }
             }
         }else {
-            addToBot((AbstractGameAction)new SFXAction("TheWheelOfFortune"));
-            addToBot((AbstractGameAction)new ApplyPowerAction(p,p,(AbstractPower)new StrengthPower(p,1),1));
-            addToBot((AbstractGameAction)new ApplyPowerAction(p,p,(AbstractPower)new DexterityPower(p,1),1));
+            addToBot(new SFXAction("TheWheelOfFortune"));
+            addToBot(new ApplyPowerAction(p,p,new StrengthPower(p,1),1));
+            addToBot(new ApplyPowerAction(p,p,new DexterityPower(p,1),1));
             for (AbstractMonster m :(AbstractDungeon.getCurrRoom()).monsters.monsters){
                 if (!m.isDeadOrEscaped()){
-                    addToBot((AbstractGameAction)new ApplyPowerAction(m,p,(AbstractPower)new TheWheelOfFortunePower(m,1,3)));
-                    addToBot((AbstractGameAction)new ApplyPowerAction(m,p,(AbstractPower)new WeakPower(m,1,false),1));
+                    addToBot(new ApplyPowerAction(m,p,new TheWheelOfFortunePower(m,1,3)));
+                    addToBot(new ApplyPowerAction(m,p,new WeakPower(m,3,false),3));
                 }
             }
         }

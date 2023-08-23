@@ -12,39 +12,31 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
 
-public class MinthePower
+public class Minthe2Power
         extends AbstractPower implements BetterOnApplyPowerPower {
-    public static final String POWER_ID = "shadowverse:MinthePower";
-    private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings("shadowverse:MinthePower");
+    public static final String POWER_ID = "shadowverse:Minthe2Power";
+    private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings("shadowverse:Minthe2Power");
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-    private boolean isTurnStart;
+    private boolean trigger;
 
-    public MinthePower(AbstractCreature owner, int amount) {
+    public Minthe2Power(AbstractCreature owner) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
-        this.amount = amount;
+        this.amount = -1;
         this.type = PowerType.DEBUFF;
         updateDescription();
-        this.img = new Texture("img/powers/MinthePower.png");
-    }
-
-    public void stackPower(int stackAmount) {
-        this.amount += stackAmount;
-        if (this.amount >= 999)
-            this.amount = 999;
+        this.img = new Texture("img/powers/Minthe2Power.png");
     }
 
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0] + this.amount * 20 + DESCRIPTIONS[1];
+        this.description = DESCRIPTIONS[0];
     }
 
     @Override
     public void atStartOfTurn() {
-        isTurnStart = true;
-        addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new Cemetery(AbstractDungeon.player, -20 * this.amount), -20 * this.amount));
-        addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, "shadowverse:MinthePower"));
+        trigger = false;
     }
 
     @Override
@@ -54,8 +46,9 @@ public class MinthePower
 
     @Override
     public int betterOnApplyPowerStacks(AbstractPower power, AbstractCreature target, AbstractCreature source, int stackAmount) {
-        if (power instanceof Cemetery && stackAmount < 0 && !isTurnStart){
+        if (power instanceof Cemetery && stackAmount < 0 && !trigger){
             flash();
+            trigger = true;
             addToBot(new ApplyPowerAction(target,source,new Cemetery(target,-stackAmount),-stackAmount));
         }
         return stackAmount;

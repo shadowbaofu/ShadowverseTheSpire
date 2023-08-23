@@ -28,18 +28,17 @@ public class UnselfishGrace extends CustomCard {
 
 
     public void upgrade() {
-        if (!this.upgraded){
+        if (!this.upgraded) {
             upgradeName();
             upgradeMagicNumber(1);
         }
     }
 
 
-
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot((AbstractGameAction)new SFXAction("UnselfishGrace"));
-        addToBot((AbstractGameAction) new ApplyPowerAction(p, p, new TheTemperancePower(p, this.magicNumber,3), this.magicNumber));
-        addToBot((AbstractGameAction) new ApplyPowerAction(p,p, new RegenPower(p,2)));
+        addToBot(new SFXAction("UnselfishGrace"));
+        addToBot(new ApplyPowerAction(p, p, new TheTemperancePower(p, this.magicNumber, 3), this.magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new RegenPower(p, 2)));
     }
 
     public AbstractCard makeCopy() {

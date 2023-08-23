@@ -41,7 +41,7 @@ public class ArtifactCall
         if (p.stance.ID.equals(Resonance.STANCE_ID)){
             ++amount;
         }
-        addToBot((AbstractGameAction)new DrawPileToHandAction_Tag(amount, AbstractShadowversePlayer.Enums.ARTIFACT,null));
+        addToBot(new DrawPileToHandAction_Tag(amount, AbstractShadowversePlayer.Enums.ARTIFACT,null));
     }
 
 

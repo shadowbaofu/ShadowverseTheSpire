@@ -19,7 +19,9 @@ public class Flame extends AbstractNeutralCard {
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:Flame");
     public static final String ID = "shadowverse:Flame";
     public static final String NAME = cardStrings.NAME;
-    public static final String DESCRIPTION = cardStrings.DESCRIPTION; public static final String IMG_PATH = "img/cards/Flame.png";
+    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String IMG_PATH = "img/cards/Flame.png";
+
     public Flame() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.UNCOMMON, CardTarget.SELF);
         this.baseMagicNumber = 2;
@@ -28,19 +30,20 @@ public class Flame extends AbstractNeutralCard {
 
     @Override
     public void upgrade() {
-        if(!this.upgraded){
+        if (!this.upgraded) {
             upgradeMagicNumber(2);
             upgradeName();
         }
     }
+
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new SFXAction("Flame"));
-        if (abstractPlayer.hasPower("shadowverse:GlassPower")){
-            addToTop((AbstractGameAction)new ReducePowerAction(abstractPlayer, abstractPlayer, "shadowverse:GlassPower", 1));
-            addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new FlameNGlassPower((AbstractCreature)abstractPlayer, 1), 1));
-        }else
-        addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new FlamePower((AbstractCreature)abstractPlayer, this.magicNumber), this.magicNumber));
+        addToBot(new SFXAction("Flame"));
+        if (abstractPlayer.hasPower("shadowverse:GlassPower")) {
+            addToTop(new ReducePowerAction(abstractPlayer, abstractPlayer, "shadowverse:GlassPower", 1));
+            addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new FlameNGlassPower(abstractPlayer, 1), 1));
+        } else
+            addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new FlamePower(abstractPlayer, this.magicNumber), this.magicNumber));
     }
 
     public AbstractCard makeCopy() {

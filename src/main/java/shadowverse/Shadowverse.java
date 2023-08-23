@@ -1676,6 +1676,10 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("GenesisDragon", new Sfx(voicePath + "GenesisDragon.wav"));
             reflectedMap.put("GenesisDragon2", new Sfx(voicePath + "GenesisDragon2.wav"));
             reflectedMap.put("GenesisDragon2_Acc", new Sfx(voicePath + "GenesisDragon2_Acc.wav"));
+            reflectedMap.put("Minthe2", new Sfx(voicePath + "Minthe2.wav"));
+            reflectedMap.put("ServantOfDarkness2", new Sfx(voicePath + "ServantOfDarkness2.wav"));
+            reflectedMap.put("FlameNGlass3", new Sfx(voicePath + "FlameNGlass3.wav"));
+            reflectedMap.put("Rogers", new Sfx(voicePath + "Rogers.wav"));
         }
         if (Loader.isModLoaded("CardAugments")) {
             AugmentHelper.register();
@@ -3015,6 +3019,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard(new SlaughteringDragonewt());
         BaseMod.addCard(new TheTower());
         BaseMod.addCard(new TheTower_I());
+        BaseMod.addCard(new Rogers());
         logger.info("Success");
     }
 

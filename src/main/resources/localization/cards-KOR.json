@@ -6356,5 +6356,22 @@
   "shadowverse:TheTower_I": {
     "NAME": "塔(逆位置)",
     "DESCRIPTION": "敵全体に !D! ダメージを与え、 *火傷 2枚を手札に加える。"
+  },
+  "shadowverse:Minthe2": {
+    "NAME": "死の揺籠・ミント",
+    "DESCRIPTION": "1ターンに1度、自分が ネクロマンス をした時、 墓場 を+ ネクロマンス の値する。 NL エセリアル 。"
+  },
+  "shadowverse:ServantOfDarkness2": {
+    "NAME": "ロストメモリー・ジャスパー",
+    "DESCRIPTION": "AF NL !B! ブロック を得る。 NL 山札から AF カード2枚を手札に加える。 NL 廃棄札に6種類以上の AF カードがあるなら、 *EP と *奇跡 それぞれ1枚を手札に加える。"
+  },
+  "shadowverse:FlameNGlass3": {
+    "NAME": "渾然の双極・フラム＝グラス",
+    "DESCRIPTION": "!D! ダメージを与え、 !B! ブロック を得る。 NL ラストワード :これが廃棄される時、 フラム＝グラス を1得る。"
+  },
+  "shadowverse:Rogers": {
+    "NAME": "大海の征服者・ロジャー",
+    "DESCRIPTION": "エナジー1を得る。 *黄金の盃 1枚を手札に加える。 NL エセリアル 。",
+    "UPGRADE_DESCRIPTION":"エナジー1を得る。 *黄金の盃 1枚を手札に加える。 NL キャノンクルー 1体を出す。 NL 自分は「 財宝カード をプレイする度、それがこのターン中に1枚目なら、エナジー1を得る。2枚目なら、敵全体に10ダメージを与える。」を持つ。 NL エセリアル 。"
   }
 }

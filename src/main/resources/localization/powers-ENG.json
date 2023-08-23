@@ -2033,5 +2033,15 @@
     "DESCRIPTIONS": [
       "At the end of your turn, deal #b20 damage to a random enemy. Reduce this by #b4 for each Attack card played during your turn."
     ]
+  },
+  "shadowverse:Minthe2": {
+    "NAME": "死の揺籠・ミント",
+    "DESCRIPTION": "1ターンに1度、自分が #yネクロマンス をした時、 墓場 を+ #yネクロマンス の値する。"
+  },
+  "shadowverse:RogersPower": {
+    "NAME": "大海の征服者・ロジャー",
+    "DESCRIPTIONS": [
+      "#y財宝カード をプレイする度、それがこのターン中に1枚目なら、 [E] を得る。2枚目なら、敵全体に #b10 ダメージを与える。"
+    ]
   }
 }

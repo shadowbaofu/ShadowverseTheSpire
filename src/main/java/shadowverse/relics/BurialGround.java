@@ -3,10 +3,8 @@
 
 
 import basemod.abstracts.CustomRelic;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
@@ -34,12 +32,12 @@ import shadowverse.powers.Cemetery;
    @Override
    public void onPlayerEndTurn() {
      flash();
-     addToBot((AbstractGameAction)new RelicAboveCreatureAction((AbstractCreature)AbstractDungeon.player, (AbstractRelic)this));
-     addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)AbstractDungeon.player, (AbstractCreature)AbstractDungeon.player, (AbstractPower)new Cemetery((AbstractCreature)AbstractDungeon.player, 1), 1));
+     addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+     addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, (AbstractPower)new Cemetery(AbstractDungeon.player, 1), 1));
    }
 
    
    public AbstractRelic makeCopy() {
-     return (AbstractRelic)new BurialGround();
+     return new BurialGround();
    }
  }

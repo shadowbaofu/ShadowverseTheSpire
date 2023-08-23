@@ -96,6 +96,9 @@ public class Satan extends AbstractNeutralCard implements BranchableUpgradeCard 
                         }
                     }
                 }
+            }else {
+                resetAttributes();
+                this.type = baseType;
             }
         }
         super.update();

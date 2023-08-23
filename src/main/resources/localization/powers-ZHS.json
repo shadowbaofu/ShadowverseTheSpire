@@ -460,7 +460,7 @@
     "NAME": "灵魂守门人·命忒",
     "DESCRIPTIONS": [
       "回合开始时，失去 #b",
-      " 点 #y墓地 。"
+      " 点 #y墓地 。本回合内发动 #y死灵术 时获得对应数量的 #y墓地。"
     ]
   },
   "shadowverse:DeathPartyPower": {
@@ -2032,6 +2032,18 @@
     "NAME": "邪智之龙·法芙娜",
     "DESCRIPTIONS": [
       "回合结束时，对随机敌人造成 #b20 点伤害。本回合每打出1张攻击牌，此伤害减少 #b4 点。"
+    ]
+  },
+  "shadowverse:Minthe2Power": {
+    "NAME": "死之摇篮·命忒",
+    "DESCRIPTIONS": [
+      "每回合1次，发动 #y死灵术 时获得对应数量的 #y墓地。"
+    ]
+  },
+  "shadowverse:RogersPower": {
+    "NAME": "大海征服者·罗杰",
+    "DESCRIPTIONS": [
+      "打出 #y财宝牌 时，如果为本回合使用的第1张，获得 [E] 。如果为第2张，对全体敌人造成 #b10 点伤害。"
     ]
   }
 }

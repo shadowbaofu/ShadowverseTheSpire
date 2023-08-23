@@ -6351,5 +6351,22 @@
   "shadowverse:TheTower_I": {
     "NAME": "塔(逆位置)",
     "DESCRIPTION": "对全体敌人造成 !M! 点伤害。 NL 增加2张 *灼伤 到手中。"
+  },
+  "shadowverse:Minthe2": {
+    "NAME": "死之摇篮·命忒",
+    "DESCRIPTION": "每回合1次，发动 死灵术 时回复对应 墓地 。 NL 虚无 。"
+  },
+  "shadowverse:ServantOfDarkness2": {
+    "NAME": "迷失记忆·贾斯珀",
+    "DESCRIPTION": "创造物 NL 获得 !B! 点 格挡 。 NL 从抽牌堆中增加2张 创造物 卡牌到手中。 NL 如果消耗堆中的 创造物 种类为6种以上，增加1张 *进化点 和 *奇迹 到手中。"
+  },
+  "shadowverse:FlameNGlass3": {
+    "NAME": "浑然双极·烈焰琉璃",
+    "DESCRIPTION": "造成 !D! 点伤害，获得 !B! 点 格挡 。 NL 谢幕曲 :被消耗时，获得1层 烈焰·琉璃 。 NL 消耗 。"
+  },
+  "shadowverse:Rogers": {
+    "NAME": "大海征服者·罗杰",
+    "DESCRIPTION": "获得1点能量，增加1张 *黄金之杯 到手中。 NL 虚无 。",
+    "UPGRADE_DESCRIPTION":"获得1点能量，增加1张 *黄金之杯 到手中。 NL 召唤1个 加农炮水手 。 NL 获得「打出 财宝牌 时，如果为本回合使用的第1张，获得1点能量。如果为第2张，对全体敌人造成10点伤害。」 NL 虚无 。"
   }
 }

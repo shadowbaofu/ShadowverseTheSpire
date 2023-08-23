@@ -1,6 +1,7 @@
 package shadowverse.powers;
 
 import com.badlogic.gdx.graphics.Texture;
+import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.NonStackablePower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
@@ -19,7 +20,7 @@ import com.megacrit.cardcrawl.vfx.combat.EntangleEffect;
 
 
 public class RuinwebSpiderPower
-        extends AbstractPower {
+        extends AbstractPower implements NonStackablePower {
     public static final String POWER_ID = "shadowverse:RuinwebSpiderPower";
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings("shadowverse:RuinwebSpiderPower");
     public static final String NAME = powerStrings.NAME;

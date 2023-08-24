@@ -2546,8 +2546,8 @@
   },
   "shadowverse:ServantOfDarkness": {
     "NAME": "Carnelia, Servant of Darkness",
-    "DESCRIPTION": "Gain !B! Block. NL Add 1 *Guardform *Golem to your hand.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add 1 *Guardform *Golem to your hand. NL Add 1 *Strikeform *Golem to your hand."
+    "DESCRIPTION": "AF. NL Gain !B! Block. NL Add 1 *Guardform *Golem to your hand.",
+    "UPGRADE_DESCRIPTION": "AF. NL Gain !B! Block. NL Add 1 *Guardform *Golem to your hand. NL Add 1 *Strikeform *Golem to your hand."
   },
   "shadowverse:GenesisArtifact": {
     "NAME": "Genesis Artifact",

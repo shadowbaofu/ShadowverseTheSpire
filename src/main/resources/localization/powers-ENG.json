@@ -2035,13 +2035,13 @@
     ]
   },
   "shadowverse:Minthe2": {
-    "NAME": "死の揺籠・ミント",
-    "DESCRIPTION": "1ターンに1度、自分が #yネクロマンス をした時、 墓場 を+ #yネクロマンス の値する。"
+    "NAME": "Minthe, Steward of Souls",
+    "DESCRIPTION": "Once per turn, whenever you perform #yNecromancy, gain Shadows equal to the #yNecromancy cost."
   },
   "shadowverse:RogersPower": {
-    "NAME": "大海の征服者・ロジャー",
+    "NAME": "Rogers, Ruler Of The Seas",
     "DESCRIPTIONS": [
-      "#y財宝カード をプレイする度、それがこのターン中に1枚目なら、 [E] を得る。2枚目なら、敵全体に #b10 ダメージを与える。"
+      "Whenever you play a #yLoot card, if it's the first one this turn, gain [E]. If it's the second one, deal #b10 damage to all enemies."
     ]
   }
 }

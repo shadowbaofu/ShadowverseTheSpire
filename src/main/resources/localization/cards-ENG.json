@@ -2546,8 +2546,8 @@
   },
   "shadowverse:ServantOfDarkness": {
     "NAME": "Carnelia, Servant of Darkness",
-    "DESCRIPTION": "Gain !B! Block. NL Add 1 *Guardform *Golem to your hand.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add 1 *Guardform *Golem to your hand. NL Add 1 *Strikeform *Golem to your hand."
+    "DESCRIPTION": "AF. NL Gain !B! Block. NL Add 1 *Guardform *Golem to your hand.",
+    "UPGRADE_DESCRIPTION": "AF. NL Gain !B! Block. NL Add 1 *Guardform *Golem to your hand. NL Add 1 *Strikeform *Golem to your hand."
   },
   "shadowverse:GenesisArtifact": {
     "NAME": "Genesis Artifact",
@@ -4020,7 +4020,7 @@
   },
   "shadowverse:EvidenceOfOne": {
     "NAME": "Great Testimony",
-    "DESCRIPTION": "Apply !M! Vulnerable and Weak. NL If you have played *Mjerrabaine, *Great *One this combat, deal !D! damage. NL Exhaust."
+    "DESCRIPTION": "Apply !M! Vulnerable and Weak. NL If you have gained the power *Mjerrabaine, *Great *One this combat, deal !D! damage. NL Exhaust."
   },
   "shadowverse:PerjuryOfTruth": {
     "NAME": "Ersatz Elimination",
@@ -5013,8 +5013,8 @@
   },
   "shadowverse:SacredSheep": {
     "NAME": "Sacred Sheep",
-    "DESCRIPTION": "Gain 3 #yBuffer. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "Gain 3 #yBuffer."
+    "DESCRIPTION": "Prevent the next 3 times you would lose HP. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Prevent the next 3 times you would lose HP."
   },
   "shadowverse:Judith": {
     "NAME": "Judith, Cosmic Observer",
@@ -6105,7 +6105,7 @@
   },
   "shadowverse:Jerva": {
     "NAME": "Jerva of Draconic Mail",
-    "DESCRIPTION": "If your HP is above 50% of your max HP, set your HP to 50%. You cannot have more than 50% HP this combat. Restore this lost HP at the end of combat. NL At the end of your turn, deal damage  to a random enemy equal to 25% of its max HP (min. 25). NL Ethereal.",
+    "DESCRIPTION": "If your HP is above 50% of your max HP, set your HP to 50%. You cannot have more than 50% HP this combat. Restore this lost HP at the end of combat. NL At the end of your turn, deal damage to a random enemy equal to 25% of its max HP (min. 25). NL Ethereal.",
     "UPGRADE_DESCRIPTION": "If your HP is above 50% of your max HP, set your HP to 50%. You cannot have more than 50% HP this combat. Restore this lost HP at the end of combat. NL At the end of your turn, deal damage to a random enemy equal to 25% of its max HP (min. 25)."
   },
   "shadowverse:Jerva2": {
@@ -6231,7 +6231,7 @@
   },
   "shadowverse:Fafnir_D": {
     "NAME": "Fafnir, Cunning Wyrm",
-    "DESCRIPTION": "Deal !D! damage to all enemies. NL Put 1 *Burn into your discard pile. NL At the end of each turn, deal 20 damage to a random enemy, reduced by 4 for each Attack played this round."
+    "DESCRIPTION": "Deal !D! damage to all enemies. NL Put 1 *Burn into your discard pile. NL At the end of your turn, deal 20 damage to a random enemy, reduced by 4 for each Attack played this turn."
   },
   "shadowverse:PlatinumDragonblader": {
     "NAME": "Platinum Dragonblader",
@@ -6322,7 +6322,7 @@
   },
    "shadowverse:VengefulMantis": {
     "NAME": "Vengeful Mantis",
-    "DESCRIPTION": "Deal !D! Damage. NL Whenever you play an attack that Exhausts, increase this card's damage by !M!. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL Whenever you play an attack that Exhausts, increase this card's damage by !M!. NL Exhaust."
   },
   "shadowverse:VelociousBeetle": {
     "NAME": "Velocious Beetle",
@@ -6347,7 +6347,7 @@
   },
   "shadowverse:Lvbu": {
     "NAME": "Peerless Warrior",
-    "DESCRIPTION": "1/1. NL Remove all other followers, summon a Peerless Warrior. It gains +X/+Y. X and Y equal the total Attack and Health of those other followers. If X OR Y is 20 or more, you cannot be debuffed unless it affects Strength or Dexterity and this follower does not lose Health. NL Passive: Deal damage equal to its Attack, gain Block equal to its Health, then reduce Health by 1. NL Evoke: Spawn a copy of this follower. NL Exhaust."  
+    "DESCRIPTION": "1/1. NL Remove all other followers. Summon a Peerless Warrior. It gains +X/+Y. X and Y equal the total Attack and Health of those other followers. If X OR Y is 20 or more, you cannot be debuffed unless it affects Strength or Dexterity and this follower does not lose Health. NL Passive: Deal damage equal to its Attack, gain Block equal to its Health, then reduce Health by 1. NL Evoke: Spawn a copy of this follower. NL Exhaust."  
   },
   "shadowverse:SlaughteringDragonewt": {
     "NAME": "Slaughtering Dragonewt",
@@ -6362,20 +6362,20 @@
     "DESCRIPTION": "Deal !D! damage to all enemies. Add 2 *Burns to your hand."
   },
   "shadowverse:Minthe2": {
-    "NAME": "死の揺籠・ミント",
-    "DESCRIPTION": "1ターンに1度、自分が ネクロマンス をした時、 墓場 を+ ネクロマンス の値する。 NL エセリアル 。"
+    "NAME": "Minthe, Steward of Souls",
+    "DESCRIPTION": "Once per turn, whenever you perform Necromancy, gain Shadows equal to the Necromancy cost. NL Ethereal. "
   },
   "shadowverse:ServantOfDarkness2": {
-    "NAME": "ロストメモリー・ジャスパー",
-    "DESCRIPTION": "AF NL !B! ブロック を得る。 NL 山札から AF カード2枚を手札に加える。 NL 廃棄札に6種類以上の AF カードがあるなら、 *EP と *奇跡 それぞれ1枚を手札に加える。"
+    "NAME": "Carnelia, Amnesic Attendant",
+    "DESCRIPTION": "AF NL Gain !B! Block. NL Randomly add 2 Artifact cards from the draw pile to your hand. NL If there are 6 or more Artifact cards in your exhaust pile, add 1 *Evolution *Point and *Miracle to your hand."
   },
   "shadowverse:FlameNGlass3": {
-    "NAME": "渾然の双極・フラム＝グラス",
-    "DESCRIPTION": "!D! ダメージを与え、 !B! ブロック を得る。 NL ラストワード :これが廃棄される時、 フラム＝グラス を1得る。"
+    "NAME": "Flame and Glass, United",
+    "DESCRIPTION": "Deal !D! Damage. Gain !B! Block. NL Last Words: When this card is Exhausted, gain 1 Flame and Glass. "
   },
   "shadowverse:Rogers": {
-    "NAME": "大海の征服者・ロジャー",
-    "DESCRIPTION": "エナジー1を得る。 *黄金の盃 1枚を手札に加える。 NL エセリアル 。",
-    "UPGRADE_DESCRIPTION":"エナジー1を得る。 *黄金の盃 1枚を手札に加える。 NL キャノンクルー 1体を出す。 NL 自分は「 財宝カード をプレイする度、それがこのターン中に1枚目なら、エナジー1を得る。2枚目なら、敵全体に10ダメージを与える。」を持つ。 NL エセリアル 。"
+    "NAME": "Rogers, Ruler Of The Seas",
+    "DESCRIPTION": "Gain 1 Energy. Add 1 *Gilded *Goblet to your hand. NL Ethereal.",
+    "UPGRADE_DESCRIPTION":"Gain 1 Energy. Add 1 *Gilded *Goblet to your hand. NL Summon a Cannoneer. NL Whenever you play a Loot card, if it's the first one this turn, gain 1 energy. If it's the second one, deal 10 damage to all enemies. NL Ethereal."
   }
 }

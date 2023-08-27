@@ -41,8 +41,6 @@ public class ReanimateAction extends AbstractGameAction {
             int max = Collections.max(costTmp);
             for (AbstractCard finalCard : list) {
                 if (finalCard.cost == max) {
-                    if (finalList.size() > 0)
-                        continue;
                     finalList.add(finalCard);
                 }
             }

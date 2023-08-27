@@ -157,6 +157,7 @@ public class RoyalPool  extends AbstractBanPool {
         Loot.addCard(new TidalGunner());
         Loot.addCard(new UltimateHollow());
         Loot.addCard(new UsurpingSpineblade());
+        Loot.addCard(new Rogers());
         Minion.addCard(new CaptainWalfrid());
         Minion.addCard(new EleganceInAction());
         Minion.addCard(new EmpressOfSerenity());

@@ -2036,7 +2036,9 @@
   },
   "shadowverse:Minthe2": {
     "NAME": "Minthe, Steward of Souls",
-    "DESCRIPTION": "Once per turn, whenever you perform #yNecromancy, gain Shadows equal to the #yNecromancy cost."
+    "DESCRIPTIONS": [ 
+      "Once per turn, whenever you perform #yNecromancy, gain Shadows equal to the #yNecromancy cost."
+    ]
   },
   "shadowverse:RogersPower": {
     "NAME": "Rogers, Ruler Of The Seas",

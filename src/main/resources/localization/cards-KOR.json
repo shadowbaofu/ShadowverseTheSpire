@@ -4955,7 +4955,7 @@
   },
   "shadowverse:Kyrzael": {
     "NAME": "탄곡의 집행자 키르자엘",
-    "DESCRIPTION": "팔옥 · 기계 NL 피해를 !D! 준다. NL 비용이 0인 *격침의 *간수 2장을 얻는다. NL 손에 있는 다른 기계 카드 1장당 금속화를 2 얻는다."
+    "DESCRIPTION": "팔옥 · 기계 NL 피해를 !D! 준다. NL 비용이 0인 *격침의 *간수 2장을 얻는다. NL 손에 있는 다른 기계 카드 1장당 금속화를 2 얻는다(한정)."
   },
   "shadowverse:DreadPirateFlag": {
     "NAME": "전율의 해적 깃발",
@@ -5983,7 +5983,7 @@
   },
   "shadowverse:WildfireTyrannosaur": {
     "NAME": "맹화의 티라노사우루스",
-    "DESCRIPTION": "자연 · 가속화 0:피해를 !M! 주고, *나테라의 *신목 1장을 얻습니다. NL  NL --------------------- NL  NL 손의 카드를 모두 버리고, 버린 자연 카드 1장마다 모든 적에게 피해를 !D! 줍니다."
+    "DESCRIPTION": "자연 · 가속화 1:피해를 !M! 주고, *나테라의 *신목 1장을 얻습니다. NL  NL --------------------- NL  NL 손의 카드를 모두 버리고, 버린 자연 카드 1장마다 모든 적에게 피해를 !D! 줍니다."
   },
   "shadowverse:InfernoDragon": {
     "NAME": "고대의 화염룡",

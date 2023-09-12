@@ -21,27 +21,27 @@
   },
   "shadowverse:AndrealphusMod": {
     "TEXT": [
-      " NL 谢幕曲 当这张牌被 消耗 时抽1张牌。"
+      " NL 谢幕曲 :当这张牌被 消耗 时抽1张牌。"
     ]
   },
   "shadowverse:PrinceCatacombMod": {
     "TEXT": [
-      " NL 谢幕曲 当这张牌被 消耗 时增加1张 *骸骨士兵 到手中。"
+      " NL 谢幕曲 :当这张牌被 消耗 时增加1张 *骸骨士兵 到手中。"
     ]
   },
   "shadowverse:ImmoralDesireMod1": {
     "TEXT": [
-      " NL 谢幕曲 当这张牌被 消耗 时对全体敌人造成这张卡的基础伤害的伤害。"
+      " NL 谢幕曲 :当这张牌被 消耗 时对全体敌人造成这张牌基础伤害的伤害。"
     ]
   },
   "shadowverse:ImmoralDesireMod2": {
     "TEXT": [
-      " NL 谢幕曲 当这张牌被 消耗 时获得张牌的基础 格挡 的 临时生命 。"
+      " NL 谢幕曲 :当这张牌被 消耗 时获得张牌基础 格挡 的 临时生命 。"
     ]
   },
   "shadowverse:UndyingResolveMod": {
     "TEXT": [
-      " NL 谢幕曲 死灵术 6 \b当这张牌被 消耗 时伤害翻倍，然后将1张复制加入手牌。"
+      " NL 谢幕曲 :当这张牌被 消耗 时， 死灵术 6 :伤害翻倍并将1张复制加入手牌。"
     ]
   },
   "shadowverse:applyEffect": {
@@ -114,7 +114,7 @@
   },
   "shadowverse:NobilisMod": {
     "TEXT": [
-      " NL 谢幕曲 当这张牌被 消耗 时给予全体敌人4层 中毒 。"
+      " NL 谢幕曲 :当这张牌被 消耗 时给予全体敌人4层 中毒 。"
     ]
   },
   "ViewBanCardScreen": {
@@ -209,7 +209,7 @@
       "#y马纳历亚 ， #y学园 。打出时随机在手牌中增加 #b1 张 #y马纳历亚的魔弹 或 #y马纳历亚的防阵 。"
     ],
     "EXTRA_TEXT": [
-      "马纳历亚 ， 学园  NL ",
+      "马纳历亚 · 学园  NL ",
       " NL 随机在手牌中增加1张 *马纳历亚的魔弹 或 *马纳历亚的防阵 。"
     ]
   },

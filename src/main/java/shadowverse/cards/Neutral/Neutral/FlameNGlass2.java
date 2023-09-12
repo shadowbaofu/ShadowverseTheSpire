@@ -134,9 +134,9 @@ public class FlameNGlass2 extends AbstractRightClickCard implements BranchableUp
             public void upgrade() {
                 ++FlameNGlass2.this.timesUpgraded;
                 FlameNGlass2.this.upgraded = true;
-                FlameNGlass2.this.baseDamage = 18;
+                FlameNGlass2.this.baseDamage = 15;
                 FlameNGlass2.this.upgradedDamage = true;
-                FlameNGlass2.this.baseBlock = 18;
+                FlameNGlass2.this.baseBlock = 15;
                 FlameNGlass2.this.upgradedBlock = true;
                 FlameNGlass2.this.exhaust = true;
                 FlameNGlass2.this.tags.add(AbstractShadowversePlayer.Enums.LASTWORD);

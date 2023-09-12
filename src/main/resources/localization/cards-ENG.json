@@ -4959,7 +4959,7 @@
   },
   "shadowverse:Kyrzael": {
     "NAME": "Kyrzael, Killshot Enforcer",
-    "DESCRIPTION": "Condemned / Machina NL Deal !D! Damage. NL Add 2 *Warden *of *the *Trigger to your hand and change their costs to 0. NL Gain 2 Metallicize for each Machina card in your hand. "
+    "DESCRIPTION": "Condemned / Machina NL Deal !D! Damage. NL Add 2 *Warden *of *the *Trigger to your hand and change their costs to 0. NL Limit :Gain 2 Metallicize for each Machina card in your hand. "
   },
   "shadowverse:DreadPirateFlag": {
     "NAME": "Dread Pirate's Flag",
@@ -5987,7 +5987,7 @@
   },
   "shadowverse:WildfireTyrannosaur": {
     "NAME": "Wildfire Tyrannosaur",
-    "DESCRIPTION": "Natura - Accelerate 0: Deal !M! damage. Add 1 *Naterran *Great *Tree to your hand. NL  NL --------------------- NL  NL Discard all Natura cards from your hand and deal !D! damage to all enemies for each card discarded."
+    "DESCRIPTION": "Natura - Accelerate 1: Deal !M! damage. Add 1 *Naterran *Great *Tree to your hand. NL  NL --------------------- NL  NL Discard all Natura cards from your hand and deal !D! damage to all enemies for each card discarded."
   },
   "shadowverse:InfernoDragon": {
     "NAME": "Inferno Dragon",

@@ -59,14 +59,6 @@ public class PrimalShipwright
         return rally;
     }
 
-    public void onMoveToDiscard() {
-        this.costForTurn = this.cost;
-        this.isCostModifiedForTurn = false;
-        this.type = CardType.ATTACK;
-        applyPowers();
-        played = false;
-    }
-
     @Override
     public void applyPowers() {
         super.applyPowers();
@@ -114,7 +106,6 @@ public class PrimalShipwright
             c.upgrade();
         c.setCostForTurn(0);
         c.type = CardType.ATTACK;
-        played = true;
         AbstractDungeon.player.hand.addToTop(c);
     }
 

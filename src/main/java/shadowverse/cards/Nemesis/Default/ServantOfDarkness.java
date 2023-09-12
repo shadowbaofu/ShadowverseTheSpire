@@ -45,7 +45,7 @@ public class ServantOfDarkness
     }
 
     public ServantOfDarkness() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.UNCOMMON, CardTarget.ALL);
+        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.UNCOMMON, CardTarget.ALL);
         this.baseBlock = 3;
     }
 
@@ -134,6 +134,7 @@ public class ServantOfDarkness
                 ServantOfDarkness.this.upgraded = true;
                 ServantOfDarkness.this.baseBlock = 6;
                 ServantOfDarkness.this.upgradedBlock = true;
+                ServantOfDarkness.this.upgradeBaseCost(1);
                 ServantOfDarkness.this.tags.add(AbstractShadowversePlayer.Enums.ARTIFACT);
                 ServantOfDarkness.this.textureImg = IMG_PATH2;
                 ServantOfDarkness.this.loadCardImage(IMG_PATH2);

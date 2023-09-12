@@ -15,16 +15,16 @@
   "shadowverse:PiousInstructorPower": {
     "NAME": "圣魔法教师·弗洛",
     "DESCRIPTIONS": [
-      "每当获得 #y土之印记 时获得 #b",
-      "点 #y格挡 。"
+      "每当你获得 #y土之印记 时获得 #b",
+      " 点 #y格挡 。"
     ]
   },
   "shadowverse:FaustPower": {
     "NAME": "真实考究者·浮士德",
     "DESCRIPTIONS": [
-      "在你的回合结束时， #y土之秘术 ，获得 #b",
-      "点 #y力量 , #b",
-      "点 #y敏捷 。"
+      "在你的回合结束时， #y土之秘术 :获得 #b",
+      " 点 #y力量 , #b",
+      " 点 #y敏捷 。"
     ]
   },
   "shadowverse:NextTurnEarthEssence": {
@@ -37,15 +37,15 @@
   "shadowverse:WitchsCauldronPower": {
     "NAME": "魔女的坩埚",
     "DESCRIPTIONS": [
-      "如果 #y土之秘术 已发动，则抽 #b",
-      "张牌。"
+      "每当你发动 #y土之秘术 时，抽 #b",
+      " 张牌。"
     ]
   },
   "shadowverse:ChaosPower": {
     "NAME": "混沌的流仪",
     "DESCRIPTIONS": [
       "回合开始时，随机获得或损失 #b",
-      "点 #y力量 。"
+      " 点 #y力量 。"
     ]
   },
   "shadowverse:DarkMagePower": {
@@ -58,21 +58,21 @@
     "NAME": "坦忒菈的反叛",
     "DESCRIPTIONS": [
       "本回合内每使用一张 #y机械 牌则抽 #b",
-      "张牌。"
+      " 张牌。"
     ]
   },
   "shadowverse:MachineAttackPower": {
     "NAME": "机械魔导巨像",
     "DESCRIPTIONS": [
       "本回合内每使用一张 #y机械 牌则造成 #b",
-      "点伤害。"
+      " 点伤害。"
     ]
   },
   "shadowverse:MechabookSorcererPower": {
     "NAME": "机学魔导书士",
     "DESCRIPTIONS": [
       "每使用一张 #y机械 牌则获得 #b",
-      "点 [G] 。"
+      " 点 [G] 。"
     ]
   },
   "shadowverse:SonicFourPower": {
@@ -92,13 +92,13 @@
     "NAME": "老练的大魔法师·伊拉斯莫斯",
     "DESCRIPTIONS": [
       "在你的回合结束时，对全体敌人造成 #b",
-      "点伤害。 #y土之秘术 再造成一次伤害。"
+      " 点伤害。 #y土之秘术 再造成一次伤害。"
     ]
   },
   "shadowverse:OzPower": {
     "NAME": "奥兹国的大魔女：谢幕曲",
     "DESCRIPTIONS": [
-      "在你的回合结束时，#y消耗 所有 #y技能牌 。"
+      "在你的回合结束时， #y消耗 所有 #y技能牌 。"
     ]
   },
   "shadowverse:ShopPower": {
@@ -106,7 +106,7 @@
     "DESCRIPTIONS": [
       "每使用 #b1 张牌 ，对随机敌人造成 #b",
       " 点伤害。如果抽牌堆、弃牌堆中没有 #y攻击牌 、 #y状态牌 、 #y诅咒牌 ，获得 #b",
-      " 点耗能。"
+      " 点能量。"
     ]
   },
   "shadowverse:NaterranTree": {
@@ -118,7 +118,7 @@
   "shadowverse:OmenOfOnePower": {
     "NAME": "唯我绝杰·马塞班恩",
     "DESCRIPTIONS": [
-      "回合结束时获得 #b2 点 #y力量 、 #b2 点 #y敏捷 ，对随机敌人造成 #b12 点伤害。"
+      "回合结束时获得 #b2 点 #y力量 和 #y敏捷 ，对随机敌人造成 #b12 点伤害。"
     ]
   },
   "shadowverse:BehemothPower": {
@@ -137,7 +137,7 @@
   "shadowverse:VincentPower": {
     "NAME": "和平维系者·文森特",
     "DESCRIPTIONS": [
-      "回合开始时增加一张 #y宣判之词 到手中。每当你使用技能牌时，若为拥有此能力后打出的第 #b3 、 #b6 、 #b9 、 #b12 、 #b15 、 #b18 张，则对全体敌人造成 #b12 点伤害。"
+      "回合开始时增加一张 #y宣判之词 到手中。每当你使用 #y技能牌 时，若为拥有此能力后打出的第 #b3 、 #b6 、 #b9 、 #b12 、 #b15 、 #b18 张，则对全体敌人造成 #b12 点伤害。"
     ]
   },
   "shadowverse:TheWorldPower": {
@@ -183,7 +183,7 @@
   "shadowverse:FlameNGlassPower": {
     "NAME": "烈焰·琉璃",
     "DESCRIPTIONS": [
-      "本回合内若失去生命值，则失去1层本能力。回合开始时增加 #b",
+      "本回合内若失去生命，则失去1层本能力。回合开始时增加 #b",
       " 张 #y烈焰·琉璃 到手中并移除本能力。"
     ]
   },
@@ -191,13 +191,13 @@
     "NAME": "天界之门",
     "DESCRIPTIONS": [
       "回合开始时随机使手中的 #b",
-      " 张牌的耗能-1。如果抽牌堆中没有重复的牌，则由-1变为-6。"
+      " 张牌的耗能减少 #b1 。如果抽牌堆中没有重复的牌，则由减少 #b1 变为减少 #b6 。"
     ]
   },
   "shadowverse:HeavensDoorInvocationPower": {
     "NAME": "瞬念召唤：天界之门",
     "DESCRIPTIONS": [
-      "回合结束时如果剩余耗能为2以上且没有 #y天界之门 能力，抽牌中存在 #y天界之门 则会获得该能力。"
+      "回合结束时如果剩余耗能为 #b2 以上且没有 #y天界之门 能力，抽牌中存在 #y天界之门 则会获得该能力。"
     ]
   },
   "shadowverse:AstarothLimit": {
@@ -209,7 +209,7 @@
   "shadowverse:LegendaryFighterPower": {
     "NAME": "传奇剑斗士",
     "DESCRIPTIONS": [
-      "本回合内如果打出 #y攻击牌 则获得1层 #y双发 并失去本能力 ，如果打出 #y技能牌 则获得1层 #y涂毒 并失去本能力，如果打出 #y能力牌 则获得1层 #y人工制品 并失去本能力。本回合内若失去生命值，则失去1层本能力。若本回合已使用过3种不同种类的牌，则下回合开始时增加 #b",
+      "本回合内如果打出 #y攻击牌 则获得1层 #y双发 并失去本能力 ，如果打出 #y技能牌 则获得1层 #y涂毒 并失去本能力，如果打出 #y能力牌 则获得1层 #y人工制品 并失去本能力。本回合内若失去生命，则失去1层本能力。若本回合已使用过3种不同种类的牌，则下回合开始时增加 #b",
       " 张可以造成2次 #b50 点伤害的 #y传奇剑斗士 到手中。"
     ]
   },
@@ -238,13 +238,13 @@
   "shadowverse:ManaBarrier": {
     "NAME": "马纳屏障",
     "DESCRIPTIONS": [
-      "受到伤害的为 #b0 。可以使用 #y马纳之力 移除。"
+      "受到攻击伤害的为 #b0 。可以使用 #y马纳之力 移除。"
     ]
   },
   "shadowverse:ICPower": {
     "NAME": "泰坦诅咒",
     "DESCRIPTIONS": [
-      "每次使用卡牌将在回合结束时给自身造成1点伤害。当前返还 #b",
+      "每次使用卡牌将在回合结束时对自身造成 #b1 点伤害。当前返还 #b",
       " 点伤害。"
     ]
   },
@@ -259,15 +259,15 @@
     "NAME": "不弑的圆阵",
     "DESCRIPTIONS": [
       "#b",
-      " 回合内，受到的 #b6 点以上的伤害转变为5。"
+      " 回合内，受到的 #b6 点以上的伤害转变为 #b5 。"
     ]
   },
   "shadowverse:HeroicResolve": {
     "NAME": "英雄的觉悟",
     "DESCRIPTIONS": [
-      "回合结束时，若果本回合已使用的卡牌数为4以上，则下回合额外抽 #b",
+      "回合结束时，若果本回合已打出的卡牌数为 #b4 以上，则下回合额外抽 #b",
       " 张牌，获得 #b",
-      " 点 #y力量 和 #y 敏捷 。如果为8以上，则由原本的 #b",
+      " 点 #y力量 和 #y敏捷 。若为 #b8 以上，则由原本的 #b",
       " 张变为 #b",
       " 张，原本的 #b",
       " 点变为 #b",
@@ -277,14 +277,14 @@
   "shadowverse:WindFallFay": {
     "NAME": "扬风的妖精",
     "DESCRIPTIONS": [
-      "打出卡牌时，如果为本回合的第5张以上，则抽#b",
+      "打出卡牌时，如果为本回合的第 #b5 张以上，则抽#b",
       " 张牌。回合开始时失去本能力。"
     ]
   },
   "shadowverse:AriaPower": {
     "NAME": "瘴气妖精公主·阿丽雅",
     "DESCRIPTIONS": [
-      "#y妖精萤火 或 #y妖精 会给予 2层 #y中毒 。"
+      "#y妖精萤火 或 #y妖精 会给予 #b2 层 #y中毒 。"
     ]
   },
   "shadowverse:LoxisPower": {
@@ -311,13 +311,13 @@
     "NAME": "森林妖精",
     "DESCRIPTIONS": [
       "每当使用 #y妖精 或 #y妖精萤火 ，获得 #b",
-      " 点格挡。"
+      " 点 #y格挡 。"
     ]
   },
   "shadowverse:GenshinPower": {
     "NAME": "原始的恶神",
     "DESCRIPTIONS": [
-      "一回合仅限一次，打出牌时，本回合已使用卡牌数+ #b2 ，获得 [E] 。"
+      "一回合仅限一次，打出牌时，使本回合已打出卡牌数+ #b2 ，获得 [E] 。"
     ]
   },
   "shadowverse:GreenbrierElfPower": {
@@ -344,19 +344,19 @@
   "shadowverse:PameraPower": {
     "NAME": "森之巫女·帕梅拉",
     "DESCRIPTIONS": [
-      "如果本回合已使用的卡牌数为4以上，回合结束时翻倍 #y力量 和 #y格挡 。"
+      "如果本回合已打出的卡牌数为 #b4 以上，回合结束时翻倍 #y力量 和 #y格挡 。"
     ]
   },
   "shadowverse:FilPower": {
     "NAME": "绚丽的纺织者·歌露瓦",
     "DESCRIPTIONS": [
-      "回合开始时增加1张 #y丝线 到手中。如果上回合受到过8点以上的伤害，则这个数量+1。"
+      "回合开始时增加 #b1 张 #y丝线 到手中。如果上回合受到过 #b8 点以上的伤害，则额外增加 #b1 张。"
     ]
   },
   "shadowverse:TweyenPower": {
     "NAME": "天冲之正鹄",
     "DESCRIPTIONS": [
-      "承受伤害 #b+20% ，获得格挡 #b-10% 。"
+      "承受伤害 #b+20% ，获得 #y格挡 #b-10% 。"
     ]
   },
   "shadowverse:FairyCirclePower": {
@@ -364,7 +364,7 @@
     "DESCRIPTIONS": [
       "造成伤害提高 #b",
       "0% ，承受伤害减少 #b",
-      "0% 。回合结束时如果已使用的卡牌数为5以上则增加 #b10% (最多可叠加5次)。如果受到伤害则减少 #b10% 。"
+      "0% 。回合结束时如果已打出的卡牌数为5以上则数值增加 #b10% (最多50%)。如果失去生命则数值减少 #b10% 。"
     ]
   },
   "shadowverse:NoDamage": {
@@ -388,7 +388,7 @@
   "shadowverse:JudgmentWordPower": {
     "NAME": "宣判之词",
     "DESCRIPTIONS": [
-      "回合开始时，轮流获得 #y无法造成伤害 、 #y无法打出能力牌 、 #y邪咒 （一回合） 、 #y无法获得格挡 。(回合结束时有剩余能量获得 #b1 层 #y人工制品 )"
+      "回合开始时，轮流获得 #y无法造成伤害 、 #y无法打出能力牌 、 #y邪咒 （一回合） 、 #y无法获得 #y格挡 。(回合结束时如果有剩余能量则获得 #b1 层 #y人工制品 )"
     ]
   },
   "shadowverse:RapidFirePower": {
@@ -483,13 +483,13 @@
   "shadowverse:ThothPower": {
     "NAME": "托特",
     "DESCRIPTIONS": [
-      "每当打出 #y谢幕曲 牌，对全体敌人造成 #b10 点伤害。"
+      "每当打出 #y谢幕曲 牌时，对全体敌人造成 #b10 点伤害。"
     ]
   },
   "shadowverse:GloamingTombsPower": {
     "NAME": "林立的墓地",
     "DESCRIPTIONS": [
-      "每当打出 #y攻击 时 #y墓地 增加 #b",
+      "每当打出 #y攻击牌 时 #y墓地 增加 #b",
       " 点。"
     ]
   },
@@ -502,28 +502,28 @@
   "shadowverse:WightPower": {
     "NAME": "尸鬼",
     "DESCRIPTIONS": [
-      "每当消耗 #y攻击牌 ，对全体敌人造成 #b",
+      "每当消耗 #y攻击牌 时，对全体敌人造成 #b",
       " 点伤害。"
     ]
   },
   "shadowverse:CarnivalNecromancerPower": {
     "NAME": "狂欢死灵法师",
     "DESCRIPTIONS": [
-      "每当发动 #y葬送 时，抽 #b",
+      "每当 #y葬送 时，抽 #b",
       " 张牌。"
     ]
   },
   "shadowverse:EverdarkStrixPower": {
     "NAME": "恒暗之枭",
     "DESCRIPTIONS": [
-      "每当发动 #y葬送 时，获得 #b",
-      " 点格挡。"
+      "每当 #y葬送 时，获得 #b",
+      " 点 #y格挡 。"
     ]
   },
   "shadowverse:ArcusPower": {
     "NAME": "幽灵支配者·阿卡斯",
     "DESCRIPTIONS": [
-      "耗能为 #b1 以下的攻击牌耗能变为 #b0 且打出时消耗。每当打出耗能为0的攻击牌时对随机敌人造成 #b4 点伤害。"
+      "每当抽到耗能为 #b1 的 #y攻击牌 时，使其当回合耗能变为 #b0 。每当打出耗能为 #b0 的 #y攻击牌 （ #y不死斗士·莫迪凯 除外）时，将其 #y消耗 并增加一张 #y怨灵 到手中。"
     ]
   },
   "shadowverse:AeneaPower": {
@@ -531,25 +531,25 @@
     "DESCRIPTIONS": [
       "回合开始时，如果没有 #y缓冲 ，则将 #b",
       " 张 #y圆滚滚1号 加入手中，如果有则将 #b",
-      " 张 #y转瞬即逝的幸福 加入手中。当受到伤害时，失去此能力。"
+      " 张 #y转瞬即逝的幸福 加入手中。失去生命时，失去此能力。"
     ]
   },
   "shadowverse:GremoryPower": {
     "NAME": "预视死期者·格莫瑞",
     "DESCRIPTIONS": [
-      "发动 #y死灵术 时，回复该 #y死灵术 的 #y墓地 并获得 #b2 点能量。此效果每个回合仅限发动1次。"
+      "发动 #y死灵术 时，回复该 #y死灵术 的 #y墓地 并获得 [E] [E] 。此效果每个回合仅限发动1次。"
     ]
   },
   "shadowverse:GremoryUsedPower": {
     "NAME": "预视死期者·格莫瑞(已发动)",
     "DESCRIPTIONS": [
-      "发动 #y死灵术 时，回复该 #y死灵术 的 #y墓地 并获得 #b2 点能量。此效果每个回合仅限发动1次。"
+      "发动 #y死灵术 时，回复该 #y死灵术 的 #y墓地 并获得 [E] [E] 。此效果每个回合仅限发动1次。"
     ]
   },
   "shadowverse:FerryPower": {
     "NAME": "幽想少女·菲莉",
     "DESCRIPTIONS": [
-      "本回合内攻击牌重复打出3次。"
+      "本回合内 #y攻击牌 重复打出 #b3 次。"
     ]
   },
   "shadowverse:ArrowPower": {
@@ -576,13 +576,13 @@
   "shadowverse:WrathPower": {
     "NAME": "狂乱",
     "DESCRIPTIONS": [
-      "因自己受到的伤害为7次以上时获得本效果。拥有本效果时打出的某些牌将被增强。"
+      "因自己受到的伤害为 #b7 次以上时获得本效果。拥有本效果时打出的某些牌将被增强。"
     ]
   },
   "shadowverse:AvaricePower": {
     "NAME": "渴望",
     "DESCRIPTIONS": [
-      "每回合抽取第6张以上的牌时获得本效果。拥有本效果时打出的某些牌将被增强。回合结束时失去本效果。"
+      "每回合抽取第 #b6 张以上的牌时获得本效果。拥有本效果时打出的某些牌将被增强。回合结束时失去本效果。"
     ]
   },
   "shadowverse:EpitaphPower": {
@@ -594,7 +594,7 @@
   "shadowverse:ShemyazaPower": {
     "NAME": "桑杨沙",
     "DESCRIPTIONS": [
-      "回合开始时额外抽 #b3 张牌。回合结束时消耗所有手牌。"
+      "回合开始时额外抽 #b3 张牌。回合结束时 #y消耗 所有手牌。"
     ]
   },
   "shadowverse:VengeanceHealthPower": {
@@ -606,7 +606,7 @@
   "shadowverse:SadisticDemonPower": {
     "NAME": "讥讽的恶魔",
     "DESCRIPTIONS": [
-      "回合结束时失去 #b1 点生命。回合开始时回复 #b2 点生命。因自己受到伤害时对随机敌人造成 #b",
+      "回合结束时失去 #b1 点生命。回合开始时回复 #b2 点生命。因自己失去生命时对随机敌人造成 #b",
       " 点伤害。"
     ]
   },
@@ -648,8 +648,8 @@
     "DESCRIPTIONS": [
       "受到攻击时，回复 #b",
       " 点生命，对攻击者造成 #b",
-      " 点伤害。 #y复仇 如果格挡未失去，则下回合获得 #b",
-      " 点格挡。"
+      " 点伤害。 #y复仇 如果未完全失去 #y格挡 ，则下回合获得 #b",
+      " 点 #y格挡 。"
     ]
   },
   "shadowverse:NextTurnProduct": {
@@ -697,7 +697,7 @@
   "shadowverse:OmenOfLustPower": {
     "NAME": "奸淫绝杰·瓦娜蕾格",
     "DESCRIPTIONS": [
-      "如果因自己失去生命，则下回合开始时，获得 #b",
+      "本回合内如果因自己失去过生命，则下回合开始时，获得 #b",
       " 点 #y力量 和 #b",
       " 点 #y敏捷 。"
     ]
@@ -705,14 +705,14 @@
   "shadowverse:IryaPower": {
     "NAME": "暗夜统御者·伊莉亚",
     "DESCRIPTIONS": [
-      "如果因自己失去生命，则下回合开始时，获得 #b1 点 #y力量 和 #b1 点 #y敏捷 。受到攻击时，如果未完全失去 格挡 ，则下回合获得 #b",
+      "本回合内如果因自己失去过生命，则下回合开始时，获得 #b1 点 #y力量 和 #b1 点 #y敏捷 。受到攻击时，如果未完全失去 #y格挡 ，则下回合获得 #b",
       " 点格挡。"
     ]
   },
   "shadowverse:DevilSheepPower": {
     "NAME": "恶夜魔羊",
     "DESCRIPTIONS": [
-      "如果因自己失去生命，则获得 #b",
+      "每当因自己失去生命时，获得 #b",
       " 点 #y格挡 。"
     ]
   },
@@ -725,7 +725,7 @@
   "shadowverse:LilimPower": {
     "NAME": "迷人魅魔·莉莉姆",
     "DESCRIPTIONS": [
-      "如果因自己失去生命，则获得 #b",
+      "每当因自己失去生命时，获得 #b",
       " 点 #y能量 。"
     ]
   },
@@ -739,20 +739,20 @@
   "shadowverse:NightFallPower": {
     "NAME": "暗夜袭击",
     "DESCRIPTIONS": [
-      "回合开始时增加 #b1 张 #y林地蝙蝠 到手中。减少1层本能力。"
+      "回合开始时增加 #b1 张 #y林地蝙蝠 到手中，减少 #b1 层本能力。"
     ]
   },
   "shadowverse:DreadAuraPower": {
     "NAME": "惊惧气息",
     "DESCRIPTIONS": [
-      "因自己受到的伤害转变为0。"
+      "因自己失去的生命转变为0。"
     ]
   },
   "shadowverse:JormungandPower": {
     "NAME": "耶梦加得",
     "DESCRIPTIONS": [
-      "因自己受到伤害时，对全体敌人造成 #b",
-      " 点伤害。(每个回合仅限1次)"
+      "因自己失去生命时，对全体敌人造成 #b",
+      " 点伤害。(每个回合限1次)"
     ]
   },
   "shadowverse:OldBloodKingPower": {
@@ -772,15 +772,15 @@
   "shadowverse:VolteoPower": {
     "NAME": "享乐的经营者·波尔特欧",
     "DESCRIPTIONS": [
-      "回合结束时，获得 #b8层 多层护甲 ，随机打出抽牌堆中的 #b2 张攻击牌。"
+      "回合结束时，获得 #b8层 多层护甲 ，随机打出抽牌堆中的 #b2 张 #y攻击牌 。"
     ]
   },
   "shadowverse:ArchdemonPower": {
     "NAME": "鏖杀的大恶魔",
     "DESCRIPTIONS": [
-      "受到攻击时，如果未完全失去 格挡 ，给予攻击者 #b",
+      "受到攻击时，如果未完全失去 #y格挡 ，给予攻击者 #b",
       " 点伤害，下回合获得 #b",
-      " 点 格挡 。"
+      " 点 #y格挡 。"
     ]
   },
   "shadowverse:NeoAlectorPower": {
@@ -788,7 +788,7 @@
     "DESCRIPTIONS": [
       "下回合开始时，额外抽 #b",
       " 张牌，获得 #b",
-      " 点 力量 和 敏捷 。"
+      " 点 #y力量 和 #y敏捷 。"
     ]
   },
   "shadowverse:NeoMegaeraPower": {
@@ -844,7 +844,7 @@
     "NAME": "虚数物体",
     "DESCRIPTIONS": [
       "#b",
-      " 回合内，受到的 #b4 点以上的伤害转变为3。"
+      " 回合内，受到的 #b4 点以上的伤害转变为 #b3 。"
     ]
   },
   "shadowverse:DeusExMachinaPower": {
@@ -871,7 +871,7 @@
     "NAME": "圣白破坏的创造物",
     "DESCRIPTIONS": [
       "回合开始时，获得 #b",
-      " 点格挡。如果本场战斗已打出 #y新约·黑之章 则格挡翻倍。"
+      " 点 #y格挡 。如果本场战斗已打出 #y新约·黑之章 则获得 #y格挡 翻倍。"
     ]
   },
   "shadowverse:BlackArtifactPower": {
@@ -885,7 +885,7 @@
     "NAME": "齿轮运行者·里希特",
     "DESCRIPTIONS": [
       "每当使用 #y悬丝傀儡 ，获得 #b",
-      " 点格挡。"
+      " 点 #y格挡 。"
     ]
   },
   "shadowverse:PuppetRoomPower": {
@@ -905,7 +905,7 @@
     "NAME": "全神贯注",
     "DESCRIPTIONS": [
       "如果本回合结束时有剩余能量，下回合开始额外抽 #b",
-      " 张牌，获得 #b5 点格挡。"
+      " 张牌，获得 #b5 点 #y格挡 。"
     ]
   },
   "shadowverse:KarulaPower": {
@@ -938,7 +938,7 @@
     "NAME": "至高无上·谦恭",
     "DESCRIPTIONS": [
       "回合结束时，对随机敌人造成 #b",
-      " 点伤害。（已消耗的创造物种类为 #b",
+      " 点伤害。（已 #y消耗 的创造物种类为 #b",
       " 种）"
     ]
   },
@@ -966,27 +966,27 @@
   "shadowverse:NightVampirePower": {
     "NAME": "夜天吸血鬼",
     "DESCRIPTIONS": [
-      " #y林地蝙蝠 的基础伤害翻倍。未 狂乱 时打出 #y林地蝙蝠 失去1点生命。 狂乱 时打出 #y林地蝙蝠 会给予 #b2 层 中毒 并回复 #b2 点生命。"
+      " #y林地蝙蝠 的基础伤害翻倍。未 #y狂乱 时打出 #y林地蝙蝠 失去 #b1 点生命。 #y狂乱 时打出 #y林地蝙蝠 会给予 #b2 层 中毒 并回复 #b2 点生命。"
     ]
   },
   "shadowverse:TheWheelOfFortunePower": {
     "NAME": "惨祸的圆环",
     "DESCRIPTIONS": [
       "接下来的 #b",
-      " 个回合内，回合开始前从以下3种效果中发动一种未发动过的效果：「失去 #b2 点力量」「眩晕 #b1 回合」「增加 #b1 张 #y解析的创造物 到你的手中」。"
+      " 个回合内，回合开始前从以下3种效果中发动一种未发动过的效果：「失去 #b2 点 #y力量 」「眩晕 #b1 回合」「增加 #b1 张 #y解析的创造物 到你的手中」。"
     ]
   },
   "shadowverse:AbsoluteOnePower": {
     "NAME": "绝对之一",
     "DESCRIPTIONS": [
-      "因能力受到的伤害变为 #b0 。回合开始时将 #y1 张 #y绝对制裁 加入手中。"
+      "因能力受到的伤害变为0。回合开始时将 #b1 张 #y绝对制裁 加入手中。"
     ]
   },
   "shadowverse:DeathNotePower": {
     "NAME": "亡者之王的记事本",
     "DESCRIPTIONS": [
       "接下来的 #b",
-      " 个回合内，随机打出一张抽牌堆中耗能最高且不大于你的能量上限的攻击牌。"
+      " 个回合内，随机打出一张抽牌堆中耗能最高且不大于你的能量上限的 #y攻击牌 。"
     ]
   },
   "shadowverse:AncientAmplifierPower": {
@@ -999,7 +999,7 @@
   "shadowverse:BrandOfMorningStarPower": {
     "NAME": "灾祸刻印",
     "DESCRIPTIONS": [
-      "一回合一次，消耗攻击牌时增加 #b1 张 #y暗影士兵 到手中。 如果消耗堆中的攻击牌数量为 #b15 以上，改为增加 #b1 张 #y暗影指挥官 到手中。"
+      "一回合一次，消耗 #y攻击牌 时增加 #b1 张 #y暗影士兵 到手中。 如果消耗堆中的 #y攻击牌 数量为 #b15 以上，改为增加 #b1 张 #y暗影指挥官 到手中。"
     ]
   },
   "shadowverse:LionSanctuaryPower": {
@@ -1019,7 +1019,7 @@
   "shadowverse:ShiningValkyriePower": {
     "NAME": "闪耀女武神",
     "DESCRIPTIONS": [
-      "每回合开始增加 #b1 张 #y妖精 到手中。每当打出 #y妖精 时，对随机敌人造成 #b6 点伤害并获得 #b1 点 力量 和 #b1 点 敏捷 。"
+      "每回合开始增加 #b1 张 #y妖精 到手中。每当打出 #y妖精 时，对随机敌人造成 #b6 点伤害并获得 #b1 点 #y力量 和 #b1 点 #y敏捷 。"
     ]
   },
   "shadowverse:AbyssDoomLordPower": {
@@ -1032,14 +1032,14 @@
   "shadowverse:DiscipleOfUsurpationPower": {
     "NAME": "强夺的信徒",
     "DESCRIPTIONS": [
-      "每当打出 #y财宝 牌时，获得 #b",
-      " 点格挡。"
+      "每当打出 #y财宝牌 时，获得 #b",
+      " 点 #y格挡 。"
     ]
   },
   "shadowverse:ApostleOfUsurpationPower": {
     "NAME": "强夺的使徒",
     "DESCRIPTIONS": [
-      "每当打出 #y财宝 牌时，对随机敌人造成 #b",
+      "每当打出 #y财宝牌 时，对随机敌人造成 #b",
       " 点伤害。"
     ]
   },
@@ -1054,7 +1054,7 @@
   "shadowverse:FortressStrategistPower": {
     "NAME": "王城司令官",
     "DESCRIPTIONS": [
-      "每当打出技能牌时，随机升级 #b",
+      "每当打出 #y技能牌 时，随机升级 #b",
       " 张牌。"
     ]
   },
@@ -1075,76 +1075,76 @@
   "shadowverse:RoyalBannerPower": {
     "NAME": "皇家御用战旗",
     "DESCRIPTIONS": [
-      "每当召唤 #y随从 时，使其获得+1/+0。回合开始时这个能力减少 #b1 层。"
+      "每当召唤 #y随从 时，使其获得+ #b1 /+ #b0 。回合开始时这个能力减少 #b1 层。"
     ]
   },
   "shadowverse:LathamPower": {
     "NAME": "高洁的骑士·雷瑟姆",
     "DESCRIPTIONS": [
-      "使用攻击牌时，召唤1个 骑士 。"
+      "使用 #y攻击牌 时，召唤1个 #y骑士 。"
     ]
   },
   "shadowverse:AlwidaPower": {
     "NAME": "海贼女王·雅尔莉妲",
     "DESCRIPTIONS": [
       "每回合限 #b",
-      " 次，每当你使用财宝牌，召唤1个 航海家 和1个 维京战士 。"
+      " 次，每当你使用 #y财宝牌 ，召唤1个 #y航海家 和1个 #y维京战士 。"
     ]
   },
   "shadowverse:GloriousCorePower": {
     "NAME": "荣耀之核",
     "DESCRIPTIONS": [
-      "使用 *进化点 时，使所有随从获得+ #b",
-      "/+ #b",
-      "。"
+      "使用 #y进化点 时，使所有随从获得+ #b",
+      " /+ #b",
+      " 。"
     ]
   },
   "shadowverse:GraysonDrawnPower": {
     "NAME": "迅猛驭剑士·格雷森",
     "DESCRIPTIONS": [
-      "本回合中每当打出 机械 牌时，获得 [E] 。"
+      "本回合中每当打出 #y机械 牌时，获得 [E] 。"
     ]
   },
   "shadowverse:GraysonPower": {
     "NAME": "迅猛驭剑士·格雷森",
     "DESCRIPTIONS": [
-      "每当打出 机械 牌时，对全体敌人造成 #b",
-      "点伤害。"
+      "每当打出 #y机械 牌时，对全体敌人造成 #b",
+      " 点伤害。"
     ]
   },
   "shadowverse:JenoPower": {
     "NAME": "雷维翁猛者·杰诺",
     "DESCRIPTIONS": [
-      "雷维翁 卡牌造成的伤害和获得的格挡增加 #b",
-      "点。"
+      "雷维翁 卡牌造成的伤害和获得的 #y格挡 增加 #b",
+      " 点。"
     ]
   },
   "shadowverse:JohannPower": {
     "NAME": "纯铁英雄·约翰",
     "DESCRIPTIONS": [
-      "使用机械牌时获得 #b",
-      "点格挡。"
+      "使用 #y机械 牌时获得 #b",
+      " 点 #y格挡 。"
     ]
   },
   "shadowverse:ReinhardtPower": {
     "NAME": "改革者·莱恩哈尔特",
     "DESCRIPTIONS": [
-      "受到攻击时，获得 #b ",
-      "点 力量 和 敏捷 。 NL 受到伤害后失去这个效果并回复 5 点生命值。"
+      "受到攻击时，获得 #b",
+      " 点 #y力量 和 #y敏捷 。 NL 失去生命时失去这个效果并回复 #b5 点生命值。"
     ]
   },
   "shadowverse:CaptainWalfridPower": {
     "NAME": "骑空团总长·瓦佛利特",
     "DESCRIPTIONS": [
       "每当召唤 #y随从 时，使其获得+ #b",
-      "/+ #b",
-      "。"
+      " /+ #b",
+      " 。"
     ]
   },
   "shadowverse:LeonidasWaitPower": {
     "NAME": "列奥尼达",
     "DESCRIPTIONS": [
-      "回合开始时和受到伤害时这个能力减少 #b1 层。失去这个能力时获得 #b",
+      "回合开始时和失去生命时这个能力减少 #b1 层。失去这个能力时获得 #b",
       " 层 #y列奥尼达的遗志 。"
     ]
   },
@@ -1152,22 +1152,22 @@
     "NAME": "列奥尼达的遗志",
     "DESCRIPTIONS": [
       "每当召唤 #y随从 时，使其获得+ #b",
-      "/+ #b",
-      "。"
+      " /+ #b",
+      " 。"
     ]
   },
   "shadowverse:RaPower": {
     "NAME": "光辉显世·拉",
     "DESCRIPTIONS": [
       "回合结束时对全体敌人造成 #b",
-      " 点 伤害。"
+      " 点伤害。"
     ]
   },
   "shadowverse:RealmOfReposePower": {
     "NAME": "安息的领域",
     "DESCRIPTIONS": [
       " #b",
-      " 回合内，如果你没有打出过攻击牌，受到的 #b4 以上的伤害变为 #b3 。"
+      " 回合内，如果你没有打出过 #y攻击牌 ，受到的 #b4 以上的伤害变为 #b3 。"
     ]
   },
   "shadowverse:AbdielPower": {
@@ -1179,13 +1179,13 @@
   "shadowverse:WilbertPower": {
     "NAME": "尊荣骑士·维尔伯特",
     "DESCRIPTIONS": [
-      "受到攻击时，如果你有格挡，对攻击者造成其最大生命值 #b5% (不会低于 #6 点)的伤害。"
+      "受到攻击时，如果你有 #y格挡 ，对攻击者造成其最大生命值 #b5% (不会低于 #6 点)的伤害。"
     ]
   },
   "shadowverse:Wilbert2Power": {
     "NAME": "光璨圣骑士·维尔伯特",
     "DESCRIPTIONS": [
-      "回合结束时，对全体敌人造成自身格挡数量(最大 #b50 )点伤害。"
+      "回合结束时，对全体敌人造成自身 #y格挡 数量(最大 #b50 )的伤害。"
     ]
   },
   "shadowverse:NextTurnHC": {
@@ -1198,7 +1198,7 @@
   "shadowverse:HereticPriestPower": {
     "NAME": "邪教神父",
     "DESCRIPTIONS": [
-      "每当抽到诅咒牌时，额外抽 #b",
+      "每当抽到 #y诅咒牌 时，额外抽 #b",
       " 张牌。"
     ]
   },
@@ -1212,29 +1212,29 @@
   "shadowverse:RobowhipReverendPower": {
     "NAME": "机械鞭僧侣",
     "DESCRIPTIONS": [
-      "本回合每回复1次生命，获得 #b",
-      " 点 敏捷 。如果手中有机械攻击牌，额外获得 #b",
-      " 点 力量 。"
+      "本回合内每次回复生命时，获得 #b",
+      " 点 #y敏捷 。如果手中有 #y机械 攻击牌，额外获得 #b",
+      " 点 #y力量 。"
     ]
   },
   "shadowverse:HeavenlyAegisPower": {
     "NAME": "天耀盾甲",
     "DESCRIPTIONS": [
-      "不会受到 力量 和 敏捷 以外的负面效果影响。"
+      "不会受到 #y力量 和 #y敏捷 以外的负面效果影响。"
     ]
   },
   "shadowverse:LimoniaPower": {
     "NAME": "残缺的圣女·莉莫涅姆",
     "DESCRIPTIONS": [
-      "打出机械攻击牌时，增加 #b1 张 #y莉莫涅姆的救济 到手中。",
-      "打出机械攻击牌时，增加 #b1 张 #y莉莫涅姆的救济+ 到手中。"
+      "打出 #y机械 攻击牌时，增加 #b1 张 #y莉莫涅姆的救济 到手中。",
+      "打出 #y机械 攻击牌时，增加 #b1 张 #y莉莫涅姆的救济+ 到手中。"
     ]
   },
   "shadowverse:VicePower": {
     "NAME": "机指狂人·伊维尔",
     "DESCRIPTIONS": [
-      "打出机械攻击牌时，失去 #b2 点生命，获得 #b",
-      " 点 力量 。"
+      "打出 #y机械 攻击牌时，失去 #b2 点生命，获得 #b",
+      " 点 #y力量 。"
     ]
   },
   "shadowverse:DDKPower": {
@@ -1275,7 +1275,7 @@
   "shadowverse:IminaPower": {
     "NAME": "疯狂的咒器",
     "DESCRIPTIONS": [
-      "回合结束时，失去 #r2 点 力量 ，将此效果转移给敌人。"
+      "回合结束时，失去 #r2 点 #y力量 ，将此效果转移给敌人。"
     ]
   },
   "shadowverse:DimensionShiftPower": {
@@ -1317,21 +1317,21 @@
     "DESCRIPTIONS": [
       "回合开始时，依顺序触发以下效果: NL ",
       " #g",
-      "(1)额外抽 #b",
-      "张卡 NL ",
-      "(2)增加 #b",
-      "张 #y",
-      "妖精 ",
-      "妖精+ ",
-      "到手中，获得 #b",
-      "点 #y格挡 NL ",
-      "(3)回复2点生命"
+      "(1) 额外抽 #b",
+      " 张卡 NL ",
+      "(2) 增加 #b",
+      " 张 #y",
+      "妖精",
+      "妖精+",
+      " 到手中，获得 #b",
+      " 点 #y格挡 NL ",
+      "(3) 回复2点生命"
     ]
   },
   "shadowverse:AlbertaPower": {
     "NAME": "闪光精灵·艾珥芭塔",
     "DESCRIPTIONS": [
-      "如果本回合已打出的卡片数为 #b4 ，增加 #b1 张",
+      "如果本回合已打出的卡片数为 #b4 ，增加 #b1 张 ",
       "#y闪光精灵·艾珥芭塔",
       "#y闪光精灵·艾珥芭塔+",
       " 到手中并失去此效果。"
@@ -1349,7 +1349,7 @@
     "NAME": "《战车》·奥辂昂",
     "DESCRIPTIONS": [
       "回合结束时，随机触发以下一种效果： NL 获得 #b",
-      " 点格挡 NL 召唤一个 #y骑士 NL 对随机敌人造成 #b",
+      " 点 #y格挡 NL 召唤一个 #y骑士 NL 对随机敌人造成 #b",
       " 点伤害。"
     ]
   },
@@ -1376,7 +1376,7 @@
   "shadowverse:WingsOfDesirePower": {
     "NAME": "爱绝的飞翔",
     "DESCRIPTIONS": [
-      "下一次打出攻击牌将失去 #b1 点生命 #b",
+      "下一次打出 #y攻击牌 将失去 #b1 点生命 #b",
       " 次，全体敌人失去 #b",
       " 点生命。"
     ]
@@ -1384,19 +1384,19 @@
   "shadowverse:OmenOfOnePower2": {
     "NAME": "绝大唯我·马塞班恩",
     "DESCRIPTIONS": [
-      "回合结束时，如果本回合打出过耗能为2以下的卡，对随机敌人造成 #b10 点伤害；如果打出过耗能为2以上的卡，对全体敌人造成 #b18 点伤害。"
+      "回合结束时，如果本回合打出过耗能为 #b2 以下的卡，对随机敌人造成 #b10 点伤害；如果打出过耗能为 #b2 以上的卡，对全体敌人造成 #b18 点伤害。"
     ]
   },
   "shadowverse:BirthOfRavenousPower": {
     "NAME": "降诞的涸绝",
     "DESCRIPTIONS": [
-      "本回合如果已打出过3张以上的卡，下回合开始时额外抽1张牌。"
+      "本回合如果已打出过 #b3 张以上的卡，下回合开始时额外抽1张牌。"
     ]
   },
   "shadowverse:AdherentOfDispairPower": {
     "NAME": "绝望的崇拜者",
     "DESCRIPTIONS": [
-      "本回合如果没有打出过攻击牌，则阻止下一次受到的伤害。还可以生效 #b",
+      "本回合如果没有打出过 #y攻击牌 ，则阻止下一次受到的伤害。还可以生效 #b",
       " 次。"
     ]
   },
@@ -1418,9 +1418,9 @@
     "NAME": "阿拉密斯",
     "DESCRIPTIONS": [
       "本回合内每当召唤 #y随从 时，使其获得+ #b",
-      "/+ #b",
+      " /+ #b",
       " ，并使 #y阿拉密斯 增加 #b",
-      " 点伤害。每当打出攻击牌时，获得 #b",
+      " 点伤害。每当打出 #y攻击牌 时，获得 #b",
       " 点 #y力量 和 #y敏捷 ，并使 #y阿拉密斯 增加 #b",
       " 点伤害。"
     ]
@@ -1428,8 +1428,8 @@
   "shadowverse:AthosPower": {
     "NAME": "阿多斯",
     "DESCRIPTIONS": [
-      "如果本回合结束时没有完全失去格挡，则下回合开始时获得 #b",
-      " 点格挡。"
+      "如果本回合结束时未完全失去 #y格挡 ，则下回合开始时获得 #b",
+      " 点 #y格挡 。"
     ]
   },
   "shadowverse:PorthosPower": {
@@ -1464,7 +1464,7 @@
   "shadowverse:BloodyNailPower": {
     "NAME": "血腥利爪",
     "DESCRIPTIONS": [
-      "每打出1张攻击牌， #y尤里亚斯 将会对你造成 #b",
+      "每打出1张 #y攻击牌 ， #y尤里亚斯 将会对你造成 #b",
       " 点伤害。"
     ]
   },
@@ -1484,20 +1484,20 @@
   "shadowverse:YukishimaPower": {
     "NAME": "真理的大文豪·幸岛",
     "DESCRIPTIONS": [
-      "每抽一张牌，对随机敌人造成 #b1 点伤害，随机使手中的一张攻击卡的基础伤害和格挡+1。"
+      "每抽一张牌，对随机敌人造成 #b1 点伤害，随机使手中的一张 #y攻击牌 的基础伤害和 #y格挡 +1。"
     ]
   },
   "shadowverse:ExitVengeancePower": {
     "NAME": "临时复仇",
     "DESCRIPTIONS": [
       "#b",
-      " 回合结束后，如果生命值为最大生命值一半以上则退出 #y复仇 。"
+      " 回合结束时，如果生命值为最大生命值一半以上则退出 #y复仇 。"
     ]
   },
   "shadowverse:VengeanceBuffPower": {
     "NAME": "变幻自如的伪装者",
     "DESCRIPTIONS": [
-      "每打出非打击攻击牌时，获得 #b",
+      "每打出非打击 #y攻击牌 时，获得 #b",
       " 点 #y力量 和 #y敏捷 。"
     ]
   },
@@ -1519,10 +1519,10 @@
     "DESCRIPTIONS": [
       "回合开始时，依顺序触发以下效果，发动3次后消失: NL ",
       " #g",
-      "(1)获得 #b1 点 #y力量 和 #y敏捷 NL ",
-      "(2)抽 #b",
+      "(1) 获得 #b1 点 #y力量 和 #y敏捷 NL ",
+      "(2) 抽 #b",
       " 张牌 NL ",
-      "(3)回复 #b3 点生命"
+      "(3) 回复 #b3 点生命"
     ]
   },
   "shadowverse:OrchidPower": {
@@ -1541,7 +1541,7 @@
     "NAME": "罪恶之盾",
     "DESCRIPTIONS": [
       "受到的 #b5 以上的伤害变为 #b4 。 #b",
-      " 回合后失去这个效果。"
+      " 回合后时失去这个效果。"
     ]
   },
   "shadowverse:JudgementSpearPower": {
@@ -1562,28 +1562,28 @@
   "shadowverse:NornPower": {
     "NAME": "外界审判者·诺伦",
     "DESCRIPTIONS": [
-      "每当由 #非共鸣 转变为 #y共鸣 时，获得 [E] 。"
+      "每当由非 #y共鸣 转变为 #y共鸣 时，获得 [E] 。"
     ]
   },
   "shadowverse:CassimPower": {
     "NAME": "勇气少年·卡西姆",
     "DESCRIPTIONS": [
-      "本回合每当由 #非共鸣 转变为 #y共鸣 时，对全体敌人造成 #b",
+      "本回合每当由非 #y共鸣 转变为 #y共鸣 时，对全体敌人造成 #b",
       " 点伤害。回合开始时额外抽 #b1 张牌。"
     ]
   },
   "shadowverse:RosaPower": {
     "NAME": "解放少女·罗莎",
     "DESCRIPTIONS": [
-      "本回合每当由 #非共鸣 转变为 #y共鸣 时，获得 #b",
-      " 点格挡。回合开始时额外抽 #b1 张牌。"
+      "本回合每当由非 #y共鸣 转变为 #y共鸣 时，获得 #b",
+      " 点 #y格挡 。回合开始时额外抽 #b1 张牌。"
     ]
   },
   "shadowverse:LegendSwordCommanderPower": {
     "NAME": "传说之剑",
     "DESCRIPTIONS": [
       "回合结束时获得 #b",
-      " 点格挡。打出攻击牌时对全体敌人造成 #b",
+      " 点 #y格挡 。打出 #y攻击牌 时对全体敌人造成 #b",
       " 点伤害。"
     ]
   },
@@ -1603,8 +1603,8 @@
   "shadowverse:MysticQueenPower": {
     "NAME": "神秘皇后·梅迪",
     "DESCRIPTIONS": [
-      "每回合一次，打出攻击牌时增加 #b",
-      " 张带有消耗的 #y奇幻战略 到手中。打出技能牌时增加 #b",
+      "每回合一次，打出 #y攻击牌 时增加 #b",
+      " 张带有 #y消耗 的 #y奇幻战略 到手中。打出 #y技能牌 时增加 #b",
       " 张 #y奇幻士兵 到手中。"
     ]
   },
@@ -1618,9 +1618,9 @@
   "shadowverse:CraigPower": {
     "NAME": "马纳历亚咏唱者·克雷格",
     "DESCRIPTIONS": [
-      "打出技能牌时对全体敌人造成 #b",
-      " 点伤害。打出马纳历亚牌时获得 #b",
-      " 点格挡。"
+      "打出 #y技能牌 时对全体敌人造成 #b",
+      " 点伤害。打出 #y马纳历亚 牌时获得 #b",
+      " 点 #y格挡 。"
     ]
   },
   "shadowverse:MasqueradeGhostPower": {
@@ -1652,9 +1652,9 @@
   "shadowverse:OpulentStrategistPower": {
     "NAME": "千金武装大参谋",
     "DESCRIPTIONS": [
-      "使用技能牌时，获得3点格挡，切换。",
-      "使用技能牌时，抽一张牌，切换。",
-      "使用技能牌时，所有随从获得+1/+1，切换。",
+      "使用 #y技能牌 时，所有随从获得+1/+1，切换。",
+      "使用 #y技能牌 时，获得3点 #y格挡 ，切换。",
+      "使用 #y技能牌 时，抽一张牌，切换。",
       " NL 本回合已发动 #b",
       " 次。"
     ]
@@ -1662,7 +1662,7 @@
   "shadowverse:CosmosFangPower": {
     "NAME": "波斯菊之牙",
     "DESCRIPTIONS": [
-      "回合开始时，对随机敌人造成你当前格挡的等量伤害并失去此能力。"
+      "回合开始时，对随机敌人造成你当前 #y格挡 的等量伤害并失去此能力。"
     ]
   },
   "shadowverse:BlitzPower": {
@@ -1670,17 +1670,17 @@
     "DESCRIPTIONS": [
       "回合开始时，依顺序触发以下效果，发动3次后消失: NL ",
       " #g",
-      "(1)增加 #b2 张 #y奇幻士兵 到手中 NL ",
-      "(2)增加 #b1 张耗能为0且带有消耗的",
+      "(1) 增加 #b2 张 #y奇幻士兵 到手中 NL ",
+      "(2) 增加 #b1 张耗能为0且带有 #y消耗 的",
       " #y奇幻城堡 到手中。 NL ",
-      "(3)增加 #b1 张耗能为0且带有消耗的 #y奇幻骑士 到手中。"
+      "(3) 增加 #b1 张耗能为0且带有 #y消耗 的 #y奇幻骑士 到手中。"
     ]
   },
   "shadowverse:LeafshadeAssassinPower": {
     "NAME": "根际刺客",
     "DESCRIPTIONS": [
-      "本回合出牌时，若为本回合已使用的第4张及以上时，对随机敌人造成 #b",
-      " 点伤害。重复上述 #b",
+      "本回合打出牌时，若为本回合已打出的第4张及以上，对随机敌人造成 #b",
+      " 点伤害。重复上述效果 #b",
       " 次。"
     ]
   },
@@ -1699,14 +1699,14 @@
   "shadowverse:MyroelPower": {
     "NAME": "灭尸执行者·米萝尔",
     "DESCRIPTIONS": [
-      "每当 #y葬送 时，对全体敌人造成 #b10 点伤害。一回合上限为3次。"
+      "每当 #y葬送 时，对全体敌人造成 #b10 点伤害。一回合上限3次。"
     ]
   },
   "shadowverse:SteamrollingTankPower": {
     "NAME": "威迫的防卫队长",
     "DESCRIPTIONS": [
       "每当因自己失去生命时，获得 #b",
-      " 点 格挡 。(一回合上限8次)"
+      " 点 #y格挡 。(一回合上限8次)"
     ]
   },
   "shadowverse:RagingCommanderPower": {
@@ -1726,7 +1726,7 @@
   "shadowverse:ErraldePower": {
     "NAME": "结盟的罪人·艾路拉戴",
     "DESCRIPTIONS": [
-      "如果本回合打出过 #y八狱 牌或耗能为2以上的攻击牌，则回合结束时回复 #b2 点生命，下回合开始时额外抽 #b1 张牌。"
+      "如果本回合打出过 #y八狱 牌或耗能为2以上的 #y攻击牌 ，则回合结束时回复 #b2 点生命，下回合开始时额外抽 #b1 张牌。"
     ]
   },
   "shadowverse:UnerielPower": {
@@ -1752,21 +1752,21 @@
   "shadowverse:TidalGunnerPower": {
     "NAME": "潮流炮手",
     "DESCRIPTIONS": [
-      "本回合内，每当打出 #y财宝 牌时，对随机敌人造成 #b",
+      "本回合内，每当打出 #y财宝牌 时，对随机敌人造成 #b",
       " 点伤害。"
     ]
   },
   "shadowverse:DeepSeaScoutPower": {
     "NAME": "海原斥候",
     "DESCRIPTIONS": [
-      "本回合内，每当打出 #y财宝 牌时，抽 #b",
+      "本回合内，每当打出 #y财宝牌 时，抽 #b",
       " 张牌。"
     ]
   },
   "shadowverse:StormWrackedFirstMatePower": {
     "NAME": "怒涛副船长",
     "DESCRIPTIONS": [
-      "本回合内，每当打出 #y财宝 牌时，召唤 #b",
+      "本回合内，每当打出 #y财宝牌 时，召唤 #b",
       " 个 #y加农炮水手 (上限为5次)。"
     ]
   },
@@ -1780,24 +1780,24 @@
   "shadowverse:AmaryllisPower": {
     "NAME": "童话公主·阿玛莉莉丝",
     "DESCRIPTIONS": [
-      "(1)回复 #b1 点生命 NL ",
-      "(2)下回合开始时额外抽 #b1 张牌 NL ",
+      "(1) 回复 #b1 点生命 NL ",
+      "(2) 下回合开始时额外抽 #b1 张牌 NL ",
       "(3)抽牌堆发动 #b1 次 #y魔力增幅 NL ",
-      "受到伤害且未完全失去临时生命时，随机从下述中发动1种效果: NL ",
+      "失去 #y临时生命 且未完全失去时，随机从下述中发动1种效果: NL ",
       "造成的所有伤害增加 #b1 点。"
     ]
   },
   "shadowverse:CurseOfSufferingPower": {
     "NAME": "痛苦",
     "DESCRIPTIONS": [
-      "回合结束时，自己和全体敌人受到 #b1 点生命流失伤害。此效果持续 #b",
+      "回合结束时，自己和全体敌人失去 #b1 点生命。此效果持续 #b",
       " 回合"
     ]
   },
   "shadowverse:PureflowerMaidenPower": {
     "NAME": "纯真的花少女",
     "DESCRIPTIONS": [
-      "本回合内，回复生命时，抽 #b1 张牌(仅限1次)。获得 #y力量 或 #y敏捷 时，抽 #b1 张牌(仅限1次)。"
+      "本回合内，回复生命时，抽 #b1 张牌(限1次)。获得 #y力量 或 #y敏捷 时，抽 #b1 张牌(限1次)。"
     ]
   },
   "shadowverse:MementoPower": {
@@ -1809,7 +1809,7 @@
   "shadowverse:PureflameLadyPower": {
     "NAME": "净火千金",
     "DESCRIPTIONS": [
-      "本回合内，获得 #y力量 或 #y敏捷 时，对全体敌人造成 #b2 点伤害(上限为10次)。"
+      "本回合内，获得 #y力量 或 #y敏捷 时，对全体敌人造成 #b2 点伤害(上限10次)。"
     ]
   },
   "shadowverse:ElluviaPower": {
@@ -1821,21 +1821,21 @@
   "shadowverse:FillyPower": {
     "NAME": "幻想使役者·霏璃",
     "DESCRIPTIONS": [
-      "本回合内，打出 #y妖精 时获得 [E] 。 打出的牌若为本回合已使用的第 #b3 张，获得手牌数×3的格挡;若为第 #b6 张，抽2张牌;若为第9张，增加1张本回合耗能为0且带有消耗的 #y噬天异种 到手中。"
+      "本回合内，打出 #y妖精 时获得 [E] 。打出的牌若为本回合已打出的第 #b3 张，获得手牌数×3的 #y格挡 。若为第 #b6 张，抽 #b2 张牌。若为第 #b9 张，增加1张本回合耗能为0且带有 #y消耗 的 #y噬天异种 到手中。"
     ]
   },
   "shadowverse:SupportCannonPower": {
     "NAME": "炮击支援",
     "DESCRIPTIONS": [
-      "回合结束时，弃掉所有攻击牌，每弃一张便随机对一名敌人造成",
-      "点伤害。"
+      "回合结束时，丢弃所有 #y攻击牌 ，每弃一张便随机对一名敌人造成 #b",
+      " 点伤害。"
     ]
   },
   "shadowverse:MagicalBishopPower": {
     "NAME": "奇幻主教",
     "DESCRIPTIONS": [
-      "每当打出 象棋 牌时，对全体敌人造成 #b",
-      "点伤害。"
+      "每当打出 #y象棋 牌时，对全体敌人造成 #b",
+      " 点伤害。"
     ]
   },
   "shadowverse:WeissPower": {
@@ -1848,7 +1848,7 @@
     "NAME": "香风执行者·威默尔",
     "DESCRIPTIONS": [
       "回合开始时增加 #b",
-      " 张本回合耗能为0且带有消耗的 #y香风执行者·威默尔 到手中。"
+      " 张本回合耗能为0且带有 #y消耗 的 #y香风执行者·威默尔 到手中。"
     ]
   },
   "shadowverse:OverflowPower": {
@@ -1866,7 +1866,7 @@
   "shadowverse:RahabPower": {
     "NAME": "勒哈布",
     "DESCRIPTIONS": [
-      "回合开始时，获得剩余能量的力量 #b",
+      "回合开始时，获得剩余能量的 #y力量 #b",
       " 次。"
     ]
   },
@@ -1916,14 +1916,14 @@
     "NAME": "黑白乱舞·诺尔与卜朗",
     "DESCRIPTIONS": [
       "回合结束时，如果已 #y完全觉醒 ，获得 #b1 层 #y残影 、 #y人工制品 、 #y免疫能力伤害 和 #b",
-      " 点格挡。下回合开始，如果格挡没有完全消失，对随机敌人造成 #b",
+      " 点 #y格挡 。下回合开始，如果 #y格挡 没有完全消失，对随机敌人造成 #b",
       " 点伤害。"
     ]
   },
   "shadowverse:PrimeDragonKeeperPower": {
     "NAME": "原初驭龙使",
     "DESCRIPTIONS": [
-      "每当打出耗能为1以下的龙族攻击牌时，对随机敌人造成 #b",
+      "每当打出耗能为1以下的龙族 #y攻击牌 时，对随机敌人造成 #b",
       " 点伤害。如果已 #y觉醒 ,回合结束时获得 #b",
       " 点 #y火焰屏障 。"
     ]
@@ -1931,7 +1931,7 @@
   "shadowverse:DragonsongFlutePower": {
     "NAME": "唤龙魔笛",
     "DESCRIPTIONS": [
-      "每当抽到耗能为1以下的攻击、状态或诅咒牌时，将其消耗并增加 #b1 张 #y地狱火魔龙 到手中。"
+      "每当抽到耗能为 #b1 以下的 #y攻击牌 、 #y状态牌 、 #y诅咒牌 时，将其 #y消耗 并增加 #b1 张 #y地狱火魔龙 到手中。"
     ]
   },
   "shadowverse:RowenPower": {
@@ -1952,22 +1952,22 @@
   "shadowverse:ByronPower": {
     "NAME": "钢甲龙骑士·拜伦",
     "DESCRIPTIONS": [
-      "本回合内，打出攻击牌时获得 #b",
-      " 点 #y力量 。如果是机械牌，额外获得 #b",
+      "本回合内，打出 #y攻击牌 时获得 #b",
+      " 点 #y力量 。如果是 #y机械 牌 ，额外获得 #b",
       " 点 #y敏捷 。"
     ]
   },
   "shadowverse:LavateinnDragonAttackFormPower": {
     "NAME": "莱瓦汀龙·攻击模式",
     "DESCRIPTIONS": [
-      "本回合内每打出1张武装攻击牌，获得 #b",
+      "本回合内每打出1张武装 #y攻击牌 ，获得 #b",
       " 点 #y力量 和 #y敏捷 。"
     ]
   },
   "shadowverse:LavateinnDragonDefenseFormPower": {
     "NAME": "莱瓦汀龙·防御模式",
     "DESCRIPTIONS": [
-      "回合结束时，回复2点生命。本回合受到的伤害减少 #b",
+      "回合结束时，回复 #b2 点生命。本回合受到的伤害减少 #b",
       " 点。"
     ]
   },
@@ -1988,13 +1988,13 @@
   "shadowverse:DragonHoardPower": {
     "NAME": "龙之财宝",
     "DESCRIPTIONS": [
-      "回合开始或打出攻击牌时，减少 #b1 倒计时。 倒计时结束后，失去本效果，消耗手牌、弃牌堆、抽牌堆中所有攻击牌，并增加对应数量的 #y地狱炎龙 到手牌、弃牌堆、抽牌堆中。"
+      "回合开始或打出 #y攻击牌 时，减少 #b1 倒计时。 倒计时结束后，失去本效果， #y消耗 手牌、弃牌堆、抽牌堆中所有 #y攻击牌 ，并增加对应数量的 #y地狱炎龙 到手牌、弃牌堆、抽牌堆中。"
     ]
   },
   "shadowverse:RomeliaPower": {
     "NAME": "遗留的电击",
     "DESCRIPTIONS": [
-      "回合开始时，获得 #b2 点 #y临时敏捷 和 #b1 点能量。此效果在 #b",
+      "回合开始时，获得 #b2 点 #y临时敏捷 和 [E] 。此效果在 #b",
       " 回合后失效。"
     ]
   },
@@ -2013,25 +2013,25 @@
   "shadowverse:Jerva2Power": {
     "NAME": "造极霸龙·吉尔沃",
     "DESCRIPTIONS": [
-      "回合结束时，如果本回合没有打出任何攻击牌，对随机敌人造成其最大生命值 #b25% 的伤害(不会低于 #b25 点)。"
+      "回合结束时，如果本回合没有打出任何 #y攻击牌 ，对随机敌人造成其最大生命值 #b25% 的伤害(不会低于 #b25 点)。"
     ]
   },
   "shadowverse:Masamune2Power": {
     "NAME": "独眼龙·伊达政宗",
     "DESCRIPTIONS": [
-      "每当打出攻击牌时，对随机敌人造成 #b4 点伤害。"
+      "每当打出 #y攻击牌 时，对随机敌人造成 #b4 点伤害。"
     ]
   },
   "shadowverse:Forte4Power": {
     "NAME": "黑翼霸者·法露特",
     "DESCRIPTIONS": [
-      "获得力量或敏捷时，依顺序触发以下效果，上限为3次: NL (1)下回合开始时额外获得 #b1 点能量 NL (2)给予随机敌人 #b2 层易伤和虚弱 NL (3)获得 #b1 层缓冲。"
+      "获得 #y 力量或 #y敏捷 时，依顺序触发以下效果，上限3次: NL (1)下回合开始时额外获得 [E] NL (2)给予随机敌人 #b2 层易伤和虚弱 NL (3)获得 #b1 层缓冲。"
     ]
   },
   "shadowverse:FafnirPower": {
     "NAME": "邪智之龙·法芙娜",
     "DESCRIPTIONS": [
-      "回合结束时，对随机敌人造成 #b20 点伤害。本回合每打出1张攻击牌，此伤害减少 #b4 点。"
+      "回合结束时，对随机敌人造成 #b20 点伤害。本回合每打出1张 #y攻击牌 ，此伤害减少 #b4 点。"
     ]
   },
   "shadowverse:Minthe2Power": {

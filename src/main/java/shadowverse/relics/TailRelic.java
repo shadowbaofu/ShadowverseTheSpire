@@ -6,10 +6,12 @@ import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+ import com.megacrit.cardcrawl.core.Settings;
+ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+ import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
  import shadowverse.cards.Neutral.Temp.Ginsetsu;
  import shadowverse.cards.Neutral.Temp.OneTailFox;
 
@@ -21,7 +23,6 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
    public static final String IMG = "img/relics/TailRelic.png";
    public static final String OUTLINE_IMG = "img/relics/outline/TailRelic_Outline.png";
    public static AbstractCard c = new OneTailFox();
-   private static boolean check = true;
 
    public TailRelic() {
      super(ID, ImageMaster.loadImage(IMG), RelicTier.SHOP, LandingSound.MAGICAL);
@@ -37,16 +38,17 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
    }
    
    public void atBattleStart() {
-     if (this.counter < 9 && check) {
-         flash();
-         addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, (AbstractRelic) this));
-         addToBot(new MakeTempCardInDrawPileAction(c, 1, true, true));
-     }else if (!this.grayscale && check){
-         flash();
-         AbstractDungeon.player.masterDeck.addToTop(new Ginsetsu());
-         this.grayscale = true;
-         this.check = false;
-     }
+       if (!this.grayscale){
+           if (this.counter < 9){
+               flash();
+               addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, (AbstractRelic) this));
+               addToBot(new MakeTempCardInDrawPileAction(c, 1, true, true));
+           }else {
+               flash();
+               AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(new Ginsetsu(), Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));
+               this.grayscale = true;
+           }
+       }
    }
  
    

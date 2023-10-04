@@ -277,5 +277,10 @@
     "TEXT": [
       "Armed NL "
     ]
+  },
+  "shadowverse:SeraphsMod": {
+    "TEXT": [
+      " NL Banish NL When destroyed, deal 10 damage to all enemies and gain 4 Block."
+    ]
   }
 }

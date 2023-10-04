@@ -42,11 +42,11 @@ public class NightmareTime extends CustomCard {
 
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot((AbstractGameAction)new SFXAction("NightmareTime"));
-        addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)p, (AbstractCreature)p, (AbstractPower)new DrawPower((AbstractCreature)p, this.magicNumber), this.magicNumber));
-        addToBot((AbstractGameAction)new LoseHPAction(p,p,1));
-        addToBot((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new EvolutionPoint()));
-        addToBot((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new Miracle()));
+        addToBot(new SFXAction("NightmareTime"));
+        addToBot(new ApplyPowerAction(p, p, (AbstractPower)new DrawPower(p, this.magicNumber), this.magicNumber));
+        addToBot(new LoseHPAction(p,p,1));
+        addToBot(new MakeTempCardInHandAction(new EvolutionPoint()));
+        addToBot(new MakeTempCardInHandAction(new Miracle()));
     }
 
 

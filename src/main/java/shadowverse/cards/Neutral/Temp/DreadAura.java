@@ -9,11 +9,9 @@ import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 import shadowverse.characters.Vampire;
@@ -43,12 +41,12 @@ public class DreadAura extends CustomCard {
 
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot((AbstractGameAction)new SFXAction("DreadAura"));
-        addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)p, (AbstractCreature)p, (AbstractPower)new DreadAuraPower((AbstractCreature)p)));
-        addToBot((AbstractGameAction)new LoseHPAction(p,p,1));
-        addToBot((AbstractGameAction)new SFXAction("ATTACK_HEAVY"));
-        addToBot((AbstractGameAction)new VFXAction((AbstractCreature)p, (AbstractGameEffect)new CleaveEffect(), 0.1F));
-        addToBot((AbstractGameAction)new DamageAllEnemiesAction((AbstractCreature)p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
+        addToBot(new SFXAction("DreadAura"));
+        addToBot(new ApplyPowerAction(p, p, new DreadAuraPower(p)));
+        addToBot(new LoseHPAction(p,p,1));
+        addToBot(new SFXAction("ATTACK_HEAVY"));
+        addToBot(new VFXAction(p, (AbstractGameEffect)new CleaveEffect(), 0.1F));
+        addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
     }
 
 

@@ -1,7 +1,6 @@
 package shadowverse.cards.Bishop.Evil;
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -41,10 +40,10 @@ public class TheUntrueGod
 
 
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new SFXAction("TheUntrueGod"));
-        addToBot((AbstractGameAction)new GainEnergyAction(this.magicNumber));
+        addToBot(new SFXAction("TheUntrueGod"));
+        addToBot(new GainEnergyAction(this.magicNumber));
         for (int i=0;i<p.maxOrbs;i++){
-            addToBot((AbstractGameAction)new PlaceAmulet(this.cardsToPreview.makeStatEquivalentCopy(),null));
+            addToBot(new PlaceAmulet(this.cardsToPreview.makeStatEquivalentCopy(),null));
         }
     }
 

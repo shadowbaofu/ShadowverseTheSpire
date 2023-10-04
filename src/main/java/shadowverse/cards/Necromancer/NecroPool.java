@@ -95,6 +95,8 @@ public class NecroPool extends AbstractBanPool {
         Default.addCard(new SoulTaker());
         Default.addCard(new Cernunnos());
         Default.addCard(new Zebet());
+        Default.addCard(new Cornelius());
+        Default.addCard(new SoulLight());
         Burial.addCard(new CarnivalNecromancer());
         Burial.addCard(new DemonicProcession());
         Burial.addCard(new EverdarkStrix());
@@ -124,7 +126,7 @@ public class NecroPool extends AbstractBanPool {
         LastWords.addCard(new SkullFish());
         LastWords.addCard(new UnderworldLieutenant());
         LastWords.addCard(new WickedRebirth());
-        LastWords.addCard(new Cornelius());
+        LastWords.addCard(new GraveVoidknight());
         Mech.addCard(new Aenea());
         Mech.addCard(new BoneDominator());
         Mech.addCard(new BoneDrone());

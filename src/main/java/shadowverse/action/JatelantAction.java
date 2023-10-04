@@ -48,15 +48,15 @@ public class JatelantAction extends AbstractGameAction {
             int dmgCount = (count+1)/3>5?5:(count+1)/3;
             int cardCount = count/3>4?4:count/3;
             if (goldCount>0){
-                addToBot((AbstractGameAction)new GainGoldAction(goldCount*goldAmt));
+                addToBot(new GainGoldAction(goldCount*goldAmt));
             }
             if (dmgCount>0){
-                addToBot((AbstractGameAction)new ShakeScreenAction(0.0F, ScreenShake.ShakeDur.MED, ScreenShake.ShakeIntensity.HIGH));
+                addToBot(new ShakeScreenAction(0.0F, ScreenShake.ShakeDur.MED, ScreenShake.ShakeIntensity.HIGH));
                 for (int i = 0; i < dmgCount; i++){
-                    addToBot((AbstractGameAction)new SFXAction("THUNDERCLAP", 0.05F));
-                    addToBot((AbstractGameAction)new DamageAllEnemiesAction((AbstractCreature)this.p, this.multiDamage, this.damageType, AttackEffect.FIRE, true));
+                    addToBot(new SFXAction("THUNDERCLAP", 0.05F));
+                    addToBot(new DamageAllEnemiesAction((AbstractCreature)this.p, this.multiDamage, this.damageType, AttackEffect.FIRE, true));
                 }
-                addToBot((AbstractGameAction)new HealAction(p,p,3*goldCount));
+                addToBot(new HealAction(p,p,3*goldCount));
             }
             if (cardCount>0){
                 for (AbstractCard c:AbstractDungeon.actionManager.cardsPlayedThisCombat){

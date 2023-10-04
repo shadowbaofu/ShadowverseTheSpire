@@ -7,6 +7,8 @@ import com.evacipated.cardcrawl.mod.stslib.actions.tempHp.AddTemporaryHPAction;
 import com.evacipated.cardcrawl.mod.stslib.powers.abstracts.TwoAmountPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
+import com.megacrit.cardcrawl.actions.common.DamageRandomEnemyAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
@@ -22,6 +24,7 @@ import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import shadowverse.action.ReturnAmuletToDiscardAction;
 import shadowverse.action.StasisEvokeIfRoomInHandAction;
 import shadowverse.cardmods.GarudaMod;
+import shadowverse.cardmods.SeraphsMod;
 import shadowverse.cards.AbstractAmuletCard;
 import shadowverse.cards.AbstractCrystalizeCard;
 import shadowverse.cards.AbstractNoCountDownAmulet;
@@ -142,6 +145,10 @@ public class AmuletOrb extends AbstractOrb {
                 if (AbstractDungeon.player instanceof AbstractShadowversePlayer){
                     ((AbstractShadowversePlayer)AbstractDungeon.player).amuletCount++;
                 }
+                if (CardModifierManager.hasModifier((this.amulet), SeraphsMod.ID)){
+                    AbstractDungeon.actionManager.addToBottom(new DamageRandomEnemyAction(new DamageInfo(AbstractDungeon.player,10), AbstractGameAction.AttackEffect.FIRE));
+                    AbstractDungeon.actionManager.addToBottom(new GainBlockAction(AbstractDungeon.player,4));
+                }
                 if (AbstractDungeon.player.hasRelic(ErisRelic.ID)){
                     AbstractDungeon.actionManager.addToBottom((new AddTemporaryHPAction(AbstractDungeon.player,AbstractDungeon.player,2)));
                 }
@@ -151,6 +158,10 @@ public class AmuletOrb extends AbstractOrb {
                 ((AbstractCrystalizeCard) this.amulet).onEvoke(this);
                 if (AbstractDungeon.player instanceof AbstractShadowversePlayer){
                     ((AbstractShadowversePlayer)AbstractDungeon.player).amuletCount++;
+                }
+                if (CardModifierManager.hasModifier((this.amulet), SeraphsMod.ID)){
+                    AbstractDungeon.actionManager.addToBottom(new DamageRandomEnemyAction(new DamageInfo(AbstractDungeon.player,10), AbstractGameAction.AttackEffect.FIRE));
+                    AbstractDungeon.actionManager.addToBottom(new GainBlockAction(AbstractDungeon.player,4));
                 }
                 if (AbstractDungeon.player.hasRelic(ErisRelic.ID)){
                     AbstractDungeon.actionManager.addToBottom((new AddTemporaryHPAction(AbstractDungeon.player,AbstractDungeon.player,2)));

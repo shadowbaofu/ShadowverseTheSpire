@@ -53,14 +53,14 @@ public class FriendsForever
         stanceChoices.add(new LunaGame());
         stanceChoices.add(new AeneaFriendship());
         AbstractGameAction[] gameActions = new AbstractGameAction[]{
-                (AbstractGameAction) new ReanimateAction(2),
-                (AbstractGameAction) new ReanimateAction(1),
-                (AbstractGameAction) new ReanimateAction(0),
-                (AbstractGameAction) new HealAction(abstractPlayer, AbstractDungeon.player, 4),
-                (AbstractGameAction) new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()),
-                (AbstractGameAction) new SFXAction("FriendsForever")
+                new ReanimateAction(2),
+                new ReanimateAction(1),
+                new ReanimateAction(0),
+                new HealAction(abstractPlayer, AbstractDungeon.player, 4),
+                new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()),
+                new SFXAction("FriendsForever")
         };
-        addToBot((AbstractGameAction) new NecromanceAction(4, (AbstractGameAction) new ChooseOneAction(stanceChoices), gameActions));
+        addToBot(new NecromanceAction(4, new ChooseOneAction(stanceChoices), gameActions));
     }
 
 

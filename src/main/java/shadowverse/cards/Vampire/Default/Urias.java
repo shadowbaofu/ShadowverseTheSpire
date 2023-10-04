@@ -2,7 +2,6 @@ package shadowverse.cards.Vampire.Default;
 
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
@@ -48,18 +47,18 @@ public class Urias extends CustomCard {
 
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new SFXAction("Urias"));
-        addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new BatEffect(),0.1F));
-        addToBot((AbstractGameAction)new GainBlockAction(abstractPlayer,this.block));
-        addToBot((AbstractGameAction)new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
+        addToBot(new SFXAction("Urias"));
+        addToBot(new VFXAction((AbstractGameEffect)new BatEffect(),0.1F));
+        addToBot(new GainBlockAction(abstractPlayer,this.block));
+        addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
         if (abstractPlayer.hasPower(EpitaphPower.POWER_ID)){
-            addToBot((AbstractGameAction)new DrawCardAction(2));
+            addToBot(new DrawCardAction(2));
         }else {
             if (abstractPlayer.hasPower(WrathPower.POWER_ID)){
-                addToBot((AbstractGameAction)new DrawCardAction(1));
+                addToBot(new DrawCardAction(1));
             }
             if (abstractPlayer.stance.ID.equals(Vengeance.STANCE_ID)){
-                addToBot((AbstractGameAction)new DrawCardAction(1));
+                addToBot(new DrawCardAction(1));
             }
         }
     }

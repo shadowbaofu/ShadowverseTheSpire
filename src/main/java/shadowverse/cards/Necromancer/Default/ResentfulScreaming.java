@@ -4,7 +4,6 @@ package shadowverse.cards.Necromancer.Default;
 import basemod.abstracts.CustomCard;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ExhaustAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
@@ -48,15 +47,15 @@ public class ResentfulScreaming extends CustomCard {
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         if ((UnlockTracker.betaCardPref.getBoolean(this.cardID, false)))
-            addToBot((AbstractGameAction) new SFXAction("ResentfulScreaming_L"));
+            addToBot(new SFXAction("ResentfulScreaming_L"));
         else
-            addToBot((AbstractGameAction) new SFXAction("ResentfulScreaming"));
+            addToBot(new SFXAction("ResentfulScreaming"));
         if (abstractMonster.hasPower("Artifact")) {
-            addToBot((AbstractGameAction) new RemoveSpecificPowerAction(abstractMonster, abstractPlayer, "Artifact"));
+            addToBot(new RemoveSpecificPowerAction(abstractMonster, abstractPlayer, "Artifact"));
         } else {
             for (AbstractPower pow : abstractMonster.powers) {
                 if (pow.type == AbstractPower.PowerType.BUFF && pow.ID != "Invincible" && pow.ID != "Mode Shift" && pow.ID != "Split" && pow.ID != "Unawakened" && pow.ID != "Life Link" && pow.ID != "Fading" && pow.ID != "Stasis" && pow.ID != "Minion" && pow.ID != "Shifting" && pow.ID != "shadowverse:chushouHealPower" && !(pow instanceof StrengthPower) && !(pow instanceof DexterityPower)) {
-                    addToBot((AbstractGameAction) new RemoveSpecificPowerAction(pow.owner, abstractPlayer, pow.ID));
+                    addToBot(new RemoveSpecificPowerAction(pow.owner, abstractPlayer, pow.ID));
                     break;
                 }
             }

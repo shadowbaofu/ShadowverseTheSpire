@@ -873,7 +873,7 @@
   },
   "shadowverse:IrongliderElf": {
     "NAME": "Ironglider Elf",
-    "DESCRIPTION": "Machina. NL Gain !B! Block. NL Put 2 random Machina cards from your draw pile into your hand."
+    "DESCRIPTION": "Machina. NL Gain !B! Block. NL Put 2 random Machina cards from your draw pile into your hand. NL Reduce their cost by 1 this turn."
   },
   "shadowverse:Cassiopeia": {
     "NAME": "Cassiopeia",

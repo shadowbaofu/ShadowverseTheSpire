@@ -3,6 +3,7 @@ package shadowverse.cards.Vampire.Bat;
 import basemod.abstracts.CustomCard;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.SelectCardsInHandAction;
 import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
+import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -38,6 +39,7 @@ public class FellTransformation
 
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
+        addToBot(new LoseHPAction(abstractPlayer,abstractPlayer,1));
         addToBot(new SelectCardsInHandAction(1, TEXT[0], false, false, card -> {
             return true;
         }, abstractCards -> {

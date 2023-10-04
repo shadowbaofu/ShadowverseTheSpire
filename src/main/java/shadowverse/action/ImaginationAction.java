@@ -15,7 +15,7 @@ public class ImaginationAction extends AbstractGameAction {
 
     @Override
     public void update() {
-        AbstractDungeon.actionManager.addToTop((AbstractGameAction)new WaitAction(0.4F));
+        AbstractDungeon.actionManager.addToTop((AbstractGameAction) new WaitAction(0.4F));
         tickDuration();
         if (this.isDone)
             for (AbstractCard c : DrawCardAction.drawnCards) {
@@ -23,7 +23,7 @@ public class ImaginationAction extends AbstractGameAction {
                     c.costForTurn = 0;
                     c.isCostModifiedForTurn = true;
                 }
-                if (upgraded && c.cost>0){
+                if (upgraded && c.cost > 0) {
                     c.cost = 0;
                     c.isCostModified = true;
                 }

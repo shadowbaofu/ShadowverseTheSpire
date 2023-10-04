@@ -27,6 +27,7 @@ import shadowverse.characters.Witchcraft;
    public PerjuryOfTruth() {
      super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Witchcraft.Enums.COLOR_BLUE, CardRarity.SPECIAL, CardTarget.ENEMY);
      this.exhaust = true;
+     this.isEthereal = true;
    }
  
    

@@ -48,19 +48,19 @@ import shadowverse.characters.Vampire;
      public void triggerOnExhaust() {
          for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
              if (!mo.isDeadOrEscaped()){
-                 addToBot((AbstractGameAction)new LoseHPAction(mo,AbstractDungeon.player,this.magicNumber));
+                 addToBot(new LoseHPAction(mo,AbstractDungeon.player,this.magicNumber));
              }
          }
      }
 
 
      public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
-       addToBot((AbstractGameAction)new SFXAction("ServantOfLust"));
-       addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-       addToBot((AbstractGameAction)new LoseHPAction(p,p,1));
+       addToBot(new SFXAction("ServantOfLust"));
+       addToBot(new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+       addToBot(new LoseHPAction(p,p,1));
        for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
            if (!mo.isDeadOrEscaped()){
-               addToBot((AbstractGameAction)new LoseHPAction(mo,p,this.magicNumber));
+               addToBot(new LoseHPAction(mo,p,this.magicNumber));
            }
        }
    }

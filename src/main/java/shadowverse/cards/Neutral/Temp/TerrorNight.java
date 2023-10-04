@@ -10,7 +10,6 @@ import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -49,7 +48,7 @@ public class TerrorNight extends CustomCard {
         if (this.hb.hovered)
             if (this.rotationTimer <= 0.0F) {
                 this.rotationTimer = 2.0F;
-                this.cardsToPreview = (AbstractCard)returnChoice().get(previewIndex).makeCopy();
+                this.cardsToPreview = returnChoice().get(previewIndex).makeCopy();
                 if (this.previewIndex == returnChoice().size() - 1) {
                     this.previewIndex = 0;
                 } else {
@@ -69,24 +68,24 @@ public class TerrorNight extends CustomCard {
 
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot((AbstractGameAction)new SFXAction("TerrorNight"));
+        addToBot(new SFXAction("TerrorNight"));
         int count = 0;
         for (AbstractCard c: AbstractDungeon.actionManager.cardsPlayedThisCombat){
             if (c.cardID==this.cardID)
                 count++;
         }
         if (count>1){
-            addToBot((AbstractGameAction)new SFXAction("ATTACK_HEAVY"));
-            addToBot((AbstractGameAction)new VFXAction((AbstractCreature)p, (AbstractGameEffect)new CleaveEffect(), 0.1F));
-            addToBot((AbstractGameAction)new DamageAllEnemiesAction((AbstractCreature)p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
+            addToBot(new SFXAction("ATTACK_HEAVY"));
+            addToBot(new VFXAction(p, (AbstractGameEffect)new CleaveEffect(), 0.1F));
+            addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
         }else {
-            addToBot((AbstractGameAction)new DiscardAction((AbstractCreature)p, (AbstractCreature)p, 3, false));
-            AbstractCard n = (AbstractCard)new NightmareTime();
-            AbstractCard b = (AbstractCard)new BloodyNail();
-            AbstractCard d = (AbstractCard)new DreadAura();
-            addToBot((AbstractGameAction)new MakeTempCardInHandAction(n));
-            addToBot((AbstractGameAction)new MakeTempCardInHandAction(b));
-            addToBot((AbstractGameAction)new MakeTempCardInHandAction(d));
+            addToBot(new DiscardAction(p, p, 3, false));
+            AbstractCard n = new NightmareTime();
+            AbstractCard b = new BloodyNail();
+            AbstractCard d = new DreadAura();
+            addToBot(new MakeTempCardInHandAction(n));
+            addToBot(new MakeTempCardInHandAction(b));
+            addToBot(new MakeTempCardInHandAction(d));
         }
     }
 

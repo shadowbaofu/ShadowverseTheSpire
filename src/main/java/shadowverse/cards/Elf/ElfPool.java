@@ -92,6 +92,9 @@ public class ElfPool extends AbstractBanPool {
         Default.addCard(new WardOfUnkilling());
         Default.addCard(new Yggdrasil());
         Default.addCard(new ZealotOfUnkilling());
+        Default.addCard(new SkySpirit());
+        Default.addCard(new RainOfArrows());
+        Default.addCard(new SaplingSteward());
         Fairy.addCard(new Aria());
         Fairy.addCard(new DivineSmithing());
         Fairy.addCard(new FairyCircle());
@@ -123,6 +126,7 @@ public class ElfPool extends AbstractBanPool {
         Long.addCard(new SkyDevouring());
         Long.addCard(new WindFall());
         Long.addCard(new Oberon());
+        Long.addCard(new FrostbornPrincess());
         NatMech.addCard(new AvatarOfFruition());
         NatMech.addCard(new Cleft());
         NatMech.addCard(new Damian());

@@ -61,34 +61,34 @@ public class Kyrzael extends CustomCard {
                 }
             }
             addToBot(new ApplyPowerAction(p, p, new MetallicizePower(p, amt), amt));
-            addToBot(new AbstractGameAction() {
-                @Override
-                public void update() {
-                    for (int i = 0; i < 2; i++) {
-                        AbstractCard tmp = cardsToPreview.makeStatEquivalentCopy();
-                        tmp.setCostForTurn(0);
-                        tmp.costForTurn = 0;
-                        tmp.isCostModified = true;
-                        tmp.exhaustOnUseOnce = true;
-                        tmp.exhaust = true;
-                        tmp.rawDescription += " NL " + TEXT + " 。";
-                        tmp.initializeDescription();
-                        tmp.applyPowers();
-                        tmp.lighten(true);
-                        tmp.setAngle(0.0F);
-                        tmp.drawScale = 0.12F;
-                        tmp.targetDrawScale = 0.75F;
-                        tmp.current_x = Settings.WIDTH / 2.0F;
-                        tmp.current_y = Settings.HEIGHT / 2.0F;
-                        p.hand.addToTop(tmp);
-                    }
-                    p.hand.refreshHandLayout();
-                    p.hand.applyPowers();
-                    this.isDone = true;
-                }
-            });
             trigger = true;
         }
+        addToBot(new AbstractGameAction() {
+            @Override
+            public void update() {
+                for (int i = 0; i < 2; i++) {
+                    AbstractCard tmp = cardsToPreview.makeStatEquivalentCopy();
+                    tmp.setCostForTurn(0);
+                    tmp.costForTurn = 0;
+                    tmp.isCostModified = true;
+                    tmp.exhaustOnUseOnce = true;
+                    tmp.exhaust = true;
+                    tmp.rawDescription += " NL " + TEXT + " 。";
+                    tmp.initializeDescription();
+                    tmp.applyPowers();
+                    tmp.lighten(true);
+                    tmp.setAngle(0.0F);
+                    tmp.drawScale = 0.12F;
+                    tmp.targetDrawScale = 0.75F;
+                    tmp.current_x = Settings.WIDTH / 2.0F;
+                    tmp.current_y = Settings.HEIGHT / 2.0F;
+                    p.hand.addToTop(tmp);
+                }
+                p.hand.refreshHandLayout();
+                p.hand.applyPowers();
+                this.isDone = true;
+            }
+        });
     }
 
 

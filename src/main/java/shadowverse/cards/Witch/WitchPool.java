@@ -93,6 +93,7 @@ public class WitchPool extends AbstractBanPool {
         Default.addCard(new VolunteerTestSubject());
         Default.addCard(new WardenOfTheArcane());
         Default.addCard(new Yukishima());
+        Default.addCard(new SeekerOfTruths());
         Academic.addCard(new Amaryllis());
         Academic.addCard(new Anne());
         Academic.addCard(new AnneAndGrea());
@@ -113,6 +114,8 @@ public class WitchPool extends AbstractBanPool {
         Chess.addCard(new MysticQueen());
         Chess.addCard(new TheFool());
         Chess.addCard(new UnleashTruth());
+        Chess.addCard(new Battery());
+        Chess.addCard(new Checkmate());
         Earth1.addCard(new AcidGolem());
         Earth1.addCard(new ArcticChimera());
         Earth1.addCard(new AstrologicalSorcerer());
@@ -123,6 +126,7 @@ public class WitchPool extends AbstractBanPool {
         Earth1.addCard(new OrichalcumGolem());
         Earth1.addCard(new PiousInstructor());
         Earth1.addCard(new WitchSnap());
+        Earth1.addCard(new UndyingWitch());
         Earth2.addCard(new Clarke());
         Earth2.addCard(new Erasmus());
         Earth2.addCard(new Faust());

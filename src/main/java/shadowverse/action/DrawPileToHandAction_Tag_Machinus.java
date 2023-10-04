@@ -46,9 +46,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
            tmp.shuffle();
            AbstractCard card = tmp.getBottomCard();
            if (card.cost > 0){
-             card.cost -= 1;
-             card.costForTurn -= 1;
-             card.isCostModified = true;
+             card.setCostForTurn(card.costForTurn-1);
            }
            tmp.removeCard(card);
            if (this.p.hand.size() == 10) {

@@ -873,7 +873,7 @@
   },
   "shadowverse:IrongliderElf": {
     "NAME": "铁扇精灵",
-    "DESCRIPTION": "机械 NL 获得 !B! 点 格挡 。 NL 将2张 机械 牌从抽牌堆加入到手中。"
+    "DESCRIPTION": "机械 NL 获得 !B! 点 格挡 。 NL 将2张 机械 牌从抽牌堆加入到手中，并使其本回合耗能-1。"
   },
   "shadowverse:Cassiopeia": {
     "NAME": "卡西欧佩亚",
@@ -4029,8 +4029,8 @@
   },
   "shadowverse:PerjuryOfTruth": {
     "NAME": "绝尽的伪证",
-    "DESCRIPTION": "使目标失去所有 力量 和 敏捷 。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION":"保留 。 NL 使目标失去所有 力量 和 敏捷 。 NL 消耗 。"
+    "DESCRIPTION": "使目标失去所有 力量 和 敏捷 。 NL 虚无 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"保留 。 NL 使目标失去所有 力量 和 敏捷 。 NL 虚无 。 NL 消耗 。"
   },
   "shadowverse:ShootOfUnkilling": {
     "NAME": "绝命的痛击",
@@ -5106,8 +5106,8 @@
   },
   "shadowverse:FellTransformation": {
     "NAME": "剧变为恶",
-    "DESCRIPTION": "消耗 1张手牌，增加1张 *丛林蝙蝠 到手中。",
-    "UPGRADE_DESCRIPTION": "消耗 1张手牌，增加1张 *丛林蝙蝠+ 到手中。"
+    "DESCRIPTION": "失去1点生命。 NL 消耗 1张手牌，增加1张 *丛林蝙蝠 到手中。",
+    "UPGRADE_DESCRIPTION": "失去1点生命。 NL 消耗 1张手牌，增加1张 *丛林蝙蝠+ 到手中。"
   },
   "shadowverse:MachSpeedMaron": {
     "NAME": "神速跑腿·玛萝",
@@ -6368,5 +6368,163 @@
     "NAME": "大海征服者·罗杰",
     "DESCRIPTION": "获得 [E] ，增加1张 *黄金之杯 到手中。 NL 虚无 。",
     "UPGRADE_DESCRIPTION":"获得 [E] ，增加1张 *黄金之杯 到手中。 NL 召唤1个 加农炮水手 。 NL 获得「打出 财宝牌 时，如果为本回合使用的第1张，获得 [E] 。如果为第2张，对全体敌人造成10点伤害。」 NL 虚无 。"
+  },
+  "shadowverse:DelugeOfArrows": {
+    "NAME": "箭雨狂澜",
+    "DESCRIPTION": "抽牌直到满7张。 NL 对全体敌人造成抽取卡牌的 !D! 倍伤害。"
+  },
+  "shadowverse:RainOfArrows": {
+    "NAME": "箭雨",
+    "DESCRIPTION": "融合 :非基础牌的精灵牌 NL 融合 时，如果一次融合6张以上， 融合变身 为 *箭雨狂澜 。 NL  NL --------------------- NL  NL 对全体敌人造成 !D! 点伤害。 NL 如果本回合已打出的卡牌数为2以上，伤害翻倍且额外抽1张牌。",
+    "UPGRADE_DESCRIPTION":"融合 :非基础牌的精灵牌 NL 融合 时，如果一次融合6张以上， 融合变身 为 *箭雨狂澜+ 。 NL  NL --------------------- NL  NL 对全体敌人造成 !D! 点伤害。 NL 如果本回合已打出的卡牌数为2以上，伤害翻倍且额外抽1张牌。"
+  },
+  "shadowverse:FrostbornPrincess": {
+    "NAME": "冰霜世纪的公主",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果本回合已打出的卡牌数为2以上，伤害翻倍。 NL 如果为4张以上，造成3倍伤害并增加1张 *进化点 到手中。 NL 如果为6张以上，消耗这张牌并将这张牌的复制品加入抽牌堆顶部。"
+  },
+  "shadowverse:SaplingSteward": {
+    "NAME": "繁荣的栽植者",
+    "DESCRIPTION": "破坏 2张牌，抽 !M! 张牌。 NL 造成 !D! 点伤害。"
+  },
+  "shadowverse:SoaringSpirit": {
+    "NAME": "乐园妖精·爱怡莉丝",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 手牌、抽牌堆、弃牌堆的所有牌在下次打出前耗能变为0。"
+  },
+  "shadowverse:SkySpirit": {
+    "NAME": "天空妖精·爱怡莉丝",
+    "DESCRIPTION": "保留 · 融合 :精灵牌1张 NL 融合 时，如果已融合3种类以上， 融合变身 为 *乐园妖精·爱怡莉丝 。 NL  NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 如果已融合，抽2张牌，使本回合已打出的卡牌数+2。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (已融合",
+      " 种。)"
+    ]
+  },
+  "shadowverse:Checkmate": {
+    "NAME": "将死",
+    "DESCRIPTION": "丢弃所有手牌，增加丢弃数量的 *奇幻士兵 到手中。",
+    "UPGRADE_DESCRIPTION":"丢弃所有手牌，增加丢弃数量+1的 *奇幻士兵 到手中。"
+  },
+  "shadowverse:Battery": {
+    "NAME": "炮台",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果手中有 *奇幻城堡 ，则增加1张 *奇幻士兵 到手中。"
+  },
+  "shadowverse:ScornerOfTruths": {
+    "NAME": "隐匿的贤者·米德洛",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 抽5张牌，使这些牌本回合耗能变为0。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"获得 !B! 点 格挡 。 NL 抽5张牌，使这些牌本场战斗耗能变为0。 NL 消耗 。"
+  },
+  "shadowverse:SeekerOfTruths": {
+    "NAME": "天理的隐者·米德洛",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 ",
+    "UPGRADE_DESCRIPTION":" 融合 :巫师牌 NL 融合 时，如果已融合5种类以上， 融合变身 为 *隐匿的贤者·米德洛 。  NL  NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 从抽牌堆选择1张巫师放入你的手牌。如果已 融合 ，则额外选择1张。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (已融合",
+      " 种。)"
+    ]
+  },
+  "shadowverse:UndyingWitch": {
+    "NAME": "永生的大魔女",
+    "DESCRIPTION": "造成 !D! 点伤害，获得1层土之印记。 NL 如果本场战斗已消耗的 土之印记 数量为7以上，获得「每回合1次，发动 土之秘术 时获得消耗 土之印 数量的能量」，增加1张 *进化点 和 *奇迹 到手中。",
+    "UPGRADE_DESCRIPTION":"造成 !D! 点伤害，获得1层土之印记。 NL 获得「每回合1次，发动 土之秘术 时获得消耗 土之印 数量的能量」。 NL 如果本场战斗已消耗的 土之印记 数量为7以上，增加1张 *进化点 和 *奇迹 到手中。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (已消耗 ",
+      " 层。)"
+    ]
+  },
+  "shadowverse:GallantDragonewt": {
+    "NAME": "流丽的龙人",
+    "DESCRIPTION": "武装 NL 造成 !D! 点伤害。 NL 增加1张 *龙武装甲 到手中。 NL 如果本场战斗已打出过4张以上的 武装 攻击牌，伤害翻倍并增加1张本场战斗中打出过的耗能最高的 武装 攻击牌到手中，赋予其 保留 和 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      " NL （已打出过",
+      "张 武装 攻击牌)"
+    ]
+  },
+  "shadowverse:GraveAdjudicator": {
+    "NAME": "全死否定者",
+    "DESCRIPTION": "造成 !D! 点伤害(受 !M! 倍 力量 影响)。 NL 打出时或被 消耗 时，获得 「不会受到 力量 和 敏捷 以外的负面效果影响。每当消耗攻击牌时，获得1点 力量 和 敏捷 」(这个效果打出时可叠加) NL 这张卡被 消耗 时，增加1张复制品到手中。"
+  },
+  "shadowverse:GraveVoidknight": {
+    "NAME": "万死否定者",
+    "DESCRIPTION": "融合 :死灵术士牌 NL 融合 时，如果已融合2种类以下， 死灵术 4:从抽牌堆中随机将1张带有 谢幕曲 的卡牌加入手中。3种类以上， 融合变身 为 *全死否定者 。  NL  NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 死灵术 4:增加1张 *进化点 到手中，造成 !D! 点伤害。",
+    "UPGRADE_DESCRIPTION":" 融合 :死灵术士牌 NL 融合 时，如果已融合2种类以下， 死灵术 4:从抽牌堆中随机将1张带有 谢幕曲 的卡牌加入手中。3种类以上， 融合变身 为 *全死否定者+ 。  NL  NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 死灵术 4:增加1张 *进化点 到手中，造成 !D! 点伤害。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (已融合",
+      " 种。)"
+    ]
+  },
+  "shadowverse:HeartRadiance": {
+    "NAME": "生命耀光",
+    "DESCRIPTION": "增加5张原本耗能为1的死灵术士攻击牌到手中，并使其本回合耗能变为0。 NL 消耗 所有手牌，每消耗1张获得 !B! 点 格挡 。 NL 消耗 。"
+  },
+  "shadowverse:SoulLight": {
+    "NAME": "灵魂辉光",
+    "DESCRIPTION": "融合 :非基础牌的死灵术士牌 NL 融合 时，如果一次融合2张以上， 融合变身 为 *生命耀光 。 NL  NL --------------------- NL  NL 抽 !M! 张牌。 NL 如果已 融合 ，对全体敌人造成 !D! 点伤害。"
+  },
+  "shadowverse:HowToTrainYourWolf": {
+    "NAME": "养育血族",
+    "DESCRIPTION": "增加1张 *进化点 和 *奇迹 到手中。 NL 因自己失去的生命转变为0。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"增加1张 *进化点 和 *奇迹 到手中。 NL 因自己失去的生命转变为0。"
+  },
+  "shadowverse:HowToTrainYourBat": {
+    "NAME": "饲育从魔",
+    "DESCRIPTION": "狂乱 则可以发动 融合 。 NL 融合 :非基础牌 NL 融合变身 为 *养育血族 。 NL  NL --------------------- NL  NL 失去1点生命，抽 !M! 张牌。 NL 下回合开始时，失去1点生命，额外抽1张牌。"
+  },
+  "shadowverse:Companions": {
+    "NAME": "幽暗狩猎者·黎昂&艾尔弗",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得1层 人工制品 、 残影 、 免疫能力伤害 ，3层 火焰屏障 。 NL 下回合开始，如果 格挡 没有完全消失，对随机敌人造成 !B! 点伤害。 "
+  },
+  "shadowverse:Hunters": {
+    "NAME": "日暮猎人·黎昂&艾尔弗",
+    "DESCRIPTION": "消耗堆中的 *进化点 为5张以上则可以发动 融合 。 NL 融合 :非基础牌 NL 融合变身 为 *养育血族 。 NL  NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 获得1层火焰屏障。 NL 打出 *进化点 时， 升级 这张牌并增加1张 *进化点 到手中。",
+    "UPGRADE_DESCRIPTION": "消耗堆中的 *进化点 为5张以上则可以发动 融合 。 NL 融合 :非基础牌 NL 融合变身 为 *养育血族 。 NL  NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 获得3层火焰屏障。 NL 打出后解除 升级 。"
+  },
+  "shadowverse:TanzaniteConvictor": {
+    "NAME": "坦桑石定罪者",
+    "DESCRIPTION": "造成 !D! 点伤害(受 !M! 倍 力量 影响)。 NL 本回合结束时，自己和全体敌人回复1点生命。 NL 本回合限1次，获得 力量 或 敏捷 时，获得1层 人工制品 。"
+  },
+  "shadowverse:SeraphsOfTheTrueKey": {
+    "NAME": "盟约的炽天使",
+    "DESCRIPTION": "造成 !D! 点伤害，获得 !B! 点 格挡 。 NL 在你的护符栏位置入本场战斗打出过的拥有 倒计时 的护符直到满为止。 NL 赋予这些护符「 圣祝 · 倒计时 结束时，对全体敌人造成10点伤害，获得4点格挡」效果。 NL 谢幕曲 :打出后下回合开始时使所有护符 倒计时 减少10。"
+  },
+  "shadowverse:AngelsOfTheCovenant": {
+    "NAME": "契约的双天使",
+    "DESCRIPTION": "如果本场战斗已触发护符数量位10以上则可以发动 融合 。 NL 融合 :主教牌 NL 融合变身 为 *盟约的炽天使 。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL 选择1张护符减少1 倒计时 ,如果因此触发护符，则这张牌不进入弃牌堆。",
+    "UPGRADE_DESCRIPTION":"如果本场战斗已触发护符数量位10以上则可以发动 融合 。 NL 融合 :主教牌 NL 融合变身 为 *盟约的炽天使+ 。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL 选择1张护符减少1 倒计时 ,如果因此触发护符，则这张牌不进入弃牌堆。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (已触发",
+      "  张。)"
+    ]
+  },
+  "shadowverse:PurelightExemplarPower": {
+    "NAME": "纯真的模范·阿纪尔",
+    "DESCRIPTION": "创造物 NL 每当打出 创造物 牌时，如果为本回合打出的第1、3、5张，则抽1张牌。第2、4、6张则获得 [E] 。"
+  },
+  "shadowverse:PurelightPrototype": {
+    "NAME": "至纯的原型·阿纪尔",
+    "DESCRIPTION": "创造物 · 融合 :非基础牌的复仇者牌 NL 融合 时，如果消耗堆的 创造物 牌数量为5以下，增加2张 *解析的创造物 到抽牌堆中。如果为6以上， 融合变身 为 *纯真的模范·阿纪尔 。 NL 造成 !D! 点伤害。 NL 从抽牌堆中随机加入 !M! 张 创造物 牌 到手中。"
+  },
+  "shadowverse:DisseminatorOfWisdom": {
+    "NAME": "知性惠施者",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 抽 !M! 张牌。 NL 使手中所有 创造物 牌本回合耗能-1。"
+  },
+  "shadowverse:SyntheticEden": {
+    "NAME": "人造乐园",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 共鸣 则抽4张牌，并使这些牌本回合耗能-1。 NL 非 共鸣 则对全体敌人造成 !D! 点伤害。 NL 消耗 。"
+  },
+  "shadowverse:BlazingBarrage": {
+    "NAME": "炽焰连珠",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 下一次受到的伤害变为0。 NL 消耗 。"
+  },
+  "shadowverse:FieryBarrage": {
+    "NAME": "烈火连珠",
+    "DESCRIPTION": "共鸣 则可以发动 融合 。 NL 融合 :非基础牌的复仇者牌 NL 融合变身 为 *炽焰连珠 。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL  使目标失去一种 力量 和 敏捷 以外的正面效果(优先失去 人工制品 )。",
+    "UPGRADE_DESCRIPTION": "共鸣 则可以发动 融合 。 NL 融合 :非基础牌的复仇者牌 NL 融合变身 为 *炽焰连珠+ 。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL  使目标失去一种 力量 和 敏捷 以外的正面效果(优先失去 人工制品 )。"
+  },
+  "shadowverse:GoddessOfCondemnation": {
+    "NAME": "怜爱的支配者",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 全体敌人失去5点 力量 和 敏捷 。 NL 最大生命值增加5点。 NL 消耗 。"
+  },
+  "shadowverse:GoddessOfCompassion": {
+    "NAME": "慈爱的支配者",
+    "DESCRIPTION": "融合 :无色牌或技能牌或能力牌 NL 融合 时，如果已融合3种类以上， 融合变身 为 *怜爱的支配者 。 NL  NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 全体敌人失去2点 力量 和 敏捷 。 NL 如果已 融合 ，则获得3点 觉醒值 。 NL 消耗 。"
   }
 }

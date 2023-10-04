@@ -8,7 +8,6 @@ import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.tempCards.Shiv;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -58,15 +57,15 @@ public class OmenOfTruth
         switch (chosenBranch()){
             case 0:
                 AbstractDungeon.effectsQueue.add(new SpotlightPlayerEffect());
-                addToBot((AbstractGameAction) new SpellBoostAction(abstractPlayer, (AbstractCard) this, AbstractDungeon.player.drawPile.group));
-                addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) abstractPlayer, (AbstractCreature) abstractPlayer, (AbstractPower) new StrengthPower((AbstractCreature) abstractPlayer, 1), 1));
-                addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) abstractPlayer, (AbstractCreature) abstractPlayer, (AbstractPower) new DexterityPower((AbstractCreature) abstractPlayer, 1), 1));
-                addToBot((AbstractGameAction) new MakeTempCardInHandAction((AbstractCard) new Shiv(), 1));
-                addToBot((AbstractGameAction) new SFXAction("OmenOfTruth"));
+                addToBot(new SpellBoostAction(abstractPlayer, this, AbstractDungeon.player.drawPile.group));
+                addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new StrengthPower(abstractPlayer, 1), 1));
+                addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new DexterityPower(abstractPlayer, 1), 1));
+                addToBot(new MakeTempCardInHandAction(new Shiv(), 1));
+                addToBot(new SFXAction("OmenOfTruth"));
                 break;
             case 1:
                 AbstractDungeon.effectsQueue.add(new SpotlightPlayerEffect());
-                addToBot((AbstractGameAction) new SFXAction("OmenOfTruth2"));
+                addToBot(new SFXAction("OmenOfTruth2"));
                 for (AbstractCard c:abstractPlayer.drawPile.group){
                     if (c.cost>0){
                         c.freeToPlayOnce = true;
@@ -78,7 +77,7 @@ public class OmenOfTruth
 
 
     public AbstractCard makeCopy() {
-        return (AbstractCard) new OmenOfTruth();
+        return new OmenOfTruth();
     }
 
     @Override

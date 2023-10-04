@@ -2,7 +2,6 @@
 
  import basemod.abstracts.CustomCard;
  import com.evacipated.cardcrawl.mod.stslib.actions.common.MoveCardsAction;
- import com.megacrit.cardcrawl.actions.AbstractGameAction;
  import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
  import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
  import com.megacrit.cardcrawl.actions.common.ReduceCostForTurnAction;
@@ -40,16 +39,16 @@
  
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-       addToBot((AbstractGameAction)new SFXAction("UnleashTruth"));
-       addToBot((AbstractGameAction)new GainEnergyAction(1));
-       addToBot((AbstractGameAction)new MoveCardsAction(abstractPlayer.hand,abstractPlayer.drawPile,card ->
+       addToBot(new SFXAction("UnleashTruth"));
+       addToBot(new GainEnergyAction(1));
+       addToBot(new MoveCardsAction(abstractPlayer.hand,abstractPlayer.drawPile,card ->
                card.color == Witchcraft.Enums.COLOR_BLUE,abstractCards -> {
            for (AbstractCard c:abstractCards){
                if (c.cost>=3){
-                   addToBot((AbstractGameAction)new ReduceCostForTurnAction(c,1));
+                   addToBot(new ReduceCostForTurnAction(c,1));
                }
                if (c instanceof OmenOfTruth && ((OmenOfTruth) c).chosenBranch()==1){
-                   addToBot((AbstractGameAction)new MakeTempCardInHandAction(new PerjuryOfTruth()));
+                   addToBot(new MakeTempCardInHandAction(new PerjuryOfTruth()));
                }
            }
        }));

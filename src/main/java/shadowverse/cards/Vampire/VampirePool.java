@@ -139,6 +139,7 @@ public class VampirePool  extends AbstractBanPool {
         Evolve.addCard(new Yuzuki());
         Evolve.addCard(new Gadel());
         Evolve.addCard(new Doublame());
+        Evolve.addCard(new Hunters());
         NatMech.addCard(new ArmoredBat());
         NatMech.addCard(new CorruptedBat());
         NatMech.addCard(new CreepingMadness());
@@ -161,6 +162,7 @@ public class VampirePool  extends AbstractBanPool {
         Self.addCard(new ApostleOfLust());
         Self.addCard(new ServantOfLust());
         Self.addCard(new TheBerserker());
+        Self.addCard(new HowToTrainYourBat());
         Wrath.addCard(new AntelopeWarrior());
         Wrath.addCard(new EvilEyeDemon());
         Wrath.addCard(new OmenOfLust());

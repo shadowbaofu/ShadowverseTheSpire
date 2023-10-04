@@ -1,6 +1,5 @@
 package shadowverse.cards.Vampire.Self;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.actions.utility.DiscardToHandAction;
@@ -45,14 +44,14 @@ public class Flauros
 
     @Override
     public void triggerOnExhaust() {
-        addToBot((AbstractGameAction)new HealAction(AbstractDungeon.player,AbstractDungeon.player,this.magicNumber));
+        addToBot(new HealAction(AbstractDungeon.player,AbstractDungeon.player,this.magicNumber));
     }
 
 
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new SFXAction("Flauros"));
-        addToBot((AbstractGameAction)new GainBlockAction(p,this.block));
-        addToBot((AbstractGameAction)new HealAction(p,p,this.magicNumber));
+        addToBot(new SFXAction("Flauros"));
+        addToBot(new GainBlockAction(p,this.block));
+        addToBot(new HealAction(p,p,this.magicNumber));
     }
 
     @Override
@@ -61,7 +60,7 @@ public class Flauros
     }
 
     public AbstractCard makeCopy() {
-        return (AbstractCard) new Flauros();
+        return new Flauros();
     }
 
     @Override
@@ -70,20 +69,20 @@ public class Flauros
             if (AbstractDungeon.player instanceof AbstractShadowversePlayer){
                 if (((AbstractShadowversePlayer) AbstractDungeon.player).wrathThisTurn>=4 && dupCheck){
                     dupCheck = false;
-                    if (AbstractDungeon.player.discardPile.contains((AbstractCard)this)) {
-                        addToBot((AbstractGameAction)new WaitAction(0.4F));
-                        addToBot((AbstractGameAction)new DiscardToHandAction((AbstractCard)this));
-                        addToBot((AbstractGameAction)new WaitAction(0.4F));
-                        addToBot((AbstractGameAction)new SFXAction("Flauros"));
-                        addToBot((AbstractGameAction)new GainBlockAction(AbstractDungeon.player,this.baseBlock));
-                        addToBot((AbstractGameAction)new HealAction(AbstractDungeon.player,AbstractDungeon.player,this.magicNumber));
-                    } else if (AbstractDungeon.player.drawPile.contains((AbstractCard)this)) {
-                        addToBot((AbstractGameAction)new WaitAction(0.4F));
-                        addToBot((AbstractGameAction)new InvocationAction(this));
-                        addToBot((AbstractGameAction)new WaitAction(0.4F));
-                        addToBot((AbstractGameAction)new SFXAction("Flauros"));
-                        addToBot((AbstractGameAction)new GainBlockAction(AbstractDungeon.player,this.baseBlock));
-                        addToBot((AbstractGameAction)new HealAction(AbstractDungeon.player,AbstractDungeon.player,this.magicNumber));
+                    if (AbstractDungeon.player.discardPile.contains(this)) {
+                        addToBot(new WaitAction(0.4F));
+                        addToBot(new DiscardToHandAction(this));
+                        addToBot(new WaitAction(0.4F));
+                        addToBot(new SFXAction("Flauros"));
+                        addToBot(new GainBlockAction(AbstractDungeon.player,this.baseBlock));
+                        addToBot(new HealAction(AbstractDungeon.player,AbstractDungeon.player,this.magicNumber));
+                    } else if (AbstractDungeon.player.drawPile.contains(this)) {
+                        addToBot(new WaitAction(0.4F));
+                        addToBot(new InvocationAction(this));
+                        addToBot(new WaitAction(0.4F));
+                        addToBot(new SFXAction("Flauros"));
+                        addToBot(new GainBlockAction(AbstractDungeon.player,this.baseBlock));
+                        addToBot(new HealAction(AbstractDungeon.player,AbstractDungeon.player,this.magicNumber));
                     }
                 }
             }

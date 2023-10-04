@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.vfx.combat.LightFlareParticleEffect;
 import shadowverse.cards.AbstractNoCountDownAmulet;
+import shadowverse.cards.Bishop.Evil.SkullFane;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.orbs.AmuletOrb;
 
@@ -59,7 +60,7 @@ public class SkullFaneAccAction extends AbstractGameAction {
         }
         if (!this.retrieveCard) {
             if (AbstractDungeon.cardRewardScreen.discoveryCard != null) {
-                if (AbstractDungeon.player instanceof AbstractShadowversePlayer){
+                if (AbstractDungeon.player instanceof AbstractShadowversePlayer && skullFane instanceof SkullFane){
                     ((AbstractShadowversePlayer) AbstractDungeon.player).skullFaneAccCount++;
                 }
                 AbstractCard disCard = AbstractDungeon.cardRewardScreen.discoveryCard;

@@ -109,11 +109,11 @@ public class BishopPool extends AbstractBanPool {
         Amulet2.addCard(new Jatelant());
         Amulet2.addCard(new Saren(0));
         Amulet2.addCard(new Selena());
-        Amulet2.addCard(new SkullFane());
         Amulet2.addCard(new HolyLightningBird());
         Amulet2.addCard(new PinionPrayer());
         Amulet2.addCard(new JudgmentSpearMaster());
         Amulet2.addCard(new JewelShine());
+        Amulet2.addCard(new AngelsOfTheCovenant());
         Evil.addCard(new AllFeeling());
         Evil.addCard(new DarkOffering());
         Evil.addCard(new DirtyPriest());
@@ -124,6 +124,7 @@ public class BishopPool extends AbstractBanPool {
         Evil.addCard(new TempleOfHeresy());
         Evil.addCard(new TheUntrueGod());
         Evil.addCard(new Tribunal());
+        Evil.addCard(new SkullFane());
         MechLion.addCard(new IronknuckleNun());
         MechLion.addCard(new Limonia());
         MechLion.addCard(new LionCrystal());
@@ -144,6 +145,7 @@ public class BishopPool extends AbstractBanPool {
         Recover1.addCard(new QueenOfHope());
         Recover1.addCard(new Tenko());
         Recover1.addCard(new WhitefangTemple());
+        Recover1.addCard(new TanzaniteConvictor());
         Recover2.addCard(new AgentOfTheCommandments());
         Recover2.addCard(new Elluvia());
         Recover2.addCard(new Erralde());

@@ -873,11 +873,11 @@
   },
   "shadowverse:IrongliderElf": {
     "NAME": "鉄扇のエルフ",
-    "DESCRIPTION": "機械 。 NL !B! ブロック を得る。 NL 山札からランダムに 機械 カード2枚を手札にる。"
+    "DESCRIPTION": "機械 。 NL !B! ブロック を得る。 NL 山札からランダムに 機械 カード2枚を手札に加え、それらのコストをこのターンだけ-1する。"
   },
   "shadowverse:Cassiopeia": {
     "NAME": "カシオペア",
-    "DESCRIPTION": "ランダムな敵に !D! 与える。 NL これを自分の他の手札の枚数だけ行う。"
+    "DESCRIPTION": "ランダムな敵に !D! 与える。 NL これを他の手札の数と同じ回数行う。"
   },
   "shadowverse:Loxis": {
     "NAME": "開拓のロデオガイ・ロキサス",
@@ -4029,8 +4029,8 @@
   },
   "shadowverse:PerjuryOfTruth": {
     "NAME": "絶尽の偽証",
-    "DESCRIPTION": "敵は 筋力 と 敏捷性 をすべて失う。 NL 廃棄 。",
-    "UPGRADE_DESCRIPTION":"保留 。 NL 敵は 筋力 と 敏捷性 をすべて失う。 NL 廃棄 。"
+    "DESCRIPTION": "敵は 筋力 と 敏捷性 をすべて失う。 NL エセリアル 。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION":"保留 。 NL 敵は 筋力 と 敏捷性 をすべて失う。 NL エセリアル 。 NL 廃棄 。"
   },
   "shadowverse:ShootOfUnkilling": {
     "NAME": "絶命の痛撃",
@@ -5110,8 +5110,8 @@
   },
   "shadowverse:FellTransformation": {
     "NAME": "邪悪への変貌",
-    "DESCRIPTION": "手札1枚を廃棄し、 *フォレストバット 1枚を手札に加える。",
-    "UPGRADE_DESCRIPTION": "手札1枚を廃棄し、 *フォレストバット+ 1枚を手札に加える。"
+    "DESCRIPTION": "HPを1失う。 NL 手札1枚を廃棄し、 *フォレストバット 1枚を手札に加える。",
+    "UPGRADE_DESCRIPTION": "HPを1失う。 NL 手札1枚を廃棄し、 *フォレストバット+ 1枚を手札に加える。"
   },
   "shadowverse:MachSpeedMaron": {
     "NAME": "韋駄天のパシリ・マロン",

@@ -48,7 +48,7 @@ public class SeraphLapis extends AbstractAmuletCard {
 
     @Override
     public void onEvoke(AmuletOrb paramOrb) {
-        addToBot((AbstractGameAction)new SFXAction("SeraphLapis"));
+        addToBot(new SFXAction("SeraphLapis"));
         boolean isKMR = false;
         for (AbstractMonster m : (AbstractDungeon.getMonsters()).monsters) {
             if (m instanceof KMR){
@@ -58,23 +58,23 @@ public class SeraphLapis extends AbstractAmuletCard {
         if (isKMR&&(AbstractDungeon.getCurrRoom()).cannotLose){
             for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
                 if (!mo.isDeadOrEscaped()) {
-                    addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new GrandFinalEffect()));
-                    addToBot((AbstractGameAction)new JudgementAction((AbstractCreature)mo, 99999));
+                    addToBot(new VFXAction(new GrandFinalEffect()));
+                    addToBot(new JudgementAction(mo, 99999));
                 }
             }
         }else {
-            addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new BorderFlashEffect(Color.GOLDENROD, true)));
-            addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new MiracleEffect()));
-            addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new GrandFinalEffect(), 0.9F));
+            addToBot(new VFXAction(new BorderFlashEffect(Color.GOLDENROD, true)));
+            addToBot(new VFXAction(new MiracleEffect()));
+            addToBot(new VFXAction(new GrandFinalEffect(), 0.9F));
             (AbstractDungeon.getCurrRoom()).cannotLose = false;
             CardCrawlGame.screenShake.rumble(4.0F);
             for (AbstractMonster m : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
                 if (m.isEscaping || m.isDead)
                     continue;
                 m.useFastShakeAnimation(5.0F);
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new CanLoseAction());
-                AbstractDungeon.actionManager.addToTop((AbstractGameAction)new HideHealthBarAction((AbstractCreature)m));
-                AbstractDungeon.actionManager.addToTop((AbstractGameAction)new SuicideAction(m));
+                AbstractDungeon.actionManager.addToBottom(new CanLoseAction());
+                AbstractDungeon.actionManager.addToTop(new HideHealthBarAction(m));
+                AbstractDungeon.actionManager.addToTop(new SuicideAction(m));
             }
         }
     }

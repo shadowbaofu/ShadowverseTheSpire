@@ -3,7 +3,6 @@
 
 
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
@@ -30,9 +29,9 @@ import java.util.Collections;
    public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
    private static ArrayList<AbstractCard> getRideCard(){
      ArrayList<AbstractCard> list = new ArrayList<AbstractCard>();
-     list.add((AbstractCard)new Horse());
-     list.add((AbstractCard)new Motorbike());
-     list.add((AbstractCard)new Jeep());
+     list.add(new Horse());
+     list.add(new Motorbike());
+     list.add(new Jeep());
      return list;
    }
    private ArrayList<AbstractCard> usedRideCard = getRideCard();
@@ -55,11 +54,11 @@ import java.util.Collections;
    public void onPlayCard(AbstractCard card, AbstractMonster m) {
      if (card.type == AbstractCard.CardType.POWER){
        if (usedRideCard.size()!=0){
-         addToBot((AbstractGameAction)new SFXAction("LoxisPower1"));
-         addToBot((AbstractGameAction)new GainEnergyAction(1));
+         addToBot(new SFXAction("LoxisPower1"));
+         addToBot(new GainEnergyAction(1));
          Collections.shuffle(usedRideCard);
-         addToBot((AbstractGameAction)new SFXAction("LoxisPower2"));
-         addToBot((AbstractGameAction)new MakeTempCardInHandAction(usedRideCard.get(0),1));
+         addToBot(new SFXAction("LoxisPower2"));
+         addToBot(new MakeTempCardInHandAction(usedRideCard.get(0),1));
          usedRideCard.remove(0);
        }
      }

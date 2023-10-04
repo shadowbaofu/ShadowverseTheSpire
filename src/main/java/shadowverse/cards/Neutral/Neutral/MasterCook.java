@@ -1,11 +1,9 @@
 package shadowverse.cards.Neutral.Neutral;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -38,9 +36,9 @@ public class MasterCook extends AbstractNeutralCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new SFXAction("MasterCook"));
-        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new GainBlockAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, this.block));
-        addToBot((AbstractGameAction) new DrawCardAction(1));
+        addToBot(new SFXAction("MasterCook"));
+        addToBot(new GainBlockAction(abstractPlayer, abstractPlayer, this.block));
+        addToBot( new DrawCardAction(1));
         AbstractDungeon.player.increaseMaxHp(this.magicNumber, true);
     }
 }

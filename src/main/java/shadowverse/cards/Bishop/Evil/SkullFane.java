@@ -1,4 +1,4 @@
-package shadowverse.cards.Bishop.Amulet2;
+package shadowverse.cards.Bishop.Evil;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;

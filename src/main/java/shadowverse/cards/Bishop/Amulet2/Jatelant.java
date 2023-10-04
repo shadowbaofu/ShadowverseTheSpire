@@ -24,7 +24,6 @@ public class Jatelant
 
     public Jatelant() {
         super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.RARE, CardTarget.SELF);
-        this.exhaust = true;
         this.baseMagicNumber = 7;
         this.magicNumber = this.baseMagicNumber;
         this.baseDamage = 10;
@@ -54,9 +53,9 @@ public class Jatelant
     }
 
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new SFXAction("Jatelant"));
+        addToBot(new SFXAction("Jatelant"));
         AbstractDungeon.effectList.add(new BetterRainingGoldEffect(this.magicNumber * 2, true));
-        addToBot((AbstractGameAction)new JatelantAction(this.multiDamage,this.damageTypeForTurn,this.magicNumber));
+        addToBot(new JatelantAction(this.multiDamage,this.damageTypeForTurn,this.magicNumber));
     }
 
 

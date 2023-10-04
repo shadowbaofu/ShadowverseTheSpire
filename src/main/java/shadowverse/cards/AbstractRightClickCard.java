@@ -42,7 +42,7 @@ public abstract class AbstractRightClickCard extends AbstractNeutralCard {
             return;
         }else {
             if (this.RclickStart && InputHelper.justReleasedClickRight) {
-                if (this.hb.hovered) {
+                if (this.isHoveredInHand(1.0f)) {
                     this.Rclick = true;
                 }
                 this.RclickStart = false;

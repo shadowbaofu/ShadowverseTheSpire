@@ -4919,9 +4919,9 @@
   },
   "shadowverse:WardenOfTheWings": {
     "NAME": "Warden of the Wings",
-    "DESCRIPTION": "Condemned NL Deal !D! Damage. NL Put a random 1-cost card with Countdown from your draw pile into your hand. NL If 5 or more Amulets triggered during this combat, gain 1 Energy. ",
+    "DESCRIPTION": "Condemned NL Deal !D! Damage. NL Put a random 1-cost card with Countdown from your draw pile into your hand. NL If 5 or more Amulets were destroyed this combat, gain 1 Energy. ",
     "EXTENDED_DESCRIPTION": [
-      " NL (Amulets triggered: ",
+      " NL (Amulets destroyed: ",
       " ."
     ]
   },
@@ -6371,7 +6371,7 @@
   },
   "shadowverse:FlameNGlass3": {
     "NAME": "Flame and Glass, United",
-    "DESCRIPTION": "Deal !D! Damage. Gain !B! Block. NL Last Words: When this card is Exhausted, gain 1 Flame and Glass. "
+    "DESCRIPTION": "Deal !D! damage. Gain !B! Block. NL Last Words: When this card is Exhausted, gain 1 Flame and Glass. "
   },
   "shadowverse:Rogers": {
     "NAME": "Rogers, Ruler Of The Seas",
@@ -6496,10 +6496,10 @@
   },
   "shadowverse:AngelsOfTheCovenant": {
     "NAME": "Angels of the Covenant",
-    "DESCRIPTION": "Can only be fused if 10 or more Amulets were triggered. NL Fusion: Havencraft cards. NL If cards are fused to this card, it becomes *Seraphs *of *the *True *Key. NL  NL --------------------- NL  NL Deal !D! damage. NL Subtract 1 from the Countdown of an Amulet. If it is triggered, return this card to your hand.",
-    "UPGRADE_DESCRIPTION": "Can only be fused if 10 or more Amulets were triggered. NL Fusion: Havencraft cards. NL If cards are fused to this card, it becomes *Seraphs *of *the *True *Key. NL  NL --------------------- NL  NL Deal !D! damage. NL Subtract 1 from the Countdown of an Amulet. If it is triggered, return this card to your hand.",
+    "DESCRIPTION": "Can only be fused if 10 or more Amulets were destroyed. NL Fusion: Havencraft cards. NL If cards are fused to this card, it becomes *Seraphs *of *the *True *Key. NL  NL --------------------- NL  NL Deal !D! damage. NL Subtract 1 from the Countdown of an Amulet. If it is destroyed, return this card to your hand.",
+    "UPGRADE_DESCRIPTION": "Can only be fused if 10 or more Amulets were destroyed. NL Fusion: Havencraft cards. NL If cards are fused to this card, it becomes *Seraphs *of *the *True *Key. NL  NL --------------------- NL  NL Deal !D! damage. NL Subtract 1 from the Countdown of an Amulet. If it is destroyed, return this card to your hand.",
     "EXTENDED_DESCRIPTION": [
-      " NL (Triggered",
+      " NL (Destroyed",
       " Amulets. )"
     ]
   },

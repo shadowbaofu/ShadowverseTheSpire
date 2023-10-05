@@ -6377,5 +6377,164 @@
     "NAME": "Rogers, Ruler Of The Seas",
     "DESCRIPTION": "Gain 1 Energy. Add 1 *Gilded *Goblet to your hand. NL Ethereal.",
     "UPGRADE_DESCRIPTION":"Gain 1 Energy. Add 1 *Gilded *Goblet to your hand. NL Summon a Cannoneer. NL Whenever you play a Loot card, if it's the first one this turn, gain 1 energy. If it's the second one, deal 10 damage to all enemies. NL Ethereal."
+  },
+  "shadowverse:DelugeOfArrows": {
+    "NAME": "Deluge of Arrows",
+    "DESCRIPTION": "Draw until you have 7 cards. NL Deal !D! damage to all enemies for each card drawn."
+  },
+  "shadowverse:RainOfArrows": {
+    "NAME": "Rain of Arrows",
+    "DESCRIPTION": "Fusion: Forestcraft non-basic cards. NL If at least 6 cards were fused at once, this card becomes *Deluge *of *Arrows. NL  NL --------------------- NL  NL Deal !D! damage to all enemies. NL If at least 2 other cards were played this turn, double the damage and draw a card.",
+    "UPGRADE_DESCRIPTION": "Fusion: Forestcraft non-Basic cards. NL If at least 6 cards were fused at once, this card becomes *Deluge *of *Arrows+. NL  NL --------------------- NL  NL Deal !D! damage to all enemies. NL If at least 2 other cards were played this turn, double the damage and draw a card."
+  },
+  "shadowverse:FrostbornPrincess": {
+    "NAME": "Frostborn Princess",
+    "DESCRIPTION": "Deal !D! damage. NL If at least 2 other cards were played this turn, double the damage. NL If at least 4 other, triple the damage and put an *Evolution *Point in your hand. NL If at least 6 other, exhaust this card and add a copy to the top of your draw pile."
+  },
+  "shadowverse:SaplingSteward": {
+    "NAME": "Sapling Steward",
+    "DESCRIPTION": "Destroy 2 cards and draw !M! cards. NL Deal !D! damage."
+  },
+  "shadowverse:SoaringSpirit": {
+    "NAME": "Iris, Soaring Spirit",
+    "DESCRIPTION": "Gain !B! Block. NL All cards cost 0 until played."
+  },
+  "shadowverse:SkySpirit": {
+    "NAME": "Iris, Sky Spirit",
+    "DESCRIPTION": "Retain - Fusion: 1 Forestcraft card. NL If a third card was fused to this card, it becomes *Iris, *Soaring *Spirit. NL  NL --------------------- NL  NL Gain !B! Block. NL If cards were fused to this card, draw 2 cards and add 2 to the number of cards played this turn.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Fused",
+      " cards. )"
+    ]
+  },
+  "shadowverse:Checkmate": {
+    "NAME": "Checkmate",
+    "DESCRIPTION": "Chess. Discard your hand, add 1 *Magical *Pawn to your hand for each card discarded.",
+    "UPGRADE_DESCRIPTION": "Chess. Discard your hand, add a *Magical *Pawn to your hand for each card discarded +1."
+  },
+  "shadowverse:Battery": {
+    "NAME": "Battery",
+    "DESCRIPTION": "Chess. Deal !D! damage. NL If *Magical *Rook is in your hand, add a *Magical *Pawn to your hand."
+  },
+  "shadowverse:ScornerOfTruths": {
+    "NAME": "Midelo, Scorner of Truths",
+    "DESCRIPTION": "Gain !B! Block. NL Draw 5 cards. They cost 0 this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Draw 5 cards. They cost 0 this combat. NL Exhaust."
+  },
+  "shadowverse:SeekerOfTruths": {
+    "NAME": "Midelo, Seeker of Truths",
+    "DESCRIPTION": "Gain !B! Block.",
+    "UPGRADE_DESCRIPTION": " Fusion: Runecraft cards. NL If at least 5 cards are fused, it becomes *Midelo, *Scorner *Of *Truths. NL  NL --------------------- NL  NL Gain !B! Block. NL Put a Runecraft card from the draw pile to your hand. Repeat if cards were fused to this card.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Fused",
+      " cards. )"
+    ]
+  },
+  "shadowverse:UndyingWitch": {
+    "NAME": "Undying Witch",
+    "DESCRIPTION": "Deal !D! damage. Gain 1 Earth Essence. NL If 7 or more Earth Essence has been consumed this combat，add 1 *Evolution *Point and 1 *Miracle to your hand, then gain: 'Once per turn, wheneve you consume Earth Essence gain that much energy'.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Gain 1 Earth Essence. NL Gain: 'Once per turn, whenever you consume Earth Essence gain that much energy.' NL If 7 or more Earth Essence has been consumed this combat, add 1 *Evolution *Point and 1 *Miracle to your hand.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Consumed",
+      " Earth Essence. )"
+    ]
+  },
+  "shadowverse:GallantDragonewt": {
+    "NAME": "Gallant Dragonewt",
+    "DESCRIPTION": "Armed NL Deal !D! damage. NL Add 1 *Draconic *Weapon to your hand. NL If 4 or more Armed attacks have been played this combat，double the damage and add an Armed attack with the highest cost played this combat to your hand. It gains Retain and Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      " NL （Played",
+      " Armed attack cards. )"
+    ]
+  },
+  "shadowverse:GraveAdjudicator": {
+    "NAME": "Grave Adjudicator",
+    "DESCRIPTION": "Deal !D! damage. Strength affects this card !M! times. NL When played or exhausted, gain: 'Immune to debuffs except those that affect Strength and Dexterity. When an attack is exhausted, gain 1 Strength and Dexterity.' NL If this card is exhausted, add a copy of it to your hand."
+  },
+  "shadowverse:GraveVoidknight": {
+    "NAME": "Grave Voidknight",
+    "DESCRIPTION": "Fusion: Shadowcraft cards. NL When fusing to this card, if 2 or less cards have been fused perform Necromancy 4: Randomly add a card with Last Words from the draw pile to your hand. If 3 or more are fused, this card becomes *Grave *Adjudicator.  NL  NL --------------------- NL  NL Gain !B! Block.  NL Necromancy 4: Add 1 *Evolution *Point to your hand. Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Fusion: Shadowcraft cards. NL When fusing to this card, if 2 or less cards have been fused perform Necromancy 4: Randomly add a card with Last Words from the draw pile to your hand. If 3 or more are fused, this card becomes *Grave *Adjudicator+.  NL  NL --------------------- NL  NL Gain !B! Block.  NL Necromancy 4: Add 1 *Evolution *Point to your hand. Deal !D! damage.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Fused",
+      " cards. )"
+    ]
+  },
+  "shadowverse:HeartRadiance": {
+    "NAME": "Heart's Radiance",
+    "DESCRIPTION": "Add 5 Shadowcraft cards that cost 1 energy to your hand, they cost 0 this turn. NL Exhaust your hand and gain !B! Block for each card exhausted. NL Exhaust."
+  },
+  "shadowverse:SoulLight": {
+    "NAME": "Soul's Light",
+    "DESCRIPTION": "Fusion: Non-basic Shadowcraft cards. NL If 2 or more cards are fused at once, this card becomes *Heart's *Radiance. NL  NL --------------------- NL  NL Draw !M! cards. NL If cards were fused, deal !D! damage to all enemies."
+  },
+  "shadowverse:HowToTrainYourWolf": {
+    "NAME": "How To Train Your Wolf",
+    "DESCRIPTION": "Add 1 *Evolution *Point and 1 *Miracle to your hand. NL Reduce damage taken from your cards and effects to 0. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Add 1 *Evolution *Point and 1 *Miracle to your hand. NL Reduce damage taken from your cards and effects to 0."
+  },
+  "shadowverse:HowToTrainYourBat": {
+    "NAME": "How To Train Your Bat",
+    "DESCRIPTION": "Can only fuse if Wrath is active. NL Fusion: Non-basic Bloodcraft cards. NL If any card is fused to this card, it becomes *How *To *Train *Your *Wolf. NL  NL --------------------- NL  NL Lose 1 HP. Draw !M! cards. NL Lose 1 HP, and draw 1 card next turn."
+  },
+  "shadowverse:Companions": {
+    "NAME": "Lian & Alfie, Companions",
+    "DESCRIPTION": "Gain !B! Block. NL Gain 1 Artifact, Blur, Power Damage Immune and 3 Flame Barrier. NL Deal !B! damage to a random enemy next turn if you have any Block remaining after."
+  },
+  "shadowverse:Hunters": {
+    "NAME": "Lian & Alfie, Hunters",
+    "DESCRIPTION": "Can only fuse if 5 or more *Evolution *Points are exhausted. NL Fusion: Non-basic Bloodcraft cards. NL If any cards are fused to this card, it becomes *Lian *& *Alfie, *Companions. NL --------------------- NL Gain !B! Block and 1 Flame Barrier. NL If you play an *Evolution *Point, upgrade this card and add an *Evolution *Point to your hand.",
+    "UPGRADE_DESCRIPTION": "Can only fuse if 5 or more *Evolution *Points are exhausted. NL Fusion: Non-basic Bloodcraft cards. NL If any cards are fused to this card, it becomes *Lian *& *Alfie, *Companions. NL --------------------- NL Gain !B! Block and 1 Flame Barrier. NL If you play an *Evolution *Point, add an *Evolution *Point to your hand. NL Downgrades when played."
+  },
+  "shadowverse:TanzaniteConvictor": {
+    "NAME": "Tanzanite Convictor",
+    "DESCRIPTION": "Deal !D! damage. Strength affects this card !M! times. NL Gain 1 HP. All enemies gain 1 HP. NL Once per turn, gain 1 Artifact when you gain Strength or Dexterity."
+  },
+  "shadowverse:SeraphsOfTheTrueKey": {
+    "NAME": "Seraphs of the True Key",
+    "DESCRIPTION": "Deal !D! damage. Gain !B! Block. NL Fill all Amulet slots with those you have played this combat that had Countdown. NL They gain: 'When the Countdown is 0, deal 10 damage to all enemies and gain 4 Block.' NL 谢幕曲 :打出后下回合开始时使所有护符 倒计时 减少10。"
+  },
+  "shadowverse:AngelsOfTheCovenant": {
+    "NAME": "契约的双天使",
+    "DESCRIPTION": "如果本场战斗已触发护符数量位10以上则可以发动 融合 。 NL 融合 :主教牌 NL 融合变身 为 *盟约的炽天使 。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL 选择1张护符减少1 倒计时 ,如果因此触发护符，则这张牌不进入弃牌堆。",
+    "UPGRADE_DESCRIPTION":"如果本场战斗已触发护符数量位10以上则可以发动 融合 。 NL 融合 :主教牌 NL 融合变身 为 *盟约的炽天使+ 。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL 选择1张护符减少1 倒计时 ,如果因此触发护符，则这张牌不进入弃牌堆。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (已触发",
+      "  张。)"
+    ]
+  },
+  "shadowverse:PurelightExemplarPower": {
+    "NAME": "纯真的模范·阿纪尔",
+    "DESCRIPTION": "创造物 NL 每当打出 创造物 牌时，如果为本回合打出的第1、3、5张，则抽1张牌。第2、4、6张则获得 [E] 。"
+  },
+  "shadowverse:PurelightPrototype": {
+    "NAME": "至纯的原型·阿纪尔",
+    "DESCRIPTION": "创造物 · 融合 :非基础牌的复仇者牌 NL 融合 时，如果消耗堆的 创造物 牌数量为5以下，增加2张 *解析的创造物 到抽牌堆中。如果为6以上， 融合变身 为 *纯真的模范·阿纪尔 。 NL 造成 !D! 点伤害。 NL 从抽牌堆中随机加入 !M! 张 创造物 牌 到手中。"
+  },
+  "shadowverse:DisseminatorOfWisdom": {
+    "NAME": "知性惠施者",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 抽 !M! 张牌。 NL 使手中所有 创造物 牌本回合耗能-1。"
+  },
+  "shadowverse:SyntheticEden": {
+    "NAME": "人造乐园",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 共鸣 则抽4张牌，并使这些牌本回合耗能-1。 NL 非 共鸣 则对全体敌人造成 !D! 点伤害。 NL 消耗 。"
+  },
+  "shadowverse:BlazingBarrage": {
+    "NAME": "炽焰连珠",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 下一次受到的伤害变为0。 NL 消耗 。"
+  },
+  "shadowverse:FieryBarrage": {
+    "NAME": "烈火连珠",
+    "DESCRIPTION": "共鸣 则可以发动 融合 。 NL 融合 :非基础牌的复仇者牌 NL 融合变身 为 *炽焰连珠 。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL  使目标失去一种 力量 和 敏捷 以外的正面效果(优先失去 人工制品 )。",
+    "UPGRADE_DESCRIPTION": "共鸣 则可以发动 融合 。 NL 融合 :非基础牌的复仇者牌 NL 融合变身 为 *炽焰连珠+ 。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL  使目标失去一种 力量 和 敏捷 以外的正面效果(优先失去 人工制品 )。"
+  },
+  "shadowverse:GoddessOfCondemnation": {
+    "NAME": "怜爱的支配者",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 全体敌人失去5点 力量 和 敏捷 。 NL 最大生命值增加5点。 NL 消耗 。"
+  },
+  "shadowverse:GoddessOfCompassion": {
+    "NAME": "慈爱的支配者",
+    "DESCRIPTION": "融合 :无色牌或技能牌或能力牌 NL 融合 时，如果已融合3种类以上， 融合变身 为 *怜爱的支配者 。 NL  NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 全体敌人失去2点 力量 和 敏捷 。 NL 如果已 融合 ，则获得3点 觉醒值 。 NL 消耗 。"
   }
+}
 }

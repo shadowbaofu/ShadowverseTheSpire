@@ -6376,7 +6376,7 @@
   "shadowverse:Rogers": {
     "NAME": "Rogers, Ruler Of The Seas",
     "DESCRIPTION": "Gain 1 Energy. Add 1 *Gilded *Goblet to your hand. NL Ethereal.",
-    "UPGRADE_DESCRIPTION":"Gain 1 Energy. Add 1 *Gilded *Goblet to your hand. NL Summon a Cannoneer. NL Whenever you play a Loot card, if it's the first one this turn, gain 1 energy. If it's the second one, deal 10 damage to all enemies. NL Ethereal."
+    "UPGRADE_DESCRIPTION": "Gain 1 Energy. Add 1 *Gilded *Goblet to your hand. NL Summon a Cannoneer. NL Whenever you play a Loot card, if it's the first one this turn, gain 1 energy. If it's the second one, deal 10 damage to all enemies. NL Ethereal."
   },
   "shadowverse:DelugeOfArrows": {
     "NAME": "Deluge of Arrows",
@@ -6384,8 +6384,8 @@
   },
   "shadowverse:RainOfArrows": {
     "NAME": "Rain of Arrows",
-    "DESCRIPTION": "Fusion: Forestcraft non-basic cards. NL If at least 6 cards were fused at once, this card becomes *Deluge *of *Arrows. NL  NL --------------------- NL  NL Deal !D! damage to all enemies. NL If at least 2 other cards were played this turn, double the damage and draw a card.",
-    "UPGRADE_DESCRIPTION": "Fusion: Forestcraft non-Basic cards. NL If at least 6 cards were fused at once, this card becomes *Deluge *of *Arrows+. NL  NL --------------------- NL  NL Deal !D! damage to all enemies. NL If at least 2 other cards were played this turn, double the damage and draw a card."
+    "DESCRIPTION": "Fusion: Non-Basic Forestcraft cards. NL If at least 6 cards were fused at once, this card becomes *Deluge *of *Arrows. NL  NL --------------------- NL  NL Deal !D! damage to all enemies. NL If at least 2 other cards were played this turn, double the damage and draw a card.",
+    "UPGRADE_DESCRIPTION": "Fusion: Non-Basic Forestcraft cards. NL If at least 6 cards were fused at once, this card becomes *Deluge *of *Arrows+. NL  NL --------------------- NL  NL Deal !D! damage to all enemies. NL If at least 2 other cards were played this turn, double the damage and draw a card."
   },
   "shadowverse:FrostbornPrincess": {
     "NAME": "Frostborn Princess",
@@ -6397,11 +6397,11 @@
   },
   "shadowverse:SoaringSpirit": {
     "NAME": "Iris, Soaring Spirit",
-    "DESCRIPTION": "Gain !B! Block. NL All cards cost 0 until played."
+    "DESCRIPTION": "Gain !B! Block. NL ALL cards cost 0 until played."
   },
   "shadowverse:SkySpirit": {
     "NAME": "Iris, Sky Spirit",
-    "DESCRIPTION": "Retain - Fusion: 1 Forestcraft card. NL If a third card was fused to this card, it becomes *Iris, *Soaring *Spirit. NL  NL --------------------- NL  NL Gain !B! Block. NL If cards were fused to this card, draw 2 cards and add 2 to the number of cards played this turn.",
+    "DESCRIPTION": "Can only Fuse 1 card at a time. NL Retain - Fusion: 1 Forestcraft card. NL If a third card was fused to this card, it becomes *Iris, *Soaring *Spirit. NL  NL --------------------- NL  NL Gain !B! Block. NL If cards were fused to this card, draw 2 cards and add 2 to the number of cards played this turn.",
     "EXTENDED_DESCRIPTION": [
       " NL (Fused",
       " cards. )"

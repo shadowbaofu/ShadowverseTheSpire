@@ -4,6 +4,7 @@
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -42,6 +43,7 @@ import shadowverse.powers.DisableEffectDamagePower;
 
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
      addToBot(new SFXAction("Companions"));
+     addToBot(new GainBlockAction(abstractPlayer,this.block));
      addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new FlameBarrierPower(abstractPlayer,3),3));
      addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new CompanionsPower(abstractPlayer,this.magicNumber)));
      addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new ArtifactPower(abstractPlayer,1),1));

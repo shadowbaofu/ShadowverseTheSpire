@@ -45,7 +45,7 @@ public class GoddessOfCompassion
     private ArrayList<String> box = new ArrayList<String>();
 
     public GoddessOfCompassion() {
-        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.ALL);
+        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.RARE, CardTarget.ALL);
         this.baseBlock = 18;
         this.cardsToPreview = new GoddessOfCondemnation();
         this.exhaust = true;
@@ -71,7 +71,6 @@ public class GoddessOfCompassion
         }
         if (box.size() > 0){
             addToBot(new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,new OverflowPower(AbstractDungeon.player,1),1));
-            addToBot(new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,new OverflowPower(AbstractDungeon.player,2),2));
         }
     }
 

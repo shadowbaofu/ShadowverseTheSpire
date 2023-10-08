@@ -64,7 +64,8 @@ public class SeekerOfTruths extends AbstractRightClickCard2 {
     protected void onRightClick() {
         if (!this.hasFusion && AbstractDungeon.player!=null){
             addToBot(new SelectCardsInHandAction(9,TEXT[0],true,true, card -> {
-                return CardLibrary.getCard(card.cardID) != null && card.color == Witchcraft.Enums.COLOR_BLUE && card != this;
+                return CardLibrary.getCard(card.cardID) != null && card.color == Witchcraft.Enums.COLOR_BLUE && card != this
+                        && !card.hasTag(CardTags.STARTER_STRIKE) && !card.hasTag(CardTags.STARTER_DEFEND);
             }, abstractCards -> {
                 if (abstractCards.size()>0){
                     this.hasFusion = true;

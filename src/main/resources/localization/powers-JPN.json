@@ -2043,5 +2043,42 @@
     "DESCRIPTIONS": [
       "#y財宝カード をプレイする度、それがこのターン中に1枚目なら、 [E] を得る。2枚目なら、敵全体に #b10 ダメージを与える。"
     ]
+  },
+  "shadowverse:UndyingWitchPower": {
+    "NAME": "永生の大魔女",
+    "DESCRIPTIONS": [
+      "1ターンに1度、 #y土の秘術 で消費した #y土の印 と同じ数の [E] を得る。"
+    ]
+  },
+  "shadowverse:GraveAdjudicatorPower": {
+    "NAME": "全死の裁定者",
+    "DESCRIPTIONS": [
+      "筋力 と 敏捷性 以外のｄデバフを受けない。 #yアタック を廃棄する度、 #y筋力 と #y敏捷性 #b1 を得る。"
+    ]
+  },
+  "shadowverse:CompanionsPower": {
+    "NAME": "幽闇の狩猟者・リアン＆アルフィ",
+    "DESCRIPTIONS": [
+      "次のターン開始時、ブロックがまだ残っているなら、ランダムな敵に #b",
+      " ダメージを与える。"
+    ]
+  },
+  "shadowverse:TanzaniteConvictorPower": {
+    "NAME": "タンザナイトコンヴィクター",
+    "DESCRIPTIONS": [
+      "1度限り、 #y筋力 や #y敏捷性 を得る時、 #yアーティファクト #b1 を得る。ターン終了時、自分と敵全体はHPを1回復する。"
+    ]
+  },
+  "shadowverse:SeraphsPower": {
+    "NAME": "盟約の熾天使",
+    "DESCRIPTIONS": [
+      "ターン開始時、すべてのアミュレットの #yカウントダウン を #b10 進める。"
+    ]
+  },
+  "shadowverse:PurelightExemplarPower": {
+    "NAME": "純真の模範・アギル",
+    "DESCRIPTIONS": [
+      "#yAF カードをプレイする度、それがこのターンに1、3、5枚目なら、カード #b1 枚を引く。2、4、6枚目なら、 [E] を得る。"
+    ]
   }
 }

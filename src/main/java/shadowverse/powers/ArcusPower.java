@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import shadowverse.cards.Neutral.Status.Ghost;
@@ -33,12 +34,12 @@ public class ArcusPower extends AbstractPower{
     }
 
     public void onCardDraw(AbstractCard card) {
-        if (card.type == AbstractCard.CardType.ATTACK && card.cost==1)
+        if (CardLibrary.getCard(card.cardID)!= null && CardLibrary.getCard(card.cardID).type == AbstractCard.CardType.ATTACK && CardLibrary.getCard(card.cardID).cost==1)
             card.setCostForTurn(0);
     }
 
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (card.type == AbstractCard.CardType.ATTACK && card.costForTurn==0&&!(card instanceof Mordecai)) {
+        if (CardLibrary.getCard(card.cardID)!= null && CardLibrary.getCard(card.cardID).type == AbstractCard.CardType.ATTACK && card.costForTurn==0&&!(card instanceof Mordecai)) {
             flash();
             action.exhaustCard = true;
             addToBot(new MakeTempCardInHandAction(new Ghost()));

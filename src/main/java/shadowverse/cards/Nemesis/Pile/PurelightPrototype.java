@@ -61,6 +61,7 @@ public class PurelightPrototype extends AbstractRightClickCard2 {
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
         addToBot(new SFXAction("PurelightPrototype"));
         addToBot(new VFXAction(new GrandFinalEffect()));
+        addToBot(new DamageAction(abstractMonster,new DamageInfo(p,this.damage,this.damageTypeForTurn)));
         addToBot(new DrawPileToHandAction_Tag(this.magicNumber, AbstractShadowversePlayer.Enums.ARTIFACT, null));
     }
 

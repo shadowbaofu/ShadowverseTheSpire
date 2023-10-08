@@ -63,14 +63,6 @@ public class GraveAdjudicator extends CustomCard {
             strength.amount /= this.magicNumber;
     }
 
-    @Override
-    public void triggerOnExhaust() {
-        if (!AbstractDungeon.player.hasPower(GraveAdjudicatorPower.POWER_ID)){
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,new GraveAdjudicatorPower(AbstractDungeon.player)));
-        }
-        addToBot(new MakeTempCardInHandAction(this.makeStatEquivalentCopy()));
-    }
-
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot(new SFXAction("GraveAdjudicator"));
         addToBot(new VFXAction(new BorderFlashEffect(Color.FIREBRICK, true), 0.7f));

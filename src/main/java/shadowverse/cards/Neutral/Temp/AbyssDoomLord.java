@@ -43,13 +43,13 @@ public class AbyssDoomLord
     }
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToTop((AbstractGameAction) new ExhaustAction(9, false, true, true));
-        addToBot((AbstractGameAction) new SFXAction("AbyssDoomLord"));
-        addToBot((AbstractGameAction) new LoseHPAction(abstractPlayer, abstractPlayer, abstractPlayer.currentHealth - 1));
-        addToBot((AbstractGameAction) new ApplyPowerAction(abstractPlayer, abstractPlayer, (AbstractPower) new StrengthPower(abstractPlayer, 3), 3));
-        addToBot((AbstractGameAction) new ApplyPowerAction(abstractPlayer, abstractPlayer, (AbstractPower) new AbyssDoomLordPower(abstractPlayer, 1), 1));
-        addToBot((AbstractGameAction) new DamageAction((AbstractCreature) abstractMonster, new DamageInfo((AbstractCreature) abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
-        addToBot((AbstractGameAction) new DamageAllEnemiesAction((AbstractCreature) abstractPlayer, DamageInfo.createDamageMatrix((abstractPlayer.currentHealth - 1) * 2, true), this.damageTypeForTurn, AbstractGameAction.AttackEffect.FIRE, true));
+        addToTop(new ExhaustAction(9, false, true, true));
+        addToBot(new SFXAction("AbyssDoomLord"));
+        addToBot(new LoseHPAction(abstractPlayer, abstractPlayer, abstractPlayer.currentHealth - 1));
+        addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new StrengthPower(abstractPlayer, 3), 3));
+        addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new AbyssDoomLordPower(abstractPlayer, 1), 1));
+        addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+        addToBot(new DamageAllEnemiesAction(abstractPlayer, DamageInfo.createDamageMatrix((abstractPlayer.maxHealth - 1) * 2, true), this.damageTypeForTurn, AbstractGameAction.AttackEffect.FIRE, true));
     }
 
 

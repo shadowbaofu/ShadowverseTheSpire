@@ -2049,11 +2049,11 @@
   "shadowverse:UndyingWitchPower": {
     "NAME": "永生的大魔女",
     "DESCRIPTIONS": [
-      "每回合1次，发动 #y土之秘术 时获得消耗 #y土之印 数量的 [E]。"
+      "每回合1次，发动 #y土之秘术 时获得等同于消耗 #y土之印记 数量的 [E] 。"
     ]
   },
   "shadowverse:GraveAdjudicatorPower": {
-    "NAME": "全死否定者",
+    "NAME": "全死裁定者",
     "DESCRIPTIONS": [
       "不会受到 #y力量 和 #y敏捷 以外的负面效果影响。每当消耗 #y攻击牌 时，获得 #b1 点 #y力量 和 #y敏捷 。"
     ]
@@ -2068,19 +2068,19 @@
   "shadowverse:TanzaniteConvictorPower": {
     "NAME": "坦桑石定罪者",
     "DESCRIPTIONS": [
-      "本回合内限1次，获得 #y力量 或 #y敏捷 时获得 #b1 层 #y人工制品 。回合结束时，自己和全体敌人回复1点生命。"
+      "本回合限1次，获得 #y力量 或 #y敏捷 时获得 #b1 层 #y人工制品 。回合结束时，自身和全体敌人回复1点生命。"
     ]
   },
   "shadowverse:SeraphsPower": {
     "NAME": "盟约的炽天使",
     "DESCRIPTIONS": [
-      "回合开始时，使自己所有护符倒计时减少10。"
+      "回合开始时，使所有护符 #y倒计时 减少 #b10 。"
     ]
   },
   "shadowverse:PurelightExemplarPower": {
     "NAME": "纯真的模范·阿纪尔",
     "DESCRIPTIONS": [
-      "每当打出 #y创造物 牌时，如果为本回合打出的第1、3、5张，则抽 #b1 张牌。第2、4、6张则获得 [E] 。"
+      "每当打出 #y创造物 牌时，如果为本回合打出的第1、3、5张则抽 #b1 张牌，第2、4、6张则获得 [E] 。"
     ]
   }
 }

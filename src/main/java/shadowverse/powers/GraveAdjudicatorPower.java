@@ -14,7 +14,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 
-public class GraveAdjudicatorPower extends AbstractPower implements OnReceivePowerPower, NonStackablePower {
+public class GraveAdjudicatorPower extends AbstractPower implements OnReceivePowerPower {
     public static final String POWER_ID = "shadowverse:GraveAdjudicatorPower";
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings("shadowverse:GraveAdjudicatorPower");
     public static final String NAME = powerStrings.NAME;

@@ -1485,7 +1485,7 @@
   },
   "shadowverse:Arcus": {
     "NAME": "Arcus, Ghostly Manager",
-    "DESCRIPTION": "Attacks that cost 1 or less now cost 0 and Exhaust when played. NL Whenever you play an Attack card that costs 0, put a *Ghost into your hand."
+    "DESCRIPTION": "Attacks that originally cost 1 or less now cost 0 and Exhaust when played. NL Whenever you play an Attack card that costs 0, put a *Ghost into your hand."
   },
   "shadowverse:Manmaru1": {
     "NAME": "Roly-Poly Mk I",
@@ -4424,7 +4424,7 @@
   },
   "shadowverse:Vanpi_Q": {
     "NAME": "Vania, Crimson Majesty",
-    "DESCRIPTION": "Gain !B! Block. NL Lose 1 HP and add a *Forest *Bat to your hand. NL ALL enemies lose 1 HP and gain 1 Strength this turn. NL If Wrath or Vengeance is active, add a *Summon *Bloodkin to your hand and ALL *Forest *Bats do double damage, apply 2 Poison to ALL enemies and make ALL enemies lose 2 HP this turn.",
+    "DESCRIPTION": "Gain !B! Block. NL Lose 1 HP and add a *Forest *Bat to your hand. NL ALL enemies lose 1 HP and gain 1 Strength this turn. NL If Wrath or Vengeance is active, add a *Summon *Bloodkin to your hand and ALL *Forest *Bats do double damage, apply 2 Poison to ALL enemies and make ALL enemies lose 2 HP this turn."
   },
   "shadowverse:Cerberus2": {
     "NAME": "Cerberus, Infernal Hound",
@@ -6423,8 +6423,8 @@
   },
   "shadowverse:SeekerOfTruths": {
     "NAME": "Midelo, Seeker of Truths",
-    "DESCRIPTION": "Gain !B! Block.",
-    "UPGRADE_DESCRIPTION": " Fusion: Runecraft cards. NL If at least 5 cards are fused, it becomes *Midelo, *Scorner *Of *Truths. NL  NL --------------------- NL  NL Gain !B! Block. NL Put a Runecraft card from the draw pile to your hand. Repeat if cards were fused to this card.",
+    "DESCRIPTION": "Fusion: Non-basic Runecraft cards. NL If at least 5 cards are fused, it becomes *Midelo, *Scorner *Of *Truths. NL  NL --------------------- NL  NL Gain !B! Block. NL Put a Runecraft card from the draw pile to your hand. Repeat if cards were fused to this card.",
+    "UPGRADE_DESCRIPTION": "Fusion: Non-basic Runecraft cards. NL If at least 5 cards are fused, it becomes *Midelo+, *Scorner *Of *Truths. NL  NL --------------------- NL  NL Gain !B! Block. NL Put a Runecraft card from the draw pile to your hand. Repeat if cards were fused to this card.",
     "EXTENDED_DESCRIPTION": [
       " NL (Fused",
       " cards. )"
@@ -6449,12 +6449,12 @@
   },
   "shadowverse:GraveAdjudicator": {
     "NAME": "Grave Adjudicator",
-    "DESCRIPTION": "Deal !D! damage. Strength affects this card !M! times. NL When played or exhausted, gain: 'Immune to debuffs except those that affect Strength and Dexterity. When an attack is exhausted, gain 1 Strength and Dexterity. (this effect is stackable)' NL If this card is exhausted, add a copy of it to your hand."
+    "DESCRIPTION": "Deal !D! damage. Strength affects this card !M! times. NL When played or exhausted, gain: 'Immune to debuffs except those that affect Strength and Dexterity. When an attack is exhausted or played, gain 1 Strength and Dexterity .' NL This card can not be exhausted."
   },
   "shadowverse:GraveVoidknight": {
     "NAME": "Grave Voidknight",
-    "DESCRIPTION": "Fusion: Shadowcraft cards. NL When fusing to this card, if 2 or less cards have been fused perform Necromancy 4: Randomly add a card with Last Words from the draw pile to your hand. If 3 or more are fused, this card becomes *Grave *Adjudicator.  NL  NL --------------------- NL  NL Gain !B! Block.  NL Necromancy 4: Add 1 *Evolution *Point to your hand. Deal !D! damage.",
-    "UPGRADE_DESCRIPTION": "Fusion: Shadowcraft cards. NL When fusing to this card, if 2 or less cards have been fused perform Necromancy 4: Randomly add a card with Last Words from the draw pile to your hand. If 3 or more are fused, this card becomes *Grave *Adjudicator+.  NL  NL --------------------- NL  NL Gain !B! Block.  NL Necromancy 4: Add 1 *Evolution *Point to your hand. Deal !D! damage.",
+    "DESCRIPTION": "Fusion: Non-basic Shadowcraft cards. NL When fusing to this card, if 2 or less cards have been fused perform Necromancy 4: Randomly add a card with Last Words from the draw pile to your hand. If 3 or more are fused, this card becomes *Grave *Adjudicator.  NL  NL --------------------- NL  NL Gain !B! Block.  NL Necromancy 4: Add 1 *Evolution *Point to your hand. Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Fusion: Non-basic Shadowcraft cards. NL When fusing to this card, if 2 or less cards have been fused perform Necromancy 4: Randomly add a card with Last Words from the draw pile to your hand. If 3 or more are fused, this card becomes *Grave *Adjudicator+.  NL  NL --------------------- NL  NL Gain !B! Block.  NL Necromancy 4: Add 1 *Evolution *Point to your hand. Deal !D! damage.",
     "EXTENDED_DESCRIPTION": [
       " NL (Fused",
       " cards. )"
@@ -6462,7 +6462,7 @@
   },
   "shadowverse:HeartRadiance": {
     "NAME": "Heart's Radiance",
-    "DESCRIPTION": "Add 5 Shadowcraft cards that cost 1 energy to your hand, they cost 0 this turn. NL Exhaust your hand and gain !B! Block for each card exhausted. NL Exhaust."
+    "DESCRIPTION": "Add 5 Shadowcraft cards that cost more than 1 energy to your hand from exhaust pile, they cost 0 this turn. NL Exhaust your hand and gain !B! Block for each card exhausted. NL Exhaust."
   },
   "shadowverse:SoulLight": {
     "NAME": "Soul's Light",
@@ -6503,7 +6503,7 @@
       " Amulets. )"
     ]
   },
-  "shadowverse:PurelightExemplarPower": {
+  "shadowverse:PurelightExemplar": {
     "NAME": "Agyll, Purelight Exemplar",
     "DESCRIPTION": "AF NL Whenever you play an Artifact, if it's the 1st, 3rd or 5th, draw 1 card. If it's the 2nd, 4th or 6th, gain [E] "
   },
@@ -6525,8 +6525,8 @@
   },
   "shadowverse:FieryBarrage": {
     "NAME": "Fiery Barrage",
-    "DESCRIPTION": "Can only fuse if Resonance is active. NL Fusion: Non-basic Portalcraft cards. If cards are fused to this card it becomes *Blazing *Barrage. NL  NL --------------------- NL  NL Deal !D! damage. NL Remove 1 buff except Strength or Dexterity (Artifact is removed first if applicable). ",
-    "UPGRADE_DESCRIPTION": "Can only fuse if Resonance is active. NL Fusion: Non-basic Portalcraft cards. If cards are fused to this card it becomes *Blazing *Barrage+. NL  NL --------------------- NL  NL Deal !D! damage. NL Remove 1 buff except Strength or Dexterity (Artifact is removed first if applicable). "
+    "DESCRIPTION": "Can only fuse if Resonance is active. NL Fusion: Non-basic Portalcraft cards. If cards are fused to this card it becomes *Blazing *Barrage. NL  NL --------------------- NL  NL Deal !D! damage. NL Remove 1 buff except Strength or Dexterity (Artifact is removed first if applicable).  NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Can only fuse if Resonance is active. NL Fusion: Non-basic Portalcraft cards. If cards are fused to this card it becomes *Blazing *Barrage+. NL  NL --------------------- NL  NL Deal !D! damage. NL Remove 1 buff except Strength or Dexterity (Artifact is removed first if applicable). NL Exhaust. "
   },
   "shadowverse:GoddessOfCondemnation": {
     "NAME": "Goddess of Condemnation",
@@ -6534,6 +6534,6 @@
   },
   "shadowverse:GoddessOfCompassion": {
     "NAME": "Goddess of Compassion",
-    "DESCRIPTION": "Fusion: Skills, Powers or Colorless cards. NL If you fuse to this card while 3 or more cards are fused, it becomes *Goddess *of *Condemnation. NL  NL --------------------- NL  NL Gain !B! Block. NL ALL enemies lose 2 Strength and Dexterity. NL If cards were fused, gain 3 Overflow points. NL Exhaust."
+    "DESCRIPTION": "Fusion: Skills, Powers or Colorless cards. NL If you fuse to this card while 3 or more cards are fused, it becomes *Goddess *of *Condemnation. NL  NL --------------------- NL  NL Gain !B! Block. NL ALL enemies lose 2 Strength and Dexterity. NL If cards were fused, gain 1 Overflow points. NL Exhaust."
   }
 }

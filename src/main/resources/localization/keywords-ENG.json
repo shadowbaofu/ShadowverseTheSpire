@@ -414,6 +414,7 @@
       "DESCRIPTION": "3/3 NL Passive: At the end of your turn, deal damage equal to 2 times Attack to a random enemy and lose 1 Health. NL When #yEvoked, repeat passive effects until Health reaches 0. NL Whenever you play a #yGlittering #yGold, #yCommand this #yFollower."
     },
     {
+      "PROPER_NAME": "Heroic",
       "NAMES": [
         "Heroic"
       ],

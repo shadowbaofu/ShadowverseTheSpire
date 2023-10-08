@@ -2045,5 +2045,42 @@
     "DESCRIPTIONS": [
       "Whenever you play a #yLoot card, if it's the first one this turn, gain [E]. If it's the second one, deal #b10 damage to all enemies."
     ]
+   },
+  "shadowverse:UndyingWitchPower": {
+    "NAME": "Undying Witch",
+    "DESCRIPTIONS": [
+      "Once per turn, whenever you consume Earth_Essence (such as by Earth_Rite, gain Energy equal to the Earth_Essence consumed."
+    ]
+  },
+  "shadowverse:GraveAdjudicatorPower": {
+    "NAME": "Grave Adjudicator",
+    "DESCRIPTIONS": [
+      "Immune to debuffs other than #yStrength and #yDexterity. Whenever #yAttacks are exhausted, gain #b1 #yStrength and #yDexterity."
+    ]
+  },
+  "shadowverse:CompanionsPower": {
+    "NAME": "Lian & Alfie, Companions",
+    "DESCRIPTIONS": [
+      "At the start of your turn, if you still have #yBlock, deal #b to a random enemy.",
+      " damage."
+    ]
+  },
+  "shadowverse:TanzaniteConvictorPower": {
+    "NAME": "Tanzanite Convictor",
+    "DESCRIPTIONS": [
+      "Once per turn, whenever you gain #yStrength or #yDexterity, gain #b Artifact. You and all enemies gain 1 HP at the end of your turn."
+    ]
+  },
+  "shadowverse:SeraphsPower": {
+    "NAME": "Seraphs of the True Key",
+    "DESCRIPTIONS": [
+      "At the start of your turn, subtract 10 from the Countdown of ALL amulets."
+    ]
+  },
+  "shadowverse:PurelightExemplarPower": {
+    "NAME": "Purelight Exemplar",
+    "DESCRIPTIONS": [
+      "Whenever you play an #yArtifact, draw #b1 card(s) if it's the 1st, 3rd or 5th this turn. Gain [E] if it's the 2nd, 4th or 6th this turn."
+    ]
   }
 }

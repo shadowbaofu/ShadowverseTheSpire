@@ -356,7 +356,8 @@
     {
       "PROPER_NAME": "Disupgrade",
       "NAMES": [
-        "disupgrade"
+        "disupgrade",
+        "downgrade"
       ],
       "DESCRIPTION": "Undo the upgrade of this card for this combat after being played. The damage and #yBlock won't decrease. Can be upgraded by specific effects again. NL Won't affect the next combat."
     },

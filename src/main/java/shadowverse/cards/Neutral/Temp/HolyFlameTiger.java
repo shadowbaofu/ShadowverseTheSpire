@@ -23,7 +23,7 @@ import shadowverse.characters.Bishop;
 
    public HolyFlameTiger() {
      super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.SPECIAL, CardTarget.SELF);
-     this.baseBlock = 16;
+     this.baseBlock = 14;
      this.exhaust = true;
    }
  
@@ -31,7 +31,7 @@ import shadowverse.characters.Bishop;
    public void upgrade() {
      if (!this.upgraded) {
        upgradeName();
-       upgradeBlock(4);
+       upgradeBlock(3);
      } 
    }
  

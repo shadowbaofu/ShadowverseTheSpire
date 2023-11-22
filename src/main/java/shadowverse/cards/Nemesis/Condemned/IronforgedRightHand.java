@@ -50,18 +50,7 @@ public class IronforgedRightHand
     @Override
     public void exEnhanceUse(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction("IronforgedRightHand_EXEH"));
-        boolean deckCheck = true;
-        ArrayList<String> tmp = new ArrayList<>();
-        for (AbstractCard c : p.drawPile.group) {
-            if (tmp.contains(c.cardID)) {
-                deckCheck = false;
-                break;
-            }
-            if (!c.hasTag(AbstractShadowversePlayer.Enums.CONDEMNED))
-                tmp.add(c.cardID);
-        }
-        if (deckCheck)
-            addToBot(new FetchAction(p.drawPile,card -> card.cost == 0,1));
+        addToBot(new FetchAction(p.drawPile,card -> card.cost == 0,1));
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(this.magicNumber, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.SLASH_DIAGONAL, true));
         addToBot(new MakeTempCardInHandAction(new EvolutionPoint()));

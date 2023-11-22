@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.RegenPower;
 import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
 import com.megacrit.cardcrawl.vfx.RainbowCardEffect;
 import shadowverse.characters.AbstractShadowversePlayer;
@@ -46,6 +47,7 @@ public class Elluvia
         addToBot(new VFXAction(new RainbowCardEffect()));
         addToBot(new VFXAction(new BorderFlashEffect(Color.GOLDENROD, true)));
         addToBot( new ApplyPowerAction(p, p, new ElluviaPower(p)));
+        addToBot(new ApplyPowerAction(p,p,new RegenPower(p,1),1));
     }
 
 

@@ -2,7 +2,6 @@ package shadowverse.cards.Neutral.Curse;
 
 import basemod.abstracts.CustomCard;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.SelectCardsInHandAction;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -40,13 +39,13 @@ public class Indulgence extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new SelectCardsInHandAction(1,TEXT[0],true,true,card -> {
+        addToBot(new SelectCardsInHandAction(1,TEXT[0],true,true,card -> {
             return true;
         },abstractCards -> {
             for (AbstractCard c:abstractCards){
-                addToBot((AbstractGameAction)new ExhaustSpecificCardAction(c,abstractPlayer.hand));
+                addToBot(new ExhaustSpecificCardAction(c,abstractPlayer.hand));
                 CardCrawlGame.sound.play("GOLD_JINGLE");
-                abstractPlayer.gold -= 8;
+                abstractPlayer.gold -= 7;
             }
         }));
     }

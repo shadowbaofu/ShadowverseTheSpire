@@ -147,6 +147,7 @@ public class DragonPool extends AbstractBanPool {
         Ramp.addCard(new Jerva());
         Ramp.addCard(new GenesisDragon());
         Ramp.addCard(new Fafnir_D());
+        Ramp.addCard(new DegenerateDragon());
         Tempo.addCard(new AdherentOfArdor());
         Tempo.addCard(new ArdentTorch());
         Tempo.addCard(new DiscipleOfDisdain());

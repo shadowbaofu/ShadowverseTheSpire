@@ -98,7 +98,8 @@ public class Hunters extends AbstractRightClickCard2 {
             }
             if (amount >= 5){
                 addToBot(new SelectCardsInHandAction(9,TEXT[0],true,true, card -> {
-                    return  card != this;
+                    return  card != this
+                            &&!card.hasTag(CardTags.STARTER_STRIKE) && !card.hasTag(CardTags.STARTER_DEFEND);
                 }, abstractCards -> {
                     if (abstractCards.size()>0){
                         this.hasFusion = true;

@@ -50,7 +50,7 @@ public class CrimsonVirtue extends CustomCard {
             if (c instanceof EvolutionPoint)
                 count++;
         }
-        if (count > 2){
+        if (count > 4){
             addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         }
     }

@@ -1,5 +1,6 @@
 package shadowverse.cards.Neutral.Neutral;
 
+import com.evacipated.cardcrawl.mod.stslib.variables.ExhaustiveVariable;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
@@ -32,6 +33,7 @@ public class OliviaSylvia
         this.baseDamage = 0;
         this.baseMagicNumber = 5;
         this.magicNumber = this.baseMagicNumber;
+        ExhaustiveVariable.setBaseValue(this, 3);
     }
 
 

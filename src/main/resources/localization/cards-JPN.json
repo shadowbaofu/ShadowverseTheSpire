@@ -2934,8 +2934,8 @@
   },
   "shadowverse:EvolutionPoint": {
     "NAME": "EP",
-    "DESCRIPTION": "エセリアル 。 NL アタックまたはパワーを !M! 枚アップグレードする。 NL 廃棄 。",
-    "UPGRADE_DESCRIPTION": "保留 。 NL アタックまたはパワーを !M! 枚アップグレードする。 NL 廃棄 。"
+    "DESCRIPTION": "エセリアル 。 NL これを右クリックしてアタックまたはパワーを !M! 枚アップグレードする。これを廃棄する。",
+    "UPGRADE_DESCRIPTION": "保留 。 NL これを右クリックしてアタックまたはパワーを !M! 枚アップグレードする。これを廃棄する。"
   },
   "shadowverse:EnragedGeneral": {
     "NAME": "レイジングジェネラル",
@@ -3524,7 +3524,7 @@
   },
   "shadowverse:Indulgence": {
     "NAME": "免罪符",
-    "DESCRIPTION": "ゴールドを8払い、手札からカードを1枚選択して 廃棄 する。 NL 廃棄 。",
+    "DESCRIPTION": "ゴールドを7払い、手札からカードを1枚選択して 廃棄 する。 NL 廃棄 。",
     "EXTENDED_DESCRIPTION": [
       "ゴールドが足りない！"
     ]
@@ -5008,7 +5008,7 @@
   },
   "shadowverse:OliviaSylvia": {
     "NAME": "箱庭の追憶・オリヴィエ＆シルヴィア",
-    "DESCRIPTION": "!B! ブロック を得る。 NL *EP 2枚を手札に加える。 NL 敵全体に !D! ダメージを与える。廃棄札の *EP 1枚につき、ダメージを+ !M! する。 NL エナジーXを得る。Xは廃棄札の *EP の数。"
+    "DESCRIPTION": "!B! ブロック を得る。 NL *EP 2枚を手札に加える。 NL 敵全体に !D! ダメージを与える。廃棄札の *EP 1枚につき、ダメージを+ !M! する。 NL エナジーXを得る。Xは廃棄札の *EP の数。 NL あと !stslib:ex! 回使って廃棄する。"
   },
   "shadowverse:SacredSheep": {
     "NAME": "セイクリッドシープ",
@@ -5245,8 +5245,8 @@
   },
   "shadowverse:Elluvia": {
     "NAME": "華麗なる淑女・エルヴィーラ",
-    "DESCRIPTION": "学園 NL HPを回復する度、 筋力 と 敏捷性 1を得る。 NL エセリアル 。",
-    "UPGRADE_DESCRIPTION":"学学園 NL HPを回復する度、 筋力 と 敏捷性 1を得る。"
+    "DESCRIPTION": "学園 NL HPを回復する度、 筋力 と 敏捷性 1を得る。 NL ターン終了時にHPを1回復する。 NL エセリアル 。",
+    "UPGRADE_DESCRIPTION":"学学園 NL HPを回復する度、 筋力 と 敏捷性 1を得る。 NL ターン終了時にHPを1回復する。"
   },
   "shadowverse:RoboticsReporter": {
     "NAME": "トイズレポーター",
@@ -6533,5 +6533,79 @@
   "shadowverse:GoddessOfCompassion": {
     "NAME": "コンパッションドミニオン",
     "DESCRIPTION": "融合 :共通カードまたはスキル、パワー NL これに 融合 したとき、これに 融合 したカードが3種類以上なら、 *アフェクションドミニオン に 融合变身 する。 NL  NL --------------------- NL  NL !B! ブロックを得る。 NL  敵全体は 筋力 と 敏捷性 を2失う。 NL これに 融合 していたなら、 覚醒ポイント 1を得る。 NL 廃棄 。"
+  },
+  "shadowverse:Anthenita": {
+    "NAME": "ミリオンガンズ・アンタニタ",
+    "DESCRIPTION": "ネメシス以外のカード1枚を選択し、それの複製品1枚を手札・山札に加える。",
+    "UPGRADE_DESCRIPTION": "ネメシス以外のカード1枚を選択し、それの複製品1枚を手札・山札に加える。 NL ネメシスカード1枚を選択し、それの複製品1枚を手札・山札に加える。"
+  },
+  "shadowverse:EverlastingHope": {
+    "NAME": "漆黒の曙光・ロサ",
+    "DESCRIPTION": "!D! ダメージを与え、カード3枚を引く。 NL 連携 10 :ダメージを倍にする。 筋力 と 敏捷性 1を得る。 NL 連携 10 :ダメージを倍にする。 筋力 と 敏捷性 3を得る。 NL あと !stslib:ex! 回使うと廃棄する。",
+    "EXTENDED_DESCRIPTION": [
+      "（連携数:",
+      ")"
+    ]
+  },
+  "shadowverse:EnduringHope": {
+    "NAME": "漆黒の残光・ロサ",
+    "DESCRIPTION": "融合 :スターター以外のアタックカード NL これに1回で3枚以上融合 した時、 *漆黒の曙光・ロサ に 融合変身 する。  NL  NL --------------------- NL  NL !B! ブロック を得る。 NL アーティファクト 1を得る。 NL これに融合 した枚数と同じ数のエナジー、それにかける !M! の ブロック を得る。 NL あと !stslib:ex! 回使うと廃棄する。",
+    "UPGRADE_DESCRIPTION":"融合 :スターター以外のアタックカード NL これに1回で3枚以上融合 した時、 *漆黒の曙光・ロサ+ に 融合変身 する。  NL  NL --------------------- NL  NL !B! ブロック を得る。 NL アーティファクト 1を得る。 NL これに融合 した枚数と同じ数のエナジー、それにかける !M! の ブロック を得る。 NL あと !stslib:ex! 回使うと廃棄する。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (融合した枚数は",
+      " 。)"
+    ]
+  },
+  "shadowverse:DashingDuelist": {
+    "NAME": "極彩の美剣士",
+    "DESCRIPTION": "敵全体に !D! ダメージを与え、カード !M! 枚を引く。 NL 連携 10: *EP 1枚を手札に加える。 NL 連携 20:ダメージを倍にする。",
+    "EXTENDED_DESCRIPTION": [
+      "（連携数:",
+      ")"
+    ]
+  },
+  "shadowverse:LegendaryKick": {
+    "NAME": "気鋭の猛蹴",
+    "DESCRIPTION": "!D! ダメージを与える。 NL カード1枚を引く。"
+  },
+  "shadowverse:UntoldKick": {
+    "NAME": "気鋭の一蹴",
+    "DESCRIPTION": "連携 10以上なら、 融合 できる。 NL 融合 :スターター以外のアタックカード NL  *気鋭の猛蹴 に 融合変身 する。  NL  NL --------------------- NL  NL !D! ダメージを与える。 NL ヘヴィーナイト 1体を出す。",
+    "UPGRADE_DESCRIPTION":"連携 10以上なら、 融合 できる。 NL 融合 :スターター以外のアタックカード NL  *気鋭の猛蹴 に 融合変身 する。  NL  NL --------------------- NL  NL !D! ダメージを与える。 NL ヘヴィーナイト+ 1体を出す。",
+    "EXTENDED_DESCRIPTION": [
+      "（連携数:",
+      ")"
+    ]
+  },
+  "shadowverse:DegenerateDragon": {
+    "NAME": "ヴァニティードラゴン",
+    "DESCRIPTION": "!B! ブロック を得る。 NL 手札のアタック1枚のコストをこのターンだけ0にする。 NL 手札のスキル1枚のコストをこのターンだけ0にする。"
+  },
+  "shadowverse:Icyclone": {
+    "NAME": "氷結の騎士",
+    "DESCRIPTION": "ヒーロー NL !B! ブロック を得る。 NL 山札から ヒーロー 1枚を手札に加える。 NL  手札1枚を 廃棄 する。 NL ピンチ : 弱体化 と 脱力 2を与える。"
+  },
+  "shadowverse:DualFlame": {
+    "NAME": "詠唱：二対の炎",
+    "DESCRIPTION": "カウントダウン 2: *ホーリーフレイムタイガー 2枚を手札に加える。",
+    "UPGRADE_DESCRIPTION":"カウントダウン 1: *ホーリーフレイムタイガー 2枚を手札に加える。"
+  },
+  "shadowverse:BeastlyVow": {
+    "NAME": "詠唱：聖獣への誓い",
+    "DESCRIPTION": "カウントダウン 1: *ホーリーフレイムタイガー 1枚を手札に加える。",
+    "UPGRADE_DESCRIPTION":"カウントダウン 1: *ホーリーフレイムタイガー+ 1枚を手札に加える。"
+  },
+  "shadowverse:HierophantImplements": {
+    "NAME": "教皇の祭器",
+    "DESCRIPTION": "アミュレット1枚の カウントダウン を1進める。 NL カウントダウン 1:カード1枚を引く。 "
+  },
+  "shadowverse:Eir": {
+    "NAME": "エイル",
+    "DESCRIPTION": "ランダムなポーションを獲得する。 NL スペルブースト 2回行う。 NL リアニメイト スペルブースト の回数/2。 NL スペルブースト が5回以上なら、次に受けるダメージを0にする。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION":"保留 NL ランダムなポーションを獲得する。 NL スペルブースト 2回行う。 NL リアニメイト スペルブースト の回数/2。 NL スペルブースト が5回以上なら、次に受けるダメージを0にする。 NL 廃棄 。",
+    "EXTENDED_DESCRIPTION": [
+      " NL ( スペルブースト は",
+      "回)"
+    ]
   }
 }

@@ -1,6 +1,8 @@
 package shadowverse.cards.Elf.Short;
 
 import basemod.abstracts.CustomCard;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -11,10 +13,12 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
+import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import com.megacrit.cardcrawl.vfx.combat.GrandFinalEffect;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Elf;
@@ -25,12 +29,14 @@ public class Magachiyo extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/Magachiyo.png";
+    private static final Texture LEADER_SKIN_VERSION = ImageMaster.loadImage("img/cards/Magachiyo_L.png");
 
     public Magachiyo() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Elf.Enums.COLOR_GREEN, CardRarity.RARE, CardTarget.ENEMY);
         this.baseDamage = 6;
         this.baseMagicNumber = 4;
         this.tags.add(AbstractShadowversePlayer.Enums.CONDEMNED);
+        this.jokePortrait = new TextureAtlas.AtlasRegion(LEADER_SKIN_VERSION, 0, 0, LEADER_SKIN_VERSION.getWidth(), LEADER_SKIN_VERSION.getHeight());
     }
 
 
@@ -59,7 +65,11 @@ public class Magachiyo extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.cardsPlayedThisTurn.add(this);
         addToBot(new VFXAction(new GrandFinalEffect(), 0.5F));
-        addToBot(new SFXAction("Magachiyo"));
+        if ((UnlockTracker.betaCardPref.getBoolean(this.cardID, false))) {
+            addToBot(new SFXAction("Magachiyo_L"));
+        }else {
+            addToBot(new SFXAction("Magachiyo"));
+        }
         int count = 0;
         if (AbstractDungeon.player instanceof AbstractShadowversePlayer){
             count = ((AbstractShadowversePlayer) AbstractDungeon.player).magachiyoCount;

@@ -95,6 +95,7 @@ public class NemesisPool extends AbstractBanPool {
         Default.addCard(new Miriam());
         Default.addCard(new DisseminatorOfWisdom());
         Default.addCard(new SyntheticEden());
+        Default.addCard(new Anthenita());
         Artifact.addCard(new Ralmia());
         Artifact.addCard(new ArtifactImpulse());
         Artifact.addCard(new ArtifactScan());

@@ -1,6 +1,8 @@
 package shadowverse.cards.Royal.Loot;
 
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.SelectCardsInHandAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -13,9 +15,11 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
+import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
 import shadowverse.Shadowverse;
 import shadowverse.cards.AbstractEnhanceCard;
@@ -35,6 +39,8 @@ public class Barbaros
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/Barbaros.png";
     public static final String IMG_PATH_EV = "img/cards/Barbaros_Ev.png";
+    private static final Texture LEADER_SKIN_VERSION = ImageMaster.loadImage("img/cards/Barbaros_L.png");
+    private static final String LEADER_SKIN_VERSION_EV = "img/cards/Barbaros_Ev_L.png";
     private boolean hasFusion = false;
 
     public int enhanceCost;
@@ -59,6 +65,7 @@ public class Barbaros
         this.exCostForTurn = cost;
         this.exFreeOnce = false;
         this.ex = 0;
+        this.jokePortrait = new TextureAtlas.AtlasRegion(LEADER_SKIN_VERSION, 0, 0, LEADER_SKIN_VERSION.getWidth(), LEADER_SKIN_VERSION.getHeight());
     }
 
 
@@ -66,8 +73,13 @@ public class Barbaros
         if (!this.upgraded) {
             upgradeName();
             upgradeDamage(7);
-            this.textureImg = IMG_PATH_EV;
-            this.loadCardImage(IMG_PATH_EV);
+            if ((UnlockTracker.betaCardPref.getBoolean(this.cardID, false))) {
+                this.textureImg = LEADER_SKIN_VERSION_EV;
+                this.loadCardImage(LEADER_SKIN_VERSION_EV);
+            }else {
+                this.textureImg = IMG_PATH_EV;
+                this.loadCardImage(IMG_PATH_EV);
+            }
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
@@ -174,10 +186,18 @@ public class Barbaros
             if (p.hasPower(CutthroatPower.POWER_ID)){
                 addToBot(new GainEnergyAction(2));
             }
-            addToBot(new SFXAction("Barbaros_Eh"));
+            if ((UnlockTracker.betaCardPref.getBoolean(this.cardID, false))) {
+                addToBot(new SFXAction("Barbaros_Eh_L"));
+            }else {
+                addToBot(new SFXAction("Barbaros_Eh"));
+            }
             addToBot(new DamageAction(m,new DamageInfo(p,this.damage*2,this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         }else {
-            addToBot(new SFXAction("Barbaros"));
+            if ((UnlockTracker.betaCardPref.getBoolean(this.cardID, false))) {
+                addToBot(new SFXAction("Barbaros_L"));
+            }else {
+                addToBot(new SFXAction("Barbaros"));
+            }
             addToBot(new DamageAction(m,new DamageInfo(p,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         }
         this.degrade();

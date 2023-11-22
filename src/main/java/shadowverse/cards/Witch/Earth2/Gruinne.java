@@ -1,4 +1,4 @@
-package shadowverse.cards.Witch.Spellboost2;
+package shadowverse.cards.Witch.Earth2;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;

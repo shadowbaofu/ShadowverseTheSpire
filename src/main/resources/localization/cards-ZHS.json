@@ -873,7 +873,7 @@
   },
   "shadowverse:IrongliderElf": {
     "NAME": "铁扇精灵",
-    "DESCRIPTION": "机械 NL 获得 !B! 点 格挡 。 NL 将2张 机械 牌从抽牌堆加入到手中。"
+    "DESCRIPTION": "机械 NL 获得 !B! 点 格挡 。 NL 将2张 机械 牌从抽牌堆加入到手中并将其本回合耗能减少1。"
   },
   "shadowverse:Cassiopeia": {
     "NAME": "卡西欧佩亚",
@@ -2934,8 +2934,8 @@
   },
   "shadowverse:EvolutionPoint": {
     "NAME": "进化点",
-    "DESCRIPTION": "虚无 。 NL 升级 !M! 张攻击或能力牌。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "保留 。 NL 升级 !M! 张攻击或能力牌。 NL 消耗 。"
+    "DESCRIPTION": "虚无 。 NL 右击 消耗 这张牌并升级 !M! 张攻击或能力牌。",
+    "UPGRADE_DESCRIPTION": "保留 。 NL 右击 消耗 这张牌并升级 !M! 张攻击或能力牌。"
   },
   "shadowverse:EnragedGeneral": {
     "NAME": "愤怒的将军",
@@ -3520,7 +3520,7 @@
   },
   "shadowverse:Indulgence": {
     "NAME": "赎罪券",
-    "DESCRIPTION": "支付8点金币 消耗 1张手牌。 NL 消耗 。",
+    "DESCRIPTION": "支付7点金币 消耗 1张手牌。 NL 消耗 。",
     "EXTENDED_DESCRIPTION": [
       "没钱啦！"
     ]
@@ -5004,7 +5004,7 @@
   },
   "shadowverse:OliviaSylvia": {
     "NAME": "庭园追忆·奥莉薇与希尔薇娅",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加2张 *进化点 到手中。 NL 对全体敌人造成 !D! 点伤害，消耗堆中每有1张 *进化点 ，伤害增加 !M! 点。 NL 获得X点能量，X为消耗堆中的 *进化点 数量。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加2张 *进化点 到手中。 NL 对全体敌人造成 !D! 点伤害，消耗堆中每有1张 *进化点 ，伤害增加 !M! 点。 NL 获得X点能量，X为消耗堆中的 *进化点 数量。 NL 消耗性 !stslib:ex! 。"
   },
   "shadowverse:SacredSheep": {
     "NAME": "圣启梦羊",
@@ -5106,8 +5106,8 @@
   },
   "shadowverse:FellTransformation": {
     "NAME": "剧变为恶",
-    "DESCRIPTION": "消耗 1张手牌，增加1张 *丛林蝙蝠 到手中。",
-    "UPGRADE_DESCRIPTION": "消耗 1张手牌，增加1张 *丛林蝙蝠+ 到手中。"
+    "DESCRIPTION": "失去1点生命。 NL 消耗 1张手牌，增加1张 *丛林蝙蝠 到手中。",
+    "UPGRADE_DESCRIPTION": "失去1点生命。 NL 消耗 1张手牌，增加1张 *丛林蝙蝠+ 到手中。"
   },
   "shadowverse:MachSpeedMaron": {
     "NAME": "神速跑腿·玛萝",
@@ -5241,8 +5241,8 @@
   },
   "shadowverse:Elluvia": {
     "NAME": "华丽淑女·耶伦毕菈",
-    "DESCRIPTION": "学园 NL 每当你回复生命时，获得1点 力量 和 敏捷 。 NL 虚无 。",
-    "UPGRADE_DESCRIPTION":"学园 NL 每当你回复生命时，获得1点 力量 和 敏捷 。"
+    "DESCRIPTION": "学园 NL 每当你回复生命时，获得1点 力量 和 敏捷 。 NL 回合结束时回复1点生命。  NL 虚无 。",
+    "UPGRADE_DESCRIPTION":"学园 NL 每当你回复生命时，获得1点 力量 和 敏捷 。 NL 回合结束时回复1点生命。 "
   },
   "shadowverse:RoboticsReporter": {
     "NAME": "玩具记者",
@@ -6526,5 +6526,79 @@
   "shadowverse:GoddessOfCompassion": {
     "NAME": "慈爱的支配者",
     "DESCRIPTION": "融合 :无色牌或技能牌或能力牌 NL 融合 时，如果已融合3种类以上， 融合变身 为 *怜爱的支配者 。 NL  NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 全体敌人失去2点 力量 和 敏捷 。 NL 如果已 融合 ，则获得1点 觉醒值 。 NL 消耗 。"
+  },
+  "shadowverse:Anthenita": {
+    "NAME": "万千枪炮·安塔妮特",
+    "DESCRIPTION": "选择1张非复仇者牌，将1张复制品分别加入手牌和抽牌堆。",
+    "UPGRADE_DESCRIPTION": "选择1张非复仇者牌，将1张复制品分别加入手牌和抽牌堆。 NL 选择1张复仇者牌，将1张复制品分别加入手牌和抽牌堆。"
+  },
+  "shadowverse:EverlastingHope": {
+    "NAME": "漆黑曙光·罗莎",
+    "DESCRIPTION": "造成 !D! 点伤害，抽3张牌。 NL 协作 10 :造成双倍点伤害。获得1点 力量 和 敏捷 。 NL 协作 20 :造成双倍点伤害。获得3点 力量 和 敏捷 。 NL 消耗性 !stslib:ex! 。",
+    "EXTENDED_DESCRIPTION": [
+      "（协作数:",
+      ")"
+    ]
+  },
+  "shadowverse:EnduringHope": {
+    "NAME": "漆黑残光·罗莎",
+    "DESCRIPTION": "融合 :非基础牌的攻击牌 NL 融合 时，如果一次性融合的牌为3张以上， 融合变身 为 *漆黑曙光·罗莎 。  NL  NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 获得1层 人工制品 。 NL 每融合1张牌，额外获得1点能量和 !M! 点 格挡 。 NL 消耗性 !stslib:ex! 。",
+    "UPGRADE_DESCRIPTION":"融合 :非基础牌的攻击牌 NL 融合 时，如果一次性融合的牌为3张以上， 融合变身 为 *漆黑曙光·罗莎+ 。  NL  NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 获得1层 人工制品 。 NL 每融合1张牌，额外获得1点能量和 !M! 点 格挡 。 NL 消耗性 !stslib:ex! 。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (已融合",
+      " 张。)"
+    ]
+  },
+  "shadowverse:DashingDuelist": {
+    "NAME": "极彩美剑士",
+    "DESCRIPTION": "对全体敌人造成 !D! 点伤害，抽 !M! 张牌。 NL 协作 10:增加1张 *进化点 到手中。 NL 协作 20:造成伤害翻倍。",
+    "EXTENDED_DESCRIPTION": [
+      "（协作数:",
+      ")"
+    ]
+  },
+  "shadowverse:LegendaryKick": {
+    "NAME": "气盛猛踢",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 抽1张牌。"
+  },
+  "shadowverse:UntoldKick": {
+    "NAME": "气盛踢击",
+    "DESCRIPTION": "协作 10以上则可以发动 融合 。 NL 融合 :非基础攻击牌 NL 融合变身 为 *气盛猛踢 。  NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL 召唤1个 战盾卫士 。",
+    "UPGRADE_DESCRIPTION":"协作 10以上则可以发动 融合 。 NL 融合 :非基础攻击牌 NL 融合变身 为 *气盛猛踢+ 。  NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL 召唤1个 战盾卫士 。",
+    "EXTENDED_DESCRIPTION": [
+      "（协作数:",
+      ")"
+    ]
+  },
+  "shadowverse:DegenerateDragon": {
+    "NAME": "虚饰之龙",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 选择1张攻击牌，将其本回合耗能变为0。 NL 选择1张技能，将其本回合耗能变为0。"
+  },
+  "shadowverse:Icyclone": {
+    "NAME": "冰结骑士",
+    "DESCRIPTION": "英雄 NL 获得 !B! 点 格挡 。 NL 从抽牌堆种将1张 英雄 牌加入手中。 NL 消耗 1张手牌。 NL 危难 :给予2层 易伤 和 虚弱 。"
+  },
+  "shadowverse:DualFlame": {
+    "NAME": "吟唱：二对之炎",
+    "DESCRIPTION": "倒计时 2:增加2张 *圣炎猛虎 到手中。",
+    "UPGRADE_DESCRIPTION":"倒计时 1:增加2张 *圣炎猛虎 到手中。"
+  },
+  "shadowverse:BeastlyVow": {
+    "NAME": "吟唱：圣兽之誓",
+    "DESCRIPTION": "倒计时 1:增加1张 *圣炎猛虎 到手中。",
+    "UPGRADE_DESCRIPTION":"倒计时 1:增加1张 *圣炎猛虎+ 到手中。"
+  },
+  "shadowverse:HierophantImplements": {
+    "NAME": "教皇的祭器",
+    "DESCRIPTION": "选择1张护符减少 !M! 倒计时 。 NL 倒计时 1:抽1张牌。 "
+  },
+  "shadowverse:Eir": {
+    "NAME": "埃尔",
+    "DESCRIPTION": "获得1瓶随机药水。 NL 发动2次 魔力增幅 。 NL 亡者召还 魔力增幅 次数/2。 NL 如果这张牌的 魔力增幅 次数为5以上，下次受到的伤害变为0。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"保留 NL 获得1瓶随机药水。 NL 发动2次 魔力增幅 。 NL 亡者召还 魔力增幅 次数/2。 NL 如果这张牌的 魔力增幅 次数为5以上，下次受到的伤害变为0。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (当前 魔力增幅 次数为",
+      " )"
+    ]
   }
 }

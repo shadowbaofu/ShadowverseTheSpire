@@ -94,6 +94,7 @@ public class WitchPool extends AbstractBanPool {
         Default.addCard(new WardenOfTheArcane());
         Default.addCard(new Yukishima());
         Default.addCard(new SeekerOfTruths());
+        Default.addCard(new Eir());
         Academic.addCard(new Amaryllis());
         Academic.addCard(new Anne());
         Academic.addCard(new AnneAndGrea());
@@ -136,6 +137,7 @@ public class WitchPool extends AbstractBanPool {
         Earth2.addCard(new WitchsCauldron());
         Earth2.addCard(new BindingRitual());
         Earth2.addCard(new ColossalSummoning());
+        Earth2.addCard(new Gruinne());
         Mech.addCard(new Awakened());
         Mech.addCard(new GrimoireSorcerer());
         Mech.addCard(new Isabelle());
@@ -172,7 +174,6 @@ public class WitchPool extends AbstractBanPool {
         Spellboost2.addCard(new FireChain());
         Spellboost2.addCard(new Ghios());
         Spellboost2.addCard(new GigantChimera());
-        Spellboost2.addCard(new Gruinne());
         Spellboost2.addCard(new JubilanceWitch());
         Spellboost2.addCard(new Lifetime());
         Spellboost2.addCard(new Lou());

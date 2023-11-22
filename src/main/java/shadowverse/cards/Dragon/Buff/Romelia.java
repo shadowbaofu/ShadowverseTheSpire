@@ -17,6 +17,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.LoseDexterityPower;
+import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import shadowverse.characters.Dragon;
 import shadowverse.powers.RomeliaPower;
 
@@ -46,7 +47,11 @@ public class Romelia extends CustomCard {
 
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot(new SFXAction("Romelia"));
+        if ((UnlockTracker.betaCardPref.getBoolean(this.cardID, false))) {
+            addToBot(new SFXAction("Romelia_L"));
+        }else {
+            addToBot(new SFXAction("Romelia"));
+        }
         addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.LIGHTNING));
         addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new DexterityPower(abstractPlayer, 2), 2));
         addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new LoseDexterityPower(abstractPlayer, 2), 2));

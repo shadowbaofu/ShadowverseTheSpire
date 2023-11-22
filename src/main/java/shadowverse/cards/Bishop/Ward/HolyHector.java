@@ -49,11 +49,11 @@ public class HolyHector
 
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction) new SFXAction("HolyHector"));
-        addToBot((AbstractGameAction)new SFXAction("ATTACK_HEAVY"));
-        addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
-        addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new StrengthPower((AbstractCreature)abstractPlayer, 2), 2));
-        addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new LoseStrengthPower((AbstractCreature)abstractPlayer, 2), 2));
+        addToBot(new SFXAction("HolyHector"));
+        addToBot(new SFXAction("ATTACK_HEAVY"));
+        addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
+        addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new StrengthPower(abstractPlayer, 2), 2));
+        addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new LoseStrengthPower(abstractPlayer, 2), 2));
         int playerNecromance = 0;
         if (abstractPlayer.hasPower(Cemetery.POWER_ID)){
             for (AbstractPower p :abstractPlayer.powers){
@@ -62,7 +62,7 @@ public class HolyHector
             }
         }
         if (playerNecromance>=9){
-            addToBot((AbstractGameAction) new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy(),2));
+            addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy(),2));
         }
     }
 

@@ -2931,8 +2931,8 @@
   },
   "shadowverse:EvolutionPoint": {
     "NAME": "Evolution Point",
-    "DESCRIPTION": "Ethereal. NL Upgrade !M! Attack or Power cards. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Upgrade !M! Attack or Power cards. NL Exhaust."
+    "DESCRIPTION": "Ethereal. NL Right click to upgrade !M! Attack or Power cards, then exhaust .",
+    "UPGRADE_DESCRIPTION": "Retain. NL Right click to upgrade !M! Attack or Power cards, then exhaust ."
   },
   "shadowverse:EnragedGeneral": {
     "NAME": "Enraged General",
@@ -3517,7 +3517,7 @@
   },
   "shadowverse:Indulgence": {
     "NAME": "Indulgence",
-    "DESCRIPTION": "Lose 8 Gold and Exhaust a card in your hand. NL Exhaust.",
+    "DESCRIPTION": "Lose 7 Gold and Exhaust a card in your hand. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
       "Not enough Gold!"
     ]
@@ -5009,7 +5009,7 @@
   },
   "shadowverse:OliviaSylvia": {
     "NAME": "Olivia & Sylvia, Wardens",
-    "DESCRIPTION": "Gain !B! Block. NL Add 2 *Evolution *Points to your hand. NL Deal !D! damage to ALL enemies. Deal !M! additional damage for each *Evolution *Point in your exhaust pile. NL Gain X Energy. X equals the number of *Evolution *Points in your exhaust pile."
+    "DESCRIPTION": "Gain !B! Block. NL Add 2 *Evolution *Points to your hand. NL Deal !D! damage to ALL enemies. Deal !M! additional damage for each *Evolution *Point in your exhaust pile. NL Gain X Energy. X equals the number of *Evolution *Points in your exhaust pile. NL Exhaust !stslib:ex!."
   },
   "shadowverse:SacredSheep": {
     "NAME": "Sacred Sheep",
@@ -5246,8 +5246,8 @@
   },
   "shadowverse:Elluvia": {
     "NAME": "Elluvia, Graceful Lady",
-    "DESCRIPTION": "Academic. NL Whenever you heal HP, gain 1 Strength and Dexterity. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "Academic NL Whenever you heal HP, gain 1 Strength and Dexterity."
+    "DESCRIPTION": "Academic. NL Whenever you heal HP, gain 1 Strength and Dexterity. NL At the end of your turn, heal 1 HP. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Academic NL Whenever you heal HP, gain 1 Strength and Dexterity. NL At the end of your turn, heal 1 HP."
   },
   "shadowverse:RoboticsReporter": {
     "NAME": "Robotics Reporter",
@@ -6535,5 +6535,79 @@
   "shadowverse:GoddessOfCompassion": {
     "NAME": "Goddess of Compassion",
     "DESCRIPTION": "Fusion: Skills, Powers or Colorless cards. NL If you fuse to this card while 3 or more cards are fused, it becomes *Goddess *of *Condemnation. NL  NL --------------------- NL  NL Gain !B! Block. NL ALL enemies lose 2 Strength and Dexterity. NL If cards were fused, gain 1 Overflow points. NL Exhaust."
+  },
+  "shadowverse:Anthenita": {
+    "NAME": "ミリオンガンズ・アンタニタ",
+    "DESCRIPTION": "ネメシス以外のカード1枚を選択し、それの複製品1枚を手札・山札に加える。",
+    "UPGRADE_DESCRIPTION": "ネメシス以外のカード1枚を選択し、それの複製品1枚を手札・山札に加える。 NL ネメシスカード1枚を選択し、それの複製品1枚を手札・山札に加える。"
+  },
+  "shadowverse:EverlastingHope": {
+    "NAME": "漆黒の曙光・ロサ",
+    "DESCRIPTION": "!D! ダメージを与え、カード3枚を引く。 NL 連携 10 :ダメージを倍にする。 筋力 と 敏捷性 1を得る。 NL 連携 10 :ダメージを倍にする。 筋力 と 敏捷性 3を得る。 NL あと !stslib:ex! 回使うと廃棄する。",
+    "EXTENDED_DESCRIPTION": [
+      "（連携数:",
+      ")"
+    ]
+  },
+  "shadowverse:EnduringHope": {
+    "NAME": "漆黒の残光・ロサ",
+    "DESCRIPTION": "融合 :スターター以外のアタックカード NL これに1回で3枚以上融合 した時、 *漆黒の曙光・ロサ に 融合変身 する。  NL  NL --------------------- NL  NL !B! ブロック を得る。 NL アーティファクト 1を得る。 NL これに融合 した枚数と同じ数のエナジー、それにかける !M! の ブロック を得る。 NL あと !stslib:ex! 回使うと廃棄する。",
+    "UPGRADE_DESCRIPTION":"融合 :スターター以外のアタックカード NL これに1回で3枚以上融合 した時、 *漆黒の曙光・ロサ+ に 融合変身 する。  NL  NL --------------------- NL  NL !B! ブロック を得る。 NL アーティファクト 1を得る。 NL これに融合 した枚数と同じ数のエナジー、それにかける !M! の ブロック を得る。 NL あと !stslib:ex! 回使うと廃棄する。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (融合した枚数は",
+      " 。)"
+    ]
+  },
+  "shadowverse:DashingDuelist": {
+    "NAME": "Dashing Duelist",
+    "DESCRIPTION": "敵全体に !D! ダメージを与え、カード !M! 枚を引く。 NL 連携 10: *EP 1枚を手札に加える。 NL 連携 20:ダメージを倍にする。",
+    "EXTENDED_DESCRIPTION": [
+      "（連携数:",
+      ")"
+    ]
+  },
+  "shadowverse:LegendaryKick": {
+    "NAME": "Legendary Kick",
+    "DESCRIPTION": "!D! ダメージを与える。 NL カード1枚を引く。"
+  },
+  "shadowverse:UntoldKick": {
+    "NAME": "Untold Kick",
+    "DESCRIPTION": "連携 10以上なら、 融合 できる。 NL 融合 :スターター以外のアタックカード NL  *気鋭の猛蹴 に 融合変身 する。  NL  NL --------------------- NL  NL !D! ダメージを与える。 NL ヘヴィーナイト 1体を出す。",
+    "UPGRADE_DESCRIPTION":"連携 10以上なら、 融合 できる。 NL 融合 :スターター以外のアタックカード NL  *気鋭の猛蹴 に 融合変身 する。  NL  NL --------------------- NL  NL !D! ダメージを与える。 NL ヘヴィーナイト+ 1体を出す。",
+    "EXTENDED_DESCRIPTION": [
+      "（連携数:",
+      ")"
+    ]
+  },
+  "shadowverse:DegenerateDragon": {
+    "NAME": "Degenerate Dragon",
+    "DESCRIPTION": "!B! ブロック を得る。 NL 手札のアタック1枚のコストをこのターンだけ0にする。 NL 手札のスキル1枚のコストをこのターンだけ0にする。"
+  },
+  "shadowverse:Icyclone": {
+    "NAME": "Icyclone",
+    "DESCRIPTION": "ヒーロー NL !B! ブロック を得る。 NL 山札から ヒーロー 1枚を手札に加える。 NL  手札1枚を 廃棄 する。 NL ピンチ : 弱体化 と 脱力 2を与える。"
+  },
+  "shadowverse:DualFlame": {
+    "NAME": "DualFlames",
+    "DESCRIPTION": "カウントダウン 2: *ホーリーフレイムタイガー 2枚を手札に加える。",
+    "UPGRADE_DESCRIPTION":"カウントダウン 1: *ホーリーフレイムタイガー 2枚を手札に加える。"
+  },
+  "shadowverse:BeastlyVow": {
+    "NAME": "BeastlyVow",
+    "DESCRIPTION": "カウントダウン 1: *ホーリーフレイムタイガー 1枚を手札に加える。",
+    "UPGRADE_DESCRIPTION":"カウントダウン 1: *ホーリーフレイムタイガー+ 1枚を手札に加える。"
+  },
+  "shadowverse:HierophantImplements": {
+    "NAME": "Hierophant 's Implements",
+    "DESCRIPTION": "アミュレット1枚の カウントダウン を1進める。 NL カウントダウン 1:カード1枚を引く。 "
+  },
+  "shadowverse:Eir": {
+    "NAME": "Eir",
+    "DESCRIPTION": "ランダムなポーションを獲得する。 NL スペルブースト 2回行う。 NL リアニメイト スペルブースト の回数/2。 NL スペルブースト が5回以上なら、次に受けるダメージを0にする。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION":"保留 NL ランダムなポーションを獲得する。 NL スペルブースト 2回行う。 NL リアニメイト スペルブースト の回数/2。 NL スペルブースト が5回以上なら、次に受けるダメージを0にする。 NL 廃棄 。",
+    "EXTENDED_DESCRIPTION": [
+      " NL ( スペルブースト は",
+      "回)"
+    ]
   }
 }

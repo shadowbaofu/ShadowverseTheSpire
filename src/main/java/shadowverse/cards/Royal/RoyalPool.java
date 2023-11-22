@@ -136,6 +136,7 @@ public class RoyalPool  extends AbstractBanPool {
         Hero.addCard(new MorgensternMaid());
         Hero.addCard(new ValiantFencer());
         Hero.addCard(new Windslasher());
+        Hero.addCard(new Icyclone());
         Levin.addCard(new Albert());
         Levin.addCard(new Jeno());
         Levin.addCard(new LevinArcher());
@@ -191,6 +192,9 @@ public class RoyalPool  extends AbstractBanPool {
         Rally.addCard(new StormWrackedFirstMate());
         Rally.addCard(new StrikeproneGuardian());
         Rally.addCard(new WhitePaladin());
+        Rally.addCard(new EnduringHope());
+        Rally.addCard(new DashingDuelist());
+        Rally.addCard(new UntoldKick());
         pool.add(Default);
         pool.add(Ambush);
         pool.add(Evolve);

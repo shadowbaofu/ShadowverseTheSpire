@@ -1705,6 +1705,16 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("DisseminatorOfWisdom", new Sfx(voicePath + "DisseminatorOfWisdom.wav"));
             reflectedMap.put("Companions", new Sfx(voicePath + "Companions.wav"));
             reflectedMap.put("AngelsOfTheCovenant", new Sfx(voicePath + "AngelsOfTheCovenant.wav"));
+            reflectedMap.put("Anthenita", new Sfx(voicePath + "Anthenita.wav"));
+            reflectedMap.put("EverlastingHope", new Sfx(voicePath + "EverlastingHope.wav"));
+            reflectedMap.put("EnduringHope", new Sfx(voicePath + "EnduringHope.wav"));
+            reflectedMap.put("DashingDuelist", new Sfx(voicePath + "DashingDuelist.wav"));
+            reflectedMap.put("Barbaros_L", new Sfx(voicePath + "Barbaros_L.wav"));
+            reflectedMap.put("Barbaros_Eh_L", new Sfx(voicePath + "Barbaros_Eh_L.wav"));
+            reflectedMap.put("Magachiyo_L", new Sfx(voicePath + "Magachiyo_L.wav"));
+            reflectedMap.put("Romelia_L", new Sfx(voicePath + "Romelia_L.wav"));
+            reflectedMap.put("Icyclone", new Sfx(voicePath + "Icyclone.wav"));
+            reflectedMap.put("Eir", new Sfx(voicePath + "Eir.wav"));
         }
         if (Loader.isModLoaded("CardAugments")) {
             AugmentHelper.register();
@@ -3076,6 +3086,18 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard(new FieryBarrage());
         BaseMod.addCard(new GoddessOfCompassion());
         BaseMod.addCard(new GoddessOfCondemnation());
+        BaseMod.addCard(new Anthenita());
+        BaseMod.addCard(new EverlastingHope());
+        BaseMod.addCard(new EnduringHope());
+        BaseMod.addCard(new DashingDuelist());
+        BaseMod.addCard(new LegendaryKick());
+        BaseMod.addCard(new UntoldKick());
+        BaseMod.addCard(new DegenerateDragon());
+        BaseMod.addCard(new Icyclone());
+        BaseMod.addCard(new DualFlame());
+        BaseMod.addCard(new BeastlyVow());
+        BaseMod.addCard(new HierophantImplements());
+        BaseMod.addCard(new Eir());
         logger.info("Success");
     }
 

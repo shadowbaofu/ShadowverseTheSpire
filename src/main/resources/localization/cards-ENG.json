@@ -6573,7 +6573,7 @@
   "shadowverse:UntoldKick": {
     "NAME": "Untold Kick",
     "DESCRIPTION": "Can only be Fused if Rally is at least 10. NL Fusion: Non-Basic attack cards. NL If cards are fused to this card it becomes *Legendary *Kick NL  NL --------------------- NL  NL Deal !D! damage. NL Summon 1 Heavy Knight.",
-    "UPGRADE_DESCRIPTION": "Can only be Fused if Rally is at least 10. NL Fusion: Non-Basic attack cards. NL If cards are fused to this card it becomes *Legendary *Kick NL  NL --------------------- NL  NL Deal !D! damage. NL Summon 1 Heavy Knight+.",
+    "UPGRADE_DESCRIPTION": "Can only be Fused if Rally is at least 10. NL Fusion: Non-Basic attack cards. NL If cards are fused to this card it becomes *Legendary *Kick+ NL  NL --------------------- NL  NL Deal !D! damage. NL Summon 1 Heavy Knight+.",
     "EXTENDED_DESCRIPTION": [
       " NL (Rally Count: ",
       ")"

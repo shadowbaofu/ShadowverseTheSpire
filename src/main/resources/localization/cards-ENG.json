@@ -1870,7 +1870,7 @@
   },
   "shadowverse:Slayn": {
     "NAME": "Slayn, Steelwrought Vampire",
-    "DESCRIPTION": "Machina. NL Deal !D! damage. NL If you have 6 other cards in your hand, heal HP equal to damage dealt. NL If you have 4 or more other Machina cards in your hand, double the damage."
+    "DESCRIPTION": "Machina. NL Deal !D! damage. NL If you have 4 or more other Machina cards in your hand, double the damage. NL If you have 6 or more other Machina cards in your hand, heal HP equal to damage dealt."
   },
   "shadowverse:Neun": {
     "NAME": "Neun, Daybreak Vampire",
@@ -2546,8 +2546,8 @@
   },
   "shadowverse:ServantOfDarkness": {
     "NAME": "Carnelia, Servant of Darkness",
-    "DESCRIPTION": "AF. NL Gain !B! Block. NL Add 1 *Guardform *Golem to your hand.",
-    "UPGRADE_DESCRIPTION": "AF. NL Gain !B! Block. NL Add 1 *Guardform *Golem to your hand. NL Add 1 *Strikeform *Golem to your hand."
+    "DESCRIPTION": "Gain !B! Block. NL Add 1 *Guardform *Golem to your hand.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add 1 *Guardform *Golem to your hand. NL Add 1 *Strikeform *Golem to your hand."
   },
   "shadowverse:GenesisArtifact": {
     "NAME": "Genesis Artifact",
@@ -4300,7 +4300,7 @@
     "DESCRIPTION": "Machina - Festive. NL Maneuver: Cost 2 or less. NL Deal !D! damage. NL Deal !M! damage to ALL enemies. NL The card exhausted to Maneuver this card will not return to your hand. Instead, add 1 copy of this card to your hand and change its cost to 0 until played."
   },
   "shadowverse:AllFeeling": {
-    "NAME": "ALL-Feeling Divine",
+    "NAME": "All-Feeling Divine",
     "DESCRIPTION": "Festive. NL Exhaust up to !M! cards in your hand and draw !M! cards. NL Add !M! *Black *Mass to your discard pile. NL Deal !D! damage times the total number of Curses to ALL enemies."
   },
   "shadowverse:Paracelise": {
@@ -5688,25 +5688,25 @@
     "NAME": "Argente, Purest Silver",
     "DESCRIPTION": "Gain !B! Block. NL Discard 2 cards from your hand, gain 1 Overflow point. NL If you discarded cards 2 or more times this combat, draw 3 cards.",
     "EXTENDED_DESCRIPTION": [
-      "（ Number of times you discarded：",
-      " )"
+      "（ Discarded ",
+      " times)"
     ]
   },
   "shadowverse:Lumiore": {
     "NAME": "Lumiore, Prestigious Gold",
     "DESCRIPTION": "Gain !B! Block. Gain [E] NL Deal !M! damage to ALL enemies for each card discarded this turn. NL If you discarded cards 2 or more times this combat, discard 2 cards and draw 3 cards.",
     "EXTENDED_DESCRIPTION": [
-      "（ Number of times you discarded：",
-      " )"
+      "（ Discarded ",
+      " times)"
     ]
   },
   "shadowverse:NoirNBlanc": {
     "NAME": "Noir & Blanc, Brothers",
-    "DESCRIPTION": "Deal !D! damage. NL When this card is discarded, deal 6 damage to a random enemy. NL After playing or discarding this card, if Full Overflow is active at the end of your turn, gain !B! Block, 1 Afterimage, Artifact and Power_Damage_Immune. If you did not lose ALL of your Block, deal !M! damage to a random enemy next turn."
+    "DESCRIPTION": "Deal !D! damage. NL When this card is discarded, deal 6 damage to a random enemy. NL If played or discarded while in Full Overflow, gain 36 Block, 1 Afterimage, Artifact and Power_Damage_Immune at the end of your turn. Then, if you did not lose ALL of your Block, deal !M! damage to a random enemy next turn."
   },
   "shadowverse:DragoonMedic": {
     "NAME": "Dragoon Medic",
-    "DESCRIPTION": "Gain !B! Block. NL Gain !B! Block next turn. NL If this card is discarded from your hand, gain !M! Block next turn."
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Block next turn. NL If this card is discarded from your hand, gain !M! Block next turn."
   },
   "shadowverse:VerdantRebirth": {
     "NAME": "Verdant Rebirth",
@@ -5995,8 +5995,8 @@
   },
   "shadowverse:DragonHoard": {
     "NAME": "Dragon's Hoard",
-    "DESCRIPTION": "Countdown 20: Exhaust ALL attacks in your hand, discard and draw piles and replace them with *Inferno *Dragons. NL Whenever you play an attack card, subtract 1 from this card's Countdown. NL Enhance 2: Subtract 10 from this card's Countdown and add 2 *Hellflame *Dragons to your hand.",
-    "UPGRADE_DESCRIPTION": "Innate - Countdown 20: Exhaust ALL attacks in your hand, discard and draw piles and replace them with *Inferno *Dragons. NL Whenever you play an attack card, subtract 1 from this card's Countdown. NL Enhance 2: Subtract 10 from this card's Countdown and add 2 *Hellflame *Dragons to your hand."
+    "DESCRIPTION": "Countdown 20: Exhaust ALL attacks and replace them with *Inferno *Dragons. NL Whenever you play an Attack card, subtract 1 from this card's Countdown. NL Enhance 2: Subtract 10 from this card's Countdown. Add 2 *Hellflame *Dragons to your hand.",
+    "UPGRADE_DESCRIPTION": "Innate - Countdown 20: Exhaust ALL attacks and replace them with *Inferno *Dragons. NL Whenever you play an Attack card, subtract 1 from this card's Countdown. NL Enhance 2: Subtract 10 from this card's Countdown. Add 2 *Hellflame *Dragons to your hand."
   },
   "shadowverse:HypersonicDragonewt": {
     "NAME": "Hypersonic Dragonewt",
@@ -6151,7 +6151,7 @@
   },
   "shadowverse:WhitefrostWhisper": {
     "NAME": "Whitefrost Whisper",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak. NL Exhaust ALL status and curse cards in your hand. NL If the enemy was not at full HP, gain [E]. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak. NL Exhaust ALL Status and Curse cards in your hand. NL If the enemy was not at full HP, gain [E]. NL Exhaust."
   },
   "shadowverse:Filene": {
     "NAME": "Whitefrost Dragonewt Filene",
@@ -6509,7 +6509,7 @@
   },
   "shadowverse:PurelightPrototype": {
     "NAME": "Agyll, Purelight Prototype",
-    "DESCRIPTION": "AF - Fusion: Non-basic Portalcraft cards. NL If cards are fused to this card and there are 5 or less Artifacts exhausted, add 2 *Analyzing *Artifacts to your draw pile. Otherwise, this card becomes *Agyll, *Purelight *Exemplar。 NL Deal !D! damage. NL Randomly add !M! Artifacts from the draw pile to your hand."
+    "DESCRIPTION": "AF - Fusion: Non-basic Portalcraft cards. NL If cards are fused to this card and there are 5 or less Artifacts exhausted, randomly add 2 AF cards to your hand. Otherwise, this card becomes *Agyll, *Purelight *Exemplar。 NL Deal !D! damage. NL Randomly add !M! Artifacts from the draw pile to your hand."
   },
   "shadowverse:DisseminatorOfWisdom": {
     "NAME": "Disseminator of Wisdom",
@@ -6537,77 +6537,77 @@
     "DESCRIPTION": "Fusion: Skills, Powers or Colorless cards. NL If you fuse to this card while 3 or more cards are fused, it becomes *Goddess *of *Condemnation. NL  NL --------------------- NL  NL Gain !B! Block. NL ALL enemies lose 2 Strength and Dexterity. NL If cards were fused, gain 1 Overflow points. NL Exhaust."
   },
   "shadowverse:Anthenita": {
-    "NAME": "ミリオンガンズ・アンタニタ",
-    "DESCRIPTION": "ネメシス以外のカード1枚を選択し、それの複製品1枚を手札・山札に加える。",
-    "UPGRADE_DESCRIPTION": "ネメシス以外のカード1枚を選択し、それの複製品1枚を手札・山札に加える。 NL ネメシスカード1枚を選択し、それの複製品1枚を手札・山札に加える。"
+    "NAME": "Anthenita, Spark of Change",
+    "DESCRIPTION": "Choose a non-Portalcraft card. Add 1 copy of that card to your hand and draw pile.",
+    "UPGRADE_DESCRIPTION": "Choose a non-Portalcraft card. Add 1 copy of that card to your hand and draw pile. NL Choose a Portalcraft card. Add 1 copy of that card to your hand and draw pile."
   },
   "shadowverse:EverlastingHope": {
-    "NAME": "漆黒の曙光・ロサ",
-    "DESCRIPTION": "!D! ダメージを与え、カード3枚を引く。 NL 連携 10 :ダメージを倍にする。 筋力 と 敏捷性 1を得る。 NL 連携 10 :ダメージを倍にする。 筋力 と 敏捷性 3を得る。 NL あと !stslib:ex! 回使うと廃棄する。",
+    "NAME": "Rosalie, Everlasting Hope",
+    "DESCRIPTION": "Deal !D! Damage. Draw 3 cards. NL Rally 10: Double the damage and gain 1 Strength and Dexterity. NL Rally 20: Gain 3 Strength and Dexterity. NL Exhaust !stslib:ex!.",
     "EXTENDED_DESCRIPTION": [
-      "（連携数:",
-      ")"
+      "（Rally Count: ",
+      " . )"
     ]
   },
   "shadowverse:EnduringHope": {
-    "NAME": "漆黒の残光・ロサ",
-    "DESCRIPTION": "融合 :スターター以外のアタックカード NL これに1回で3枚以上融合 した時、 *漆黒の曙光・ロサ に 融合変身 する。  NL  NL --------------------- NL  NL !B! ブロック を得る。 NL アーティファクト 1を得る。 NL これに融合 した枚数と同じ数のエナジー、それにかける !M! の ブロック を得る。 NL あと !stslib:ex! 回使うと廃棄する。",
-    "UPGRADE_DESCRIPTION":"融合 :スターター以外のアタックカード NL これに1回で3枚以上融合 した時、 *漆黒の曙光・ロサ+ に 融合変身 する。  NL  NL --------------------- NL  NL !B! ブロック を得る。 NL アーティファクト 1を得る。 NL これに融合 した枚数と同じ数のエナジー、それにかける !M! の ブロック を得る。 NL あと !stslib:ex! 回使うと廃棄する。",
+    "NAME": "Rosalie, Enduring Hope",
+    "DESCRIPTION": "Fusion: Non-basic Attack cards. NL If you've fused at least 3 cards to this card at once, it becomes *Rosalie, *Everlasting *Hope.  NL  NL --------------------- NL  NL Gain !B! Block. NL Gain 1 Artifact. NL Gain Energy and !M! Block for each card fused to this card. NL Exhaust !stslib:ex! ",
+    "UPGRADE_DESCRIPTION": "Fusion: Non-basic Attack cards NL If at least 3 cards are fused to this card at once, it becomes *Rosalie, *Everlasting *Hope+.  NL  NL --------------------- NL  NL Gain !B! Block. NL Gain 1 Artifact. NL Gain Energy and !M! Block for each card fused to this card. NL Exhaust !stslib:ex! ",
     "EXTENDED_DESCRIPTION": [
-      " NL (融合した枚数は",
-      " 。)"
+      " NL (Fused ",
+      " Cards. )"
     ]
   },
   "shadowverse:DashingDuelist": {
     "NAME": "Dashing Duelist",
-    "DESCRIPTION": "敵全体に !D! ダメージを与え、カード !M! 枚を引く。 NL 連携 10: *EP 1枚を手札に加える。 NL 連携 20:ダメージを倍にする。",
+    "DESCRIPTION": "Deal !D! damage to all enemies. Draw !M! cards. NL Rally 10: Add 1 *Evolution *Point to your hand. NL Rally 20: Double this card's damage.",
     "EXTENDED_DESCRIPTION": [
-      "（連携数:",
-      ")"
+      "（Rally Count: ",
+      ". )"
     ]
   },
   "shadowverse:LegendaryKick": {
     "NAME": "Legendary Kick",
-    "DESCRIPTION": "!D! ダメージを与える。 NL カード1枚を引く。"
+    "DESCRIPTION": "Deal !D! damage. NL Draw a card."
   },
   "shadowverse:UntoldKick": {
     "NAME": "Untold Kick",
-    "DESCRIPTION": "連携 10以上なら、 融合 できる。 NL 融合 :スターター以外のアタックカード NL  *気鋭の猛蹴 に 融合変身 する。  NL  NL --------------------- NL  NL !D! ダメージを与える。 NL ヘヴィーナイト 1体を出す。",
-    "UPGRADE_DESCRIPTION":"連携 10以上なら、 融合 できる。 NL 融合 :スターター以外のアタックカード NL  *気鋭の猛蹴 に 融合変身 する。  NL  NL --------------------- NL  NL !D! ダメージを与える。 NL ヘヴィーナイト+ 1体を出す。",
+    "DESCRIPTION": "Can only be Fused if Rally is at least 10. NL Fusion: Non-Basic attack cards. NL If cards are fused to this card it becomes *Legendary *Kick NL  NL --------------------- NL  NL Deal !D! damage. NL Summon 1 Heavy Knight.",
+    "UPGRADE_DESCRIPTION": "Can only be Fused if Rally is at least 10. NL Fusion: Non-Basic attack cards. NL If cards are fused to this card it becomes *Legendary *Kick NL  NL --------------------- NL  NL Deal !D! damage. NL Summon 1 Heavy Knight+.",
     "EXTENDED_DESCRIPTION": [
-      "（連携数:",
-      ")"
+      "（Rally Count: ",
+      ". )"
     ]
   },
   "shadowverse:DegenerateDragon": {
     "NAME": "Degenerate Dragon",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 手札のアタック1枚のコストをこのターンだけ0にする。 NL 手札のスキル1枚のコストをこのターンだけ0にする。"
+    "DESCRIPTION": "Gain !B! Block. NL Reduce the cost of an Attack card to 0 this turn. NL Reduce the cost of a Skill card to 0 this turn."
   },
   "shadowverse:Icyclone": {
     "NAME": "Icyclone",
-    "DESCRIPTION": "ヒーロー NL !B! ブロック を得る。 NL 山札から ヒーロー 1枚を手札に加える。 NL  手札1枚を 廃棄 する。 NL ピンチ : 弱体化 と 脱力 2を与える。"
+    "DESCRIPTION": "Heroic NL Gain !B! Block. NL Add 1 Heroic card from the draw pile to your hand. NL Discard 1 card from your hand. NL Distress Call: Apply 2 Weak and Vulnerable."
   },
   "shadowverse:DualFlame": {
     "NAME": "DualFlames",
-    "DESCRIPTION": "カウントダウン 2: *ホーリーフレイムタイガー 2枚を手札に加える。",
-    "UPGRADE_DESCRIPTION":"カウントダウン 1: *ホーリーフレイムタイガー 2枚を手札に加える。"
+    "DESCRIPTION": "Countdown 2: Add 2 *Holyflame *Tigers to your hand.",
+    "UPGRADE_DESCRIPTION": "Countdown 1: Add 2 *Holyflame *Tigers to your hand."
   },
   "shadowverse:BeastlyVow": {
     "NAME": "BeastlyVow",
-    "DESCRIPTION": "カウントダウン 1: *ホーリーフレイムタイガー 1枚を手札に加える。",
-    "UPGRADE_DESCRIPTION":"カウントダウン 1: *ホーリーフレイムタイガー+ 1枚を手札に加える。"
+    "DESCRIPTION": "Countdown 1: Add 1 *Holyflame *Tiger to your hand.",
+    "UPGRADE_DESCRIPTION": "Countdown 1: Add 1 *Holyflame *Tiger+ to your hand."
   },
   "shadowverse:HierophantImplements": {
     "NAME": "Hierophant 's Implements",
-    "DESCRIPTION": "アミュレット1枚の カウントダウン を1進める。 NL カウントダウン 1:カード1枚を引く。 "
+    "DESCRIPTION": "Select 1 Amulet and reduce its Countdown by 1. NL Countdown 1: Draw 1 card. "
   },
   "shadowverse:Eir": {
     "NAME": "Eir",
-    "DESCRIPTION": "ランダムなポーションを獲得する。 NL スペルブースト 2回行う。 NL リアニメイト スペルブースト の回数/2。 NL スペルブースト が5回以上なら、次に受けるダメージを0にする。 NL 廃棄 。",
-    "UPGRADE_DESCRIPTION":"保留 NL ランダムなポーションを獲得する。 NL スペルブースト 2回行う。 NL リアニメイト スペルブースト の回数/2。 NL スペルブースト が5回以上なら、次に受けるダメージを0にする。 NL 廃棄 。",
+    "DESCRIPTION": "Obtain a random potion. NL Spellboost 2 times. NL Reanimate X. X equals the number of times this card has been Spellboosted. NL If Spellboosted at least 5 times, gain 1 Buffer. NL Exhaust.",
+    "UPGRADE_DESCRIPTION":"Retain. NL Obtain a random potion. NL Spellboost 2 times. NL Reanimate X. X equals the number of times this card has been Spellboosted. NL If Spellboosted at least 5 times, gain 1 Buffer. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
-      " NL ( スペルブースト は",
-      "回)"
+      " NL (Spellboosted ",
+      " Times. )"
     ]
   }
 }

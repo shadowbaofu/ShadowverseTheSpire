@@ -5341,7 +5341,7 @@
     "NAME": "Gawain, Oath to Glory",
     "DESCRIPTION": "Deal !D! damage. NL Rally 5: Draw 1 card. NL Rally 10: If this card is drawn, upgrade it. NL Rally 15: Double the damage. NL Rally 20: Gain 1 Buffer. ",
     "EXTENDED_DESCRIPTION": [
-      " NL （Rally Count：",
+      " NL (Rally Count: ",
       ")"
     ]
   },
@@ -6545,8 +6545,8 @@
     "NAME": "Rosalie, Everlasting Hope",
     "DESCRIPTION": "Deal !D! Damage. Draw 3 cards. NL Rally 10: Double the damage and gain 1 Strength and Dexterity. NL Rally 20: Gain 3 Strength and Dexterity. NL Exhaust !stslib:ex!.",
     "EXTENDED_DESCRIPTION": [
-      "（Rally Count: ",
-      " . )"
+      " NL (Rally Count: ",
+      ")"
     ]
   },
   "shadowverse:EnduringHope": {
@@ -6562,8 +6562,8 @@
     "NAME": "Dashing Duelist",
     "DESCRIPTION": "Deal !D! damage to all enemies. Draw !M! cards. NL Rally 10: Add 1 *Evolution *Point to your hand. NL Rally 20: Double this card's damage.",
     "EXTENDED_DESCRIPTION": [
-      "（Rally Count: ",
-      ". )"
+      " NL (Rally Count: ",
+      ")"
     ]
   },
   "shadowverse:LegendaryKick": {
@@ -6575,8 +6575,8 @@
     "DESCRIPTION": "Can only be Fused if Rally is at least 10. NL Fusion: Non-Basic attack cards. NL If cards are fused to this card it becomes *Legendary *Kick NL  NL --------------------- NL  NL Deal !D! damage. NL Summon 1 Heavy Knight.",
     "UPGRADE_DESCRIPTION": "Can only be Fused if Rally is at least 10. NL Fusion: Non-Basic attack cards. NL If cards are fused to this card it becomes *Legendary *Kick NL  NL --------------------- NL  NL Deal !D! damage. NL Summon 1 Heavy Knight+.",
     "EXTENDED_DESCRIPTION": [
-      "（Rally Count: ",
-      ". )"
+      " NL (Rally Count: ",
+      ")"
     ]
   },
   "shadowverse:DegenerateDragon": {
@@ -6585,7 +6585,7 @@
   },
   "shadowverse:Icyclone": {
     "NAME": "Icyclone",
-    "DESCRIPTION": "Heroic NL Gain !B! Block. NL Add 1 Heroic card from the draw pile to your hand. NL Discard 1 card from your hand. NL Distress Call: Apply 2 Weak and Vulnerable."
+    "DESCRIPTION": "Heroic NL Gain !B! Block. NL Add 1 Heroic card from the draw pile to your hand. NL Exhaust 1 card from your hand. NL Distress Call: Apply 2 Weak and Vulnerable."
   },
   "shadowverse:DualFlame": {
     "NAME": "DualFlames",

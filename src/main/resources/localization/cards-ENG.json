@@ -6499,7 +6499,7 @@
     "DESCRIPTION": "Can only be fused if 10 or more Amulets were destroyed. NL Fusion: Havencraft cards. NL If cards are fused to this card, it becomes *Seraphs *of *the *True *Key. NL  NL --------------------- NL  NL Deal !D! damage. NL Subtract 1 from the Countdown of an Amulet. If it is destroyed, return this card to your hand.",
     "UPGRADE_DESCRIPTION": "Can only be fused if 10 or more Amulets were destroyed. NL Fusion: Havencraft cards. NL If cards are fused to this card, it becomes *Seraphs *of *the *True *Key. NL  NL --------------------- NL  NL Deal !D! damage. NL Subtract 1 from the Countdown of an Amulet. If it is destroyed, return this card to your hand.",
     "EXTENDED_DESCRIPTION": [
-      " NL (Destroyed",
+      " NL (Destroyed ",
       " Amulets. )"
     ]
   },
@@ -6525,8 +6525,8 @@
   },
   "shadowverse:FieryBarrage": {
     "NAME": "Fiery Barrage",
-    "DESCRIPTION": "Can only fuse if Resonance is active. NL Fusion: Non-basic Portalcraft cards. If cards are fused to this card it becomes *Blazing *Barrage. NL  NL --------------------- NL  NL Deal !D! damage. NL Remove 1 buff except Strength or Dexterity (Artifact is removed first if applicable).  NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Can only fuse if Resonance is active. NL Fusion: Non-basic Portalcraft cards. If cards are fused to this card it becomes *Blazing *Barrage+. NL  NL --------------------- NL  NL Deal !D! damage. NL Remove 1 buff except Strength or Dexterity (Artifact is removed first if applicable). NL Exhaust. "
+    "DESCRIPTION": "Can only be fused if Resonance is active. NL Fusion: Non-basic Portalcraft cards. If cards are fused to this card it becomes *Blazing *Barrage. NL  NL --------------------- NL  NL Deal !D! damage. NL Remove 1 buff except Strength or Dexterity (Artifact is removed first if applicable).  NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Can only be fused if Resonance is active. NL Fusion: Non-basic Portalcraft cards. If cards are fused to this card it becomes *Blazing *Barrage+. NL  NL --------------------- NL  NL Deal !D! damage. NL Remove 1 buff except Strength or Dexterity (Artifact is removed first if applicable). NL Exhaust. "
   },
   "shadowverse:GoddessOfCondemnation": {
     "NAME": "Goddess of Condemnation",
@@ -6543,10 +6543,10 @@
   },
   "shadowverse:EverlastingHope": {
     "NAME": "Rosalie, Everlasting Hope",
-    "DESCRIPTION": "Deal !D! Damage. Draw 3 cards. NL Rally 10: Double the damage and gain 1 Strength and Dexterity. NL Rally 20: Gain 3 Strength and Dexterity. NL Exhaust !stslib:ex!.",
+    "DESCRIPTION": "Deal !D! damage. Draw 3 cards. NL Rally 10: Double the damage and gain 1 Strength and Dexterity. NL Rally 20: Gain 3 Strength and Dexterity. NL Exhaust !stslib:ex!.",
     "EXTENDED_DESCRIPTION": [
       " NL (Rally Count: ",
-      ")"
+      " . )"
     ]
   },
   "shadowverse:EnduringHope": {
@@ -6563,7 +6563,7 @@
     "DESCRIPTION": "Deal !D! damage to all enemies. Draw !M! cards. NL Rally 10: Add 1 *Evolution *Point to your hand. NL Rally 20: Double this card's damage.",
     "EXTENDED_DESCRIPTION": [
       " NL (Rally Count: ",
-      ")"
+      " . )"
     ]
   },
   "shadowverse:LegendaryKick": {
@@ -6576,7 +6576,7 @@
     "UPGRADE_DESCRIPTION": "Can only be Fused if Rally is at least 10. NL Fusion: Non-Basic attack cards. NL If cards are fused to this card it becomes *Legendary *Kick+ NL  NL --------------------- NL  NL Deal !D! damage. NL Summon 1 Heavy Knight+.",
     "EXTENDED_DESCRIPTION": [
       " NL (Rally Count: ",
-      ")"
+      " . )"
     ]
   },
   "shadowverse:DegenerateDragon": {
@@ -6603,8 +6603,8 @@
   },
   "shadowverse:Eir": {
     "NAME": "Eir",
-    "DESCRIPTION": "Obtain a random potion. NL Spellboost 2 times. NL Reanimate X. X equals the number of times this card has been Spellboosted. NL If Spellboosted at least 5 times, gain 1 Buffer. NL Exhaust.",
-    "UPGRADE_DESCRIPTION":"Retain. NL Obtain a random potion. NL Spellboost 2 times. NL Reanimate X. X equals the number of times this card has been Spellboosted. NL If Spellboosted at least 5 times, gain 1 Buffer. NL Exhaust.",
+    "DESCRIPTION": "Obtain a random potion. NL Spellboost 2 times. NL Reanimate X. X is the number of times this card has been Spellboosted. NL If Spellboosted at least 5 times, gain 1 Buffer. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Obtain a random potion. NL Spellboost 2 times. NL Reanimate X. X is the number of times this card has been Spellboosted. NL If Spellboosted at least 5 times, gain 1 Buffer. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
       " NL (Spellboosted ",
       " Times. )"

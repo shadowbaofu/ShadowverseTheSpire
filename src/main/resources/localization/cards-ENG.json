@@ -6426,7 +6426,7 @@
     "DESCRIPTION": "Fusion: Non-basic Runecraft cards. NL If at least 5 cards are fused, it becomes *Midelo, *Scorner *Of *Truths. NL  NL --------------------- NL  NL Gain !B! Block. NL Put a Runecraft card from the draw pile to your hand. Repeat if cards were fused to this card.",
     "UPGRADE_DESCRIPTION": "Fusion: Non-basic Runecraft cards. NL If at least 5 cards are fused, it becomes *Midelo+, *Scorner *Of *Truths. NL  NL --------------------- NL  NL Gain !B! Block. NL Put a Runecraft card from the draw pile to your hand. Repeat if cards were fused to this card.",
     "EXTENDED_DESCRIPTION": [
-      " NL (Fused",
+      " NL (Fused ",
       " cards. )"
     ]
   },
@@ -6435,7 +6435,7 @@
     "DESCRIPTION": "Deal !D! damage. Gain 1 Earth Essence. NL If 7 or more Earth Essence has been consumed this combat，add 1 *Evolution *Point and 1 *Miracle to your hand, then gain: 'Once per turn, whenever you consume Earth Essence gain that much energy'.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. Gain 1 Earth Essence. NL Gain: 'Once per turn, whenever you consume Earth Essence gain that much energy.' NL If 7 or more Earth Essence has been consumed this combat, add 1 *Evolution *Point and 1 *Miracle to your hand.",
     "EXTENDED_DESCRIPTION": [
-      " NL (Consumed",
+      " NL (Consumed ",
       " Earth Essence. )"
     ]
   },

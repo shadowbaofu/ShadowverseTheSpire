@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import shadowverse.cards.Neutral.Status.EvolutionPoint;
 import shadowverse.cards.Neutral.Status.Ghost;
 import shadowverse.cards.Neutral.Status.GiantGhost;
 
@@ -32,7 +33,7 @@ public class Cemetery extends AbstractPower {
 
     @Override
     public void onAfterUseCard(AbstractCard card, UseCardAction action) {
-        if (!(card instanceof Ghost) && !(card instanceof GiantGhost)){
+        if (!(card instanceof Ghost) && !(card instanceof GiantGhost) && !(card instanceof EvolutionPoint)){
             this.amount += 1;
             this.updateDescription();
             AbstractDungeon.onModifyPower();

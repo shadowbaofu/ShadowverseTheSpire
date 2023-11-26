@@ -82,6 +82,7 @@ public class DashingDuelist extends CustomCard {
     @Override
     public void applyPowers() {
         super.applyPowers();
+        this.rawDescription = cardStrings.DESCRIPTION;
         this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + rally() + cardStrings.EXTENDED_DESCRIPTION[1];
         this.initializeDescription();
     }

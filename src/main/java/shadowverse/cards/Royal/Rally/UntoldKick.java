@@ -34,7 +34,7 @@ public class UntoldKick extends AbstractRightClickCard2 {
     public static final String[] TEXT = uiStrings.TEXT;
 
     public UntoldKick() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.ENEMY);
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.ENEMY);
         this.baseDamage = 9;
         this.cardsToPreview = new LegendaryKick();
     }

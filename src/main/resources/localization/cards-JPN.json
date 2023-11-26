@@ -2934,8 +2934,8 @@
   },
   "shadowverse:EvolutionPoint": {
     "NAME": "EP",
-    "DESCRIPTION": "エセリアル 。 NL これを右クリックしてアタックまたはパワーを !M! 枚アップグレードする。これを廃棄する。",
-    "UPGRADE_DESCRIPTION": "保留 。 NL これを右クリックしてアタックまたはパワーを !M! 枚アップグレードする。これを廃棄する。"
+    "DESCRIPTION": "エセリアル 。 NL アタックまたはパワーを !M! 枚アップグレードする。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION": "保留 。 NL アタックまたはパワーを !M! 枚アップグレードする。 NL 廃棄 。"
   },
   "shadowverse:EnragedGeneral": {
     "NAME": "レイジングジェネラル",
@@ -6579,7 +6579,7 @@
   },
   "shadowverse:DegenerateDragon": {
     "NAME": "ヴァニティードラゴン",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 手札のアタック1枚のコストをこのターンだけ0にする。 NL 手札のスキル1枚のコストをこのターンだけ0にする。"
+    "DESCRIPTION": "!B! ブロック を得る。 NL 手札のアタック1枚をプレイされるまでコスト0にする。 NL 手札のスキル1枚をプレイされるまでコスト0にする。"
   },
   "shadowverse:Icyclone": {
     "NAME": "氷結の騎士",

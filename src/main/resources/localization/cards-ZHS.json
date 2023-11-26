@@ -2934,8 +2934,8 @@
   },
   "shadowverse:EvolutionPoint": {
     "NAME": "进化点",
-    "DESCRIPTION": "虚无 。 NL 右击 消耗 这张牌并升级 !M! 张攻击或能力牌。",
-    "UPGRADE_DESCRIPTION": "保留 。 NL 右击 消耗 这张牌并升级 !M! 张攻击或能力牌。"
+    "DESCRIPTION": "虚无 。 NL 消耗 这张牌并升级 !M! 张攻击或能力牌。",
+    "UPGRADE_DESCRIPTION": "保留 。 NL 消耗 这张牌并升级 !M! 张攻击或能力牌。"
   },
   "shadowverse:EnragedGeneral": {
     "NAME": "愤怒的将军",
@@ -6474,8 +6474,8 @@
   },
   "shadowverse:Hunters": {
     "NAME": "日暮猎人·黎昂&艾尔弗",
-    "DESCRIPTION": "消耗堆中的 *进化点 为5张以上则可以发动 融合 。 NL 融合 :非基础牌 NL 融合变身 为 *养育血族 。 NL  NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 获得1层 *火焰屏障 。 NL 打出 *进化点 时， 升级 这张牌并增加1张 *进化点 到手中。",
-    "UPGRADE_DESCRIPTION": "消耗堆中的 *进化点 为5张以上则可以发动 融合 。 NL 融合 :非基础牌 NL 融合变身 为 *养育血族 。 NL  NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 获得3层 *火焰屏障 。 NL 打出后解除 升级 。"
+    "DESCRIPTION": "消耗堆中的 *进化点 为5张以上则可以发动 融合 。 NL 融合 :非基础牌 NL 融合变身 为 *幽暗狩猎者·黎昂&艾尔 。 NL  NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 获得1层 *火焰屏障 。 NL 打出 *进化点 时， 升级 这张牌并增加1张 *进化点 到手中。",
+    "UPGRADE_DESCRIPTION": "消耗堆中的 *进化点 为5张以上则可以发动 融合 。 NL 融合 :非基础牌 NL 融合变身 为 *幽暗狩猎者·黎昂&艾尔 。 NL  NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 获得3层 *火焰屏障 。 NL 打出后解除 升级 。"
   },
   "shadowverse:TanzaniteConvictor": {
     "NAME": "坦桑石定罪者",
@@ -6572,7 +6572,7 @@
   },
   "shadowverse:DegenerateDragon": {
     "NAME": "虚饰之龙",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 选择1张攻击牌，将其本回合耗能变为0。 NL 选择1张技能，将其本回合耗能变为0。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 选择1张攻击牌，下次打出前耗能变为0。 NL 选择1张技能，下次打出前耗能变为0。"
   },
   "shadowverse:Icyclone": {
     "NAME": "冰结骑士",

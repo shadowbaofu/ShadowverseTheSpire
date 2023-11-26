@@ -2931,8 +2931,8 @@
   },
   "shadowverse:EvolutionPoint": {
     "NAME": "Evolution Point",
-    "DESCRIPTION": "Ethereal. NL Right click to upgrade !M! Attack or Power cards, then exhaust .",
-    "UPGRADE_DESCRIPTION": "Retain. NL Right click to upgrade !M! Attack or Power cards, then exhaust ."
+    "DESCRIPTION": "Ethereal. NL Upgrade !M! Attack or Power cards. NL Exhaust .",
+    "UPGRADE_DESCRIPTION": "Retain. NL Upgrade !M! Attack or Power cards. NL Exhaust ."
   },
   "shadowverse:EnragedGeneral": {
     "NAME": "Enraged General",

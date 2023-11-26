@@ -43,7 +43,7 @@ public class Anthenita extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
         addToBot(new SFXAction("Anthenita"));
-        addToBot(new SelectCardsInHandAction(1, TEXT[0], false, false, card -> card.color != Nemesis.Enums.COLOR_SKY, abstractCards -> {
+        addToBot(new SelectCardsInHandAction(1, TEXT[0], false, true, card -> card.color != Nemesis.Enums.COLOR_SKY, abstractCards -> {
             for (AbstractCard c : abstractCards) {
                 AbstractCard tmp = c.makeStatEquivalentCopy();
                 addToBot(new MakeTempCardInHandAction(tmp));
@@ -60,7 +60,7 @@ public class Anthenita extends CustomCard {
                 if (p instanceof AbstractShadowversePlayer)
                     ((AbstractShadowversePlayer) p).resonanceCount--;
             }
-            addToBot(new SelectCardsInHandAction(1, TEXT[0], false, false, card -> card.color == Nemesis.Enums.COLOR_SKY, abstractCards -> {
+            addToBot(new SelectCardsInHandAction(1, TEXT[0], false, true, card -> card.color == Nemesis.Enums.COLOR_SKY && card != this, abstractCards -> {
                 for (AbstractCard c : abstractCards) {
                     AbstractCard tmp = c.makeStatEquivalentCopy();
                     addToBot(new MakeTempCardInHandAction(tmp));

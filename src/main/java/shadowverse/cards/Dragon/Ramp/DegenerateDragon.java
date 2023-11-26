@@ -35,14 +35,18 @@ public class DegenerateDragon extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
         addToBot(new GainBlockAction(p,this.block));
-        addToBot(new SelectCardsInHandAction(1, TEXT[0], false, true, card -> card.type == CardType.ATTACK, abstractCards -> {
+        addToBot(new SelectCardsInHandAction(1, TEXT[0], false, true, card -> card.type == CardType.ATTACK && card != this, abstractCards -> {
             for (AbstractCard c : abstractCards) {
-                c.setCostForTurn(0);
+                if (c.cost>0){
+                    c.freeToPlayOnce = true;
+                }
             }
         }));
         addToBot(new SelectCardsInHandAction(1, TEXT[0], false, true, card -> card.type == CardType.SKILL, abstractCards -> {
             for (AbstractCard c : abstractCards) {
-                c.setCostForTurn(0);
+                if (c.cost>0){
+                    c.freeToPlayOnce = true;
+                }
             }
         }));
     }

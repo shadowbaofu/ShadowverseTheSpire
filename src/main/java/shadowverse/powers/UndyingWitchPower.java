@@ -39,7 +39,7 @@ public class UndyingWitchPower
 
     @Override
     public int betterOnApplyPowerStacks(AbstractPower power, AbstractCreature target, AbstractCreature source, int stackAmount) {
-        if (power instanceof EarthEssence && stackAmount < 0) {
+        if (power instanceof EarthEssence && stackAmount < 0 && !triggered) {
             flash();
             addToBot(new GainEnergyAction(-stackAmount));
             this.triggered = true;

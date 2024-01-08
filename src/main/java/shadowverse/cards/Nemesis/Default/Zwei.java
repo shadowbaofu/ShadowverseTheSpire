@@ -183,7 +183,7 @@ public class Zwei extends CustomCard implements BranchableUpgradeCard {
             public void upgrade() {
                 ++Zwei.this.timesUpgraded;
                 Zwei.this.upgraded = true;
-                Zwei.this.name = NAME + "+";
+                Zwei.this.name = cardStrings.NAME + "+";
                 Zwei.this.initializeTitle();
                 Zwei.this.baseBlock = 20;
                 Zwei.this.upgradedBlock = true;

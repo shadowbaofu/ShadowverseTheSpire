@@ -103,7 +103,7 @@ public class OmenOfOne
             public void upgrade() {
                 ++OmenOfOne.this.timesUpgraded;
                 OmenOfOne.this.upgraded = true;
-                OmenOfOne.this.name = NAME + "+";
+                OmenOfOne.this.name = cardStrings.NAME + "+";
                 OmenOfOne.this.initializeTitle();
                 int diff = OmenOfOne.this.costForTurn - OmenOfOne.this.cost;
                 OmenOfOne.this.cost = 1;

@@ -96,6 +96,7 @@ public class NemesisPool extends AbstractBanPool {
         Default.addCard(new DisseminatorOfWisdom());
         Default.addCard(new SyntheticEden());
         Default.addCard(new Anthenita());
+        Default.addCard(new Eon());
         Artifact.addCard(new Ralmia());
         Artifact.addCard(new ArtifactImpulse());
         Artifact.addCard(new ArtifactScan());
@@ -142,6 +143,8 @@ public class NemesisPool extends AbstractBanPool {
         Pile.addCard(new Evamia());
         Pile.addCard(new Acceleratium());
         Pile.addCard(new PurelightPrototype());
+        Pile.addCard(new LaserTyranny());
+        Pile.addCard(new ElectricRhino());
         Puppet.addCard(new DollsOwner());
         Puppet.addCard(new InfinityPuppeteer());
         Puppet.addCard(new Licht());

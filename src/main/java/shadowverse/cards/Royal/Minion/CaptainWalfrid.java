@@ -73,7 +73,7 @@ public class CaptainWalfrid extends CustomCard implements BranchableUpgradeCard 
             public void upgrade() {
                 ++CaptainWalfrid.this.timesUpgraded;
                 CaptainWalfrid.this.upgraded = true;
-                CaptainWalfrid.this.name = NAME + "+";
+                CaptainWalfrid.this.name = cardStrings.NAME + "+";
                 CaptainWalfrid.this.initializeTitle();
                 CaptainWalfrid.this.upgradeBaseCost(4);
             }

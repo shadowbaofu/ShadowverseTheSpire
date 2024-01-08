@@ -103,7 +103,7 @@ public class OmenOfRepose
                 public void upgrade() {
                     ++OmenOfRepose.this.timesUpgraded;
                     OmenOfRepose.this.upgraded = true;
-                    OmenOfRepose.this.name = NAME + "+";
+                    OmenOfRepose.this.name = cardStrings.NAME + "+";
                     OmenOfRepose.this.initializeTitle();
                     OmenOfRepose.this.upgradeBaseCost(2);
                 }

@@ -3,14 +3,12 @@
 
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.common.ReduceCostAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -45,7 +43,7 @@ import java.util.ArrayList;
 
    public Miranda() {
      super(ID, NAME, IMG_PATH, BASE_COST, DESCRIPTION, CardType.ATTACK, Witchcraft.Enums.COLOR_BLUE, CardRarity.UNCOMMON, CardTarget.SELF);
-     this.cardsToPreview = (AbstractCard)new MysterianRite();
+     this.cardsToPreview = new MysterianRite();
      this.baseBlock = 8;
      this.tags.add(AbstractShadowversePlayer.Enums.MYSTERIA);
    }
@@ -53,8 +51,8 @@ import java.util.ArrayList;
    public void triggerOnOtherCardPlayed(AbstractCard c) {
      if (c.hasTag(AbstractShadowversePlayer.Enums.MYSTERIA)||(AbstractDungeon.player.hasRelic(AnneBOSS.ID)&&c.type==CardType.SKILL)) {
        flash();
-       addToBot((AbstractGameAction)new SFXAction("spell_boost"));
-       addToBot((AbstractGameAction)new ReduceCostAction((AbstractCard)this));
+       addToBot(new SFXAction("spell_boost"));
+       addToBot(new ReduceCostAction(this));
      }
    }
    
@@ -70,22 +68,24 @@ import java.util.ArrayList;
  
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     AbstractCard a = (AbstractCard)new MysterianRite();
+     AbstractCard a = new MysterianRite();
      AbstractCard c = returnTrulyRandomMysterianInCombat(AbstractDungeon.cardRandomRng).makeCopy();
-     ((AbstractShadowversePlayer)abstractPlayer).mysteriaCount++;
-     addToBot((AbstractGameAction)new SFXAction("Miranda"));
-     addToBot((AbstractGameAction)new GainBlockAction((AbstractCreature)abstractPlayer,this.block));
+     if (abstractPlayer instanceof AbstractShadowversePlayer){
+       ((AbstractShadowversePlayer)abstractPlayer).mysteriaCount++;
+     }
+     addToBot(new SFXAction("Miranda"));
+     addToBot(new GainBlockAction(abstractPlayer,this.block));
      if (this.upgraded){
        a.upgrade();
      }
-     addToBot((AbstractGameAction)new MakeTempCardInHandAction(c, 1));
-     addToBot((AbstractGameAction)new MakeTempCardInHandAction(a, 1));
+     addToBot(new MakeTempCardInHandAction(c, 1));
+     addToBot(new MakeTempCardInHandAction(a, 1));
      this.cost = BASE_COST;
    }
  
    
    public AbstractCard makeCopy() {
-     return (AbstractCard)new Miranda();
+     return new Miranda();
    }
  }
 

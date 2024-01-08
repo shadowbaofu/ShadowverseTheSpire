@@ -92,7 +92,7 @@ public class Marlone extends CustomCard implements BranchableUpgradeCard {
             public void upgrade() {
                 ++Marlone.this.timesUpgraded;
                 Marlone.this.upgraded = true;
-                Marlone.this.name = NAME + "+";
+                Marlone.this.name = cardStrings.NAME + "+";
                 Marlone.this.initializeTitle();
                 Marlone.this.baseBlock = 12;
                 Marlone.this.upgradedBlock = true;

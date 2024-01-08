@@ -143,7 +143,7 @@ public class GenesisDragon extends CustomCard implements BranchableUpgradeCard {
             public void upgrade() {
                 ++GenesisDragon.this.timesUpgraded;
                 GenesisDragon.this.upgraded = true;
-                GenesisDragon.this.name = NAME + "+";
+                GenesisDragon.this.name = cardStrings.NAME + "+";
                 GenesisDragon.this.initializeTitle();
                 GenesisDragon.this.baseDamage = 60;
                 GenesisDragon.this.upgradedDamage = true;

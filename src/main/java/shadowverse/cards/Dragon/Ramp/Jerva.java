@@ -81,7 +81,7 @@ public class Jerva extends CustomCard implements BranchableUpgradeCard {
             public void upgrade() {
                 ++Jerva.this.timesUpgraded;
                 Jerva.this.upgraded = true;
-                Jerva.this.name = NAME + "+";
+                Jerva.this.name = cardStrings.NAME + "+";
                 Jerva.this.initializeTitle();
                 Jerva.this.isEthereal = false;
                 Jerva.this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;

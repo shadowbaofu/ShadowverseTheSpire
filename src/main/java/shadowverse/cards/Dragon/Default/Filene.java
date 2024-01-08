@@ -97,7 +97,7 @@ public class Filene extends CustomCard implements BranchableUpgradeCard {
             public void upgrade() {
                 ++Filene.this.timesUpgraded;
                 Filene.this.upgraded = true;
-                Filene.this.name = NAME + "+";
+                Filene.this.name = cardStrings.NAME + "+";
                 Filene.this.initializeTitle();
                 Filene.this.baseBlock = 9;
                 Filene.this.upgradedBlock = true;

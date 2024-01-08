@@ -119,7 +119,7 @@ public class ServantOfDarkness
             public void upgrade() {
                 ++ServantOfDarkness.this.timesUpgraded;
                 ServantOfDarkness.this.upgraded = true;
-                ServantOfDarkness.this.name = NAME + "+";
+                ServantOfDarkness.this.name = cardStrings.NAME + "+";
                 ServantOfDarkness.this.initializeTitle();
                 ServantOfDarkness.this.baseBlock = 4;
                 ServantOfDarkness.this.upgradedBlock = true;

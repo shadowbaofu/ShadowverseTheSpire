@@ -115,7 +115,7 @@ public class Ceres
             public void upgrade() {
                 ++Ceres.this.timesUpgraded;
                 Ceres.this.upgraded = true;
-                Ceres.this.name = NAME + "+";
+                Ceres.this.name = cardStrings.NAME + "+";
                 Ceres.this.initializeTitle();
                 Ceres.this.baseBlock = 15;
                 Ceres.this.upgradedBlock = true;

@@ -87,7 +87,7 @@ public class Maisha
             public void upgrade() {
                 ++Maisha.this.timesUpgraded;
                 Maisha.this.upgraded = true;
-                Maisha.this.name = NAME + "+";
+                Maisha.this.name = cardStrings.NAME + "+";
                 Maisha.this.initializeTitle();
                 Maisha.this.baseMagicNumber = 2;
                 Maisha.this.magicNumber = Maisha.this.baseMagicNumber;

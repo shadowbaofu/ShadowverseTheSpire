@@ -121,7 +121,7 @@ public class Albert extends AbstractEnhanceCard implements BranchableUpgradeCard
             public void upgrade() {
                 ++Albert.this.timesUpgraded;
                 Albert.this.upgraded = true;
-                Albert.this.name = NAME + "+";
+                Albert.this.name = cardStrings.NAME + "+";
                 Albert.this.initializeTitle();
                 Albert.this.upgradeName();
                 Albert.this.baseDamage = 16;

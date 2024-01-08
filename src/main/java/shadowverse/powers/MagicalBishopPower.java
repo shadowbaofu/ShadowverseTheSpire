@@ -46,7 +46,7 @@ public class MagicalBishopPower extends AbstractPower {
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if (card.hasTag(AbstractShadowversePlayer.Enums.CHESS)) {
             flash();
-            addToBot((new DamageAllEnemiesAction(AbstractDungeon.player, this.amount, DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.SLASH_DIAGONAL)));
+            addToBot(new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(this.amount, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.BLUNT_LIGHT));
         }
     }
 }

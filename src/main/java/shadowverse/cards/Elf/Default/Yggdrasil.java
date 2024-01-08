@@ -114,7 +114,7 @@ public class Yggdrasil extends CustomCard implements BranchableUpgradeCard {
             public void upgrade() {
                 ++Yggdrasil.this.timesUpgraded;
                 Yggdrasil.this.upgraded = true;
-                Yggdrasil.this.name = NAME + "+";
+                Yggdrasil.this.name = cardStrings.NAME + "+";
                 Yggdrasil.this.initializeTitle();
                 Yggdrasil.this.baseBlock = 16;
                 ;

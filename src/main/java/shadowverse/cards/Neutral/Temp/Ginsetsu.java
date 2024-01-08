@@ -89,7 +89,7 @@ public class Ginsetsu
             public void upgrade() {
                 ++Ginsetsu.this.timesUpgraded;
                 Ginsetsu.this.upgraded = true;
-                Ginsetsu.this.name = NAME + "+";
+                Ginsetsu.this.name = cardStrings.NAME + "+";
                 Ginsetsu.this.initializeTitle();
                 Ginsetsu.this.baseBlock = 27;
                 Ginsetsu.this.upgradedBlock = true;

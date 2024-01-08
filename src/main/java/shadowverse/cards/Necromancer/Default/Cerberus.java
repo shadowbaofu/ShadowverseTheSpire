@@ -176,7 +176,7 @@ public class Cerberus
             public void upgrade() {
                 ++Cerberus.this.timesUpgraded;
                 Cerberus.this.upgraded = true;
-                Cerberus.this.name = NAME + "+";
+                Cerberus.this.name = cardStrings.NAME + "+";
                 Cerberus.this.initializeTitle();
                 rawDescription = cardStrings.UPGRADE_DESCRIPTION;
                 initializeDescription();

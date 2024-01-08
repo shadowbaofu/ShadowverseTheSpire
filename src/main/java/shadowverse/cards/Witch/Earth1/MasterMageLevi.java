@@ -122,9 +122,9 @@ public class MasterMageLevi extends CustomCard implements BranchableUpgradeCard 
         list.add(new UpgradeBranch() {
             @Override
             public void upgrade() {
-                ++MasterMageLevi.this.timesUpgraded;
+                MasterMageLevi.this.timesUpgraded = 1;
                 MasterMageLevi.this.upgraded = true;
-                MasterMageLevi.this.name = NAME + "+";
+                MasterMageLevi.this.name = cardStrings.NAME + "+";
                 MasterMageLevi.this.initializeTitle();
                 MasterMageLevi.this.baseDamage = 20;
                 MasterMageLevi.this.upgradedDamage = true;

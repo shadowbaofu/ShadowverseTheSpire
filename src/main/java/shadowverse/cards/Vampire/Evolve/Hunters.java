@@ -68,6 +68,8 @@ public class Hunters extends AbstractRightClickCard2 {
         addToBot(new SFXAction("Hunters"));
         addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new FlameBarrierPower(abstractPlayer,this.upgraded?3:1),this.upgraded?3:1));
         addToBot(new GainBlockAction(abstractPlayer,this.block));
+        if (this.upgraded)
+            degrade();
     }
 
 

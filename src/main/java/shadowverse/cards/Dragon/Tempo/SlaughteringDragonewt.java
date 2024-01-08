@@ -44,11 +44,14 @@ public class SlaughteringDragonewt extends CustomCard {
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         ArrayList<AbstractCard> stanceChoices = new ArrayList<>();
-        stanceChoices.add(new TheTower());
-        stanceChoices.add(new TheTower_I());
-        if (upgraded){
-            stanceChoices.stream().forEach(abstractCard -> upgrade());
+        AbstractCard a = new TheTower();
+        AbstractCard b = new TheTower_I();
+        if (this.upgraded){
+            a.upgrade();
+            b.upgrade();
         }
+        stanceChoices.add(a);
+        stanceChoices.add(b);
         addToBot(new ChooseOneAction(stanceChoices));
     }
 

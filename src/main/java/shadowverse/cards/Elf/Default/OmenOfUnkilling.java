@@ -103,7 +103,7 @@ public class OmenOfUnkilling
             public void upgrade() {
                 ++OmenOfUnkilling.this.timesUpgraded;
                 OmenOfUnkilling.this.upgraded = true;
-                OmenOfUnkilling.this.name = NAME + "+";
+                OmenOfUnkilling.this.name = cardStrings.NAME + "+";
                 OmenOfUnkilling.this.initializeTitle();
                 OmenOfUnkilling.this.selfRetain = true;
                 OmenOfUnkilling.this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;

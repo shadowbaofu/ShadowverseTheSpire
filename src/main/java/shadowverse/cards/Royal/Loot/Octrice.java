@@ -237,7 +237,7 @@ public class Octrice extends CustomCard implements BranchableUpgradeCard {
             public void upgrade() {
                 ++Octrice.this.timesUpgraded;
                 Octrice.this.upgraded = true;
-                Octrice.this.name = NAME + "+";
+                Octrice.this.name = cardStrings.NAME + "+";
                 Octrice.this.initializeTitle();
                 Octrice.this.baseMagicNumber = 15;
                 Octrice.this.magicNumber = Octrice.this.baseMagicNumber;

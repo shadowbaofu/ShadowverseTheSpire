@@ -159,7 +159,7 @@ public class Roy extends CustomCard implements BranchableUpgradeCard {
             public void upgrade() {
                 ++Roy.this.timesUpgraded;
                 Roy.this.upgraded = true;
-                Roy.this.name = NAME + "+";
+                Roy.this.name = cardStrings.NAME + "+";
                 Roy.this.initializeTitle();
                 Roy.this.baseBlock = 9;
                 Roy.this.upgradedBlock = true;

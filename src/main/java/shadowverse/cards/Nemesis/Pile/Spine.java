@@ -175,7 +175,7 @@ public class Spine extends CustomCard implements BranchableUpgradeCard {
             public void upgrade() {
                 ++Spine.this.timesUpgraded;
                 Spine.this.upgraded = true;
-                Spine.this.name = NAME + "+";
+                Spine.this.name = cardStrings.NAME + "+";
                 Spine.this.initializeTitle();
                 Spine.this.baseBlock = 20;
                 Spine.this.upgradedBlock = true;

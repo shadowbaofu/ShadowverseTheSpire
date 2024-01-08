@@ -162,7 +162,7 @@ public class Nicola extends CustomCard implements BranchableUpgradeCard {
             public void upgrade() {
                 ++Nicola.this.timesUpgraded;
                 Nicola.this.upgraded = true;
-                Nicola.this.name = NAME + "+";
+                Nicola.this.name = cardStrings.NAME + "+";
                 Nicola.this.initializeTitle();
                 Nicola.this.baseDamage = 6;
                 Nicola.this.upgradedDamage = true;

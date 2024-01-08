@@ -37,7 +37,6 @@ public class Garven extends CustomCard {
     }
 
     public int types() {
-        int[] t = {0, 0, 0, 0, 0, 0, 0};
         AbstractCard.CardTags[] type = {
                 AbstractShadowversePlayer.Enums.MACHINE,
                 AbstractShadowversePlayer.Enums.NATURAL,
@@ -51,6 +50,7 @@ public class Garven extends CustomCard {
                 AbstractShadowversePlayer.Enums.ACADEMIC,
                 AbstractShadowversePlayer.Enums.ARMED
         };
+        int[] t = new int[type.length];
         for (int i = 0; i < t.length; i++) {
             for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisCombat) {
                 if (c.hasTag(type[i])) {

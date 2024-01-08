@@ -87,7 +87,7 @@ public class Masamune extends CustomCard implements BranchableUpgradeCard {
             public void upgrade() {
                 ++Masamune.this.timesUpgraded;
                 Masamune.this.upgraded = true;
-                Masamune.this.name = NAME + "+";
+                Masamune.this.name = cardStrings.NAME + "+";
                 Masamune.this.initializeTitle();
                 Masamune.this.baseDamage = 12;
                 Masamune.this.upgradedDamage = true;

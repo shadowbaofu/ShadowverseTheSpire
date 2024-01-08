@@ -92,7 +92,7 @@ public class OmenOfLust
             public void upgrade() {
                 ++OmenOfLust.this.timesUpgraded;
                 OmenOfLust.this.upgraded = true;
-                OmenOfLust.this.name = NAME + "+";
+                OmenOfLust.this.name = cardStrings.NAME + "+";
                 OmenOfLust.this.initializeTitle();
                 OmenOfLust.this.baseMagicNumber = 2;
                 OmenOfLust.this.magicNumber = OmenOfLust.this.baseMagicNumber;

@@ -1715,6 +1715,22 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("Romelia_L", new Sfx(voicePath + "Romelia_L.wav"));
             reflectedMap.put("Icyclone", new Sfx(voicePath + "Icyclone.wav"));
             reflectedMap.put("Eir", new Sfx(voicePath + "Eir.wav"));
+            reflectedMap.put("Amaterasu", new Sfx(voicePath + "Amaterasu.wav"));
+            reflectedMap.put("Tsukuyomi", new Sfx(voicePath + "Tsukuyomi.wav"));
+            reflectedMap.put("Blackwyrm", new Sfx(voicePath + "Blackwyrm.wav"));
+            reflectedMap.put("Whitewyrm", new Sfx(voicePath + "Whitewyrm.wav"));
+            reflectedMap.put("AcademyWyrmist", new Sfx(voicePath + "AcademyWyrmist.wav"));
+            reflectedMap.put("Hanna2", new Sfx(voicePath + "Hanna2.wav"));
+            reflectedMap.put("Ginger", new Sfx(voicePath + "Ginger.wav"));
+            reflectedMap.put("ScorchingCurse", new Sfx(voicePath + "ScorchingCurse.wav"));
+            reflectedMap.put("DarkAlice", new Sfx(voicePath + "DarkAlice.wav"));
+            reflectedMap.put("DarkAlice_Acc", new Sfx(voicePath + "DarkAlice_Acc.wav"));
+            reflectedMap.put("DarkAlice_L", new Sfx(voicePath + "DarkAlice_L.wav"));
+            reflectedMap.put("DarkAlice_Acc_L", new Sfx(voicePath + "DarkAlice_Acc_L.wav"));
+            reflectedMap.put("CelestialWyrmGod", new Sfx(voicePath + "CelestialWyrmGod.wav"));
+            reflectedMap.put("Jill", new Sfx(voicePath + "Jill.wav"));
+            reflectedMap.put("Jill_Acc", new Sfx(voicePath + "Jill_Acc.wav"));
+            reflectedMap.put("Eon", new Sfx(voicePath + "Eon.wav"));
         }
         if (Loader.isModLoaded("CardAugments")) {
             AugmentHelper.register();
@@ -3098,6 +3114,26 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard(new BeastlyVow());
         BaseMod.addCard(new HierophantImplements());
         BaseMod.addCard(new Eir());
+        BaseMod.addCard(new Apple());
+        BaseMod.addCard(new LaserTyranny());
+        BaseMod.addCard(new Amaterasu());
+        BaseMod.addCard(new Tsukuyomi());
+        BaseMod.addCard(new MoonAndSun());
+        BaseMod.addCard(new Blackwyrm());
+        BaseMod.addCard(new Whitewyrm());
+        BaseMod.addCard(new AcademyWyrmist());
+        BaseMod.addCard(new ScorchingCurse());
+        BaseMod.addCard(new Ginger());
+        BaseMod.addCard(new DarkAlice());
+        BaseMod.addCard(new DarkAlice_Crystalize());
+        BaseMod.addCard(new DarkAlice_Temp());
+        BaseMod.addCard(new DarkAlice_Ev());
+        BaseMod.addCard(new ElectricRhino());
+        BaseMod.addCard(new MechamagicalRhino());
+        BaseMod.addCard(new CelestialWyrmGod());
+        BaseMod.addCard(new AbsoluteDragon());
+        BaseMod.addCard(new Jill());
+        BaseMod.addCard(new Eon());
         logger.info("Success");
     }
 

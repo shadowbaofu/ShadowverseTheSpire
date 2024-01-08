@@ -158,7 +158,7 @@ public class RageCommander
             public void upgrade() {
                 ++RageCommander.this.timesUpgraded;
                 RageCommander.this.upgraded = true;
-                RageCommander.this.name = NAME + "+";
+                RageCommander.this.name = cardStrings.NAME + "+";
                 RageCommander.this.initializeTitle();
                 RageCommander.this.upgradeBaseCost(1);
             }

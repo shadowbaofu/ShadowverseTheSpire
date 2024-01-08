@@ -75,7 +75,7 @@ public class Minthe
             public void upgrade() {
                 ++Minthe.this.timesUpgraded;
                 Minthe.this.upgraded = true;
-                Minthe.this.name = NAME + "+";
+                Minthe.this.name = cardStrings.NAME + "+";
                 Minthe.this.initializeTitle();
                 Minthe.this.isEthereal = false;
                 Minthe.this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;

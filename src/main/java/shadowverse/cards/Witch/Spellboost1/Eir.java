@@ -72,7 +72,9 @@ public class Eir
         }
         addToBot(new SFXAction("Eir"));
         addToBot(new ObtainPotionAction(AbstractDungeon.returnRandomPotion(true)));
-        addToBot(new ReanimateAction(this.magicNumber / 2));
+        if (this.costForTurn > 0){
+            addToBot(new ReanimateAction(this.magicNumber / 2));
+        }
         if (this.magicNumber >= 5) {
             addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new BufferPower(abstractPlayer, 1), 1));
         }

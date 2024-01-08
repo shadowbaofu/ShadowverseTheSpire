@@ -90,7 +90,7 @@ import java.util.List;
              public void upgrade() {
                  ++Tetra.this.timesUpgraded;
                  Tetra.this.upgraded = true;
-                 Tetra.this.name = NAME + "+";
+                 Tetra.this.name = cardStrings.NAME + "+";
                  Tetra.this.initializeTitle();
                  Tetra.this.baseBlock = 10;
                  Tetra.this.upgradedBlock = true;

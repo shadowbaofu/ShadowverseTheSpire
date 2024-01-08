@@ -135,7 +135,7 @@ public class OmenOfSilence extends CustomCard implements BranchableUpgradeCard {
             public void upgrade() {
                 ++OmenOfSilence.this.timesUpgraded;
                 OmenOfSilence.this.upgraded = true;
-                OmenOfSilence.this.name = NAME + "+";
+                OmenOfSilence.this.name = cardStrings.NAME + "+";
                 OmenOfSilence.this.initializeTitle();
                 OmenOfSilence.this.upgradeBaseCost(1);
             }

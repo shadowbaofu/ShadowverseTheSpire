@@ -120,7 +120,7 @@ public class Odin extends AbstractNeutralCard implements BranchableUpgradeCard {
             public void upgrade() {
                 ++Odin.this.timesUpgraded;
                 Odin.this.upgraded = true;
-                Odin.this.name = NAME + "+";
+                Odin.this.name = cardStrings.NAME + "+";
                 Odin.this.initializeTitle();
                 Odin.this.baseDamage = 24;
                 Odin.this.upgradedDamage = true;

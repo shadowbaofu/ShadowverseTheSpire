@@ -71,9 +71,9 @@ import java.util.List;
          list.add(new UpgradeBranch() {
              @Override
              public void upgrade() {
-                 ++Faust.this.timesUpgraded;
+                 Faust.this.timesUpgraded = 1;
                  Faust.this.upgraded = true;
-                 Faust.this.name = NAME + "+";
+                 Faust.this.name = cardStrings.NAME + "+";
                  Faust.this.initializeTitle();
                  Faust.this.upgradeName();
                  Faust.this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;

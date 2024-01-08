@@ -136,7 +136,7 @@ public class Ralmia
             public void upgrade() {
                 ++Ralmia.this.timesUpgraded;
                 Ralmia.this.upgraded = true;
-                Ralmia.this.name = NAME + "+";
+                Ralmia.this.name = cardStrings.NAME + "+";
                 Ralmia.this.baseDamage = 9;
                 Ralmia.this.upgradedDamage = true;
             }

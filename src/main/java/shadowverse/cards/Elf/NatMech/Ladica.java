@@ -132,7 +132,7 @@ import java.util.List;
              public void upgrade() {
                  ++Ladica.this.timesUpgraded;
                  Ladica.this.upgraded = true;
-                 Ladica.this.name = NAME + "+";
+                 Ladica.this.name = cardStrings.NAME + "+";
                  Ladica.this.initializeTitle();
                  Ladica.this.baseDamage = 16;;
                  Ladica.this.upgradedDamage = true;

@@ -75,7 +75,7 @@ public class Leod
             public void upgrade() {
                 ++Leod.this.timesUpgraded;
                 Leod.this.upgraded = true;
-                Leod.this.name = NAME + "+";
+                Leod.this.name = cardStrings.NAME + "+";
                 Leod.this.initializeTitle();
                 Leod.this.isInnate = true;
                 Leod.this.baseMagicNumber = 3;

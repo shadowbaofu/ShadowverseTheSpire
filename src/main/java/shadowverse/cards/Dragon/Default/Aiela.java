@@ -87,7 +87,7 @@ public class Aiela extends CustomCard implements BranchableUpgradeCard {
             public void upgrade() {
                 ++Aiela.this.timesUpgraded;
                 Aiela.this.upgraded = true;
-                Aiela.this.name = NAME + "+";
+                Aiela.this.name = cardStrings.NAME + "+";
                 Aiela.this.initializeTitle();
                 Aiela.this.baseBlock = 9;
                 Aiela.this.upgradedBlock = true;

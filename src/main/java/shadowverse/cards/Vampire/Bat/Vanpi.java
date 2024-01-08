@@ -174,7 +174,7 @@ public class Vanpi
             public void upgrade() {
                 ++Vanpi.this.timesUpgraded;
                 Vanpi.this.upgraded = true;
-                Vanpi.this.name = NAME + "+";
+                Vanpi.this.name = cardStrings.NAME + "+";
                 Vanpi.this.initializeTitle();
                 Vanpi.this.baseBlock = 21;
                 Vanpi.this.upgradedBlock = true;

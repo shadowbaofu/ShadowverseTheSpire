@@ -110,7 +110,7 @@ public class Lorena extends CustomCard implements BranchableUpgradeCard {
             public void upgrade() {
                 ++Lorena.this.timesUpgraded;
                 Lorena.this.upgraded = true;
-                Lorena.this.name = NAME + "+";
+                Lorena.this.name = cardStrings.NAME + "+";
                 Lorena.this.initializeTitle();
                 Lorena.this.baseBlock = 9;
                 Lorena.this.upgradedBlock = true;

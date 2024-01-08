@@ -87,14 +87,14 @@ public class OmenOfDestruction
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         AbstractDungeon.effectsQueue.add(new SpotlightPlayerEffect());
-        addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) abstractPlayer, (AbstractCreature) abstractPlayer, (AbstractPower) new ArtifactPower((AbstractCreature) abstractPlayer, this.magicNumber), this.magicNumber));
+        addToBot(new ApplyPowerAction((AbstractCreature) abstractPlayer, (AbstractCreature) abstractPlayer, (AbstractPower) new ArtifactPower((AbstractCreature) abstractPlayer, this.magicNumber), this.magicNumber));
         switch (chosenBranch()){
             case 0:
-                addToBot((AbstractGameAction) new SFXAction("OmenOfDestruction"));
-                addToBot((AbstractGameAction) new MakeTempCardInHandAction(white.makeStatEquivalentCopy()));
+                addToBot(new SFXAction("OmenOfDestruction"));
+                addToBot(new MakeTempCardInHandAction(white.makeStatEquivalentCopy()));
                 break;
             case 1:
-                addToBot((AbstractGameAction) new SFXAction("OmenOfDestruction2"));
+                addToBot(new SFXAction("OmenOfDestruction2"));
                 int amt = 0;
                 for (AbstractCard card:abstractPlayer.exhaustPile.group){
                     if (card.type==CardType.ATTACK)
@@ -107,9 +107,11 @@ public class OmenOfDestruction
                     addToBot((AbstractGameAction)new MakeTempCardInHandAction(new BlackArtifact2()));
                     addToBot((AbstractGameAction)new MakeTempCardInHandAction(new SoloOfMelody()));
                 }
-                addToBot((AbstractGameAction)new ReanimateAction(0));
-                addToBot((AbstractGameAction)new ReanimateAction(0));
-                addToBot((AbstractGameAction)new ReanimateAction(1));
+                if (this.costForTurn>0){
+                    addToBot((AbstractGameAction)new ReanimateAction(0));
+                    addToBot((AbstractGameAction)new ReanimateAction(0));
+                    addToBot((AbstractGameAction)new ReanimateAction(1));
+                }
                 break;
         }
     }
@@ -127,7 +129,7 @@ public class OmenOfDestruction
             public void upgrade() {
                 ++OmenOfDestruction.this.timesUpgraded;
                 OmenOfDestruction.this.upgraded = true;
-                OmenOfDestruction.this.name = NAME + "+";
+                OmenOfDestruction.this.name = cardStrings.NAME + "+";
                 OmenOfDestruction.this.initializeTitle();
                 OmenOfDestruction.this.isInnate = true;;
                 rawDescription = cardStrings.UPGRADE_DESCRIPTION;

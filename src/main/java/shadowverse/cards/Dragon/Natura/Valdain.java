@@ -115,7 +115,7 @@ public class Valdain extends AbstractRightClickCard2 implements BranchableUpgrad
             public void upgrade() {
                 ++Valdain.this.timesUpgraded;
                 Valdain.this.upgraded = true;
-                Valdain.this.name = NAME + "+";
+                Valdain.this.name = cardStrings.NAME + "+";
                 Valdain.this.initializeTitle();
                 Valdain.this.upgradeName();
                 Valdain.this.baseBlock = 18;

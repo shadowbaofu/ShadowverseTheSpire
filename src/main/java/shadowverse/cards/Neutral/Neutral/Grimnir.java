@@ -119,7 +119,7 @@ public class Grimnir extends AbstractNeutralCard implements BranchableUpgradeCar
             public void upgrade() {
                 ++Grimnir.this.timesUpgraded;
                 Grimnir.this.upgraded = true;
-                Grimnir.this.name = NAME + "+";
+                Grimnir.this.name = cardStrings.NAME + "+";
                 Grimnir.this.initializeTitle();
                 Grimnir.this.baseDamage = 11;
                 Grimnir.this.upgradedDamage = true;

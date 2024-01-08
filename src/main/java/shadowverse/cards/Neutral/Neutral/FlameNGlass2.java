@@ -119,7 +119,7 @@ public class FlameNGlass2 extends AbstractRightClickCard implements BranchableUp
             public void upgrade() {
                 ++FlameNGlass2.this.timesUpgraded;
                 FlameNGlass2.this.upgraded = true;
-                FlameNGlass2.this.name = NAME + "+";
+                FlameNGlass2.this.name = cardStrings.NAME + "+";
                 FlameNGlass2.this.initializeTitle();
                 FlameNGlass2.this.damage = 52;
                 FlameNGlass2.this.upgradedDamage = true;

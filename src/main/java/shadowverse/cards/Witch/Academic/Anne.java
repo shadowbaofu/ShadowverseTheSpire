@@ -94,7 +94,9 @@ import java.util.List;
  
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     ((AbstractShadowversePlayer)abstractPlayer).mysteriaCount++;
+     if (AbstractDungeon.player instanceof AbstractShadowversePlayer) {
+       ((AbstractShadowversePlayer) AbstractDungeon.player).mysteriaCount++;
+     }
      switch (chosenBranch()){
        case 0:
          AbstractCard a = new AnnesSummoning();
@@ -153,9 +155,9 @@ import java.util.List;
      list.add(new UpgradeBranch() {
        @Override
        public void upgrade() {
-         ++Anne.this.timesUpgraded;
+         Anne.this.timesUpgraded = 1;
          Anne.this.upgraded = true;
-         Anne.this.name = NAME + "+";
+         Anne.this.name = cardStrings.NAME + "+";
          Anne.this.initializeTitle();
          Anne.this.baseBlock = 13;
          Anne.this.upgradedBlock = true;

@@ -86,7 +86,7 @@ public class Veight
             public void upgrade() {
                 ++Veight.this.timesUpgraded;
                 Veight.this.upgraded = true;
-                Veight.this.name = NAME + "+";
+                Veight.this.name = cardStrings.NAME + "+";
                 Veight.this.initializeTitle();
                 Veight.this.baseBlock = 11;
                 Veight.this.upgradedBlock = true;

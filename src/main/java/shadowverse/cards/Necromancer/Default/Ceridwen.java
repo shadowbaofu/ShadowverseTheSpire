@@ -180,7 +180,7 @@ public class Ceridwen extends CustomCard implements BranchableUpgradeCard {
             public void upgrade() {
                 ++Ceridwen.this.timesUpgraded;
                 Ceridwen.this.upgraded = true;
-                Ceridwen.this.name = NAME + "+";
+                Ceridwen.this.name = cardStrings.NAME + "+";
                 Ceridwen.this.initializeTitle();
                 Ceridwen.this.baseBlock = 12;
                 Ceridwen.this.upgradedBlock = true;

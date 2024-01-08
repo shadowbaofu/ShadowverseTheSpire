@@ -91,7 +91,7 @@ public class Wilbert
             public void upgrade() {
                 ++Wilbert.this.timesUpgraded;
                 Wilbert.this.upgraded = true;
-                Wilbert.this.name = NAME + "+";
+                Wilbert.this.name = cardStrings.NAME + "+";
                 Wilbert.this.baseBlock = 18;
                 Wilbert.this.baseMagicNumber = 2;
                 Wilbert.this.magicNumber = Wilbert.this.baseMagicNumber;

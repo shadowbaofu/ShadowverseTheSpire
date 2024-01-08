@@ -109,9 +109,9 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
          list.add(new UpgradeBranch() {
              @Override
              public void upgrade() {
-                 ++Amataz.this.timesUpgraded;
+                 Amataz.this.timesUpgraded = 1;
                  Amataz.this.upgraded = true;
-                 Amataz.this.name = NAME + "+";
+                 Amataz.this.name = cardStrings.NAME + "+";
                  Amataz.this.baseBlock = 12;
                  Amataz.this.baseMagicNumber = 5;
                  Amataz.this.magicNumber = Amataz.this.baseMagicNumber;

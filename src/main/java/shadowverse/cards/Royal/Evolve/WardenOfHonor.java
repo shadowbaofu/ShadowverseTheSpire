@@ -54,6 +54,7 @@ public class WardenOfHonor
     @Override
     public void accUse(AbstractPlayer abstractPlayer, AbstractMonster m) {
         addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new DrawCardNextTurnPower(abstractPlayer, 1), 1));
+        addToBot(new MakeTempCardInDiscardAction(this.makeCopy(), 1));
     }
 
     public AbstractCard makeCopy() {

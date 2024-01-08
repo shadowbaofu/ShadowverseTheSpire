@@ -44,7 +44,7 @@ public class GeneralMaximus extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction(ID.replace("shadowverse:", "")));
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        addToBot(new SelectCardsAction(p.drawPile.group,3,TEXT[0],true, card -> type != CardType.SKILL, abstractCards ->
+        addToBot(new SelectCardsAction(p.drawPile.group,3,TEXT[0],true, card -> card.type != CardType.SKILL, abstractCards ->
         {
             for (AbstractCard c : abstractCards) {
                 addToBot(new ExhaustSpecificCardAction(c,p.drawPile));

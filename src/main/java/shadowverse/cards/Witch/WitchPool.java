@@ -105,6 +105,9 @@ public class WitchPool extends AbstractBanPool {
         Academic.addCard(new Miranda());
         Academic.addCard(new MysterianParty());
         Academic.addCard(new Owen());
+        Academic.addCard(new AcademyWyrmist());
+        Academic.addCard(new Ginger());
+        Academic.addCard(new Jill());
         Chess.addCard(new Blitz());
         Chess.addCard(new Check());
         Chess.addCard(new MagicalBishop());

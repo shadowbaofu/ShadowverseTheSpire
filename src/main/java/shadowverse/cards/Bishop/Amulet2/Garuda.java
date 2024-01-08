@@ -158,7 +158,7 @@ public class Garuda extends CustomCard implements BranchableUpgradeCard {
             public void upgrade() {
                 ++Garuda.this.timesUpgraded;
                 Garuda.this.upgraded = true;
-                Garuda.this.name = NAME + "+";
+                Garuda.this.name = cardStrings.NAME + "+";
                 Garuda.this.initializeTitle();
                 Garuda.this.baseDamage = 20;
                 Garuda.this.upgradedDamage = true;

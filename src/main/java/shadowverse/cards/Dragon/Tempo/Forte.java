@@ -107,7 +107,7 @@ public class Forte extends CustomCard implements BranchableUpgradeCard {
             public void upgrade() {
                 ++Forte.this.timesUpgraded;
                 Forte.this.upgraded = true;
-                Forte.this.name = NAME + "+";
+                Forte.this.name = cardStrings.NAME + "+";
                 Forte.this.initializeTitle();
                 Forte.this.baseDamage = 35;
                 Forte.this.upgradedDamage = true;

@@ -88,7 +88,7 @@ public class OmenOfTruth
             public void upgrade() {
                 ++OmenOfTruth.this.timesUpgraded;
                 OmenOfTruth.this.upgraded = true;
-                OmenOfTruth.this.name = NAME + "+";
+                OmenOfTruth.this.name = cardStrings.NAME + "+";
                 OmenOfTruth.this.initializeTitle();
                 OmenOfTruth.this.isInnate = true;
                 OmenOfTruth.this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;

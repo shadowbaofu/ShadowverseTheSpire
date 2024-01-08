@@ -2082,5 +2082,25 @@
     "DESCRIPTIONS": [
       "每当打出 #y创造物 牌时，如果为本回合打出的第1、3、5张则抽 #b1 张牌，第2、4、6张则获得 [E] 。"
     ]
+  },
+  "shadowverse:NextTurnAmaterasu": {
+    "NAME": "荒天月读",
+    "DESCRIPTIONS": [
+      "回合开始时增加 #b",
+      " 张 #y晴天天照 到手中。"
+    ]
+  },
+  "shadowverse:NextTurnTsukuyomi": {
+    "NAME": "晴天天照",
+    "DESCRIPTIONS": [
+      "回合开始时增加 #b",
+      " 张 #y荒天月读 到手中。"
+    ]
+  },
+  "shadowverse:GingerPower": {
+    "NAME": "暴走言灵·洋荷",
+    "DESCRIPTIONS": [
+      "回合开始时增加 #b1 张 #y鲜烈的言灵 到手中。"
+    ]
   }
 }

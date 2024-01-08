@@ -118,7 +118,7 @@ public class Jeanne extends CustomCard implements BranchableUpgradeCard {
             public void upgrade() {
                 ++Jeanne.this.timesUpgraded;
                 Jeanne.this.upgraded = true;
-                Jeanne.this.name = NAME + "+";
+                Jeanne.this.name = cardStrings.NAME + "+";
                 Jeanne.this.initializeTitle();
                 Jeanne.this.baseDamage = 21;
                 Jeanne.this.upgradedDamage = true;

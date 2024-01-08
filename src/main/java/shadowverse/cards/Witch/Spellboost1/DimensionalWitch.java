@@ -129,7 +129,7 @@ public class DimensionalWitch extends CustomCard implements BranchableUpgradeCar
             public void upgrade() {
                 ++DimensionalWitch.this.timesUpgraded;
                 DimensionalWitch.this.upgraded = true;
-                DimensionalWitch.this.name = NAME + "+";
+                DimensionalWitch.this.name = cardStrings.NAME + "+";
                 DimensionalWitch.this.initializeTitle();
                 DimensionalWitch.this.baseBlock = 16;
                 DimensionalWitch.this.upgradedBlock = true;

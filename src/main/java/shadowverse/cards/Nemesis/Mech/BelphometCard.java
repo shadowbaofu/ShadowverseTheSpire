@@ -148,7 +148,7 @@ public class BelphometCard extends AbstractRightClickCard2 implements Branchable
             public void upgrade() {
                 ++BelphometCard.this.timesUpgraded;
                 BelphometCard.this.upgraded = true;
-                BelphometCard.this.name = NAME + "+";
+                BelphometCard.this.name = cardStrings.NAME + "+";
                 BelphometCard.this.initializeTitle();
                 rawDescription = cardStrings.UPGRADE_DESCRIPTION;
                 initializeDescription();

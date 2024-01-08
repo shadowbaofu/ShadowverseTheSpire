@@ -27,7 +27,7 @@ public class CorneliusAction extends AbstractGameAction {
     @Override
     public void update() {
         for (AbstractCard c: CardLibrary.getAllCards()){
-            if (c.type == AbstractCard.CardType.ATTACK && c.color != Necromancer.Enums.COLOR_PURPLE && c.cost == 1){
+            if (c.type == AbstractCard.CardType.ATTACK && c.color != Necromancer.Enums.COLOR_PURPLE && c.cost == 1 && c.isSeen){
                 if (tmp.contains(c.cardID)||c instanceof AbstractEnhanceCard) {
                     continue;
                 }

@@ -183,7 +183,7 @@ public class OmenOfDisdain extends CustomCard implements BranchableUpgradeCard {
             public void upgrade() {
                 ++OmenOfDisdain.this.timesUpgraded;
                 OmenOfDisdain.this.upgraded = true;
-                OmenOfDisdain.this.name = NAME + "+";
+                OmenOfDisdain.this.name = cardStrings.NAME + "+";
                 OmenOfDisdain.this.initializeTitle();
                 OmenOfDisdain.this.baseDamage = 25;
                 OmenOfDisdain.this.upgradedDamage = true;

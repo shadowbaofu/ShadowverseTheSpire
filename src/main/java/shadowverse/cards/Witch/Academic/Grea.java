@@ -150,7 +150,7 @@ import java.util.List;
        public void upgrade() {
          ++Grea.this.timesUpgraded;
          Grea.this.upgraded = true;
-         Grea.this.name = NAME + "+";
+         Grea.this.name = cardStrings.NAME + "+";
          Grea.this.initializeTitle();
          Grea.this.baseBlock = 15;
          Grea.this.upgradedBlock = true;

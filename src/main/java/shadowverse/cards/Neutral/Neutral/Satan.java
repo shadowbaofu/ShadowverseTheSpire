@@ -161,7 +161,7 @@ public class Satan extends AbstractNeutralCard implements BranchableUpgradeCard 
             public void upgrade() {
                 ++Satan.this.timesUpgraded;
                 Satan.this.upgraded = true;
-                Satan.this.name = NAME + "+";
+                Satan.this.name = cardStrings.NAME + "+";
                 Satan.this.initializeTitle();
                 Satan.this.upgradeBaseCost(3);
                 Satan.this.baseCost = 3;

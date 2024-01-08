@@ -82,7 +82,7 @@ public class OldSatan extends AbstractNeutralCard implements BranchableUpgradeCa
             public void upgrade() {
                 ++OldSatan.this.timesUpgraded;
                 OldSatan.this.upgraded = true;
-                OldSatan.this.name = NAME + "+";
+                OldSatan.this.name = cardStrings.NAME + "+";
                 OldSatan.this.initializeTitle();
                 OldSatan.this.upgradeBaseCost(3);
             }

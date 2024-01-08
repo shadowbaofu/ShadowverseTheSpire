@@ -127,6 +127,8 @@ public class NecroPool extends AbstractBanPool {
         LastWords.addCard(new UnderworldLieutenant());
         LastWords.addCard(new WickedRebirth());
         LastWords.addCard(new GraveVoidknight());
+        LastWords.addCard(new Apple());
+        LastWords.addCard(new DarkAlice());
         Mech.addCard(new Aenea());
         Mech.addCard(new BoneDominator());
         Mech.addCard(new BoneDrone());

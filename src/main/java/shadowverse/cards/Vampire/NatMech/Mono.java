@@ -148,7 +148,7 @@ public class Mono
             public void upgrade() {
                 ++Mono.this.timesUpgraded;
                 Mono.this.upgraded = true;
-                Mono.this.name = NAME + "+";
+                Mono.this.name = cardStrings.NAME + "+";
                 Mono.this.initializeTitle();
                 Mono.this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
                 Mono.this.initializeDescription();

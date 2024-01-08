@@ -169,7 +169,7 @@ public class SkullFane
             public void upgrade() {
                 ++SkullFane.this.timesUpgraded;
                 SkullFane.this.upgraded = true;
-                SkullFane.this.name = NAME + "+";
+                SkullFane.this.name = cardStrings.NAME + "+";
                 SkullFane.this.initializeTitle();
                 SkullFane.this.baseBlock = 6;
                 SkullFane.this.upgradedBlock = true;

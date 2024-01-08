@@ -145,9 +145,9 @@ public class Runie extends CustomCard implements BranchableUpgradeCard {
         list.add(new UpgradeBranch() {
             @Override
             public void upgrade() {
-                ++Runie.this.timesUpgraded;
+                Runie.this.timesUpgraded = 1;
                 Runie.this.upgraded = true;
-                Runie.this.name = NAME + "+";
+                Runie.this.name = cardStrings.NAME + "+";
                 Runie.this.initializeTitle();
                 Runie.this.baseBlock = 12;
                 Runie.this.upgradedBlock = true;

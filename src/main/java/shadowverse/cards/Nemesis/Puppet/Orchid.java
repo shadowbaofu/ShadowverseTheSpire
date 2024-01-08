@@ -164,7 +164,7 @@ public class Orchid extends AbstractRightClickCard2 implements BranchableUpgrade
             public void upgrade() {
                 ++Orchid.this.timesUpgraded;
                 Orchid.this.upgraded = true;
-                Orchid.this.name = NAME + "+";
+                Orchid.this.name = cardStrings.NAME + "+";
                 Orchid.this.initializeTitle();
                 Orchid.this.baseBlock = 25;
                 Orchid.this.upgradedBlock = true;

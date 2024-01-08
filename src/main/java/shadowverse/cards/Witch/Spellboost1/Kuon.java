@@ -182,7 +182,7 @@ public class Kuon
             public void upgrade() {
                 ++Kuon.this.timesUpgraded;
                 Kuon.this.upgraded = true;
-                Kuon.this.name = NAME + "+";
+                Kuon.this.name = cardStrings.NAME + "+";
                 Kuon.this.initializeTitle();
                 rawDescription = cardStrings.UPGRADE_DESCRIPTION;
                 initializeDescription();

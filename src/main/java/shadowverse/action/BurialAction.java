@@ -44,7 +44,7 @@ public class BurialAction extends AbstractGameAction {
                 return;
             }
             for (AbstractCard c : this.p.hand.group) {
-                if (CardLibrary.getCard(c.cardID) != null && CardLibrary.getCard(c.cardID).type!= AbstractCard.CardType.ATTACK) {
+                if (CardLibrary.getCard(c.cardID) != null && (CardLibrary.getCard(c.cardID).type == AbstractCard.CardType.ATTACK||c.type== AbstractCard.CardType.ATTACK)) {
                     this.cannotChose.add(c);
                 }
             }
@@ -103,7 +103,7 @@ public class BurialAction extends AbstractGameAction {
         }
         if (!AbstractDungeon.handCardSelectScreen.wereCardsRetrieved) {
             for (AbstractCard c : AbstractDungeon.handCardSelectScreen.selectedCards.group) {
-                if (CardLibrary.getCard(c.cardID) != null && CardLibrary.getCard(c.cardID).type== AbstractCard.CardType.ATTACK){
+                if (CardLibrary.getCard(c.cardID) != null && (CardLibrary.getCard(c.cardID).type == AbstractCard.CardType.ATTACK||c.type== AbstractCard.CardType.ATTACK)){
                     AbstractDungeon.effectList.add(new ExhaustCardEffect(c));
                     this.p.hand.removeCard(c);
                     AbstractDungeon.actionManager.cardsPlayedThisCombat.add(c);

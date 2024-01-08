@@ -95,7 +95,7 @@ public class OmenOfCraving extends AbstractNeutralCard implements BranchableUpgr
             public void upgrade() {
                 ++OmenOfCraving.this.timesUpgraded;
                 OmenOfCraving.this.upgraded = true;
-                OmenOfCraving.this.name = NAME + "+";
+                OmenOfCraving.this.name = cardStrings.NAME + "+";
                 OmenOfCraving.this.initializeTitle();
                 OmenOfCraving.this.baseDamage = 5;
                 OmenOfCraving.this.upgradedDamage = true;

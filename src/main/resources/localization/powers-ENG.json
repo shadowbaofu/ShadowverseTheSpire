@@ -1301,7 +1301,7 @@
   "shadowverse:DualbladePower": {
     "NAME": "Dualblade Flurry",
     "DESCRIPTIONS": [
-      "#yFollowers can attack 2 times (using 2 health)."
+      "#yFollowers can trigger their Passives 2 times (using 2 health)."
     ]
   },
   "shadowverse:AmbushBuffPower": {

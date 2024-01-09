@@ -21,7 +21,7 @@
     ]
   },
   "shadowverse:EarthEssenceRelic": {
-    "NAME": "Earth Essence",
+    "NAME": "Earth Essence Amulet",
     "FLAVOR": "I daresay the fruits of my research should take my magical abilities to still greater heights! ",
     "DESCRIPTIONS": [
       "At the start of each combat, gain #b1 #yEarth #yEssence."
@@ -36,7 +36,7 @@
     ]
   },
   "shadowverse:Genius": {
-    "NAME": "Genius Among Geniuses",
+    "NAME": "'Genius Among Geniuses' Flair",
     "FLAVOR": "You'll lose on turn 8!",
     "DESCRIPTIONS": [
       "At the end of the 8th turn, deal #b61 damage to all enemies."
@@ -60,7 +60,7 @@
     "NAME": "Neutral Book",
     "FLAVOR": "The story of a nightmare in Wonderland.",
     "DESCRIPTIONS": [
-      "Enemies drop an additional Neutral card reward. Activates 3 times per Act."
+      "Enemies drop an additional Colorless Shadowverse card reward. Activates 3 times per Act."
     ]
   },
   "shadowverse:BlackPinya": {
@@ -142,7 +142,7 @@
     ]
   },
   "shadowverse:Mimori": {
-    "NAME": "Not-So-Ordinary",
+    "NAME": "'Not-So-Ordinary' Flair",
     "FLAVOR": "Nice to meet you! I'm Mimori Amamiya!",
     "DESCRIPTIONS": [
       "Damage dealt + #b10%, damage taken - #b10%. By the end of your turn, if you have played at least 5 cards, damage dealt + #b10% (Up to 5 times). If you take any unblocked damage, damage dealt - #b10%."
@@ -192,7 +192,7 @@
   },
   "shadowverse:TailRelic": {
     "NAME": "Mask of the Great Fox",
-    "FLAVOR": "We live within a strange story. Life is fleeting, mortals the flickering figures in a shadow play.",
+    "FLAVOR": "We live within a strange story. Life is fleeting, mortals the flickering figures in a shadow play. To the end of the procession and beyond.",
     "DESCRIPTIONS": [
       "Start each combat with #b1 #yOne-Tailed #yFox added to your draw pile. If you've played #b9 #yOne-Tailed #yFoxes this run, add #b1 #yGinsetsu, #yGreat #yFox to your deck instead."
     ]
@@ -205,7 +205,7 @@
     ]
   },
   "shadowverse:Alice": {
-    "NAME": "One-of-a-Kind Idol",
+    "NAME": "'One-of-a-Kind Idol' Flair",
     "FLAVOR": "Alice Kurobane's concert is about to begin!",
     "DESCRIPTIONS": [
       "Whenever a #yNecromancy effect is activated, deal #b3 damage to ALL enemies."
@@ -219,8 +219,8 @@
     ]
   },
   "shadowverse:IriaBOSS": {
-    "NAME": "Vermillion Bite",
-    "FLAVOR": "Submit to the great power of the Vermillion Bite!",
+    "NAME": "Vermilion Bite",
+    "FLAVOR": "Submit to the great power of the Vermilion Bite!",
     "DESCRIPTIONS": [
       "Lose #b2 life at the start of your turn. Heal #b4 life at the end of your turn."
     ]
@@ -233,7 +233,7 @@
     ]
   },
   "shadowverse:Lusia": {
-    "NAME": "Don't Waste My Time",
+    "NAME": "'Don't Waste My Time' Flair",
     "FLAVOR": "Shadowverse is only a tool.",
     "DESCRIPTIONS": [
       "Gain [E] when #yVengeance is activated."
@@ -362,7 +362,7 @@
     "NAME": "Enma Yasukuni",
     "FLAVOR": "Thanks to you, I have drawn my blade from the scabbard called peace.",
     "DESCRIPTIONS": [
-      "ALL cards that disupgrade will automatically upgrade again after being played."
+      "ALL cards that downpgrade will automatically upgrade again after being played."
     ]
   },
   "shadowverse:Durandal": {
@@ -528,18 +528,18 @@
     "NAME": "The Weak Don't Deserve to Play Shadowverse",
     "FLAVOR": "The weak don't deserve to play Shadowverse.",
     "DESCRIPTIONS": [
-      "The weak don't deserve to play Shadowverse."
+      "All Shadowverse cards cannot be played."
     ]
   },
   "shadowverse:Enlightenment": {
-    "NAME": "Enlightenment",
+    "NAME": "Enlightenment, Sword of Creeds",
     "FLAVOR": "Therefore stand by your own will—and I shall see the world put to trial.",
     "DESCRIPTIONS": [
       "At the start of combat, gain 1 Strength and Dexterity. If you have any copies of Mjerrabaine in your deck, or have no duplicate cards in your deck, gain 3 Strength, 3 Dexterity and 1 Buffer. "
     ]
   },
   "shadowverse:Gliesaray": {
-    "NAME": "Gliesaray",
+    "NAME": "Gliesaray Orbs",
     "FLAVOR": "When boys finally learn the bitterness inherent in yearning, that's when they ripen into men.",
     "DESCRIPTIONS": [
       "At the start of turn #b5, draw #b5 extra cards and restore #b5 HP."
@@ -569,7 +569,7 @@
   },
   "shadowverse:MonikaBOSS": {
     "NAME": "Flugel Coat",
-    "FLAVOR": "The coat worn by Monika. Its luxurious tailoring inspires the minds and bodies of those who follow at its back and greatly improves all kinds of offensive capabilities.",
+    "FLAVOR": "The coat worn by Monika. Its luxurious tailoring inspires the minds and bodies of those who follow at its back.",
     "DESCRIPTIONS": [
       "Replaces #yToken #yOf #y1st. Right click once per turn and up to #y2 times per combat to add 1 #yEvolution #yPoint to your hand. When you play an Evolution point, all followers gain #g+1/+1."
     ]
@@ -596,7 +596,7 @@
     ]
   },
   "shadowverse:Hiro": {
-    "NAME": "Overjoyousness",
+    "NAME": "'Shadowverse is Life!' Flair",
     "FLAVOR": "Shadowverse is fun!",
     "DESCRIPTIONS": [
       "Upon pickup, replace the #yDragon #yOracle in your deck with #yHiro #yRyuugasaki's #yDragon #yOracle"
@@ -625,14 +625,14 @@
   },
   "shadowverse:GreaBOSS": {
     "NAME": "Dragon Amulet",
-    "FLAVOR": "A dragon talisman that enhances Grea's abilities. Under the protection of its gems, the Dragon Princess' flames become more intense, burning all in their path.",
+    "FLAVOR": "A dragon talisman that enhances Grea's abilities. Under the protection of its gems, the Dragon Princess' flames become more intense.",
     "DESCRIPTIONS": [
       "Replaces *Token *of *1st. NL Start each combat with #b1 Overflow point. At the start of each turn, if #yOverflow is active for you, add 1 #yGrea's #Ember to your hand."
     ]
   },
   "shadowverse:InoriBOSS": {
     "NAME": "Inori's Piko Hammer",
-    "FLAVOR": "Inori's favorite hammer. Completely different from its original appearance after being transformed by Homare, its strength can withstand even the power of the Dragon Clan's awakening.",
+    "FLAVOR": "Inori's favorite hammer. Completely different from its original appearance after being transformed by Homare.",
     "DESCRIPTIONS": [
       "Replaces *Token *of *1st. NL Start each combat with #b1 Overflow point. Start each combat with all enemies Stunned."
     ]

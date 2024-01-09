@@ -209,8 +209,8 @@
   "shadowverse:LegendaryFighterPower": {
     "NAME": "Legendary Fighter",
     "DESCRIPTIONS": [
-      "During this turn: Gain 1 #yBurst and lose this effect if you play #yAttack card. Gain 1 #yEnvenom and lose this effect if you play #ySkill card. Gain 1 #yArtifact and lose this effect if you play #yPower card. NL If you play an Attack, Skill and Power card without losing HP, put #b",
-      " #yLegendary #yFighter into your hand next turn, with the following effect: Deal #b50 damage #b2 times."
+      "During this turn: Gain 1 #yDouble #yTap once if you play an #yAttack card. Gain 1 #yEnvenom once if you play a #ySkill card. Gain 1 #yArtifact once if you play a #yPower card. NL If you play an Attack, Skill and Power card this turn without losing HP, put #b",
+      " #yLegendary #yFighter Attack card into your hand next turn, with the following effect: Deal #b50 damage #b2 times."
     ]
   },
   "shadowverse:chushouHealPower": {

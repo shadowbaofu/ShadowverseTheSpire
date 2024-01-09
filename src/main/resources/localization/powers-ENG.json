@@ -2084,14 +2084,14 @@
     ]
   },
   "shadowverse:NextTurnAmaterasu": {
-    "NAME": "Amaterasu",
+    "NAME": "Amaterasu, Clearsky Goddess",
     "DESCRIPTIONS": [
       "At the start of your turn add #b",
       "  #yAmaterasu to your hand. "
     ]
   },
   "shadowverse:NextTurnTsukuyomi": {
-    "NAME": "Tsukuyomi",
+    "NAME": "Tsukuyomi, Stormcloud Deity",
     "DESCRIPTIONS": [
       "At the start of your turn add #b",
       "  #yTsukuyomi to your hand. "

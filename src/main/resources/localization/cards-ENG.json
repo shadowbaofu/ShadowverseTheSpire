@@ -2794,7 +2794,7 @@
   },
   "shadowverse:DeathNote": {
     "NAME": "Death's Ledger",
-    "DESCRIPTION": "Countdown !M!: Lose this effect. NL At the end of your turn, randomly play the highest cost Attack card in your draw pile that costs less than your max Energy."
+    "DESCRIPTION": "Countdown !M!: Lose this effect. NL At the end of your turn, randomly play the highest cost Attack card in your draw pile with a cost equal to your Max Energy or less."
   },
   "shadowverse:Strike_R": {
     "NAME": "Strike",

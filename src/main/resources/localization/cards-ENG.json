@@ -257,8 +257,8 @@
   },
   "shadowverse:ForbiddenDarkMage": {
     "NAME": "Forbidden Darkmage",
-    "DESCRIPTION": "Crystallize 0: \bConsume ALL Earth_Essence. You don't take more than 4 damage at a time, draw 1 card and heal 1 HP next turn. NL This effect lasts 1 turn for each Earth_Essence consumed this way. NL --------------------- NL Deal !D! damage. Increase this card's damage by 7 for every Earth_Essence consumed this combat.",
-    "UPGRADE_DESCRIPTION": "Crystallize 0: \bConsume ALL Earth_Essence. You don't take more than 4 damage at a time, draw 1 card and heal 1 HP next turn. NL This effect lasts 1 turn for each Earth_Essence consumed this way. NL --------------------- NL Deal !D! damage. Increase this card's damage by 9 for every Earth_Essence consumed this combat."
+    "DESCRIPTION": "Crystallize 0: \bConsume ALL Earth_Essence. You don't take more than 4 damage at a time, draw 1 card and heal 1 HP next turn. NL This effect lasts 1 turn for each Earth_Essence consumed this way (max. 5). NL --------------------- NL Deal !D! damage. Increase this card's damage by 7 for every Earth_Essence consumed this combat.",
+    "UPGRADE_DESCRIPTION": "Crystallize 0: \bConsume ALL Earth_Essence. You don't take more than 4 damage at a time, draw 1 card and heal 1 HP next turn. NL This effect lasts 1 turn for each Earth_Essence consumed this way (max. 5). NL --------------------- NL Deal !D! damage. Increase this card's damage by 9 for every Earth_Essence consumed this combat."
   },
   "shadowverse:RepairMode": {
     "NAME": "Repair Mode",

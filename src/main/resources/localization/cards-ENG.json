@@ -4633,7 +4633,7 @@
   "shadowverse:JiemonThiefLord": {
     "NAME": "Jiemon, Thief Lord",
     "DESCRIPTION": "Festive. NL Add a *Glittering *Gold to your hand. NL Whenever you play a *Glittering *Gold, gain [E] and deal 4 damage to ALL enemies.",
-    "UPGRADE_DESCRIPTION": "Festive. NL Add a *Glittering *Gold to your hand. NL Whenever you play a *Glittering *Gold, gain [E] and deal 4 damage to ALL enemies. NL Add a *Glittering *Gold to your hand next turn."
+    "UPGRADE_DESCRIPTION": "Festive. NL Add a *Glittering *Gold to your hand. NL Whenever you play a *Glittering *Gold, gain [E] and deal 4 damage to ALL enemies. NL Add a *Glittering *Gold to your hand each turn."
   },
   "shadowverse:OpulentStrategist": {
     "NAME": "Opulent Strategist",

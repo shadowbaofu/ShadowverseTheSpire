@@ -4661,8 +4661,8 @@
   },
   "shadowverse:GracefulManeuver": {
     "NAME": "Graceful Maneuver",
-    "DESCRIPTION": "Your *Followers will now attack ALL enemies. NL Summon an X-X Knight.",
-    "UPGRADE_DESCRIPTION": "Your *Followers will now attack ALL enemies. NL Summon an X+1-X+1 Knight."
+    "DESCRIPTION": "Your *Followers will now attack ALL enemies. NL Summon an X / X Knight.",
+    "UPGRADE_DESCRIPTION": "Your *Followers will now attack ALL enemies. NL Summon an X+1 / X+1 Knight."
   },
   "shadowverse:MorgensternMaid": {
     "NAME": "Morgenstern Maid",

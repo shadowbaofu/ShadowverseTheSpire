@@ -35,21 +35,21 @@
       "NAMES": [
         "enhance"
       ],
-      "DESCRIPTION": "If you have enough #yEnergy, NL they will automatically spent to activate the effects. NL (Won't trigger if the card is not being played from hand.)"
+      "DESCRIPTION": "If you have enough #yEnergy, NL it will be spent to activate additional effects NL (Won't trigger if the card is not being played from hand.) NL TIP: Cost reduction effects wont apply to Enhance unless you have less Energy than the Enhance cost. NL Enhance effects may activate from autoplay effects if you have the correct energy amount."
     },
     {
       "PROPER_NAME": "Accelerate",
       "NAMES": [
         "accelerate"
       ],
-      "DESCRIPTION": "If you do not have enough #yEnergy, NL it can be played as a Skill card instead for the #yAccelerate cost. NL Only the #yAccelerate effects will activate if played in this way. (Won't trigger if the card is not being played from hand.)"
+      "DESCRIPTION": "If you do not have enough #yEnergy, NL it can be played as a Skill card instead for the #yAccelerate cost. NL Only the #yAccelerate effects will activate if played in this way. (Won't trigger if the card is not being played from hand.) NL TIP: The card will change to a Skill if you have less energy than the original cost, affecting cost reduction effects."
     },
     {
       "PROPER_NAME": "Crystallize",
       "NAMES": [
         "crystallize"
       ],
-      "DESCRIPTION": "If you do not have enough #yEnergy, cards with Crystallize can be played as a Power card instead for the #yCrystallize cost. NL Only the #yCrystallize effects will activate if played in this way. (Won't trigger if the card is not being played from hand.)"
+      "DESCRIPTION": "If you do not have enough #yEnergy, cards with Crystallize can be played as a Power card instead for the #yCrystallize cost. NL Only the #yCrystallize effects will activate if played in this way. (Won't trigger if the card is not being played from hand.) NL TIP: The card will change to a Power if you have less energy than the original cost, affecting cost reduction effects."
     },
     {
       "PROPER_NAME": "Machina",
@@ -70,7 +70,7 @@
       "NAMES": [
         "invocation"
       ],
-      "DESCRIPTION": "Automatically adds card to your hand if certain conditions have been met. #yInvocation will only activate once for each card per turn, even if you have multiple copies in your deck."
+      "DESCRIPTION": "Automatically adds the card to your hand or does certain effects if certain conditions have been met. #yInvocation will only activate once for each copy of a card per turn, even if you have multiple copies in your deck."
     },
     {
       "PROPER_NAME": "Natura",
@@ -121,7 +121,7 @@
         "union burst",
         "union_burst"
       ],
-      "DESCRIPTION": "Activates if your turn number is equal to or greater than #yUnion #yBurst value. Can be upgraded multiple times to reduce the value."
+      "DESCRIPTION": "Activates if your turn number is equal to or greater than #yUnion #yBurst value listed on the card. Can be upgraded multiple times to reduce the value. NL TIP: Play it when the value is 0 during combat."
     },
     {
       "PROPER_NAME": "Destroy",
@@ -136,7 +136,7 @@
         "burial rite",
         "burial_rite"
       ],
-      "DESCRIPTION": "Select the corresponding number of Attack cards in your hand to remove from this combat and gain #yShadows. These cards are considered played this combat."
+      "DESCRIPTION": "Select the corresponding number of Attack cards in your hand to remove from this combat and gain #yShadows. These cards are considered played this combat but do not trigger Last Words. NL TIP: Best used with Reanimate."
     },
     {
       "PROPER_NAME": "Shadows",
@@ -150,7 +150,7 @@
       "NAMES": [
         "reanimate"
       ],
-      "DESCRIPTION": "Randomly add a copy of 1 of the highest-cost Attack cards that costs no more than the Reanimate value played this combat to your hand, then change its cost to 0 this turn. NL (Won't trigger if the cost of the card with #yReanimate is 0.)"
+      "DESCRIPTION": "Randomly add a copy of 1 of the highest-cost Attacks that costs no more than the Reanimate value played this combat to your hand, then change its cost to 0 this turn. NL (Won't trigger if the cost of the card with #yReanimate is 0, preventing you from repeatedly using it.)"
     },
     {
       "PROPER_NAME": "Last Words",
@@ -172,14 +172,14 @@
       "NAMES": [
         "vengeance"
       ],
-      "DESCRIPTION": "#yVengeance becomes active once you have no more than 1/2 of your HP left. Certain cards have effects trigged by #yVengeance."
+      "DESCRIPTION": "#yVengeance becomes active once your HP is at or below 50%. Certain cards have effects trigged by #yVengeance."
     },
     {
       "PROPER_NAME": "Wrath",
       "NAMES": [
         "wrath"
       ],
-      "DESCRIPTION": "#yWrath is active when you have taken damage during your turn at least 7 times in a combat. Certain cards have effects trigged by #yWrath."
+      "DESCRIPTION": "#yWrath is active when you have taken damage at least 7 times in a combat. Certain cards have effects trigged by #yWrath."
     },
     {
       "PROPER_NAME": "Avarice",
@@ -207,7 +207,7 @@
       "NAMES": [
         "maneuver"
       ],
-      "DESCRIPTION": "Cards with #yManeuver can't be played from hand directly. If another Attack card with a cost greater or equal than the #yManeuver value is played while this card is in hand, the Attack card will lose its effects and #yExhaust, then this card can be played. If this card is #yExhausted, the Attack card returns to your hand and costs 0 this turn."
+      "DESCRIPTION": "Cards with #yManeuver can't be played directly. If another Attack with a cost greater or equal than the #yManeuver value is played while this card is in hand, the Attack card will lose its effects and #yExhaust, then this card can be played. If this card is #yExhausted, the Attack card returns to your hand and costs 0 this turn. NL TIP: Avoid playing cards that cost more than the Manuever value if one is in your hand."
     },
     {
       "PROPER_NAME": "Cannon Hermit Crab",
@@ -231,7 +231,7 @@
         "skybound art",
         "skybound_art"
       ],
-      "DESCRIPTION": "#ySkybound #yArt effects activate if your turn number is equal to or greater than the #ySkybound #yArt value. Can be upgraded for multiple times, and each time the #ySkybound #yArt value of the cards decreases by 1."
+      "DESCRIPTION": "#ySkybound #yArt effects activate if your turn number is equal to or greater than the #ySkybound #yArt value. Can be upgraded multiple times, and each time the #ySkybound #yArt value of the cards decreases by 1.  TIP: Play it when the value is 0."
     },
     {
       "PROPER_NAME": "Super Skybound Art",
@@ -239,14 +239,14 @@
         "super skybound art",
         "super_skybound_art"
       ],
-      "DESCRIPTION": "#ySuper #ySkybound #yArt effects activate if your turn number is equal to or greater than the #ySuper #ySkybound #yArt value. Can be upgraded for multiple times, and each time the #ySuper #ySkybound #yArt value of the cards decreases by 1."
+      "DESCRIPTION": "#ySuper #ySkybound #yArt effects are powerful and activate if your turn number is equal to or greater than the #ySuper #ySkybound #yArt value. Can be upgraded multiple times, and each time the #ySuper #ySkybound #yArt value of the cards decreases by 1. TIP: Play it when the value is 0."
     },
     {
       "PROPER_NAME": "Rally",
       "NAMES": [
         "rally"
       ],
-      "DESCRIPTION": "Your #yRally count increases by 1 each time you summon an allied follower or play an Attack card that isn't a #yStrike. #yRally effects activate if your #yRally count is equal to or more than the #yRally value."
+      "DESCRIPTION": "Your #yRally count increases by 1 each time you summon an allied Follower or play an Attack card that isn't a #yStrike. #yRally effects activate if your #yRally count is equal to or more than the #yRally value."
     },
     {
       "PROPER_NAME": "Limit",
@@ -260,7 +260,7 @@
       "NAMES": [
         "knight"
       ],
-      "DESCRIPTION": "1/1 NL Passive: Deal damage equal to 3 times Attack to random enemy and lose 1 Health by the end of your turn. NL When #yEvoked, repeat passive effects until its Health reaches 0."
+      "DESCRIPTION": "1/1 NL Passive: Deal damage equal to 3 times its Attack to a random enemy and lose 1 Health by the end of your turn. NL When #yEvoked, repeat passive effects until its Health reaches 0. NL TIP: Evoking Followers will cause them to repeat their Passive effects for each point of Health they had."
     },
     {
       "PROPER_NAME": "Heavy Knight",
@@ -276,7 +276,7 @@
         "steelclad knight",
         "steelclad_knight"
       ],
-      "DESCRIPTION": "1/1 NL Passive: Deal damage equal to 5 times Attack to random enemy and lose 1 Health by the end of your turn. NL When #yEvoked, repeat passive effects until its Health reaches 0."
+      "DESCRIPTION": "1/1 NL Passive: Deal damage equal to 5 times its Attack to random enemy and lose 1 Health by the end of your turn. NL When #yEvoked, repeat passive effects until its Health reaches 0."
     },
     {
       "PROPER_NAME": "Shield Guardian",
@@ -284,7 +284,7 @@
         "shield guardian",
         "shield_guardian"
       ],
-      "DESCRIPTION": "1/1 NL Passive: Gain #yBlock equal to 2 times Attack and lose 1 Health by the end of your turn. NL When #yEvoked, repeat passive effects until its Health reaches 0."
+      "DESCRIPTION": "1/1 NL Passive: Gain #yBlock equal to 2 times its Attack and lose 1 Health by the end of your turn. NL When #yEvoked, repeat passive effects until its Health reaches 0."
     },
     {
       "PROPER_NAME": "Frontguard General",
@@ -292,7 +292,7 @@
         "frontguard general",
         "frontguard_general"
       ],
-      "DESCRIPTION": "5/6 NL Passive: Gain #yBlock equal to 2 times Attack, gain #yBlock equal to Attack next turn and lose 1 Health by the end of your turn. NL When #yEvoked, repeat passive effects until its Health reaches 0."
+      "DESCRIPTION": "5/6 NL Passive: Gain #yBlock equal to 2 times its Attack, gain #yBlock equal to Attack next turn and lose 1 Health by the end of your turn. NL When #yEvoked, repeat passive effects until its Health reaches 0."
     },
     {
       "PROPER_NAME": "Queen Hemera the Brave",
@@ -300,7 +300,7 @@
         "queen hemera the brave",
         "queen_hemera_the_brave"
       ],
-      "DESCRIPTION": "1/4 NL Passive: Gain #yBlock equal to 3 times Attack, summon a #yKnight and lose 1 Health by the end of your turn. NL When #yEvoked, repeat passive effects until its Health reaches 0."
+      "DESCRIPTION": "1/4 NL Passive: Gain #yBlock equal to 3 times its Attack, summon a #yKnight and lose 1 Health by the end of your turn. NL When #yEvoked, repeat passive effects until its Health reaches 0."
     },
     {
       "PROPER_NAME": "Queen Magnus the Graceful",
@@ -308,28 +308,28 @@
         "queen magnus the graceful",
         "queen_magnus_the_graceful"
       ],
-      "DESCRIPTION": "3/3 NL Passive: Deal damage equal to 3 times Attack to random enemy and lose 1 Health by the end of your turn. Next turn, gain #yEnergy . NL When #yEvoked, repeat passive effects until its Health reaches 0, gain #yEnergy immediately."
+      "DESCRIPTION": "3/3 NL Passive: Deal damage equal to 3 times its Attack to random enemy and lose 1 Health by the end of your turn. Next turn, gain #yEnergy. NL When #yEvoked, repeat passive effects until its Health reaches 0, gain #yEnergy immediately."
     },
     {
       "PROPER_NAME": "Quickblader",
       "NAMES": [
         "quickblader"
       ],
-      "DESCRIPTION": "1/1 NL Passive: Apply 1 #yVulnerable , deal damage equal to 3 times Attack to random enemy and lose 1 Health by the end of your turn. NL When #yEvoked, repeat passive effects until its Health reaches 0"
+      "DESCRIPTION": "1/1 NL Passive: Apply 1 #yVulnerable, deal damage equal to 3 times its Attack to random enemy and lose 1 Health by the end of your turn. NL When #yEvoked, repeat passive effects until its Health reaches 0"
     },
     {
       "PROPER_NAME": "Viking",
       "NAMES": [
         "viking"
       ],
-      "DESCRIPTION": "3/2 NL Passive: Apply #yVulnerable equal to Attack and deal damage equal to 3 times Attack to random enemy and lose 1 Health by the end of your turn. Next turn, gain #yEnergy . NL When #yEvoked, repeat passive effects until its Health reaches 0, gain #yEnergy immediately."
+      "DESCRIPTION": "3/2 NL Passive: Apply #yVulnerable equal to Attack and deal damage equal to 3 times its Attack to random enemy and lose 1 Health by the end of your turn. Next turn, gain #yEnergy . NL When #yEvoked, repeat passive effects until its Health reaches 0, gain #yEnergy immediately."
     },
     {
       "PROPER_NAME": "Pirate",
       "NAMES": [
         "pirate"
       ],
-      "DESCRIPTION": "2/3 NL Passive: Gain #yBlock equal to 2 times Attack and lose 1 Health by the end of your turn. NL When #yEvoked, repeat passive effects until its Health reaches 0."
+      "DESCRIPTION": "2/3 NL Passive: Gain #yBlock equal to 2 times its Attack and lose 1 Health by the end of your turn. NL When #yEvoked, repeat passive effects until its Health reaches 0."
     },
     {
       "PROPER_NAME": "Naht's Henchmen",
@@ -337,7 +337,7 @@
         "naht's henchmen",
         "naht's_henchmen"
       ],
-      "DESCRIPTION": "Enemy, approximately 30 HP. Put a #yDutiful #ySteed into your hand."
+      "DESCRIPTION": "Enemy, approximately 30 HP. Puts a #yDutiful #ySteed into your hand when killed."
     },
     {
       "PROPER_NAME": "Loot",
@@ -359,14 +359,14 @@
         "disupgrade",
         "downgrade"
       ],
-      "DESCRIPTION": "Undo the upgrade of this card for this combat after being played. The damage and #yBlock won't decrease. Can be upgraded by specific effects again. NL Won't affect the next combat."
+      "DESCRIPTION": "Undo the upgrade of this card for this combat after being played. The damage and #yBlock won't decrease. Can be upgraded by specific effects again. NL Remains upgraded between combats."
     },
     {
       "PROPER_NAME": "Banish",
       "NAMES": [
         "banish"
       ],
-      "DESCRIPTION": "This card will disappear for the rest of this combat once played. If this card is an #yAmulet, it won't go to discard pile after its #yCountdown reaches 0 and will instead disappear during this combat."
+      "DESCRIPTION": "This card will disappear for the rest of this combat once played. If this card is an #yAmulet, it won't go to the discard pile after its #yCountdown reaches 0 and will instead disappear during this combat."
     },
     {
       "PROPER_NAME": "Heavenly Aegis",
@@ -389,7 +389,7 @@
       "NAMES": [
         "ambush"
       ],
-      "DESCRIPTION": "Choose from #yAmbush and #yAttack by the end of your turn. Choosing #yAmbush will not trigger passive effects and will gain 1 Attack. Can't choose #yAmbush if passive effects have been triggered."
+      "DESCRIPTION": "Choose either #yAmbush or #yAttack by the end of your turn. Choosing #yAmbush will not trigger passive effects and will gain 1 Attack. Can't choose #yAmbush if passive effects have been triggered."
     },
     {
       "PROPER_NAME": "Festive",
@@ -404,7 +404,7 @@
         "front desk frog",
         "front_desk_frog"
       ],
-      "DESCRIPTION": "2/2 NL Passive: At the end of your turn, deal damage equal to 3 times Attack to a random enemy and lose 1 Health. Add a #yGlittering #yGold to your hand. NL When #yEvoked, repeat passive effects until Health reaches 0."
+      "DESCRIPTION": "2/2 NL Passive: At the end of your turn, deal damage equal to 3 times its Attack to a random enemy and lose 1 Health. Add a #yGlittering #yGold to your hand. NL When #yEvoked, repeat passive effects until Health reaches 0."
     },
     {
       "PROPER_NAME": "Masterful Musician",
@@ -412,7 +412,7 @@
         "masterful musician",
         "masterful_musician"
       ],
-      "DESCRIPTION": "3/3 NL Passive: At the end of your turn, deal damage equal to 2 times Attack to a random enemy and lose 1 Health. NL When #yEvoked, repeat passive effects until Health reaches 0. NL Whenever you play a #yGlittering #yGold, #yCommand this #yFollower."
+      "DESCRIPTION": "3/3 NL Passive: At the end of your turn, deal damage equal to 2 times its Attack to a random enemy and lose 1 Health. NL When #yEvoked, repeat passive effects until Health reaches 0. NL Whenever you play a #yGlittering #yGold, #yCommand this #yFollower."
     },
     {
       "PROPER_NAME": "Heroic",
@@ -427,20 +427,20 @@
         "distress call",
         "distress_call"
       ],
-      "DESCRIPTION": "#yDistress #yCall effects activate when at least one of the following conditions is met: NL You have taken damage since the end of your last turn. NL Your current HP is no greater than 1/4th of your max HP. NL You are currently afflicted with a debuff (such as #yWeak or #yVulnerable). NL You have a #yCurse in your hand or #yStatus that is not an #yEvolution #yPoint."
+      "DESCRIPTION": "#yDistress #yCall effects activate when at least one of the following conditions is met: NL You have taken damage since the end of your last turn. NL Your current HP is no greater than 25% of your max HP. NL You are currently afflicted with a debuff (such as #yWeak or #yVulnerable). NL You have a #yCurse in your hand or #yStatus that is not an #yEvolution #yPoint."
     },
     {
       "PROPER_NAME": "Condemned",
       "NAMES": [
         "condemned"
       ],
-      "DESCRIPTION": "Trait."
+      "DESCRIPTION": "Trait. Represented by the Convicts and Enforcers of Azvaldt."
     },
     {
       "NAMES": [
         "Cannoneer"
       ],
-      "DESCRIPTION": "1/1 NL Passive: At the end of your turn, deal damage equal to 3 times Attack to a random enemy and lose 1 Health. NL When #yEvoked, repeat passive effects until Health reaches 0. NL When Health reaches 0, put a #yGilded #yBoots into your hand."
+      "DESCRIPTION": "1/1 NL Passive: At the end of your turn, deal damage equal to 3 times its Attack to a random enemy and lose 1 Health. NL When #yEvoked, repeat passive effects until Health reaches 0. NL When Health reaches 0, put a #yGilded #yBoots into your hand."
     },
     {
       "NAMES": [

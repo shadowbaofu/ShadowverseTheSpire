@@ -51,7 +51,7 @@
   "shadowverse:DarkMagePower": {
     "NAME": "Crystallize: Forbidden Darkmage",
     "DESCRIPTIONS": [
-      "All damage greater than 4 becomes #b4, draw 1 card, heal 1 HP and decrease the Countdown of this card by #b1 at the end of your turn. NL (Maximum Countdown is #b5)"
+      "All damage greater than 4 becomes #b4, draw 1 card, heal 1 HP and decrease the Countdown of this card by #b1 at the end of your turn. NL (Countdown cannot be increased by more than 5 at a time)"
     ]
   },
   "shadowverse:MachineDrawPower": {

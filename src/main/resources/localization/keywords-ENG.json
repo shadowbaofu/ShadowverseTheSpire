@@ -179,7 +179,7 @@
       "NAMES": [
         "wrath"
       ],
-      "DESCRIPTION": "#yWrath is active when you have taken damage at least 7 times in a combat. Certain cards have effects trigged by #yWrath."
+      "DESCRIPTION": "#yWrath is active when you have taken damage or lost HP at least 7 times in a combat. Certain cards have effects trigged by #yWrath."
     },
     {
       "PROPER_NAME": "Avarice",

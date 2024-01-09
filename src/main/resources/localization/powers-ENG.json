@@ -985,7 +985,7 @@
   "shadowverse:DeathNotePower": {
     "NAME": "Death's Ledger",
     "DESCRIPTIONS": [
-      "Randomly play the highest-cost Attack card with cost less than your Max Energy in your draw pile in #b",
+      "Randomly play the highest cost Attack from your draw pile that's less than or equal to your Max Energy. Effect lasts for #b",
       " turn(s)."
     ]
   },

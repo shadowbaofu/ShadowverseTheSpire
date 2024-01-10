@@ -3905,7 +3905,7 @@
   },
   "shadowverse:Leod2": {
     "NAME": "Leod, Moonlit Executioner",
-    "DESCRIPTION": "Ambush. 1/ !M!. NL Passive: Deal damage equal to 5 times its Attack to a random enemy and lose 1 Health at the end of your turn. NL Deal 9 damage to ALL enemies at the start of your turn. NL Exhaust."
+    "DESCRIPTION": "Ambush. 1 / !M!. NL Passive: Deal damage equal to 5 times its Attack to a random enemy and lose 1 Health at the end of your turn. NL Deal 9 damage to ALL enemies at the start of your turn. NL Exhaust."
   },
   "shadowverse:AmbushBuff": {
     "NAME": "Rogue's Creed",

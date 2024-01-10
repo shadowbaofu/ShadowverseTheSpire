@@ -113,7 +113,15 @@ public class Hanna extends CustomCard implements BranchableUpgradeCard {
             case 1:
                 addToBot((AbstractGameAction) new SFXAction("Hanna2"));
                 addToBot((AbstractGameAction) new GainBlockAction((AbstractCreature) abstractPlayer, (AbstractCreature) abstractPlayer, this.block));
-                addToBot(new FetchAction(abstractPlayer.drawPile, card -> card.hasTag(AbstractShadowversePlayer.Enums.MYSTERIA) && card.type == CardType.SKILL, 1));
+                addToBot(new FetchAction(abstractPlayer.drawPile, card -> card.hasTag(AbstractShadowversePlayer.Enums.MYSTERIA) && card.type == CardType.SKILL, 1,abstractCards -> {
+                    for (AbstractCard card: abstractCards){
+                        if (((AbstractShadowversePlayer) AbstractDungeon.player).mysteriaCount>10){
+                            addToBot(new ReduceCostForTurnAction(card,1));
+                            CardModifierManager.addModifier(card,new HannaMod());
+                        }
+                    }
+                }
+                        ));
                 if (((AbstractShadowversePlayer) AbstractDungeon.player).mysteriaCount>10){
                     for (AbstractCard card: abstractPlayer.hand.group){
                         if (card.type == CardType.SKILL && (abstractPlayer.hasRelic(AnneBOSS.ID) || card.hasTag(AbstractShadowversePlayer.Enums.MYSTERIA))){

@@ -92,6 +92,8 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
     public int burialCount = 0;
     public int discardCount = 0;
 
+    public int lainaCount = 0;
+
     public AbstractBanPool cardPool;
 
     public AbstractShadowversePlayer(String name, PlayerClass playerClass, String[] orbTextures, String orbVfxPath, float[] layerSpeeds, AbstractAnimation animation) {
@@ -122,6 +124,7 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
         this.magachiyoCount = 0;
         this.burialCount = 0;
         this.discardCount = 0;
+        this.lainaCount = 0;
     }
 
     public void useCard(AbstractCard c, AbstractMonster monster, int energyOnUse) {

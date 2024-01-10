@@ -15,8 +15,6 @@ import shadowverse.characters.Necromancer;
 
 public class AppleMod extends AbstractCardModifier {
     public static String ID = "shadowverse:AppleMod";
-    private static final String TEXT1 = CardCrawlGame.languagePack.getUIString("shadowverse:Exhaust").TEXT[0];
-    private static final String TEXT2 = CardCrawlGame.languagePack.getUIString("shadowverse:Ethereal").TEXT[0];
 
     public String modifyDescription(String rawDescription, AbstractCard card) {
         if (card.color != Necromancer.Enums.COLOR_PURPLE){
@@ -42,11 +40,6 @@ public class AppleMod extends AbstractCardModifier {
             AbstractCard copy  = card.makeStatEquivalentCopy();
             if (!(copy instanceof Mordecai) && !(copy instanceof Nicola))
                 copy.freeToPlayOnce = true;
-            copy.exhaustOnUseOnce = true;
-            copy.exhaust = true;
-            copy.isEthereal = true;
-            copy.rawDescription += " NL "+TEXT2+" 。 NL "+TEXT1+" 。";
-            copy.initializeDescription();
             copy.applyPowers();
             AbstractDungeon.player.hand.addToTop(copy);
         }

@@ -3,6 +3,7 @@ package shadowverse.cards.Witch.Academic;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -51,6 +52,7 @@ public class Jill
         if (p instanceof AbstractShadowversePlayer){
             ((AbstractShadowversePlayer)p).mysteriaCount++;
         }
+        addToBot(new GainBlockAction(p,this.block));
         addToBot(new DrawPileToHandAction_Tag(2,AbstractShadowversePlayer.Enums.MYSTERIA,null));
         addToBot(new AbstractGameAction() {
             @Override

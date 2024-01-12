@@ -282,5 +282,16 @@
     "TEXT": [
       " NL Banish NL When destroyed, deal 10 damage to all enemies and gain 4 Block."
     ]
+  },
+  "shadowverse:AppleMod": {
+    "TEXT": [
+      " NL ラストワード :これが 廃棄 される時、カード2枚を引く。",
+      " NL ラストワード :これが 廃棄 される時、プレイされるまでコスト0のこれの複製品1枚を手札に加える。"
+    ]
+  },
+  "shadowverse:HannaMod": {
+    "TEXT": [
+      "敵全体に !Hanna:D! ダメージを与える。 NL "
+    ]
   }
 }

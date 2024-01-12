@@ -35,7 +35,7 @@
       "NAMES": [
         "enhance"
       ],
-      "DESCRIPTION": "If you have enough #yEnergy, NL it will be spent to activate additional effects NL (Won't trigger if the card is not being played from hand.) NL TIP: Cost reduction effects wont apply to Enhance unless you have less Energy than the Enhance cost. NL Enhance effects may activate from autoplay effects if you have the correct energy amount."
+      "DESCRIPTION": "If you have enough #yEnergy, NL it will be spent to activate additional effects NL (Won't trigger if the card is not being played from hand.) NL TIP: Cost altering effects do not apply to Enhance unless you have less Energy than the Enhance cost. NL Enhance effects may activate from autoplay effects if you have the correct energy amount."
     },
     {
       "PROPER_NAME": "Accelerate",
@@ -63,7 +63,7 @@
       "NAMES": [
         "choose"
       ],
-      "DESCRIPTION": "Select one or more cards. Different effects will activate depending on the cards chosen."
+      "DESCRIPTION": "Select one or more cards or effects. Different effects will activate depending on the cards chosen."
     },
     {
       "PROPER_NAME": "Invocation",
@@ -92,14 +92,14 @@
         "naterran great tree",
         "naterran_great_tree"
       ],
-      "DESCRIPTION": "If you already have #yNaterran #yGreat #yTree, you draw 1 card when another #yNaterran #yGreat #yTree is played."
+      "DESCRIPTION": "If you already have #yNaterran #yGreat #yTree active, you draw 1 card when another #yNaterran #yGreat #yTree is played."
     },
     {
       "PROPER_NAME": "Fusion",
       "NAMES": [
         "fusion"
       ],
-      "DESCRIPTION": "Right click the card with Fusion effect to Exhaust specific cards to trigger effects. Can only be performed on an individual card once per turn. "
+      "DESCRIPTION": "Right click the card with Fusion effect to Exhaust specific cards to trigger effects. Can only be performed on an individual card with Fusion once per turn. "
     },
     {
       "PROPER_NAME": "Mysteria",
@@ -150,7 +150,7 @@
       "NAMES": [
         "reanimate"
       ],
-      "DESCRIPTION": "Randomly add a copy of 1 of the highest-cost Attacks that costs no more than the Reanimate value played this combat to your hand, then change its cost to 0 this turn. NL (Won't trigger if the cost of the card with #yReanimate is 0, preventing you from repeatedly using it.)"
+      "DESCRIPTION": "Randomly add a copy of 1 of the highest-cost Attacks played this combat that equal the Reanimate value to your hand, and it costs 0 this turn. NL (Won't trigger on Reanimated cards with #yReanimate is 0.)"
     },
     {
       "PROPER_NAME": "Last Words",

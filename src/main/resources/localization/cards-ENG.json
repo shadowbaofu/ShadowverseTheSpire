@@ -6723,5 +6723,14 @@
     "NAME": "Eon, Destiny's Hand",
     "DESCRIPTION": "Exhaust ALL attack cards in your hand. NL Gain 1 Energy, Strength and Dexterity for each Exhausted this way. NL If 2 or more cards were Exhausted, apply 2 Weak and Vulnerable to ALL enemies and draw 3 cards. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Exhaust ALL attack cards in your hand. NL Gain 1 Energy, Strength and Dexterity for each Exhausted this way. NL If 2 or more cards were Exhausted, apply 2 Weak and Vulnerable to ALL enemies and draw 3 cards."
+  },
+   "shadowverse:DivineMinister": {
+    "NAME": "Divine Minister",
+    "DESCRIPTION": "Gain !B! Block. NL Place this card in your Amulet zone with a Countdown, which will repeat this effect. NL Exhaust."
+  },
+  "shadowverse:Laina": {
+    "NAME": "Laina, Heaven's Judge",
+    "DESCRIPTION": "Put 2 *Divine *Ministers into your draw and discard piles at the end of your turn.",
+    "UPGRADE_DESCRIPTION": "Put 2 *Divine *Ministers into your draw and discard piles at the end of your turn. NL Activate the following effects, based on the number of *Divine *Ministers played or destroyed as Amulets: NL 4 or less: Deal 7 damage to ALL enemies. Gain 1 Block. NL 5 or more: Deal 21 damage to ALL enemies. Gain 1 Temporary HP. NL 10 or more: Deal 50 damage to ALL enemies. Heal 1 HP. NL 20 or more: Deal 500 damage to ALL enemies. Heal 1 HP."
   }
 }

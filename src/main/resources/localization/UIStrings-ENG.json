@@ -1,7 +1,7 @@
 {
   "shadowverse:NeutralReward": {
     "TEXT": [
-      "Add 1 Neutral card into your deck"
+      "Add 1 Neutral Shadowverse card into your deck"
     ]
   },
   "shadowverse:ClassReward": {
@@ -21,22 +21,22 @@
   },
   "shadowverse:AndrealphusMod": {
     "TEXT": [
-      " NL Last_Words: Draw 1 card when Exhausted. "
+      " NL Last_Words: When Exhausted, draw 1 card. "
     ]
   },
   "shadowverse:PrinceCatacombMod": {
     "TEXT": [
-      " NL Last_Words: Put 1 *Skeleton into your hand when Exhausted. "
+      " NL Last_Words: When Exhausted, add 1 *Skeleton to your hand. "
     ]
   },
   "shadowverse:ImmoralDesireMod1": {
     "TEXT": [
-      " NL Last_Words: Deal damage equal to the base damage of this card to all enemies when Exhausted. "
+      " NL Last_Words: When Exhausted, Deal damage equal to this card's base damage to ALL enemies. "
     ]
   },
   "shadowverse:ImmoralDesireMod2": {
     "TEXT": [
-      " NL Last_Words: Gain Temporary_HP equal to the base Block of this card when Exhausted. "
+      " NL Last_Words: When Exhausted, Gain Temporary_HP equal to this card's base Block. "
     ]
   },
   "shadowverse:UndyingResolveMod": {
@@ -285,8 +285,8 @@
   },
   "shadowverse:AppleMod": {
     "TEXT": [
-      " NL ラストワード :これが 廃棄 される時、カード2枚を引く。",
-      " NL ラストワード :これが 廃棄 される時、プレイされるまでコスト0のこれの複製品1枚を手札に加える。"
+      " NL Last_Words: When Exhausted, draw 2 cards.",
+      " NL Last_Words: When Exhausted, add a copy of this card to your hand. It costs 0 until played."
     ]
   },
   "shadowverse:HannaMod": {

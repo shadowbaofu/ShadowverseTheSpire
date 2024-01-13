@@ -6676,8 +6676,8 @@
   },
   "shadowverse:DarkAlice_Crystalize": {
     "NAME": "Dark Alice Crystallized",
-    "DESCRIPTION": "Retain NL Countdown !M!: Exhaust this card. Subtract 1 from this card's Countdown whenever you play a non-Shadowcraft card. NL Last_Words: When Exhausted, add *Dark *Alice, *Foul *Fairytale to your hand. It costs 0. NL If 10 or more Last Words were played this combat, it becomes *Dark *Alice *Evolved.",
-    "UPGRADE_DESCRIPTION": "Retain NL Countdown !M!: Exhaust this card. Subtract 1 from this card's Countdown whenever you play a non-Shadowcraft card. NL Last_Words: When Exhausted, add *Dark *Alice, *Foul *Fairytale+ to your hand. It costs 0. NL If 10 or more Last Words were played this combat, it becomes *Dark *Alice *Evolved+.",
+    "DESCRIPTION": "Unplayable - Retain NL Countdown !M!: Exhaust this card. Subtract 1 from this card's Countdown whenever you play a non-Shadowcraft card. NL Last_Words: When Exhausted, add *Dark *Alice, *Foul *Fairytale to your hand. It costs 0. NL If 10 or more Last Words were played this combat, it becomes *Dark *Alice *Evolved.",
+    "UPGRADE_DESCRIPTION": "Unplayable - Retain NL Countdown !M!: Exhaust this card. Subtract 1 from this card's Countdown whenever you play a non-Shadowcraft card. NL Last_Words: When Exhausted, add *Dark *Alice, *Foul *Fairytale+ to your hand. It costs 0. NL If 10 or more Last Words were played this combat, it becomes *Dark *Alice *Evolved+.",
     "EXTENDED_DESCRIPTION": [
       " NL (Played ",
       " Last Words cards."
@@ -6732,5 +6732,13 @@
     "NAME": "Laina, Heaven's Judge",
     "DESCRIPTION": "Put 2 *Divine *Ministers into your draw and discard piles at the end of your turn.",
     "UPGRADE_DESCRIPTION": "Put 2 *Divine *Ministers into your draw and discard piles at the end of your turn. NL Activate the following effects, based on the number of *Divine *Ministers played or destroyed as Amulets: NL 4 or less: Deal 7 damage to ALL enemies. Gain 1 Block. NL 5 or more: Deal 21 damage to ALL enemies. Gain 1 Temporary HP. NL 10 or more: Deal 50 damage to ALL enemies. Heal 1 HP. NL 20 or more: Deal 500 damage to ALL enemies. Heal 1 HP."
+   },
+  "shadowverse:EphemeralMoon": {
+    "NAME": "Ephemeral Moon",
+    "DESCRIPTION": "Countdown 2: Gain 1 Afterimage. NL At the start of your turn, shuffle your discard pile into the draw pile. Draw !M! cards."
+  },
+  "shadowverse:Kaguya": {
+    "NAME": "Kaguya",
+    "DESCRIPTION": "Subtract !M! from the Countdown of ALL Amulets. NL Put 1 *Ephemeral *Moon in your Amulet Zone."
   }
 }

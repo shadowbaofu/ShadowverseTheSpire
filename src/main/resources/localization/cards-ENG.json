@@ -6657,7 +6657,7 @@
   },
   "shadowverse:ScorchingCurse": {
     "NAME": "Scorching Curse",
-    "DESCRIPTION": "Choose an Attack card. Add a copy of that card to your hand. It costs 0, deals no damage, gains no Block, is Ethereal and Exhausts. NL If no card was chosen, deal !D! damage to ALL enemies and gain 3 Temporary HP. NL Ethereal. Exhaust.",
+    "DESCRIPTION": "You may choose an Attack card. Add a copy of that card to your hand. It costs 0, deals no damage, gains no Block, is Ethereal and Exhausts. NL If no card was chosen, deal !D! damage to ALL enemies and gain 3 Temporary HP. NL Ethereal. Exhaust.",
     "UPGRADE_DESCRIPTION": "Choose an Attack card. Add a copy of that card to your hand. It costs 0, deals no damage, gains no Block, is Ethereal and Exhausts. NL If no card was chosen, deal !D! damage to ALL enemies and gain 3 Temporary HP. NL Retain. Exhaust."
   },
   "shadowverse:Ginger": {

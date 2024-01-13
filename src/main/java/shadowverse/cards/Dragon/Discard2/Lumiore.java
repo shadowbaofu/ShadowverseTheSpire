@@ -3,6 +3,8 @@
 
 
 import basemod.abstracts.CustomCard;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.*;
@@ -12,8 +14,10 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Dragon;
@@ -28,12 +32,14 @@ import shadowverse.powers.OverflowPower;
    public static final String NAME = cardStrings.NAME;
    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
    public static final String IMG_PATH = "img/cards/Lumiore.png";
+   private static final Texture LEADER_SKIN_VERSION = ImageMaster.loadImage("img/cards/Lumiore_L.png");
 
    public Lumiore() {
      super(ID, NAME, IMG_PATH, 4, DESCRIPTION, CardType.ATTACK, Dragon.Enums.COLOR_BROWN, CardRarity.RARE, CardTarget.SELF);
      this.baseBlock = 20;
      this.baseMagicNumber = 8;
      this.magicNumber = this.baseMagicNumber;
+     this.jokePortrait = new TextureAtlas.AtlasRegion(LEADER_SKIN_VERSION, 0, 0, LEADER_SKIN_VERSION.getWidth(), LEADER_SKIN_VERSION.getHeight());
    }
  
    
@@ -58,7 +64,11 @@ import shadowverse.powers.OverflowPower;
    }
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     addToBot(new SFXAction("Lumiore"));
+     if ((UnlockTracker.betaCardPref.getBoolean(this.cardID, false))) {
+       addToBot(new SFXAction("Lumiore_L"));
+     }else {
+       addToBot(new SFXAction("Lumiore"));
+     }
      addToBot(new GainBlockAction(abstractPlayer,this.block));
      addToBot(new GainEnergyAction(1));
      addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new LumiorePower(abstractPlayer,this.magicNumber),this.magicNumber));

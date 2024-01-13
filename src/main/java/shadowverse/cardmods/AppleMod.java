@@ -38,6 +38,7 @@ public class AppleMod extends AbstractCardModifier {
             AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new DrawCardAction(2));
         }else {
             AbstractCard copy  = card.makeStatEquivalentCopy();
+            CardModifierManager.removeModifiersById(copy,ID,true);
             if (!(copy instanceof Mordecai) && !(copy instanceof Nicola))
                 copy.freeToPlayOnce = true;
             copy.applyPowers();

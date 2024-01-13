@@ -92,6 +92,7 @@ public class BishopPool extends AbstractBanPool {
         Default.addCard(new BeastlyVow());
         Default.addCard(new HierophantImplements());
         Default.addCard(new Laina());
+        Default.addCard(new Kaguya());
         Amulet1.addCard(new Agnes());
         Amulet1.addCard(new AngelRat());
         Amulet1.addCard(new Charaton());

@@ -29,6 +29,7 @@ import shadowverse.cards.AbstractAmuletCard;
 import shadowverse.cards.AbstractCrystalizeCard;
 import shadowverse.cards.AbstractNoCountDownAmulet;
 import shadowverse.cards.Bishop.Amulet1.GoldenCity;
+import shadowverse.cards.Neutral.Curse.DivineMinister;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.effect.AddCardToStasisEffect;
 import shadowverse.powers.UnerielPower;
@@ -167,6 +168,12 @@ public class AmuletOrb extends AbstractOrb {
                     AbstractDungeon.actionManager.addToBottom((new AddTemporaryHPAction(AbstractDungeon.player,AbstractDungeon.player,2)));
                 }
                 this.amulet.superFlash(Color.GOLDENROD);
+            }
+            if (this.amulet instanceof DivineMinister){
+                AbstractDungeon.actionManager.addToBottom(new GainBlockAction(AbstractDungeon.player,this.amulet.block));
+                if (AbstractDungeon.player instanceof AbstractShadowversePlayer){
+                    ((AbstractShadowversePlayer)AbstractDungeon.player).lainaCount++;
+                }
             }
         }
     }

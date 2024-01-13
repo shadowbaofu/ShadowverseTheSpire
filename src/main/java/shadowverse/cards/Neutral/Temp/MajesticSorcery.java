@@ -33,7 +33,7 @@ public class MajesticSorcery
         super(ID, NAME, IMG_PATH, 12, DESCRIPTION, CardType.SKILL, Witchcraft.Enums.COLOR_BLUE, CardRarity.SPECIAL, CardTarget.ALL_ENEMY);
         this.baseDamage = 8;
         this.tags.add(AbstractShadowversePlayer.Enums.MYSTERIA);
-        this.tags.add(AbstractShadowversePlayer.Enums.SPELL_BOOST_ATTACK);
+        this.tags.add(AbstractShadowversePlayer.Enums.SPELL_BOOST);
         this.exhaust = true;
         this.selfRetain = true;
     }

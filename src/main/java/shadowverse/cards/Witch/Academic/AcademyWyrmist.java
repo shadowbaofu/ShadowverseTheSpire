@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import shadowverse.action.ChoiceAction;
+import shadowverse.action.ChoiceAction2;
 import shadowverse.cards.AbstractNeutralCard;
 import shadowverse.cards.Neutral.Status.EvolutionPoint;
 import shadowverse.cards.Neutral.Temp.Amaterasu;
@@ -89,7 +90,7 @@ public class AcademyWyrmist
                 c.upgrade();
             }
         }
-        addToBot(new ChoiceAction(list));
+        addToBot(new ChoiceAction2(list));
     }
 
 

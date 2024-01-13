@@ -2080,5 +2080,33 @@
     "DESCRIPTIONS": [
       "#yAF カードをプレイする度、それがこのターンに1、3、5枚目なら、カード #b1 枚を引く。2、4、6枚目なら、 [E] を得る。"
     ]
+  },
+  "shadowverse:NextTurnAmaterasu": {
+    "NAME": "荒天のツクヨミ",
+    "DESCRIPTIONS": [
+      "ターン開始時、 #y晴天のアマテラス #b",
+      " 枚を手札に加える。"
+    ]
+  },
+  "shadowverse:NextTurnTsukuyomi": {
+    "NAME": "晴天のアマテラス",
+    "DESCRIPTIONS": [
+      "ターン開始時、 #y荒天のツクヨミ #b",
+      " 枚を手札に加える。"
+    ]
+  },
+  "shadowverse:GingerPower": {
+    "NAME": "ランペイジワード・ジンジャー",
+    "DESCRIPTIONS": [
+      "ターン開始時、 #y鮮烈の言霊 #b1 枚を手札に加える。"
+    ]
+  },
+  "shadowverse:LainaPower": {
+    "NAME": "神託の決定者・ライナ",
+    "DESCRIPTIONS": [
+      "ターン終了時、山札・捨札それぞれに #y天命の執行者 #b2 枚を加える。",
+      "Xの数によって能力が働く。Xはプレイ、発動された #y天命の執行者 の数の合計である。 NL #g4 枚以下:敵全体に #b7 ダメージ、 #b1 #yブロック を得る。 NL #y5 枚以上:敵全体に #b21 ダメージ、 #b1 #y仮HP を得る。 NL #b10 枚以上:敵全体に #b50 ダメージ、HPを #b1 回復する。 NL #r20 枚以上:敵全体に #b500 ダメージ、HPを #b1 回復する。 NL Xの数は",
+      " 。"
+    ]
   }
 }

@@ -41,7 +41,7 @@ public class CompanionsPower extends AbstractPower {
             AbstractCreature m = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
             if (m != null){
                 addToBot(new VFXAction(new VerticalImpactEffect(m.hb.cX + m.hb.width / 4.0F, m.hb.cY - m.hb.height / 4.0F)));
-                addToBot(new DamageAction(m,new DamageInfo(this.owner,this.owner.currentBlock,DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.NONE));
+                addToBot(new DamageAction(m,new DamageInfo(this.owner,this.amount,DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.NONE));
             }
         }
         addToBot(new RemoveSpecificPowerAction(this.owner,this.owner,this));

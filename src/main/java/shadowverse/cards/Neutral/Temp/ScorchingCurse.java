@@ -47,26 +47,40 @@ public class ScorchingCurse extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
         addToBot(new SFXAction("ScorchingCurse"));
-        addToBot(new SelectCardsInHandAction(1, TEXT[0],  false,true, card -> card.type == CardType.ATTACK, abstractCards -> {
-            for (AbstractCard c : abstractCards) {
-                if (c == null){
-                    addToBot(new DamageAllEnemiesAction(p, this.damage, DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE));
-                    addToBot(new AddTemporaryHPAction(p,p,3));
-                }else {
-                    c.baseDamage = 0;
-                    c.baseBlock = 0;
-                    c.exhaustOnUseOnce = true;
-                    c.exhaust = true;
-                    c.isEthereal = true;
-                    c.initializeDescription();
-                    c.applyPowers();
-                    c.lighten(true);
-                    c.setAngle(0.0F);
-                    c.drawScale = 0.12F;
-                    c.targetDrawScale = 0.75F;
-                    c.current_x = Settings.WIDTH / 2.0F;
-                    c.current_y = Settings.HEIGHT / 2.0F;
-                    p.hand.addToTop(c);
+        addToBot(new SelectCardsInHandAction(1, TEXT[0], false, true, card -> card.type == CardType.ATTACK, abstractCards -> {
+            if (abstractCards.size()==0){
+                addToBot(new DamageAllEnemiesAction(p, this.damage, DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE));
+                addToBot(new AddTemporaryHPAction(p, p, 3));
+            }
+            for (AbstractCard c : abstractCards) {{
+                    addToBot(new AbstractGameAction() {
+                        @Override
+                        public void update() {
+                            AbstractCard tempCard = c.makeSameInstanceOf();
+                            if (tempCard.costForTurn > 0) {
+                                tempCard.costForTurn = 0;
+                                tempCard.isCostModifiedForTurn = true;
+                            }
+                            tempCard.baseDamage = 0;
+                            tempCard.baseBlock = 0;
+                            tempCard.exhaustOnUseOnce = true;
+                            tempCard.exhaust = true;
+                            tempCard.isEthereal = true;
+                            tempCard.initializeDescription();
+                            tempCard.applyPowers();
+                            tempCard.lighten(true);
+                            tempCard.setAngle(0.0F);
+                            tempCard.drawScale = 0.12F;
+                            tempCard.targetDrawScale = 0.75F;
+                            tempCard.current_x = Settings.WIDTH / 2.0F;
+                            tempCard.current_y = Settings.HEIGHT / 2.0F;
+                            p.hand.addToTop(tempCard);
+                            p.hand.refreshHandLayout();
+                            p.hand.applyPowers();
+                            this.isDone = true;
+                        }
+                    });
+
                 }
             }
         }));

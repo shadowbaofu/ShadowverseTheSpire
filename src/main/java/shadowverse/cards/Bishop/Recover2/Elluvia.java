@@ -2,15 +2,18 @@ package shadowverse.cards.Bishop.Recover2;
 
 import basemod.abstracts.CustomCard;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.RegenPower;
+import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
 import com.megacrit.cardcrawl.vfx.RainbowCardEffect;
 import shadowverse.characters.AbstractShadowversePlayer;
@@ -24,6 +27,7 @@ public class Elluvia
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/Elluvia.png";
+    private static final Texture LEADER_SKIN_VERSION = ImageMaster.loadImage("img/cards/Elluvia_L.png");
 
     public Elluvia() {
         super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.POWER, Bishop.Enums.COLOR_WHITE, CardRarity.RARE, CardTarget.SELF);
@@ -43,7 +47,11 @@ public class Elluvia
 
 
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
-        addToBot(new SFXAction("Elluvia"));
+        if ((UnlockTracker.betaCardPref.getBoolean(this.cardID, false))) {
+            addToBot(new SFXAction("Elluvia_L"));
+        }else {
+            addToBot(new SFXAction("Elluvia"));
+        }
         addToBot(new VFXAction(new RainbowCardEffect()));
         addToBot(new VFXAction(new BorderFlashEffect(Color.GOLDENROD, true)));
         addToBot( new ApplyPowerAction(p, p, new ElluviaPower(p)));

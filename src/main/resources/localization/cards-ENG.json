@@ -6534,7 +6534,7 @@
   },
   "shadowverse:GoddessOfCompassion": {
     "NAME": "Goddess of Compassion",
-    "DESCRIPTION": "Fusion: Skills, Powers or Colorless cards. NL If you fuse to this card while 3 or more cards are fused, it becomes *Goddess *of *Condemnation. NL  NL --------------------- NL  NL Gain !B! Block. NL ALL enemies lose 2 Strength and Dexterity. NL If cards were fused, gain 1 Overflow points. NL Exhaust."
+    "DESCRIPTION": "Fusion: Skills, Powers or Colorless cards. NL If you fuse to this card while 2 or more cards are fused, it becomes *Goddess *of *Condemnation. NL  NL --------------------- NL  NL Gain !B! Block. NL ALL enemies lose 2 Strength and Dexterity. NL If cards were fused, gain 1 Overflow points. NL Exhaust."
   },
   "shadowverse:Anthenita": {
     "NAME": "Anthenita, Spark of Change",
@@ -6609,5 +6609,135 @@
       " NL (Spellboosted ",
       " Times. )"
     ]
+  },"shadowverse:Apple": {
+  "NAME": "転生の毒林檎",
+  "DESCRIPTION": "アタック1枚を選択する。それがネクロマンサーカードなら、「 ラストワード :これが 廃棄 される時、プレイされるまでコスト0のこれの複製品1枚を手札に加える。」 NL そうでないなら、「 ラストワード :これが 廃棄 される時、カード2枚を引く」を持つ。 NL エセリアル 。"
+},
+  "shadowverse:LaserTyranny": {
+    "NAME": "熱線の支配",
+    "DESCRIPTION": "チョイス : NL 从 *アナライズアーティファクト 、 *エンシェントアーティファクト 、 *熱線の支配 からチョイスしたカード1種類を2枚山札に加える。 NL ランダムな敵に !D! ダメージを与える。 NL 廃棄札にある AF が6枚以上なら、さらに敵全体に !D! ダメージを与える。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION":"チョイス : NL 从 *アナライズアーティファクト+ 、 *エンシェントアーティファクト+ 、 *熱線の支配+ からチョイスしたカード1種類を2枚山札に加える。 NL ランダムな敵に !D! ダメージを与える。 NL 廃棄札にある AF が6枚以上なら、さらに敵全体に !D! ダメージを与える。 NL 廃棄 。"
+  },
+  "shadowverse:Amaterasu": {
+    "NAME": "晴天のアマテラス",
+    "DESCRIPTION": "!B! ブロック を得る。 NL ラストワード :これが 廃棄 される時、HPを1回復する。次のターン開始時、 *荒天のツクヨミ 1枚を手札に加える。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION":"!B! ブロック を得る。 NL ラストワード :これが 廃棄 される時、HPを1回復する。次のターン開始時、 *荒天のツクヨミ+ 1枚を手札に加える。 NL 廃棄 。"
+  },
+  "shadowverse:Tsukuyomi": {
+    "NAME": "荒天のツクヨミ",
+    "DESCRIPTION": "!D! ダメージを与える。 NL ラストワード :これが 廃棄 される時、1ダメージを与える。次のターン開始時、 *晴天のアマテラス 1枚を手札に加える。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION":"!D! ダメージを与える。 NL ラストワード :これが 廃棄 される時、1ダメージを与える。次のターン開始時、 *晴天のアマテラス+ 1枚を手札に加える。 NL 廃棄 。"
+  },
+  "shadowverse:MoonAndSun": {
+    "NAME": "双天の恩寵",
+    "DESCRIPTION": "チョイス : *晴天のアマテラス か *荒天のツクヨミ 1枚を手札に加える。 NL その中の1種類の効果を持っているなら、そうではなく、HPを1回復し、エナジー1を得る、 *EP 1枚を手札に加える。",
+    "UPGRADE_DESCRIPTION":"チョイス : *晴天のアマテラス+ か *荒天のツクヨミ+ 1枚を手札に加える。 NL その中の1種類の効果を持っているなら、そうではなく、HPを1回復し、エナジー1を得る、 *EP 1枚を手札に加える。"
+  },
+  "shadowverse:Blackwyrm": {
+    "NAME": "マナリア的漆黑龙",
+    "DESCRIPTION": "マナリア · 保留 NL マナリア カードをプレイする度、コストを-1する。 NL !D! ダメージを与える。 NL 敵全体に6ダメージを与える。 NL 廃棄 。"
+  },
+  "shadowverse:Whitewyrm": {
+    "NAME": "マナリアの純白竜",
+    "DESCRIPTION": "マナリア · 保留 NL マナリア カードをプレイする度、コストを-1する。 NL !B! ブロック を得る。 NL 仮HP`を3得る。 NL カード1枚を引く。 NL 廃棄 。"
+  },
+  "shadowverse:AcademyWyrmist": {
+    "NAME": "学園の竜術士",
+    "DESCRIPTION": "マナリア NL !B! ブロック を得る。 NL チョイス : *マナリアの漆黒竜 か *マナリアの純白竜 1枚を手札に加える。",
+    "UPGRADE_DESCRIPTION":"マナリア NL !B! ブロック を得る。 NL チョイス : *マナリアの漆黒竜+ か *マナリアの純白竜+ 1枚を手札に加える。"
+  },
+  "shadowverse:Hanna2": {
+    "NAME": "規範の生徒会長・ハンナ",
+    "DESCRIPTION": "マナリア NL !B! ブロック を得る。 NL 山札から マナリア スキル 1枚を手札に加える。 NL この戦闘中にプレイした マナリア カードが10枚以上なら、手札の マナリア スキルのコストをこのターンだけ-1する。それは「プレイする時、敵全体に3ダメージを与える」を持つ。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (プレイした マナリア カードは",
+      " 枚。)"
+    ]
+  },
+  "shadowverse:ScorchingCurse": {
+    "NAME": "鮮烈の言霊",
+    "DESCRIPTION": "アタック1枚を選択し、コスト0かつ 廃棄 と エセリアル を持つダメージ と ブロック が0の複製品1枚を手札に加える。 NL 選択していないなら、敵全体に !D! ダメージを与え、仮HPを3得る。 NL エセリアル · 廃棄 。",
+    "UPGRADE_DESCRIPTION":"アタック1枚を選択し、コスト0かつ 廃棄 と エセリアル を持つダメージ と ブロック が0の複製品1枚を手札に加える。 NL 選択していないなら、敵全体に !D! ダメージを与え、仮HPを3得る。 NL 保留 · 廃棄 。"
+  },
+  "shadowverse:Ginger": {
+    "NAME": "ランペイジワード・ジンジャー",
+    "DESCRIPTION": "タイプを持つカードをプレイする度、これのコストを-1する。 NL *鮮烈の言霊 1枚を手札に加える。 NL ターン開始時、 *鮮烈の言霊 1枚を手札に加える。",
+    "UPGRADE_DESCRIPTION":"タイプを持つカードをプレイする度、これのコストを-1する。 NL *鮮烈の言霊+ 1枚を手札に加える。 NL ターン開始時、 *鮮烈の言霊+ 1枚を手札に加える。"
+  },
+  "shadowverse:DarkAlice": {
+    "NAME": "闇色の童話・ダークアリス",
+    "DESCRIPTION": "結晶 1: *結晶:闇色の童話・ダークアリス 1枚を手札に加える。 NL  NL --------------------- NL  NL !D! ダメージを与える。この戦闘中にプレイした ラストワード を持つカードが10枚以上なら、これは *闇色の童話・ダークアリス(進化) に変身する。 NL ラストワード :これが 廃棄 される時、この戦闘中にプレイした ラストワード を持つカードが10枚以上なら、 カウントダウン 1の *結晶:闇色の童話・ダークアリス 1枚を手札に加える。そうでないなら、これの複製品1枚を手札に加える。",
+    "UPGRADE_DESCRIPTION":"結晶 1: *結晶:闇色の童話・ダークアリス+ 1枚を手札に加える。 NL  NL --------------------- NL  NL !D! ダメージを与える。この戦闘中にプレイした ラストワード を持つカードが10枚以上なら、これは *闇色の童話・ダークアリス(進化)+ に変身する。 NL ラストワード :これが 廃棄 される時、この戦闘中にプレイした ラストワード を持つカードが10枚以上なら、 カウントダウン 1の *結晶:闇色の童話・ダークアリス+ 1枚を手札に加える。そうでないなら、これの複製品1枚を手札に加える。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (プレイした ラストワード を持つカードは",
+      " 枚。)"
+    ]
+  },
+  "shadowverse:DarkAlice_Crystalize": {
+    "NAME": "結晶:闇色の童話・ダークアリス",
+    "DESCRIPTION": "保留 NL カウントダウン !M! :これを 廃棄 する。 NL ネクロマンサーでないカードをプレイする度、 カウントダウン を1進める。 NL ラストワード :これが 廃棄 される時、コスト0の *闇色の童話・ダークアリス 1枚を手札に加える。 NL この戦闘中にプレイした ラストワード を持つカードが10枚以上なら、これは *闇色の童話・ダークアリス(進化) に変身する。",
+    "UPGRADE_DESCRIPTION":"保留 NL カウントダウン !M! :これを 廃棄 する。 NL ネクロマンサーでないカードをプレイする度、 カウントダウン を1進める。 NL ラストワード :これが 廃棄 される時、コスト0の *闇色の童話・ダークアリス+ 1枚を手札に加える。 NL この戦闘中にプレイした ラストワード を持つカードが10枚以上なら、これは *闇色の童話・ダークアリス(進化)+ に変身する。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (プレイした ラストワード を持つカードは",
+      " 枚。)"
+    ]
+  },
+  "shadowverse:DarkAlice_Temp": {
+    "NAME": "闇色の童話・ダークアリス",
+    "DESCRIPTION": "!D! ダメージを与る。 NL ラストワード :これが 廃棄 される時、 *闇色の童話・ダークアリス 1枚を手札に加える。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION":"!D! ダメージを与る。 NL ラストワード :これが 廃棄 される時、 *闇色の童話・ダークアリス+ 1枚を手札に加える。 NL 廃棄 。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (プレイした ラストワード を持つカードは",
+      " 枚。)"
+    ]
+  },
+  "shadowverse:DarkAlice_Ev": {
+    "NAME": "闇色の童話・ダークアリス(進化)",
+    "DESCRIPTION": "!D! ダメージを与る。 NL ラストワード :これが 廃棄 される時、 カウントダウン が1の *結晶:闇色の童話・ダークアリス 1枚を手札に加える。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION":"!D! ダメージを与る。 NL ラストワード :これが 廃棄 される時、 カウントダウン が1の *結晶:闇色の童話・ダークアリス+ 1枚を手札に加える。 NL 廃棄 。"
+  },
+  "shadowverse:MechamagicalRhino": {
+    "NAME": "エレクトリックライノ",
+    "DESCRIPTION": "AF NL !D! ダメージを与える。 NL ラストワード :これの複製品3枚を捨札に加える。 NL 廃棄 。"
+  },
+  "shadowverse:ElectricRhino": {
+    "NAME": "アーティファクトライノ",
+    "DESCRIPTION": "AF NL これが引かれた時、コストを-Xする。Xは廃棄札にある AF カードの数である。 NL AF カードを廃棄する度、コストを-1する。 NL !D! ダメージを与える。 NL *エレクトリックライノ 3枚を山札に加える。",
+    "UPGRADE_DESCRIPTION":"AF NL これが引かれた時、コストを-Xする。Xは廃棄札にある AF カードの数である。 NL AF カードを廃棄する度、コストを-1する。 NL !D! ダメージを与える。 NL *エレクトリックライノ+ 3枚を山札に加える。"
+  },
+  "shadowverse:CelestialWyrmGod": {
+    "NAME": "最果ての竜神",
+    "DESCRIPTION": "!B! ブロック を得る。 NL 弱体化 と 脱力 2を与える。 NL 超覚醒 なら、山札のコスト2以下のカードすべて 廃棄 する。手札のドラゴンアタックのコストをこのターンだけ半分にする。"
+  },
+  "shadowverse:AbsoluteDragon": {
+    "NAME": "アブソーブドラゴン",
+    "DESCRIPTION": "!D! ダメージを与える。 NL カード1枚を引く。引いたカードが元のコストが3以上のドラゴンアタックなら、それのコストをこのターンだけ0にする。 NL ラストワード :これがプレイする時、仮HP3を得る。これの複製品1枚を山札に加える。"
+  },
+  "shadowverse:Jill": {
+    "NAME": "熟練の教師・ジル",
+    "DESCRIPTION": "マナリア ・ アクセラレート 0: *マナリアの防陣 1枚を手札に加える。 NL  NL --------------------- NL  NL !B! ブロック を得る。 NL 山札から マナリア カード2枚を手札に加える。 NL 手札にある マナリア カード1枚につき、敵全体に1ダメージを与える。",
+    "UPGRADE_DESCRIPTION":"マナリア ・ アクセラレート 0: *マナリアの防陣+ 1枚を手札に加える。 NL  NL --------------------- NL  NL !B! ブロック を得る。 NL 山札から マナリア カード2枚を手札に加える。 NL 手札にある マナリア カード1枚につき、敵全体に1ダメージを与える。"
+  },
+  "shadowverse:Eon": {
+    "NAME": "デスティニーセイント・イオ",
+    "DESCRIPTION": "手札のアタックをすべて 廃棄 する。 NL 1枚につき、エナジー、 筋力 、 敏捷性 1を得る。 NL 2枚以上 廃棄 したなら、敵全体に 脱力 と 弱体化 2を与え、カード3枚を引く。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION":"手札のアタックをすべて 廃棄 する。 NL 1枚につき、エナジー、 筋力 、 敏捷性 1を得る。 NL 2枚以上 廃棄 したなら、敵全体に 脱力 と 弱体化 2を与え、カード3枚を引く。"
+  },
+  "shadowverse:DivineMinister": {
+    "NAME": "天命の執行者",
+    "DESCRIPTION": "!B! ブロック を得る。 NL これの カウントダウン が０になる時、!B! ブロック を得る。 NL 廃棄 。"
+  },
+  "shadowverse:Laina": {
+    "NAME": "神託の決定者・ライナ",
+    "DESCRIPTION": "ターン終了時、山札・捨札それぞれに *天命の執行者 2枚を加える。",
+    "UPGRADE_DESCRIPTION":"ターン終了時、山札・捨札それぞれに *天命の執行者 2枚を加える。 NL Xの数によって能力が働く。Xはプレイ、発動された *天命の執行者 の数の合計である。 NL 4枚以下:敵全体に7ダメージ、 ブロック 1を得る。 NL 5枚以上:敵全体に21ダメージ、 仮HP1を得る。 NL 10枚以上:敵全体50ダメージ、HPを1回復する。 NL 20枚以上:敵全体に500ダメージ、HPを1回復する。"
+  },
+  "shadowverse:EphemeralMoon": {
+    "NAME": "うたかたの月",
+    "DESCRIPTION": "カウントダウン 2: ブラー 1を得る。 NL ターン開始時、捨て札のカードを山札に戻す。カードを !M! 枚引く。"
+  },
+  "shadowverse:Kaguya": {
+    "NAME": "カグヤ",
+    "DESCRIPTION": "アミュレットすべての カウントダウン を !M! 進める。 NL *うたかたの月 1枚をアミュレットゾーンに置く。"
   }
 }

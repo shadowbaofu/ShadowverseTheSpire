@@ -1731,6 +1731,13 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("Jill", new Sfx(voicePath + "Jill.wav"));
             reflectedMap.put("Jill_Acc", new Sfx(voicePath + "Jill_Acc.wav"));
             reflectedMap.put("Eon", new Sfx(voicePath + "Eon.wav"));
+            reflectedMap.put("Laina", new Sfx(voicePath + "Laina.wav"));
+            reflectedMap.put("Laina_E", new Sfx(voicePath + "Laina_E.wav"));
+            reflectedMap.put("DivineMinister", new Sfx(voicePath + "DivineMinister.wav"));
+            reflectedMap.put("Kaguya", new Sfx(voicePath + "Kaguya.wav"));
+            reflectedMap.put("Lumiore_L", new Sfx(voicePath + "Lumiore_L.wav"));
+            reflectedMap.put("Lumiore_L_eff", new Sfx(voicePath + "Lumiore_L_eff.wav"));
+            reflectedMap.put("Elluvia_L", new Sfx(voicePath + "Elluvia_L.wav"));
         }
         if (Loader.isModLoaded("CardAugments")) {
             AugmentHelper.register();
@@ -3134,6 +3141,10 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard(new AbsoluteDragon());
         BaseMod.addCard(new Jill());
         BaseMod.addCard(new Eon());
+        BaseMod.addCard(new DivineMinister());
+        BaseMod.addCard(new Laina());
+        BaseMod.addCard(new EphemeralMoon());
+        BaseMod.addCard(new Kaguya());
         logger.info("Success");
     }
 

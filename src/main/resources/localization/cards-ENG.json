@@ -6453,8 +6453,8 @@
   },
   "shadowverse:GraveVoidknight": {
     "NAME": "Grave Voidknight",
-    "DESCRIPTION": "Fusion: Non-Basic Shadowcraft cards. NL When fusing to this card, if 2 or less cards have been fused perform Necromancy 4: Randomly add a card with Last Words from the draw pile to your hand. If 3 or more are fused, this card becomes *Grave *Adjudicator.  NL  NL --------------------- NL  NL Gain !B! Block.  NL Necromancy 4: Add 1 *Evolution *Point to your hand. Deal !D! damage.",
-    "UPGRADE_DESCRIPTION": "Fusion: Non-Basic Shadowcraft cards. NL When fusing to this card, if 2 or less cards have been fused perform Necromancy 4: Randomly add a card with Last Words from the draw pile to your hand. If 3 or more are fused, this card becomes *Grave *Adjudicator+.  NL  NL --------------------- NL  NL Gain !B! Block.  NL Necromancy 4: Add 1 *Evolution *Point to your hand. Deal !D! damage.",
+    "DESCRIPTION": "Fusion: Non-Basic Shadowcraft cards. NL When fusing to this card, if 2 or less cards have been fused perform Necromancy 4: Randomly add a card with Last Words from the draw pile to your hand. If 3 or more are fused, this card becomes *Grave *Adjudicator.   NL ---------------------  NL Gain !B! Block.  NL Necromancy 4: Add 1 *Evolution *Point to your hand. Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Fusion: Non-Basic Shadowcraft cards. NL When fusing to this card, if 2 or less cards have been fused perform Necromancy 4: Randomly add a card with Last Words from the draw pile to your hand. If 3 or more are fused, this card becomes *Grave *Adjudicator+.   NL ---------------------  NL Gain !B! Block.  NL Necromancy 4: Add 1 *Evolution *Point to your hand. Deal !D! damage.",
     "EXTENDED_DESCRIPTION": [
       " NL (Fused",
       " cards. )"

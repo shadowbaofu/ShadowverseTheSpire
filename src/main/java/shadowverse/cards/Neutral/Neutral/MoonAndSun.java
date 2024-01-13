@@ -15,6 +15,8 @@ import shadowverse.cards.AbstractNeutralCard;
 import shadowverse.cards.Neutral.Status.EvolutionPoint;
 import shadowverse.cards.Neutral.Temp.Amaterasu;
 import shadowverse.cards.Neutral.Temp.Tsukuyomi;
+import shadowverse.powers.NextTurnAmaterasu;
+import shadowverse.powers.NextTurnTsukuyomi;
 
 import java.util.ArrayList;
 
@@ -74,13 +76,7 @@ public class MoonAndSun
                 c.upgrade();
             }
         }
-        boolean has = false;
-        for (AbstractCard c : abstractPlayer.hand.group){
-            if (c instanceof Amaterasu || c instanceof Tsukuyomi) {
-                has = true;
-                break;
-            }
-        }
+        boolean has = abstractPlayer.hasPower(NextTurnAmaterasu.POWER_ID) || abstractPlayer.hasPower(NextTurnTsukuyomi.POWER_ID);
         if (has){
             addToBot(new GainEnergyAction(1));
             addToBot(new HealAction(abstractPlayer,abstractPlayer,1));

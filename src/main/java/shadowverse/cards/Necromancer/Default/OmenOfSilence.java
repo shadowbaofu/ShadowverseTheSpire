@@ -49,7 +49,7 @@ public class OmenOfSilence extends CustomCard implements BranchableUpgradeCard {
     }
 
     public void applyPowers() {
-        int amt = 0;
+        int amt = 1;
         for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisCombat) {
             if (c.cardID.contains("OmenOfSilence"))
                 amt++;

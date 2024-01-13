@@ -13,7 +13,9 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
+import shadowverse.cards.Dragon.Discard2.Lumiore;
 
 public class LumiorePower extends AbstractPower implements DiscardPower{
     public static final String POWER_ID = "shadowverse:LumiorePower";
@@ -38,7 +40,11 @@ public class LumiorePower extends AbstractPower implements DiscardPower{
 
     @Override
     public void triggerOnDiscard(int amount) {
-        addToBot(new SFXAction("Lumiore_Eff"));
+        if ((UnlockTracker.betaCardPref.getBoolean(Lumiore.ID, false))) {
+            addToBot(new SFXAction("Lumiore_L_eff"));
+        }else {
+            addToBot(new SFXAction("Lumiore_Eff"));
+        }
         addToBot(new VFXAction(AbstractDungeon.player, new CleaveEffect(), 0.2F));
         addToBot(new DamageAllEnemiesAction(AbstractDungeon.player, DamageInfo.createDamageMatrix(this.amount*amount, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE));
     }

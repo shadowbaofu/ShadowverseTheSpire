@@ -114,7 +114,7 @@
   },
   "shadowverse:NobilisMod": {
     "TEXT": [
-      " NL Last_Words: Apply 4 poison to all enemies when Exhausted. "
+      " NL Last_Words: Apply 4 poison to ALL enemies when Exhausted. "
     ]
   },
   "ViewBanCardScreen": {
@@ -141,7 +141,7 @@
   },
    "shadowverse:GarudaMod": {
     "TEXT": [
-      " NL When you play this, deal it's original cost x 10 damage to a random enemy."
+      " NL When played, deal 10 damage for each Energy it cost to a random enemy."
     ]
   },
   "shadowverse": {
@@ -291,7 +291,7 @@
   },
   "shadowverse:HannaMod": {
     "TEXT": [
-      "敵全体に !Hanna:D! ダメージを与える。 NL "
+      "Deals !Hanna:D! damage to ALL enemies. NL "
     ]
   }
 }

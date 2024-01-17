@@ -8,7 +8,7 @@
   "shadowverse:EarthEssence": {
     "NAME": "Earth Essence",
     "DESCRIPTIONS": [
-      "Some cards can spend #yEarth #yEssence to active #yEarth #yRite which has more powerful effect.",
+      "Some cards can spend #yEarth #yEssence to active #yEarth #yRite which has a more powerful effect.",
       "My Earth Essence is full!"
     ]
   },
@@ -22,7 +22,7 @@
   "shadowverse:FaustPower": {
     "NAME": "Truthseeker Faust",
     "DESCRIPTIONS": [
-      "By the end of your turn, #yEarth #yRite: Gain #b",
+      "By the end of your turn, perform #yEarth #yRite: Gain #b",
       " #yStrength, #b",
       " #yDexterity."
     ]
@@ -51,14 +51,14 @@
   "shadowverse:DarkMagePower": {
     "NAME": "Crystallize: Forbidden Darkmage",
     "DESCRIPTIONS": [
-      "Any damage you would receive equal to 5 or more becomes #b4, draw 1 card, heal 1 HP and decrease the Countdown of this card by #b1 at the end of your turn. NL If the Countdown reaches #b5, you can't play #yAttacks. NL (Maximum Countdown is #b5)"
+      "All damage greater than 4 becomes #b4, draw 1 card, heal 1 HP and decrease the Countdown of this card by #b1 at the end of your turn. NL (Countdown cannot be increased by more than 5 at a time)"
     ]
   },
   "shadowverse:MachineDrawPower": {
     "NAME": "Tetra's Mettle",
     "DESCRIPTIONS": [
       "Whenever you play a #yMachina card this turn, draw #b",
-      " card."
+      " card(s)."
     ]
   },
   "shadowverse:MachineAttackPower": {
@@ -143,7 +143,7 @@
   "shadowverse:TheWorldPower": {
     "NAME": "XXI. Zelgenea, The World Reversed",
     "DESCRIPTIONS": [
-      "Deal #b20 damage to all emenies at the end of your turn. Put #b2 #yBurn into your draw pile."
+      "Deal #b20 damage to all enemies at the end of your turn. Put #b2 #yBurns into your draw pile."
     ]
   },
   "shadowverse:TheFoolPower": {
@@ -156,7 +156,7 @@
   "shadowverse:ExhaustPower": {
     "NAME": "Rite of the Ignorant: Exhaust",
     "DESCRIPTIONS": [
-      "At the end of your turn, #yExhaust the card you draw with this effect."
+      "At the end of your turn, #yExhaust the cards you drew with this effect."
     ]
   },
   "shadowverse:TheFoolPower2": {
@@ -169,7 +169,7 @@
   "shadowverse:FlamePower": {
     "NAME": "Harnessed Flame",
     "DESCRIPTIONS": [
-      "+ #b",
+      "Add #b",
       " to damage dealt this turn."
     ]
   },
@@ -209,8 +209,8 @@
   "shadowverse:LegendaryFighterPower": {
     "NAME": "Legendary Fighter",
     "DESCRIPTIONS": [
-      "During this turn: Gain 1 #yBurst and lose this effect if you play #yAttack card. Gain 1 #yEnvenom and lose this effect if you play #ySkill card. Gain 1 #yArtifact and lose this effect if you play #yPower card. NL If you play an Attack, Skill and Power card without losing HP, put #b",
-      " #yLegendary #yFighter into your hand at the start of your next turn, with the following effect: Deal #b50 damage #b2 times."
+      "During this turn: Gain 1 #yDouble #yTap once if you play an #yAttack card. Gain 1 #yEnvenom once if you play a #ySkill card. Gain 1 #yArtifact once if you play a #yPower card. NL If you play an Attack, Skill and Power card this turn without losing HP, put #b",
+      " #yLegendary #yFighter Attack card into your hand next turn, with the following effect: Deal #b50 damage #b2 times."
     ]
   },
   "shadowverse:chushouHealPower": {
@@ -238,7 +238,7 @@
   "shadowverse:ManaBarrier": {
     "NAME": "Aether Barrier",
     "DESCRIPTIONS": [
-      "Change incoming damage to #b0. Can be removed by #yAether #yForce."
+      "Change incoming damage to #b0. Can only be removed by #yAether #yForce."
     ]
   },
   "shadowverse:ICPower": {
@@ -284,13 +284,13 @@
   "shadowverse:AriaPower": {
     "NAME": "Aria, Miasma Fairy",
     "DESCRIPTIONS": [
-      "#yFariy #yWisps and #yFairies will apply 2 #yPoison ."
+      "#yFairy #yWisps and #yFairies will apply 2 #yPoison ."
     ]
   },
   "shadowverse:LoxisPower": {
     "NAME": "Loxis, Homestead Pioneer",
     "DESCRIPTIONS": [
-      "Whenever you play a Power card: Gain [E] (up to 3 times per turn) and randomly put a #yDutiful #ySteed, #yBullet #yBike, or #yArcane #yPersonnel #yCarrier into your hand. Each of these Power cards can be put only once per turn with this effect."
+      "Whenever you play a Power card: Gain [E] (up to 3 times per turn) and randomly put a #yDutiful #ySteed, #yBullet #yBike, or #yArcane #yPersonnel #yCarrier into your hand. Each of these Power cards can only be added once per turn with this effect."
     ]
   },
   "shadowverse:NextTurnFairy": {
@@ -310,7 +310,7 @@
   "shadowverse:ForestFairyPower": {
     "NAME": "Fairy Slugger",
     "DESCRIPTIONS": [
-      "Whenever you play a #yFariy or a #yFariy #yWisp, gain #b",
+      "Whenever you play a #yFairy or a #yFairy #yWisp, gain #b",
       " Block."
     ]
   },
@@ -323,7 +323,7 @@
   "shadowverse:GreenbrierElfPower": {
     "NAME": "Greenbrier Elf",
     "DESCRIPTIONS": [
-      "Whenever you play a #yGreenwood #yGuardian, deal",
+      "Whenever you play a #yGreenwood #yGuardian, deal #b",
       " damage to a random enemy."
     ]
   },
@@ -356,7 +356,7 @@
   "shadowverse:TweyenPower": {
     "NAME": "Pinpoint Prey",
     "DESCRIPTIONS": [
-      "Damage taken #b+20% and #yBlock gained #b-10% ."
+      " Raise damage taken by #b+20% and #yBlock gained by #b-10% ."
     ]
   },
   "shadowverse:FairyCirclePower": {
@@ -401,7 +401,7 @@
   "shadowverse:FreezePower": {
     "NAME": "Freeze",
     "DESCRIPTIONS": [
-      "+1 cost to cards drawn."
+      "Increase cost to cards drawn by 1."
     ]
   },
   "shadowverse:AlectorPower": {
@@ -576,13 +576,13 @@
   "shadowverse:WrathPower": {
     "NAME": "Wrath",
     "DESCRIPTIONS": [
-      "#yWrath is active when you has taken damage during your turn at least 7 times in a combat. Certain cards have extra effects with #yWrath."
+      "#yWrath is active when you have taken damage during your turn at least 7 times in a combat. Certain cards have extra effects with #yWrath."
     ]
   },
   "shadowverse:AvaricePower": {
     "NAME": "Avarice",
     "DESCRIPTIONS": [
-      "#yAvarice is active when at least 6 cards have been drawn from your draw pile in s turn. Certain cards have extra effects with #yAvarice. Lose this effect at the end of your turn."
+      "#yAvarice is active when at least 6 cards have been drawn from your draw pile in a turn. Certain cards have extra effects with #yAvarice. Lose this effect at the end of your turn."
     ]
   },
   "shadowverse:EpitaphPower": {
@@ -634,7 +634,7 @@
   "shadowverse:DrainPower": {
     "NAME": "Drain",
     "DESCRIPTIONS": [
-      "Heal HP equal to the next damage dealt. Lose this effect at the start of your next turn."
+      "Heal HP equal to the next damage you dealt. Lose this effect at the start of your next turn."
     ]
   },
   "shadowverse:AzazelPower": {
@@ -648,7 +648,7 @@
     "DESCRIPTIONS": [
       "Whenever you are attacked, heal #b",
       " HP and deal #b",
-      " damage back. If #yVengeance is active, if you have any Block remaining, gain #b",
+      " damage back. If #yVengeance is active and you have any Block remaining after being attacked, gain #b",
       " Block."
     ]
   },
@@ -706,7 +706,7 @@
     "NAME": "Illya, Queen of Night",
     "DESCRIPTIONS": [
       "Whenever you lose HP due to a card effect, at the start of your next turn, gain #b1 Strength and #b1 Dexterity. Whenever you are attacked, if you have any Block remaining, gain #b",
-      " Block at the start of your next turn."
+      " Block next turn."
     ]
   },
   "shadowverse:DevilSheepPower": {
@@ -808,7 +808,7 @@
   "shadowverse:FaustPower2": {
     "NAME": "Faust, Overzealous Observer",
     "DESCRIPTIONS": [
-      "At the end of your turn, if your #yEarth #yEssence is less than #b2, gain #b2 #yEarth #yEssence. NL Otherwise, #yEarth #yRite #b2: Deal #b",
+      "At the end of your turn, if your #yEarth #yEssence is less than #b2, gain #b2 #yEarth #yEssence. NL Otherwise, perform #yEarth #yRite #b2: Deal #b",
       " damage to all enemies."
     ]
   },
@@ -828,7 +828,7 @@
   "shadowverse:AcceleratiumPower": {
     "NAME": "Acceleratium",
     "DESCRIPTIONS": [
-      "Whenever you play an #yAF card, gain [E]. Add #b1 #yVoid to your discard pile for ever #b2 #yAF card played. #b",
+      "Whenever you play an #yAF card, gain [E]. Add #b1 #yVoid to your discard pile for every #b2 #yAF card played. #b",
       " Lose this effect at the end of your turn."
     ]
   },
@@ -850,7 +850,7 @@
   "shadowverse:DeusExMachinaPower": {
     "NAME": "Deus Ex Machina",
     "DESCRIPTIONS": [
-      "Whenever you play an #yAF card, gain [E]. At the end of your turn, if you are in #yResonance, draw #b2 additional cards at the start of your next turn."
+      "Whenever you play an #yAF card, gain [E]. At the end of your turn, if you are in #yResonance, draw #b2 additional cards next turn."
     ]
   },
   "shadowverse:BearminatorPower": {
@@ -911,7 +911,7 @@
   "shadowverse:KarulaPower": {
     "NAME": "Karula, Arts Master",
     "DESCRIPTIONS": [
-      "If you have any Energy remaining at the end of your turn, apply #b",
+      "If you have any Energy remaining at the end of your turn, gain #b",
       " #yStrength and #yDexterity and give a random enemy #b3 #yVulnerable and #yWeak."
     ]
   },
@@ -959,7 +959,7 @@
   "shadowverse:DisableEffectDamagePower": {
     "NAME": "Power Damage Immune",
     "DESCRIPTIONS": [
-      "Reduce damage from Power to 0 in #b",
+      "Reduce damage from Powers and other similar effects to 0 in #b",
       " turn(s)."
     ]
   },
@@ -973,7 +973,7 @@
     "NAME": "Wheel of Misfortune",
     "DESCRIPTIONS": [
       "For the next #b",
-      " turns, at the start of the turn, activate one of the following effects that hasn't been activated yet: Lose #b2 Strength, Stunned for #b1 turn, Add #b1 #yAnalyzing #yArtifact to your hand."
+      " turns, at the start of the turn, randomly activate one of the following effects that hasn't been activated yet: Lose #b2 Strength, Stunned for #b1 turn, Add #b1 #yAnalyzing #yArtifact to your hand."
     ]
   },
   "shadowverse:AbsoluteOnePower": {
@@ -985,7 +985,7 @@
   "shadowverse:DeathNotePower": {
     "NAME": "Death's Ledger",
     "DESCRIPTIONS": [
-      "Randomly play a highest-cost Attack card with cost less than your Max Energy in your draw pile in #b",
+      "Randomly play the highest cost Attack from your draw pile that's less than or equal to your Max Energy. Effect lasts for #b",
       " turn(s)."
     ]
   },
@@ -1025,21 +1025,21 @@
   "shadowverse:AbyssDoomLordPower": {
     "NAME": "Doomlord of the Abyss",
     "DESCRIPTIONS": [
-      " Change incoming damage to 0 for #b",
+      " Reduce incoming damage to 0 for #b",
       " turn(s)."
     ]
   },
   "shadowverse:DiscipleOfUsurpationPower": {
     "NAME": "Disciple of Usurpation",
     "DESCRIPTIONS": [
-      "Whenever you play #yLoot card, gain #b",
+      "Whenever you play a #yLoot card, gain #b",
       " #yBlock ."
     ]
   },
   "shadowverse:ApostleOfUsurpationPower": {
     "NAME": "Apostle of Usurpation",
     "DESCRIPTIONS": [
-      "Whenever you play #yLoot card, deal #b",
+      "Whenever you play a #yLoot card, deal #b",
       " damage to a random enemy."
     ]
   },
@@ -1088,7 +1088,7 @@
     "NAME": "Alwida, Pirate Queen",
     "DESCRIPTIONS": [
       "#b",
-      " time per turn, whenever you play a #yLoot card, summon 1 #yPirate and 1 #yViking."
+      " time(s) per turn, whenever you play a #yLoot card, summon 1 #yPirate and 1 #yViking."
     ]
   },
   "shadowverse:GloriousCorePower": {
@@ -1100,7 +1100,7 @@
     ]
   },
   "shadowverse:GraysonDrawnPower": {
-    "NAME": "Grayson, Rocket Blader",
+    "NAME": "Grayson, Rocket Blader Drawn",
     "DESCRIPTIONS": [
       "Gain [E] for every #yMachina card played this turn."
     ]
@@ -1179,7 +1179,7 @@
   "shadowverse:WilbertPower": {
     "NAME": "Wilbert, Grand Knight",
     "DESCRIPTIONS": [
-      "Whenever you are attacked, if you have any Block, deal damage equal to #b5% of the attacker’s max HP (no less than 6 damage)."
+      "Whenever you are attacked, if you have any Block, deal damage equal to #b5% of the attacker’s max HP (minimum 6 damage)."
     ]
   },
   "shadowverse:Wilbert2Power": {
@@ -1214,7 +1214,7 @@
     "DESCRIPTIONS": [
       "Whenever you heal HP this turn, gain #b",
       " Dexterity. If there are any Machina Attack cards in your hand, gain #b",
-      " Strength."
+      " Strength as well."
     ]
   },
   "shadowverse:HeavenlyAegisPower": {
@@ -1281,27 +1281,27 @@
   "shadowverse:DimensionShiftPower": {
     "NAME": "Dimension Shift",
     "DESCRIPTIONS": [
-      "Add #b",
+      "Take #b",
       " extra turn(s)."
     ]
   },
   "shadowverse:ImperialSaintPower": {
     "NAME": "Imperial Saint",
     "DESCRIPTIONS": [
-      "The next time you would die, heal 50% of your max HP and take an extra turn instead."
+      "The next time you would die, heal to 50% of your max HP and take an extra turn after instead."
     ]
   },
   "shadowverse:ShadowCorrosionPower": {
     "NAME": "Shadow's Corrosion",
     "DESCRIPTIONS": [
       "At the start of turn, lose #b",
-      " HP. Whenever you play #b1 #yNaterran #yGreat #yTree, + #b4 damage."
+      " HP. Whenever you play #b1 #yNaterran #yGreat #yTree, add #b4 damage."
     ]
   },
   "shadowverse:DualbladePower": {
     "NAME": "Dualblade Flurry",
     "DESCRIPTIONS": [
-      "#yFollowers can attack 2 times."
+      "#yFollowers can trigger their Passives 2 times (using 2 health)."
     ]
   },
   "shadowverse:AmbushBuffPower": {
@@ -1325,7 +1325,7 @@
       "Fairy+",
       "into your hand, gain #b",
       " #yBlock NL ",
-      "2. Heal 2 HP."
+      "3. Heal 2 HP."
     ]
   },
   "shadowverse:AlbertaPower": {
@@ -1363,13 +1363,13 @@
   "shadowverse:ShootOfUnkillingPower": {
     "NAME": "Annihilating Onslaught",
     "DESCRIPTIONS": [
-      "At the start of your next turn, deal damage that equals its max HP to an enemy that intends to attack."
+      "At the start of your next turn, deal damage to enemies equal to their Max HP if they intended to attack last turn and the attack damage was reduced to 0."
     ]
   },
   "shadowverse:OmenOfUnkillingPower2": {
     "NAME": "Izudia, Unkilling Annihilation",
     "DESCRIPTIONS": [
-      "At the end of next #b",
+      "At the end of your next #b",
       " turn(s), a random enemy lose #b6 #yStrength. This effect does not stack."
     ]
   },
@@ -1384,13 +1384,13 @@
   "shadowverse:OmenOfOnePower2": {
     "NAME": "Mjerrabaine, Great One",
     "DESCRIPTIONS": [
-      "If you have played card that costs #b2 or less, deal #b10 damage to random enemy at the end of your turn. NL If you have played card that costs #b2 or more, deal #b18 damage to all enemies at the end of your turn."
+      "If any card that costs #b2 or less was played, deal #b10 damage to random enemy at the end of your turn. NL If you have played any card that costs #b2 or more, deal #b18 damage to all enemies at the end of your turn."
     ]
   },
   "shadowverse:BirthOfRavenousPower": {
     "NAME": "Birth of the Ravenous",
     "DESCRIPTIONS": [
-      "If you've played 3 or more cards this turn, draw 1 additional card at the start of your next turn."
+      "If you've played at least 4 cards this turn, draw 1 additional card next turn."
     ]
   },
   "shadowverse:AdherentOfDispairPower": {
@@ -1419,9 +1419,9 @@
     "DESCRIPTIONS": [
       "Whenever you summon a #yFollower, it gains + #b",
       "/+ #b",
-      " , #yAramis + #b",
+      " , #yAramis deals an additional #b",
       " damage. Whenever you play #yAttack cards, gain #b",
-      " #yStrength and #yDexterity , #yAramis + #b",
+      " #yStrength and #yDexterity , #yAramis deals an additional #b",
       " damage."
     ]
   },
@@ -1491,7 +1491,7 @@
     "NAME": "Temporary Vengeance",
     "DESCRIPTIONS": [
       "After #b",
-      " turn, if your HP is more than half of your max HP, #yVengeance is no longer active."
+      " turns, if your HP is more than half of your max HP, #yVengeance is no longer active."
     ]
   },
   "shadowverse:VengeanceBuffPower": {
@@ -1548,7 +1548,7 @@
     "NAME": "Spear of Judgment",
     "DESCRIPTIONS": [
       "At the end of your turn, deal #b",
-      "damage to a radom enemy. Countdown #b",
+      "damage to a random enemy. Countdown #b",
       ": Lose this effect."
     ]
   },
@@ -1562,7 +1562,7 @@
   "shadowverse:NornPower": {
     "NAME": "Norn, Arbiter of Worlds",
     "DESCRIPTIONS": [
-      "Wheever Resonance becomes active for you, gain [E]."
+      "Whenever Resonance becomes active for you, gain [E]."
     ]
   },
   "shadowverse:CassimPower": {
@@ -1573,7 +1573,7 @@
     ]
   },
   "shadowverse:RosaPower": {
-    "NAME": "Rose, Unfettered Maiden",
+    "NAME": "Rosa, Unfettered Maiden",
     "DESCRIPTIONS": [
       "Whenever Resonance becomes active for you, gain #b",
       "Block. Draw #b1 additional card at the start of your next turn."
@@ -1611,8 +1611,8 @@
   "shadowverse:MysticKingPower": {
     "NAME": "Mystic King",
     "DESCRIPTIONS": [
-      "#yMagical #yPaws deal double damage and #b",
-      " additional damage. When you lose all of your #rtemporary #rHP , you lose this game."
+      "#yMagical #yPawns deal double damage and #b",
+      " additional damage. When you lose all of your #rtemporary #rHP, you die (ignoring ALL revive effects)."
     ]
   },
   "shadowverse:CraigPower": {
@@ -1628,13 +1628,13 @@
     "DESCRIPTIONS": [
       "#yGhosts deal #b",
       "additional damage.",
-      "At the begining of your turn, put a 0 cost #yMasquerade #yGhost without Last Words into your hand."
+      "At the start of your turn, put a 0 cost #yMasquerade #yGhost without Last Words into your hand."
     ]
   },
   "shadowverse:NextTurnMasqueradeGhostPower": {
     "NAME": "Masquerade Ghost : Last Word",
     "DESCRIPTIONS": [
-      "At the begining of your turn, put a 0 cost #yMasquerade #yGhost without Last Words into your hand."
+      "At the start of your turn, put a 0 cost #yMasquerade #yGhost without Last Words into your hand."
     ]
   },
   "shadowverse:JiemonThiefLordPower": {
@@ -1646,7 +1646,7 @@
   "shadowverse:GiveGoldPower": {
     "NAME": "Jiemon, Thief Lord",
     "DESCRIPTIONS": [
-      "At the start of your turn, add a #yGlitterig #yGold to your hand."
+      "At the start of your turn, add a #yGlittering #yGold to your hand."
     ]
   },
   "shadowverse:OpulentStrategistPower": {
@@ -1662,7 +1662,7 @@
   "shadowverse:CosmosFangPower": {
     "NAME": "Cosmos Fang",
     "DESCRIPTIONS": [
-      "At the start of your turn, deal damage equal to your current block to a random enemy. Then, lose this effect."
+      "At the start of your turn, deal damage equal to your current Block to a random enemy. Then, lose this effect."
     ]
   },
   "shadowverse:BlitzPower": {
@@ -1671,9 +1671,9 @@
       "Gain the following effect: At the start of your turn, activate 1 of the following effects in order until all 3 have been activated once. NL ",
       " #g",
       "(1) Add #b2 #yMagical #yPawn into your hand. NL ",
-      "(2) Add #b1 #yMagical #yRook which cost 0 and have Exhaust into your hand",
+      "(2) Add #b1 #yMagical #yRook which costs 0 and have Exhaust into your hand",
       ". NL ",
-      "(3) Add #b1 #yMagical #yKnight which cost 0 and have Exhaust into your hand."
+      "(3) Add #b1 #yMagical #yKnight which costs 0 and have Exhaust into your hand."
     ]
   },
   "shadowverse:LeafshadeAssassinPower": {
@@ -1726,14 +1726,14 @@
   "shadowverse:ErraldePower": {
     "NAME": "Erralde, Troth Convict",
     "DESCRIPTIONS": [
-      "If you played a #yCondemned card or a card that cost 2 or more this turn, heal #b2 HP and draw #b1 card at the start of your next turn."
+      "If you played a #yCondemned card or a card that cost 2 or more this turn, heal #b2 HP and draw #b1 card next turn."
     ]
   },
   "shadowverse:UnerielPower": {
     "NAME": "Uneriel, Winged Enforcer",
     "DESCRIPTIONS": [
-      "During this turn, the #yCountdown of your amulets is reduced by #b",
-      " . Whenever an amulet is triggered, deal #b",
+      "During this turn, the #yCountdown of your Amulets played is reduced by #b",
+      " . Whenever an Amulet is destroyed, deal #b",
       " damage to all enemies."
     ]
   },
@@ -1753,7 +1753,7 @@
     "NAME": "Tidal Gunner",
     "DESCRIPTIONS": [
       "Whenever you play a #yLoot card this turn, deal #b",
-      " Damage to a random enemy."
+      " damage to a random enemy."
     ]
   },
   "shadowverse:DeepSeaScoutPower": {
@@ -1780,11 +1780,11 @@
   "shadowverse:AmaryllisPower": {
     "NAME": "Amaryllis, the Princess",
     "DESCRIPTIONS": [
-      "(1)Heal #b1 HP. NL ",
-      "(2)Draw #b1 more card next turn. NL ",
-      "(3)Spellboost your draw pile once NL ",
-      "When you take damage and still have Temporary HP, Randomly trigger 1 of the following effects:: NL ",
-      "You deal #b1 more damage.。"
+      "(1) Heal #b1 HP. NL ",
+      "(2) Draw #b1 more card next turn. NL ",
+      "(3) Spellboost your draw pile once NL ",
+      "When you take damage and still have Temporary HP, Randomly trigger 1 of the following effects: NL ",
+      "You deal #b1 more damage. "
     ]
   },
   "shadowverse:CurseOfSufferingPower": {
@@ -1797,7 +1797,7 @@
   "shadowverse:PureflowerMaidenPower": {
     "NAME": "Pureflower Maiden",
     "DESCRIPTIONS": [
-      "Whenever you heal HP this turn, draw a card.(once). Whenever you gain Strength or Dexterity, draw a card.(once) "
+      "Whenever you heal HP this turn, draw a card (once). Whenever you gain Strength or Dexterity, draw a card (once). "
     ]
   },
   "shadowverse:MementoPower": {
@@ -1854,9 +1854,9 @@
    "shadowverse:OverflowPower": {
     "NAME": "Unawakened",
     "DESCRIPTIONS": [
-      "Enters Overflow when you have 3 Overflow points, afterward gain [E] at the start of your turn. Overflow Points: #b",
+      "Enters Overflow when you have 3 Overflow points, afterwards gain [E] at the start of your turn. Overflow Points: #b",
       " /3。",
-      "Gain [E] at the start of every turn.  Enters Full Overflow when you have 3 Overflow points again, afterward gain [E] [E] at the start of your turn. Overflow Points: #b",
+      "Gain [E] at the start of every turn.  Enters Full Overflow when you have 3 Overflow points again, afterwards gain [E] [E] at the start of your turn. Overflow Points: #b",
       " /3。",
       "Gain [E] [E] at the start of your turn.",
       "Overflow",
@@ -1954,7 +1954,7 @@
     "DESCRIPTIONS": [
       "When playing an Attack card this turn, gain #b",
       " #yStrength. If it's a Machina card, gain #b",
-      " #yDexterity ."
+      " #yDexterity as well ."
     ]
   },
   "shadowverse:LavateinnDragonAttackFormPower": {
@@ -1988,7 +1988,7 @@
   "shadowverse:DragonHoardPower": {
     "NAME": "Dragon's Hoard",
     "DESCRIPTIONS": [
-      "At the start of each turn and when an attack card is played, subtract #b1 from the Countdown. After the Countdown reaches 0, lose this effect and all attacks in the hand, draw and discard piles are exhausted and replaced with #yHellfire #yDragons for each exhausted."
+      "At the start of each turn and when an attack card is played, subtract #b1 from the Countdown. After the Countdown reaches 0, all attacks are exhausted and replaced with #yHellfire #yDragons for each card exhausted."
     ]
   },
   "shadowverse:RomeliaPower": {
@@ -2001,19 +2001,19 @@
   "shadowverse:DragonTagPower": {
     "NAME": "Dragon",
     "DESCRIPTIONS": [
-      "Guiltmarked as a Dragon."
+      "Guiltmarked as a Dragon. Dragonstrife Blade will deal extra damage."
     ]
   },
   "shadowverse:JervaPower": {
     "NAME": "Jerva of Draconic Mail",
     "DESCRIPTIONS": [
-      "Health capped at 50% of your max HP. HP lost this way is restored at the end of combat. NL At the end of the turn, deal damage to a random enemy equal to #b25% of it's max HP (No less than #b25 damage)"
+      "Health capped at 50% of your max HP. HP lost this way is restored at the end of combat. NL At the end of the turn, deal damage to a random enemy equal to #b25% of it's max HP (Minimum #b25 damage)"
     ]
   },
   "shadowverse:Jerva2Power": {
     "NAME": "Jerva, Wyrm Transcendent",
     "DESCRIPTIONS": [
-      "At the end of your turn, if you did not play any attacks, deal damage to a random enemy equal to #b25% of it's max HP. (No less than #b25 damage)"
+      "At the end of your turn, if you did not play any attacks, deal damage to a random enemy equal to #b25% of it's max HP. (Minimum #b25 damage)"
     ]
   },
   "shadowverse:Masamune2Power": {
@@ -2025,7 +2025,7 @@
   "shadowverse:Forte4Power": {
     "NAME": "Forte, Darkwing Ruler",
     "DESCRIPTIONS": [
-      "When Strength and Dexterity are gained, the following effects will activate in order, up to 3 times each: NL 1. Gain #b1 extra Energy next turn. NL 2. Apply #b2 Weak and Vulnerable to a random enemy. NL 3. Gain #b1 Buffer, preventing the next time you would lose HP."
+      "When Strength or Dexterity are gained, the following effects will activate in order, up to 3 times each: NL 1. Gain #b1 extra Energy next turn. NL 2. Apply #b2 Weak and Vulnerable to a random enemy. NL 3. Gain #b1 Buffer, preventing the next time you would lose HP."
       ]
    },
   "shadowverse:FafnirPower": {
@@ -2049,7 +2049,7 @@
   "shadowverse:UndyingWitchPower": {
     "NAME": "Undying Witch",
     "DESCRIPTIONS": [
-      "Once per turn, whenever you consume Earth_Essence (such as by Earth_Rite, gain Energy equal to the Earth_Essence consumed."
+      "Once per turn, whenever you consume Earth_Essence (such as by performing Earth_Rite, gain Energy equal to the Earth_Essence consumed."
     ]
   },
   "shadowverse:GraveAdjudicatorPower": {
@@ -2074,7 +2074,7 @@
   "shadowverse:SeraphsPower": {
     "NAME": "Seraphs of the True Key",
     "DESCRIPTIONS": [
-      "At the start of your turn, subtract 10 from the Countdown of ALL amulets."
+      "At the start of your turn, subtract 10 from the Countdown of ALL Amulets."
     ]
   },
   "shadowverse:PurelightExemplarPower": {
@@ -2084,31 +2084,31 @@
     ]
   },
   "shadowverse:NextTurnAmaterasu": {
-    "NAME": "荒天のツクヨミ",
+    "NAME": "Amaterasu, Clearsky Goddess",
     "DESCRIPTIONS": [
-      "ターン開始時、 #y晴天のアマテラス #b",
-      " 枚を手札に加える。"
+      "At the start of your turn add #b",
+      "  #yAmaterasu to your hand. "
     ]
   },
   "shadowverse:NextTurnTsukuyomi": {
-    "NAME": "晴天のアマテラス",
+    "NAME": "Tsukuyomi, Stormcloud Deity",
     "DESCRIPTIONS": [
-      "ターン開始時、 #y荒天のツクヨミ #b",
-      " 枚を手札に加える。"
+      "At the start of your turn add #b",
+      "  #yTsukuyomi to your hand. "
     ]
   },
   "shadowverse:GingerPower": {
-    "NAME": "ランペイジワード・ジンジャー",
+    "NAME": "Ginger, Raging Word",
     "DESCRIPTIONS": [
-      "ターン開始時、 #y鮮烈の言霊 #b1 枚を手札に加える。"
+      "At the start of your turn, add #b1 #yScorching #yCurse to your hand."
     ]
   },
   "shadowverse:LainaPower": {
-    "NAME": "神託の決定者・ライナ",
+    "NAME": "Laina, Heaven's Judge",
     "DESCRIPTIONS": [
-      "ターン終了時、山札・捨札それぞれに #y天命の執行者 #b2 枚を加える。",
-      "Xの数によって能力が働く。Xはプレイ、発動された #y天命の執行者 の数の合計である。 NL #g4 枚以下:敵全体に #b7 ダメージ、 #b1 #yブロック を得る。 NL #y5 枚以上:敵全体に #b21 ダメージ、 #b1 #y仮HP を得る。 NL #b10 枚以上:敵全体に #b50 ダメージ、HPを #b1 回復する。 NL #r20 枚以上:敵全体に #b500 ダメージ、HPを #b1 回復する。 NL Xの数は",
-      " 。"
+      "At the end of your turn, put 2 #yDivine #yMinisters to your draw and discard piles.",
+      "Triggers effects based on X, equal to the number of #yDivine #yMinisters played or destroyed. NL #g4 or less: Deal #b7 damage to ALL enemies. Gain #b1 #yBlock. NL #y5 or more: Deal #b21 damage to ALL enemies. Gain #b1 #yTemporary HP. NL #b10 or more: Deal #b50 damage to ALL enemies. Heal 1 HP. NL #r20 or more: Deal #b500 damage to ALL enemies. Heal 1 HP. NL X is",
+      " . "
     ]
   }
 }

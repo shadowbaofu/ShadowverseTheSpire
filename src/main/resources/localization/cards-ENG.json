@@ -6631,8 +6631,8 @@
   },
   "shadowverse:MoonAndSun": {
     "NAME": "Twofold Grace",
-    "DESCRIPTION": "Choose: Add 1 *Amaterasu, *Clearsky *Goddess or *Tsukuyomi, *Stormcloud *Deity to your hand. If either card is already in your hand, heal 1 HP, Gain 1 Energy and add 1 *Evolution *Point to your hand.",
-    "UPGRADE_DESCRIPTION": "Choose: Add 1 *Amaterasu, *Clearsky *Goddess+ or *Tsukuyomi, *Stormcloud *Deity+ to your hand. If either card is already in your hand, heal 1 HP, Gain 1 Energy and add 1 *Evolution *Point to your hand."
+    "DESCRIPTION": "Choose: Add 1 *Amaterasu, *Clearsky *Goddess or *Tsukuyomi, *Stormcloud *Deity to your hand. If either card effect is active, heal 1 HP, Gain 1 Energy and add 1 *Evolution *Point to your hand.",
+    "UPGRADE_DESCRIPTION": "Choose: Add 1 *Amaterasu, *Clearsky *Goddess+ or *Tsukuyomi, *Stormcloud *Deity+ to your hand. If either card effect is active, heal 1 HP, Gain 1 Energy and add 1 *Evolution *Point to your hand."
   },
   "shadowverse:Blackwyrm": {
     "NAME": "Grim Blackwyrm",
@@ -6735,7 +6735,7 @@
    },
   "shadowverse:EphemeralMoon": {
     "NAME": "Ephemeral Moon",
-    "DESCRIPTION": "Countdown 2: Gain 1 Afterimage. NL At the start of your turn, shuffle your discard pile into the draw pile. Draw !M! cards."
+    "DESCRIPTION": "Countdown 2: Gain 1 Blur. NL At the start of your turn, shuffle your discard pile into the draw pile. Draw !M! cards."
   },
   "shadowverse:Kaguya": {
     "NAME": "Kaguya",

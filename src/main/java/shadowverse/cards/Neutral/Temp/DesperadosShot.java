@@ -35,22 +35,21 @@ public class DesperadosShot extends CustomCard {
 
 
     public void upgrade() {
-        if (!this.upgraded){
+        if (!this.upgraded) {
             upgradeName();
             upgradeDamage(3);
         }
     }
 
 
-
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot((AbstractGameAction)new SFXAction("DesperadosShot"));
-        addToBot((AbstractGameAction) new DamageAction((AbstractCreature) m, new DamageInfo((AbstractCreature) p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-        for (AbstractCard c:p.hand.group){
-            if (c instanceof EvolutionPoint){
-                addToBot((AbstractGameAction) new ExhaustSpecificCardAction(c,p.hand));
-                addToBot((AbstractGameAction) new DamageRandomEnemyAction(new DamageInfo(AbstractDungeon.player, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-                addToBot((AbstractGameAction) new ApplyPowerAction(p,p,new NextTurnV(p,1)));
+        addToBot(new SFXAction("DesperadosShot"));
+        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+        for (AbstractCard c : p.hand.group) {
+            if (c instanceof EvolutionPoint) {
+                addToBot(new ExhaustSpecificCardAction(c, p.hand));
+                addToBot(new DamageRandomEnemyAction(new DamageInfo(AbstractDungeon.player, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+                addToBot(new ApplyPowerAction(p, p, new NextTurnV(p, 1)));
                 break;
             }
         }

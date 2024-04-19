@@ -50,7 +50,7 @@ public class Aluzard
 
     @Override
     public void triggerOnExhaust() {
-        addToBot(new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,new NextAluzard(AbstractDungeon.player,1,this,this.upgraded)));
+        addToBot(new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,new NextAluzard(AbstractDungeon.player,this,this.upgraded)));
     }
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {

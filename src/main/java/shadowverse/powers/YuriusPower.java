@@ -41,9 +41,9 @@ public class YuriusPower extends AbstractPower implements OnLoseBlockPower {
     public int onAttacked(DamageInfo info, int damageAmount) {
         if (info.owner != null && info.type != DamageInfo.DamageType.THORNS && info.type != DamageInfo.DamageType.HP_LOSS && info.owner != this.owner) {
             flash();
-            addToBot((AbstractGameAction)new SFXAction("YuriusPower"));
-            addToTop((AbstractGameAction)new DamageAction(info.owner, new DamageInfo(this.owner, this.amount, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
-            addToBot((AbstractGameAction)new HealAction(this.owner,this.owner,this.amount));
+            addToBot(new SFXAction("YuriusPower"));
+            addToTop(new DamageAction(info.owner, new DamageInfo(this.owner, this.amount, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+            addToBot(new HealAction(this.owner,this.owner,this.amount));
         }
         return damageAmount;
     }
@@ -57,7 +57,7 @@ public class YuriusPower extends AbstractPower implements OnLoseBlockPower {
         if (AbstractDungeon.player.stance.ID.equals(Vengeance.STANCE_ID)&&damageInfo.owner!=null&&damageInfo.type!=DamageInfo.DamageType.THORNS&&damageInfo.owner!=this.owner){
             if (i<this.owner.currentBlock){
                 flash();
-                addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)this.owner, (AbstractCreature)this.owner, (AbstractPower)new NextTurnBlockPower((AbstractCreature)this.owner, this.amount*3), this.amount*3));
+                addToBot(new ApplyPowerAction((AbstractCreature)this.owner, (AbstractCreature)this.owner, (AbstractPower)new NextTurnBlockPower((AbstractCreature)this.owner, this.amount*3), this.amount*3));
             }
         }
         return i;

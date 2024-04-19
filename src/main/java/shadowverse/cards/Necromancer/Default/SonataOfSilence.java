@@ -47,13 +47,13 @@ public class SonataOfSilence
 
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction) new SFXAction("SonataOfSilence"));
+        addToBot(new SFXAction("SonataOfSilence"));
             for (AbstractPower pow : abstractPlayer.powers) {
                 if (!(pow instanceof StrengthPower)&&!(pow instanceof DexterityPower)&&!(pow instanceof Cemetery)&&!(pow instanceof ICPower)&&!(pow instanceof JudgmentWordPower)) {
-                    addToBot((AbstractGameAction) new RemoveSpecificPowerAction(pow.owner, abstractPlayer, pow.ID));
+                    addToBot(new RemoveSpecificPowerAction(pow.owner, abstractPlayer, pow.ID));
                 }
             }
-            addToBot((AbstractGameAction)new DrawCardAction(this.magicNumber));
+            addToBot(new DrawCardAction(this.magicNumber));
     }
 
 

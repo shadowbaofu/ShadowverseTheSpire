@@ -55,40 +55,39 @@ public class RageCommander
 
 
     public void upgrade() {
-        ((UpgradeBranch)((BranchableUpgradeCard)this).possibleBranches().get(chosenBranch())).upgrade();
+        ((UpgradeBranch) ((BranchableUpgradeCard) this).possibleBranches().get(chosenBranch())).upgrade();
     }
 
 
-
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        switch (chosenBranch()){
+        switch (chosenBranch()) {
             case 1:
-                addToBot((AbstractGameAction) new SFXAction("RageCommander"));
-                addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-                if (abstractPlayer.hasPower(EpitaphPower.POWER_ID)||abstractPlayer.stance.ID.equals(Vengeance.STANCE_ID)){
-                    addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer, abstractPlayer, new DoubleDamagePower(abstractPlayer, 1, false), 1));
-                }else {
-                    addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new PenNibPower((AbstractCreature)abstractPlayer, 1), 1, true));
+                addToBot(new SFXAction("RageCommander"));
+                addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+                if (abstractPlayer.hasPower(EpitaphPower.POWER_ID) || abstractPlayer.stance.ID.equals(Vengeance.STANCE_ID)) {
+                    addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new DoubleDamagePower(abstractPlayer, 1, false), 1));
+                } else {
+                    addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, (AbstractPower) new PenNibPower(abstractPlayer, 1), 1, true));
                 }
                 break;
             case 0:
-                addToBot((AbstractGameAction)new SFXAction("CrimsonWar"));
-                if (doubleCheck&&drainCheck){
-                    addToBot((AbstractGameAction)new VampireDamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage*2, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-                }else if (doubleCheck){
-                    addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage*2, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-                }else {
-                    addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+                addToBot(new SFXAction("CrimsonWar"));
+                if (doubleCheck && drainCheck) {
+                    addToBot(new VampireDamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage * 2, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+                } else if (doubleCheck) {
+                    addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage * 2, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+                } else {
+                    addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
                 }
-                if (aoeCheck){
+                if (aoeCheck) {
                     for (AbstractMonster m : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-                        if (!m.isDeadOrEscaped()){
-                            addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new ClawEffect(m.hb.cX, m.hb.cY, Color.SCARLET, Color.ORANGE), 0.1F));
+                        if (!m.isDeadOrEscaped()) {
+                            addToBot(new VFXAction(new ClawEffect(m.hb.cX, m.hb.cY, Color.SCARLET, Color.ORANGE), 0.1F));
                         }
-                        if (abstractPlayer.hasPower(EpitaphPower.POWER_ID)||abstractPlayer.stance.ID.equals(Vengeance.STANCE_ID)){
-                            addToBot((AbstractGameAction)new DamageAction((AbstractCreature)m, new DamageInfo((AbstractCreature)abstractPlayer, this.magicNumber*2, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.NONE));
-                        }else {
-                            addToBot((AbstractGameAction)new DamageAction((AbstractCreature)m, new DamageInfo((AbstractCreature)abstractPlayer, this.magicNumber, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.NONE));
+                        if (abstractPlayer.hasPower(EpitaphPower.POWER_ID) || abstractPlayer.stance.ID.equals(Vengeance.STANCE_ID)) {
+                            addToBot(new DamageAction(m, new DamageInfo(abstractPlayer, this.magicNumber * 2, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.NONE));
+                        } else {
+                            addToBot(new DamageAction(m, new DamageInfo(abstractPlayer, this.magicNumber, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.NONE));
                         }
                     }
                 }
@@ -99,10 +98,10 @@ public class RageCommander
     }
 
     @Override
-    public void onRetained(){
-        if (chosenBranch()==0 && AbstractDungeon.player.hasPower(EpitaphPower.POWER_ID)||AbstractDungeon.player.hasPower(AvaricePower.POWER_ID)){
+    public void onRetained() {
+        if (chosenBranch() == 0 && AbstractDungeon.player.hasPower(EpitaphPower.POWER_ID) || AbstractDungeon.player.hasPower(AvaricePower.POWER_ID)) {
             this.turnCount++;
-            switch (turnCount){
+            switch (turnCount) {
                 case 1:
                     this.doubleCheck = true;
                     flash();

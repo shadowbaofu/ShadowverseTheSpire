@@ -5,22 +5,23 @@ import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
+import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.ClashEffect;
 import rs.lazymankits.interfaces.cards.BranchableUpgradeCard;
 import rs.lazymankits.interfaces.cards.UpgradeBranch;
+import shadowverse.cards.AbstractAmuletCard;
 import shadowverse.cards.Neutral.Temp.MarkOfBalance;
+import shadowverse.cards.Neutral.Temp.SigilOfBalance;
 import shadowverse.characters.Bishop;
 
 import java.util.ArrayList;
@@ -31,21 +32,42 @@ public class Marlone extends CustomCard implements BranchableUpgradeCard {
     public static final String ID = "shadowverse:Marlone";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:Marlone");
     public static CardStrings cardStrings2 = CardCrawlGame.languagePack.getCardStrings("shadowverse:Marlone2");
+    public static CardStrings cardStrings3 = CardCrawlGame.languagePack.getCardStrings("shadowverse:Marlone3");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/Marlone.png";
     public static final String IMG_PATH2 = "img/cards/Marlone2.png";
-    private boolean branch1 = true;
+    private int branch;
+    private boolean triggered;
+
+    private static AbstractCard markOfBalance = new MarkOfBalance();
+    private static AbstractCard sigilOfBalance = new SigilOfBalance();
+
+    private static AbstractCard upgradedMark(){
+        AbstractCard c = new MarkOfBalance();
+        c.upgrade();
+        return c;
+    }
+
 
 
     public Marlone() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.UNCOMMON, CardTarget.SELF);
         this.baseBlock = 9;
-        if (branch1) {
-            this.cardsToPreview = new MarkOfBalance();
-        }
     }
 
+    public void update() {
+        super.update();
+        if (this.branch == 0) {
+            if (this.upgraded){
+                this.cardsToPreview = upgradedMark();
+            }else {
+                this.cardsToPreview = markOfBalance;
+            }
+        } else if (this.branch == 2) {
+            this.cardsToPreview = sigilOfBalance;
+        }
+    }
 
     public void upgrade() {
         ((UpgradeBranch) ((BranchableUpgradeCard) this).possibleBranches().get(chosenBranch())).upgrade();
@@ -55,12 +77,12 @@ public class Marlone extends CustomCard implements BranchableUpgradeCard {
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
         switch (chosenBranch()) {
             case 0:
-                addToBot((AbstractGameAction) new SFXAction("Marlone"));
-                addToBot((AbstractGameAction) new GainBlockAction(p, this.block));
-                addToBot((AbstractGameAction) new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
+                addToBot(new SFXAction("Marlone"));
+                addToBot(new GainBlockAction(p, this.block));
+                addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
                 break;
             case 1:
-                addToBot((AbstractGameAction) new SFXAction("Marlone2"));
+                addToBot(new SFXAction("Marlone2"));
                 int atkAmt = 0;
                 for (AbstractCard c : p.hand.group) {
                     if (c.type == AbstractCard.CardType.ATTACK && c != this) {
@@ -71,10 +93,28 @@ public class Marlone extends CustomCard implements BranchableUpgradeCard {
                 for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
                     if (!mo.isDeadOrEscaped()) {
                         monsterAmt++;
-                        addToBot((AbstractGameAction) new VFXAction((AbstractGameEffect) new ClashEffect(mo.hb.cX, mo.hb.cY), 0.1F));
+                        addToBot(new VFXAction(new ClashEffect(mo.hb.cX, mo.hb.cY), 0.1F));
                     }
                 }
-                addToBot((AbstractGameAction) new DamageAllEnemiesAction((AbstractCreature) p, DamageInfo.createDamageMatrix((this.damage - atkAmt * 5) * monsterAmt, true), this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE, true));
+                addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix((this.damage - atkAmt * 5) * monsterAmt, true), this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE, true));
+                break;
+            case 2:
+                addToBot(new SFXAction("Marlone3"));
+                for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
+                    if (!mo.isDeadOrEscaped()) {
+                        addToBot(new VFXAction(new ClashEffect(mo.hb.cX, mo.hb.cY), 0.1F));
+                    }
+                }
+                addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(this.damage, true), this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE, true));
+                for (AbstractCard c : p.hand.group) {
+                    if (c.type != CardType.SKILL && !(c instanceof AbstractAmuletCard)) {
+                        addToBot(new ExhaustSpecificCardAction(c, p.hand));
+                    }
+                }
+                if (!triggered) {
+                    addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
+                    triggered = true;
+                }
                 break;
         }
     }
@@ -96,8 +136,6 @@ public class Marlone extends CustomCard implements BranchableUpgradeCard {
                 Marlone.this.initializeTitle();
                 Marlone.this.baseBlock = 12;
                 Marlone.this.upgradedBlock = true;
-                if (Marlone.this.cardsToPreview != null)
-                    Marlone.this.cardsToPreview.upgrade();
                 Marlone.this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
                 Marlone.this.initializeDescription();
             }
@@ -115,10 +153,24 @@ public class Marlone extends CustomCard implements BranchableUpgradeCard {
                 Marlone.this.initializeTitle();
                 Marlone.this.rawDescription = cardStrings2.DESCRIPTION;
                 Marlone.this.initializeDescription();
-                Marlone.this.branch1 = false;
+                Marlone.this.branch = 1;
                 Marlone.this.cardsToPreview = null;
                 Marlone.this.rarity = CardRarity.RARE;
                 Marlone.this.setDisplayRarity(Marlone.this.rarity);
+            }
+        });
+        list.add(new UpgradeBranch() {
+            @Override
+            public void upgrade() {
+                ++Marlone.this.timesUpgraded;
+                Marlone.this.upgraded = true;
+                Marlone.this.name = cardStrings3.NAME;
+                Marlone.this.baseDamage = 10;
+                Marlone.this.upgradedDamage = true;
+                Marlone.this.initializeTitle();
+                Marlone.this.rawDescription = cardStrings3.DESCRIPTION;
+                Marlone.this.initializeDescription();
+                Marlone.this.branch = 2;
             }
         });
         return list;

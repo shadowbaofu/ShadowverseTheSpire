@@ -34,8 +34,8 @@ import java.util.ArrayList;
        if (c.hasTag(AbstractShadowversePlayer.Enums.SPELL_BOOST)) {
          for (int i = 0; i < this.card.magicNumber; i++) {
            c.flash();
-           addToBot((AbstractGameAction)new SFXAction("spell_boost"));
-           addToBot((AbstractGameAction)new ReduceCostAction(c));
+           addToBot(new SFXAction("spell_boost"));
+           addToBot(new ReduceCostAction(c));
          }  continue;
        } 
        if (c.hasTag(AbstractShadowversePlayer.Enums.SPELL_BOOST_ATTACK)) {
@@ -43,7 +43,7 @@ import java.util.ArrayList;
            c.flash();
            
            c.magicNumber = ++c.baseMagicNumber;
-           addToBot((AbstractGameAction)new SFXAction("spell_boost"));
+           addToBot(new SFXAction("spell_boost"));
          } 
        }
      } 

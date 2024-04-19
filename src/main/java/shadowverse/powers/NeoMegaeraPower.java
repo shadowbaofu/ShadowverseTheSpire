@@ -44,12 +44,12 @@ import shadowverse.action.GetEPAction;
    
    public void atStartOfTurnPostDraw() {
      flash();
-     addToBot((AbstractGameAction)new RemoveSpecificPowerAction(this.owner, this.owner, this));
-     addToBot((AbstractGameAction)new HealAction(this.owner,this.owner,6));
-     addToBot((AbstractGameAction)new GetEPAction(true,1));
-     addToBot((AbstractGameAction)new SFXAction("ATTACK_HEAVY"));
-     addToBot((AbstractGameAction)new VFXAction((AbstractCreature)this.owner, (AbstractGameEffect)new MindblastEffect(this.owner.dialogX, this.owner.dialogY, this.owner.flipHorizontal), 0.1F));
-     addToBot((AbstractGameAction)new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(this.amount, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE));
+     addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this));
+     addToBot(new HealAction(this.owner,this.owner,6));
+     addToBot(new GetEPAction(true,1));
+     addToBot(new SFXAction("ATTACK_HEAVY"));
+     addToBot(new VFXAction(this.owner, new MindblastEffect(this.owner.dialogX, this.owner.dialogY, this.owner.flipHorizontal), 0.1F));
+     addToBot(new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(this.amount, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE));
    }
    
    public void updateDescription() {

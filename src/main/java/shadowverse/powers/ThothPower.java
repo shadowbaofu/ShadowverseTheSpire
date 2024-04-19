@@ -40,7 +40,7 @@ import shadowverse.characters.AbstractShadowversePlayer;
 
    public void onPlayCard(AbstractCard card, AbstractMonster m) {
      if (card.hasTag(AbstractShadowversePlayer.Enums.LASTWORD)){
-       addToBot((AbstractGameAction)new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(10, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE));
+       addToBot(new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(10, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE));
      }
    }
 

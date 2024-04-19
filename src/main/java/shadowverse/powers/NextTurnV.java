@@ -3,7 +3,6 @@
 
 
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -40,10 +39,10 @@ import shadowverse.cards.Neutral.Temp.V;
    
    public void atStartOfTurn() {
      flash();
-     addToBot((AbstractGameAction)new RemoveSpecificPowerAction(this.owner, this.owner, this));
+     addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this));
      AbstractCard v = new V();
      v.freeToPlayOnce = true;
-     addToBot((AbstractGameAction)new MakeTempCardInHandAction(v, this.amount));
+     addToBot(new MakeTempCardInHandAction(v, this.amount));
    }
    
    public void updateDescription() {

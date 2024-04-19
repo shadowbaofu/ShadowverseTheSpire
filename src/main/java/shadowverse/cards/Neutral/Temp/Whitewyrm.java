@@ -28,7 +28,7 @@ import shadowverse.relics.AnneBOSS;
    public static final String IMG_PATH = "img/cards/Whitewyrm.png";
    
    public Whitewyrm() {
-     super(ID, NAME,IMG_PATH, 4, DESCRIPTION, CardType.ATTACK, Witchcraft.Enums.COLOR_BLUE, CardRarity.SPECIAL, CardTarget.ENEMY);
+     super(ID, NAME,IMG_PATH, 4, DESCRIPTION, CardType.ATTACK, Witchcraft.Enums.COLOR_BLUE, CardRarity.SPECIAL, CardTarget.SELF);
      this.baseBlock = 8;
      this.exhaust = true;
      this.selfRetain = true;

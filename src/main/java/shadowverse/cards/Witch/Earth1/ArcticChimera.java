@@ -56,7 +56,7 @@ public class ArcticChimera
             addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, abstractPlayer.currentBlock + this.block * 3, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
             addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, abstractPlayer.getPower(EarthEssence.POWER_ID), -3));
             if (abstractPlayer instanceof AbstractShadowversePlayer) {
-                ((AbstractShadowversePlayer) abstractPlayer).earthCount += 2;
+                ((AbstractShadowversePlayer) abstractPlayer).earthCount += 3;
             }
         } else {
             addToBot(new ApplyPowerAction(abstractMonster, abstractPlayer, new VulnerablePower(abstractMonster, 2, false), 2));

@@ -36,8 +36,8 @@ public class Ogler
     public void triggerOnOtherCardPlayed(AbstractCard c) {
         if (c.type == CardType.SKILL) {
             flash();
-            addToBot((AbstractGameAction) new SFXAction("spell_boost"));
-            addToBot((AbstractGameAction) new ReduceCostAction((AbstractCard) this));
+            addToBot(new SFXAction("spell_boost"));
+            addToBot(new ReduceCostAction((AbstractCard) this));
         }
     }
 
@@ -54,7 +54,7 @@ public class Ogler
         if (AbstractDungeon.player instanceof AbstractShadowversePlayer) {
             ((AbstractShadowversePlayer) AbstractDungeon.player).mysteriaCount++;
         }
-        AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new GainBlockAction((AbstractCreature) abstractPlayer, (AbstractCreature) abstractPlayer, this.block));
+        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(abstractPlayer, abstractPlayer, this.block));
         this.cost = 3;
     }
 

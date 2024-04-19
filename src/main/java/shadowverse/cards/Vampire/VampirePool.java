@@ -163,6 +163,7 @@ public class VampirePool  extends AbstractBanPool {
         Self.addCard(new ServantOfLust());
         Self.addCard(new TheBerserker());
         Self.addCard(new HowToTrainYourBat());
+        Self.addCard(new ChaoticChimera());
         Wrath.addCard(new AntelopeWarrior());
         Wrath.addCard(new EvilEyeDemon());
         Wrath.addCard(new OmenOfLust());

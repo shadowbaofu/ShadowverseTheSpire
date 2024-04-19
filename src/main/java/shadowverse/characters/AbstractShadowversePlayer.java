@@ -233,7 +233,7 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
         } else {
             tmpPool.addAll(pool.get(0).group);
             for (presize = 0; presize < allGroupNumber; ++presize) {
-                if (Shadowverse.groupActive[presize]) {
+                if (Shadowverse.groupActive.length>presize && Shadowverse.groupActive[presize]) {
                     tmpPool.addAll(pool.get(presize).group);
                 }
             }

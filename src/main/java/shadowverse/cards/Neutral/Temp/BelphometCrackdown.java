@@ -1,7 +1,6 @@
 package shadowverse.cards.Neutral.Temp;
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -49,7 +48,7 @@ public class BelphometCrackdown extends CustomCard {
     }
 
     public void onChoseThisOption() {
-        addToBot((AbstractGameAction) new SFXAction("Belphomet4"));
+        addToBot(new SFXAction("Belphomet4"));
         AbstractCard c = returnRandomElinese(AbstractDungeon.cardRandomRng).makeStatEquivalentCopy();
         c.retain= true;
         c.selfRetain = true;

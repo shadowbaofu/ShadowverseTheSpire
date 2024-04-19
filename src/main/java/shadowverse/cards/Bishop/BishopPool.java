@@ -106,6 +106,8 @@ public class BishopPool extends AbstractBanPool {
         Amulet1.addCard(new WhiteEagleBaptism());
         Amulet1.addCard(new PunishmentSniper());
         Amulet1.addCard(new WardenOfTheWings());
+        Amulet1.addCard(new SanctumOfWings());
+        Amulet1.addCard(new Meowskers());
         Amulet2.addCard(new BeastCallAria());
         Amulet2.addCard(new DivineBirdSong());
         Amulet2.addCard(new Garuda());

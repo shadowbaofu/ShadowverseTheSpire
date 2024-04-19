@@ -139,6 +139,8 @@ public class NecroPool extends AbstractBanPool {
         Mech.addCard(new RegenerateSpirit());
         Mech.addCard(new IrongearCorpsman());
         Mech.addCard(new Nicola());
+        Mech.addCard(new FullMetalZombie());
+        Mech.addCard(new SuccessionOfBalance());
         Natura.addCard(new Lubelle());
         Natura.addCard(new LurchingCorpse());
         Natura.addCard(new RevenantRam());
@@ -159,6 +161,7 @@ public class NecroPool extends AbstractBanPool {
         Necromancy.addCard(new WightKing());
         Necromancy.addCard(new HellfireStrike());
         Necromancy.addCard(new TrothCurse());
+        Necromancy.addCard(new Atem());
         Shadows.addCard(new GloamingTombs());
         Shadows.addCard(new DeathTyrant());
         Shadows.addCard(new Gremory());

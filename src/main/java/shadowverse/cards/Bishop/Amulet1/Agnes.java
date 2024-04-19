@@ -38,13 +38,13 @@
    public void triggerOnOtherCardPlayed(AbstractCard c) {
      if (c instanceof AbstractAmuletCard || (c instanceof AbstractCrystalizeCard && c.type==CardType.POWER) || c instanceof AbstractNoCountDownAmulet) {
        flash();
-       addToBot((AbstractGameAction)new SFXAction("spell_boost"));
-       addToBot((AbstractGameAction)new ReduceCostAction((AbstractCard)this));
+       addToBot(new SFXAction("spell_boost"));
+       addToBot(new ReduceCostAction(this));
      }
      if (c instanceof NaterranGreatTree){
          flash();
-         addToBot((AbstractGameAction)new SFXAction("spell_boost"));
-         addToBot((AbstractGameAction)new ReduceCostAction((AbstractCard)this));
+         addToBot(new SFXAction("spell_boost"));
+         addToBot(new ReduceCostAction(this));
      }
    }
  
@@ -59,15 +59,15 @@
  
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     addToBot((AbstractGameAction)new SFXAction("Agnes"));
-     addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
+     addToBot(new SFXAction("Agnes"));
+     addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
      this.cost = BASE_COST;
    }
  
  
    
    public AbstractCard makeCopy() {
-     return (AbstractCard)new Agnes();
+     return new Agnes();
    }
  }
 

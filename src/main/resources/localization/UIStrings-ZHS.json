@@ -293,5 +293,10 @@
     "TEXT": [
       "对全体敌人造成 !Hanna:D! 点伤害。 NL "
     ]
+  },
+  "shadowverse:AeneaMod": {
+    "TEXT": [
+      " NL 谢幕曲 :当这张牌被 消耗 时增加1张 *生产器械 到手中。"
+    ]
   }
 }

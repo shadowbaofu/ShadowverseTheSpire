@@ -47,14 +47,14 @@
  
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     addToBot((AbstractGameAction)new SFXAction("FirstOne"));
-     addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new BorderFlashEffect(Color.SCARLET, true)));
-     addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new MiracleEffect(Color.SCARLET.cpy(),Color.WHITE.cpy(),"HEAL_3")));
-     addToBot((AbstractGameAction)new FirstOneAction());
+     addToBot(new SFXAction("FirstOne"));
+     addToBot(new VFXAction(new BorderFlashEffect(Color.SCARLET, true)));
+     addToBot(new VFXAction(new MiracleEffect(Color.SCARLET.cpy(),Color.WHITE.cpy(),"HEAL_3")));
+     addToBot(new FirstOneAction());
      for (AbstractCard c : abstractPlayer.discardPile.group){
        if (c instanceof Mono){
-         addToBot((AbstractGameAction)new ExhaustSpecificCardAction(c,abstractPlayer.discardPile));
-         addToBot((AbstractGameAction)new MakeTempCardInHandAction((this.cardsToPreview.makeStatEquivalentCopy())));
+         addToBot(new ExhaustSpecificCardAction(c,abstractPlayer.discardPile));
+         addToBot(new MakeTempCardInHandAction((this.cardsToPreview.makeStatEquivalentCopy())));
        }
      }
    }

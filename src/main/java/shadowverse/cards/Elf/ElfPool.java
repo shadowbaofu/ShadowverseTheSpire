@@ -115,6 +115,7 @@ public class ElfPool extends AbstractBanPool {
         Left.addCard(new PrimalGigant());
         Left.addCard(new Sekka());
         Left.addCard(new WoodOfBrambles());
+        Left.addCard(new Briarmaiden());
         Long.addCard(new Alberta());
         Long.addCard(new AriasWhirlwind());
         Long.addCard(new ElfGuard());

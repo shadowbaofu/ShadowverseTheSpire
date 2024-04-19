@@ -7,14 +7,9 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.screens.CardRewardScreen;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToDiscardEffect;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToHandEffect;
-import shadowverse.cards.Royal.Hero.FlameSoldier;
-import shadowverse.cards.Royal.Hero.MachKnight;
+import shadowverse.cards.Royal.Hero.*;
 import shadowverse.cards.Elf.Long.Hero;
 import shadowverse.cards.Nemesis.Tokens.Maisha;
-import shadowverse.cards.Royal.Hero.Alexander;
-import shadowverse.cards.Royal.Hero.Arthur;
-import shadowverse.cards.Royal.Hero.HeroOfAntiquity;
-import shadowverse.cards.Royal.Hero.ValiantFencer;
 import shadowverse.cards.Royal.Levin.Albert;
 import shadowverse.cards.Royal.NatMech.Johann;
 import shadowverse.cards.Witch.Natura.Maiser;
@@ -67,6 +62,8 @@ public class AmerroSpearKnightAction extends AbstractGameAction {
                 new FlameSoldier(),
                 new MachKnight(),
                 new ValiantFencer(),
+                new IronwroughtDefender(),
+                new Icyclone(),
                 new HeroOfAntiquity(),
                 new Alexander(),
                 new Arthur(),
@@ -74,7 +71,7 @@ public class AmerroSpearKnightAction extends AbstractGameAction {
                 new Hero(),
                 new Maisha(),
                 new Johann(),
-                new Albert()
+                new Albert(),
         };
         while (derp.size() != 3) {
             boolean dupe = false;

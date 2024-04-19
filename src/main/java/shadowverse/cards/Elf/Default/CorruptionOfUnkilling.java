@@ -2,7 +2,6 @@ package shadowverse.cards.Elf.Default;
 
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -10,7 +9,6 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 import shadowverse.characters.Elf;
 import shadowverse.powers.IzudiaCorruptionPower;
 
@@ -39,8 +37,8 @@ public class CorruptionOfUnkilling extends CustomCard {
 
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction) new SFXAction("CorruptionOfUnkilling"));
-        addToBot((AbstractGameAction) new ApplyPowerAction(abstractPlayer,abstractPlayer,(AbstractPower) new IzudiaCorruptionPower(abstractPlayer)));
+        addToBot( new SFXAction("CorruptionOfUnkilling"));
+        addToBot( new ApplyPowerAction(abstractPlayer,abstractPlayer,new IzudiaCorruptionPower(abstractPlayer)));
     }
 
 

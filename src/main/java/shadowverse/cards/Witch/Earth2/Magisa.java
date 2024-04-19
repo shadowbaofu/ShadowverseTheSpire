@@ -52,11 +52,11 @@ public class Magisa extends CustomCard {
 
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction) new SFXAction("Magisa"));
+        addToBot(new SFXAction("Magisa"));
         if (abstractMonster != null)
-            addToBot((AbstractGameAction) new VFXAction((AbstractGameEffect) new WeightyImpactEffect(abstractMonster.hb.cX, abstractMonster.hb.cY)));
-        addToBot((AbstractGameAction) new WaitAction(0.8F));
-        addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) abstractMonster, (AbstractCreature) abstractPlayer, (AbstractPower) new VulnerablePower((AbstractCreature) abstractMonster, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+            addToBot(new VFXAction((AbstractGameEffect) new WeightyImpactEffect(abstractMonster.hb.cX, abstractMonster.hb.cY)));
+        addToBot(new WaitAction(0.8F));
+        addToBot(new ApplyPowerAction(abstractMonster, abstractPlayer, new VulnerablePower(abstractMonster, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
         boolean powerExists = false;
         AbstractPower earthEssence = null;
         for (AbstractPower pow : abstractPlayer.powers) {
@@ -72,41 +72,41 @@ public class Magisa extends CustomCard {
                     if (abstractPlayer instanceof AbstractShadowversePlayer) {
                         ((AbstractShadowversePlayer) abstractPlayer).earthCount++;
                     }
-                    addToBot((AbstractGameAction) new GainBlockAction((AbstractCreature) abstractPlayer, (AbstractCreature) abstractPlayer, this.block));
-                    addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) abstractPlayer, (AbstractCreature) abstractPlayer, (AbstractPower) new EarthEssence((AbstractCreature) abstractPlayer, -1), -1));
+                    addToBot(new GainBlockAction(abstractPlayer, abstractPlayer, this.block));
+                    addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, abstractPlayer.getPower(EarthEssence.POWER_ID), -1));
                     break;
 
                 case 2:
                     if (abstractPlayer instanceof AbstractShadowversePlayer) {
-                        ((AbstractShadowversePlayer) abstractPlayer).earthCount++;
+                        ((AbstractShadowversePlayer) abstractPlayer).earthCount+=2;
                     }
-                    addToBot((AbstractGameAction) new GainBlockAction((AbstractCreature) abstractPlayer, (AbstractCreature) abstractPlayer, this.block));
-                    addToBot((AbstractGameAction) new DamageAction((AbstractCreature) abstractMonster, new DamageInfo((AbstractCreature) abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
-                    addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) abstractPlayer, (AbstractCreature) abstractPlayer, (AbstractPower) new EarthEssence((AbstractCreature) abstractPlayer, -2), -2));
+                    addToBot(new GainBlockAction(abstractPlayer, abstractPlayer, this.block));
+                    addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+                    addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, abstractPlayer.getPower(EarthEssence.POWER_ID), -2));
                     break;
 
                 case 3:
                     if (abstractPlayer instanceof AbstractShadowversePlayer) {
-                        ((AbstractShadowversePlayer) abstractPlayer).earthCount++;
+                        ((AbstractShadowversePlayer) abstractPlayer).earthCount+=3;
                     }
-                    addToBot((AbstractGameAction) new GainBlockAction((AbstractCreature) abstractPlayer, (AbstractCreature) abstractPlayer, this.block));
-                    addToBot((AbstractGameAction) new DamageAction((AbstractCreature) abstractMonster, new DamageInfo((AbstractCreature) abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
-                    addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) abstractMonster, (AbstractCreature) abstractPlayer, (AbstractPower) new WeakPower((AbstractCreature) abstractMonster, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
-                    addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) abstractPlayer, (AbstractCreature) abstractPlayer, (AbstractPower) new EarthEssence((AbstractCreature) abstractPlayer, -3), -3));
+                    addToBot(new GainBlockAction(abstractPlayer, abstractPlayer, this.block));
+                    addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+                    addToBot(new ApplyPowerAction(abstractMonster, abstractPlayer, new WeakPower(abstractMonster, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+                    addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, abstractPlayer.getPower(EarthEssence.POWER_ID), -3));
                     break;
 
                 case 4:
                 default:
                     if (abstractPlayer instanceof AbstractShadowversePlayer) {
-                        ((AbstractShadowversePlayer) abstractPlayer).earthCount++;
+                        ((AbstractShadowversePlayer) abstractPlayer).earthCount+=4;
                     }
-                    addToBot((AbstractGameAction) new GainBlockAction((AbstractCreature) abstractPlayer, (AbstractCreature) abstractPlayer, this.block));
-                    addToBot((AbstractGameAction) new DamageAction((AbstractCreature) abstractMonster, new DamageInfo((AbstractCreature) abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
-                    addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) abstractMonster, (AbstractCreature) abstractPlayer, (AbstractPower) new WeakPower((AbstractCreature) abstractMonster, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
-                    addToBot((AbstractGameAction) new VFXAction((AbstractCreature) abstractPlayer, (AbstractGameEffect) new InflameEffect((AbstractCreature) abstractPlayer), 1.0F));
-                    addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) abstractPlayer, (AbstractCreature) abstractPlayer, (AbstractPower) new StrengthPower((AbstractCreature) abstractPlayer, 3), 3));
-                    addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) abstractPlayer, (AbstractCreature) abstractPlayer, (AbstractPower) new DexterityPower((AbstractCreature) abstractPlayer, 3), 3));
-                    addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) abstractPlayer, (AbstractCreature) abstractPlayer, (AbstractPower) new EarthEssence((AbstractCreature) abstractPlayer, -4), -4));
+                    addToBot(new GainBlockAction(abstractPlayer, abstractPlayer, this.block));
+                    addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+                    addToBot(new ApplyPowerAction(abstractMonster, abstractPlayer, new WeakPower(abstractMonster, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+                    addToBot(new VFXAction(abstractPlayer, (AbstractGameEffect) new InflameEffect(abstractPlayer), 1.0F));
+                    addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new StrengthPower(abstractPlayer, 3), 3));
+                    addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new DexterityPower(abstractPlayer, 3), 3));
+                    addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, abstractPlayer.getPower(EarthEssence.POWER_ID), -4));
                     break;
             }
         }

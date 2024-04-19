@@ -2110,5 +2110,48 @@
       "根据X触发效果。X为已打出和已触发的 #y天命执行者 的数量之和。 NL #g4 张以下:对全体敌人造成 #b7 点伤害，获得 #b1 点 #y格挡 。 NL #y5 张以上:对全体敌人造成 #b21 点伤害，获得 #b1 点 #y临时生命 。 NL #b10 张以上:对全体敌人造成 #b50 点伤害，回复 #b1 点生命。 NL #r20 张以上:对全体敌人造成 #b500 点伤害，回复 #b1 点生命。 NL X为",
       " 。"
     ]
+  },
+  "shadowverse:BriarmaidenPower": {
+    "NAME": "荆棘少女",
+    "DESCRIPTIONS": [
+      "本回合每打出1张攻击牌，获得 #b",
+      " 点 #y荆棘 。"
+    ]
+  },
+  "shadowverse:CrystalshardDragonewtPower": {
+    "NAME": "水晶龙人",
+    "DESCRIPTIONS": [
+      "每当打出 *那塔拉的大树 时，如果为本回合打出的第 #g1 张，给予随机敌人 #b",
+      " 层 #y易伤 和 #y虚弱 ;如果为第 #b2 张，对全体敌人造成 #b",
+      " 点伤害，回复 #b",
+      " 点生命;如果为第 #r3 张，获得 #b",
+      " 点 #y力量 和 #y敏捷 ，获得 #b",
+      " 点能量。"
+    ]
+  },
+  "shadowverse:ShadowRejectionPower": {
+    "NAME": "影之拒绝",
+    "DESCRIPTIONS": [
+      "回合开始时，失去 #b5% 最大生命值。如果本场战斗已打出的 #y那塔拉的大树 数量为 #g5 以上，改为 #b15% 。"
+    ]
+  },
+  "shadowverse:NextTurnV2": {
+    "NAME": "反叛拍档·巴妮与巴隆：谢幕曲",
+    "DESCRIPTIONS": [
+      "回合开始时，增加 #b",
+      " 张 #y高机动魔导车·V 到手中。"
+    ]
+  },
+  "shadowverse:Tetra4Power": {
+    "NAME": "苍蓝领导者·坦忒菈",
+    "DESCRIPTIONS": [
+      "每当打出机械牌时，如果为本回合打出的第 #g1 张，获得 #b1 点能量;如果为第 #b2 张，对随机敌人造成 #b8 点伤害;如果为第 #r3 张，增加 #b1 张 #y苍蓝的释放 到手中。"
+    ]
+  },
+  "shadowverse:NeoAlector2Power": {
+    "NAME": "灾乱的蹂躏·阿莱克托",
+    "DESCRIPTIONS": [
+      "受到攻击时，回复 #b2 点生命。"
+    ]
   }
 }

@@ -73,7 +73,7 @@ public class V
         if (c.costForTurn >= 1 && c.type == CardType.ATTACK && !this.maneuver) {
             this.maneuver = true;
             flash();
-            addToBot((AbstractGameAction) new ExhaustSpecificCardAction(c, AbstractDungeon.player.hand));
+            addToBot(new ExhaustSpecificCardAction(c, AbstractDungeon.player.hand));
             this.cardsToPreview = c.makeStatEquivalentCopy();
             applyPowers();
         }
@@ -84,7 +84,7 @@ public class V
         if (this.cardsToPreview != null) {
             AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
             c.setCostForTurn(0);
-            addToBot((AbstractGameAction) new MakeTempCardInHandAction(c));
+            addToBot(new MakeTempCardInHandAction(c));
             this.cardsToPreview = null;
             applyPowers();
             this.maneuver = false;
@@ -102,12 +102,12 @@ public class V
             drawAmt = 2;
         }
         AbstractGameAction[] actions = {
-                (AbstractGameAction) new DrawCardAction(drawAmt),
-                (AbstractGameAction) new DamageAllEnemiesAction((AbstractCreature) p, DamageInfo.createDamageMatrix(drawAmt*2+2, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE, true),
-                (AbstractGameAction) new DamageRandomEnemyAction(new DamageInfo(AbstractDungeon.player, this.magicNumber, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT),
-                (AbstractGameAction) new GainBlockAction(p, this.block)
+                new DrawCardAction(drawAmt),
+                new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(drawAmt*2+2, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE, true),
+                new DamageRandomEnemyAction(new DamageInfo(AbstractDungeon.player, this.magicNumber, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT),
+                new GainBlockAction(p, this.block)
         };
-        addToBot((AbstractGameAction) new DamageAction((AbstractCreature) abstractMonster, new DamageInfo((AbstractCreature) p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+        addToBot(new DamageAction(abstractMonster, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         addToBot(actions[rnd1]);
         addToBot(actions[rnd2]);
     }

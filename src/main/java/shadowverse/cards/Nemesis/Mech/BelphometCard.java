@@ -2,6 +2,7 @@ package shadowverse.cards.Nemesis.Mech;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
+import com.evacipated.cardcrawl.mod.stslib.actions.common.SelectCardsInHandAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.*;
@@ -13,6 +14,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
+import com.megacrit.cardcrawl.localization.UIStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.DexterityPower;
@@ -40,11 +42,14 @@ public class BelphometCard extends AbstractRightClickCard2 implements Branchable
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:BelphometCard");
     public static CardStrings cardStrings2 = CardCrawlGame.languagePack.getCardStrings("shadowverse:BelphometCard2");
     public static CardStrings cardStrings3 = CardCrawlGame.languagePack.getCardStrings("shadowverse:BelphometCard3");
+    public static CardStrings cardStrings4 = CardCrawlGame.languagePack.getCardStrings("shadowverse:BelphometCard4");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/BelphometCard.png";
     public static final String IMG_PATH2 = "img/cards/BelphometCard2.png";
     public static final String IMG_PATH3 = "img/cards/BelphometCard3.png";
+    private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("ExhaustAction");
+    public static final String[] TEXT = uiStrings.TEXT;
     private boolean hasFusion = false;
     private boolean hasGenerate = false;
     private int turnCount = 0;
@@ -68,6 +73,14 @@ public class BelphometCard extends AbstractRightClickCard2 implements Branchable
         list.add(new NeoMegaera());
         list.add(new ArmoredTentacle());
         list.add(new AssaultTentacle());
+        return list;
+    }
+
+    public static ArrayList<AbstractCard> returnNeoElinese2() {
+        ArrayList<AbstractCard> list = new ArrayList<>();
+        list.add(new NeoTisiphone2());
+        list.add(new NeoAlector2());
+        list.add(new NeoMegaera2());
         return list;
     }
 
@@ -137,6 +150,21 @@ public class BelphometCard extends AbstractRightClickCard2 implements Branchable
                     } else {
                         this.rotationTimer -= Gdx.graphics.getDeltaTime();
                     }
+                break;
+            case 3:
+                if (this.hb.hovered)
+                    if (this.rotationTimer <= 0.0F) {
+                        this.rotationTimer = 2.0F;
+                        this.cardsToPreview = returnNeoElinese2().get(previewIndex).makeCopy();
+                        if (this.previewIndex == returnNeoElinese2().size() - 1) {
+                            this.previewIndex = 0;
+                        } else {
+                            this.previewIndex++;
+                        }
+                    } else {
+                        this.rotationTimer -= Gdx.graphics.getDeltaTime();
+                    }
+                break;
         }
     }
 
@@ -183,6 +211,21 @@ public class BelphometCard extends AbstractRightClickCard2 implements Branchable
                 BelphometCard.this.rawDescription = cardStrings3.DESCRIPTION;
                 BelphometCard.this.initializeDescription();
                 BelphometCard.this.previewBranch = 2;
+            }
+        });
+        list.add(new UpgradeBranch() {
+            @Override
+            public void upgrade() {
+                ++BelphometCard.this.timesUpgraded;
+                BelphometCard.this.upgraded = true;
+                BelphometCard.this.textureImg = IMG_PATH2;
+                BelphometCard.this.loadCardImage(IMG_PATH2);
+                BelphometCard.this.name = cardStrings4.NAME;
+                BelphometCard.this.initializeTitle();
+                BelphometCard.this.upgradeBaseCost(2);
+                BelphometCard.this.rawDescription = cardStrings4.DESCRIPTION;
+                BelphometCard.this.initializeDescription();
+                BelphometCard.this.previewBranch = 3;
             }
         });
         return list;
@@ -249,6 +292,16 @@ public class BelphometCard extends AbstractRightClickCard2 implements Branchable
                     this.baseMagicNumber = 0;
                     this.magicNumber = this.baseMagicNumber;
                     break;
+                case 3:
+                    addToBot(new SFXAction("Loretaker"));
+                    if (this.magicNumber > 1){
+                        addToBot(new MakeTempCardInHandAction(new NeoTisiphone2().makeStatEquivalentCopy()));
+                        addToBot(new MakeTempCardInHandAction(new NeoAlector2().makeStatEquivalentCopy()));
+                        addToBot(new MakeTempCardInHandAction(new NeoMegaera2().makeStatEquivalentCopy()));
+                    }
+                    this.baseMagicNumber = 0;
+                    this.magicNumber = this.baseMagicNumber;
+                    break;
                 default:
                     break;
             }
@@ -276,42 +329,84 @@ public class BelphometCard extends AbstractRightClickCard2 implements Branchable
                 case 0:
                     return;
                 case 1:
-                    addToBot(new TagFusionAction(8, false, true, true, this, this.hasFusion, AbstractShadowversePlayer.Enums.MACHINE));
-                    if (!this.hasFusion) {
-                        turnCount++;
-                        hasFusion = true;
+                    if (!this.hasFusion && AbstractDungeon.player != null) {
+                        addToBot(new SelectCardsInHandAction(9, TEXT[0], true, true, card -> {
+                            return card.hasTag(AbstractShadowversePlayer.Enums.MACHINE) && card != this;
+                        }, abstractCards -> {
+                            if (abstractCards.size() > 0) {
+                                this.hasFusion = true;
+                            }
+                            for (AbstractCard c : abstractCards) {
+                                this.magicNumber++;
+                                this.applyPowers();
+                                addToBot(new ExhaustSpecificCardAction(c, AbstractDungeon.player.hand));
+                            }
+                        }));
                     }
                     break;
                 case 2:
-                    addToBot(new TagFusionAction(8, false, true, true, this, this.hasFusion, AbstractShadowversePlayer.Enums.MACHINE));
-                    if (!this.hasFusion) {
-                        turnCount++;
-                        hasFusion = true;
-                        AbstractCard assault = new AssaultTentacle();
-                        AbstractCard armored = new ArmoredTentacle();
-                        switch (turnCount) {
-                            case 1:
-                                break;
-                            case 2:
-                            case 4:
-                                if (EnergyPanel.getCurrentEnergy() > 1 && !hasGenerate) {
-                                    addToBot(new MakeTempCardInHandAction(armored.makeStatEquivalentCopy()));
-                                    EnergyPanel.useEnergy(1);
-                                    hasGenerate = true;
+                    if (!this.hasFusion && AbstractDungeon.player != null) {
+                        addToBot(new SelectCardsInHandAction(9, TEXT[0], true, true, card -> {
+                            return card.hasTag(AbstractShadowversePlayer.Enums.MACHINE) && card != this;
+                        }, abstractCards -> {
+                            if (abstractCards.size() > 0) {
+                                turnCount++;
+                                this.hasFusion = true;
+                                AbstractCard assault = new AssaultTentacle();
+                                AbstractCard armored = new ArmoredTentacle();
+                                switch (turnCount) {
+                                    case 1:
+                                        break;
+                                    case 2:
+                                    case 4:
+                                        if (EnergyPanel.getCurrentEnergy() > 1 && !hasGenerate) {
+                                            addToBot(new MakeTempCardInHandAction(armored.makeStatEquivalentCopy()));
+                                            EnergyPanel.useEnergy(1);
+                                            hasGenerate = true;
+                                        }
+                                        break;
+                                    case 3:
+                                    case 5:
+                                        if (EnergyPanel.getCurrentEnergy() > 1 && !hasGenerate) {
+                                            addToBot(new MakeTempCardInHandAction(assault.makeStatEquivalentCopy()));
+                                            EnergyPanel.useEnergy(1);
+                                            hasGenerate = true;
+                                        }
+                                        break;
+                                    default:
+                                        turnCount = 0;
+                                        break;
                                 }
-                                break;
-                            case 3:
-                            case 5:
-                                if (EnergyPanel.getCurrentEnergy() > 1 && !hasGenerate) {
-                                    addToBot(new MakeTempCardInHandAction(assault.makeStatEquivalentCopy()));
-                                    EnergyPanel.useEnergy(1);
-                                    hasGenerate = true;
-                                }
-                                break;
-                            default:
-                                turnCount = 0;
-                                break;
-                        }
+                            }
+                            for (AbstractCard c : abstractCards) {
+                                this.magicNumber++;
+                                this.applyPowers();
+                                addToBot(new ExhaustSpecificCardAction(c, AbstractDungeon.player.hand));
+                            }
+                        }));
+                    }
+                    break;
+                case 3:
+                    if (!this.hasFusion && AbstractDungeon.player != null) {
+                        addToBot(new SelectCardsInHandAction(9, TEXT[0], true, true, card -> {
+                            return card.hasTag(AbstractShadowversePlayer.Enums.MACHINE) && card != this;
+                        }, abstractCards -> {
+                            if (abstractCards.size() > 0) {
+                                this.hasFusion = true;
+                            }
+                            if (EnergyPanel.getCurrentEnergy() == 2 && this.magicNumber == 1){
+                                EnergyPanel.useEnergy(2);
+                                addToBot(new MakeTempCardInHandAction(new NeoAlector2()));
+                            }else if (EnergyPanel.getCurrentEnergy() == 1 && this.magicNumber == 0){
+                                EnergyPanel.useEnergy(1);
+                                addToBot(new MakeTempCardInHandAction(new NeoTisiphone2()));
+                            }
+                            for (AbstractCard c : abstractCards) {
+                                this.magicNumber++;
+                                this.applyPowers();
+                                addToBot(new ExhaustSpecificCardAction(c, AbstractDungeon.player.hand));
+                            }
+                        }));
                     }
                     break;
                 default:

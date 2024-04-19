@@ -45,7 +45,7 @@ import shadowverse.powers.DisableEffectDamagePower;
      addToBot(new SFXAction("Companions"));
      addToBot(new GainBlockAction(abstractPlayer,this.block));
      addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new FlameBarrierPower(abstractPlayer,3),3));
-     addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new CompanionsPower(abstractPlayer,this.magicNumber)));
+     addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new CompanionsPower(abstractPlayer,this.block)));
      addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new ArtifactPower(abstractPlayer,1),1));
      addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new BlurPower(abstractPlayer,1),1));
      addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new DisableEffectDamagePower(abstractPlayer,1),1));

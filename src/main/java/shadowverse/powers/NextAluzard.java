@@ -25,11 +25,11 @@ import shadowverse.cards.Neutral.Temp.BloodArts;
    private AbstractCard c;
    private boolean upgraded;
 
-   public NextAluzard(AbstractCreature owner, int amount,AbstractCard c,boolean upgraded) {
+   public NextAluzard(AbstractCreature owner,AbstractCard c,boolean upgraded) {
      this.name = NAME;
      this.ID = POWER_ID;
      this.owner = owner;
-     this.amount = amount;
+     this.amount = -1;
      this.type = PowerType.BUFF;
      this.upgraded = upgraded;
      this.c = c.makeSameInstanceOf();
@@ -37,18 +37,11 @@ import shadowverse.cards.Neutral.Temp.BloodArts;
      this.img = new Texture("img/powers/AluzardPower.png");
    }
    
-   public void stackPower(int stackAmount) {
-     this.amount += stackAmount;
-     if (this.amount >= 999) {
-       this.amount = 999;
-     }
-   }
-   
    public void atStartOfTurn() {
      flash();
      addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this));
      c.baseDamage += c.magicNumber;
-     addToBot(new MakeTempCardInHandAction(c, this.amount));
+     addToBot(new MakeTempCardInHandAction(c));
      int count = 0;
      for (AbstractCard c: AbstractDungeon.actionManager.cardsPlayedThisCombat){
        if (c instanceof Aluzard){
@@ -59,13 +52,13 @@ import shadowverse.cards.Neutral.Temp.BloodArts;
        AbstractCard card = new BloodArts();
        if (this.upgraded)
          card.upgrade();
-       addToBot(new MakeTempCardInHandAction(card.makeStatEquivalentCopy(),this.amount));
-       addToBot(new MakeTempCardInHandAction(new EvolutionPoint(),this.amount));
+       addToBot(new MakeTempCardInHandAction(card.makeStatEquivalentCopy()));
+       addToBot(new MakeTempCardInHandAction(new EvolutionPoint()));
      }
    }
    
    public void updateDescription() {
-     this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1] + this.amount +DESCRIPTIONS[2];
+     this.description = DESCRIPTIONS[0] + 1 + DESCRIPTIONS[1] + 1 +DESCRIPTIONS[2];
    }
  }
 

@@ -1,5 +1,7 @@
 package shadowverse.cards.Neutral.Neutral;
 
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.*;
@@ -7,12 +9,11 @@ import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.ClashEffect;
 import shadowverse.cards.AbstractNeutralCard;
 import shadowverse.cards.Neutral.Temp.TheWorld_I;
@@ -22,9 +23,9 @@ public class TheWorld extends AbstractNeutralCard {
     public static final String ID = "shadowverse:TheWorld";
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION; public static final String IMG_PATH = "img/cards/TheWorld.png";
-    public int turnCount = 0;
     public static boolean dupCheck = true;
     public static boolean combatCheck = true;
+    private static final Texture LEADER_SKIN_VERSION = ImageMaster.loadImage("img/cards/TheWorld_L.png");
 
     public TheWorld() {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.RARE, CardTarget.ALL);
@@ -32,6 +33,7 @@ public class TheWorld extends AbstractNeutralCard {
         this.baseBlock = 14;
         this.cardsToPreview = (AbstractCard)new TheWorld_I();
         combatCheck = true;
+        this.jokePortrait = new TextureAtlas.AtlasRegion(LEADER_SKIN_VERSION, 0, 0, LEADER_SKIN_VERSION.getWidth(), LEADER_SKIN_VERSION.getHeight());
     }
 
 
@@ -47,8 +49,7 @@ public class TheWorld extends AbstractNeutralCard {
 
     @Override
     public void atTurnStart() {
-        this.turnCount++;
-        if (this.turnCount == 5 && dupCheck && combatCheck) {
+        if (AbstractDungeon.actionManager.turn >= 5 && dupCheck && combatCheck) {
             dupCheck = false;
             combatCheck = false;
             AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
@@ -59,7 +60,7 @@ public class TheWorld extends AbstractNeutralCard {
                 addToBot(new ExhaustSpecificCardAction(this, AbstractDungeon.player.drawPile));
                 addToBot(new MakeTempCardInHandAction(c, 1));
             }
-        }else if (this.turnCount != 5){
+        }else if (AbstractDungeon.actionManager.turn < 5){
             dupCheck = true;
         }
     }

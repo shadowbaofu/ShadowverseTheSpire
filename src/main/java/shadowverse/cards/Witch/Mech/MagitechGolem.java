@@ -1,16 +1,13 @@
  package shadowverse.cards.Witch.Mech;
  
  import basemod.abstracts.CustomCard;
- import com.megacrit.cardcrawl.actions.AbstractGameAction;
  import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
  import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
  import com.megacrit.cardcrawl.cards.AbstractCard;
  import com.megacrit.cardcrawl.characters.AbstractPlayer;
- import com.megacrit.cardcrawl.core.AbstractCreature;
  import com.megacrit.cardcrawl.core.CardCrawlGame;
  import com.megacrit.cardcrawl.localization.CardStrings;
  import com.megacrit.cardcrawl.monsters.AbstractMonster;
- import com.megacrit.cardcrawl.powers.AbstractPower;
  import shadowverse.cards.Neutral.Temp.RepairMode;
  import shadowverse.characters.AbstractShadowversePlayer;
  import shadowverse.characters.Witchcraft;
@@ -43,8 +40,8 @@
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
      AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
-     addToBot((AbstractGameAction)new MakeTempCardInHandAction(c, 1));
-     addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new MachineAttackPower((AbstractCreature)abstractPlayer, this.magicNumber), this.magicNumber));
+     addToBot(new MakeTempCardInHandAction(c, 1));
+     addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new MachineAttackPower(abstractPlayer, this.magicNumber), this.magicNumber));
    }
  
    

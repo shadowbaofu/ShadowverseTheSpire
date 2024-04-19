@@ -35,12 +35,12 @@ public class YuwanFury extends CustomCard {
     }
 
     public void onChoseThisOption() {
-        addToBot((AbstractGameAction) new SFXAction("YuwanFury"));
-        AbstractCard a = (AbstractCard)new AncientArtifact();
-        AbstractCard m = (AbstractCard)new MysticArtifact();
+        addToBot(new SFXAction("YuwanFury"));
+        AbstractCard a = new AncientArtifact();
+        AbstractCard m = new MysticArtifact();
         m.setCostForTurn(0);
-        addToBot((AbstractGameAction)new MakeTempCardInHandAction(a));
-        addToBot((AbstractGameAction)new MakeTempCardInHandAction(m));
+        addToBot(new MakeTempCardInHandAction(a));
+        addToBot(new MakeTempCardInHandAction(m));
     }
 
     public AbstractCard makeCopy() {

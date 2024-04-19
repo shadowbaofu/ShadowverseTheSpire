@@ -132,6 +132,7 @@ public class DragonPool extends AbstractBanPool {
         Natura.addCard(new WhirlwindPteranodon());
         Natura.addCard(new WildfireTyrannosaur());
         Natura.addCard(new WildMana());
+        Natura.addCard(new CrystalshardDragonewt());
         Ramp.addCard(new Dagon());
         Ramp.addCard(new DragonDevouringDread());
         Ramp.addCard(new EncounterFromTheDeep());

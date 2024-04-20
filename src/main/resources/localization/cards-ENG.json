@@ -1513,7 +1513,7 @@
   },
   "shadowverse:OmenOfSilence2": {
     "NAME": "Rulenye, Screaming Silence",
-    "DESCRIPTION": "Deal !D! damage. NL Increase this card's damage by 3 every time you play it. If you have played this card at least 10 or more times this combat, apply 3 Weak and Vulnerable to a random enemy instead. NL Last_Words: When Exhausted, add a *Scream *Diffusion to your hand. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL Increase this card's damage by 3 every time you play it. If you have played this card at least 10 times this combat, apply 3 Weak and Vulnerable to a random enemy instead. NL Last_Words: When Exhausted, add a *Scream *Diffusion to your hand. NL Exhaust."
   },
   "shadowverse:OmenOfSilence2Copy": {
     "NAME": "Rulenye, Screaming Silence",
@@ -1521,8 +1521,8 @@
   },
   "shadowverse:ExpandingScreaming": {
     "NAME": "Scream Diffusion",
-    "DESCRIPTION": "Add X *Rulenye, *Screaming *Silences without Last_Words and deal only 3 damage to your hand. They cost 0 this turn. X equals the number of *Rulenye, *Screaming *Silences played this combat. NL Necromancy 3: Add 1 *Rulenye, *Screaming *Silence to your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Add X *Rulenye, *Screaming *Silences without Last_Words and deal only 3 damage to your hand. They cost 0 this turn. X equals the number of *Rulenye, *Screaming *Silences played this combat. NL Necromancy 3: Add 1 *Rulenye, *Screaming *Silence to your hand. NL Exhaust.",
+    "DESCRIPTION": "Add X *Rulenye, *Screaming *Silences without Last_Words to your hand. They cost 0 this turn and deal only 3 damage. X equals the number of *Rulenye, *Screaming *Silences played this combat. NL Necromancy 3: Add 1 *Rulenye, *Screaming *Silence to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Add X *Rulenye, *Screaming *Silences without Last_Words to your hand. They cost 0 this turn and deal only 3 damage. X equals the number of *Rulenye, *Screaming *Silences played this combat. NL Necromancy 3: Add 1 *Rulenye, *Screaming *Silence to your hand. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
       " NL (Rulenye, Screaming Silences played this combat: ",
       " .)"
@@ -1535,7 +1535,7 @@
   },
   "shadowverse:Aisha": {
     "NAME": "Aisha, Underworld Sovereign",
-    "DESCRIPTION": "Invocation: At the start of your turn, if you have 16 or more Shadows, spend 8 Shadows, add this card to your hand and change its cost to 0. NL Deal !D! damage. Necromancy 10: Double the damage."
+    "DESCRIPTION": "Invocation: At the start of your turn, if you have 16 or more Shadows, spend 8 Shadows to add this card to your hand and change its cost to 0. NL Deal !D! damage. Necromancy 10: Double the damage."
   },
   "shadowverse:Hades": {
     "NAME": "Hades, Father of Purgatory",
@@ -1572,7 +1572,7 @@
   },
   "shadowverse:Kyouka": {
     "NAME": "Kyouka, Prize Pupil",
-    "DESCRIPTION": " Can be upgraded multiple times to lower the Union_Burst value. Gain !B! Block. NL Spellboost your hand twice. NL Union_Burst !M!: Deal !D! damage to ALL enemies."
+    "DESCRIPTION": "Can be upgraded multiple times to lower the Union_Burst value. Gain !B! Block. NL Spellboost your hand twice. NL Union_Burst !M!: Deal !D! damage to ALL enemies."
   },
   "shadowverse:FriendsForever": {
     "NAME": "Friends Forever",
@@ -1783,7 +1783,7 @@
     "NAME": "Baal",
     "DESCRIPTION": "Fusion: Bloodcraft Attack cards that cost 1 or less. NL If 2 or more cards were fused to this card, draw until you have 6 cards. NL If 5 or more cards were fused, deal !D! damage to ALL enemies",
     "EXTENDED_DESCRIPTION": [
-      " NL (Fused",
+      " NL (Fused ",
       " cards.)"
     ]
   },
@@ -1858,7 +1858,7 @@
   },
   "shadowverse:Mono2": {
     "NAME": "Mono, Immortal Garnet",
-    "DESCRIPTION": "Machina. NL Gain !B! Block. NL If Vengeance is active, gain 1 Dexterity. NL If you gain Strength, Dexterity or HP 3 or more times this turn, upgrade ALL cards in your hand, double your attack damage this turn, then deal !D! damage."
+    "DESCRIPTION": "Machina. NL Gain !B! Block. NL If Vengeance is active, gain 1 Dexterity. NL If this card is played after gaining Strength, Dexterity and/or HP at least 3 times this turn, upgrade ALL cards in your hand, double your attack damage this turn, then deal !D! damage."
   },
   "shadowverse:FirstOne": {
     "NAME": "Alpha Drive",
@@ -1921,7 +1921,7 @@
   },
   "shadowverse:OmenOfLust2": {
     "NAME": "Valnareik, Lustful Desire",
-    "DESCRIPTION": "Deal !D! damage. NL Add 1 *Wings *of *Desire to your hand. NL If Wrath is active, gain !M! Strength and Dexterity. NL Last_Words: If Wrath is active, add 7 copies of *Valnareik, *Lustful *Desire without Last_Words to your draw pile."
+    "DESCRIPTION": "Deal !D! damage. NL Add 1 *Wings *of *Desire to your hand. NL If Wrath is active, gain !M! Strength and Dexterity. NL Last_Words: If played while Wrath is active, add 7 copies of *Valnareik, *Lustful *Desire without Last_Words to your draw pile."
   },
   "shadowverse:LustfulDesire": {
     "NAME": "Valnareik, Lustful Desire",

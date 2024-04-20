@@ -6743,8 +6743,8 @@
   },
     "shadowverse:Elena": {
     "NAME": "Elena, Defier of Destiny",
-    "DESCRIPTION": "Deal !D! damage. NL Discard 1 non-Colorless card. Add 1 Shadowverse or Form card to your hand with the same Class as the discarded card. Exhaust.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. If it's the 5th turn or later, deal 50 more damage. NL Discard 1 non-Colorless card. Add 1 Shadowverse or Form card to your hand with the same Class as the discarded card. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL Discard 1 non-Colorless card. Based on the Shadowverse Class or color of the card, add *Arisa, *Erika, *Isabelle, *Rowen, *Luna, *Urias, *Eris, *Yuwan, *Demon *Form, *Wraith *Form, *Echo *Form or *Deva *Form to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. If it's the 5th turn or later, deal 50 more damage. NL Discard 1 non-Colorless card. Based on the Shadowverse Class or color of the card, add *Arisa, *Erika, *Isabelle, *Rowen, *Luna, *Urias, *Eris, *Yuwan, *Demon *Form, *Wraith *Form, *Echo *Form or *Deva *Form to your hand. NL Exhaust."
   },
   "shadowverse:BrothersUnited2": {
     "NAME": "Brothers' Pride",

@@ -701,8 +701,8 @@
   },
   "shadowverse:Miranda": {
     "NAME": "Ms. Miranda, Light Mage",
-    "DESCRIPTION": "Mysteria. NL Whenever you play a Mysteria card, reduce the cost of this card by 1 [E]. NL Gain !B! Block. NL Put 1 *Mysterian *Rite into your hand. NL Randomly put 1 of the following cards into your hand: NL *Mysterian *Missile NL *Mysterian *Circle",
-    "UPGRADE_DESCRIPTION": "Mysteria. NL Whenever you play a Mysteria card, reduce the cost of this card by 1 [E]. NL Gain !B! Block. NL Put 1 *Mysterian *Rite+ into your hand. NL Randomly put 1 of the following cards into your hand: NL *Mysterian *Missile NL *Mysterian *Circle"
+    "DESCRIPTION": "Mysteria. NL Costs 1 less [E] for each Mysteria card played. NL Gain !B! Block. NL Put 1 *Mysterian *Rite into your hand. NL Randomly put 1 of the following cards into your hand: NL *Mysterian *Missile NL *Mysterian *Circle",
+    "UPGRADE_DESCRIPTION": "Mysteria. NL Costs 1 less [E] for each Mysteria card played. NL Gain !B! Block. NL Put 1 *Mysterian *Rite+ into your hand. NL Randomly put 1 of the following cards into your hand: NL *Mysterian *Missile NL *Mysterian *Circle"
   },
   "shadowverse:Horse": {
     "NAME": "Dutiful Steed",
@@ -1063,7 +1063,7 @@
   },
   "shadowverse:Rino": {
     "NAME": "Rino, Cleansweep Archer",
-    "DESCRIPTION": "Gain 4 Strength and add 2 to the number of cards played this turn. At the end of this turn, lose 4 Strength. NL Union_Burst !M! Deal !D! or twice as much damage to ALL enemies randomly."
+    "DESCRIPTION": "Can be upgraded multiple times to lower the Union_Burst value. NL Gain 4 Strength and add 2 to the number of cards played this turn. At the end of this turn, lose 4 Strength. NL Union_Burst !M! Deal !D! or twice as much damage to ALL enemies randomly."
   },
   "shadowverse:Irya": {
     "NAME": "Illya, Queen of Night",
@@ -1079,7 +1079,7 @@
   },
   "shadowverse:Amataz2": {
     "NAME": "Amataz, Reverse Blader",
-    "DESCRIPTION": "Gain !B! Block. NL Return ALL non-strike Forestcraft Attacks in your discard pile to your draw pile and add X *Fairies into your hand. X equals the number of cards returned. NL If at least 10 non-Strike Forestcraft Attacks were played this combat, gain 4 more Block. NL If at least 20 were played, apply 3 Vulnerable and 3 Weak to ALL enemies."
+    "DESCRIPTION": "Gain !B! Block. NL Return ALL non-strike Forestcraft Attacks in your discard pile to your draw pile and add that many *Fairies into your hand. NL If at least 10 non-Strike Forestcraft Attacks were played this combat, gain 4 more Block. NL If at least 20, apply 3 Vulnerable and 3 Weak to ALL enemies."
   },
   "shadowverse:DivineSmithing": {
     "NAME": "Divine Smithing",
@@ -1092,7 +1092,7 @@
   },
   "shadowverse:TwinAssault": {
     "NAME": "Elf Twins' Assault",
-    "DESCRIPTION": "Deal X damage to 2 random enemies. X equals !M! times of the number of non-Forestcraft cards in your hand."
+    "DESCRIPTION": "Deal X damage to 2 random enemies. X equals !M! times the number of non-Forestcraft cards in your hand."
   },
   "shadowverse:Homecoming": {
     "NAME": "Homecoming",
@@ -1135,12 +1135,12 @@
   },
   "shadowverse:Korwa": {
     "NAME": "Korwa, Ravishing Designer",
-    "DESCRIPTION": "At the start of your turn, add a *Fil into your hand. If you have taken at least 8 damage, add 2 *Fils to your hand. NL Enhance 3: Add 3 *Fils into your hand and gain [E].",
-    "UPGRADE_DESCRIPTION": "Innate. At the start of your turn, add a *Fil into your hand. If you have taken at least 8 damage, add 2 *Fils to your hand. NL Enhance 3: Add 3 *Fils into your hand and gain [E]."
+    "DESCRIPTION": "At the start of your turn, add a *Fil into your hand. If you have taken at least 8 damage, add 2 *Fils to your hand instead. NL Enhance 3: Add 3 *Fils into your hand and gain [E].",
+    "UPGRADE_DESCRIPTION": "Innate. At the start of your turn, add a *Fil into your hand. If you have taken at least 8 damage, add 2 *Fils to your hand instead. NL Enhance 3: Add 3 *Fils into your hand and gain [E]."
   },
   "shadowverse:PrimalGigant": {
     "NAME": "Primal Giant",
-    "DESCRIPTION": "Accelerate 0: Heal 4 HP. NL NL --------------------- NL NL Gain !B! Block. NL Add as many random Attack cards played this combat to your hand as possible. Those cards cost 0 and Exhaust. NL Exhaust."
+    "DESCRIPTION": "Accelerate 0: Heal 4 HP. NL NL --------------------- NL NL Gain !B! Block. NL Randomly add as many Attacks played this combat as possible to your hand. Those cards cost 0 and Exhaust. NL Exhaust."
   },
   "shadowverse:ShikigamiSummoning": {
     "NAME": "Shikigami Summons",
@@ -1274,7 +1274,7 @@
   },
   "shadowverse:ZombieDog": {
     "NAME": "Night of the Living Dog",
-    "DESCRIPTION": "Natura. NL Deal !D! damage and gain !B! Block. NL If you play a *Naterran *Great *Tree while you already have the Power Naterran Great Tree, increase this card's damage and block by !M!."
+    "DESCRIPTION": "Natura. NL Deal !D! damage and gain !B! Block. NL Whenever you play a *Naterran *Great *Tree while that effect is already active, increase this card's damage and block by !M!."
   },
   "shadowverse:NecroAnimals": {
     "NAME": "Necrofauna",
@@ -1289,7 +1289,7 @@
     "NAME": "Thoth",
     "DESCRIPTION": "If you've played 10 or more cards with Last_Words this combat, deal 10 damage to ALL enemies whenever you play a card with Last_Words. NL Draw a card.",
     "EXTENDED_DESCRIPTION": [
-      " NL (Cards with Last_Words played:",
+      " NL (Cards with Last_Words played: ",
       " .)"
     ]
   },
@@ -1297,7 +1297,7 @@
     "NAME": "Wicked Rebirth",
     "DESCRIPTION": "Destroy 1 card. Add a random Attack card with Last_Words that originally cost 1 or less played this combat to your hand. It costs 0 this turn. NL Increase the damage of the next Attack card you play by !M!. NL If you've played 5 or more Last_Words cards this combat, draw !M! cards. NL If you've played 10 or more, add 2 copies instead.",
     "EXTENDED_DESCRIPTION": [
-      " NL (Cards with Last_Words played:",
+      " NL (Cards with Last_Words played: ",
       " .)"
     ]
   },
@@ -1305,7 +1305,7 @@
     "NAME": "Chris, Beyond the Patch",
     "DESCRIPTION": "Gain !B! Block. If you've played 5 or more cards with Last_Words this combat, add a *Ghostly *Rider to your hand. It costs 0 this turn. NL If you've played 10 or more, Block is not removed at the start of your next turn.",
     "EXTENDED_DESCRIPTION": [
-      " NL (Cards with Last_Words played:",
+      " NL (Cards with Last_Words played: ",
       " .)"
     ]
   },
@@ -1313,7 +1313,7 @@
     "NAME": "Soulstrike",
     "DESCRIPTION": "Deal !D! damage. NL If you've played 10 or more cards with Last_Words this combat, double the damage. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
-      " NL (Cards with Last_Words played:",
+      " NL (Cards with Last_Words played: ",
       " .)"
     ]
   },
@@ -1383,7 +1383,7 @@
   },
   "shadowverse:Nephthys": {
     "NAME": "Nephthys",
-    "DESCRIPTION": "Gain !B! Block. NL Randomly play a card of each different cost in your draw pile and Exhaust them."
+    "DESCRIPTION": "Gain !B! Block. NL Randomly Exhaust 1 Attack card each with different costs from your draw pile."
   },
   "shadowverse:EverdarkStrix": {
     "NAME": "Everdark Strix",
@@ -1509,7 +1509,7 @@
   },
   "shadowverse:OmenOfSilence": {
     "NAME": "Rulenye, Omen of Silence",
-    "DESCRIPTION": "Necromancy 3: Reduce ALL enemy buffs by 3."
+    "DESCRIPTION": "Necromancy 3: Reduce the effect of ALL enemy buffs by 3."
   },
   "shadowverse:OmenOfSilence2": {
     "NAME": "Rulenye, Screaming Silence",
@@ -1521,10 +1521,10 @@
   },
   "shadowverse:ExpandingScreaming": {
     "NAME": "Scream Diffusion",
-    "DESCRIPTION": "Add X *Rulenye, *Screaming *Silences without Last_Words which deal only 3 damage to your hand. They cost 0 this turn. X equals the number of *Rulenye, *Screaming *Silences played this combat. NL Necromancy 3: Add 1 *Rulenye, *Screaming *Silence to your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Add X *Rulenye, *Screaming *Silences without Last_Words which deal only 3 damage to your hand. They cost 0 this turn. X equals the number of *Rulenye, *Screaming *Silences played this combat. NL Necromancy 3: Add 1 *Rulenye, *Screaming *Silence to your hand. NL Exhaust.",
+    "DESCRIPTION": "Add X *Rulenye, *Screaming *Silences without Last_Words and deal only 3 damage to your hand. They cost 0 this turn. X equals the number of *Rulenye, *Screaming *Silences played this combat. NL Necromancy 3: Add 1 *Rulenye, *Screaming *Silence to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Add X *Rulenye, *Screaming *Silences without Last_Words and deal only 3 damage to your hand. They cost 0 this turn. X equals the number of *Rulenye, *Screaming *Silences played this combat. NL Necromancy 3: Add 1 *Rulenye, *Screaming *Silence to your hand. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
-      " NL (Rulenye, Screaming Silences played this combat:",
+      " NL (Rulenye, Screaming Silences played this combat: ",
       " .)"
     ]
   },
@@ -1539,7 +1539,7 @@
   },
   "shadowverse:Hades": {
     "NAME": "Hades, Father of Purgatory",
-    "DESCRIPTION": "Accelerate 2: Deal !D! damage to ALL enemies and gain the Power *Path *to *Purgatory. NL NL --------------------- NL NL Gain !B! Block. NL Last_Words: When Exhausted, gain the Power *Path *to *Purgatory and !M! Shadows. NL Exhaust."
+    "DESCRIPTION": "Accelerate 2: Deal !D! damage to ALL enemies and gain *Path *to *Purgatory. NL NL --------------------- NL NL Gain !B! Block. NL Last_Words: When Exhausted, gain *Path *to *Purgatory and !M! Shadows. NL Exhaust."
   },
   "shadowverse:Mimi": {
     "NAME": "Mimi, Right Paw Hellhound",
@@ -6222,8 +6222,8 @@
   },
   "shadowverse:ColossalSummoning": {
     "NAME": "Colossal Summoning",
-    "DESCRIPTION": "Gain !B! Block. NL If you have consumed 7 or more Earth_Essences this combat, instead add 1 *Genesis *Dragon to your hand. It costs 0 and exhausts.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL If you have consumed 7 or more Earth_Essences this combat, instead add 1 *Genesis *Dragon+ to your hand. It costs 0 and exhausts.",
+    "DESCRIPTION": "Gain !B! Block. NL If you have consumed 7 or more Earth_Essence this combat, instead add 1 *Genesis *Dragon to your hand. It costs 0 and exhausts.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL If you have consumed 7 or more Earth_Essence this combat, instead add 1 *Genesis *Dragon+ to your hand. It costs 0 and exhausts.",
     "EXTENDED_DESCRIPTION": [
       " NL (Consumed ",
       " Earth Essence.)"
@@ -6612,7 +6612,7 @@
   },
   "shadowverse:Apple": {
     "NAME": "Poisoned Apple of Revival",
-    "DESCRIPTION": "Select an Attack card. If it's a Shadowcraft card it gains 'Last_Words: When Exhausted, add a copy of this card to your hand with Ethereal and Exhaust. It costs 0.' NL Otherwise it gains 'Last_Words: When Exhausted, draw 2 cards' NL Ethereal."
+    "DESCRIPTION": "Select an Attack card. If it's a Shadowcraft card it gains ' Last_Words: When Exhausted, add a copy of this card to your hand with Ethereal and Exhaust. It costs 0.' NL Otherwise it gains 'Last_Words: When Exhausted, draw 2 cards' NL Ethereal."
   },
   "shadowverse:LaserTyranny": {
     "NAME": "Laser Tyranny",
@@ -6812,12 +6812,12 @@
     "DESCRIPTION": "Machina NL Prevent the next time you would lose HP. NL If you have a Machina card in your hand, gain 1 Strength, 1 Blur and 3 Dexterity. NL Exhaust."
   },
   "shadowverse:ManmaruRe": {
-    "NAME": "Roly-Poly Mk. I, Stalwart Bot",
+    "NAME": "Roly-Poly Mk I, Stalwart Bot",
     "DESCRIPTION": "Machina NL Gain !B! Block. NL Last_Words: When Exhausted, draw 1 card. NL Exhaust."
   },
   "shadowverse:Aenea2": {
     "NAME": "Aenea, Amethyst Creator",
-    "DESCRIPTION": "Machina NL Gain !B! Block. NL Add 1 *Roly-Poly *Mk. *I, *Stalwart *Bot to your hand. NL If at least 10 Machina cards were played this combat, give ALL Machina Attacks in your hand 'Last_Words: When Exhausted, add 1 *Assembly *Droid to your hand.' NL Add 1 *Joy *Secured to your hand.",
+    "DESCRIPTION": "Machina NL Gain !B! Block. NL Add 1 *Roly-Poly *Mk *I, *Stalwart *Bot to your hand. NL If at least 10 Machina cards were played this combat, give ALL Machina Attacks in your hand 'Last_Words: When Exhausted, add 1 *Assembly *Droid to your hand.' NL Add 1 *Joy *Secured to your hand.",
     "EXTENDED_DESCRIPTION": [
       " NL （Played ",
       " Machina cards )"

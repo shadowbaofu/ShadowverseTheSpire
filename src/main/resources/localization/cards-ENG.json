@@ -147,7 +147,7 @@
   },
   "shadowverse:MasterMageLevi": {
     "NAME": "Master Mage Levi",
-    "DESCRIPTION": "Deal !D! damage. NL Earth_Rite: \b Deal !D! damage to ALL enemies.",
+    "DESCRIPTION": "Deal !D! damage. NL Earth_Rite: \bDeal !D! damage to ALL enemies.",
     "EXTENDED_DESCRIPTION": [
       " NL (Consumed ",
       " Earth Essence.)"
@@ -155,7 +155,7 @@
   },
   "shadowverse:Concentration": {
     "NAME": "Concentration",
-    "DESCRIPTION": "Draw !M! cards. NL Earth_Rite: \b Draw 1 more card. Gain !B! Block."
+    "DESCRIPTION": "Draw !M! cards. NL Earth_Rite: \bDraw 1 more card. Gain !B! Block."
   },
   "shadowverse:PiousInstructor": {
     "NAME": "Karl, Pious Instructor",
@@ -167,12 +167,12 @@
   },
   "shadowverse:GolemAssault": {
     "NAME": "Golem Assault",
-    "DESCRIPTION": "Put a *Conjure *Guardian into your hand. NL Enhance 2 \bPut 3 *Conjure *Guardians into your hand. NL Earth_Rite: \b Change the cost of these cards to 0 this turn.",
-    "UPGRADE_DESCRIPTION": "Put a *Conjure *Guardian+ into your hand. NL Enhance 2 \bPut 3 *Conjure *Guardians+ into your hand. NL Earth_Rite: \b Change the cost of these cards to 0 this turn."
+    "DESCRIPTION": "Put a *Conjure *Guardian into your hand. NL Enhance 2: \bPut 3 *Conjure *Guardians into your hand. NL Earth_Rite: \bChange the cost of these cards to 0 this turn.",
+    "UPGRADE_DESCRIPTION": "Put a *Conjure *Guardian+ into your hand. NL Enhance 2: \bPut 3 *Conjure *Guardians+ into your hand. NL Earth_Rite: \bChange the cost of these cards to 0 this turn."
   },
   "shadowverse:VeridicRitual": {
     "NAME": "Veridic Ritual",
-    "DESCRIPTION": "Retain. NL Deal !D! damage. NL Earth_Rite: \b Draw !M! cards. NL Exhaust."
+    "DESCRIPTION": "Retain. NL Deal !D! damage. NL Earth_Rite: \bDraw !M! cards. NL Exhaust."
   },
   "shadowverse:Clarke": {
     "NAME": "Clarke, Knowledge Seeker",
@@ -180,8 +180,8 @@
   },
   "shadowverse:Faust": {
     "NAME": "Truthseeker Faust",
-    "DESCRIPTION": "At the end of each of your turns, Earth_Rite: \b Gain !M! Strength and 1 Dexterity. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "At the end of each of your turns, Earth_Rite: \b Gain !M! Strength and 1 Dexterity."
+    "DESCRIPTION": "At the end of each of your turns, Earth_Rite: \bGain !M! Strength and 1 Dexterity. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "At the end of each of your turns, Earth_Rite: \bGain !M! Strength and 1 Dexterity."
   },
   "shadowverse:Faust2": {
     "NAME": "Faust, Overzealous Observer",
@@ -6793,7 +6793,7 @@
   "shadowverse:Briarmaiden": {
     "NAME": "Briarmaiden",
     "DESCRIPTION": "Gain !B! Block. NL Gain 1 Thorns for every Attack played this turn.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Gain 1 Thorns for every Attack played this turn. NL Add 2 *Faeries to your hand. NL Gain 1 more Thorns if at least 10 non-Strike Forestcraft Attacks were played this combat.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Gain 1 Thorns for every Attack played this turn. NL Add 2 *Faeries to your hand. NL If at least 10 non-Strike Forestcraft Attacks were played this combat, gain 2 Thorns for every Attack played instead.",
     "EXTENDED_DESCRIPTION": [
       " NL (Attacks Played: ",
       " )"
@@ -7014,5 +7014,4 @@
     "NAME": "Chaotic Chimera",
     "DESCRIPTION": "Can only Fuse if Wrath is active for you. NL Fusion: Non-Basic cards. NL Costs 1 less Energy for each card Fused to this card. NL  NL --------------------- NL  NL Gain !B! Block. Draw 3 cards. NL Deal !D! damage to ALL enemies. Heal 3 HP. NL Exhaust."
   }
-}
 }

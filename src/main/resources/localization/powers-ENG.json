@@ -815,7 +815,7 @@
   "shadowverse:MonoPower": {
     "NAME": "Mono, Immortal Garnet",
     "DESCRIPTIONS": [
-      "Whenever you gain Strength, Dexterity or heal HP, increase this Power's count by 1. When this Power's count reaches 3, trigger the additional effects of #yMono, #yImmortal #yGarnet."
+      " Automatically active while *Mono, *Immortal *Garnet is in your deck. Counter increases by 1 upon gaining Strength, Dexterity or HP. When this Power's count reaches 3, you may trigger the additional effects of #yMono, #yImmortal #yGarnet by playing that card to upgrade all cards in hand and double your damage for the turn."
     ]
   },
   "shadowverse:PrimeArtifactPower": {

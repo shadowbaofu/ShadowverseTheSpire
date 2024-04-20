@@ -6462,7 +6462,7 @@
   },
   "shadowverse:HeartRadiance": {
     "NAME": "Heart's Radiance",
-    "DESCRIPTION": "Add 5 Shadowcraft cards that cost more than 1 energy to your hand from exhaust pile, they cost 0 this turn. NL Exhaust your hand and gain !B! Block for each card exhausted. NL Exhaust."
+    "DESCRIPTION": "Randomly copy and add up to 5 Attacks from your Exhaust pile into your hand. NL Exhaust your hand and gain !B! Block for each card exhausted. NL Exhaust."
   },
   "shadowverse:SoulLight": {
     "NAME": "Soul's Light",

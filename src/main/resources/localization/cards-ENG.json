@@ -5161,7 +5161,7 @@
     "NAME": "Leeds, Pining Witch",
     "DESCRIPTION": "Academic. NL Gain !B! Block. NL Burial_Rite 1: Deal !D! damage to a random enemy. NL If you performed Burial Rite 5 or more times this combat, gain !B! more Block. NL Last_Words: Draw a card. ",
     "EXTENDED_DESCRIPTION": [
-      " NL (Performed Burial Rite",
+      " NL (Performed Burial Rite ",
       " times.)"
     ]
   },

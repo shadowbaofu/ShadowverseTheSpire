@@ -815,7 +815,7 @@
   "shadowverse:MonoPower": {
     "NAME": "Mono, Immortal Garnet",
     "DESCRIPTIONS": [
-      " Automatically active while *Mono, *Immortal *Garnet is in your deck. Counter increases by 1 upon gaining Strength, Dexterity or HP. When this Power's count reaches 3, you may trigger the additional effects of #yMono, #yImmortal #yGarnet by playing that card to upgrade all cards in hand and double your damage for the turn."
+      " Automatically active while #yMono, #yImmortal #yGarnet is in your deck. Count increases by 1 upon gaining Strength, Dexterity or HP. When the count reaches 3, you may trigger the additional effects of #yMono, #yImmortal #yGarnet by playing that card to upgrade all cards in hand and double your damage for the turn."
     ]
   },
   "shadowverse:PrimeArtifactPower": {
@@ -1005,7 +1005,7 @@
   "shadowverse:LionSanctuaryPower": {
     "NAME": "Holy Lion Sanctum",
     "DESCRIPTIONS": [
-      "Immune to debuffs. When you're attacked, deal #b",
+      "Immune to debuffs. When you take damage, even by non-Attack cards, deal #b",
       " damage back."
     ]
   },
@@ -1144,7 +1144,7 @@
   "shadowverse:LeonidasWaitPower": {
     "NAME": "Leonidas",
     "DESCRIPTIONS": [
-      "Reduce by #b1 whenever you lose HP or by the end of your turn. Gain #b",
+      "Reduce by #b1 whenever you lose HP or at the end of your turn. Gain #b",
       " #yLeonidas's #yResolve when you lose this effect."
     ]
   },

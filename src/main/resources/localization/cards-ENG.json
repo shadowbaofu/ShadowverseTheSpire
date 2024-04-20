@@ -1837,7 +1837,7 @@
   },
   "shadowverse:MechashotDevil": {
     "NAME": "Mechashot Devil",
-    "DESCRIPTION": "Machina. NL Gain !B! Block. NL If you have a Machina card in your hand, add 1 *Assembly *Droid to your hand next turn. NL If you have played 10 or more Machina non-Skill cards this combat, add 1 *Evolution Point and *Miracle to your hand"
+    "DESCRIPTION": "Machina. NL Gain !B! Block. NL If you have a Machina card in your hand, add 1 *Assembly *Droid to your hand next turn. NL If you have played 10 or more Machina non-Skill cards this combat, add 1 *Evolution *Point and *Miracle to your hand"
   },
   "shadowverse:ArmoredBat": {
     "NAME": "Armored Bat",

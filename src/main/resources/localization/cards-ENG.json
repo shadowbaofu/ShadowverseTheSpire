@@ -180,8 +180,8 @@
   },
   "shadowverse:Faust": {
     "NAME": "Truthseeker Faust",
-    "DESCRIPTION": "At the end of each of your turns, Earth_Rite: \bGain !M! Strength and 1 Dexterity. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "At the end of each of your turns, Earth_Rite: \bGain !M! Strength and 1 Dexterity."
+    "DESCRIPTION": "At the end of each of your turns, perform Earth_Rite: \bGain !M! Strength and 1 Dexterity. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "At the end of each of your turns, perform Earth_Rite: \bGain !M! Strength and 1 Dexterity."
   },
   "shadowverse:Faust2": {
     "NAME": "Faust, Overzealous Observer",
@@ -320,7 +320,7 @@
   },
   "shadowverse:MechastaffSorcerer": {
     "NAME": "Mechastaff Sorcerer",
-    "DESCRIPTION": "Machina. NL Gain !B! Block. NL If you have more than 2 Machina cards in your hand, deal !D! damage."
+    "DESCRIPTION": "Machina. NL Gain !B! Block. NL If you have at least 2 Machina cards in your hand, deal !D! damage."
   },
   "shadowverse:ArsMagna": {
     "NAME": "Ars Magna",
@@ -354,8 +354,8 @@
   },
   "shadowverse:Shop": {
     "NAME": "Arcane Item Shop",
-    "DESCRIPTION": "Whenever you play a card, deal !M! damage to a random enemy. If there are no Attack, Status or Curse cards in your draw pile or discard pile, gain [E]. NL Invocation: At the start of your turn, if it's your 5th turn or later, put this card into your hand and change its cost to 0. Add 2 *Void into your discard pile. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "Whenever you play a card, deal !M! damage to a random enemy. If there are no Attack, Status or Curse cards in your draw pile or discard pile, gain [E]. NL Invocation: At the start of your turn, if it's your 5th turn or later, put this card into your hand and change its cost to 0. Add 2 *Void into your discard pile."
+    "DESCRIPTION": "Whenever you play a card, deal !M! damage to a random enemy. If there are no Attack, Status or Curse cards in your draw pile or discard pile, gain [E] when you play a card. NL Invocation: At the start of your turn, if it's your 5th turn or later, put this card into your hand and change its cost to 0. Add 2 *Void into your discard pile. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Whenever you play a card, deal !M! damage to a random enemy. If there are no Attack, Status or Curse cards in your draw pile or discard pile, gain [E] when you play a card. NL Invocation: At the start of your turn, if it's your 5th turn or later, put this card into your hand and change its cost to 0. Add 2 *Void into your discard pile."
   },
   "shadowverse:NaterranGreatTree": {
     "NAME": "Naterran Great Tree",

@@ -257,7 +257,7 @@
     "NAME": "Lone Promise",
     "FLAVOR": "In lieu of a vampiric brand, he bestows upon her a crimson parting gift of another kind. The flower, and the lone screw, are a reminder of the glorious dance they shared.",
     "DESCRIPTIONS": [
-      "At the start of your first #b2 turn, add #b1 #yRepair #yMode cards to your hand. At the start of your #b2 turn, draw #b1 additional cards."
+      "At the start of your first #b2 turns, add #b1 #yRepair #yMode cards to your hand. At the start of your #b2nd turn, draw #b1 additional cards."
     ]
   },
   "shadowverse:RevelrySeed": {

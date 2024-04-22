@@ -4901,7 +4901,7 @@
   },
   "shadowverse:WardenOfDecay": {
     "NAME": "Warden of Decay",
-    "DESCRIPTION": "Condemned NL Gain !B! Block. NL If Vengeance is active, you heal 3 HP, draw 2 cards and ALL enemies lose 3 Strength and Dexterity. NL Banish. "
+    "DESCRIPTION": "Condemned NL Gain !B! Block. NL If Vengeance is active, heal 3 HP, draw 2 cards, then ALL enemies lose 3 Strength and Dexterity. NL Banish. "
   },
   "shadowverse:Erralde": {
     "NAME": "Erralde, Troth Convict",

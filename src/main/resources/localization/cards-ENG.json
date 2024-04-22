@@ -4493,15 +4493,15 @@
     "DESCRIPTION": "Can only be played while you have a 0 cost Attack in your hand. Invocation: If you played 4 or more cards during your last turn, add this card to your hand. NL Gain Strength this turn, equal to the number of other *Whirlwind *Assaults played this combat. NL If you've played 5 or more, double ALL damage you deal this turn.",
     "UPGRADE_DESCRIPTION": "Innate. Can only be played while you have a 0 Cost Attack in your hand. NL Invocation: If you played 4 or more cards during your last turn, add this card to your hand. NL Gain Strength this turn, equal to the number of other *Whirlwind *Assaults played this combat. NL If you've played 5 or more, double ALL damage you deal this turn.",
     "EXTENDED_DESCRIPTION": [
-      " NL (",
+      " NL (" ,
       " *Whirlwind *Assaults played.)"
     ]
   },
   "shadowverse:UltimateBahmut": {
     "NAME": "Ultimate Bahamut",
-    "DESCRIPTION": "Invocation: At the start of your turn, if you've used 50 or more Energy this combat, add this card to your hand and kill ALL enemies after 3 turns. NL Accelerate 2: Deal !M! damage to a random enemy. Then, gain 2 Energy. NL NL --------------------- NL NL Deal !D! damage.",
+    "DESCRIPTION": "Invocation: At the start of your turn, if you've used 50 or more Energy this combat, add this card to your hand and kill ALL enemies after 3 turns. NL Accelerate 2: Deal !M! damage to a random enemy. Then, gain 2 Energy. NL --------------------- NL Deal !D! damage.",
     "EXTENDED_DESCRIPTION": [
-      " NL (",
+      " NL (" ,
       " Energy used.)"
     ]
   },
@@ -5218,7 +5218,7 @@
   "shadowverse:Lucius_N": {
     "NAME": "Lucius, Travelled Trainer",
     "DESCRIPTION": "Academic NL Deal !D! damage. NL If you are Forestcraft or Runecraft, gain 1 energy. If Shadowcraft or Portalcraft, add 2 *Ghosts to your hand. If Swordcraft or Dragoncraft, apply 2 Vulnerable. If Havencraft or Bloodcraft, Heal 3 HP.",
-    "UPGRADE_DESCRIPTION": "Academic NL Deal !D! damage. NL If you are Forestcraft or Runecraft, gain 1 energy. If Shadowcraft or Portalcraft, add 2 *Ghosts to your hand. If Swordcraft or Dragoncraft, apply 2 Vulnerable. If Havencraft or Bloodcraft, Heal 3 HP. NL If you are in a normal enemy combat, deal 4 more damage. If in an Elite combat, gain 1 energy. If in a Boss combat, add 2 *Ancient Artifacts to your hand."
+    "UPGRADE_DESCRIPTION": "Academic NL Deal !D! damage. NL If you are Forestcraft or Runecraft, gain 1 energy. If Shadowcraft or Portalcraft, add 2 *Ghosts to your hand. If Swordcraft or Dragoncraft, apply 2 Vulnerable. If Havencraft or Bloodcraft, Heal 3 HP. NL If you are in a normal enemy combat, deal 4 more damage. If in an Elite combat, gain 1 Energy. If in a Boss combat, add 2 *Ancient Artifacts to your hand."
   },
   "shadowverse:BellWitch": {
     "NAME": "Bell Witch",
@@ -5944,8 +5944,8 @@
   },
   "shadowverse:Zoe": {
     "NAME": "Zooey, Arbiter of the Skies",
-    "DESCRIPTION": "Accelerate 0: Add 1 *Zooey, *Arbiter *of *the *Skies without Accelerate to your discard pile and draw 1 card. NL NL --------------------- NL NL Deal !D! damage. Lose HP until you have only 1 HP left. NL Restore this lost HP at the end of combat. NL You take no further damage this turn. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Accelerate 0: Add 1 *Zooey, *Arbiter *of *the *Skies+ without Accelerate to your discard pile and draw 1 card. NL NL --------------------- NL NL Deal !D! damage. Lose HP until you have only 1 HP left. NL Restore this lost HP at the end of combat. NL You take no further damage this turn. NL Exhaust."
+    "DESCRIPTION": "Accelerate 0: Add 1 *Zooey, *Arbiter *of *the *Skies WITHOUT Accelerate to your discard pile and draw 1 card. NL NL --------------------- NL NL Deal !D! damage. Lose HP until you have only 1 HP left. NL Restore this lost HP at the end of combat. NL You take no further damage this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Accelerate 0: Add 1 *Zooey, *Arbiter *of *the *Skies+ WITHOUT Accelerate to your discard pile and draw 1 card. NL NL --------------------- NL NL Deal !D! damage. Lose HP until you have only 1 HP left. NL Restore this lost HP at the end of combat. NL You take no further damage this turn. NL Exhaust."
   },
   "shadowverse:TheJustice": {
     "NAME": "XI. Erntz, Justice",
@@ -5953,8 +5953,8 @@
   },
   "shadowverse:DragonDevouringDread": {
     "NAME": "Dragon-Devouring Dread",
-    "DESCRIPTION": "Fusion: Attacks that cost at least 3. NL The 1st time you fuse cards to this card, gain 1 Energy. NL The 2nd time, gain 1 Overflow point. NL The 3rd time, draw 2 cards. NL NL --------------- NL NL Exhaust ALL Status and Curses in your hand. NL Apply !M! Weak and Vulnerable to ALL enemies. NL Gain !M! Strength. NL Increase this value by 1 for each card Fused. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain - Fusion: Attacks that cost at least 3. NL The 1st time you fuse cards to this card, gain 1 Energy. NL The 2nd time, gain 1 Overflow point. NL The 3rd time, draw 2 cards.  NL ---------------- NL  Exhaust ALL Status and Curses in your hand. NL Apply !M! Weak and Vulnerable to ALL enemies. NL Gain !M! Strength. NL Increase this value by 1 for each card Fused. NL Exhaust."
+    "DESCRIPTION": "Fusion: Attacks that cost at least 3. NL The 1st time you fuse cards to this card, gain 1 Energy. NL The 2nd time, gain 1 Overflow point. NL The 3rd time, draw 2 cards. NL NL --------------- NL NL Exhaust ALL Status and Curses in your hand. NL Apply !M! Weak and Vulnerable to ALL enemies. NL Gain !M! Strength. NL Add 1 more Strength, Weak and Vulnerable for each card Fused. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain - Fusion: Attacks that cost at least 3. NL The 1st time you fuse cards to this card, gain 1 Energy. NL The 2nd time, gain 1 Overflow point. NL The 3rd time, draw 2 cards.  NL ---------------- NL  Exhaust ALL Status and Curses in your hand. NL Apply !M! Weak and Vulnerable to ALL enemies. NL Gain !M! Strength. NL Add 1 more Strength, Weak, and Vulnerable for each card Fused. NL Exhaust."
   },
   "shadowverse:NewfoundAllies": {
     "NAME": "Newfound Allies",
@@ -6731,7 +6731,7 @@
   "shadowverse:Laina": {
     "NAME": "Laina, Heaven's Judge",
     "DESCRIPTION": "Put 2 *Divine *Ministers into your draw and discard piles at the end of your turn.",
-    "UPGRADE_DESCRIPTION": "Put 2 *Divine *Ministers into your draw and discard piles at the end of your turn. NL Activate the following effects, based on the number of *Divine *Ministers played or destroyed as Amulets: NL 4 or less: Deal 7 damage to ALL enemies. Gain 1 Block. NL 5 or more: Deal 21 damage to ALL enemies. Gain 1 Temporary HP. NL 10 or more: Deal 50 damage to ALL enemies. Heal 1 HP. NL 20 or more: Deal 500 damage to ALL enemies. Heal 1 HP."
+    "UPGRADE_DESCRIPTION": "Put 2 *Divine *Ministers into your draw and discard piles at the end of your turn. NL Apply the following effects, based on how many were played or destroyed as Amulets: NL 4 or less: Deal 7 damage to ALL enemies. Gain 1 Block. NL 5 or more: Deal 21 damage to ALL enemies. Gain 1 Temporary HP. NL 10 or more: Deal 50 damage to ALL enemies. Heal 1 HP. NL 20 or more: Deal 500 damage to ALL enemies. Heal 1 HP."
    },
   "shadowverse:EphemeralMoon": {
     "NAME": "Ephemeral Moon",

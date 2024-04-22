@@ -6432,8 +6432,8 @@
   },
   "shadowverse:UndyingWitch": {
     "NAME": "Undying Witch",
-    "DESCRIPTION": "Deal !D! damage. Gain 1 Earth Essence. NL If 7 or more Earth Essence has been consumed this combat, add 1 *Evolution *Point and 1 *Miracle to your hand, then gain: 'Once per turn, whenever you consume Earth Essence gain that much energy'.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. Gain 1 Earth Essence. NL Gain: 'Once per turn, whenever you consume Earth Essence gain that much energy.' NL If 7 or more Earth Essence has been consumed this combat, add 1 *Evolution *Point and 1 *Miracle to your hand.",
+    "DESCRIPTION": "Deal !D! damage. Gain 1 Earth_Essence. NL If 7 or more Earth_Essence has been consumed this combat, add 1 *Evolution *Point and 1 *Miracle to your hand, then gain: 'Once per turn, whenever you consume Earth Essence gain that much energy'.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Gain 1 Earth_Essence. NL Gain: 'Once per turn, whenever you consume Earth_Essence gain that much energy.' NL If 7 or more Earth_Essence has been consumed this combat, add 1 *Evolution *Point and 1 *Miracle to your hand.",
     "EXTENDED_DESCRIPTION": [
       " NL (Consumed ",
       " Earth Essence. )"

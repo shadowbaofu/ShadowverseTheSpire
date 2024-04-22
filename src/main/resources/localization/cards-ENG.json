@@ -4424,7 +4424,7 @@
   },
   "shadowverse:Vanpi_Q": {
     "NAME": "Vania, Crimson Majesty",
-    "DESCRIPTION": "Gain !B! Block. NL Lose 1 HP and add a *Forest *Bat to your hand. NL ALL enemies lose 1 HP and gain 1 Strength this turn. NL If Wrath or Vengeance is active, add a *Summon *Bloodkin to your hand and ALL *Forest *Bats do double damage, apply 2 Poison to ALL enemies and make ALL enemies lose 2 HP this turn."
+    "DESCRIPTION": "Gain !B! Block. NL Lose 1 HP and add a *Forest *Bat to your hand. NL ALL enemies lose 1 HP and gain 1 Strength this turn. NL If Wrath or Vengeance is active, add a *Summon *Bloodkin to your hand and ALL *Forest *Bats do double damage, apply 2 Poison and make the enemy lose 2 HP this turn."
   },
   "shadowverse:Cerberus2": {
     "NAME": "Cerberus, Infernal Hound",
@@ -4875,7 +4875,7 @@
   },
   "shadowverse:Garodeth": {
     "NAME": "Garodeth, Insurgent Convict",
-    "DESCRIPTION": "Condemned NL Lose 1 HP. NL Deal !M! damage to ALL enemies. NL Deal !D! damage. If you lost HP at least 3 times this turn, quadruple the damage. ",
+    "DESCRIPTION": "Condemned NL Lose 1 HP. NL Deal !D! damage to ALL enemies. NL Deal !D! damage. If you lost HP at least 3 times this turn, quadruple the damage dealt to the single enemy. ",
     "EXTENDED_DESCRIPTION": [
       " NL (You lost HP ",
       " times this turn)"
@@ -5055,7 +5055,7 @@
     "NAME": "Seox, Heavenly Howl",
     "DESCRIPTION": "Can be upgraded multiple times to lower Skybound_Art values. NL Deal !D! damage twice. NL Skybound_Art 3: Deal !D! damage 4 times. NL Super_Skybound_Art 6: Deal !D! damage 6 times.",
     "EXTENDED_DESCRIPTION": [
-      "Deal !D! damage twice. NL Skybound_Art",
+      "Deal !D! damage twice. NL Skybound_Art ",
       ": Deal !D! damage 4 times. NL Super_Skybound_Art ",
       ": Deal !D! damage 6 times."
     ]

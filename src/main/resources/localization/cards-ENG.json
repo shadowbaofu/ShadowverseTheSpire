@@ -4424,7 +4424,7 @@
   },
   "shadowverse:Vanpi_Q": {
     "NAME": "Vania, Crimson Majesty",
-    "DESCRIPTION": "Gain !B! Block. NL Lose 1 HP and add a *Forest *Bat to your hand. NL ALL enemies lose 1 HP and gain 1 Strength this turn. NL If Wrath or Vengeance is active, add a *Summon *Bloodkin to your hand and ALL *Forest *Bats do double damage, apply 2 Poison and make the enemy lose 2 HP this turn."
+    "DESCRIPTION": "Gain !B! Block. NL Lose 1 HP and add a *Forest *Bat to your hand. NL ALL enemies lose 1 HP and gain 1 Strength this turn. NL If Wrath or Vengeance is active, add a *Summon *Bloodkin to your hand and ALL *Forest *Bats do double damage, apply 2 Poison and make the enemy lose 2 HP this turn (this effect is not stackable)."
   },
   "shadowverse:Cerberus2": {
     "NAME": "Cerberus, Infernal Hound",

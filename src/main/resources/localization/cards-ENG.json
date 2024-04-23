@@ -4714,7 +4714,7 @@
   "shadowverse:CosmosFang": {
     "NAME": "Cosmos Fang",
     "DESCRIPTION": "Gain !B! Block and 1 Blur. NL Return X non-Strike Forestcraft Attacks in your discard pile to your draw pile. X equals your hand size minus the number of cards in your hand. NL Then, for each Attack returned to the draw pile gain 3 Block and 1 Strength. NL Deal damage equal to your Block to a random enemy next turn. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block and 1 Blur. NL Change the intent of ALL enemies. NL Return X non-Strike Forestcraft Attacks in your discard pile to your draw pile. X equals your hand size minus the number of cards in your hand. NL Then, Then, for each enemy AND each Attack returned to the draw pile gain 3 Block and 1 Strength. NL Deal damage equal to your Block to a random enemy next turn. NL Exhaust."
+    "UPGRADE_DESCRIPTION": "Gain !B! Block and 1 Blur. NL Change the intent of ALL enemies. NL Return X non-Strike Forestcraft Attacks in your discard pile to your draw pile. X equals your hand size minus the number of cards in your hand. NL Then, for each enemy AND each Attack returned to the draw pile gain 3 Block and 1 Strength. NL Deal damage equal to your Block to a random enemy next turn. NL Exhaust."
   },
   "shadowverse:Blitz": {
     "NAME": "Blitz",

@@ -23,7 +23,7 @@ public class RosyCourtMagician
     public static final int BASE_COST = 5;
 
     public RosyCourtMagician() {
-        super(ID, NAME, IMG_PATH, 5, DESCRIPTION, CardType.ATTACK, Witchcraft.Enums.COLOR_BLUE, CardRarity.RARE, CardTarget.ENEMY);
+        super(ID, NAME, IMG_PATH, 5, DESCRIPTION, CardType.ATTACK, Witchcraft.Enums.COLOR_BLUE, CardRarity.RARE, CardTarget.SELF);
         this.baseBlock = 24;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;

@@ -24,7 +24,7 @@ public class SuaveBandit extends CustomCard {
     public static final String IMG_PATH_EV = "img/cards/SuaveBandit_Ev.png";
 
     public SuaveBandit() {
-        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, AbstractCard.CardType.ATTACK, Royal.Enums.COLOR_YELLOW, AbstractCard.CardRarity.BASIC, AbstractCard.CardTarget.ENEMY);
+        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, AbstractCard.CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, AbstractCard.CardTarget.ENEMY);
         this.baseDamage = 3;
         this.cardsToPreview = new GlitteringGold();
     }

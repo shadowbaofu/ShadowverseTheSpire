@@ -56,13 +56,11 @@ public class SexyVampire extends CustomCard {
     @Override
     public void triggerWhenDrawn(){
         if (!AbstractDungeon.player.hasPower(EpitaphPower.POWER_ID)||!AbstractDungeon.player.stance.ID.equals(Vengeance.STANCE_ID)){
-            if (!AbstractDungeon.player.hasPower(VengeanceHealthPower.POWER_ID)){
                 this.superFlash();
                 addToBot(new WaitAction(1.2F));
                 addToBot( new ChangeStanceAction(new Vengeance()));
                 addToBot( new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new VengeanceHealthPower( AbstractDungeon.player)));
                 addToBot(new ExhaustSpecificCardAction(this,AbstractDungeon.player.hand));
-            }
         }
     }
 

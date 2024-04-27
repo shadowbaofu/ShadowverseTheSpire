@@ -75,7 +75,7 @@ public class RebelAgainstFate
                 }else {
                     this.cardsToPreview = returnChoice2().get(previewIndex).makeCopy();
                 }
-                if (this.previewIndex == returnChoice().size() - 1) {
+                if (this.previewIndex == (chosenBranch() == 0?returnChoice().size() - 1:returnChoice2().size() - 1)) {
                     this.previewIndex = 0;
                 } else {
                     this.previewIndex++;

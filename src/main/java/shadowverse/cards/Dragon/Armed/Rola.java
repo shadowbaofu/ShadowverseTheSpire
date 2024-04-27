@@ -71,8 +71,9 @@ public class Rola extends CustomCard implements BranchableUpgradeCard {
 
     @Override
     public void update() {
+        super.update();
         if (chosenBranch() == 0){
-            if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT) {
+            if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT && AbstractDungeon.player != null) {
                 if (Shadowverse.Enhance(enhanceCost)) {
                     if (this.ex == 0) {
                         this.exCost = this.cost;
@@ -91,8 +92,6 @@ public class Rola extends CustomCard implements BranchableUpgradeCard {
                     this.ex = 0;
                 }
             }
-        }else {
-            super.update();
         }
     }
 

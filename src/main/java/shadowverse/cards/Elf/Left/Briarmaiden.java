@@ -44,16 +44,18 @@ public class Briarmaiden extends CustomCard {
 
     public void applyPowers() {
         super.applyPowers();
-        int count = 0;
-        for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisCombat) {
-            if (c.type == CardType.ATTACK && !(c.hasTag(CardTags.STRIKE)) && c.color == Elf.Enums.COLOR_GREEN) {
-                count++;
+        if(upgraded){
+            int count = 0;
+            for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisCombat) {
+                if (c.type == CardType.ATTACK && !(c.hasTag(CardTags.STRIKE)) && c.color == Elf.Enums.COLOR_GREEN) {
+                    count++;
+                }
             }
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + count;
+            this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[1];
+            initializeDescription();
         }
-        this.rawDescription = this.upgraded?cardStrings.UPGRADE_DESCRIPTION:cardStrings.DESCRIPTION;
-        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + count;
-        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[1];
-        initializeDescription();
     }
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {

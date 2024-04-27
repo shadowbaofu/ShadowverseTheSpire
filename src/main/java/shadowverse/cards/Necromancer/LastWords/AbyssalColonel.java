@@ -33,6 +33,7 @@ public class AbyssalColonel
         this.tags.add(AbstractShadowversePlayer.Enums.LASTWORD);
         this.tags.add(AbstractShadowversePlayer.Enums.CONDEMNED);
         this.cardsToPreview = new AbyssalColonel_Crystalize();
+        this.exhaust = true;
     }
 
 

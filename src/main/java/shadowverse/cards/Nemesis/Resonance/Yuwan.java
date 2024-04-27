@@ -37,8 +37,8 @@ public class Yuwan
     public static final String[] TEXT = (CardCrawlGame.languagePack.getUIString("shadowverse:applyEffect")).TEXT;
 
     public Yuwan() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.RARE, CardTarget.SELF);
-        this.baseBlock = 6;
+        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.RARE, CardTarget.SELF);
+        this.baseBlock = 3;
         this.baseMagicNumber = 20;
         this.magicNumber = this.baseMagicNumber;
     }
@@ -48,7 +48,7 @@ public class Yuwan
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBlock(3);
+            upgradeBlock(2);
             upgradeMagicNumber(2);
             this.cardsToPreview = new AnalyzeArtifact();
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;

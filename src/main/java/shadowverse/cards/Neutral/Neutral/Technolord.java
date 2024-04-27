@@ -58,10 +58,7 @@ public class Technolord
 
 
     public void upgrade() {
-        if (!this.upgraded) {
-            upgradeName();
-            upgradeDamage(1);
-        }
+        ((UpgradeBranch) ((BranchableUpgradeCard) this).possibleBranches().get(chosenBranch())).upgrade();
     }
 
 

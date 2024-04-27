@@ -182,6 +182,7 @@ public class RoyalPool  extends AbstractBanPool {
         NatMech.addCard(new StrokeOfConviction());
         NatMech.addCard(new SunnyDayEncounter());
         NatMech.addCard(new TemperedMana());
+        NatMech.addCard(new Bayleon());
         Rally.addCard(new EnragedGeneral());
         Rally.addCard(new Ernesta());
         Rally.addCard(new FlyingMessengerSquirrel());

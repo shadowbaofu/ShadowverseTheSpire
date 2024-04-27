@@ -129,7 +129,7 @@ public class Ladica extends CustomCard implements BranchableUpgradeCard {
         } else if (chosenBranch() == 2) {
             int count = 0;
             for (AbstractCard card : AbstractDungeon.actionManager.cardsPlayedThisTurn) {
-                if (c.hasTag(AbstractShadowversePlayer.Enums.NATURAL)) {
+                if (card.hasTag(AbstractShadowversePlayer.Enums.NATURAL)) {
                     count++;
                 }
             }

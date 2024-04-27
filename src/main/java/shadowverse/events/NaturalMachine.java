@@ -42,16 +42,8 @@ import shadowverse.cards.Nemesis.Pile.Prototype;
 import shadowverse.cards.Nemesis.Resonance.MagnaGiant;
 import shadowverse.cards.Nemesis.Resonance.MagnaZero;
 import shadowverse.cards.Neutral.Neutral.*;
-import shadowverse.cards.Royal.NatMech.BrothersUnited;
-import shadowverse.cards.Royal.NatMech.Cybercannoneer;
+import shadowverse.cards.Royal.NatMech.*;
 import shadowverse.cards.Royal.Default.GloriousCore;
-import shadowverse.cards.Royal.NatMech.Grayson;
-import shadowverse.cards.Royal.NatMech.Johann;
-import shadowverse.cards.Royal.NatMech.MistolinaBayleon;
-import shadowverse.cards.Royal.NatMech.Patrick;
-import shadowverse.cards.Royal.NatMech.StampedingFortress;
-import shadowverse.cards.Royal.NatMech.SunnyDayEncounter;
-import shadowverse.cards.Royal.NatMech.TemperedMana;
 import shadowverse.cards.Vampire.NatMech.ArmoredBat;
 import shadowverse.cards.Vampire.Avarice.Cradle;
 import shadowverse.cards.Vampire.NatMech.CorruptedBat;
@@ -165,6 +157,8 @@ public class NaturalMachine extends AbstractImageEvent {
                         if (p.chosenClass != Necromancer.Enums.Necromancer) {
                             white.addToBottom(new ReviveMana());
                             white.addToBottom(new RevenantRam());
+                            white.addToBottom(new FullMetalZombie());
+                            white.addToBottom(new SuccessionOfBalance());
                             blue.addToBottom(new ZombieDog());
                             gold.addToBottom(new Lubelle());
                             gold.addToBottom(new Thoth());
@@ -227,6 +221,7 @@ public class NaturalMachine extends AbstractImageEvent {
                             gold.addToBottom(new Patrick());
                             gold.addToBottom(new Johann());
                             gold.addToBottom(new Grayson());
+                            gold.addToBottom(new Bayleon());
                         }
                         if (p.chosenClass !=Bishop.Enums.Bishop){
                             white.addToBottom(new JusticeMana());
@@ -240,6 +235,7 @@ public class NaturalMachine extends AbstractImageEvent {
                             gold.addToBottom(new Vice());
                             gold.addToBottom(new Limonia());
                             gold.addToBottom(new MusePrincess());
+                            gold.addToBottom(new Meowskers());
                         }
                         if (p.chosenClass != Dragon.Enums.Dragon){
                             white.addToBottom(new WildMana());
@@ -255,6 +251,7 @@ public class NaturalMachine extends AbstractImageEvent {
                             gold.addToBottom(new Valdain());
                             gold.addToBottom(new Rola());
                             gold.addToBottom(new Byron());
+                            gold.addToBottom(new CrystalshardDragonewt());
                         }
                         colorless.shuffle();
                         white.shuffle();

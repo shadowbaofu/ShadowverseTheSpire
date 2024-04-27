@@ -4629,6 +4629,10 @@
   },
   "shadowverse:JiemonThiefLord": {
     "NAME": "天下大侠客·治右卫门",
+
+
+
+
     "DESCRIPTION": "宴乐 NL 增加一张 *闪耀的金币 到手中，每当你使用 *闪耀的金币 时，获得 [E] ，对所有敌人造成4点伤害。",
     "UPGRADE_DESCRIPTION":"宴乐 NL 增加一张 *闪耀的金币 到手中，每当你使用 *闪耀的金币 时，获得 [E] ，对所有敌人造成4点伤害。 NL 回合开始时，将一张 *闪耀的金币 置入手牌。"
   },
@@ -5070,8 +5074,8 @@
   },
   "shadowverse:VerdantPrayer": {
     "NAME": "新绿的显现",
-    "DESCRIPTION": "学园 NL 增加1张 *进化点 和 奇迹 到手中。 NL 如果本场战斗已打出的非 打击 精灵攻击牌数量为20以上，获得 !M! 点 力量 和 敏捷 ，1层 *残影 和 人工制品 。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "学园 · 保留 NL 增加1张 *进化点 和 奇迹 到手中。 NL 如果本场战斗已打出的非 打击 精灵攻击牌数量为20以上，获得 !M! 点 力量 和 敏捷 ，1层 *残影 和 人工制品 。 NL 消耗 。",
+    "DESCRIPTION": "学园 NL 增加1张 *进化点 到手中。 NL 如果本场战斗已打出的非 打击 精灵攻击牌数量为20以上，获得 !M! 点 力量 和 敏捷 ，1层 *残影 和 人工制品 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "学园 · 保留 NL 增加1张 *进化点 到手中。 NL 如果本场战斗已打出的非 打击 精灵攻击牌数量为20以上，获得 !M! 点 力量 和 敏捷 ，1层 *残影 和 人工制品 。 NL 消耗 。",
     "EXTENDED_DESCRIPTION": [
       " NL (X为",
       " 。)"
@@ -6367,7 +6371,7 @@
   "shadowverse:Rogers": {
     "NAME": "大海征服者·罗杰",
     "DESCRIPTION": "获得 [E] ，增加1张 *黄金之杯 到手中。 NL 虚无 。",
-    "UPGRADE_DESCRIPTION":"获得 [E] ，增加1张 *黄金之杯 到手中。 NL 召唤1个 加农炮水手 。 NL 获得「打出 财宝牌 时，如果为本回合使用的第1张，获得 [E] 。如果为第2张，对全体敌人造成10点伤害。」 NL 虚无 。"
+    "UPGRADE_DESCRIPTION":"获得 [E] ，增加1张 *黄金之杯 到手中。 NL 召唤1个 加农炮水手 。 NL 获得「打出 财宝牌 时，如果为本回合使用的第1张，获得 [E] 。如果为第2张，对全体敌人造成10点伤害」效果。 NL 虚无 。"
   },
   "shadowverse:DelugeOfArrows": {
     "NAME": "箭雨狂澜",
@@ -6754,7 +6758,7 @@
     ]
   },
   "shadowverse:Maiser2": {
-    "NAME": "疾速英雄·麦哲",
+    "NAME": "疾速巩固者·麦哲",
     "DESCRIPTION": "英雄 NL 增加2张 *信念的加速 到手中。 NL 如果这张牌的 魔力增幅 次数为3以上，额外增加1张。",
     "EXTENDED_DESCRIPTION": [
       " NL (当前 魔力增幅 次数为",
@@ -6889,7 +6893,7 @@
   },
   "shadowverse:Spector2": {
     "NAME": "反叛拍档·巴妮与巴隆",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 增加1张 *革命射击 到手中。如果手中有 *进化点，额外增加1张。 NL 回下回合开始时增加一张打出前耗能为0的 *魔导四轮车V 到手中。 NL 消耗。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 增加1张 *革命射击 到手中。如果手中有 *进化点，额外增加1张。 NL 回下回合开始时增加一张打出前耗能为0的 *高机动魔导车·V 到手中。 NL 消耗。"
   },
   "shadowverse:SorceryInSolidarity2": {
     "NAME": "信赖的魔法",
@@ -6955,10 +6959,10 @@
   },
   "shadowverse:Marlone3": {
     "NAME": "均衡的导引·马龙",
-    "DESCRIPTION": "对全体敌人造成 !D! 点伤害。 NL 限定 增加1张 *纪律的指标 到手中。"
+    "DESCRIPTION": "对全体敌人造成 !D! 点伤害。 NL 消耗手牌中技能牌和护符牌以外的所有卡牌。 NL 限定 增加1张 *纪律的指标 到手中。"
   },
   "shadowverse:Meowskers": {
-    "NAME": "耿直的参谋长",
+    "NAME": "耿直的参谋长·喵鲁",
     "DESCRIPTION": "自然 · 结晶 0 · 倒计时 1 : NL 本回合耗能变为0返回手中。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL 对随机敌人造成 !D! 点生命，回复2点生命。 NL 增加1张 *那塔拉的大树 到手中。 NL 如果本场战斗已触发的护符数量为5以上且此卡打出时耗能不为0，获得1点能量。",
     "EXTENDED_DESCRIPTION": [
       " NL (已触发",
@@ -6970,7 +6974,7 @@
     "DESCRIPTION": "打出护符牌时，耗能减少1。 NL 打出 *那塔拉的大树 时，耗能减少2。 NL 触发并移除1张护符。 NL 给予随机敌人2层 易伤 和 虚弱 。"
   },
   "shadowverse:Rola2": {
-    "NAME": "极炎龙骑士·洛乐",
+    "NAME": "坏灭龙骑士·洛乐",
     "DESCRIPTION": "机械 NL 获得 !B! 点 格挡 。 NL 获得1点 觉醒值 。 NL 对全体敌人造成 !D! 点伤害。 NL 如果手中原本耗能为3以上的牌数量为3张以上，额外增加 !M! 点伤害。"
   },
   "shadowverse:RosyCourtMagician": {
@@ -7004,5 +7008,22 @@
   "shadowverse:ChaoticChimera": {
     "NAME": "混沌魔狮",
     "DESCRIPTION": "狂乱 则可以发动 融合 。 NL 融合 :非基础牌。 NL 与这张牌 融合 时，每融合1张使此牌耗能减少1。 NL  NL --------------------- NL  NL 获得 !B! 点 格挡 ，抽3张牌。 NL 对全体敌人造成 !D! 点伤害，回复3点生命。 NL 消耗 。"
+  },
+  "shadowverse:Bayleon": {
+    "NAME": "王者曙光·贝里昂",
+    "DESCRIPTION": "自然 NL 获得 !B! 点 格挡 。 NL 如果X为10以上， 升级 这张牌。 NL X为本场战斗中打出的 *那塔拉的大树 数量与 协作 数之和。",
+    "UPGRADE_DESCRIPTION":"自然 NL 造成 !D! 点伤害，获得 !B! 点 格挡 。 NL 获得「每回合1次，打出 *那塔拉的大树 时，增加1张 *光耀剑闪 到手中」效果。 NL 打出后解除 升级 。",
+    "EXTENDED_DESCRIPTION": [
+      "（X为",
+      ")"
+    ]
+  },
+  "shadowverse:LuminousBlade": {
+    "NAME": "光耀剑闪",
+    "DESCRIPTION": "自然 NL 选择弃牌堆中的1张 自然 攻击牌，获得1点 力量 和 敏捷。 NL 如果X为20以上，额外获得1点。 NL X为本场战斗中打出的 *那塔拉的大树 数量与 协作 数之和。 NL 如果选择的是 *王者曙光·贝里昂 ，对随机敌人造成 !D! 点伤害。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "（X为",
+      ")"
+    ]
   }
 }

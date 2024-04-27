@@ -600,7 +600,7 @@
   "shadowverse:VengeanceHealthPower": {
     "NAME": "绚烂的妖艳暗夜眷属",
     "DESCRIPTIONS": [
-      "本场战斗中你的生命值不能高于最大生命值的一半。战斗结束时返还因这个效果失去的生命值。"
+      "本场战斗中你视为复仇状态。"
     ]
   },
   "shadowverse:SadisticDemonPower": {
@@ -2152,6 +2152,12 @@
     "NAME": "灾乱的蹂躏·阿莱克托",
     "DESCRIPTIONS": [
       "受到攻击时，回复 #b2 点生命。"
+    ]
+  },
+  "shadowverse:BayleonPower": {
+    "NAME": "王者曙光·贝里昂",
+    "DESCRIPTIONS": [
+      "每回合1次，打出 #y那塔拉的大树 时，增加 #b1 张 #y光耀剑闪 到手中。"
     ]
   }
 }

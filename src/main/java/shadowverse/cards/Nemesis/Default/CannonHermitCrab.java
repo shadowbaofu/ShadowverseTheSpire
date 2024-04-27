@@ -39,11 +39,11 @@ public class CannonHermitCrab extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        if (abstractPlayer.maxOrbs<5){
-            int toIncrease = 5-abstractPlayer.maxOrbs;
-            addToBot((AbstractGameAction)new IncreaseMaxOrbAction(toIncrease));
+        if (abstractPlayer.maxOrbs < 5) {
+            int toIncrease = 5 - abstractPlayer.maxOrbs;
+            addToBot(new IncreaseMaxOrbAction(toIncrease));
         }
-        addToBot((AbstractGameAction) new MinionSummonAction(new CannonHermitCrabOrb()));
+        addToBot(new MinionSummonAction(new CannonHermitCrabOrb()));
     }
 
 

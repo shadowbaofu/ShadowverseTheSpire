@@ -54,15 +54,17 @@ public class MajorPrayers
     }
 
     public void triggerOnOtherCardPlayed(AbstractCard c) {
-        if (c instanceof AbstractAmuletCard || (c instanceof AbstractCrystalizeCard && c.type==CardType.POWER) || c instanceof AbstractNoCountDownAmulet) {
-            flash();
-            addToBot(new SFXAction("spell_boost"));
-            addToBot(new ReduceCostAction(this));
-        }
-        if (c instanceof NaterranGreatTree){
-            flash();
-            addToBot(new SFXAction("spell_boost"));
-            addToBot(new ReduceCostAction(this));
+        if (chosenBranch()!=0){
+            if (c instanceof AbstractAmuletCard || (c instanceof AbstractCrystalizeCard && c.type==CardType.POWER) || c instanceof AbstractNoCountDownAmulet) {
+                flash();
+                addToBot(new SFXAction("spell_boost"));
+                addToBot(new ReduceCostAction(this));
+            }
+            if (c instanceof NaterranGreatTree){
+                flash();
+                addToBot(new SFXAction("spell_boost"));
+                addToBot(new ReduceCostAction(this));
+            }
         }
     }
 

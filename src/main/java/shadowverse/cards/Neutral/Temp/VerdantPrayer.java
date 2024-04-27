@@ -74,7 +74,6 @@ public class VerdantPrayer
             }
         }
         addToBot(new MakeTempCardInHandAction(new EvolutionPoint()));
-        addToBot(new MakeTempCardInHandAction(new Miracle()));
         if (count >= 20) {
             addToBot(new VFXAction(new BorderFlashEffect(Color.GREEN, true), 1.0f));
             addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, this.magicNumber), this.magicNumber));

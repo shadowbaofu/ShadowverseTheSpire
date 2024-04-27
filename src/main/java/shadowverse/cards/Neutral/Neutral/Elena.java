@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.GameActionManager;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.*;
+import com.megacrit.cardcrawl.actions.defect.IncreaseMaxOrbAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -117,6 +118,10 @@ public class Elena
                                 toAdd.upgrade();
                             addToBot(new MakeTempCardInHandAction(toAdd));
                         }else if (c.color == Royal.Enums.COLOR_YELLOW){
+                            if (p.maxOrbs < 5) {
+                                int toIncrease = 5 - p.maxOrbs;
+                                addToBot(new IncreaseMaxOrbAction(toIncrease));
+                            }
                             AbstractCard toAdd = new Erika();
                             if (Elena.this.upgraded)
                                 toAdd.upgrade();
@@ -137,6 +142,10 @@ public class Elena
                                 toAdd.upgrade();
                             addToBot(new MakeTempCardInHandAction(toAdd));
                         }else if (c.color == Bishop.Enums.COLOR_WHITE){
+                            if (p.maxOrbs < 5) {
+                                int toIncrease = 5 - p.maxOrbs;
+                                addToBot(new IncreaseMaxOrbAction(toIncrease));
+                            }
                             AbstractCard toAdd = new Eris();
                             if (Elena.this.upgraded)
                                 toAdd.upgrade();

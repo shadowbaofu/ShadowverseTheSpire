@@ -1790,6 +1790,9 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("Loretaker", new Sfx(voicePath + "Loretaker.wav"));
             reflectedMap.put("Kyrzael_L", new Sfx(voicePath + "Kyrzael_L.wav"));
             reflectedMap.put("Signa_L", new Sfx(voicePath + "Signa_L.wav"));
+            reflectedMap.put("Bayleon", new Sfx(voicePath + "Bayleon.wav"));
+            reflectedMap.put("Bayleon_Eff", new Sfx(voicePath + "Bayleon_Eff.wav"));
+            reflectedMap.put("LuminousBlade", new Sfx(voicePath + "LuminousBlade.wav"));
         }
         if (Loader.isModLoaded("CardAugments")) {
             AugmentHelper.register();
@@ -2000,6 +2003,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard(new Flamelord());
         BaseMod.addCard(new ViciousCommander());
         BaseMod.addCard(new WrathfulIcefiend());
+        BaseMod.addCard(new HellBeast());
         BaseMod.addCard(new Behemoth());
         BaseMod.addCard(new DemonOfPurgatory());
         BaseMod.addCard(new Desire());
@@ -3226,6 +3230,8 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard(new NeoAlector2());
         BaseMod.addCard(new NeoMegaera2());
         BaseMod.addCard(new ChaoticChimera());
+        BaseMod.addCard(new Bayleon());
+        BaseMod.addCard(new LuminousBlade());
         logger.info("Success");
     }
 

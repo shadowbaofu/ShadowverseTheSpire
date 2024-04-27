@@ -82,6 +82,8 @@ public class Lubelle
                     } else {
                         addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
                     }
+                }else {
+                    addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
                 }
                 break;
         }

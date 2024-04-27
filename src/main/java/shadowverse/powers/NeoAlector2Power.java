@@ -24,12 +24,6 @@ public class NeoAlector2Power extends AbstractPower {
         loadRegion("ritual");
     }
 
-    public float atDamageFinalReceive(float damage, DamageInfo.DamageType type) {
-        if (damage > 5.0F)
-            damage = 5.0F;
-        return damage;
-    }
-
     public int onAttacked(DamageInfo info, int damageAmount) {
         if (info.owner != null && info.type != DamageInfo.DamageType.THORNS && info.type != DamageInfo.DamageType.HP_LOSS && info.owner != this.owner) {
             flash();

@@ -135,7 +135,7 @@ public class Illganeau
         if (chosenBranch() == 1){
             super.applyPowers();
             this.rawDescription = cardStrings2.DESCRIPTION;
-            this.rawDescription += cardStrings2.EXTENDED_DESCRIPTION[0] + rally() + cardStrings.EXTENDED_DESCRIPTION[1];
+            this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + rally() + cardStrings.EXTENDED_DESCRIPTION[1];
             this.initializeDescription();
         }else {
             super.applyPowers();

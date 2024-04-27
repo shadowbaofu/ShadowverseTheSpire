@@ -28,7 +28,7 @@ public class PurelightExemplar
     public static final String IMG_PATH = "img/cards/PurelightExemplar.png";
 
     public PurelightExemplar() {
-        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.POWER, Nemesis.Enums.COLOR_SKY, CardRarity.SPECIAL, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.POWER, Nemesis.Enums.COLOR_SKY, CardRarity.SPECIAL, CardTarget.SELF);
         this.tags.add(AbstractShadowversePlayer.Enums.ARTIFACT);
     }
 

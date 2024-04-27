@@ -83,7 +83,7 @@ public class SorceryInSolidarity
                 break;
             case 1:
                 addToBot(new MakeTempCardInHandAction(new RepairMode(),2));
-                addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new MachineAttackPower(abstractPlayer, 5), 5));
+                addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new MachineAttackPower(abstractPlayer, 6), 6));
                 this.cost = 3;
                 break;
         }

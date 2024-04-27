@@ -35,6 +35,7 @@ public class ForbiddenPower extends AbstractRightClickCard2 {
         this.tags.add(AbstractShadowversePlayer.Enums.MACHINE);
         this.selfRetain = true;
         this.exhaust = true;
+        this.isMultiDamage = true;
     }
 
 
@@ -99,9 +100,9 @@ public class ForbiddenPower extends AbstractRightClickCard2 {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction("ForbiddenPower"));
         calculateCardDamage(m);
-        new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(this.damage, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE, true);
+        addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.FIRE));
         if (this.hasFusion) {
-            new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(this.damage, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE, true);
+            addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
         }
     }
 

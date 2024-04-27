@@ -75,7 +75,7 @@ public class Mono
                 this.cardsToPreview = upgradedFirstOne();
             } else
                 this.cardsToPreview = firstOne;
-        }else if (this.previewBranch == 1){
+        }else if (this.previewBranch == 2){
             this.cardsToPreview = garnetRelease;
         }
     }

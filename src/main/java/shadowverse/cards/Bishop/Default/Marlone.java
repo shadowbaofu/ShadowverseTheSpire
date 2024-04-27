@@ -167,6 +167,7 @@ public class Marlone extends CustomCard implements BranchableUpgradeCard {
                 Marlone.this.name = cardStrings3.NAME;
                 Marlone.this.baseDamage = 10;
                 Marlone.this.upgradedDamage = true;
+                Marlone.this.upgradeBaseCost(2);
                 Marlone.this.initializeTitle();
                 Marlone.this.rawDescription = cardStrings3.DESCRIPTION;
                 Marlone.this.initializeDescription();

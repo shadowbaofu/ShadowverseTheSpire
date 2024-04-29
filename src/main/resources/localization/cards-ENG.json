@@ -3014,7 +3014,7 @@
   "shadowverse:FloralFencer": {
     "NAME": "Floral Fencer",
     "DESCRIPTION": "Deal !D! damage.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Summon 1 Knight NL and 1 Steelclad_Knight. NL (Downgrades once played.)"
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Summon 1 Knight NL and 1 Steelclad_Knight. NL (Downgrade once played.)"
   },
   "shadowverse:SunnyDayEncounter": {
     "NAME": "Sunny Day Encounter",
@@ -3027,7 +3027,7 @@
   "shadowverse:WarriorWing": {
     "NAME": "Aether of the Warrior Wing",
     "DESCRIPTION": "Put 1 Attack or Power card from your draw pile into your hand.",
-    "UPGRADE_DESCRIPTION": "Put 1 Attack or Power card from your draw pile into your hand. NL ALL *Followers gain +0 / +1. NL (Downgrades once played.)"
+    "UPGRADE_DESCRIPTION": "Put 1 Attack or Power card from your draw pile into your hand. NL ALL *Followers gain +0 / +1. NL (Downgrade once played.)"
   },
   "shadowverse:Alyaska": {
     "NAME": "Alyaska, War Hawker",
@@ -3041,7 +3041,7 @@
   "shadowverse:RadicalGunslinger": {
     "NAME": "Radical Gunslinger",
     "DESCRIPTION": "Apply !M! Vulnerable and deal !D! damage.",
-    "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable and deal !D! damage. NL Add 1 *Dutiful *Steed to your hand. NL (Downgrades once played.)"
+    "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable and deal !D! damage. NL Add 1 *Dutiful *Steed to your hand. NL (Downgrade once played.)"
   },
   "shadowverse:Mirin": {
     "NAME": "Mirin, Samurai Dreamer",
@@ -3984,7 +3984,7 @@
   "shadowverse:TheChariot": {
     "NAME": "VII. Oluon, The Chariot",
     "DESCRIPTION": "Gain !B! Block. NL At the end of your turn, randomly activate 1 of the following effects. NL 1. Gain !M! Block NL 2. Summon 1 Knight NL 3. Deal !M! damage to an random enemy. NL NL Enhance 3: Play this card as *VII. *Oluon, *Runaway *Chariot instead.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL At the end of your turn, randomly activate 1 of the following effects. NL 1. Gain !M! Block 2. NL Summon 1 Knight NL 3. Deal !M! damage to an random enemy. NL NL Enhance 3: Play this card as *VII. *Oluon, *Runaway *Chariot+ instead."
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL At the end of your turn, randomly activate 1 of the following effects. NL 1. Gain !M! Block NL 2. NL Summon 1 Knight NL 3. Deal !M! damage to an random enemy. NL NL Enhance 3: Play this card as *VII. *Oluon, *Runaway *Chariot+ instead."
   },
   "shadowverse:TheChariot_I": {
     "NAME": "VII. Oluon, Runaway Chariot",
@@ -4094,7 +4094,7 @@
   "shadowverse:AdherentOfHollow": {
     "NAME": "Adherent Of Hollowness",
     "DESCRIPTION": "Whenever you play a Loot card, upgrade this card. NL Deal !D! damage. NL Whenever you play an *Evolution *Point, put 1 random Loot card into your hand.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Whenever you play an *Evolution *Point, put 1 random Loot card into your hand. NL (Downgrades once played.)"
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Whenever you play an *Evolution *Point, put 1 random Loot card into your hand. NL (Downgrade once played.)"
   },
   "shadowverse:AdherentOfDispair": {
     "NAME": "Adherent of Despair",
@@ -4643,7 +4643,7 @@
   "shadowverse:SuaveBandit": {
     "NAME": "Suave Bandit",
     "DESCRIPTION": "Deal !D! damage. NL Add a *Glittering *Gold to your hand.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage twice. Add 2 *Glittering *Gold to your hand. NL (Downgrades once played.)"
+    "UPGRADE_DESCRIPTION": "Deal !D! damage twice. Add 2 *Glittering *Gold to your hand. NL (Downgrade once played.)"
   },
   "shadowverse:FrontDeskFrog": {
     "NAME": "Front Desk Frog",
@@ -4762,7 +4762,7 @@
   "shadowverse:VerdantLieutenant": {
     "NAME": "Verdant Lieutenant",
     "DESCRIPTION": "Condemned NL Deal !D! damage and gain !B! Block. NL Add 1 to the number of cards played this turn.  NL When you play a card, if at least 4 cards were played this turn, upgrade this card in your hand and draw 1 card. ",
-    "UPGRADE_DESCRIPTION": "Condemned NL Deal !D! damage and gain !B! Block.  NL Add 1 to the number of cards played this turn. NL Downgrades once played."
+    "UPGRADE_DESCRIPTION": "Condemned NL Deal !D! damage and gain !B! Block.  NL Add 1 to the number of cards played this turn. NL Downgrade once played."
   },
   "shadowverse:BuddingInitiate": {
     "NAME": "Budding Initiate",
@@ -4980,7 +4980,7 @@
   "shadowverse:Barbaros": {
     "NAME": "Barbaros, Briny Convict",
     "DESCRIPTION": "Condemned - Fusion: Loot cards. NL When a card is fused to this card, upgrade this card. NL Deal !D! damage. NL Add a *Dread *Pirate's *Flag to your hand. NL If there are 7 or more Loot cards in your exhaust pile, gain 2 Energy. NL Enhance 3: Double the damage.",
-    "UPGRADE_DESCRIPTION": "Condemned - Fusion: Loot cards. NL Deal !D! damage. NL Add a *Dread *Pirate's *Flag to your hand. NL If there are 7 or more Loot cards in your exhaust pile, gain 2 Energy. NL Enhance 3: Double the damage. NL (Downgrades once played.)"
+    "UPGRADE_DESCRIPTION": "Condemned - Fusion: Loot cards. NL Deal !D! damage. NL Add a *Dread *Pirate's *Flag to your hand. NL If there are 7 or more Loot cards in your exhaust pile, gain 2 Energy. NL Enhance 3: Double the damage. NL (Downgrade once played.)"
   },
   "shadowverse:Radiel": {
     "NAME": "Radiel, Valorous Enforcer",
@@ -4993,7 +4993,7 @@
   "shadowverse:WardenOfHonor": {
     "NAME": "Warden of Honor",
     "DESCRIPTION": "Condemned - Crystallize 0: Draw an additional card next turn. Add a copy of this card to your discard pile. NL NL --------------------- NL NL Upgrade this card and gain !B! Block twice. NL Add a copy of this card to your exhaust pile.",
-    "UPGRADE_DESCRIPTION": "Condemned - Crystallize 0: Draw an additional card next turn. Add a copy of this card to your discard pile. NL NL --------------------- NL NL Gain !B! Block twice. NL Add a copy of this card to your discard pile. NL (Downgrades once played.)"
+    "UPGRADE_DESCRIPTION": "Condemned - Crystallize 0: Draw an additional card next turn. Add a copy of this card to your discard pile. NL NL --------------------- NL NL Gain !B! Block twice. NL Add a copy of this card to your discard pile. NL (Downgrade once played.)"
   },
   "shadowverse:IronwroughtDefender": {
     "NAME": "Ironwrought Defender",
@@ -5031,12 +5031,12 @@
   "shadowverse:DancingMiniSoulDevil": {
     "NAME": "Dancing Mini Soul Devil",
     "DESCRIPTION": "Gain !B! Block. NL When you play an *Evolution *Point, upgrade this card in your hand and add 1 *Evolution *Point to your hand.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Downgrades once played."
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Downgrade once played."
   },
   "shadowverse:Signa": {
     "NAME": "Signa, Sealed Madwolf",
     "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Gain 1 Blur. NL When you play an *Evolution *Point, upgrade this card in your hand and add 1 *Evolution *Point. to your hand.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. NL Gain 1 Blur. NL If there are 3 or more *Evolution *Points in your exhaust pile, deal !M! more damage to ALL enemies. NL If there are 7 or more, gain 1 Strength and Dexterity. NL Downgrades once played. "
+    "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. NL Gain 1 Blur. NL If there are 3 or more *Evolution *Points in your exhaust pile, deal !M! more damage to ALL enemies. NL If there are 7 or more, gain 1 Strength and Dexterity. NL Downgrade once played. "
   },
   "shadowverse:Yuzuki": {
     "NAME": "Yuzuki, Bloodlord",
@@ -5871,7 +5871,7 @@
   "shadowverse:SoaringDragonewt": {
     "NAME": "Soaring Dragonewt",
     "DESCRIPTION": "Machina NL Whenever you play a Skill card, upgrade this card. NL Deal !D! damage. NL Randomly discard the lowest cost card in your hand and draw 1 card.",
-    "UPGRADE_DESCRIPTION": "Machina NL Downgrades when played. NL Deal !D! damage. NL Randomly discard the lowest cost card in your hand, draw 1 card. Do this three times."
+    "UPGRADE_DESCRIPTION": "Machina NL Downgrade once played. NL Deal !D! damage. NL Randomly discard the lowest cost card in your hand, draw 1 card. Repeat this once more."
   },
   "shadowverse:WiseDragonewtScholar": {
     "NAME": "Wise Dragonewt Scholar",
@@ -6743,8 +6743,8 @@
   },
     "shadowverse:Elena": {
     "NAME": "Elena, Defier of Destiny",
-    "DESCRIPTION": "Deal !D! damage. NL Discard 1 non-Colorless card. Based on the Shadowverse Class or color of the card, add *Arisa, *Erika, *Isabelle, *Rowen, *Luna, *Urias, *Eris, *Yuwan, *Demon *Form, *Wraith *Form, *Echo *Form or *Deva *Form to your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. If it's the 5th turn or later, deal 50 more damage. NL Discard 1 non-Colorless card. Based on the Shadowverse Class or color of the card, add *Arisa, *Erika, *Isabelle, *Rowen, *Luna, *Urias, *Eris, *Yuwan, *Demon *Form, *Wraith *Form, *Echo *Form or *Deva *Form to your hand. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL Discard 1 non-Colorless card. Add the corresponding Form or Shadowverse Hero (Arisa, Erika, Isabelle, Rowen, Luna, Urias, Eris, Yuwan) to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. If it's the 5th turn or later, deal 50 more damage. NL Discard 1 non-Colorless card. Add the corresponding Form (Demon, Wraith, Echo, Deva) or Shadowverse Hero (Arisa, Erika, Isabelle, Rowen, Luna, Urias, Eris, Yuwan) to your hand. NL Exhaust."
   },
   "shadowverse:BrothersUnited2": {
     "NAME": "Brothers' Pride",
@@ -7013,5 +7013,23 @@
   "shadowverse:ChaoticChimera": {
     "NAME": "Chaotic Chimera",
     "DESCRIPTION": "Can only Fuse if Wrath is active for you. NL Fusion: Non-Basic cards. NL Costs 1 less Energy for each card Fused to this card. NL  NL --------------------- NL  NL Gain !B! Block. Draw 3 cards. NL Deal !D! damage to ALL enemies. Heal 3 HP. NL Exhaust."
+  },
+  "shadowverse:Bayleon": {
+    "NAME": "Bayleon, Shining Sovereign",
+    "DESCRIPTION": "Natura NL Gain !B! Block. NL If X is at least 10, upgrade this card. NL X equals your Rally count plus the number of *Naterran *Great *Trees played this combat. ",
+    "UPGRADE_DESCRIPTION":"Natura NL Deal !D! damage and gain !B! Block. NL Gain 'Once per turn, when you play a *Naterran *Great *Tree, add a *Luminous *Blade to your hand.' NL (Downgrade once played.)",
+    "EXTENDED_DESCRIPTION": [
+      "（X is ",
+      " )"
+    ]
+  },
+  "shadowverse:LuminousBlade": {
+    "NAME": "Luminous Blade",
+    "DESCRIPTION": "Natura NL Choose a Natura Attack card from the discard pile. Gain 1 Strength and Dexterity. NL If X is at least 20, gain 1 more Strength and Dexterity. NL X equals your Rally count plus the number of *Naterran *Great *Trees played this combat. NL If *Bayleon, *Shining *Sovereign was chosen, deal !D! damage to a random enemy. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "（X is ",
+      " )"
+    ]
   }
 }
+

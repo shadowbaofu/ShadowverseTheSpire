@@ -6743,7 +6743,7 @@
   },
     "shadowverse:Elena": {
     "NAME": "Elena, Defier of Destiny",
-    "DESCRIPTION": "Deal !D! damage. NL Discard 1 non-Colorless card. Add the corresponding Form or Shadowverse Hero (Arisa, Erika, Isabelle, Rowen, Luna, Urias, Eris, Yuwan) to your hand. NL Exhaust.",
+    "DESCRIPTION": "Deal !D! damage. NL Discard 1 non-Colorless card. Add the corresponding Form (Demon, Wraith, Echo, Deva) or Shadowverse Hero (Arisa, Erika, Isabelle, Rowen, Luna, Urias, Eris, Yuwan) to your hand. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. If it's the 5th turn or later, deal 50 more damage. NL Discard 1 non-Colorless card. Add the corresponding Form (Demon, Wraith, Echo, Deva) or Shadowverse Hero (Arisa, Erika, Isabelle, Rowen, Luna, Urias, Eris, Yuwan) to your hand. NL Exhaust."
   },
   "shadowverse:BrothersUnited2": {

@@ -1,6 +1,7 @@
 package shadowverse.events;
 
 import com.badlogic.gdx.math.MathUtils;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -9,6 +10,7 @@ import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 import shadowverse.cards.Neutral.Temp.CrystalBright;
 import shadowverse.cards.Neutral.Temp.GemLight;
+import shadowverse.cards.Vampire.Basic.RazoryClaw;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,6 +43,7 @@ public class GemFortune extends AbstractImageEvent {
         if (this.hpLoss >= AbstractDungeon.player.maxHealth)
             this.hpLoss = AbstractDungeon.player.maxHealth - 1;
         if (AbstractDungeon.ascensionLevel >= 15) {
+            this.hpLoss = MathUtils.ceil(AbstractDungeon.player.maxHealth * 0.3F);
             this.imageEventText.setDialogOption(OPTIONS[3] + this.hpLoss + OPTIONS[1], new CrystalBright());
         } else {
             this.imageEventText.setDialogOption(OPTIONS[0] + this.hpLoss + OPTIONS[1], new CrystalBright());
@@ -80,22 +83,27 @@ public class GemFortune extends AbstractImageEvent {
     }
 
     private void becomeGhost() {
+        ArrayList<AbstractCard> masterDeck = AbstractDungeon.player.masterDeck.group;
+        int i;
+        int amt=0;
+        for (i = masterDeck.size() - 1; i >= 0; i--) {
+            AbstractCard card = masterDeck.get(i);
+            AbstractDungeon.player.masterDeck.removeCard(card);
+            amt++;
+        }
         List<String> cards = new ArrayList<>();
-        int amount = 4;
-        int amount2 = 2;
-        if (AbstractDungeon.ascensionLevel >= 15){
-            amount -= 1;
-            amount2 -= 1;
-        }
-        for (int i = 0; i < amount; i++) {
-            GemLight gemLight = new GemLight();
-            cards.add((gemLight).cardID);
-            AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(gemLight, Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));
-        }
-        for (int i = 0;i < amount2 ; i++){
-            CrystalBright crystalBright = new CrystalBright();
-            cards.add((crystalBright).cardID);
-            AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(crystalBright, Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));
+        if (amt>0){
+            for (i = 0; i < amt; i++) {
+                if (i < amt * 0.66) {
+                    GemLight gemLight = new GemLight();
+                    cards.add((gemLight).cardID);
+                    AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(gemLight, Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));
+                }else {
+                    CrystalBright crystalBright = new CrystalBright();
+                    cards.add((crystalBright).cardID);
+                    AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(crystalBright, Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));
+                }
+            }
         }
         logMetricObtainCardsLoseMapHP("GemFortune", "Became a Ghost", cards, this.hpLoss);
     }

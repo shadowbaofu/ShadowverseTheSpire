@@ -730,13 +730,13 @@
   },
   "shadowverse:GemLight": {
     "NAME": "宝石之光",
-    "DESCRIPTION": "消耗 1张手牌，增加 !M! 张随机牌到手中。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "保留 。 NL 消耗 1张手牌，增加 !M! 张随机牌到手中。 NL 消耗 。"
+    "DESCRIPTION": "融合 :所有 *宝石之光 。 NL 与这张牌融合时， 消耗 这张牌。随后增加融合数量的随机职业牌到手中。 NL  NL --------------------- NL  NL 抽 !M! 张牌。",
+    "UPGRADE_DESCRIPTION": "保留 · 融合 :所有 *宝石之光 。 NL 与这张牌融合时， 消耗 这张牌。随后增加融合数量的随机职业牌到手中。 NL  NL --------------------- NL  NL 抽 !M! 张牌。"
   },
   "shadowverse:CrystalBright": {
     "NAME": "水晶之辉",
-    "DESCRIPTION": "消耗 1张手牌，增加 !M! 张随机罕见或稀有牌到手中。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "保留 。 NL 消耗 1张手牌，增加 !M! 张随机罕见或稀有牌到手中。 NL 消耗 。"
+    "DESCRIPTION": "融合 :  *宝石之光 以外的卡牌。 NL 与这张牌融合时， 消耗 这张牌。随后增加融合数量的随机职业牌到手中。并增加1张稀有职业牌到手中。 NL  NL --------------------- NL  NL 抽牌直至手牌为 !M! 张。",
+    "UPGRADE_DESCRIPTION": "保留 · 融合 :  *宝石之光 以外的卡牌。 NL 与这张牌融合时， 消耗 这张牌。随后增加融合数量的随机职业牌到手中。并增加1张稀有职业牌到手中。 NL  NL --------------------- NL  NL 抽牌直至手牌为 !M! 张。"
   },
   "shadowverse:BelphometStatus": {
     "NAME": "支配者的弹压",
@@ -4696,8 +4696,8 @@
   },
   "shadowverse:AmerroSpearKnight": {
     "NAME": "锐枪骑士·埃米罗斯",
-    "DESCRIPTION": "获得1点 力量 ，造成 !D! 点伤害。 NL  危难 :从3张 英雄 牌中选择1张加入你的手牌。",
-    "UPGRADE_DESCRIPTION":"获得1点 力量 ，造成 !D! 点伤害两次。 NL  危难 :从3张 英雄 牌中选择1张加入你的手牌，这张牌在本回合中耗能减少1 [E] 。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL  危难 :从3张 英雄 牌中选择1张加入你的手牌。",
+    "UPGRADE_DESCRIPTION":"造成 !D! 点伤害两次。 NL  危难 :从3张 英雄 牌中选择1张加入你的手牌，这张牌在本回合中耗能减少1 [E] 。"
   },
   "shadowverse:HeroicEntry": {
     "NAME": "英雄到来！",
@@ -6146,7 +6146,7 @@
   },
   "shadowverse:WhitefrostWhisper": {
     "NAME": "银冰吐息",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 给予 !M! 层 虚弱 。 NL 消耗 手中所有 状态牌 、 诅咒 牌。 NL 如果目标已受伤，获得 [E] 。 NL 消耗 。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果目标生命值为满，给予 !M! 层 虚弱 。 NL 消耗 手中所有 状态牌 、 诅咒 牌。 NL 如果没有因此 消耗 卡牌且目标已受伤，获得 [E] 。 NL 消耗 。"
   },
   "shadowverse:Filene": {
     "NAME": "银冰龙人·菲琳",

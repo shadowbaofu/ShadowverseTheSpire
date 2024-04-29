@@ -34,7 +34,7 @@ public class BrandOfMorningStar extends AbstractNeutralCard {
     }
 
     public BrandOfMorningStar() {
-        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.POWER, CardColor.COLORLESS, CardRarity.UNCOMMON, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.POWER, CardColor.COLORLESS, CardRarity.UNCOMMON, CardTarget.SELF);
     }
 
     @Override

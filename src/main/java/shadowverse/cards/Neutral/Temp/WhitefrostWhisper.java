@@ -29,8 +29,8 @@ public class WhitefrostWhisper extends CustomCard {
     public static final String IMG_PATH = "img/cards/WhitefrostWhisper.png";
 
     public WhitefrostWhisper() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Dragon.Enums.COLOR_BROWN, CardRarity.SPECIAL, CardTarget.ENEMY);
-        this.baseDamage = 6;
+        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Dragon.Enums.COLOR_BROWN, CardRarity.SPECIAL, CardTarget.ENEMY);
+        this.baseDamage = 3;
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
         this.exhaust = true;
@@ -50,14 +50,18 @@ public class WhitefrostWhisper extends CustomCard {
         addToBot(new SFXAction("WhitefrostWhisper"));
         addToBot(new VFXAction(new BlizzardEffect(this.magicNumber + 1, AbstractDungeon.getMonsters().shouldFlipVfx()), 0.25F));
         addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
+        boolean hasStatusOrCurse = false;
         for (AbstractCard c : abstractPlayer.hand.group) {
             if (c.type == CardType.STATUS || c.type == CardType.CURSE) {
                 addToBot(new ExhaustSpecificCardAction(c, abstractPlayer.hand));
+                hasStatusOrCurse = true;
             }
         }
-        addToBot(new ApplyPowerAction(abstractMonster, abstractMonster, new WeakPower(abstractMonster, this.magicNumber, false), this.magicNumber));
-        if (abstractMonster.currentHealth < abstractMonster.maxHealth) {
+
+        if (abstractMonster.currentHealth < abstractMonster.maxHealth && !hasStatusOrCurse) {
             addToBot(new GainEnergyAction(1));
+        }else {
+            addToBot(new ApplyPowerAction(abstractMonster, abstractMonster, new WeakPower(abstractMonster, this.magicNumber, false), this.magicNumber));
         }
     }
 

@@ -46,6 +46,7 @@ import shadowverse.powers.RowenPower;
    public void upgrade() {
      if (!this.upgraded) {
        upgradeName();
+       upgradeDamage(3);
        upgradeMagicNumber(1);
        ExhaustiveVariable.upgrade(this, 1);
      } 

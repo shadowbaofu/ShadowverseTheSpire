@@ -36,7 +36,7 @@ public class EdictOfTruth
     public void triggerOnOtherCardPlayed(AbstractCard c) {
         if (c.type == CardType.SKILL) {
             flash();
-            addToBot((AbstractGameAction) new SFXAction("spell_boost"));
+            addToBot(new SFXAction("spell_boost"));
 
             this.magicNumber = ++this.baseMagicNumber;
         }
@@ -53,9 +53,9 @@ public class EdictOfTruth
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         CardCrawlGame.sound.playA("EdictOfTruth", 0.0F);
-        addToBot((AbstractGameAction) new ExpertiseAction((AbstractCreature) abstractPlayer, 10));
+        addToBot(new ExpertiseAction((AbstractCreature) abstractPlayer, 10));
         if (this.magicNumber >= 6) {
-            addToBot((AbstractGameAction) new GainEnergyAction(2));
+            addToBot(new GainEnergyAction(2));
         }
         this.baseMagicNumber = 0;
         this.magicNumber = this.baseMagicNumber;

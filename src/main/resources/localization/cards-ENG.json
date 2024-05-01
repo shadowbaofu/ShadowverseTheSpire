@@ -6403,7 +6403,7 @@
     "NAME": "Iris, Sky Spirit",
     "DESCRIPTION": "Can only Fuse 1 card at a time. NL Retain - Fusion: 1 Forestcraft card. NL If a third card was fused to this card, it becomes *Iris, *Soaring *Spirit. NL  NL --------------------- NL  NL Gain !B! Block. NL If cards were fused to this card, draw 2 cards and add 2 to the number of cards played this turn.",
     "EXTENDED_DESCRIPTION": [
-      " NL (Fused",
+      " NL (Fused ",
       " cards. )"
     ]
   },

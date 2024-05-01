@@ -620,21 +620,21 @@
     "NAME": "Dragon's Fist",
     "FLAVOR": "Kaya wore it on her hands like a glove, fitted with a huge dragon's wrist. It is said that it responds to the strong emotions of the wearer.",
     "DESCRIPTIONS": [
-      "Replaces *Token *of *1st. NL At the start of each combat gain #b3 #yOverflow points. Lose #b1 #yDexterity each turn."
+      "Replaces #yToken #yOf #y1st. NL At the start of each combat gain #b3 #yOverflow points. Lose #b1 #yDexterity each turn."
     ]
   },
   "shadowverse:GreaBOSS": {
     "NAME": "Dragon Amulet",
     "FLAVOR": "A dragon talisman that enhances Grea's abilities. Under the protection of its gems, the Dragon Princess' flames become more intense.",
     "DESCRIPTIONS": [
-      "Replaces *Token *of *1st. NL Start each combat with #b1 Overflow point. At the start of each turn, if #yOverflow is active for you, add 1 #yGrea's #yEmber to your hand."
+      "Replaces #yToken #yOf #y1st. NL Start each combat with #b1 Overflow point. At the start of each turn, if #yOverflow is active for you, add 1 #yGrea's #yEmber to your hand."
     ]
   },
   "shadowverse:InoriBOSS": {
     "NAME": "Inori's Piko Hammer",
-    "FLAVOR": "Inori's favorite hammer. Completely different from its original appearance after being transformed by Homare.",
+    "FLAVOR": "Inori's favorite hammer. Completely different from its original appearance after being transformed by the dragon Homare.",
     "DESCRIPTIONS": [
-      "Replaces *Token *of *1st. NL Start each combat with #b1 Overflow point. Start each combat with all enemies Stunned."
+      "Replaces #yToken #yOf #y1st. NL Start each combat with #b1 Overflow point. Start each combat with all enemies Stunned."
     ]
   }
 }

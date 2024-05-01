@@ -3212,7 +3212,7 @@
   },
   "shadowverse:Mona": {
     "NAME": "Mona, Levin Mage",
-    "DESCRIPTION": "Levin. NL Gain !B! Block and [E]. NL If you have any other Levin cards in your hand, gain extra [E]."
+    "DESCRIPTION": "Levin. NL Gain [E] and !B! Block. NL If you have any other Levin cards in your hand, gain extra [E]."
   },
   "shadowverse:Mena": {
     "NAME": "Mena, Levin Duelist",
@@ -6062,7 +6062,7 @@
   },
   "shadowverse:Romelia": {
     "NAME": "Romelia, Lightning Striker",
-    "DESCRIPTION": "Deal !D! damage. NL Gain 2 Dexterity this turn. NL Countdown 2: At the start of your turn, gain 2 Dexterity and [E] until the end of your turn. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL Gain 2 Dexterity this turn. NL Countdown 2: At the start of your turn, gain [E] and 2 Dexterity until the end of your turn. NL Exhaust."
   },
   "shadowverse:DragonPool": {
     "NAME": "",

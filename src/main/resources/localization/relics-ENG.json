@@ -627,7 +627,7 @@
     "NAME": "Dragon Amulet",
     "FLAVOR": "A dragon talisman that enhances Grea's abilities. Under the protection of its gems, the Dragon Princess' flames become more intense.",
     "DESCRIPTIONS": [
-      "Replaces *Token *of *1st. NL Start each combat with #b1 Overflow point. At the start of each turn, if #yOverflow is active for you, add 1 #yGrea's #Ember to your hand."
+      "Replaces *Token *of *1st. NL Start each combat with #b1 Overflow point. At the start of each turn, if #yOverflow is active for you, add 1 #yGrea's #yEmber to your hand."
     ]
   },
   "shadowverse:InoriBOSS": {

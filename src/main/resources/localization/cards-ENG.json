@@ -1630,8 +1630,8 @@
   },
   "shadowverse:Arisa": {
     "NAME": "Arisa, Evergreen Arrow",
-    "DESCRIPTION": "Whenever you gain Strength, Dexterity or Block, deal !M! damage to ALL enemies. NL Choose: Add a *Gale *Arrow or *Storm *Arrow into your hand. NL If at least 2 other cards were played this turn, add a *Forest *Guardian's *Bow into your hand.",
-    "UPGRADE_DESCRIPTION": "Whenever you gain Strength, Dexterity or Block, deal !M! damage to ALL enemies. NL Choose: Add a *Gale *Arrow+ or *Storm *Arrow+ into your hand. NL If at least 2 other cards were played this turn, add a *Forest *Guardian's *Bow+ into your hand."
+    "DESCRIPTION": "Protagonist NL Whenever you gain Strength, Dexterity or Block, deal !M! damage to ALL enemies. NL Choose: Add a *Gale *Arrow or *Storm *Arrow into your hand. NL If at least 2 other cards were played this turn, add a *Forest *Guardian's *Bow into your hand.",
+    "UPGRADE_DESCRIPTION": " Protagonist NL Whenever you gain Strength, Dexterity or Block, deal !M! damage to ALL enemies. NL Choose: Add a *Gale *Arrow+ or *Storm *Arrow+ into your hand. NL If at least 2 other cards were played this turn, add a *Forest *Guardian's *Bow+ into your hand."
   },
   "shadowverse:NecroTemptation": {
     "NAME": "Allure of Shadows",
@@ -1643,8 +1643,8 @@
   },
   "shadowverse:Luna": {
     "NAME": "Luna, Soul Keeper",
-    "DESCRIPTION": "Add a *Luna's *Doll and an *Allure *of *Shadows to your hand. Necromancy 6: Add an *Evolution *Point and a *Miracle to your hand as well. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Add a *Luna's *Doll+ and an *Allure *of *Shadows+ to your hand. Necromancy 6: Add an *Evolution *Point and a *Miracle to your hand as well. NL Exhaust."
+    "DESCRIPTION": "Protagonist NL Add a *Luna's *Doll and an *Allure *of *Shadows to your hand. Necromancy 6: Add an *Evolution *Point and a *Miracle to your hand as well. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Protagonist NL Add a *Luna's *Doll+ and an *Allure *of *Shadows+ to your hand. Necromancy 6: Add an *Evolution *Point and a *Miracle to your hand as well. NL Exhaust."
   },
   "shadowverse:UnionMagic": {
     "NAME": "Quadra Magic",
@@ -1664,8 +1664,8 @@
   },
   "shadowverse:Isabelle": {
     "NAME": "Isabelle, Intrepid Mage",
-    "DESCRIPTION": "Fusion: Runecraft Attack cards. NL The 1st time cards are fused to this card, put 1 *Quadra *Magic into your hand. If it's the 2nd time, put 1 *Insight into your hand. If it's the 3rd time, put 1 *Crimson *Sorcery into your hand. NL Gain !B! Block. Put 1 *Fate's *Hand into your hand and Spellboost your hand.",
-    "UPGRADE_DESCRIPTION": "Fusion: Runecraft Attack cards. NL The 1st time time cards are fused to this card, put 1 *Quadra *Magic+ into your hand. If it's the 2nd time, put 1 *Insight+ into your hand. If it's the 3rd time, put 1 *Crimson *Sorcery+ into your hand. NL Gain !B! Block. Put 1 *Fate's *Hand+ into your hand and Spellboost your hand."
+    "DESCRIPTION": "Protagonist - Fusion: Runecraft Attack cards. NL The 1st time cards are fused to this card, put 1 *Quadra *Magic into your hand. If it's the 2nd time, put 1 *Insight into your hand. If it's the 3rd time, put 1 *Crimson *Sorcery into your hand. NL Gain !B! Block. Put 1 *Fate's *Hand into your hand then Spellboost your hand.",
+    "UPGRADE_DESCRIPTION": "Protagonist - Fusion: Runecraft Attack cards. NL The 1st time time cards are fused to this card, put 1 *Quadra *Magic+ into your hand. If it's the 2nd time, put 1 *Insight+ into your hand. If it's the 3rd time, put 1 *Crimson *Sorcery+ into your hand. NL Gain !B! Block. Put 1 *Fate's *Hand+ into your hand then Spellboost your hand."
   },
   "shadowverse:Strike_V": {
     "NAME": "Strike",
@@ -1983,8 +1983,8 @@
   },
   "shadowverse:Urias": {
     "NAME": "Urias, Final Vampire",
-    "DESCRIPTION": "Gain !B! Block. NL Add 1 *A *Horrible *Night to your hand. NL If Vengeance is active, draw 1 card. NL If Wrath is active, draw 1 card.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add 1 *A *Horrible *Night+ to your hand. NL If Vengeance is active, draw 1 card. NL If Wrath is active, draw 1 card."
+    "DESCRIPTION": "Protagonist NL Gain !B! Block. NL Add 1 *A *Horrible *Night to your hand. NL If Vengeance is active, draw 1 card. NL If Wrath is active, draw 1 card.",
+    "UPGRADE_DESCRIPTION": "Protagonist NL Gain !B! Block. NL Add 1 *A *Horrible *Night+ to your hand. NL If Vengeance is active, draw 1 card. NL If Wrath is active, draw 1 card."
   },
   "shadowverse:Jormungand": {
     "NAME": "Jormungand",
@@ -2301,8 +2301,8 @@
   },
   "shadowverse:Yuwan": {
     "NAME": "Yuwan, Dimensional Avenger",
-    "DESCRIPTION": "Gain !B! Block. NL Exhaust 1 card in your hand, add a copy of that card to your draw pile and draw 1 card. NL If Resonance has been active 5 or more times this combat, deal !M! damage to a random enemy next turn. NL If 10 or more times, deal !M! damage again.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Exhaust 1 card in your hand, add a copy of that card to your draw pile and draw 1 card. NL Add 1 *Analyzing *Artifact to your hand. NL If Resonance has been active 5 or more times this combat, deal !M! damage to a random enemy next turn. NL If 10 or more times, deal !M! damage again.",
+    "DESCRIPTION": "Protagonist NL Gain !B! Block. NL Exhaust 1 card in your hand, add a copy of that card to your draw pile and draw 1 card. NL If Resonance has been active 5 or more times this combat, deal !M! damage to a random enemy next turn. NL If 10 or more times, deal !M! damage again.",
+    "UPGRADE_DESCRIPTION": "Protagonist NL Gain !B! Block. NL Exhaust 1 card in your hand, add a copy of that card to your draw pile and draw 1 card. NL Add 1 *Analyzing *Artifact to your hand. NL If Resonance has been active 5 or more times this combat, deal !M! damage to a random enemy next turn. NL If 10 or more times, deal !M! damage again.",
     "EXTENDED_DESCRIPTION": [
       " NL ( Resonance has been active ",
       " times.)"
@@ -3832,8 +3832,8 @@
   },
   "shadowverse:Eris": {
     "NAME": "Eris, Atoned Priestess",
-    "DESCRIPTION": "Gain !B! Block. NL Add a *Sphere *Relic to your hand. NL Gain: 'At the end of your turn, randomly place one of the following into your Amulet zone if you don't already have one: NL *Prism *Relic NL *Cylinder *Relic NL *Octarelic' NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add a *Sphere *Relic+ to your hand. NL Gain: At the end of your turn, randomly place one of the following into your Amulet zone if you don't already have one: NL *Prism *Relic+ NL *Cylinder *Relic+ NL *Octarelic+' NL Exhaust."
+    "DESCRIPTION": "Protagonist NL Gain !B! Block. NL Add a *Sphere *Relic to your hand. NL Gain: 'At the end of your turn, randomly place one of the following into your Amulet zone if you don't already have one: NL *Prism *Relic NL *Cylinder *Relic NL *Octarelic' NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Protagonist NL Gain !B! Block. NL Add a *Sphere *Relic+ to your hand. NL Gain: At the end of your turn, randomly place one of the following into your Amulet zone if you don't already have one: NL *Prism *Relic+ NL *Cylinder *Relic+ NL *Octarelic+' NL Exhaust."
   },
   "shadowverse:Saren": {
     "NAME": "Saren, Orphanage Matron",
@@ -4106,8 +4106,8 @@
   },
   "shadowverse:Erika": {
     "NAME": "Erika, Loyal Swordsavant",
-    "DESCRIPTION": " !M! /1. NL Rally 7: Put 1 *Killer *Instincts into your hand (Limit). NL Passive: Deal damage equal to 4 times this Follower's attack to a random enemy and lose 1 Health at the end of your turn. Whenever you play Attacks, summon *Followers or *Amulets, gain +1/+0 this turn.",
-    "UPGRADE_DESCRIPTION": " !M! /1. NL Rally 7: Put 1 *Killer *Instincts into your hand (Limit). NL Rally 15: Add 1 *Erika's *Sleight to hand. NL Passive: Deal damage equal to 4 times this Follower's attack to a random enemy and lose 1 Health at the end of your turn. Whenever you play Attacks, summon *Followers or *Amulets, gain +1/+0 this turn. NL Rally 7: Put 1 *Killer *Instincts into your hand (Limit).",
+    "DESCRIPTION": "Protagonist NL !M! /1. NL Rally 7: Put 1 *Killer *Instincts into your hand (Limit). NL Passive: Deal damage equal to 4 times this Follower's attack to a random enemy and lose 1 Health at the end of your turn. Whenever you play Attacks, summon *Followers or *Amulets, gain +1/+0 this turn.",
+    "UPGRADE_DESCRIPTION": "Protagonist NL !M! /1. NL Rally 7: Put 1 *Killer *Instincts into your hand (Limit). NL Rally 15: Add 1 *Erika's *Sleight to hand. NL Passive: Deal damage equal to 4 times this Follower's attack to a random enemy and lose 1 Health at the end of your turn. Whenever you play Attacks, summon *Followers or *Amulets, gain +1/+0 this turn. NL Rally 7: Put 1 *Killer *Instincts into your hand (Limit).",
     "EXTENDED_DESCRIPTION": [
       "(Rally: ",
       ")"
@@ -5837,7 +5837,7 @@
   },
   "shadowverse:RowenCard": {
     "NAME": "Rowen, Dragon Lance",
-    "DESCRIPTION": "Deal !D! damage. NL Add 1 *Curse *Of *The *Black *Dragon to your hand. NL Enhance 2: Countdown 2: ALL damage you deal is increased by !M! . NL Exhaust !stslib:ex!."
+    "DESCRIPTION": "Protagonist NL Deal !D! damage. NL Add 1 *Curse *Of *The *Black *Dragon to your hand. NL Enhance 2: Countdown 2: ALL damage you deal is increased by !M! . NL Exhaust !stslib:ex!."
   },
   "shadowverse:WildfangDragonewt": {
     "NAME": "Wildfang Dragonewt",
@@ -6058,7 +6058,7 @@
   },
   "shadowverse:Joe": {
     "NAME": "Coach Joe, Fiery Counselor",
-    "DESCRIPTION": "Academic - Crystallize 0: Exhaust 1 card in your hand and add it to the draw pile. NL Add 1 copy of this card to the discard pile. NL Gain 1 Dexterity and draw 1 more card next turn. NL If you exhausted an Academic card, draw 2 more cards next turn. NL NL --------------------- NL NL Gain !B! Block. If you have at least 4 Dexterity, deal !D! damage to ALL enemies. If you have at least 6 Dexterity, deal !M! damage to ALL enemies."
+    "DESCRIPTION": "Academic - Crystallize 0: Exhaust 1 card in your hand and add it to the draw pile. NL Add 1 copy of this card to the discard pile. NL Gain 1 Dexterity and draw 1 more card next turn. NL If you exhausted an Academic card, draw 2 more cards next turn. NL --------------------- NL Gain !B! Block. If you have at least 4 Dexterity, deal !D! damage to ALL enemies. If you have at least 6 Dexterity, deal !M! damage to ALL enemies."
   },
   "shadowverse:Romelia": {
     "NAME": "Romelia, Lightning Striker",
@@ -6441,7 +6441,7 @@
   },
   "shadowverse:GallantDragonewt": {
     "NAME": "Gallant Dragonewt",
-    "DESCRIPTION": "Armed NL Deal !D! damage. NL Add 1 *Draconic *Weapon to your hand. NL If 4 or more Armed attacks have been played this combat，double the damage and add an Armed attack with the highest cost played this combat to your hand. It gains Retain and Exhaust.",
+    "DESCRIPTION": "Armed NL Deal !D! damage. NL Add 1 *Draconic *Weapon to your hand. NL If 4 or more Armed attacks have been played this combat, double the damage and add an Armed attack with the highest cost played this combat to your hand. It gains Retain and Exhaust.",
     "EXTENDED_DESCRIPTION": [
       " NL （Played ",
       " Armed attack cards. )"
@@ -6743,8 +6743,8 @@
   },
     "shadowverse:Elena": {
     "NAME": "Elena, Defier of Destiny",
-    "DESCRIPTION": "Deal !D! damage. NL Discard 1 non-Colorless card. Add the corresponding Form (Demon, Wraith, Echo, Deva) or Shadowverse Hero (Arisa, Erika, Isabelle, Rowen, Luna, Urias, Eris, Yuwan) to your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. If it's the 5th turn or later, deal 50 more damage. NL Discard 1 non-Colorless card. Add the corresponding Form (Demon, Wraith, Echo, Deva) or Shadowverse Hero (Arisa, Erika, Isabelle, Rowen, Luna, Urias, Eris, Yuwan) to your hand. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL Discard 1 non-Colorless card. Add the corresponding Form or Protagonist card to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. If it's the 5th turn or later, deal 50 more damage. NL Discard 1 non-Colorless card. Add the corresponding Form or Protagonist card to your hand. NL Exhaust."
   },
   "shadowverse:BrothersUnited2": {
     "NAME": "Brothers' Pride",

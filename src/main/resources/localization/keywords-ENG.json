@@ -143,14 +143,14 @@
       "NAMES": [
         "shadows"
       ],
-      "DESCRIPTION": "Increases when playing cards or triggering specific effects. Spend #yShadows to trigger #yNecromancy effects."
+      "DESCRIPTION": "Increases when playing and #yDestroying cards or triggering specific effects. Spend #yShadows to trigger #yNecromancy effects."
     },
     {
       "PROPER_NAME": "Reanimate",
       "NAMES": [
         "reanimate"
       ],
-      "DESCRIPTION": "Randomly add a copy of 1 of the highest-cost Attacks played this combat that equal the Reanimate value to your hand, and it costs 0 this turn. NL (Won't trigger on Reanimated cards with #yReanimate is 0.)"
+      "DESCRIPTION": "Randomly add a copy of 1 of the highest-cost Attacks played this combat equal to the Reanimate value to your hand, and it costs 0 this turn. NL (Won't trigger on Reanimated cards with #yReanimate 0.)"
     },
     {
       "PROPER_NAME": "Last Words",
@@ -207,7 +207,7 @@
       "NAMES": [
         "maneuver"
       ],
-      "DESCRIPTION": "Cards with #yManeuver can't be played directly. If another Attack with a cost greater or equal than the #yManeuver value is played while this card is in hand, the Attack card will lose its effects and #yExhaust, then this card can be played. If this card is #yExhausted, the Attack card returns to your hand and costs 0 this turn. NL TIP: Avoid playing cards that cost more than the Manuever value if one is in your hand."
+      "DESCRIPTION": "Cards with #yManeuver can't be played directly. If another Attack with a cost greater than or equal to the #yManeuver value is played while this card is in hand, the Attack card will lose its effects and #yExhaust, then this card can be played. If this card is #yExhausted, the Attack card returns to your hand and costs 0 this turn. NL TIP: Avoid playing cards that cost more than the Manuever value if one is in your hand."
     },
     {
       "PROPER_NAME": "Cannon Hermit Crab",
@@ -215,7 +215,7 @@
         "cannon hermit crab",
         "cannon_hermit_crab"
       ],
-      "DESCRIPTION": "Passive: Deal 6 damage to a random enemy and lose 1 Health by the end of your turn. Gain 6 #yBlock. If #yResonance is active or you have the Power #yNaterran #yGreat #yTree, summon a new #yCannon #yHermit #yCrab with half of the current state (round up the value). NL When #yEvoked, deal damage and gain #yBlock repeatedly until its Health reaches 0."
+      "DESCRIPTION": "Passive: Deal 6 damage to a random enemy and lose 1 Health by the end of your turn. Gain 6 #yBlock. If #yResonance is active or you have the Power #yNaterran #yGreat #yTree, summon a new #yCannon #yHermit #yCrab with half of the current stats (rounded up). NL When #yEvoked, deal damage and gain #yBlock repeatedly until its Health reaches 0."
     },
     {
       "PROPER_NAME": "Power Damage Immune",
@@ -223,7 +223,7 @@
         "power damage immune",
         "power_damage_immune"
       ],
-      "DESCRIPTION": "Reduce damage from Power to 0."
+      "DESCRIPTION": "Reduce damage from Powers and similar effects to 0."
     },
     {
       "PROPER_NAME": "Skybound Art",
@@ -260,7 +260,7 @@
       "NAMES": [
         "knight"
       ],
-      "DESCRIPTION": "1/1 NL Passive: Deal damage equal to 3 times its Attack to a random enemy and lose 1 Health by the end of your turn. NL When #yEvoked, repeat passive effects until its Health reaches 0. NL TIP: Evoking Followers will cause them to repeat their Passive effects for each point of Health they had."
+      "DESCRIPTION": "1/1 NL Passive: Deal damage equal to 3 times its Attack to a random enemy and lose 1 Health by the end of your turn. NL When #yEvoked, repeat passive effects until its Health reaches 0."
     },
     {
       "PROPER_NAME": "Heavy Knight",
@@ -337,7 +337,7 @@
         "naht's henchmen",
         "naht's_henchmen"
       ],
-      "DESCRIPTION": "Enemy, approximately 30 HP. Puts a #yDutiful #ySteed into your hand when killed."
+      "DESCRIPTION": "Enemy, has approximately 30 HP. Puts a #yDutiful #ySteed into your hand when killed."
     },
     {
       "PROPER_NAME": "Loot",
@@ -396,7 +396,7 @@
       "NAMES": [
         "festive"
       ],
-      "DESCRIPTION": "Trait."
+      "DESCRIPTION": "Trait. 24th Expansion Edge of Paradise cards, from The Empyreal Inn story. Represented by #yTaketsumi."
     },
     {
       "PROPER_NAME": "Front Desk Frog",
@@ -417,7 +417,7 @@
     {
       "PROPER_NAME": "Heroic",
       "NAMES": [
-        "Heroic"
+        "heroic"
       ],
       "DESCRIPTION": "Trait. Many #yHeroic cards have #yDistress #yCall abilities, allowing them to spring into action and come to the rescue!"
     },
@@ -430,41 +430,64 @@
       "DESCRIPTION": "#yDistress #yCall effects activate when at least one of the following conditions is met: NL You have taken damage since the end of your last turn. NL Your current HP is no greater than 25% of your max HP. NL You are currently afflicted with a debuff (such as #yWeak or #yVulnerable). NL You have a #yCurse in your hand or #yStatus that is not an #yEvolution #yPoint."
     },
     {
+      "PROPER_NAME": "Chess",
+      "NAMES": [
+        "chess"
+      ],
+      "DESCRIPTION": "Chess Runecraft cards used by Shion Otosaka. Has additional effects when played alongside other Chess cards. Revolves around summoning as many #yMagical #yPawns as possible."
+    },
+    {
+      "PROPER_NAME": "Protagonist",
+      "NAMES": [
+        "protagonist"
+      ],
+      "DESCRIPTION": "The eight heroes of Shadowverse from the Kingdom of Aleister. Represented by #yArisa, #yErika, #yIsabelle, #yRowen, #yLuna, #yUrias, #yEris and #yYuwan."
+    },
+    {
+      "PROPER_NAME": "Peerless Warrior",
+      "NAMES": [
+        "peerless warrior",
+        "peerless_warrior"
+      ],
+      "DESCRIPTION": "1/1 NL Passive: At the end of your turn, deal damage equal to its Attack to a random enemy, gain Block equal to its Health and lose 1 Health. NL Does NOT lose health if it's Attack or Health is at least 20. NL When #yEvoked, summons a copy of itself."
+    },
+    {
       "PROPER_NAME": "Condemned",
       "NAMES": [
         "condemned"
       ],
-      "DESCRIPTION": "Trait. Represented by the Convicts and Enforcers of Azvaldt."
+      "DESCRIPTION": "Trait. 27th Expansion Eightfold Abyss: Azvaldt cards. Represented by the Convicts and Enforcers of the Prison of Azvaldt."
     },
     {
       "NAMES": [
-        "Cannoneer"
+        "cannoneer"
       ],
       "DESCRIPTION": "1/1 NL Passive: At the end of your turn, deal damage equal to 3 times its Attack to a random enemy and lose 1 Health. NL When #yEvoked, repeat passive effects until Health reaches 0. NL When Health reaches 0, put a #yGilded #yBoots into your hand."
     },
     {
       "NAMES": [
-        "Academic"
+        "academic"
       ],
-      "DESCRIPTION": "Trait. 28th Expansion《Academy of Ages》 cards."
+      "DESCRIPTION": "Trait. 28th Expansion Academy of Ages cards, from the Lessons in Lainecrest story. Represented by cards such as #yLucius."
     },
     {
       "NAMES": [
-        "Overflow"
+        "overflow"
       ],
       "DESCRIPTION": "Overflow becomes active when you gain 3 Overflow points. You gain [E] at the start of every turn."
     },
     {
       "NAMES": [
-        "Full Overflow"
+        "full overflow",
+        "full_overflow"
       ],
       "DESCRIPTION": "When you gain 3 Overflow points while Overflow is active, Full Overflow becomes active for you. Gain [E] [E] at the start of every turn."
     },
     {
       "NAMES": [
-        "Armed"
+        "armed"
       ],
-      "DESCRIPTION": "Armed. The trait used by Light Tenryu, the protagonist of Shadowverse Flame. After playing an Armed card, you will gain 1 Block each time it is Armed."
+      "DESCRIPTION": "Armed. The trait used by Light Tenryu, the protagonist of Shadowverse Flame. Armed cards can gain this trait multiple times, gaining 1 Block each time when played."
     }
   ]
 }

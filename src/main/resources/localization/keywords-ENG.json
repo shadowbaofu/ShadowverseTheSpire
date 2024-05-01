@@ -430,28 +430,6 @@
       "DESCRIPTION": "#yDistress #yCall effects activate when at least one of the following conditions is met: NL You have taken damage since the end of your last turn. NL Your current HP is no greater than 25% of your max HP. NL You are currently afflicted with a debuff (such as #yWeak or #yVulnerable). NL You have a #yCurse in your hand or #yStatus that is not an #yEvolution #yPoint."
     },
     {
-      "PROPER_NAME": "Chess",
-      "NAMES": [
-        "chess"
-      ],
-      "DESCRIPTION": "Chess Runecraft cards used by Shion Otosaka. Has additional effects when played alongside other Chess cards. Revolves around summoning as many #yMagical #yPawns as possible."
-    },
-    {
-      "PROPER_NAME": "Protagonist",
-      "NAMES": [
-        "protagonist"
-      ],
-      "DESCRIPTION": "The eight heroes of Shadowverse from the Kingdom of Aleister. Represented by #yArisa, #yErika, #yIsabelle, #yRowen, #yLuna, #yUrias, #yEris and #yYuwan."
-    },
-    {
-      "PROPER_NAME": "Peerless Warrior",
-      "NAMES": [
-        "peerless warrior",
-        "peerless_warrior"
-      ],
-      "DESCRIPTION": "1/1 NL Passive: At the end of your turn, deal damage equal to its Attack to a random enemy, gain Block equal to its Health and lose 1 Health. NL Does NOT lose health if it's Attack or Health is at least 20. NL When #yEvoked, summons a copy of itself."
-    },
-    {
       "PROPER_NAME": "Condemned",
       "NAMES": [
         "condemned"
@@ -488,6 +466,28 @@
         "armed"
       ],
       "DESCRIPTION": "Armed. The trait used by Light Tenryu, the protagonist of Shadowverse Flame. Armed cards can gain this trait multiple times, gaining 1 Block each time when played."
-    }
+    },
+    {
+    "PROPER_NAME": "Chess",
+      "NAMES": [
+        "chess"
+      ],
+      "DESCRIPTION": "Chess Runecraft cards used by Shion Otosaka. Has additional effects when played alongside other Chess cards. Revolves around summoning as many #yMagical #yPawns as possible."
+    },
+    {
+      "PROPER_NAME": "Protagonist",
+      "NAMES": [
+        "protagonist"
+      ],
+      "DESCRIPTION": "The eight heroes of Shadowverse from the Kingdom of Aleister. Represented by #yArisa, #yErika, #yIsabelle, #yRowen, #yLuna, #yUrias, #yEris and #yYuwan."
+    },
+    {
+      "PROPER_NAME": "Peerless Warrior",
+      "NAMES": [
+        "peerless warrior",
+        "peerless_warrior"
+      ],
+      "DESCRIPTION": "1/1 NL Passive: At the end of your turn, deal damage equal to its Attack to a random enemy, gain Block equal to its Health and lose 1 Health. NL Does NOT lose health if it's Attack or Health is at least 20. NL When #yEvoked, summons a copy of itself."
+    },
   ]
 }

@@ -1631,7 +1631,7 @@
   "shadowverse:Arisa": {
     "NAME": "Arisa, Evergreen Arrow",
     "DESCRIPTION": "Protagonist NL Whenever you gain Strength, Dexterity or Block, deal !M! damage to ALL enemies. NL Choose: Add a *Gale *Arrow or *Storm *Arrow into your hand. NL If at least 2 other cards were played this turn, add a *Forest *Guardian's *Bow into your hand.",
-    "UPGRADE_DESCRIPTION": " Protagonist NL Whenever you gain Strength, Dexterity or Block, deal !M! damage to ALL enemies. NL Choose: Add a *Gale *Arrow+ or *Storm *Arrow+ into your hand. NL If at least 2 other cards were played this turn, add a *Forest *Guardian's *Bow+ into your hand."
+    "UPGRADE_DESCRIPTION": "Protagonist NL Whenever you gain Strength, Dexterity or Block, deal !M! damage to ALL enemies. NL Choose: Add a *Gale *Arrow+ or *Storm *Arrow+ into your hand. NL If at least 2 other cards were played this turn, add a *Forest *Guardian's *Bow+ into your hand."
   },
   "shadowverse:NecroTemptation": {
     "NAME": "Allure of Shadows",

@@ -6699,7 +6699,7 @@
   },
   "shadowverse:MechamagicalRhino": {
     "NAME": "Mechamagical Rhino",
-    "DESCRIPTION": "AF NL Deal !D! damage. NL Last_Words: Add 3 copies of *Mechamagical *Rhino to your discard pile. NL Exhaust."
+    "DESCRIPTION": "AF NL Deal !D! damage. NL Last_Words: When played, add 3 copies of *Mechamagical *Rhino to your discard pile. NL Exhaust."
   },
   "shadowverse:ElectricRhino": {
     "NAME": "Electric Rhino",

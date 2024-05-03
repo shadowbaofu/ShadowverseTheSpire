@@ -1352,7 +1352,7 @@
   },
   "shadowverse:Nicola2": {
     "NAME": "Nicola, Forever Forbidden",
-    "DESCRIPTION": "Machina. NL Deal !D! damage. NL Add a copy of this card to your discard pile. NL Increase this card's damage by !M! times the number of Attack cards in your exhausted pile. NL Exhaust."
+    "DESCRIPTION": "Machina. NL Deal !D! damage. NL Add a copy of this card to your discard pile. NL Increase this card's damage by !M! times the number of Attack cards in your exhaust pile. NL Exhaust."
   },
   "shadowverse:Nicola3": {
     "NAME": "Nicola, Enduring Steward",
@@ -4387,7 +4387,7 @@
   },
   "shadowverse:CelestialArtifact": {
     "NAME": "Celestial Artifact",
-    "DESCRIPTION": "AF - Accelerate 0: Put 1 AF card from your draw pile into your hand. If there are 6 AF cards with different names in your exhausted pile, put 1 more. NL  NL --------------------- NL  NL Deal !M! damage X times. X equals the number of AF cards with different names in your exhaust pile."
+    "DESCRIPTION": "AF - Accelerate 0: Put 1 AF card from your draw pile into your hand. If there are 6 AF cards with different names in your exhaust pile, put 1 more. NL  NL --------------------- NL  NL Deal !M! damage. Increase this card's damage by !M! for each AF with different names in your exhaust pile."
   },
   "shadowverse:Yggdrasil": {
     "NAME": "Yggdrasil",
@@ -4515,7 +4515,7 @@
   },
   "shadowverse:Vyrmedea": {
     "NAME": "Vyrmedea, Synthetic Voice",
-    "DESCRIPTION": "AF. NL Gain !B! Block. NL Burial_Rite 1: Put a *Keenedge *Artifact into your hand and change its cost to 0 until the end of the turn. NL If you have 6 or more different AF cards in your exhausted pile, gain 1 Strength, Dexterity and Blur at the end of your turn."
+    "DESCRIPTION": "AF. NL Gain !B! Block. NL Burial_Rite 1: Put a *Keenedge *Artifact into your hand and change its cost to 0 until the end of the turn. NL If you have 6 or more different AF cards in your exhaust pile, gain 1 Strength, Dexterity and Blur at the end of your turn."
   },
   "shadowverse:Chastity": {
     "NAME": "Absolute Chastity",

@@ -5962,7 +5962,7 @@
   },
   "shadowverse:DragonplateWarrior": {
     "NAME": "Dragonplate Warrior",
-    "DESCRIPTION": "Gain !B! Block. NL Whenever you play a non-Attack card, deal !D! damage to ALL enemies for the rest of this combat. NL Exhaust."
+    "DESCRIPTION": "Gain !B! Block. NL Whenever you play a non-Attack card, deal !M! damage to ALL enemies for the rest of this combat. NL Exhaust."
   },
   "shadowverse:IniquitousLindworm": {
     "NAME": "Iniquitous Lindworm",

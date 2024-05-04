@@ -856,15 +856,15 @@
   "shadowverse:BearminatorPower": {
     "NAME": "Bearminator",
     "DESCRIPTIONS": [
-      "At the end of your turn, if you have any Energy remaining, deal #b to all enemies.",
-      " damage"
+      "At the end of your turn, if you have any Energy remaining, deal #b",
+      " damage to all enemies"
     ]
   },
   "shadowverse:YuwanPower": {
     "NAME": "Yuwan, Dimensional Avenger",
     "DESCRIPTIONS": [
-      "At the start of your turn，if you have entered #yResonance #b5 times or more, deal #b to a random enemy. Repeat if #b10 times or more.",
-      " damage."
+      "At the start of your turn，if you have entered #yResonance #b5 times or more, deal #b",
+      " damage to a random enemy. Repeat if you entered #yResonance #b10 times or more."
     ]
   },
   "shadowverse:WhiteArtifactPower": {

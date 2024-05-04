@@ -1827,14 +1827,14 @@
   "shadowverse:SupportCannonPower": {
     "NAME": "Support Cannon",
     "DESCRIPTIONS": [
-      "At the end of your turn, discard all Attack cards in your hand and for each card discarded deal",
+      "At the end of your turn, discard all Attack cards in your hand and for each card discarded deal ",
       " Damage to a random enemy"
     ]
   },
    "shadowverse:MagicalBishopPower": {
     "NAME": "Magical Bishop",
     "DESCRIPTIONS": [
-      "Whenever you play a Chess card, deal #b",
+      "Whenever you play a Chess card, deal #b ",
       " Damage to all enemies."
     ]
   },
@@ -1866,7 +1866,7 @@
 "shadowverse:RahabPower": {
     "NAME": "Rahab",
     "DESCRIPTIONS": [
-      "At the start of your turn, gain Strength equal to your remaining energy. #b",
+      "At the start of your turn, gain Strength equal to your remaining energy. #b ",
       " Energy leftover. "
     ]
  },
@@ -1879,22 +1879,22 @@
    "shadowverse:DracomancerRitesPower": {
     "NAME": "Dracomancer's Rites",
     "DESCRIPTIONS": [
-      "Whenever a card is discarded from your hand, draw #b",
+      "Whenever a card is discarded from your hand, draw #b ",
       "cards "
     ]
   },
    "shadowverse:GoldenDragonDenPower": {
     "NAME": "Golden Dragon's Den",
     "DESCRIPTIONS": [
-      "At the start of your turn, randomly discard #b",
-      " cards with the lowest cost in your hand and draw #b",
+      "At the start of your turn, randomly discard #b ",
+      " cards with the lowest cost in your hand and draw #b ",
       " cards. "
     ]
   },
    "shadowverse:PolyphonicRoarPower": {
     "NAME": "Polyphonic Roar",
     "DESCRIPTIONS": [
-      "At the start of your turn, add #b",
+      "At the start of your turn, add #b ",
       " #yStorm #yDragon(s) that cost 0 to your hand.",
       " #yStorm #yDragon+(s) that cost 0 to your hand. "
     ]
@@ -1908,7 +1908,7 @@
    "shadowverse:LumiorePower": {
     "NAME": "Lumiore, Prestigious Gold",
     "DESCRIPTIONS": [
-      "For each card you discard from your hand, deal #b",
+      "For each card you discard from your hand, deal #b ",
       " points of Damage. "
     ]
   },
@@ -1945,7 +1945,7 @@
    "shadowverse:WildfangDragonewtPower": {
     "NAME": "Wildfang Dragonewt",
     "DESCRIPTIONS": [
-      "Whenever a card is discarded from your hand this turn, a random enemy takes #b",
+      "Whenever a card is discarded from your hand this turn, a random enemy takes #b ",
       " Damage. "
     ]
   },

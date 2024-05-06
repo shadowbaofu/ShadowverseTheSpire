@@ -5953,7 +5953,7 @@
   },
   "shadowverse:DragonDevouringDread": {
     "NAME": "Dragon-Devouring Dread",
-    "DESCRIPTION": "Fusion: Attacks that cost at least 3. NL The 1st time you fuse cards to this card, gain 1 Energy. NL The 2nd time, gain 1 Overflow point. NL The 3rd time, draw 2 cards. NL NL --------------- NL NL Exhaust ALL Status and Curses in your hand. NL Apply !M! Weak and Vulnerable to ALL enemies. NL Gain !M! Strength. NL Add 1 more Strength, Weak and Vulnerable for each card Fused. NL Exhaust.",
+    "DESCRIPTION": "Fusion: Attacks that cost at least 3. NL The 1st time you fuse cards to this card, gain 1 Energy. NL The 2nd time, gain 1 Overflow point. NL The 3rd time, draw 2 cards.  NL --------------- NL Exhaust ALL Status and Curses in your hand. NL Apply !M! Weak and Vulnerable to ALL enemies. NL Gain !M! Strength. NL Add 1 more Strength, Weak and Vulnerable for each card Fused. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Retain - Fusion: Attacks that cost at least 3. NL The 1st time you fuse cards to this card, gain 1 Energy. NL The 2nd time, gain 1 Overflow point. NL The 3rd time, draw 2 cards.  NL ---------------- NL  Exhaust ALL Status and Curses in your hand. NL Apply !M! Weak and Vulnerable to ALL enemies. NL Gain !M! Strength. NL Add 1 more Strength, Weak, and Vulnerable for each card Fused. NL Exhaust."
   },
   "shadowverse:NewfoundAllies": {

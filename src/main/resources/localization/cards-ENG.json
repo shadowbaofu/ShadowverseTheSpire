@@ -418,7 +418,7 @@
   },
   "shadowverse:RearriveOne": {
     "NAME": "Second Advent of the Omens",
-    "DESCRIPTION": "Deal !D! damage to a random enemy. If there are no duplicate cards in your draw pile, gain [E], draw 1 card, and put 2 *Evolution *Points into your hand."
+    "DESCRIPTION": "Deal !D! damage to a random enemy. If there are no duplicate cards in your draw pile, gain 1 Energy, draw 1 card, and put 2 *Evolution *Points into your hand."
   },
   "shadowverse:Mysteria": {
     "NAME": "Mysteria, Magic Founder",

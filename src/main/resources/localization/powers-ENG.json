@@ -815,7 +815,7 @@
   "shadowverse:MonoPower": {
     "NAME": "Mono, Immortal Garnet",
     "DESCRIPTIONS": [
-      "Whenever you gain Strength, Dexterity or heal HP, increase this Power's count by 1. When this Power's count reaches 3, trigger the additional effects of #yMono, #yImmortal #yGarnet."
+      " Automatically active while #yMono, #yImmortal #yGarnet is in your deck. Count increases by 1 upon gaining Strength, Dexterity or HP. When the count reaches 3, you may trigger the additional effects of #yMono, #yImmortal #yGarnet by playing that card to upgrade all cards in hand and double your damage for the turn."
     ]
   },
   "shadowverse:PrimeArtifactPower": {
@@ -828,8 +828,8 @@
   "shadowverse:AcceleratiumPower": {
     "NAME": "Acceleratium",
     "DESCRIPTIONS": [
-      "Whenever you play an #yAF card, gain [E]. Add #b1 #yVoid to your discard pile for every #b2 #yAF card played. #b",
-      " Lose this effect at the end of your turn."
+      "Whenever you play an #yAF card, gain 1 Energy. Add #b1 #yVoid to your discard pile every #b2 #yAF cards played. In #b turns",
+      " Lose this effect."
     ]
   },
   "shadowverse:AugmentationBestowalPower": {
@@ -856,15 +856,15 @@
   "shadowverse:BearminatorPower": {
     "NAME": "Bearminator",
     "DESCRIPTIONS": [
-      "At the end of your turn, if you have any Energy remaining, deal #b to all enemies.",
-      " damage"
+      "At the end of your turn, if you have any Energy remaining, deal #b",
+      " damage to all enemies"
     ]
   },
   "shadowverse:YuwanPower": {
     "NAME": "Yuwan, Dimensional Avenger",
     "DESCRIPTIONS": [
-      "At the start of your turn，if you have entered #yResonance #b5 times or more, deal #b to a random enemy. Repeat if #b10 times or more.",
-      " damage."
+      "At the start of your turn，if you have entered #yResonance #b5 times or more, deal #b",
+      " damage to a random enemy. Repeat if you entered #yResonance #b10 times or more."
     ]
   },
   "shadowverse:WhiteArtifactPower": {
@@ -1005,7 +1005,7 @@
   "shadowverse:LionSanctuaryPower": {
     "NAME": "Holy Lion Sanctum",
     "DESCRIPTIONS": [
-      "Immune to debuffs. When you're attacked, deal #b",
+      "Immune to debuffs. When you take damage, even by non-Attack cards, deal #b",
       " damage back."
     ]
   },
@@ -1144,7 +1144,7 @@
   "shadowverse:LeonidasWaitPower": {
     "NAME": "Leonidas",
     "DESCRIPTIONS": [
-      "Reduce by #b1 whenever you lose HP or by the end of your turn. Gain #b",
+      "Reduce by #b1 whenever you lose HP or at the end of your turn. Gain #b",
       " #yLeonidas's #yResolve when you lose this effect."
     ]
   },
@@ -1562,7 +1562,7 @@
   "shadowverse:NornPower": {
     "NAME": "Norn, Arbiter of Worlds",
     "DESCRIPTIONS": [
-      "Whenever Resonance becomes active for you, gain [E]."
+      "Whenever Resonance becomes active for you, gain 1 Energy."
     ]
   },
   "shadowverse:CassimPower": {
@@ -1827,14 +1827,14 @@
   "shadowverse:SupportCannonPower": {
     "NAME": "Support Cannon",
     "DESCRIPTIONS": [
-      "At the end of your turn, discard all Attack cards in your hand and for each card discarded deal",
+      "At the end of your turn, discard all Attack cards in your hand and for each card discarded deal ",
       " Damage to a random enemy"
     ]
   },
    "shadowverse:MagicalBishopPower": {
     "NAME": "Magical Bishop",
     "DESCRIPTIONS": [
-      "Whenever you play a Chess card, deal #b",
+      "Whenever you play a Chess card, deal #b ",
       " Damage to all enemies."
     ]
   },
@@ -1866,7 +1866,7 @@
 "shadowverse:RahabPower": {
     "NAME": "Rahab",
     "DESCRIPTIONS": [
-      "At the start of your turn, gain Strength equal to your remaining energy. #b",
+      "At the start of your turn, gain Strength equal to your remaining energy. #b ",
       " Energy leftover. "
     ]
  },
@@ -1879,22 +1879,22 @@
    "shadowverse:DracomancerRitesPower": {
     "NAME": "Dracomancer's Rites",
     "DESCRIPTIONS": [
-      "Whenever a card is discarded from your hand, draw #b",
+      "Whenever a card is discarded from your hand, draw #b ",
       "cards "
     ]
   },
    "shadowverse:GoldenDragonDenPower": {
     "NAME": "Golden Dragon's Den",
     "DESCRIPTIONS": [
-      "At the start of your turn, randomly discard #b",
-      " cards with the lowest cost in your hand and draw #b",
+      "At the start of your turn, randomly discard #b ",
+      " cards with the lowest cost in your hand and draw #b ",
       " cards. "
     ]
   },
    "shadowverse:PolyphonicRoarPower": {
     "NAME": "Polyphonic Roar",
     "DESCRIPTIONS": [
-      "At the start of your turn, add #b",
+      "At the start of your turn, add #b ",
       " #yStorm #yDragon(s) that cost 0 to your hand.",
       " #yStorm #yDragon+(s) that cost 0 to your hand. "
     ]
@@ -1908,7 +1908,7 @@
    "shadowverse:LumiorePower": {
     "NAME": "Lumiore, Prestigious Gold",
     "DESCRIPTIONS": [
-      "For each card you discard from your hand, deal #b",
+      "For each card you discard from your hand, deal #b ",
       " points of Damage. "
     ]
   },
@@ -1945,7 +1945,7 @@
    "shadowverse:WildfangDragonewtPower": {
     "NAME": "Wildfang Dragonewt",
     "DESCRIPTIONS": [
-      "Whenever a card is discarded from your hand this turn, a random enemy takes #b",
+      "Whenever a card is discarded from your hand this turn, a random enemy takes #b ",
       " Damage. "
     ]
   },
@@ -2107,7 +2107,7 @@
     "NAME": "Laina, Heaven's Judge",
     "DESCRIPTIONS": [
       "At the end of your turn, put 2 #yDivine #yMinisters to your draw and discard piles.",
-      "Triggers effects based on X, equal to the number of #yDivine #yMinisters played or destroyed. NL #g4 or less: Deal #b7 damage to ALL enemies. Gain #b1 #yBlock. NL #y5 or more: Deal #b21 damage to ALL enemies. Gain #b1 #yTemporary HP. NL #b10 or more: Deal #b50 damage to ALL enemies. Heal 1 HP. NL #r20 or more: Deal #b500 damage to ALL enemies. Heal 1 HP. NL X is",
+      "Triggers effects based on X, equal to the number of #yDivine #yMinisters played or destroyed. NL #g4 or less: Deal #b7 damage to ALL enemies. Gain #b1 #yBlock. NL #y5 or more: Deal #b21 damage to ALL enemies. Gain #b1 #yTemporary HP. NL #b10 or more: Deal #b50 damage to ALL enemies. Heal 1 HP. NL #r20 or more: Deal #b500 damage to ALL enemies. Heal 1 HP. NL X is ",
       " . "
     ]
   }

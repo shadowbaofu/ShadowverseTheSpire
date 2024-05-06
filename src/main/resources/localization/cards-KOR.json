@@ -6735,5 +6735,295 @@
   "shadowverse:Kaguya": {
     "NAME": "카구야",
     "DESCRIPTION": "내 마법진 전체의 카운트다운을  !M! 진행시킨다. NL *덧없는 *달 1장을 마법진 칸에 넣는다."
+  },
+  "shadowverse:Elena": {
+    "NAME": "因果に抗う者・エレナ",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 無色以外のカード1枚を捨て、それの色によってシャドウバース主人公カード1枚を手札に加える。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION":"!D! ダメージを与える。 NL 無色以外のカード1枚を捨て、それの色によってシャドウバース主人公カード1枚を手札に加える。 NL 5ターン目以降なら、さらに50ダメージを与える。 NL 廃棄 。"
+  },
+  "shadowverse:BrothersUnited2": {
+    "NAME": "威風の結束",
+    "DESCRIPTION": "自然 NL !D! ダメージを与える。 NL *ナテラの大樹 1枚を手札に加える。 NL 連携 10 :さらに !M! ダメージを与える。 NL ",
+    "EXTENDED_DESCRIPTION": [
+      "（連携数:",
+      ")"
+    ]
+  },
+  "shadowverse:HasteningConviction": {
+    "NAME": "信念の加速",
+    "DESCRIPTION": "!D! ダメージを与える。 NL この戦闘中にプレイした *信念の加速 が3枚上なら、敵全体に !D! ダメージを与える。 NL これの スペルブースト が3回以上なら、 *信念の加速 1枚を手札に加える。 NL 廃棄 。",
+    "EXTENDED_DESCRIPTION": [
+      " NL ( スペルブースト は",
+      "回)"
+    ]
+  },
+  "shadowverse:Maiser2": {
+    "NAME": "アクセルキーパー・マイザー",
+    "DESCRIPTION": "ヒーロー NL *信念の加速 2枚を手札に加える。 NL これの スペルブースト が3回以上なら、1枚を追加する。",
+    "EXTENDED_DESCRIPTION": [
+      " NL ( スペルブースト は",
+      "回)"
+    ]
+  },
+  "shadowverse:FriendsForever2": {
+    "NAME": "絆の協心",
+    "DESCRIPTION": "*プロダクトマシーン 2枚を手札に加える。 NL この戦闘中にプレイした 機械 カードが10枚以上なら、HPを3回復し、 *EP と *奇跡 それぞれ1枚を手札に加える。 NL エセリアル 。 NL 廃棄 。"
+  },
+  "shadowverse:OvergrownWretch": {
+    "NAME": "蔓延る異形",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 廃棄 。"
+  },
+  "shadowverse:HollowGovernance": {
+    "NAME": "空虚の統制",
+    "DESCRIPTION": "增加3张 *蔓延的异形 到手中。 NL 廃棄 。"
+  },
+  "shadowverse:Illganeau2": {
+    "NAME": "アドバンスホロウ・イルガンノ",
+    "DESCRIPTION": "敵全体は 筋力 と 敏捷性 を1失う。 NL 連携 20:これを 廃棄 して *空虚の統制 1枚を手札に加える。 NL ",
+    "EXTENDED_DESCRIPTION": [
+      "（連携数:",
+      ")"
+    ]
+  },
+  "shadowverse:Briarmaiden": {
+    "NAME": "荊棘の乙女",
+    "DESCRIPTION": "!B! ブロック を得る 。 NL このターン、アタックをプレイする度、 トゲ 1を得る。",
+    "UPGRADE_DESCRIPTION": "!B! ブロック を得る 。 NL このターン、アタックをプレイする度、 トゲ 1を得る。 NL *フェアリー 2枚を手札に加える。 NL この戦闘中にプレイした ストライク 以外のエルフアタックカードが10枚以上なら、 トゲ 1を得る。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Xは",
+      " 。)"
+    ]
+  },
+  "shadowverse:ForbiddenPower": {
+    "NAME": "禁絶の圧倒",
+    "DESCRIPTION": "機械 ・ 保留 ・ 融合 : 機械 カード。 NL 敵全体に !D! ダメージを与える。このダメージは手札の 機械 カード1枚につき、+ !M! する。 NL このターン中にこれに融合していたら、ダメージをさらに1回与える。 NL 廃棄 。"
+  },
+  "shadowverse:Nicola4": {
+    "NAME": "禁絶の光・ニコラ",
+    "DESCRIPTION": "機械 NL  !D! ダメージを与える。 *禁絶の圧倒 1枚を手札に加える。 NL ラストワード :これが 廃棄 される時、手札にある 機械 カードが3枚以上なら、これの *複製品 1枚を手札に加える。 NL 廃棄 。"
+  },
+  "shadowverse:JoySecured": {
+    "NAME": "守られた幸福",
+    "DESCRIPTION": "機械 NL 次に受けるダメージを0にする。 NL 手札に 機械 アタックがあるなら、 筋力 1と 敏捷性 3を得、次のターン開始時にブロック値を失わない。 NL 廃棄 。"
+  },
+  "shadowverse:ManmaruRe": {
+    "NAME": "頑強のマンマル1号",
+    "DESCRIPTION": "機械 NL !B! ブロック を得る 。 NL 谢幕曲 :被 廃棄 时，抽1张牌。 NL 廃棄 。"
+  },
+  "shadowverse:Aenea2": {
+    "NAME": "紫紺の創造者・エンネア",
+    "DESCRIPTION": "機械 NL !B! ブロック を得る 。 NL *頑強のマンマル1号 1枚を手札に加える。 NL この戦闘中にプレイした 機械 カードが10枚以上なら、手札の 機械 アタックに「ラストワード :これが 廃棄 される時、 *プロダクトマシーン 1枚を手札に加える」を付与する。 *守られた幸福 1枚を手札に加える。",
+    "EXTENDED_DESCRIPTION": [
+      " NL （プレイした 機械 カードは",
+      "枚)"
+    ]
+  },
+  "shadowverse:GarnetRelease": {
+    "NAME": "真紅の解放",
+    "DESCRIPTION": "機械 NL 升级 所有 機械 攻击牌。 NL 增加对应数量的 *进化点 到廃棄堆中。 NL *真红挑战者・莫诺 本场战斗的基础伤害变为36且获得「果廃棄堆中 *进化点 数量为10张以上，打出时本回合攻击伤害翻倍」效果。"
+  },
+  "shadowverse:Mono3": {
+    "NAME": "真紅の挑戦者・モノ",
+    "DESCRIPTION": "機械 NL  !D! ダメージを与える。 NL 廃棄札にある *EP が5枚以上なら、 *真紅の解放 1枚を手札に加える。",
+    "EXTENDED_DESCRIPTION": [
+      "機械 NL  !D! ダメージを与える。 NL 廃棄札にある *EP が10枚以上なら、このターン、アタックダメージを倍にする。"
+    ]
+  },
+  "shadowverse:CursedFuror2": {
+    "NAME": "暴威の克服",
+    "DESCRIPTION": "*ナテラの大樹 1枚を手札に加える。 NL ランダムな敵に 弱体化 と 脱力 !M! を与える。 NL この戦闘中にプレイした *ナテラの大樹 が10枚以上なら、このターン中に受けるダメージを-1する。",
+    "EXTENDED_DESCRIPTION": [
+      " NL （プレイした *ナテラの大樹 は",
+      "枚)"
+    ]
+  },
+  "shadowverse:CrystalshardDragonewt": {
+    "NAME": "クリスタルドラゴニュート",
+    "DESCRIPTION": "!B! ブロック を得る 。 NL アーティファクト 1を得る。 NL 自分は「 *ナテラの大樹 をプレイする度、それがこのターン中に1枚目なら、ランダムな敵に 弱体化 と 脱力 2を与える;2枚目なら、敵全体に10ダメージ、HPを2回復する;3枚目なら、 筋力 と 敏捷性 3、エナジー1を得る」を持つ。"
+  },
+  "shadowverse:ShadowRejection": {
+    "NAME": "影の拒絶",
+    "DESCRIPTION": "自然 NL ターン開始時、敵はHP最大値の5%を失う。この戦闘中にプレイした *ナテラの大樹 が5枚以上なら、5%ではなく、15%。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION":"自然 NL ターン開始時、敵はHP最大値の5%を失う。この戦闘中にプレイした *ナテラの大樹 が5枚以上なら、5%ではなく、15%。 NL 敵全体は 筋力 と 敏捷性 1失う。 NL 廃棄 。",
+    "EXTENDED_DESCRIPTION": [
+      " NL （プレイした *ナテラの大樹 は",
+      "枚)"
+    ]
+  },
+  "shadowverse:Valdain3": {
+    "NAME": "呪縛の閃影・ヴァイディ",
+    "DESCRIPTION": "自然 NL !B! ブロック を得る 。 NL *影の拒絶 1枚を手札に加える。 NL 限定 :敵全体は 筋力 と 敏捷性 2失う。 NL この戦闘中にプレイした *ナテラの大樹 が10枚以上なら、 !D! ダメージを与える。",
+    "EXTENDED_DESCRIPTION": [
+      " NL （已打出 ",
+      " 张 *那塔拉的大树 )"
+    ]
+  },
+  "shadowverse:NewfoundAllies2": {
+    "NAME": "未知との融和",
+    "DESCRIPTION": "自然 ・ 限定 ・ 融合 : スターター以外のドラゴンカード。 NL これに 融合 する時、 *ナテラの大樹 1枚を手札に加える。 NL  NL --------------------- NL  NL !B! ブロック を得る 。 NL *ナテラの大樹 1枚を手札に加える。"
+  },
+  "shadowverse:SanctumOfWings": {
+    "NAME": "フェザーサンクチュアリ",
+    "DESCRIPTION": "自然 ・ カウントダウン 2 : NL *壮麗なる隼 1枚を手札に加える。 NL *ナテラの大樹 1枚を手札に加える。",
+    "UPGRADE_DESCRIPTION":"自然 ・ カウントダウン 2 : NL *壮麗なる隼+ 1枚を手札に加える。 NL  *ナテラの大樹 1枚を手札に加える。"
+  },
+  "shadowverse:YuwanFervor": {
+    "NAME": "ユアンの激情",
+    "DESCRIPTION": "*エンシェントアーティファクト と *アナライズアーティファクト それぞれ1枚を手札に加える。"
+  },
+  "shadowverse:BelphometAuthority": {
+    "NAME": "ベルフォメットの支配",
+    "DESCRIPTION": "敵全体に9ダメージを与える。 NL 手札にコスト3以上のカードがあるなら、ダメージを倍にする。"
+  },
+  "shadowverse:RebelAgainstFate2": {
+    "NAME": "宿命との対峙",
+    "DESCRIPTION": "*ユアンの激情 NL *ベルフォメットの支配 NL チョイス したカードをプレイする。 NL 廃棄 。"
+  },
+  "shadowverse:Mother2": {
+    "NAME": "寵愛の君",
+    "DESCRIPTION": "自然 NL 毒 !M! を2回与える。 NL *ナテラの大樹 2枚を手札に加える。 NL この戦闘中にプレイした *ナテラの大樹 が5枚以上なら、 ブロック !B! を得、HPを4回復する。"
+  },
+  "shadowverse:V2": {
+    "NAME": "高機動魔導車・V",
+    "DESCRIPTION": "保留 ・ 操縦 2以下。 NL !D! ダメージを与える 。 NL 操縦によって廃棄されたアタックを アップグレード する。 NL 廃棄。"
+  },
+  "shadowverse:RevolutionShot": {
+    "NAME": "レボリューションショット",
+    "DESCRIPTION": "!D! ダメージを与える。 NL ターン終了時、これがプレイされていないなら、これを 廃棄 してHPを2回復する。 NL 廃棄。"
+  },
+  "shadowverse:Spector2": {
+    "NAME": "リベリオンデュオ・バニー＆バロン",
+    "DESCRIPTION": "!D! ダメージを与える。 NL *レボリューションショット 1枚を手札に加える。手札に *EP があるなら、1枚を追加する。 NL 次のターン開始時、プレイされるまでコストが0の *高機動魔導車・V 1枚を手札に加える。 NL 廃棄。"
+  },
+  "shadowverse:SorceryInSolidarity2": {
+    "NAME": "信頼の魔術",
+    "DESCRIPTION": "機械 カードをプレイする度、コストを‐1する。 NL *リペアモード 2枚を手札に加える。 NL このターン、 機械 カードをプレイする度、ランダムな敵に5ダメージを与える。"
+  },
+  "shadowverse:AzureBlast": {
+    "NAME": "蒼の放出",
+    "DESCRIPTION": "機械 NL ランダムな敵に !D! ダメージを与える。これを4回繰り返す。 NL 廃棄 。"
+  },
+  "shadowverse:Tetra4": {
+    "NAME": "蒼の先導者・テトラ",
+    "DESCRIPTION": "機械 NL !B! ブロック を得る 。 NL *リペアモード 1枚を手札に加える。 NL 自分は「 機械 カードをプレイする度、それがターン中に1枚目なら、エナジー1を得る;2枚目なら、ランダムな敵に8ダメージ;3枚目なら、 *蒼の放出 1枚を手札に加える」を持つ。"
+  },
+  "shadowverse:RebornAnimals": {
+    "NAME": "リボーンアニマルズ",
+    "DESCRIPTION": "自然 NL  !D! ダメージを与える。 NL ラストワード :これが 廃棄 される時、次の能力からランダムに1つが働く: NL (1) !B! ブロック を得る 。 NL (2)ランダムに廃棄札にあるコスト1のアタックの複製1枚を手札に加える。 NL 廃棄 。"
+  },
+  "shadowverse:Lubelle2": {
+    "NAME": "再生の親愛・ルベル",
+    "DESCRIPTION": "自然 NL !D! ダメージを与える。 *リボーンアニマルズ 1枚を手札に加える。 NL ネクロマンス 10:1枚ではなく3枚。 NL ネクロマンス 20:1枚ではなく4枚、それらのダメージを倍にする。 NL エセリアル 。"
+  },
+  "shadowverse:FullMetalZombie": {
+    "NAME": "フルメタルゾンビ",
+    "DESCRIPTION": "機械 NL 機械 カードをプレイする度、コストを‐1する。 NL  !D! ダメージを与える。毒 !M! を与える。",
+    "UPGRADE_DESCRIPTION": "機械 ・ 保留 NL 機械 カードをプレイする度、コストを‐1する。 NL  !D! ダメージを与える。毒 !M! を与える。"
+  },
+  "shadowverse:Atem": {
+    "NAME": "アテム",
+    "DESCRIPTION": " !D! ダメージを与える。 NL この戦闘中に ネクロマンス した数が20以上なら、 [E] [E] を得る。",
+    "UPGRADE_DESCRIPTION": " !D! ダメージを与える。 NL 墓場 10を得る。 NL この戦闘中に ネクロマンス した数が20以上なら、 [E] [E] を得る。"
+  },
+  "shadowverse:SuccessionOfBalance": {
+    "NAME": "遺志の継承",
+    "DESCRIPTION": "機械 NL  !D! ダメージを与える。 NL *プロダクトマシーン 1枚を手札に加える。"
+  },
+  "shadowverse:FieryReproach": {
+    "NAME": "断罪の燃焼",
+    "DESCRIPTION": "ランダムな敵に !D! ダメージを与える。 NL アミュレット1枚を発動する。 NL この戦闘中に発動されたアミュレットが10枚以上なら、敵全体に !D! ダメージを与える。 NL 廃棄 。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (発動されたアミュレットは",
+      "枚)"
+    ]
+  },
+  "shadowverse:Selena2": {
+    "NAME": "ジャッジメントシスター・セリーナ",
+    "DESCRIPTION": "!B! ブロック を得る 。 NL *断罪の燃焼 2枚を手札に加える。 NL 手札に *EP があるなら、 [E] を得る。"
+  },
+  "shadowverse:BackToNature": {
+    "NAME": "自然への回帰",
+    "DESCRIPTION": "自然 NL 筋力 と 敏捷性 Xを得る。 NL Xはこれを含めて、このターン中にプレイした自分の 自然 カードの枚数である。 NL ランダムな敵に !D! ダメージを与える。 NL 廃棄 。"
+  },
+  "shadowverse:Ladica3": {
+    "NAME": "大自然の抱擁・ラティカ",
+    "DESCRIPTION": "自然 NL !D! ダメージを与える。 NL 1ターンに3回まで、自然 カードをプレイする度、エナジー1を得る。 NL それが4枚目なら、 *自然への回帰 1枚を手札に加える。"
+  },
+  "shadowverse:GarnetWaltz2": {
+    "NAME": "真紅のロンド",
+    "DESCRIPTION": "敵全体に !D! ダメージを与える。カード2枚を引く。 NL 復習 か 狂乱 なら、さらにダメージを1回与え、HPを4回復し、エナジー1を得る。 NL 廃棄 。"
+  },
+  "shadowverse:SigilOfBalance": {
+    "NAME": "規律の道標",
+    "DESCRIPTION": "保留 NL お互いのHPを !M! 回復する。 NL お互いのデバフを全て取り除く。 NL 廃棄 。"
+  },
+  "shadowverse:Marlone3": {
+    "NAME": "均衡の導き・マーロン",
+    "DESCRIPTION": "敵全体に !D! ダメージを与える。 NL 手札のスキルとアミュレット以外のカードを全て廃棄する。 NL 限定 *規律の道標 1枚を手札に加える。"
+  },
+  "shadowverse:Meowskers": {
+    "NAME": "実直の参謀・ムニャール",
+    "DESCRIPTION": "自然 ・ 結晶 0 ・ カウントダウン 1 : NL これを手札に加え、このターンこれのコストは0。 NL  NL --------------------- NL  NL  !D! ダメージを与える。 NL ランダムな敵に !D! ダメージ、HPを2回復する。 NL *ナテラの大樹 1枚を手札に加える。 NL この戦闘中に発動されたアミュレットが5枚以上かつこれをプレイする時に使用したコストが0ではないなら、エナジー1を得る。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (発動されたアミュレットは",
+      "枚)"
+    ]
+  },
+  "shadowverse:MajorPrayers2": {
+    "NAME": "輝く願い",
+    "DESCRIPTION": "アミュレット をプレイするたび、コストを-1する。 NL それが *ナテラの大樹 なら、さらに-1する。 NL アミュレット1枚を発動する。 NL ランダムな敵に 弱体化 と 脱力 2 を与える。"
+  },
+  "shadowverse:Rola2": {
+    "NAME": "フェイタルドラグーン・ローラ",
+    "DESCRIPTION": "機械 NL !B! ブロック を得る 。 NL 覚醒ポイント 1を得る。 NL 敵全体に !D! ダメージを与える。 NL 手札にある元々のコストが3以上のカードが3枚以上なら、ダメージを+ !M! する。"
+  },
+  "shadowverse:RosyCourtMagician": {
+    "NAME": "ローズパレスメイジ",
+    "DESCRIPTION": "スペルブースト :コストを1減らす。 NL !B! ブロック を得る 。 NL アーティファクト 1を得る。 NL HPを3回復する。 NL 1回 スペルブースト する。 NL 廃棄 。"
+  },
+  "shadowverse:NeoTisiphone2": {
+    "NAME": "殺戮の蹂躙・ティシポネー",
+    "DESCRIPTION": "機械 NL !D! ダメージを !M! 回与える。 NL 廃棄 。"
+  },
+  "shadowverse:NeoAlector2": {
+    "NAME": "不鎮の蹂躙・アレークト",
+    "DESCRIPTION": "機械 NL !B! ブロック を得る 。 NL このターン中にダメージを受ける度、HPを2回復する。 NL 廃棄 。"
+  },
+  "shadowverse:NeoMegaera2": {
+    "NAME": "憤怒の蹂躙・メガイラ",
+    "DESCRIPTION": "機械 NL 敵全体に !D! ダメージを与える。 NL カードを5枚引く。 NL 廃棄 。"
+  },
+  "shadowverse:BelphometCard4": {
+    "NAME": "既知の掌握者・ベルフォメット",
+    "DESCRIPTION": "機械 ・ 融合 : 機械 カード。 NL これに 融合 した時、それが1回目かつ残りエナジーが1なら、エナジー1消費して *殺戮の蹂躙・ティシポネー 1枚を手札に加える。 NL 2回目かつ残りエナジーが2なら、エナジー2消費して、 *不鎮の蹂躙・アレークト 1枚を手札に加える。 NL NL ---------- NL NL !B! ブロック を得る 。 NL これに 融合 した枚数が2以上なら、 *殺戮の蹂躙・ティシポネー 、 *不鎮の蹂躙・アレークト 、 憤怒の蹂躙・メガイラ それぞれ1枚を手札に加える。"
+  },
+  "shadowverse:Technolord2": {
+    "NAME": "始原の機械神",
+    "DESCRIPTION": "アクセラレート 0: !D! ダメージを与える。カードを1枚引く。 NL  NL --------------------- NL  NL 敵全体に !M! ダメージを与える。Xが1増えるたび、ダメージを+ !M! する。 NL Xは（これを含めず）このバトル中にプレイした自分の 機械カード の枚数である。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Xは",
+      ")"
+    ]
+  },
+  "shadowverse:ChaoticChimera": {
+    "NAME": "混濁の魔獅子",
+    "DESCRIPTION": "狂乱 なら 融合 できる。 NL 融合 :スターター以外のカード。 NL これに 融合 した時、1枚につきコストを-1する。 NL  NL --------------------- NL  NL !B! ブロック を得る 。カードを3枚引く。 NL 敵全体に !D! ダメージを与える。HPを3回復する。 NL 廃棄 。"
+  },
+  "shadowverse:Bayleon": {
+    "NAME": "王者の曙光・ベイリオン",
+    "DESCRIPTION": "自然 NL !B! ブロック を得る 。 NL Xが10以上なら、これを アップグレード する。 NL Xはこの戦闘中にプレイした *ナテラの大樹 の数と 連携 数の合計である。",
+    "UPGRADE_DESCRIPTION":"自然 NL  !D! ダメージを与える，!B! ブロック を得る 。 NL 自分は「1ターンに1度、 *ナテラの大樹 をプレイする時、 *光の剣閃 1枚を手札に加える」を持つ。 NL ダウングレード 。",
+    "EXTENDED_DESCRIPTION": [
+      "（Xは",
+      ")"
+    ]
+  },
+  "shadowverse:LuminousBlade": {
+    "NAME": "光の剣閃",
+    "DESCRIPTION": "自然 NL 捨て札にある 自然 アタック1枚を選択して、 筋力 と 敏捷性 1を得る。 NL Xが20以上なら、さらに1を得る。 NL Xはこの戦闘中にプレイした *ナテラの大樹 の数と 連携 数の合計である。 NL  *王者の曙光・ベイリオン を選択していたら、ランダムな敵に !D! ダメージを与える。 NL 廃棄 。",
+    "EXTENDED_DESCRIPTION": [
+      "（Xは",
+      ")"
+    ]
   }
 }

@@ -171,6 +171,7 @@ public class WitchPool extends AbstractBanPool {
         Spellboost1.addCard(new Ogler());
         Spellboost1.addCard(new OmenOfTruth());
         Spellboost1.addCard(new ZealotOfTruth());
+        Spellboost1.addCard(new RosyCourtMagician());
         Spellboost2.addCard(new AbsoluteZeroBlade());
         Spellboost2.addCard(new Concentration());
         Spellboost2.addCard(new EdictOfTruth());

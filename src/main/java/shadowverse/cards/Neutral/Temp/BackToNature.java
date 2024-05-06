@@ -28,7 +28,7 @@ public class BackToNature
 
     public BackToNature() {
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Elf.Enums.COLOR_GREEN, CardRarity.SPECIAL, CardTarget.ALL_ENEMY);
-        this.damage = 10;
+        this.baseDamage = 10;
         this.exhaust = true;
         this.tags.add(AbstractShadowversePlayer.Enums.NATURAL);
     }

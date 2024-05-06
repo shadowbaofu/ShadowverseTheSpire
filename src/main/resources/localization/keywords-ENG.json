@@ -488,6 +488,6 @@
         "peerless_warrior"
       ],
       "DESCRIPTION": "1/1 NL Passive: At the end of your turn, deal damage equal to its Attack to a random enemy, gain Block equal to its Health and lose 1 Health. NL Does NOT lose health if it's Attack or Health is at least 20. NL When #yEvoked, summons a copy of itself."
-    },
+    }
   ]
 }

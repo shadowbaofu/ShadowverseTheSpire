@@ -51,6 +51,8 @@ public class Rola extends CustomCard implements BranchableUpgradeCard {
 
     public int ex;
 
+    private int branch;
+
     public Rola() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Dragon.Enums.COLOR_BROWN, CardRarity.RARE, CardTarget.SELF);
         this.baseBlock = 6;
@@ -58,6 +60,7 @@ public class Rola extends CustomCard implements BranchableUpgradeCard {
         this.tags.add(AbstractShadowversePlayer.Enums.MACHINE);
         this.jokePortrait = new TextureAtlas.AtlasRegion(LEADER_SKIN_VERSION, 0, 0, LEADER_SKIN_VERSION.getWidth(), LEADER_SKIN_VERSION.getHeight());
         this.baseCost = cost;
+        this.enhanceCost = 3;
         this.exCost = cost;
         this.exCostForTurn = cost;
         this.exFreeOnce = false;
@@ -71,9 +74,8 @@ public class Rola extends CustomCard implements BranchableUpgradeCard {
 
     @Override
     public void update() {
-        super.update();
-        if (chosenBranch() == 0){
-            if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT && AbstractDungeon.player != null) {
+        if (branch == 0){
+            if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT) {
                 if (Shadowverse.Enhance(enhanceCost)) {
                     if (this.ex == 0) {
                         this.exCost = this.cost;
@@ -93,6 +95,7 @@ public class Rola extends CustomCard implements BranchableUpgradeCard {
                 }
             }
         }
+        super.update();
     }
 
 
@@ -195,6 +198,7 @@ public class Rola extends CustomCard implements BranchableUpgradeCard {
                 Rola.this.baseDamage = 21;
                 Rola.this.upgradedDamage = true;
                 Rola.this.initializeDescription();
+                Rola.this.branch = 0;
             }
         });
         list.add(new UpgradeBranch() {
@@ -214,6 +218,7 @@ public class Rola extends CustomCard implements BranchableUpgradeCard {
                 Rola.this.baseMagicNumber = 11;
                 Rola.this.magicNumber = Rola.this.baseMagicNumber;
                 Rola.this.upgradedMagicNumber = true;
+                Rola.this.branch = 1;
             }
         });
         return list;

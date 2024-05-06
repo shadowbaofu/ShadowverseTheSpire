@@ -2108,5 +2108,54 @@
       "X에 따라 능력 변경. X는 사용하거나 발동시킨 #y천명의 #y집행자 수 합계. NL #g4 장 이하:적 전체에게 피해 #b7 , #y방어도를 #b1 얻는다. NL #y5 장 이상:적 전체에게 피해 #b21 , #y임시 #y체력을 #b1 얻는다.NL #b10 장 이상:적 전체에게 피해 #b50 , 체력을 #b1 회복한다. NL #r20 장 이상:적 전체에게 피해 #b500 , 체력을  #b1 회복한다. NL X는",
       " ."
     ]
+  },
+  "shadowverse:BriarmaidenPower": {
+    "NAME": "荊棘の乙女",
+    "DESCRIPTIONS": [
+      "このターン、アタックをプレイする度、 #yトゲ #b",
+      " を得る。"
+    ]
+  },
+  "shadowverse:CrystalshardDragonewtPower": {
+    "NAME": "クリスタルドラゴニュート",
+    "DESCRIPTIONS": [
+      "ナテラの大樹 をプレイする度、それがこのターン中に #g1 枚目なら、ランダムな敵に #b",
+      " の #y脱力 と #y弱体化 を与える; #b2 枚目なら、敵全体に #b",
+      " ダメージ、HPを #b",
+      " 回復する; #r3 枚目なら、 #b",
+      " の #y筋力 と #y敏捷性 、 #b",
+      " のエナジーを得る。"
+    ]
+  },
+  "shadowverse:ShadowRejectionPower": {
+    "NAME": "影之拒绝",
+    "DESCRIPTIONS": [
+      "ターン開始時、HP最大値の #b5% を失う。この戦闘中にプレイした #yナテラの大樹 が #b5 枚以上なら、 #b5% ではなく、 #b15% "
+    ]
+  },
+  "shadowverse:NextTurnV2": {
+    "NAME": "ラストワード:リベリオンデュオ・バニー＆バロン",
+    "DESCRIPTIONS": [
+      "ターン開始時、 #b",
+      " 枚の #y高機動魔導車・V を手札に加える。"
+    ]
+  },
+  "shadowverse:Tetra4Power": {
+    "NAME": "蒼の先導者・テトラ",
+    "DESCRIPTIONS": [
+      "機械カードをプレイする度、それがターン中に #b1 枚目なら、エナジー #b1 を得る; #b2 枚目なら、ランダムな敵に8ダメージ;3枚目なら、 #y蒼の放出 #b1 枚を手札に加える。"
+    ]
+  },
+  "shadowverse:NeoAlector2Power": {
+    "NAME": "不鎮の蹂躙・アレークト",
+    "DESCRIPTIONS": [
+      "ダメージを受ける度、HPを #b2 回復する。"
+    ]
+  },
+  "shadowverse:BayleonPower": {
+    "NAME": "王者の曙光・ベイリオン",
+    "DESCRIPTIONS": [
+      "1ターンに1度、 #yナテラの大樹 をプレイする時、 #y光の剣閃 #b1 枚を手札に加える。"
+    ]
   }
 }

@@ -43,7 +43,7 @@ public class Ladica extends CustomCard implements BranchableUpgradeCard {
     private static AbstractCard embrace = new LadicaEmbrace();
     private static AbstractCard back = new BackToNature();
 
-    private int naterranCount;
+    private static int naterranCount;
 
     public Ladica() {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Elf.Enums.COLOR_GREEN, CardRarity.RARE, CardTarget.ENEMY);
@@ -136,13 +136,13 @@ public class Ladica extends CustomCard implements BranchableUpgradeCard {
         } else if (chosenBranch() == 2) {
             if (c.hasTag(AbstractShadowversePlayer.Enums.NATURAL)) {
                 naterranCount++;
-            }
-            if (naterranCount < 4) {
-                addToBot(new GainEnergyAction(1));
-            }
-            if (naterranCount == 4) {
-                addToBot(new SFXAction("Ladica3_Eff"));
-                addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
+                if (naterranCount < 4) {
+                    addToBot(new GainEnergyAction(1));
+                }
+                if (naterranCount == 4) {
+                    addToBot(new SFXAction("Ladica3_Eff"));
+                    addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
+                }
             }
         }
     }

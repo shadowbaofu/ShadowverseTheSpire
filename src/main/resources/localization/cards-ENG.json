@@ -3730,7 +3730,7 @@
   "shadowverse:RealmOfRepose": {
     "NAME": "Realm of Repose",
     "DESCRIPTION": "If no Attacks have been played this turn, any damage you would receive is reduced to 3. NL Countdown 2: Lose this effect. NL Ethereal. NL Banish.",
-    "UPGRADE_DESCRIPTION": "If no Attacs have been played this turn, any damage you would receive is reduced to 3. NL Countdown 2: Lose this effect. NL Banish."
+    "UPGRADE_DESCRIPTION": "If no Attacks have been played this turn, any damage you would receive is reduced to 3. NL Countdown 2: Lose this effect. NL Banish."
   },
   "shadowverse:EternalDispair": {
     "NAME": "Perpetual Despair",

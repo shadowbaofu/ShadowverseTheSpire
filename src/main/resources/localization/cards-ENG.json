@@ -418,7 +418,7 @@
   },
   "shadowverse:RearriveOne": {
     "NAME": "Second Advent of the Omens",
-    "DESCRIPTION": "Deal !D! damage to a random enemy. If there are no duplicate cards in your draw pile, gain [E], draw 1 card, and put 2 *Evolution *Points into your hand."
+    "DESCRIPTION": "Deal !D! damage to a random enemy. If there are no duplicate cards in your draw pile, gain 1 Energy, draw 1 card, and put 2 *Evolution *Points into your hand."
   },
   "shadowverse:Mysteria": {
     "NAME": "Mysteria, Magic Founder",
@@ -3142,8 +3142,8 @@
   },
   "shadowverse:Johann": {
     "NAME": "Johann, Ironforged Hero",
-    "DESCRIPTION": "Machina. Heroic. NL Whenever you play a Machina card, subtract 1 from this card's cost. NL Deal !D! damage. Whenever you play a Machina card this turn, gain !M! Block.",
-    "UPGRADE_DESCRIPTION": "Machina. Heroic. NL Whenever you play a Machina card, subtract 1 from this card's cost. NL Deal !D! damage. Whenever you play a Machina card this turn, gain !M! Block. NL Retain"
+    "DESCRIPTION": "Machina - Heroic. NL Whenever you play a Machina card, subtract 1 from this card's cost. NL Deal !D! damage. Whenever you play a Machina card this turn, gain !M! Block.",
+    "UPGRADE_DESCRIPTION": "Machina - Heroic. NL Whenever you play a Machina card, subtract 1 from this card's cost. NL Deal !D! damage. Whenever you play a Machina card this turn, gain !M! Block. NL Retain"
   },
   "shadowverse:Grayson": {
     "NAME": "Grayson, Rocket Blader",
@@ -3730,7 +3730,7 @@
   "shadowverse:RealmOfRepose": {
     "NAME": "Realm of Repose",
     "DESCRIPTION": "If no Attacks have been played this turn, any damage you would receive is reduced to 3. NL Countdown 2: Lose this effect. NL Ethereal. NL Banish.",
-    "UPGRADE_DESCRIPTION": "If no Attacs have been played this turn, any damage you would receive is reduced to 3. NL Countdown 2: Lose this effect. NL Banish."
+    "UPGRADE_DESCRIPTION": "If no Attacks have been played this turn, any damage you would receive is reduced to 3. NL Countdown 2: Lose this effect. NL Banish."
   },
   "shadowverse:EternalDispair": {
     "NAME": "Perpetual Despair",
@@ -5953,7 +5953,7 @@
   },
   "shadowverse:DragonDevouringDread": {
     "NAME": "Dragon-Devouring Dread",
-    "DESCRIPTION": "Fusion: Attacks that cost at least 3. NL The 1st time you fuse cards to this card, gain 1 Energy. NL The 2nd time, gain 1 Overflow point. NL The 3rd time, draw 2 cards. NL NL --------------- NL NL Exhaust ALL Status and Curses in your hand. NL Apply !M! Weak and Vulnerable to ALL enemies. NL Gain !M! Strength. NL Add 1 more Strength, Weak and Vulnerable for each card Fused. NL Exhaust.",
+    "DESCRIPTION": "Fusion: Attacks that cost at least 3. NL The 1st time you fuse cards to this card, gain 1 Energy. NL The 2nd time, gain 1 Overflow point. NL The 3rd time, draw 2 cards.  NL --------------- NL Exhaust ALL Status and Curses in your hand. NL Apply !M! Weak and Vulnerable to ALL enemies. NL Gain !M! Strength. NL Add 1 more Strength, Weak and Vulnerable for each card Fused. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Retain - Fusion: Attacks that cost at least 3. NL The 1st time you fuse cards to this card, gain 1 Energy. NL The 2nd time, gain 1 Overflow point. NL The 3rd time, draw 2 cards.  NL ---------------- NL  Exhaust ALL Status and Curses in your hand. NL Apply !M! Weak and Vulnerable to ALL enemies. NL Gain !M! Strength. NL Add 1 more Strength, Weak, and Vulnerable for each card Fused. NL Exhaust."
   },
   "shadowverse:NewfoundAllies": {
@@ -6371,7 +6371,7 @@
   },
   "shadowverse:FlameNGlass3": {
     "NAME": "Flame and Glass, United",
-    "DESCRIPTION": "Deal !D! damage. Gain !B! Block. NL Last Words: When this card is Exhausted, gain 1 Flame and Glass. "
+    "DESCRIPTION": "Deal !D! damage. Gain !B! Block. NL Last Words: When this card is played or Exhausted, gain 'If you did not lose HP or take damage this turn, put 1 *Flame *and *Glass in your hand next turn."
   },
   "shadowverse:Rogers": {
     "NAME": "Rogers, Ruler Of The Seas",
@@ -6621,13 +6621,13 @@
   },
   "shadowverse:Amaterasu": {
     "NAME": "Amaterasu, Clearsky Goddess",
-    "DESCRIPTION": "Gain !B! Block. NL Last_Words: When Exhausted, heal 1 HP and add *Tsukuyomi, *Stormcloud *Deity to your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Last_Words: When Exhausted, heal 1 HP and add *Tsukiyomi, *Stormcloud *Deity+ to your hand. NL Exhaust."
+    "DESCRIPTION": "Gain !B! Block. NL Last_Words: When Exhausted, heal 1 HP and add *Tsukuyomi, *Stormcloud *Deity to your hand at the start of your next turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Last_Words: When Exhausted, heal 1 HP and add *Tsukiyomi, *Stormcloud *Deity+ to your hand at the start of your next turn. NL Exhaust."
   },
   "shadowverse:Tsukuyomi": {
     "NAME": "Tsukuyomi, Stormcloud Deity",
-    "DESCRIPTION": "Deal !D! damage. NL Last_Words: When Exhausted, deal 1 damage to ALL enemies and add *Amaterasu, *Clearsky *Goddess+ to your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Last_Words: When Exhausted, deal 1 damage to ALL enemies and add *Amaterasu, *Clearsky *Goddess+ to your hand. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL Last_Words: When Exhausted, deal 1 damage to ALL enemies and add *Amaterasu, *Clearsky *Goddess+ to your hand at the start of your next turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Last_Words: When Exhausted, deal 1 damage to ALL enemies and add *Amaterasu, *Clearsky *Goddess+ to your hand at the start of your next turn. NL Exhaust."
   },
   "shadowverse:MoonAndSun": {
     "NAME": "Twofold Grace",
@@ -6890,7 +6890,7 @@
   },
   "shadowverse:V2": {
     "NAME": "Val, Speedy Magicar",
-    "DESCRIPTION": "Retain - Manuever 2. NL Deal !D! damage. NL Upgrade the card used to make this card Manueverable. NL Exhaust."
+    "DESCRIPTION": "Retain - Maneuver 2. NL Deal !D! damage. NL Upgrade the card used to make this card Manueverable. NL Exhaust."
   },
   "shadowverse:RevolutionShot": {
     "NAME": "Revolutionaries' Shot",
@@ -7000,7 +7000,7 @@
   },
   "shadowverse:BelphometCard4": {
     "NAME": "Belphomet, Loretaker",
-    "DESCRIPTION": "Machina - Fusion: Machina cards. NL The 1st time you Fuse to this card, use 1 Energy and add *Tisiphone, *Malignance *Razed to your hand. NL The 2nd time, use 2 energy to add *Alecto, *Dissonance *Razed to your hand. NL NL ---------- NL NL Gain !B! Block. NL If at least 2 cards were Fused to this card, add *Tisiphone, *Malignance *Razed, *Alecto, *Dissonance *Razed, and *Megaera, *Indignance *Razed to your hand."
+    "DESCRIPTION": "Machina - Fusion: Machina cards. NL The 1st time you Fuse to this card, use 1 Energy and add *Tisiphone, *Malignance *Razed to your hand. NL The 2nd time, use 2 energy to add *Alecto, *Dissonance *Razed to your hand. NL ---------- NL Gain !B! Block. NL If at least 2 cards were Fused to this card, add *Tisiphone, *Malignance *Razed, *Alecto, *Dissonance *Razed, and *Megaera, *Indignance *Razed to your hand."
   },
   "shadowverse:Technolord2": {
     "NAME": "Technolord: Origin",
@@ -7017,9 +7017,9 @@
   "shadowverse:Bayleon": {
     "NAME": "Bayleon, Shining Sovereign",
     "DESCRIPTION": "Natura NL Gain !B! Block. NL If X is at least 10, upgrade this card. NL X equals your Rally count plus the number of *Naterran *Great *Trees played this combat. ",
-    "UPGRADE_DESCRIPTION":"Natura NL Deal !D! damage and gain !B! Block. NL Gain 'Once per turn, when you play a *Naterran *Great *Tree, add a *Luminous *Blade to your hand.' NL (Downgrade once played.)",
+    "UPGRADE_DESCRIPTION": "Natura NL Deal !D! damage and gain !B! Block. NL Gain 'Once per turn, when you play a *Naterran *Great *Tree, add a *Luminous *Blade to your hand.' NL (Downgrade once played.)",
     "EXTENDED_DESCRIPTION": [
-      "（X is ",
+      "（ X is ",
       " )"
     ]
   },
@@ -7027,7 +7027,7 @@
     "NAME": "Luminous Blade",
     "DESCRIPTION": "Natura NL Choose a Natura Attack card from the discard pile. Gain 1 Strength and Dexterity. NL If X is at least 20, gain 1 more Strength and Dexterity. NL X equals your Rally count plus the number of *Naterran *Great *Trees played this combat. NL If *Bayleon, *Shining *Sovereign was chosen, deal !D! damage to a random enemy. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
-      "（X is ",
+      "（ X is ",
       " )"
     ]
   }

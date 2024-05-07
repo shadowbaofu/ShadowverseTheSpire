@@ -2064,8 +2064,8 @@
   },
   "shadowverse:BelphometCard": {
     "NAME": "Belphomet, Lord of Aiolon",
-    "DESCRIPTION": "Machina. NL Gain !B! Block. NL Exhaust ALL Machina cards in your deck and randomly put copies of *Tisiphone, *the *Malignant, *Alecto, *the *Dissonant, *Megaera, *the *Indignant into your draw pile equal to the number of Exhausted Machina cards.",
-    "UPGRADE_DESCRIPTION": "Machina. NL Gain !B! Block. NL Exhaust ALL Machina cards in your deck and randomly put copies of *Tisiphone, *the *Malignant+, *Alecto, *the *Dissonant+, *Megaera, *the *Indignant+ into your draw pile equal to the number of Exhausted Machina cards."
+    "DESCRIPTION": "Machina. NL Gain !B! Block. NL Exhaust ALL Machina cards in your draw pile and randomly put copies of *Tisiphone, *the *Malignant, *Alecto, *the *Dissonant, *Megaera, *the *Indignant into your draw pile equal to the number of Exhausted Machina cards.",
+    "UPGRADE_DESCRIPTION": "Machina. NL Gain !B! Block. NL Exhaust ALL Machina cards in your draw pile and randomly put copies of *Tisiphone, *the *Malignant+, *Alecto, *the *Dissonant+, *Megaera, *the *Indignant+ into your draw pile equal to the number of Exhausted Machina cards."
   },
   "shadowverse:BelphometCard2": {
     "NAME": "Belphomet, Worldreaver",

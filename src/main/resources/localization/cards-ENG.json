@@ -5111,8 +5111,8 @@
   },
   "shadowverse:FellTransformation": {
     "NAME": "Fell Transformation",
-    "DESCRIPTION": "Exhaust 1 card. Put 1 *Forest *Bat in your hand.",
-    "UPGRADE_DESCRIPTION": "Exhaust 1 card. Put 1 *Forest *Bat+ in your hand."
+    "DESCRIPTION": "Lose 1 HP. Exhaust 1 card. Put 1 *Forest *Bat in your hand.",
+    "UPGRADE_DESCRIPTION": "Lose 1 HP. Exhaust 1 card. Put 1 *Forest *Bat+ in your hand."
   },
   "shadowverse:MachSpeedMaron": {
     "NAME": "Mach-Speed Maron",

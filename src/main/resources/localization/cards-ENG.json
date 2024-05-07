@@ -6621,13 +6621,13 @@
   },
   "shadowverse:Amaterasu": {
     "NAME": "Amaterasu, Clearsky Goddess",
-    "DESCRIPTION": "Gain !B! Block. NL Last_Words: When Exhausted, heal 1 HP and add *Tsukuyomi, *Stormcloud *Deity to your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Last_Words: When Exhausted, heal 1 HP and add *Tsukiyomi, *Stormcloud *Deity+ to your hand. NL Exhaust."
+    "DESCRIPTION": "Gain !B! Block. NL Last_Words: When Exhausted, heal 1 HP and add *Tsukuyomi, *Stormcloud *Deity to your hand at the start of your next turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Last_Words: When Exhausted, heal 1 HP and add *Tsukiyomi, *Stormcloud *Deity+ to your hand at the start of your next turn. NL Exhaust."
   },
   "shadowverse:Tsukuyomi": {
     "NAME": "Tsukuyomi, Stormcloud Deity",
-    "DESCRIPTION": "Deal !D! damage. NL Last_Words: When Exhausted, deal 1 damage to ALL enemies and add *Amaterasu, *Clearsky *Goddess+ to your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Last_Words: When Exhausted, deal 1 damage to ALL enemies and add *Amaterasu, *Clearsky *Goddess+ to your hand. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL Last_Words: When Exhausted, deal 1 damage to ALL enemies and add *Amaterasu, *Clearsky *Goddess+ to your hand at the start of your next turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Last_Words: When Exhausted, deal 1 damage to ALL enemies and add *Amaterasu, *Clearsky *Goddess+ to your hand at the start of your next turn. NL Exhaust."
   },
   "shadowverse:MoonAndSun": {
     "NAME": "Twofold Grace",

@@ -730,13 +730,13 @@
   },
   "shadowverse:GemLight": {
     "NAME": "Gleaming Gem",
-    "DESCRIPTION": "Exhaust 1 card in your hand. Put !M! random cards into your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Exhaust 1 card in your hand. Put !M! random cards into your hand. NL Exhaust."
+    "DESCRIPTION": "Fusion: *Gleaming *Gems. NL Automatically Fuses with ALL *Gleaming *Gems in your hand when selected for Fusion, Exhausts, then adds random cards into your hand for each other *Gleaming *Gem Exhausted. NL NL ---------- NL  NL Draw !M! cards. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain - Fusion: *Gleaming *Gems. NL Automatically Fuses with ALL *Gleaming *Gems in your hand when selected for Fusion, Exhausts, then adds random cards into your hand for each other *Gleaming *Gem Exhausted. NL NL ---------- NL  NL Draw !M! cards. NL Exhaust."
   },
   "shadowverse:CrystalBright": {
     "NAME": "Radiant Crystal",
-    "DESCRIPTION": "Exhaust 1 card in your hand. Put !M! random uncommon or rare cards into your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Exhaust 1 card in your hand. Put !M! random uncommon or rare cards into your hand. NL Exhaust."
+    "DESCRIPTION": "Fusion: ALL cards EXCEPT *Gleaming *Gems. When cards are Fused to this card, Exhaust it and randomly add cards to your hand for each Exhausted to Fuse this card including itself. NL NL ---------- NL NL Draw until you have !M! cards in your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain - Fusion: ALL cards EXCEPT *Gleaming *Gems. When cards are Fused to this card, Exhaust it and randomly add cards to your hand for each Exhausted to Fuse this card including itself. NL NL ---------- NL NL Draw until you have !M! cards in your hand. NL Exhaust."
   },
   "shadowverse:BelphometStatus": {
     "NAME": "Tyrannical Force",
@@ -4519,7 +4519,7 @@
   },
   "shadowverse:Chastity": {
     "NAME": "Absolute Chastity",
-    "DESCRIPTION": "Retain. NL Costs 1 less whenever you Exhaust a card. NL Apply !M! Weak and Vulnerable. NL Gain !B! Block. NL Draw until you have 7 cards in your hand."
+    "DESCRIPTION": "Retain. NL Costs 1 less whenever you play Attack cards that Exhaust. NL Apply !M! Weak and Vulnerable. NL Gain !B! Block. NL Draw until you have 7 cards in your hand."
   },
   "shadowverse:Zerk": {
     "NAME": "Zerk, Artifact Dominator",
@@ -6750,7 +6750,7 @@
     "NAME": "Brothers' Pride",
     "DESCRIPTION": "Natura NL Deal !D! damage. NL Add a *Naterran *Great *Tree to your hand. NL Rally 10: Deal !M! more damage. NL",
     "EXTENDED_DESCRIPTION": [
-      "（Rally: ",
+      "（ Rally: ",
       " )"
     ]
   },
@@ -6758,7 +6758,7 @@
     "NAME": "Hastening Conviction",
     "DESCRIPTION": "Deal !D! damage. NL If more than 3 *Hastening *Convictions were played this combat, deal !D! damage to all enemies. NL If this card was Spellboosted at least 3 times, add 1 *Hastening *Conviction to your hand. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
-      " NL (Number of times Spellboosted: ",
+      " NL ( Number of times Spellboosted: ",
       " )"
     ]
   },
@@ -6786,7 +6786,7 @@
     "NAME": "Illganeau, Restored Wretch",
     "DESCRIPTION": "ALL enemies lose 1 Strength and Dexterity. NL Rally 20: Exhaust this card and add 1 *Hollow *Governance to your hand. NL ",
     "EXTENDED_DESCRIPTION": [
-      "（Rally: ",
+      " NL（Rally: ",
       " )"
     ]
   },

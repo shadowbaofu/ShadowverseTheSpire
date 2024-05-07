@@ -8,7 +8,7 @@
   "shadowverse:EarthEssence": {
     "NAME": "Earth Essence",
     "DESCRIPTIONS": [
-      "Some cards can spend #yEarth #yEssence to active #yEarth #yRite which has a more powerful effect.",
+      "Some cards can spend #yEarth #yEssence sigils to activate #yEarth #yRite which has a more powerful effect.",
       "My Earth Essence is full!"
     ]
   },
@@ -2109,6 +2109,56 @@
       "At the end of your turn, put 2 #yDivine #yMinisters to your draw and discard piles.",
       "Triggers effects based on X, equal to the number of #yDivine #yMinisters played or destroyed. NL #g4 or less: Deal #b7 damage to ALL enemies. Gain #b1 #yBlock. NL #y5 or more: Deal #b21 damage to ALL enemies. Gain #b1 #yTemporary HP. NL #b10 or more: Deal #b50 damage to ALL enemies. Heal 1 HP. NL #r20 or more: Deal #b500 damage to ALL enemies. Heal 1 HP. NL X is ",
       " . "
+    ]
+  },
+    },
+  "shadowverse:BriarmaidenPower": {
+    "NAME": "Briarmaiden",
+    "DESCRIPTIONS": [
+      "Each time you play an Attack this turn, gain #b",
+      " #yThorns"
+    ]
+  },
+  "shadowverse:CrystalshardDragonewtPower": {
+    "NAME": "Crystalshard Dragonewt",
+    "DESCRIPTIONS": [
+      "Whenever a *Naterran *Great *Tree is played this turn, if it's the #g1st time, apply #b",
+      " #yVulnerable and #yWeak to a random enemy; if it's the #b2nd time, deal #b",
+      " damage to all enemies and heal #b",
+      " HP; if it's the #r3rd time, gain #b",
+      " #yStrength, #yDexterity and #b",
+      " Energy."
+    ]
+  },
+  "shadowverse:ShadowRejectionPower": {
+    "NAME": "Shadow's Rejection",
+    "DESCRIPTIONS": [
+      "At the start of the turn, lose #b5% of your max HP. If at least #g5 #yNaterran #yGreat #yTrees were played this combat, lose #b15% instead."
+    ]
+  },
+  "shadowverse:NextTurnV2": {
+    "NAME": "Bun & Bar, Partners in Crime",
+    "DESCRIPTIONS": [
+      "Next turn, add #b",
+      " #yVal, #ySpeedy #yMagicar to your hand."
+    ]
+  },
+  "shadowverse:Tetra4Power": {
+    "NAME": "Tetra, Sapphire Leader",
+    "DESCRIPTIONS": [
+      "Whenever a Machina card is played this turn, if it's the #g1st time, gain #b1 Energy. If it's the #b2nd time, deal #b8 damage to a random enemy. If it's the #r3rd time, add #b1 #yAzure #yBlast to your hand."
+    ]
+  },
+  "shadowverse:NeoAlector2Power": {
+    "NAME": "Alecto, Dissonance Razed",
+    "DESCRIPTIONS": [
+      "Whenever you are attacked this turn, heal #b2 HP."
+    ]
+  },
+   "shadowverse:BayleonPower": {
+    "NAME": "Bayleon, Shining Sovereign",
+    "DESCRIPTIONS": [
+      "Once per turn, when a #yNaterran #yGreat #yTree is played, add #b1 #yLuminous #yBlade to your hand."
     ]
   }
 }

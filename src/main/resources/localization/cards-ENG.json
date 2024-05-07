@@ -6371,7 +6371,7 @@
   },
   "shadowverse:FlameNGlass3": {
     "NAME": "Flame and Glass, United",
-    "DESCRIPTION": "Deal !D! damage. Gain !B! Block. NL Last Words: When this card is Exhausted, gain 1 Flame and Glass. "
+    "DESCRIPTION": "Deal !D! damage. Gain !B! Block. NL Last Words: When this card is played or Exhausted, gain 'If you did not lose HP or take damage this turn, put 1 *Flame *and *Glass in your hand next turn."
   },
   "shadowverse:Rogers": {
     "NAME": "Rogers, Ruler Of The Seas",

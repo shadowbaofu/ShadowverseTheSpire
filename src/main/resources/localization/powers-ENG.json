@@ -2110,5 +2110,11 @@
       "Triggers effects based on X, equal to the number of #yDivine #yMinisters played or destroyed. NL #g4 or less: Deal #b7 damage to ALL enemies. Gain #b1 #yBlock. NL #y5 or more: Deal #b21 damage to ALL enemies. Gain #b1 #yTemporary HP. NL #b10 or more: Deal #b50 damage to ALL enemies. Heal 1 HP. NL #r20 or more: Deal #b500 damage to ALL enemies. Heal 1 HP. NL X is ",
       " . "
     ]
+  },
+   "shadowverse:BayleonPower": {
+    "NAME": "Bayleon, Shining Sovereign",
+    "DESCRIPTIONS": [
+      "Once per turn, when a #yNaterran #yGreat #yTree is played, add #b1 #yLuminous #yBlade to your hand."
+    ]
   }
 }

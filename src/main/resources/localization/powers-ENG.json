@@ -924,8 +924,8 @@
   "shadowverse:InesPower": {
     "NAME": "Ines, Maiden of Clouds",
     "DESCRIPTIONS": [
-      "Whenever you enter #yResonance, deal #b to all enemies.",
-      " damage"
+      "Whenever you enter #yResonance, deal #b",
+      " damage to all enemies"
     ]
   },
   "shadowverse:DeathPenaltyPower": {
@@ -937,8 +937,8 @@
   "shadowverse:ModestPower": {
     "NAME": "Absolute Modesty",
     "DESCRIPTIONS": [
-      "At the end of your turn, deal #b to a random enemy.",
-      " damage equal to the number of different AF cards played this combat (#b ",
+      "At the end of your turn, deal #b",
+      " damage to a random enemy times the number of different AF cards played this combat (#b",
       " different AF cards played)"
     ]
   },

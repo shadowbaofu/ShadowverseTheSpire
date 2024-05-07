@@ -7017,9 +7017,9 @@
   "shadowverse:Bayleon": {
     "NAME": "Bayleon, Shining Sovereign",
     "DESCRIPTION": "Natura NL Gain !B! Block. NL If X is at least 10, upgrade this card. NL X equals your Rally count plus the number of *Naterran *Great *Trees played this combat. ",
-    "UPGRADE_DESCRIPTION":"Natura NL Deal !D! damage and gain !B! Block. NL Gain 'Once per turn, when you play a *Naterran *Great *Tree, add a *Luminous *Blade to your hand.' NL (Downgrade once played.)",
+    "UPGRADE_DESCRIPTION": "Natura NL Deal !D! damage and gain !B! Block. NL Gain 'Once per turn, when you play a *Naterran *Great *Tree, add a *Luminous *Blade to your hand.' NL (Downgrade once played.)",
     "EXTENDED_DESCRIPTION": [
-      "（X is ",
+      "（ X is ",
       " )"
     ]
   },
@@ -7027,7 +7027,7 @@
     "NAME": "Luminous Blade",
     "DESCRIPTION": "Natura NL Choose a Natura Attack card from the discard pile. Gain 1 Strength and Dexterity. NL If X is at least 20, gain 1 more Strength and Dexterity. NL X equals your Rally count plus the number of *Naterran *Great *Trees played this combat. NL If *Bayleon, *Shining *Sovereign was chosen, deal !D! damage to a random enemy. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
-      "（X is ",
+      "（ X is ",
       " )"
     ]
   }

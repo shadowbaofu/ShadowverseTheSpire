@@ -6956,7 +6956,7 @@
   },
   "shadowverse:GarnetWaltz2": {
     "NAME": "Garnet Rondo",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies. Draw 2 cards. NL Deal 1 more damage, heal 4 HP and gain 1 Energy if Wrath or Vengeance is active for you. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. Draw 2 cards. NL Deal !D! damage again, heal 4 HP and gain 1 Energy if Wrath or Vengeance is active for you. NL Exhaust."
   },
   "shadowverse:SigilOfBalance": {
     "NAME": "Sigil of Balance",

@@ -3,8 +3,8 @@
     "NAME": "Golden Pinya and Green Pinya",
     "DESCRIPTIONS": [
       "You walk past a strange statue that looks like a chubby cat... NL Suddenly you hear a voice whispering from behind you: NL ~'Hang~ ~on~ ~a~ ~minute.'~",
-      "You turn around and see the statue staring at you! NL As you walk over to take a closer look, you find that it is not a statue, but KMR, the producer, who is dressed in a Pinya costume! NL NL ~'Could~ ~you~ ~show~ ~me~ ~your~ ~account~ ~and~ ~share~ ~your~ ~comments~ ~on~ ~the~ ~environment~ ~please?'~",
-      "~'Oh,~ ~the~ ~heat~ ~of~ ~summer~ ~continues.~ ~Are~ ~you~ ~doing~ ~alright?'~ NL He mechanically reach out his hand and puts some #ySeer's #yGlobes into your crate. NL NL ~'It~ ~may~ ~be~ ~sudden,~ ~but~ ~please~ ~take~ ~these~ ~Seer's~ ~Globes~ ~as~ ~a~ ~gift.'~ NL While he is talking with you, you feel that the Gold in your pocket is vanishing! NL All of a sudden, the glass he is drinking from falls down and smashes to pieces on the ground. You run away, hearing the echo of laughter and the sound of the broken glass. NL NL The next thing you know, you're all alone with the Seer's Globes in your hand.",
+      "You turn around and see the statue facing you! NL As you walk over to take a closer look, you find that it is not a statue, but the Cygames Producer, Yuito Kimura AKA KMR, dressed in a Pinya costume! NL NL ~'Could~ ~you~ ~show~ ~me~ ~your~ ~account~ ~and~ ~share~ ~your~ ~comments~ ~on~ ~the~ ~environment~ ~please?'~",
+      "~'Oh,~ ~the~ ~heat~ ~of~ ~summer~ ~continues.~ ~Are~ ~you~ ~doing~ ~alright?'~ NL He mechanically reaches out his hand and puts some #ySeer's #yGlobes into your in-game Shadowverse crate. NL NL ~'It~ ~may~ ~be~ ~sudden,~ ~but~ ~please~ ~take~ ~these~ ~Seer's~ ~Globes~ ~as~ ~a~ ~gift.'~ NL While he is talking with you, you feel that the Gold in your pocket is vanishing! NL All of a sudden, the glass he is drinking from falls down and smashes to pieces on the ground. You run away, hearing the echo of laughter and the sound of the broken glass. NL NL The next thing you know, you're all alone with the Seer's Globes in your hand.",
       "~'Golden~ ~Pinya?~ @Are@ @you@ @sure@ @about@ @that?@ ~Ah,~ ~of~ ~course...~ ~Okey.~ ~I~ ~can~ ~do~ ~that...~ ~Let~ ~me~ ~see...'~ NL NL He shakes one of his arms and your account is suddenly in his hand! NL NL ~'Yeah.~ ~This~ ~is~ ~goooood.'~",
       "~'Wait.~ ~Wait~ ~a~ ~second.~ ~Please~ ~wait.~ ~Wait.~ ~Wait~ ~a~ ~second.'~ NL NL You think you made the right choice."
     ],
@@ -20,17 +20,17 @@
   "GemFortune": {
     "NAME": "Gems of Fortune",
     "DESCRIPTIONS": [
-      "It seems like there is an event taking place ahead. As you come closer, you notice that it's the Gems of Fortune Cup! ~'Sounds~ ~like~ ~it's~ ~another~ ~competition~ ~of~ #y~Luck~ .' NL #r@'So@ #r@I@ #r@see!@ #r@Ain't@ #r@there@ #r@any@ #r@Shadowcraft,@ #r@Runecraft@ #r@or@ #r@Forestcraft?'@ NL NL A man asks you with a smile on his face: NL 'Are you interested in entering #y~Gems~ #y~of~ #y~Fortune~ ? ' ",
+      "While grinding your way towards Grandmaster Rank, you notice an event taking place ahead. As you come closer, you notice that it's the Shadowverse Gems of Fortune Cup! ~'Sounds~ ~like~ ~it's~ ~another~ ~competition~ ~of~ #y~Luck~ .' NL #r@'So@ #r@I@ #r@see!@ #r@Ain't@ #r@there@ #r@any@ #r@Shadowcraft,@ #r@Runecraft@ #r@or@ #r@Forestcraft players?'@ NL NL A man appears and asks you with a smile on his face: NL 'Are you interested in entering #y~Gems~ #y~of~ #y~Fortune~ ? ' ",
       "",
-      "#y'Marvelous!' NL Soon after your reply, the whole stage is shrouded in #p~Thick~ #p~Black~ #p~Smoke~ ... NL NL Just at the time you're about to win, your opponent plays an #y~Arcane~ #y~Item~ #y~Shop~ and kills your leader in one turn. NL NL The match is over and you're back on the track, but somehow you feel a bit #bAngry .",
-      "'What a disappointment...' NL ~'Anyway,~ ~sooner~ ~or~ ~later~ ~you~ ~will~ ~join~ ~us!'~  NL #r@'Hahaha@ #r@Hahahahaha!'@ NL NL The man disappeared, leaving only the disturbing laughter echoing in your ears.",
+      "#y'Marvelous!' NL Soon after your reply, the whole stage is shrouded in #p~Thick~ #p~Black~ #p~Smoke~ ... NL NL Just as you're about to win your 5th match, your opponent plays an #y~Arcane~ #y~Item~ #y~Shop~ and kills your leader in one turn. NL NL The match is over and you're back on the Spire, but somehow you feel a bit #bAngry .",
+      "'What a disappointment...' NL ~'Anyway,~ ~sooner~ ~or~ ~later~ ~you~ ~will~ ~join~ ~us!'~  NL #r@'Hahaha@ #r@Hahahahaha!'@ NL NL The man disappears, leaving only the disturbing laughter echoing in your ears.",
       ""
     ],
     "OPTIONS": [
-      "[Attend the match] #gGain #g4 Gleaming Gem, #ggain #g2 Radiant Crystal. #rLose #r",
+      "[Attend the match] Replace your ENTIRE deck with #g2 Gleaming Gems and #g1 Radiant Crystal for every 3 cards that was in it. #rLose #r",
       " #rMax #rHP.",
       "[Refuse]",
-      "[Attend the match] #gGain #g3 Gleaming Gem, #ggain #g1 Radiant Crystal. #rLose #r",
+      "[Attend the match] Replace your ENTIRE deck with #g2 Gleaming Gems and #g1 Radiant Crystal for every 3 cards that was in it. #rLose #r",
       "",
       "[Leave]"
     ]
@@ -39,8 +39,8 @@
     "NAME": "CODE GEASS Lelouch of the Rebellion Collaboration",
     "DESCRIPTIONS": [
       "You ignore the event, but somehow Lelouch casts #rGeass on you!",
-      "#r@Ambush!@ NL Your enemies are not just Lelouch but also Suzaku operating Lancelot, coming out of nowhere!",
-      " #b~Lelouch~ #b~of~ #b~the~ #b~Rebellion~ Campaign in progress. NL Time limited boss Lelouch is waiting for you! NL You have no interest in attending, but as soon as you're trying to leave, a strange desire in your heart drives you to #b~Challenge~ Lelouch..."
+      "#r@Ambush!@ NL Your enemies are not just Lelouch but also Suzaku operating Lancelot, appearing out of nowhere!",
+      "The Campaign #b~Lelouch~ #b~of~ #b~the~ #b~Rebellion~ is in progress. NL The time limited boss Lelouch is waiting for you! NL You have no interest in attending, but as soon as you try to leave, a strange desire in your heart drives you to #b~Challenge~ Lelouch..."
     ],
     "OPTIONS": [
       "[Challenge] #rChallenge #rthe #rBOSS.",
@@ -53,12 +53,12 @@
   "shadowverse:VampiresEvent": {
     "NAME": "Vampires...?",
     "DESCRIPTIONS": [
-      "In a dark street, you meet some hooded people performing some kind of dark rite. As you approach, they all turn to face you at the same time. The tallest one smiled, showing his long fangs and stretches out a pale, thin hand to you: NL ~'Join~ ~us,~ ~bloodkin.~ ~Let's~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~spire.'~",
-      "Just as the tall man was about to grab your arm and pull you over, he is horrified to find that you are the #y@Lord@ #y@of@ #y@the@ #y@Dark@ . You don't feel any @Resistance@ . This is a unilateral #r@Massacre@ . NL .... NL After an unspecified amount of time, the revelry is over, and there is only you left. You have #y~Killed~ #y~Them~ #y~All~ . You don't get any joy out of it. You feel #rEmpty again...",
-      "You feel bored. You don't think they can't please you. So you give the man a look. The tall man stared at you in horror until you left completely. NL You're alone again."
+      "In a dark street, you meet some hooded people performing some kind of dark rite. As you approach, they all turn to face you at the same time. The tallest one smiles, showing his long fangs and stretches out a pale, thin hand to you: NL ~'Join~ ~us,~ ~bloodkin.~ ~Let's~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~spire.'~",
+      "Just as the tall man was about to grab your arm and pull you over, he is horrified to find that you are the #y@Lord@ #y@of@ #y@the@ #y@Dark@ . You don't feel any @Resistance@ . This is a unilateral #r@Massacre@ . NL .... NL After an unspecified amount of time, the revelry is over, and there is only you left standing. You have #y~Killed~ #y~Them~ #y~All~ . You don't get any joy out of it. You feel #rEmpty again...",
+      "You feel bored. You don't think they can please you. So you give the man a look. The tall man stares at you in horror and flees with his colleagues. NL You're alone again."
     ],
     "OPTIONS": [
-      "[Revel] #gRemove #gall Strike #gcards. #gReplace #gwith #gsame #gamount #gof Razory Claw. #rGain #rBlood #rVial .",
+      "[Revel] #gRemove #gall Strike #gcards. #gReplace #gwith #gsame #gamount #gof Razory Claws. #rGain #rBlood #rVial .",
       "[Ignore] Raise your Max HP by #r10 .",
       "[Leave]"
     ]
@@ -66,11 +66,11 @@
   "shadowverse:NaturalMachine": {
     "NAME": "Blessing of Natur Al'machinus",
     "DESCRIPTIONS": [
-      "You come across Natur Al'machinus. NL 'I shall grant you the power of Nature and Machine...'",
+      "You come across Natur Al'machinus. NL An Omnipotence with the soul of steel and the frame of a flower. NL It speaks to you: 'I shall grant you the power of Nature and Machine...'",
       "You can feel the power surging through your body."
     ],
     "OPTIONS": [
-      "[Enhancement Blessing] Choose 3 cards out of 20 Natura cards and Machina cards into your deck.",
+      "[Enhancement Blessing] Choose 3 cards out of 20 Natura and Machina cards to add to your deck.",
       "[Recovery Blessing] Heal #g",
       " HP.",
       "Choose 3 cards.",
@@ -90,13 +90,13 @@
       "'Wow, this one looks great! Give it to me!' NL ",
       "'Wow! This is some grade-A goods! ... No refunds! ' NL ",
       "'Oops, ~looks~ ~like~ ~you~ ~have~ ~nothing~ ~to~ ~sell.~ ~Move~ ~along~ ~then.~' NL ",
-      "'Your marketing skills are impressive! NL Weapons improperly distributed at low prices have given rise to an unexpected outcome. NL We need to confirm the results. Let's go to the forefront of the war.' NL 'I'm sorry! Please forgive me!' NL "
+      "The War Merchant Alyaska speaks with her. 'Magnificent! NL You truly are a shining example of a Valhorean Association merchant. Selling weapons at cut-rate prices has created fertile ground for the seeds of war to grow. NL See for yourself—a profusion of fiery blooms as far as the eye can see.' NL 'I'm sorry! Please forgive me!' NL "
     ],
     "OPTIONS": [
       "[Continue]",
       "[Sell] Choose a card from your deck to sell.",
       "[Arrest] Gain a special Relic.",
-      "[Lock] Need #yAlyaska .",
+      "[Lock] Needs a copy of either #yAlyaska .",
       "[Leave]",
       "Choose 1 card to sell"
     ]
@@ -104,17 +104,17 @@
   "Crossover": {
     "NAME": "Storms Cross Craft",
     "DESCRIPTIONS": [
-      "It seems like there is an event taking place ahead. As you come closer, you notice that it's the Storms Cross Craft Cup! ~'Sounds~ ~like~ ~it's~ ~another~ ~competition~ ~of~ #y~Luck~ .' NL #r@'Wait,@ #r@why@ #r@is@ #r@it@ #r@all@ #r@Swordcraft@ #r@and@ #r@Shadowcraft?!'@ NL NL A man asks you with a smile on his face: NL 'Are you interested in entering the #y~Storms~ #y~Cross~ #y~Craft~ #y~Cup~ ?'",
+      "In pursuit of your coveted animated Grandmaster deck sleeves, there is an event taking place. As you come closer, you notice that it's the Omen of Storms Cross Craft Cup! ~'Sounds~ ~like~ ~it's~ ~another~ ~competition~ ~of~ #y~Luck~ .' NL #r@'Wait,@ #r@why@ #r@is@ #r@it@ #r@all@ #r@Swordcraft@ #r@and@ #r@Shadowcraft players?!'@ NL NL A man asks you with a smile on his face: NL 'Are you interested in entering the #y~Storms~ #y~Cross~ #y~Craft~ #y~Cup~ ?'",
       "",
-      "#y'Marvelous!' NL Soon after your reply, the whole arena is shrouded in #p~thick~ #p~black~ #p~smoke~ ... NL NL Just as you're about to win, your opponent plays Ladica and kills your leader on turn 5. NL NL The match is over and you're back on the track, but somehow you feel a bit #bAngry .",
-      "'What a disappointment...' NL ~'Anyway,~ ~sooner~ ~or~ ~later~ ~you~ ~will~ ~join~ ~us!'~  NL #r@'Hahaha@ #r@Hahahahaha!'@ NL NL The man disappears, leaving only the disturbing laughter echoing in your ears.",
+      "#y'Marvelous!' NL Soon after your reply, the whole arena is shrouded in #p~thick~ #p~black~ #p~smoke~ ... NL NL Just as you're about to win your 4th match and be placed into Group A, your opponent plays Ladica, Verdant Claw and kills your leader on turn 5. NL NL The match is over and you're back in the Spire, but somehow you feel a bit #bAngry .",
+      "'What a disappointment...' NL ~Sooner~ ~or~ ~later~ ~you~ ~will~ ~join~ ~us!'~  NL #r@'Hahaha@ #r@Hahahahaha!'@ NL NL The man disappears, leaving only the disturbing laughter echoing in your ears.",
       ""
     ],
     "OPTIONS": [
-      "[Attend the match] #gGain #gCross #gCraft . #rLose #r",
+      "[Attend the match] #gGain #gCross #gCraft Relic . #rLose #r",
       " #rHP.",
       "[Refuse]",
-      "[Attend the match] #gGain #gCross #gCraft . #rLose #r",
+      "[Attend the match] #gGain #gCross #gCraft Relic . #rLose #r",
       "",
       "[Leave]"
     ]
@@ -132,7 +132,7 @@
       "[Continue]",
       "Shoot #rIceschillendrg ",
       "No one deserves to die",
-      "Shoot #g------",
+      "Shoot #g------ (Requires Mystical Bullet. Good Luck!)",
       "[Leave]",
       "Shoot #gFleauesse"
     ]

@@ -59,7 +59,7 @@ public class Illganeau
         super.update();
         if (branchPreview == 0){
             this.cardsToPreview = realize;
-        }else if (branchPreview == 3){
+        }else if (branchPreview == 1){
             this.cardsToPreview = hollow;
         }
     }
@@ -170,6 +170,7 @@ public class Illganeau
                 Illganeau.this.exhaust = false;
                 Illganeau.this.rawDescription = cardStrings2.DESCRIPTION;
                 Illganeau.this.initializeDescription();
+                Illganeau.this.branchPreview = 1;
             }
         });
         return list;

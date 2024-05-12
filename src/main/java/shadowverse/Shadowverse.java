@@ -757,6 +757,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("Zwei2_Acc", new Sfx(voicePath + "Zwei2_Acc.wav"));
             reflectedMap.put("VoidRealize", new Sfx(voicePath + "VoidRealize.wav"));
             reflectedMap.put("Illganeau", new Sfx(voicePath + "Illganeau.wav"));
+            reflectedMap.put("Illganeau2", new Sfx(voicePath + "Illganeau2.wav"));
             reflectedMap.put("NightVampire", new Sfx(voicePath + "NightVampire.wav"));
             reflectedMap.put("NightVampirePower", new Sfx(voicePath + "NightVampirePower.wav"));
             reflectedMap.put("TheWheelOfFortune", new Sfx(voicePath + "TheWheelOfFortune.wav"));

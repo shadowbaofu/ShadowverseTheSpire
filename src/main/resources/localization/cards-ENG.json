@@ -5084,8 +5084,8 @@
   },
   "shadowverse:Castelle": {
     "NAME": "Castelle, Budding Mage",
-    "DESCRIPTION": "Academic NL Gain !B! Block, deal !D! damage. NL If X is 10 or more. put 1 *Verdant *Prayer into hand. (X is equal to the number of non-Strike Forestcraft Attacks played in this combat)",
-    "UPGRADE_DESCRIPTION": "Academic NL Gain !B! block, deal !D! damage. NL If X is 10 or more. put 1 *Verdant *Prayer+ into hand. (X is equal to the number of non-Strike Forestcraft Attacks played in this combat)",
+    "DESCRIPTION": "Academic NL Gain !B! Block, deal !D! damage. NL If X is 10 or more, put 1 *Verdant *Prayer into hand. (X is equal to the number of non-Strike Forestcraft Attacks played in this combat)",
+    "UPGRADE_DESCRIPTION": "Academic NL Gain !B! block, deal !D! damage. NL If X is 10 or more, put 1 *Verdant *Prayer+ into hand. (X is equal to the number of non-Strike Forestcraft Attacks played in this combat)",
     "EXTENDED_DESCRIPTION": [
       " NL (X is",
       " .)"

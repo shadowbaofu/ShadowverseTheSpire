@@ -484,7 +484,7 @@
     "NAME": "Glamour Whip",
     "FLAVOR": "Yes! You called for your teacher~?",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st. Once per combat, when #yFatal, randomly upgrade a card in your deck."
+      "Replaces #yToken #yof #y1st. Once per combat, when you kill a non-Minion enemy, randomly upgrade a card in your deck."
     ]
   },
   "shadowverse:RalmiaBOSS": {

@@ -1230,8 +1230,8 @@
   },
   "shadowverse:DeathParty": {
     "NAME": "Death of the Party",
-    "DESCRIPTION": "At the end of your turn, activate one of the following effects in order: NL 1. Draw 1 additional card next turn. NL 2. Deal 6 damage to ALL enemies. NL 3. Gain 3 Shadows. NL NL Die after 8 turns.",
-    "UPGRADE_DESCRIPTION": "Innate. NL At the end of your turn, activate one of the following effects in order: NL 1. Draw 1 additional card next turn. NL 2. Deal 6 damage to ALL enemies. NL 3. Gain 3 Shadows. NL NL Die after 8 turns."
+    "DESCRIPTION": "Die after 8 turns. NL At the end of your turn, activate one of the following effects in order: NL 1. Draw 1 additional card next turn. NL 2. Deal 6 damage to ALL enemies. NL 3. Gain 3 Shadows.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Die after 8 turns. NL At the end of your turn, activate one of the following effects in order: NL 1. Draw 1 additional card next turn. NL 2. Deal 6 damage to ALL enemies. NL 3. Gain 3 Shadows."
   },
   "shadowverse:FoulTempest": {
     "NAME": "Foul Tempest",
@@ -1501,11 +1501,11 @@
   },
   "shadowverse:Andrealphus": {
     "NAME": "Andrealphus",
-    "DESCRIPTION": "Draw !M! card(s). Give ALL Attacks in your hand: 'Last_Words: When this card is Exhausted, draw a card.' NL Last_Words: When this card is Exhausted, draw a card."
+    "DESCRIPTION": "Draw !M! card(s). Give ALL Attacks in your hand: 'Last Words: When this card is Exhausted, draw a card.' NL Last_Words: When this card is Exhausted, draw a card."
   },
   "shadowverse:PrinceCatacomb": {
     "NAME": "Prince Catacomb",
-    "DESCRIPTION": "Deal !D! damage. Give ALL Attacks in your hand: 'Last_Words: When this card is Exhausted, add a *Skeleton to your hand.' NL Last_Words: When this card is Exhausted, add a *Skeleton to your hand."
+    "DESCRIPTION": "Deal !D! damage. Give ALL Attacks in your hand: 'Last Words: When this card is Exhausted, add a *Skeleton to your hand.' NL Last_Words: When this card is Exhausted, add a *Skeleton to your hand."
   },
   "shadowverse:OmenOfSilence": {
     "NAME": "Rulenye, Omen of Silence",
@@ -2113,7 +2113,7 @@
   },
   "shadowverse:ImmoralDesire": {
     "NAME": "Darkest Desire",
-    "DESCRIPTION": "Can only be played if you have 2 other Attacks in hand. NL Select 2 Attacks. NL The 1st card gains 'Last_Words: When Exhausted, deal damage equal to this card’s base damage to ALL enemies.' NL The 2nd card gains 'Last_Words: When Exhausted, gain temporary HP equal to this card’s base Block.' NL Exhaust."
+    "DESCRIPTION": "Can only be played if you have 2 other Attacks in hand. NL Select 2 Attacks. NL The 1st card gains 'Last Words: When Exhausted, deal damage equal to this card’s base damage to ALL enemies.' NL The 2nd card gains 'Last Words: When Exhausted, gain temporary HP equal to this card’s base Block.' NL Exhaust."
   },
   "shadowverse:DimensionCut": {
     "NAME": "Dimension Cut",
@@ -4118,7 +4118,7 @@
   },
   "shadowverse:OtherworldGatekeeper": {
     "NAME": "Otherworld Gatekeeper",
-    "DESCRIPTION": "Deal !D! damage. NL Randomly play !M! Attack card(s) with Last_Words that costs 1 or less from your draw pile. NL Last_Words: When this card is Exhausted, heal 1 HP."
+    "DESCRIPTION": "Deal !D! damage. NL Randomly play !M! Attack card(s) with Last_Words that costs 1 or less from your draw pile. NL Last_Words: When Exhausted, heal 1 HP."
   },
   "shadowverse:V": {
     "NAME": "Val, Trusty Getaway Car",
@@ -4258,8 +4258,8 @@
   },
   "shadowverse:UndyingResolve": {
     "NAME": "Undying Resolve",
-    "DESCRIPTION": "Festive. NL Select an Attack in your discard pile and reduce its cost by 1 this turn. NL If that card is *Anisage, *Lost *Forsaken, give it 'Last_Words: When Exhausted, put a copy of it that deals double damage into your hand.' NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Festive. NL Select an Attack card in your discard pile and reduce its cost by 1 until played. NL If that card is *Anisage, *Lost *Forsaken, give it 'Last_Words: When Exhausted, put a copy of it that deals double damage into your hand.' NL Exhaust."
+    "DESCRIPTION": "Festive. NL Select an Attack in your discard pile and reduce its cost by 1 this turn. NL If that card is *Anisage, *Lost *Forsaken, give it 'Last Words: When Exhausted, put a copy of this card that deals double damage into your hand.' NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Festive. NL Select an Attack card in your discard pile and reduce its cost by 1 until played. NL If that card is *Anisage, *Lost *Forsaken, give it 'Last Words: When Exhausted, put a copy of this card that deals double damage into your hand.' NL Exhaust."
   },
   "shadowverse:SoulGuide": {
     "NAME": "Psychopomp Tour Guide",
@@ -4838,7 +4838,7 @@
     ]
   },
   "shadowverse:AbyssalColonel_crystallize": {
-    "NAME": "Abyssal Colonel crystallized",
+    "NAME": "Abyssal Colonel, Crystallized",
     "DESCRIPTION": "Condemned - Retain NL Countdown !M! : Exhaust this card. NL Last_Words: When this card is exhausted, put a *Abyssal *Colonel into your hand and change its cost to 0.",
     "UPGRADE_DESCRIPTION": "Condemned · Retain NL Countdown !M! : Exhaust this card. NL Last_Words: When this card is exhausted, put a *Abyssal *Colonel+ into your hand and change its cost to 0."
   },
@@ -4848,8 +4848,8 @@
   },
   "shadowverse:AbyssalColonel": {
     "NAME": "Abyssal Colonel",
-    "DESCRIPTION": "Condemned NL Crystallize 1: Put an *Abyssal *Colonel *crystallized into your hand. NL NL --------------------- NL  NL Deal !D! damage NL Gain !B! Block. NL Last_Words: Apply 1 Weak and Vulnerable to a random enemy and heal 3 HP. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Condemned NL Crystallize 1: Put an *Abyssal *Colonel *crystallized+ into your hand. NL NL --------------------- NL  NL Deal !D! damage NL Gain !B! Block. NL Last_Words: Apply 1 Weak and Vulnerable to a random enemy and heal 3 HP. NL Exhaust."
+    "DESCRIPTION": "Condemned NL Crystallize 1: Put an *Abyssal *Colonel, *Crystallized into your hand. NL NL --------------------- NL  NL Deal !D! damage NL Gain !B! Block. NL Last_Words: Apply 1 Weak and Vulnerable to a random enemy and heal 3 HP. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Condemned NL Crystallize 1: Put an *Abyssal *Colonel, *Crystallized+ into your hand. NL NL --------------------- NL  NL Deal !D! damage NL Gain !B! Block. NL Last_Words: Apply 1 Weak and Vulnerable to a random enemy and heal 3 HP. NL Exhaust."
   },
   "shadowverse:UnderworldLieutenant": {
     "NAME": "Underworld Lieutenant",
@@ -6611,7 +6611,7 @@
   },
   "shadowverse:Apple": {
     "NAME": "Poisoned Apple of Revival",
-    "DESCRIPTION": "Select an Attack card. If it's a Shadowcraft card it gains ' Last_Words: When Exhausted, add a copy of this card to your hand with Ethereal and Exhaust. It costs 0.' NL Otherwise it gains 'Last_Words: When Exhausted, draw 2 cards' NL Ethereal."
+    "DESCRIPTION": "Select an Attack card. If it's a Shadowcraft card it gains 'Last Words: When Exhausted, add a copy of this card to your hand with Ethereal and Exhaust. It costs 0.' NL Otherwise it gains 'Last Words: When Exhausted, draw 2 cards' NL Ethereal."
   },
   "shadowverse:LaserTyranny": {
     "NAME": "Laser Tyranny",
@@ -6816,7 +6816,7 @@
   },
   "shadowverse:Aenea2": {
     "NAME": "Aenea, Amethyst Creator",
-    "DESCRIPTION": "Machina NL Gain !B! Block. NL Add 1 *Roly-Poly *Mk *I, *Stalwart *Bot to your hand. NL If at least 10 Machina cards were played this combat, give ALL Machina Attacks in your hand 'Last_Words: When Exhausted, add 1 *Assembly *Droid to your hand.' NL Add 1 *Joy *Secured to your hand.",
+    "DESCRIPTION": "Machina NL Gain !B! Block. NL Add 1 *Roly-Poly *Mk *I, *Stalwart *Bot to your hand. NL If at least 10 Machina cards were played this combat, give ALL Machina Attacks in your hand 'Last Words: When Exhausted, add 1 *Assembly *Droid to your hand.' NL Add 1 *Joy *Secured to your hand.",
     "EXTENDED_DESCRIPTION": [
       " NL （Played ",
       " Machina cards )"

@@ -3564,7 +3564,7 @@
     "NAME": "Charaton, Iceflame Priest",
     "DESCRIPTION": "Deal !D! damage X times and gain X Energy. X equals the number of Amulet cards destroyed this combat.",
     "EXTENDED_DESCRIPTION": [
-      " NL (Damage and Energy: ",
+      " NL (Number of hits and Energy gained: ",
       " ."
     ]
   },

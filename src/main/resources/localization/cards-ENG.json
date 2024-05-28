@@ -4704,7 +4704,7 @@
   },
   "shadowverse:ValiantFencer": {
     "NAME": "Valiant Fencer",
-    "DESCRIPTION": "Heroic. NL Gain !B! Block and apply 1 Weak to ALL enemies. NL Distress_Call: Repeat this once. NL Enhance 3: Draw until you have !M! cards in your hand, then change the cost of ALL Heroic cards in your hand to 0 this turn."
+    "DESCRIPTION": "Heroic. NL Gain !B! Block and apply 1 Weak to ALL enemies. NL Distress_Call: Repeat this once. NL Enhance 3: Draw until you have !M! cards in your hand. ALL Heroic cards in your hand cost 0 this turn."
   },
   "shadowverse:HeroOfAntiquity": {
     "NAME": "Hero of Antiquity",

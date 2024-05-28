@@ -3738,7 +3738,7 @@
   },
   "shadowverse:Jatelant": {
     "NAME": "Jatelant, God of Prosperity",
-    "DESCRIPTION": "Activate one of the following effects based on how many Amulet cards have been destroyed this combat: NL 1, 4, 7, 10 and 13: Gain !M! Gold. NL 2, 5, 8, 11, and 14: Deal !D! damage to ALL enemies and heal 3 HP. NL 3, 6, 9 and 12: Add an Attack card from your Exhaust pile to your hand and change its cost to 0. NL Exhaust.",
+    "DESCRIPTION": "Activate the following effects based on how many Amulet cards have been destroyed this combat: NL 1, 4, 7, 10 and 13: Gain !M! Gold. NL 2, 5, 8, 11, and 14: Deal !D! damage to ALL enemies and heal 3 HP. NL 3, 6, 9 and 12: Add an Attack card from your Exhaust pile to your hand and change its cost to 0. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
       " NL (Amulet cards destroyed:",
       "  .)"

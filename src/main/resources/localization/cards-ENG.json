@@ -6951,7 +6951,7 @@
   },
   "shadowverse:Ladica3": {
     "NAME": "Ladica, Nature's Claws",
-    "DESCRIPTION": "Natura NL Deal !D! damage. NL Up to 4 times per turn, whenever you play a Natura card, gain 1 Energy. NL If it's the 4th Natura you played this turn, add 1 *Back *To *Nature to your hand."
+    "DESCRIPTION": "Natura NL Deal !D! damage. NL While in your hand, up to 4 times per turn whenever you play a Natura card, gain 1 Energy. NL If you have played 4 Natura cards while this card is in your hand, add 1 *Back *To *Nature to your hand."
   },
   "shadowverse:GarnetWaltz2": {
     "NAME": "Garnet Rondo",

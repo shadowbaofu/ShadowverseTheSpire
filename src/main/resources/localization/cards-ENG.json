@@ -5166,7 +5166,7 @@
   },
   "shadowverse:DemonEyeGangster": {
     "NAME": "Demon-Eyed Gangster",
-    "DESCRIPTION": "Academic. NL Gain !B! Block. NL Remove ALL Block from an enemy if Vengeance is active.",
+    "DESCRIPTION": "Academic NL Gain !B! Block. NL Remove ALL Block from an enemy if Vengeance is active.",
     "UPGRADE_DESCRIPTION": "Academic NL Gain !B! block. NL Remove ALL Block from an enemy if Vengeance is active. NL Stun the enemy if Vengeance is active. (Limit)"
   },
   "shadowverse:Arka": {
@@ -5184,13 +5184,13 @@
   },
   "shadowverse:CyclicalGuidance": {
     "NAME": "Cyclical Guidance",
-    "DESCRIPTION": "Academic. NL Deal !D! damage to a random enemy 4 times. NL Enhance 5: Deal 24 damage instead.",
-    "UPGRADE_DESCRIPTION": "Academic · Retain NL Deal !D! damage to a random enemy 4 times. NL Enhance 5: Deal 24 damage instead."
+    "DESCRIPTION": "Academic. NL Deal !D! damage to a random enemy 4 times. NL Enhance 5: Increase this card's damage by 24.",
+    "UPGRADE_DESCRIPTION": "Academic - Retain NL Deal !D! damage to a random enemy 4 times. NL Enhance 5: Increase this card's damage by 24."
   },
   "shadowverse:Verdilia": {
     "NAME": "Verdilia, Rogue Professor",
     "DESCRIPTION": "Academic - Fusion: Academic cards NL Whenever cards are fused to this card, heal 1 HP. NL Gain !B! Block. NL If you have any other Academic cards in hand, gain 1 Strength and Dexterity. NL If this card is fused, add *Cyclical *Guidance in hand.",
-    "UPGRADE_DESCRIPTION": "Academic · Fusion: Academic cards NL Whenever cards are fused to this card, heal 1 HP. NL Gain !B! Block. NL If you have any other Academic cards in hand, gain 1 Strength and Dexterity. NL If this card is fused, add *Cyclical *Guidance+ in hand."
+    "UPGRADE_DESCRIPTION": "Academic - Fusion: Academic cards NL Whenever cards are fused to this card, heal 1 HP. NL Gain !B! Block. NL If you have any other Academic cards in hand, gain 1 Strength and Dexterity. NL If this card is fused, add *Cyclical *Guidance+ in hand."
   },
   "shadowverse:SumoMechanic": {
     "NAME": "Sumo Mechanic",
@@ -6963,7 +6963,7 @@
   },
   "shadowverse:Marlone3": {
     "NAME": "Marlone, Pillar of Balance",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Limit: Add 1 *Sigil *Of *Balance to your hand."
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Exhaust ALL Attack, Status and Curse cards in your hand. NL Limit: Add 1 *Sigil *Of *Balance to your hand."
   },
   "shadowverse:Meowskers": {
     "NAME": "Meowskers, Shaggy Consul",

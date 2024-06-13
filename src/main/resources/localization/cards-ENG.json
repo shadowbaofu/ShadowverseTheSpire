@@ -5189,8 +5189,8 @@
   },
   "shadowverse:Verdilia": {
     "NAME": "Verdilia, Rogue Professor",
-    "DESCRIPTION": "Academic - Fusion: Academic cards NL Whenever cards are fused to this card, heal 1 HP. NL Gain !B! Block. NL If you have any other Academic cards in hand, gain 1 Strength and Dexterity. NL If this card is fused, add *Cyclical *Guidance in hand.",
-    "UPGRADE_DESCRIPTION": "Academic - Fusion: Academic cards NL Whenever cards are fused to this card, heal 1 HP. NL Gain !B! Block. NL If you have any other Academic cards in hand, gain 1 Strength and Dexterity. NL If this card is fused, add *Cyclical *Guidance+ in hand."
+    "DESCRIPTION": "Academic - Fusion: Academic Cards. NL Whenever cards are fused to this card, heal 1 HP. NL Gain !B! Block. NL If you have any other Academic cards in hand, gain 1 Strength and Dexterity. NL If this card is fused, add *Cyclical *Guidance in hand.",
+    "UPGRADE_DESCRIPTION": "Academic - Fusion: Academic Cards. NL Whenever cards are fused to this card, heal 1 HP. NL Gain !B! Block. NL If you have any other Academic cards in hand, gain 1 Strength and Dexterity. NL If this card is fused, add *Cyclical *Guidance+ in hand."
   },
   "shadowverse:SumoMechanic": {
     "NAME": "Sumo Mechanic",

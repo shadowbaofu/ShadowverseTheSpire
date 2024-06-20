@@ -3956,7 +3956,7 @@
   },
   "shadowverse:OmnifacedArchdemon": {
     "NAME": "Omnifaced Archdemon",
-    "DESCRIPTION": "Gain !B! Block. NL Deal !D! damage to a random enemy and heal !M! HP. NL If Wrath is active, do this three times."
+    "DESCRIPTION": "Gain !B! Block. NL Deal !D! damage to a random enemy and heal !M! HP. NL If Wrath is active, deal damage and heal three times."
   },
   "shadowverse:EvilEyeDemon": {
     "NAME": "Evil Eye Demon",

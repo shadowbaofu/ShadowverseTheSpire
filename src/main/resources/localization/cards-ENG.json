@@ -6350,11 +6350,11 @@
   },
   "shadowverse:SlaughteringDragonewt": {
     "NAME": "Slaughtering Dragonewt",
-    "DESCRIPTION": "Choose: NL Gain !B! Block. Exhaust ALL *Burns in your hand and gain !M! Block for each. NL OR Deal !D! damage to ALL enemies. Add 2 *Burns to your hand."
+    "DESCRIPTION": "Choose: NL Gain !B! Block. Exhaust ALL *Burns and gain !M! Block for each. NL OR Deal !D! damage to ALL enemies. Add 2 *Burns to your hand."
   },
   "shadowverse:TheTower": {
     "NAME": "Upright",
-    "DESCRIPTION": "Gain !B! Block. Exhaust ALL *Burns in your hand and gain !M! Block for each."
+    "DESCRIPTION": "Gain !B! Block. Exhaust ALL *Burns and gain !M! Block for each."
   },
   "shadowverse:TheTower_I": {
     "NAME": "Reverse",

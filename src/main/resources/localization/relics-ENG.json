@@ -285,7 +285,7 @@
     "NAME": "Haja Indira, Ultimate Way of the Fist",
     "FLAVOR": "I am, therefore the best of all possible worlds.",
     "DESCRIPTIONS": [
-      "If you have any remaining Energy at the end of your turn, gain #b5 Block, draw #b2 additional cards at the start of your next turn and deal #b5 damage to all enemies."
+      "If you have any remaining Energy at the end of your turn, gain #b5 Block, draw #b2 additional cards next turn and deal #b5 damage to all enemies."
     ]
   },
   "shadowverse:WhiteRelic": {
@@ -571,7 +571,7 @@
     "NAME": "Flugel Coat",
     "FLAVOR": "The coat worn by Monika, Cloudhall Admiral. Its luxurious tailoring inspires the minds and bodies of those who follow at its back.",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yOf #y1st. Right click once per turn and up to #y2 times per combat to add 1 #yEvolution #yPoint to your hand. When you play an Evolution point, all followers gain #g+1/+1."
+      "Replaces #yToken #yOf #y1st. Right click once per turn and up to #y2 times per combat to add 1 #yEvolution #yPoint to your hand. When you play an Evolution Point, all followers gain #g+1/+1."
     ]
   },
   "shadowverse:Offensive8": {

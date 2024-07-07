@@ -4786,7 +4786,7 @@
   },
   "shadowverse:WardenOfTheArcane": {
     "NAME": "Warden of the Arcane",
-    "DESCRIPTION": "Condemned NL Spellboost the cards in your hand !M! time(s). NL Gain !M! Earth_Essence. NL Gain !B! Block. NL Deal 5 damage to ALL enemies."
+    "DESCRIPTION": "Condemned NL Spellboost your hand !M! time(s). NL Gain !M! Earth_Essence. NL Gain !B! Block. NL Deal 5 damage to ALL enemies."
   },
   "shadowverse:BladeRain": {
     "NAME": "It's Raining Blades!",

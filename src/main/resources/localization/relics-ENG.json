@@ -278,7 +278,7 @@
     "NAME": "Orchis's Cat Doll",
     "FLAVOR": "Why do people love other people? Why do they hate them? I know that somewhere in the world the answer is waiting.",
     "DESCRIPTIONS": [
-      "Whenever Resonance becomes active for you, gain [E]. Whenever Resonance becomes inactive for you, add 1 #yDazed to your discard pile."
+      "Gain [E] whenever Resonance becomes active for you. Add 1 #yDazed to your discard pile when Resonance becomes inactive for you."
     ]
   },
   "shadowverse:ArtsMaster": {

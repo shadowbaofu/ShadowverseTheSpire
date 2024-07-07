@@ -2049,7 +2049,7 @@
   "shadowverse:UndyingWitchPower": {
     "NAME": "Undying Witch",
     "DESCRIPTIONS": [
-      "Once per turn, whenever you consume Earth_Essence (such as by performing Earth_Rite, gain Energy equal to the Earth_Essence consumed."
+      "Once per turn, whenever you consume #yEarth #yEssence, gain Energy equal to the Earth Essence consumed."
     ]
   },
   "shadowverse:GraveAdjudicatorPower": {

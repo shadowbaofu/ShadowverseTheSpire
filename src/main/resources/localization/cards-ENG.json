@@ -6478,7 +6478,7 @@
   },
   "shadowverse:Companions": {
     "NAME": "Lian & Alfie, Companions",
-    "DESCRIPTION": "Gain !B! Block. NL Gain 1 Artifact, Blur, Power damage Immune and 3 Flame Barrier. NL Deal !B! damage to a random enemy next turn if you have any Block remaining after."
+    "DESCRIPTION": "Gain !B! Block. NL Gain 1 Artifact, Blur, and Power_Damage_Immune. When attacked this turn, deal 3 damage back. NL Deal !B! damage to a random enemy next turn if you have any Block remaining after."
   },
   "shadowverse:Hunters": {
     "NAME": "Lian & Alfie, Hunters",

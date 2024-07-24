@@ -6537,8 +6537,8 @@
   },
   "shadowverse:Anthenita": {
     "NAME": "Anthenita, Spark of Change",
-    "DESCRIPTION": "Select a non-Portalcraft card. Add 1 copy of that card to your hand and draw pile.",
-    "UPGRADE_DESCRIPTION": "Select a non-Portalcraft card. Add 1 copy of that card to your hand and draw pile. NL Select a Portalcraft card. Add 1 copy of that card to your hand and draw pile."
+    "DESCRIPTION": "You may select a non-Portalcraft card. Add 1 copy of that card to your hand and draw pile.",
+    "UPGRADE_DESCRIPTION": "You may select a non-Portalcraft card. Add 1 copy of that card to your hand and draw pile. NL You may also select a Portalcraft card. Add 1 copy of that card to your hand and draw pile."
   },
   "shadowverse:EverlastingHope": {
     "NAME": "Rosalie, Everlasting Hope",

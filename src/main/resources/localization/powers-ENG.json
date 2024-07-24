@@ -828,7 +828,7 @@
   "shadowverse:AcceleratiumPower": {
     "NAME": "Acceleratium",
     "DESCRIPTIONS": [
-      "Whenever you play an #yAF card, gain 1 Energy. Add #b1 #yVoid to your discard pile every #b2 #yAF cards played. In #b turns",
+      "Whenever you play an #yAF card, gain 1 Energy. Add #b1 #yVoid to your discard pile every #b2 #yAF cards played. In #b turns, ",
       " Lose this effect."
     ]
   },

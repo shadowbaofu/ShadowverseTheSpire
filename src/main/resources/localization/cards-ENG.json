@@ -5922,7 +5922,7 @@
   },
   "shadowverse:LavateinnDragonDefenseForm": {
     "NAME": "Lævateinn Dragon, Defense Form",
-    "DESCRIPTION": "Armed NL Gain !B! Block. NL Draw 2 cards. NL Reduce damage taken by 2 this round. Heal 3 HP at the end of your turn. NL Exhaust."
+    "DESCRIPTION": "Armed NL Gain !B! Block. NL Draw 2 cards. NL Reduce damage taken by 2 this turn. Heal 3 HP at the end of your turn. NL Exhaust."
   },
   "shadowverse:LavateinnDragonBlastForm": {
     "NAME": "Lævateinn Dragon, Blast Form",

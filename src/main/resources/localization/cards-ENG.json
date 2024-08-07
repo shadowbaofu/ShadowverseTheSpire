@@ -5593,7 +5593,7 @@
   },
   "shadowverse:ImperialDragoon": {
     "NAME": "Imperial Dragoon",
-    "DESCRIPTION": "Discard ALL cards in your hand. NL Deal !D! damage to ALL enemies for each card discarded."
+    "DESCRIPTION": "Discard your hand. NL Deal !D! damage to ALL enemies for each card discarded."
   },
   "shadowverse:ShipsbanePlesiosaurus": {
     "NAME": "Shipsbane Plesiosaurus",

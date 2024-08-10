@@ -1391,7 +1391,7 @@
   },
   "shadowverse:CarnivalNecromancer": {
     "NAME": "Bonenanza Necromancer",
-    "DESCRIPTION": "Whenever you perform Burial_Rite this turn, draw !M! card(s). NL Enhance 3: Reanimate: 4."
+    "DESCRIPTION": "Whenever you perform Burial_Rite, draw !M! card(s). NL Enhance 3: Reanimate: 4."
   },
   "shadowverse:HungrySlash": {
     "NAME": "Savoring Slash",

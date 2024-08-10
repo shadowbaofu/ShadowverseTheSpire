@@ -410,7 +410,7 @@
   },
   "shadowverse:OmenOfOne": {
     "NAME": "Mjerrabaine, Omen of One",
-    "DESCRIPTION": "If there are no duplicate cards in your draw pile, gain 2 Strength and 2 Dexterity. At the end of your turn, deal 12 damage to a random enemy."
+    "DESCRIPTION": "If there are no duplicate cards in your draw pile, gain 2 Strength, 2 Dexterity, and deal 12 damage to a random enemy at the end of each of your turns."
   },
   "shadowverse:OmenOfOne2": {
     "NAME": "Mjerrabaine, Great One",
@@ -1197,15 +1197,15 @@
   },
   "shadowverse:Mordecai": {
     "NAME": "Mordecai the Duelist",
-    "DESCRIPTION": "Deal !D! damage. NL Last_Words: When this card is Exhausted, add a copy of this card to your hand. It costs 0 this turn."
+    "DESCRIPTION": "Deal !D! damage. NL Last_Words: When Exhausted, add a copy of this card to your hand. It costs 0 this turn."
   },
   "shadowverse:LurchingCorpse": {
     "NAME": "Lurching Corpse",
-    "DESCRIPTION": "Deal !D! damage. NL Last_Words: When this card is Exhausted, apply !M! Weak and Vulnerable to ALL enemies."
+    "DESCRIPTION": "Deal !D! damage. NL Last_Words: When Exhausted, apply !M! Weak and Vulnerable to ALL enemies."
   },
   "shadowverse:SpartoiSoldier": {
     "NAME": "Spartoi Soldier",
-    "DESCRIPTION": "Gain !B! Block. NL Last_Words: When this card is Exhausted, gain !M! Shadows."
+    "DESCRIPTION": "Gain !B! Block. NL Last_Words: When Exhausted, gain !M! Shadows."
   },
   "shadowverse:DeathTyrant": {
     "NAME": "Deathly Tyrant",
@@ -1257,7 +1257,7 @@
   },
   "shadowverse:Ceres2": {
     "NAME": "Ceres, Bride of the Night",
-    "DESCRIPTION": "Gain !B! Block. NL Add a *Darkest *Desire. NL Last_Words: When this card is Exhausted, deal !M! damage to a random enemy. NL Exhaust."
+    "DESCRIPTION": "Gain !B! Block. NL Add a *Darkest *Desire. NL Last_Words: When Exhausted, deal !M! damage to a random enemy. NL Exhaust."
   },
   "shadowverse:Hector": {
     "NAME": "Demonlord Eachtar",
@@ -1407,7 +1407,7 @@
   },
   "shadowverse:DeadMetalStar": {
     "NAME": "He Who Once Rocked",
-    "DESCRIPTION": "Machina. NL Accelerate 1: Add 3 *Assembly *Droids to your hand. NL NL --------------------- NL NL Deal !D! damage and gain !B! Block. NL Last_Words: When this card is Exhausted, Reanimate: 3."
+    "DESCRIPTION": "Machina. NL Accelerate 1: Add 3 *Assembly *Droids to your hand. NL NL --------------------- NL NL Deal !D! damage and gain !B! Block. NL Last_Words: When Exhausted, Reanimate: 3."
   },
   "shadowverse:Skeleton": {
     "NAME": "Skeleton",
@@ -1457,7 +1457,7 @@
   },
   "shadowverse:BoneChimera": {
     "NAME": "Bone Chimera",
-    "DESCRIPTION": "Gain !B! Block. NL Last_Words: When this card is Exhausted, add !M! *Skeletons to your hand."
+    "DESCRIPTION": "Gain !B! Block. NL Last_Words: When Exhausted, add !M! *Skeletons to your hand."
   },
   "shadowverse:LadyGray": {
     "NAME": "Lady Grey, Deathweaver",
@@ -2441,7 +2441,7 @@
   },
   "shadowverse:Tre": {
     "NAME": "Marionette--Tre",
-    "DESCRIPTION": "Deal !D! damage twice. NL Last_Words: When this card is Exhausted, add 1 *Marionette--Uno and 1 *Marionette--Due to your discard pile. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage twice. NL Last_Words: When Exhausted, add 1 *Marionette--Uno and 1 *Marionette--Due to your discard pile. NL Exhaust."
   },
   "shadowverse:Orchid1": {
     "NAME": "Orchis, Vengeful Puppet",
@@ -4802,7 +4802,7 @@
   },
   "shadowverse:VolunteerTestSubject": {
     "NAME": "Volunteer Test Subject",
-    "DESCRIPTION": "Condemned NL Gain !B! Block. NL If you played at least 3 *Volunteer *Test *Subjects, deal !D! damage. NL If you've played at least 5, deal 9 more damage.  NL Last_Words: When this card is Exhausted, draw a card. NL Exhaust.",
+    "DESCRIPTION": "Condemned NL Gain !B! Block. NL If you played at least 3 *Volunteer *Test *Subjects, deal !D! damage. NL If you've played at least 5, deal 9 more damage.  NL Last_Words: When Exhausted, draw a card. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
       " NL (Played ",
       " *Volunteed *Test *Subjects. )"
@@ -4839,8 +4839,8 @@
   },
   "shadowverse:AbyssalColonel_crystallize": {
     "NAME": "Abyssal Colonel, Crystallized",
-    "DESCRIPTION": "Condemned - Retain NL Countdown !M! : Exhaust this card. NL Last_Words: When this card is Exhausted, put a *Abyssal *Colonel into your hand and change its cost to 0.",
-    "UPGRADE_DESCRIPTION": "Condemned · Retain NL Countdown !M! : Exhaust this card. NL Last_Words: When this card is Exhausted, put a *Abyssal *Colonel+ into your hand and change its cost to 0."
+    "DESCRIPTION": "Condemned - Retain NL Countdown !M! : Exhaust this card. NL Last_Words: When Exhausted, put a *Abyssal *Colonel into your hand and change its cost to 0.",
+    "UPGRADE_DESCRIPTION": "Condemned · Retain NL Countdown !M! : Exhaust this card. NL Last_Words: When Exhausted, put a *Abyssal *Colonel+ into your hand and change its cost to 0."
   },
   "shadowverse:AbyssalColonel_Temp": {
     "NAME": "Abyssal Colonel",
@@ -4853,11 +4853,11 @@
   },
   "shadowverse:UnderworldLieutenant": {
     "NAME": "Underworld Lieutenant",
-    "DESCRIPTION": "Condemned NL Gain !B! Block. NL Put !M! *Spartoi *Sergeant into your hand. It costs 0 this turn. NL Last_Words: When this card is Exhausted, deal 6 damage to ALL enemies."
+    "DESCRIPTION": "Condemned NL Gain !B! Block. NL Put !M! *Spartoi *Sergeant into your hand. It costs 0 this turn. NL Last_Words: When Exhausted, deal 6 damage to ALL enemies."
   },
   "shadowverse:FallenSergeant": {
     "NAME": "Fallen Sergeant",
-    "DESCRIPTION": "Condemned NL Gain !B! Block. NL Last_Words: When this card is Exhausted, put a random Condemned card from your draw pile into your hand."
+    "DESCRIPTION": "Condemned NL Gain !B! Block. NL Last_Words: When Exhausted, put a random Condemned card from your draw pile into your hand."
   },
   "shadowverse:WardenOfCorpses": {
     "NAME": "Warden of Corpses",
@@ -5194,11 +5194,11 @@
   },
   "shadowverse:SumoMechanic": {
     "NAME": "Sumo Mechanic",
-    "DESCRIPTION": "Academic - Machina NL Gain !B! Block. NL Last_Words: When this card is played or Exhausted, put 1 *Assembly *Droid into your hand. NL If 10 or more Machina cards are in your Exhaust pile, gain !B! more Block. "
+    "DESCRIPTION": "Academic - Machina NL Gain !B! Block. NL Last_Words: When played or Exhausted, put 1 *Assembly *Droid into your hand. NL If 10 or more Machina cards are in your Exhaust pile, gain !B! more Block. "
   },
   "shadowverse:Gioffre": {
     "NAME": "Gioffre, Diligent Engineer",
-    "DESCRIPTION": "Academic - Machina NL Gain !B! Block. NL Last_Words: When this card is played or Exhausted, put 1 *Assembly *Droid into your hand. NL If 10 or more Machina cards are in your Exhaust pile, add a *Mechanized *Lifeform with 0 cost and Exhaust to your hand."
+    "DESCRIPTION": "Academic - Machina NL Gain !B! Block. NL Last_Words: When played or Exhausted, put 1 *Assembly *Droid into your hand. NL If 10 or more Machina cards are in your Exhaust pile, add a *Mechanized *Lifeform that costs 0 and Exhausts to your hand."
   },
   "shadowverse:LyelthMarionette": {
     "NAME": "Lyelth's Marionette",
@@ -6138,7 +6138,7 @@
   },
   "shadowverse:Aiela": {
     "NAME": "Aiela, Dragon Knight",
-    "DESCRIPTION": "Gain !B! Block. NL Last_Words: When this card is Exhausted, gain 1 Overflow point."
+    "DESCRIPTION": "Gain !B! Block. NL Last_Words: When Exhausted, gain 1 Overflow point."
   },
   "shadowverse:Aiela2": {
     "NAME": "Aiela, Dragon Sword",
@@ -6370,7 +6370,7 @@
   },
   "shadowverse:FlameNGlass3": {
     "NAME": "Flame and Glass, United",
-    "DESCRIPTION": "Deal !D! damage. Gain !B! Block. NL Last Words: When this card is played or Exhausted, gain 'If you did not lose HP or take damage this turn, put 1 *Flame *and *Glass in your hand next turn."
+    "DESCRIPTION": "Deal !D! damage. Gain !B! Block. NL Last Words: When played or Exhausted, gain 'If you did not lose HP or take damage this turn, put 1 *Flame *and *Glass in your hand next turn."
   },
   "shadowverse:Rogers": {
     "NAME": "Rogers, Ruler Of The Seas",

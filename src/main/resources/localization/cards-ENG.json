@@ -1485,7 +1485,7 @@
   },
   "shadowverse:Arcus": {
     "NAME": "Arcus, Ghostly Manager",
-    "DESCRIPTION": "Attacks that originally cost 1 or less now cost 0 and Exhaust when played. NL Whenever you play an Attack card that costs 0, put a *Ghost into your hand."
+    "DESCRIPTION": "Attacks that originally cost 1 or less instead cost 0 and Exhaust when played. NL Whenever you play an Attack card that costs 0, put a *Ghost into your hand."
   },
   "shadowverse:Manmaru1": {
     "NAME": "Roly-Poly Mk I",
@@ -4259,7 +4259,7 @@
   "shadowverse:UndyingResolve": {
     "NAME": "Undying Resolve",
     "DESCRIPTION": "Festive. NL Select an Attack in your discard pile and reduce its cost by 1 this turn. NL If that card is *Anisage, *Lost *Forsaken, give it 'Last Words: When Exhausted, put a copy of this card that deals double damage into your hand.' NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Festive. NL Select an Attack card in your discard pile and reduce its cost by 1 until played. NL If that card is *Anisage, *Lost *Forsaken, give it 'Last Words: When Exhausted, put a copy of this card that deals double damage into your hand.' NL Exhaust."
+    "UPGRADE_DESCRIPTION": "Festive. NL Select an Attack in your discard pile and reduce its cost by 1 until played. NL If that card is *Anisage, *Lost *Forsaken, give it 'Last Words: When Exhausted, put a copy of this card that deals double damage into your hand.' NL Exhaust."
   },
   "shadowverse:SoulGuide": {
     "NAME": "Psychopomp Tour Guide",

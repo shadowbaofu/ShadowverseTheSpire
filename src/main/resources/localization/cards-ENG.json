@@ -1461,7 +1461,7 @@
   },
   "shadowverse:LadyGray": {
     "NAME": "Lady Grey, Deathweaver",
-    "DESCRIPTION": "Deal !D! damage and heal HP equal to the damage dealt. NL Reanimate: 1."
+    "DESCRIPTION": "Deal !D! damage. Heal HP equal to the damage dealt. NL Reanimate: 1."
   },
   "shadowverse:NecroImpulse": {
     "NAME": "Necroimpulse",
@@ -4826,7 +4826,7 @@
   },
   "shadowverse:GhastlyBanishment": {
     "NAME": "Ghastly Banishment",
-    "DESCRIPTION": "Put 2 *Ghosts in your hand. NL Enhance 3: Deal !D! damage to ALL enemies. NL ( !M! times Banished status cards.)"
+    "DESCRIPTION": "Put 2 *Ghosts in your hand. NL Enhance 3: Deal !D! damage to ALL enemies, equal to the number of Exhausted Status cards times !M!."
   },
   "shadowverse:Istyndet": {
     "NAME": "Istyndet, Soul Convict",
@@ -4848,8 +4848,8 @@
   },
   "shadowverse:AbyssalColonel": {
     "NAME": "Abyssal Colonel",
-    "DESCRIPTION": "Condemned NL Crystallize 1: Put an *Abyssal *Colonel, *Crystallized into your hand. NL NL --------------------- NL  NL Deal !D! damage NL Gain !B! Block. NL Last_Words: Apply 1 Weak and Vulnerable to a random enemy and heal 3 HP. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Condemned NL Crystallize 1: Put an *Abyssal *Colonel, *Crystallized+ into your hand. NL NL --------------------- NL  NL Deal !D! damage NL Gain !B! Block. NL Last_Words: Apply 1 Weak and Vulnerable to a random enemy and heal 3 HP. NL Exhaust."
+    "DESCRIPTION": "Condemned NL Crystallize 1: Put an *Abyssal *Colonel, *Crystallized into your hand. NL NL --------------------- NL  NL Deal !D! damage. NL Gain !B! Block. NL Last_Words: Apply 1 Weak and Vulnerable to a random enemy and heal 3 HP. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Condemned NL Crystallize 1: Put an *Abyssal *Colonel, *Crystallized+ into your hand. NL NL --------------------- NL  NL Deal !D! damage. NL Gain !B! Block. NL Last_Words: Apply 1 Weak and Vulnerable to a random enemy and heal 3 HP. NL Exhaust."
   },
   "shadowverse:UnderworldLieutenant": {
     "NAME": "Underworld Lieutenant",

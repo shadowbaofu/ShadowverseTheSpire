@@ -1501,11 +1501,11 @@
   },
   "shadowverse:Andrealphus": {
     "NAME": "Andrealphus",
-    "DESCRIPTION": "Draw !M! card(s). Give ALL Attacks in your hand: 'Last Words: When this card is Exhausted, draw a card.' NL Last_Words: When this card is Exhausted, draw a card."
+    "DESCRIPTION": "Draw !M! card. Give ALL Attacks in your hand: 'Last Words: When Exhausted, draw 1 card.' NL Last_Words: When Exhausted, draw 1 card."
   },
   "shadowverse:PrinceCatacomb": {
     "NAME": "Prince Catacomb",
-    "DESCRIPTION": "Deal !D! damage. Give ALL Attacks in your hand: 'Last Words: When this card is Exhausted, add a *Skeleton to your hand.' NL Last_Words: When this card is Exhausted, add a *Skeleton to your hand."
+    "DESCRIPTION": "Deal !D! damage. Give ALL Attacks in your hand: 'Last Words: When Exhausted, add a *Skeleton to your hand.' NL Last_Words: When Exhausted, add a *Skeleton to your hand."
   },
   "shadowverse:OmenOfSilence": {
     "NAME": "Rulenye, Omen of Silence",
@@ -3368,7 +3368,7 @@
   },
   "shadowverse:Cernunnos": {
     "NAME": "Cernunnos",
-    "DESCRIPTION": "Burial_Rite 1: Draw !M! card(s). NL Gain [E] [E] (Limit). NL Reanimate: !M!. If you've spent 20 or more Shadows to activate Necromancy effects this combat, Reanimate: 5 instead."
+    "DESCRIPTION": "Burial_Rite 1: Draw !M! card(s). NL Limit: Gain [E] [E] . NL Reanimate: !M!. If you have spent 20 or more Shadows this combat, Reanimate: 5 instead."
   },
   "shadowverse:MiracleHarvest": {
     "NAME": "Miracle Harvest",

@@ -72,7 +72,7 @@
     "NAME": "Mechabook Sorcerer",
     "DESCRIPTIONS": [
       "Whenever you play a #yMachina card, gain #b",
-      " [G]."
+      " [E]."
     ]
   },
   "shadowverse:SonicFourPower": {
@@ -719,7 +719,7 @@
   "shadowverse:AcceleratiumPower": {
     "NAME": "Acceleratium",
     "DESCRIPTIONS": [
-      "Whenever you play an #yAF card, gain 1 Energy. Add #b1 #yVoid to your discard pile every #b2 #yAF cards played. In #b turns",
+      "Whenever you play an #yAF card, gain 1 Energy. Add #b1 #yVoid to your discard pile every #b2 #yAF cards played. In #b turns, ",
       " Lose this effect."
     ]
   },
@@ -1839,7 +1839,7 @@
   "shadowverse:UndyingWitchPower": {
     "NAME": "Undying Witch",
     "DESCRIPTIONS": [
-      "Once per turn, whenever you consume Earth_Essence (such as by performing Earth_Rite, gain Energy equal to the Earth_Essence consumed."
+      "Once per turn, whenever you consume #yEarth #yEssence, gain Energy equal to the Earth Essence consumed."
     ]
   },
   "shadowverse:GraveAdjudicatorPower": {

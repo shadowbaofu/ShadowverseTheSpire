@@ -20,6 +20,7 @@ import com.megacrit.cardcrawl.vfx.combat.ClashEffect;
 import rs.lazymankits.interfaces.cards.BranchableUpgradeCard;
 import rs.lazymankits.interfaces.cards.UpgradeBranch;
 import shadowverse.cards.AbstractAmuletCard;
+import shadowverse.cards.AbstractNoCountDownAmulet;
 import shadowverse.cards.Neutral.Temp.MarkOfBalance;
 import shadowverse.cards.Neutral.Temp.SigilOfBalance;
 import shadowverse.characters.Bishop;
@@ -107,7 +108,7 @@ public class Marlone extends CustomCard implements BranchableUpgradeCard {
                 }
                 addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(this.damage, true), this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE, true));
                 for (AbstractCard c : p.hand.group) {
-                    if (c.type != CardType.SKILL && !(c instanceof AbstractAmuletCard)) {
+                    if (c.type != CardType.SKILL && !(c instanceof AbstractAmuletCard) && !(c instanceof AbstractNoCountDownAmulet)) {
                         addToBot(new ExhaustSpecificCardAction(c, p.hand));
                     }
                 }
@@ -165,7 +166,7 @@ public class Marlone extends CustomCard implements BranchableUpgradeCard {
                 ++Marlone.this.timesUpgraded;
                 Marlone.this.upgraded = true;
                 Marlone.this.name = cardStrings3.NAME;
-                Marlone.this.baseDamage = 10;
+                Marlone.this.baseDamage = 13;
                 Marlone.this.upgradedDamage = true;
                 Marlone.this.upgradeBaseCost(2);
                 Marlone.this.initializeTitle();

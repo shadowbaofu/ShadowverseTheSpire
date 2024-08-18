@@ -54,13 +54,11 @@ public class SexyVampire extends CustomCard {
     }
 
     @Override
-    public void triggerWhenDrawn(){
-        if (!AbstractDungeon.player.hasPower(EpitaphPower.POWER_ID)||!AbstractDungeon.player.stance.ID.equals(Vengeance.STANCE_ID)){
-                this.superFlash();
-                addToBot(new WaitAction(1.2F));
-                addToBot( new ChangeStanceAction(new Vengeance()));
-                addToBot( new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new VengeanceHealthPower( AbstractDungeon.player)));
-                addToBot(new ExhaustSpecificCardAction(this,AbstractDungeon.player.hand));
+    public void triggerWhenDrawn() {
+        if (!AbstractDungeon.player.hasPower(EpitaphPower.POWER_ID) && !AbstractDungeon.player.stance.ID.equals(Vengeance.STANCE_ID)) {
+            this.superFlash();
+            addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new VengeanceHealthPower(AbstractDungeon.player)));
+            addToBot(new ExhaustSpecificCardAction(this, AbstractDungeon.player.hand));
         }
     }
 
@@ -68,7 +66,7 @@ public class SexyVampire extends CustomCard {
         addToBot(new SFXAction("SexyVampire"));
         addToBot(new VFXAction(new BiteEffect(abstractMonster.hb.cX, abstractMonster.hb.cY - 40.0F * Settings.scale, Color.SCARLET.cpy()), 0.4F));
         addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
-        addToBot(new HealAction(abstractPlayer,abstractPlayer,this.magicNumber));
+        addToBot(new HealAction(abstractPlayer, abstractPlayer, this.magicNumber));
     }
 
 

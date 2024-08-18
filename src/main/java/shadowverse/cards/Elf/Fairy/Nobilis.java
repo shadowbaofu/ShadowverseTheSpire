@@ -57,9 +57,11 @@
      addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
      for (AbstractCard c : AbstractDungeon.player.hand.group) {
        if (c instanceof Fairy) {
-         c.baseDamage += 4;
-         CardModifierManager.addModifier(c, new NobilisMod());
-         c.applyPowers();
+         if (!CardModifierManager.hasModifier(c,NobilisMod.ID)){
+             c.baseDamage += 4;
+             CardModifierManager.addModifier(c, new NobilisMod());
+             c.applyPowers();
+         }
        }
      }
      if (this.upgraded){

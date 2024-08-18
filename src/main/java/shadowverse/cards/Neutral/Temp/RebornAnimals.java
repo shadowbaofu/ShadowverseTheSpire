@@ -4,20 +4,20 @@
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.AttackDamageRandomEnemyAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Necromancer;
+
+import java.util.ArrayList;
 
 
  public class RebornAnimals
@@ -53,10 +53,14 @@ import shadowverse.characters.Necromancer;
          addToBot(new GainBlockAction(AbstractDungeon.player,this.block));
          break;
        case 1:
+         ArrayList<AbstractCard> list = new ArrayList<AbstractCard>();
          for (AbstractCard c : AbstractDungeon.player.exhaustPile.group){
-           if (c.cost == 1)
-             addToBot(new MakeTempCardInHandAction(c.makeStatEquivalentCopy()));
+           if (c.cost == 1 && c.type == CardType.ATTACK){
+             list.add(c);
+           }
          }
+         AbstractCard card = list.get(AbstractDungeon.cardRng.random(list.size()-1));
+         addToBot(new MakeTempCardInHandAction(card.makeStatEquivalentCopy()));
          break;
        default:
          break;

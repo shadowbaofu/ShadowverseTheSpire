@@ -2,7 +2,6 @@ package shadowverse.cards.Royal.Loot;
 
 import basemod.abstracts.CustomCard;
 import shadowverse.cards.Neutral.Temp.*;
-import shadowverseCharbosses.powers.cardpowers.EnemyFlameBarrierPower;
 import com.badlogic.gdx.Gdx;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
@@ -23,8 +22,6 @@ import shadowverse.characters.Royal;
 import shadowverse.orbs.AmbushMinion;
 import shadowverse.orbs.ErikaOrb;
 import shadowverse.orbs.Minion;
-import shadowverse.powers.BetterFlightPower;
-import shadowverse.powers.CurseOfGeass;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -198,18 +195,18 @@ public class Octrice extends CustomCard implements BranchableUpgradeCard {
                         addToBot(new ApplyPowerAction(p, p, new BarricadePower(p)));
                     }else if (po instanceof BufferPower){
                         addToBot(new ApplyPowerAction(p, p, new BufferPower(p,po.amount),po.amount));
-                    }else if (po instanceof EnemyFlameBarrierPower){
-                        addToBot(new ApplyPowerAction(p, p, new FlameBarrierPower(p,po.amount),po.amount));
+                    //}else if (po instanceof EnemyFlameBarrierPower){
+                        //addToBot(new ApplyPowerAction(p, p, new FlameBarrierPower(p,po.amount),po.amount));
                     }else if (po instanceof ThornsPower){
                         addToBot(new ApplyPowerAction(p, p, new ThornsPower(p,po.amount),po.amount));
                     }else if (po instanceof ArtifactPower){
                         addToBot(new ApplyPowerAction(p, p, new ArtifactPower(p,po.amount),po.amount));
                     }else if (po instanceof GenericStrengthUpPower){
                         addToBot(new ApplyPowerAction(p, p, new GenericStrengthUpPower(p,"",po.amount),po.amount));
-                    }else if (po instanceof CurseOfGeass){
-                        addToBot(new ApplyPowerAction(p, p, new CurseOfGeass(p)));
-                    }else if (po instanceof BetterFlightPower){
-                        addToBot(new ApplyPowerAction(p, p, new BetterFlightPower(p,po.amount),po.amount));
+                    //}else if (po instanceof CurseOfGeass){
+                        //addToBot(new ApplyPowerAction(p, p, new CurseOfGeass(p)));
+                    //}else if (po instanceof BetterFlightPower){
+                        //addToBot(new ApplyPowerAction(p, p, new BetterFlightPower(p,po.amount),po.amount));
                     }else if (po instanceof IntangiblePower){
                         addToBot(new ApplyPowerAction(p, p, new IntangiblePlayerPower(p,po.amount),po.amount));
                     } else {

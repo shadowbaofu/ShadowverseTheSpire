@@ -5,6 +5,7 @@
 import basemod.abstracts.CustomRelic;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rewards.RewardItem;
 import shadowverse.reward.NeutralReward;
@@ -29,9 +30,17 @@ import shadowverse.reward.NeutralReward;
      public void onEquip() {
          this.counter = 3;
      }
- 
-   
-   public void onVictory() {
+
+
+     @Override
+     public void onMonsterDeath(AbstractMonster m) {
+         if (m.type == AbstractMonster.EnemyType.BOSS){
+             this.grayscale = false;
+             this.counter=3;
+         }
+     }
+
+     public void onVictory() {
        if (!this.grayscale){
            if (this.counter>0){
                flash();
@@ -40,9 +49,6 @@ import shadowverse.reward.NeutralReward;
            this.counter--;
            if (this.counter<=0)
                this.grayscale = true;
-       }else if(this.grayscale && (AbstractDungeon.floorNum==16||AbstractDungeon.floorNum==33||AbstractDungeon.floorNum==50)){
-           this.grayscale = false;
-           this.counter=3;
        }
    }
  

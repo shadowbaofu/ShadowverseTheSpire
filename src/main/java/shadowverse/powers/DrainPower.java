@@ -29,15 +29,15 @@ public class DrainPower extends AbstractPower {
 
     @Override
     public void atStartOfTurn(){
-        addToBot((AbstractGameAction)new RemoveSpecificPowerAction(this.owner,this.owner,this));
+        addToBot(new RemoveSpecificPowerAction(this.owner,this.owner,this));
     }
 
 
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
         if (target instanceof AbstractMonster){
             int amt = damageAmount;
-            addToBot((AbstractGameAction)new HealAction(info.owner, info.owner, amt));
-            addToBot((AbstractGameAction)new RemoveSpecificPowerAction(this.owner,info.owner,this));
+            addToBot(new HealAction(info.owner, info.owner, amt));
+            addToBot(new RemoveSpecificPowerAction(this.owner,info.owner,this));
         }
     }
 

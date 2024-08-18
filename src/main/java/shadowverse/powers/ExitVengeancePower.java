@@ -43,11 +43,11 @@ public class ExitVengeancePower extends AbstractPower {
             this.amount -= 1;
             if (this.amount == 0){
                 flash();
-                addToBot((AbstractGameAction)new RemoveSpecificPowerAction(this.owner,this.owner,this));
-                if(this.owner.currentHealth > this.owner.maxHealth / 2){
+                addToBot(new RemoveSpecificPowerAction(this.owner,this.owner,this));
+                if(this.owner.currentHealth > this.owner.maxHealth / 2 && !this.owner.hasPower(VengeanceHealthPower.POWER_ID)){
                     if (this.owner instanceof AbstractPlayer){
                         if (((AbstractPlayer) this.owner).stance.ID.equals(Vengeance.STANCE_ID)){
-                            addToBot((AbstractGameAction)new ChangeStanceAction((AbstractStance)new NeutralStance()));
+                            addToBot(new ChangeStanceAction(new NeutralStance()));
                         }
                     }
                 }

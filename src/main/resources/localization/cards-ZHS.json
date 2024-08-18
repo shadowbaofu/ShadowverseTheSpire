@@ -738,14 +738,6 @@
     "DESCRIPTION": "融合 :  *宝石之光 以外的卡牌。 NL 与这张牌融合时， 消耗 这张牌。随后增加融合数量的随机职业牌到手中。并增加1张稀有职业牌到手中。 NL  NL --------------------- NL  NL 抽牌直至手牌为 !M! 张。",
     "UPGRADE_DESCRIPTION": "保留 · 融合 :  *宝石之光 以外的卡牌。 NL 与这张牌融合时， 消耗 这张牌。随后增加融合数量的随机职业牌到手中。并增加1张稀有职业牌到手中。 NL  NL --------------------- NL  NL 抽牌直至手牌为 !M! 张。"
   },
-  "shadowverse:BelphometStatus": {
-    "NAME": "支配者的弹压",
-    "DESCRIPTION": "保留 。 NL 机械 NL 受到4点伤害。 NL 当这张牌被 保留 时，手中每有一张除这张牌以外的 *支配者的弹压 受到 !M! 点伤害。"
-  },
-  "shadowverse:ManaForce": {
-    "NAME": "马纳之力",
-    "DESCRIPTION": "保留 。 NL 自然 NL 移除 马纳屏障 。 NL 消耗 。"
-  },
   "shadowverse:Strike_E": {
     "NAME": "打击",
     "DESCRIPTION": "造成 !D! 点伤害。"
@@ -1425,30 +1417,6 @@
   "shadowverse:SowDeathReapLife": {
     "NAME": "生死逆转",
     "DESCRIPTION": "亡者召还 自己的本回合数。"
-  },
-  "shadowverse:AbsoluteJudgment": {
-    "NAME": "绝对制裁",
-    "DESCRIPTION": "若敌人没有 易伤 ，给予 !M! 层 易伤 。 NL 若有，降低敌人1点 力量 。 NL 下一次受到的伤害变为0。 NL 消耗 。"
-  },
-  "shadowverse:AbsoluteOne": {
-    "NAME": "绝对之一",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 不再受到能力伤害。 NL 每回合开始时将1张 *绝对制裁 加入手中。 NL 消耗 。"
-  },
-  "shadowverse:EnAcceleratium": {
-    "NAME": "加速装置",
-    "DESCRIPTION": "下回合获得 !M! 点能量。"
-  },
-  "shadowverse:ShadowMode": {
-    "NAME": "暗影模式",
-    "DESCRIPTION": "获得1层 无实体 。"
-  },
-  "shadowverse:EnBlackenedScripture": {
-    "NAME": "漆黑法典",
-    "DESCRIPTION": "给予 !M! 层 虚弱 和 脆弱 。"
-  },
-  "shadowverse:EnMoonAlmiraj": {
-    "NAME": "黑天月兔妖",
-    "DESCRIPTION": "造成 !D! 点伤害，回复造成伤害的生命。 NL 获得 !B! 点 格挡 。"
   },
   "shadowverse:RegenerateSpirit": {
     "NAME": "灵魂再生",
@@ -2150,10 +2118,6 @@
     "NAME": "守御的创造物",
     "DESCRIPTION": "创造物 NL 获得 !B! 点 格挡 。 NL 消耗 。"
   },
-  "shadowverse:EnProtectArtifact": {
-    "NAME": "守御的创造物",
-    "DESCRIPTION": "创造物 NL 获得 !B! 点 格挡 。 NL 给予敌人 !M! 层 虚弱 。 NL 消耗 。"
-  },
   "shadowverse:EdgeArtifact": {
     "NAME": "锋锐的创造物",
     "DESCRIPTION": "创造物 NL 造成 !D! 点伤害。 NL 回复造成伤害的生命。 NL 消耗 。"
@@ -2514,10 +2478,6 @@
     "NAME": "星宇之翼·菈菈米娅",
     "DESCRIPTION": "机械 · 创造物 NL 造成 !D! 点伤害。 NL 如果消耗堆中的 创造物 种类为6以上，对全体敌人造成 !M! 点伤害。"
   },
-  "shadowverse:EnRalmia": {
-    "NAME": "音速机构·菈菈米娅",
-    "DESCRIPTION": "机械 · 创造物 NL 造成 !D! 点伤害。 NL 本回合每打出1张创造物获得 !M! 点 力量 。这张牌受4倍 力量 影响。"
-  },
   "shadowverse:OmniscientKaiser": {
     "NAME": "霸瞳皇帝",
     "DESCRIPTION": "激奏 0 :选择1张手牌， 消耗 这张牌以外的手牌，抽被 消耗 数量的牌。 NL  NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 对全体敌人造成 !D! 点伤害。 NL 获得1层 *残影 。 NL 消耗 。",
@@ -2633,167 +2593,6 @@
   "shadowverse:Odin": {
     "NAME": "黄昏战神·奥丁",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 获得1层 无实体 。 NL 增加1张下次打出前耗能为0的 *斯莱普尼尔 到手中。 NL 消耗 。"
-  },
-  "shadowverse:SevensForceSorcerer": {
-    "NAME": "七彩之力召唤师",
-    "DESCRIPTION": "一回合内打出共7张技能牌后消灭所有敌人并失去此效果。",
-    "UPGRADE_DESCRIPTION": "一回合内打出共7张技能牌后消灭所有敌人并失去此效果。 NL 使手中所有耗能为1以下的技能牌本回合耗能变为0。"
-  },
-  "shadowverse:EnRadiantAngel": {
-    "NAME": "光辉天使",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 回复 !M! 点生命 。 NL 下回合额外抽1张牌。"
-  },
-  "shadowverse:EnAncientLionSpirit": {
-    "NAME": "远古圣狮之魂",
-    "DESCRIPTION": "对全体敌人造成 !D! 点伤害。"
-  },
-  "shadowverse:EnPriestOfTheCudgel": {
-    "NAME": "铁锤的僧侣",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 给予 !M! 层 易伤 。 NL 消耗 你抽牌堆顶部的一张牌。"
-  },
-  "shadowverse:EnArdentSister": {
-    "NAME": "充满热诚的修女",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !M! 点 力量 。"
-  },
-  "shadowverse:EnHeavenlyHound": {
-    "NAME": "天界忠犬",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得 !M! 层多层护甲。"
-  },
-  "shadowverse:EnDarkPriest": {
-    "NAME": "暗黑牧师",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 给予 !M! 层 虚弱 和 脆弱 。"
-  },
-  "shadowverse:EnThemisDecree": {
-    "NAME": "忒弥斯的审判",
-    "DESCRIPTION": "消耗 敌人的抽牌堆中的所有攻击牌。 NL 消耗 。"
-  },
-  "shadowverse:KMRGaze": {
-    "NAME": "木村唯人的凝视",
-    "DESCRIPTION": "不能被打出 。 NL 当这张牌被抽到时，手中所有技能牌本回合耗能+10。 NL 虚无 。"
-  },
-  "shadowverse:WUP": {
-    "NAME": "那塔拉崩坏",
-    "DESCRIPTION": "机械 · 自然 NL 不能被打出 。 NL 当这张牌被抽到时，增加2张 *贝尔冯特的弹压 到手中。 NL 如果卡组中没有其他 机械 或 自然 牌，额外增加1张。 NL 虚无 。"
-  },
-  "shadowverse:Death": {
-    "NAME": "死神",
-    "DESCRIPTION": "不能被打出 。 NL 回合结束时，如果抽牌堆张数为0，你将败北。"
-  },
-  "shadowverse:Altersphere": {
-    "NAME": "次元扭曲",
-    "DESCRIPTION": "不能被打出 。 NL 打出牌时，随机 消耗 1张手牌，并将1张随机牌加入手中。 NL 虚无 。"
-  },
-  "shadowverse:Rowen": {
-    "NAME": "微笑绝杰·罗文",
-    "DESCRIPTION": "回合结束时，增加1张 *黑龙的诅咒 到手中。"
-  },
-  "shadowverse:CurseOfTheBlackDragon": {
-    "NAME": "黑龙的诅咒",
-    "DESCRIPTION": "保留 。 不能被打出 。 NL 回合结束时，如果未 觉醒 则失去1点生命。 NL 如果已 觉醒 则对随机敌人造成 !D! 点伤害。"
-  },
-  "shadowverse:ShadowBahmut": {
-    "NAME": "暗影巴哈姆特",
-    "DESCRIPTION": "造成 !D! 点无法防御的伤害。 NL 使敌人失去 力量 和 敏捷 以外的所有正面效果。 NL 消灭所有 爪牙 敌人。"
-  },
-  "shadowverse:ShiningValkyrie": {
-    "NAME": "闪耀女武神",
-    "DESCRIPTION": "增加 !M! 张 *妖精 到手中。 NL 回合开始时增加1张妖精到手中。 NL 每当打出 *妖精 时，对随机敌人造成6点伤害并获得1点 力量 和1点 敏捷 。"
-  },
-  "shadowverse:LegendSwordCommander": {
-    "NAME": "传说之剑指挥官",
-    "DESCRIPTION": "回合开始时， 格挡 不会消失。 NL 回合结束时，获得 !M! 点 格挡 。 NL 打出攻击牌时，对全体敌人造成 !M! 点伤害"
-  },
-  "shadowverse:DeadSoulTaker": {
-    "NAME": "死亡狩魂者",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 从消耗堆中将1张攻击牌本回合耗能变为0加入手中。 NL 死灵术 10 :随机将本场战斗已打出的攻击牌以耗能为0且 消耗 的形式加入手中直到手牌上限。"
-  },
-  "shadowverse:AbyssDoomLord": {
-    "NAME": "深渊毁灭领主",
-    "DESCRIPTION": "消耗 任意张手牌。 NL 造成 !D! 点伤害。 NL 失去生命直至1点。 NL 对全体敌人造成失去生命的2倍伤害。 NL 本回合你受到的伤害变为0。 NL 消耗 。"
-  },
-  "shadowverse:KMRsPresent": {
-    "NAME": "木村唯人的赠礼",
-    "DESCRIPTION": "保留 。 NL 抉择 :选择1张 *传说卡 加入手中。 NL (下拉选择) NL 消耗 。"
-  },
-  "shadowverse:ShadowversePain": {
-    "NAME": "影之诗不过是折磨你们的工具",
-    "DESCRIPTION": "不能被打出 。 NL 每当打出影之诗牌时，失去1点生命。"
-  },
-  "shadowverse:Betray": {
-    "NAME": "影之诗背叛了我！",
-    "DESCRIPTION": "回合结束时，增加1张 *复制品 到弃牌堆中。 NL 消耗 。"
-  },
-  "shadowverse:CalamityMode": {
-    "NAME": "灾厄模式",
-    "DESCRIPTION": "使你的卡组转变为灾厄卡组。 NL 消耗 。"
-  },
-  "shadowverse:JusticeTyrant": {
-    "NAME": "正义暴君",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 召唤4只 *世界消除者 。 NL 增加1张 *进化点 到敌人手中。 NL 使敌人下回合抽牌数减少1。"
-  },
-  "shadowverse:ShangrilaBreaker": {
-    "NAME": "乐园破坏者",
-    "DESCRIPTION": "造成 !D! 点伤害10次。 NL 获得 !B! 点 格挡 。"
-  },
-  "shadowverse:CalamityEnd": {
-    "NAME": "灾厄终结",
-    "DESCRIPTION": "消灭敌人。"
-  },
-  "shadowverse:EnDeath": {
-    "NAME": "死神",
-    "DESCRIPTION": "抽到这张牌时，你死亡。"
-  },
-  "shadowverse:SacredLion": {
-    "NAME": "神圣之狮",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得1层 缓冲 。 NL 本回合受到攻击时对攻击者造成 !M! 点伤害 。 NL 将1张 *狮子的祝福 加入敌人的手中。"
-  },
-  "shadowverse:LionBless": {
-    "NAME": "狮子的祝福",
-    "DESCRIPTION": "从消耗堆中将1张攻击牌加入手中，这张牌本回合耗能为0。 NL 给予敌人24点 格挡 、6层火焰屏障。 NL 虚无 。 NL 消耗 。"
-  },
-  "shadowverse:EnHereticalInquiry": {
-    "NAME": "咏唱：异端审判",
-    "DESCRIPTION": "随机将 !M! 张 诅咒 牌加入敌人的抽牌堆。"
-  },
-  "shadowverse:EnAcolyteLight": {
-    "NAME": "破邪圣光",
-    "DESCRIPTION": "若敌人 格挡 为20以下，移除敌人的 格挡 。 NL 否则造成20点伤害。 NL 回复移除 格挡 的生命。"
-  },
-  "shadowverse:EnSacredPlea": {
-    "NAME": "咏唱：神圣祈祷",
-    "DESCRIPTION": "下回合抽 !M! 张牌。"
-  },
-  "shadowverse:EnLucifer": {
-    "NAME": "路西法",
-    "DESCRIPTION": "抉择 :回复 !M! 点生命或对全体敌人造成 !D! 点伤害。"
-  },
-  "shadowverse:EnMagisteelLion": {
-    "NAME": "魔铁狂狮",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加2张 *解析的创造物 到抽牌堆中。"
-  },
-  "shadowverse:EnAnalyzeArtifact": {
-    "NAME": "解析的创造物",
-    "DESCRIPTION": "创造物 NL 造成 !D! 点伤害。 NL 下回合额外抽1张牌。 NL 消耗 。"
-  },
-  "shadowverse:TheGreatCreation": {
-    "NAME": "伟大的创造",
-    "DESCRIPTION": "获得 !M! 点 力量 和 敏捷 。 NL 增加1张 *古老的创造物 到手中。"
-  },
-  "shadowverse:EnAncientAmplifier": {
-    "NAME": "古代增幅器",
-    "DESCRIPTION": "给予敌人「回合结束时将 !M! 张随机牌加入抽牌堆，每回合减少1张。」效果，持续 !M! 回合。"
-  },
-  "shadowverse:EnMysticArtifact": {
-    "NAME": "神秘的创造物",
-    "DESCRIPTION": "创造物 NL 获得 !B! 点 格挡 。 NL 下回合额外抽1张牌。"
-  },
-  "shadowverse:EnGenesisArtifact": {
-    "NAME": "创世的创造物",
-    "DESCRIPTION": "创造物 NL 获得 !B! 点 格挡 。 NL 增加1张 *守卫的创造物 和 *防御的创造物 到手中。 NL 增加2张 *加农炮创造物到抽牌堆中。"
-  },
-  "shadowverse:EnSpineLucille": {
-    "NAME": "神秘的遗物·斯碧涅&露琪儿",
-    "DESCRIPTION": "创造物 NL 对全体敌人造成 !D! 点伤害"
   },
   "shadowverse:DeathNote": {
     "NAME": "亡者之王的记事本",
@@ -3371,7 +3170,11 @@
   },
   "shadowverse:Cernunnos": {
     "NAME": "科尔努诺斯",
-    "DESCRIPTION": "葬送 1张牌，抽 !M! 张牌。 NL 限定 获得 [E] [E] 。 NL 亡者召还 !M! 。 NL 如果本场战斗已使用的 死灵术 为20以上， 亡者召还 5。"
+    "DESCRIPTION": "葬送 1张牌，抽 !M! 张牌。 NL 限定 获得 [E] [E] 。 NL 亡者召还 !M! 。 NL 如果本场战斗已使用的 死灵术 为20以上， 亡者召还 5。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (已使用的 死灵术 为",
+      "  。)"
+    ]
   },
   "shadowverse:MiracleHarvest": {
     "NAME": "奇迹果实",
@@ -3861,10 +3664,6 @@
     "NAME": "传教司祭·萝蕾娜",
     "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加1张 *进化点 到手中。 NL 增加1张 *萝蕾娜的圣水 和 本回合耗能为0的 *萝蕾娜的铁拳 到手中。"
   },
-  "shadowverse:ImperialSaint": {
-    "NAME": "威严圣者",
-    "DESCRIPTION": "获得 !M! 点 临时生命 。 NL 获得1层 *残影 。 NL 死亡时无效一次死亡，回复最大生命值的50%并追加1个额外回合。"
-  },
   "shadowverse:ShadowCorrosion": {
     "NAME": "影之侵蚀",
     "DESCRIPTION": "自然 NL 给予敌人「回合开始时，失去本场战斗已打出的 *那塔拉的大树 4倍的生命」效果。 NL 如果敌人已拥有此效果，改为直接造成本场战斗已打出的 *那塔拉的大树 4倍的伤害。 NL 消耗 。"
@@ -4137,7 +3936,7 @@
   },
   "shadowverse:Spector": {
     "NAME": "幻影拍档·巴妮与巴隆",
-    "DESCRIPTION": " 激奏 0 :增加1张 *亡命射击 到手中。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL 谢幕曲 :下回合开始时增加1张打出前耗能为的 *魔导四轮车V 到手中。 NL 消耗 。"
+    "DESCRIPTION": " 激奏 0 :增加1张 *亡命射击 到手中。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL 谢幕曲 :下回合开始时增加1张打出前耗能为0的 *魔导四轮车V 到手中。 NL 消耗 。"
   },
   "shadowverse:HonoredFrontguardGeneral": {
     "NAME": "荣耀的铁卫战将",
@@ -4164,81 +3963,9 @@
     "DESCRIPTION": "*阿拉密斯 、 *波尔多斯 、 NL *阿多斯 、 *达达尼昂 NL 抉择 :选择2张指定的牌加入手中。 NL 爆能强化 4 :改为全部加入手中。如果手中有2张以上的 *进化点 ， 升级 这些牌。 NL 消耗 。",
     "UPGRADE_DESCRIPTION": "*阿拉密斯 、 *波尔多斯 、 NL *阿多斯 、 *达达尼昂 NL 抉择 :选择2张指定的牌加入手中。 NL 爆能强化 4 :改为全部加入手中。如果手中有2张以上的 *进化点 ， 升级 这些牌。 NL 消耗性 !stslib:ex! 。"
   },
-  "shadowverse:Maiser_Story": {
-    "NAME": "音速英雄·麦哲",
-    "DESCRIPTION": "英雄 NL 造成 !D! 点伤害。 NL 增加1张 *机动二轮车 到手中。 NL 本回合每打出1张技能牌，对全体敌人造成5点伤害。 NL 消耗 。"
-  },
-  "shadowverse:Selena_Story": {
-    "NAME": "爆燃霜糖·圣里奈",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 如果手中有1张以上其他攻击牌，回复4点生命。 NL 如果有2张以上，抽2张牌。 NL 如果有3张以上，获得1点 力量 和 敏捷 。 NL 消耗 。"
-  },
-  "shadowverse:Illganeau_Story": {
-    "NAME": "觉醒虚无·伊璐凯诺",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 全体敌人失去1点 力量 和 敏捷 。 NL 根据消耗堆中的攻击牌数量增加这张牌 !M! 点伤害。 NL 消耗 。"
-  },
-  "shadowverse:Sekka_Story": {
-    "NAME": "九尾猛火·雪华",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 [E] ，增加1张 *进化点 到手中。 NL 如果本场战斗已打出的非 打击 攻击牌数量为18以上，获得 !M! 点 力量 和 敏捷 。 NL 消耗 。",
-    "EXTENDED_DESCRIPTION": [
-      " NL (X为",
-      " 。)"
-    ]
-  },
-  "shadowverse:Dracu_Story": {
-    "NAME": "天翔龙翼·德莱克",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得1点 敏捷 。 NL 如果 敏捷 为5以上，再造成一次伤害。 NL 消耗 。"
-  },
-  "shadowverse:Kagero_Story": {
-    "NAME": "秘剑幽鬼·蜃景",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 给予随机敌人2层 易伤 。 NL 死灵术 10 :伤害+ !M! 。 NL 消耗 。"
-  },
-  "shadowverse:VerdictWord": {
-    "NAME": "审判之词",
-    "DESCRIPTION": "*音速英雄·麦哲 NL *爆燃霜糖·圣里奈 NL *觉醒虚无·伊璐凯诺 NL 抉择 :选择1张非本职业的卡牌加入手中。 NL 如果已打出过2张以上的 *审判之词 ，改为 升级 全部并加入手中，本回合攻击伤害翻倍。 NL 保留 · 消耗 。"
-  },
-  "shadowverse:AbsoluteOrder": {
-    "NAME": "无上谕令",
-    "DESCRIPTION": "*九尾猛火·雪华 NL *天翔龙翼·德莱克 NL *秘剑幽鬼·蜃景 NL 抉择 :选择1张非本职业的卡牌加入手中。 NL 如果已打出过2张以上的 *无上谕令 ，改为 升级 全部并加入手中，本回合攻击伤害翻倍。 NL 保留 · 消耗 。"
-  },
   "shadowverse:Skullfather": {
     "NAME": "骷髅老爹",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 获得1点 力量 和 敏捷 。 NL 消耗 。"
-  },
-  "shadowverse:EnNightmareTime": {
-    "NAME": "梦魇时分",
-    "DESCRIPTION": "失去1点生命。 NL 移除所有负面效果。 NL  每回合开始时额外抽 !M! 张牌。 NL 消耗 。"
-  },
-  "shadowverse:EnBloodyNail": {
-    "NAME": "血腥利爪",
-    "DESCRIPTION": "失去1点生命，造成 !D! 点伤害。 NL 给予敌人「每打出1张攻击牌，受到1点伤害」效果。 NL 消耗 。"
-  },
-  "shadowverse:EnDemonStorm": {
-    "NAME": "恶魔风暴",
-    "DESCRIPTION": "给予双方 !D! 点伤害。"
-  },
-  "shadowverse:EnMono": {
-    "NAME": "悠久的绯红·莫诺",
-    "DESCRIPTION": "机械 NL 获得 !B! 点 格挡 。 NL 获得2点 力量 。 NL 复仇 则获得 !M! 层 金属化 。"
-  },
-  "shadowverse:EnDemonCommander": {
-    "NAME": "恶魔司令官·萝拉",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 复仇 则下一张攻击牌打出2次。"
-  },
-  "shadowverse:EnTerrorNight": {
-    "NAME": "惊骇之夜",
-    "DESCRIPTION": "给予双方 !D! 点伤害。 NL 限定 下回合开始时不抽牌，改为分别增加1张 *梦魇时分 、 *血腥利爪 、 *惊惧气息 到手中。"
-  },
-  "shadowverse:EnBloodPact": {
-    "NAME": "血之契约",
-    "DESCRIPTION": "失去2点生命。 NL 下回合额外抽 !M! 张牌。"
-  },
-  "shadowverse:EnSeox": {
-    "NAME": "神狼·希斯",
-    "DESCRIPTION": "造成 !D! 点伤害2次。 NL 奥义 3 :再造成2次伤害。 NL 解放奥义 6 :再造成2次伤害。"
-  },
-  "shadowverse:EnLonePromise": {
-    "NAME": "约定的花朵",
-    "DESCRIPTION": "机械 NL 获得1点 力量 ，回复 !M! 点生命 。 NL 给予 !M! 层 虚弱 。"
   },
   "shadowverse:Taketsumi": {
     "NAME": "华之大将·武祇",
@@ -4439,34 +4166,6 @@
       " 张 谢幕曲 牌。)"
     ]
   },
-  "shadowverse:DivineTreasureHerald": {
-    "NAME": "神器的使者",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !B! 点 格挡 。 NL 谢幕曲 :当这张牌被 消耗 时，增加1张没有 爆能强化 的 *神器鸣动 到手中。 NL 消耗 。"
-  },
-  "shadowverse:DivineTreasureGuardian": {
-    "NAME": "神器的守护者",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !B! 点 格挡 。 NL 对全体敌人造成 !M! 点伤害。 NL 消耗 。"
-  },
-  "shadowverse:JudgmentSpear": {
-    "NAME": "裁决之枪",
-    "DESCRIPTION": "回合结束时对随机敌人造成 !M! 点伤害。 NL 倒计时 2 :失去这个效果。"
-  },
-  "shadowverse:GuiltyShield": {
-    "NAME": "罪恶之盾",
-    "DESCRIPTION": "受到的5以上的伤害变为4。 NL 倒计时 2 :失去这个效果。"
-  },
-  "shadowverse:EternalDogma": {
-    "NAME": "永恒教义",
-    "DESCRIPTION": "回合开始时抽1张牌，回复2点生命。 NL 倒计时 2 :失去这个效果。"
-  },
-  "shadowverse:SummonDivineTreasure": {
-    "NAME": "神器鸣动",
-    "DESCRIPTION": "抉择 : NL *裁决之枪 NL *罪恶之盾 NL *永恒教义 NL 爆能强化 2 :增加1张 *神器的使者 到手中。 NL  爆能强化 3 :增加1张 *神器的守护者 到手中。 NL 消耗性  !stslib:ex! 。"
-  },
-  "shadowverse:SummonDivineTreasure_Copy": {
-    "NAME": "神器鸣动",
-    "DESCRIPTION": "抉择 : NL *裁决之枪 NL *罪恶之盾 NL *永恒教义 NL 消耗 。"
-  },
   "shadowverse:Norn": {
     "NAME": "外界审判者·诺伦",
     "DESCRIPTION": "每当由非 共鸣 转变为 共鸣 时，获得 [E] 。 NL 虚无 。",
@@ -4500,14 +4199,6 @@
     "EXTENDED_DESCRIPTION": [
       " NL (已打出",
       " 张 *豪风来袭 。)"
-    ]
-  },
-  "shadowverse:UltimateBahmut": {
-    "NAME": "究极巴哈姆特",
-    "DESCRIPTION": "瞬念召唤 :回合开始时，如果本场战斗已使用50点以上能量，则加入手中，所有敌人在3回合结束后死亡。 NL 激奏 2 :对随机敌人造成 !M! 点伤害，获得 [E] [E] 。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。",
-     "EXTENDED_DESCRIPTION": [
-      " NL (已使用",
-      " 点能量。)"
     ]
   },
   "shadowverse:Vyrmedea": {
@@ -5061,8 +4752,8 @@
   },
   "shadowverse:Alice": {
     "NAME": "奇幻之梦·爱丽丝",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果消耗堆中 *进化点 数量为3以上， 升级 这张牌并发现2张攻击牌。 NL 7张以上，造成的伤害翻倍。",
-    "UPGRADE_DESCRIPTION":"造成 !D! 点伤害，获得 [E] 。 NL 如果消耗堆中 *进化点 数量为3以上，发现2张攻击牌。 NL 7张以上，造成的伤害翻倍。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果消耗堆中 *进化点 数量为3以上， 升级 这张牌并发现2张攻击牌。 NL 5张以上，造成的伤害翻倍。",
+    "UPGRADE_DESCRIPTION":"造成 !D! 点伤害，获得 [E] 。 NL 如果消耗堆中 *进化点 数量为3以上，发现2张攻击牌。 NL 5张以上，造成的伤害翻倍。"
   },
   "shadowverse:CrimsonDesire": {
     "NAME": "红之渴望",
@@ -6181,10 +5872,6 @@
     "NAME": "黑苍之绊·法露特&米莉亚姆",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 限定 获得2点 力量 和 敏捷 。 NL 如果已 觉醒 ，再造成1次伤害。"
   },
-  "shadowverse:InfiniflameDragon": {
-    "NAME": "无尽炎龙",
-    "DESCRIPTION": "造成50点伤害。 NL 消灭所有爪牙敌人，每消灭1只造成10点伤害。 NL 消耗 手中所有攻击牌，每 消耗 1张造成10点伤害。 NL 造成 !D! 点伤害2次。"
-  },
   "shadowverse:Hiro": {
     "NAME": "龙之启示",
     "DESCRIPTION": "固有 。 NL 获得1点觉醒值。 NL 下回合获得 [E] 。 NL 如果已 觉醒 ，额外抽 !M! 张牌。",
@@ -6923,7 +6610,11 @@
   "shadowverse:Atem": {
     "NAME": "亚图姆",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 如果本场战斗已使用的 死灵术 为20以上，获得 [E] [E] 。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 获得10点 墓地 。 NL 如果本场战斗已使用的 死灵术 为20以上，获得 [E] [E] 。"
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 获得10点 墓地 。 NL 如果本场战斗已使用的 死灵术 为20以上，获得 [E] [E] 。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (已使用的 死灵术 为",
+      "  。)"
+    ]
   },
   "shadowverse:SuccessionOfBalance": {
     "NAME": "遗志的继承",
@@ -7025,5 +6716,14 @@
       "（X为",
       ")"
     ]
+  },
+  "shadowverse:CurseOfTheBlackDragon": {
+    "NAME": "黑龙的诅咒",
+    "DESCRIPTION": "保留 。 不能被打出 。 NL 回合结束时，如果未 觉醒 则失去1点生命。 NL 如果已 觉醒 则对随机敌人造成 !D! 点伤害。"
+  },
+  "shadowverse:DespairReborn": {
+    "NAME": "复苏的绝望",
+    "DESCRIPTION": "回合开始时，如果当前进阶为20，耗能变为2。 NL 随机丢弃2张牌，随机增加4张带有 虚无 和 消耗 且耗能为3以上的攻击或能力牌到手中，并使它们的耗能变为0。",
+    "UPGRADE_DESCRIPTION":"回合开始时，如果当前进阶为20，耗能变为2。 NL 随机丢弃2张牌，随机增加4张已 升级 的带有 虚无 和 消耗 且耗能为3以上的攻击或能力牌到手中，并使它们的耗能变为0。"
   }
 }

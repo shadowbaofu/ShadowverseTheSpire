@@ -37,6 +37,7 @@ public class Limonia
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
+            this.cardsToPreview.upgrade();
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
@@ -44,9 +45,9 @@ public class Limonia
 
 
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new SFXAction("Limonia"));
+        addToBot(new SFXAction("Limonia"));
         AbstractDungeon.effectsQueue.add(new SpotlightPlayerEffect());
-        addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) p, (AbstractCreature) p, (AbstractPower) new LimoniaPower((AbstractCreature) p,this.upgraded)));
+        addToBot(new ApplyPowerAction(p, p, new LimoniaPower(p,this.upgraded)));
     }
 
 

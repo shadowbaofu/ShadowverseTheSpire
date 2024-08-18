@@ -1,7 +1,7 @@
 package shadowverse.patch;
 
+import shadowverse.action.RealWaitAction;
 import shadowverse.cards.Bishop.Recover2.OrchidExaminationHall;
-import shadowverseCharbosses.actions.RealWaitAction;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePostfixPatch;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -29,7 +29,9 @@ public class PlaceAmuletPatch {
         @SpirePostfixPatch
         public static void placeA(AbstractPlayer p, AbstractCard c, AbstractMonster monster, int energyOnUse) {
             if (p instanceof Bishop || p instanceof Royal ||
-                    ((AbstractDungeon.player.hasRelic(PrismaticShard.ID)|| (AbstractDungeon.player.hasRelic(AlterplaneArbiter.ID)))&&AbstractDungeon.player instanceof AbstractShadowversePlayer)){
+                    ((AbstractDungeon.player.hasRelic(PrismaticShard.ID)
+                            || (AbstractDungeon.player.hasRelic(AlterplaneArbiter.ID))
+                    )&&AbstractDungeon.player instanceof AbstractShadowversePlayer)){
                 if (c instanceof AbstractAmuletCard || (c instanceof AbstractCrystalizeCard && c.type== AbstractCard.CardType.POWER)){
                     if (c instanceof OrchidExaminationHall){
                         if (c.costForTurn == 1){

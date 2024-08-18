@@ -25,6 +25,7 @@ public class LeafshadeAssassin extends CustomCard {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Elf.Enums.COLOR_GREEN, CardRarity.COMMON, CardTarget.SELF);
         this.baseBlock = 7;
         this.baseMagicNumber = 6;
+        this.magicNumber = this.baseMagicNumber;
         this.tags.add(AbstractShadowversePlayer.Enums.CONDEMNED);
     }
 

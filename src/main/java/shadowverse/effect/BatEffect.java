@@ -94,7 +94,7 @@ public class BatEffect extends AbstractGameEffect {
     public void render(SpriteBatch sb) {
         sb.setColor(this.color);
         if (this.BAT1!=null)
-        sb.draw(this.BAT1, this.x, this.y, 0.0F, 0.0F, this.BAT1.getRegionWidth(), this.BAT1.getRegionHeight(), this.scaleMiddleWidth, this.scaleMiddleHeight, 0.0F);
+            sb.draw(this.BAT1, this.x, this.y, 0.0F, 0.0F, this.BAT1.getRegionWidth(), this.BAT1.getRegionHeight(), this.scaleMiddleWidth, this.scaleMiddleHeight, 0.0F);
     }
 
     public void dispose() {}

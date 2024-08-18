@@ -39,7 +39,7 @@ public class TheStrengthPower extends AbstractPower implements BetterOnApplyPowe
     @Override
     public int onAttackedToChangeDamage(DamageInfo info, int damageAmount) {
         if (damageAmount > 0) {
-            addToBot((AbstractGameAction) new ApplyPowerAction(this.owner, this.owner, (AbstractPower) new StrengthPower(this.owner, -1), -1));
+            addToBot(new ApplyPowerAction(this.owner, this.owner,new StrengthPower(this.owner, -1), -1));
         }
         return damageAmount;
     }

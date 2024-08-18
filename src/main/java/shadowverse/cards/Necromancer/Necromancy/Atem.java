@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.WeightyImpactEffect;
@@ -44,6 +45,21 @@ public class Atem
         }
     }
 
+    @Override
+    public void applyPowers() {
+        super.applyPowers();
+        if (this.upgraded){
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+        }else {
+            this.rawDescription = cardStrings.DESCRIPTION;
+        }
+        int necromance = 0;
+        if (AbstractDungeon.player instanceof AbstractShadowversePlayer){
+            necromance = ((AbstractShadowversePlayer)AbstractDungeon.player).necromanceCount;
+        }
+        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + necromance + cardStrings.EXTENDED_DESCRIPTION[1];
+        this.initializeDescription();
+    }
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot(new SFXAction("Atem"));

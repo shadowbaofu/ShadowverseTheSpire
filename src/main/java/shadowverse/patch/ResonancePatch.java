@@ -15,7 +15,6 @@ import shadowverse.action.ResonanceAction;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Nemesis;
 import shadowverse.characters.Vampire;
-import shadowverse.relics.AlterplaneArbiter;
 import shadowverse.stance.Resonance;
 
 import java.lang.reflect.Field;
@@ -48,7 +47,9 @@ public class ResonancePatch {
     public static class ResonancePatch3{
         @SpirePrefixPatch
         public static void CheckResonance2(EmptyDeckShuffleAction emptyDeckShuffleAction) {
-            if (AbstractDungeon.player instanceof Nemesis ||((AbstractDungeon.player.hasRelic(PrismaticShard.ID)||(AbstractDungeon.player.hasRelic(AlterplaneArbiter.ID) && AbstractDungeon.player.getRelic(AlterplaneArbiter.ID).counter == 4))&&AbstractDungeon.player instanceof AbstractShadowversePlayer && AbstractDungeon.player.chosenClass!= Vampire.Enums.Vampire)) {
+            if (AbstractDungeon.player instanceof Nemesis ||((AbstractDungeon.player.hasRelic(PrismaticShard.ID)
+                    //||(AbstractDungeon.player.hasRelic(AlterplaneArbiter.ID) && AbstractDungeon.player.getRelic(AlterplaneArbiter.ID).counter == 4)
+            )&&AbstractDungeon.player instanceof AbstractShadowversePlayer && AbstractDungeon.player.chosenClass!= Vampire.Enums.Vampire)) {
                 if (AbstractDungeon.player.drawPile.group.size() % 2 == 0 && !AbstractDungeon.player.stance.ID.equals(Resonance.STANCE_ID)) {
                     shuffleCount++;
                     if (shuffleCount==6){

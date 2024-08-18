@@ -16,8 +16,8 @@ import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import shadowverse.characters.Necromancer;
 import shadowverse.powers.Cemetery;
-import shadowverse.powers.ICPower;
-import shadowverse.powers.JudgmentWordPower;
+//import shadowverse.powers.ICPower;
+//import shadowverse.powers.JudgmentWordPower;
 
 
 public class SonataOfSilence
@@ -49,7 +49,9 @@ public class SonataOfSilence
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot(new SFXAction("SonataOfSilence"));
             for (AbstractPower pow : abstractPlayer.powers) {
-                if (!(pow instanceof StrengthPower)&&!(pow instanceof DexterityPower)&&!(pow instanceof Cemetery)&&!(pow instanceof ICPower)&&!(pow instanceof JudgmentWordPower)) {
+                if (!(pow instanceof StrengthPower)&&!(pow instanceof DexterityPower)&&!(pow instanceof Cemetery)
+                        //&&!(pow instanceof ICPower)&&!(pow instanceof JudgmentWordPower)
+                ) {
                     addToBot(new RemoveSpecificPowerAction(pow.owner, abstractPlayer, pow.ID));
                 }
             }

@@ -44,12 +44,12 @@
    }
 
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     addToBot((AbstractGameAction)new SFXAction("RavenousSweetness"));
-     addToBot((AbstractGameAction)new ApplyPowerAction(abstractMonster,abstractPlayer,new StrengthPower(abstractMonster,-this.magicNumber),-this.magicNumber));
-     addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new SmallLaserEffect(abstractMonster.hb.cX, abstractMonster.hb.cY, abstractPlayer.hb.cX, abstractPlayer.hb.cY), 0.1F));
-     addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
-     addToBot((AbstractGameAction)new HealAction(abstractPlayer,abstractPlayer,this.magicNumber));
-     addToBot((AbstractGameAction)new DrawCardAction(5));
+     addToBot(new SFXAction("RavenousSweetness"));
+     addToBot(new ApplyPowerAction(abstractMonster,abstractPlayer,new StrengthPower(abstractMonster,-this.magicNumber),-this.magicNumber));
+     addToBot(new VFXAction(new SmallLaserEffect(abstractMonster.hb.cX, abstractMonster.hb.cY, abstractPlayer.hb.cX, abstractPlayer.hb.cY), 0.1F));
+     addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
+     addToBot(new HealAction(abstractPlayer,abstractPlayer,this.magicNumber));
+     addToBot(new DrawCardAction(5));
    }
  
    

@@ -18,7 +18,6 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.localization.*;
-import com.megacrit.cardcrawl.monsters.MonsterInfo;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import com.megacrit.cardcrawl.vfx.ThoughtBubble;
 import org.apache.logging.log4j.LogManager;
@@ -133,16 +132,13 @@ import shadowverse.characters.*;
 import shadowverse.events.*;
 import shadowverse.helper.AugmentHelper;
 import shadowverse.helper.ViewBanCardScreen;
-import shadowverse.monsters.*;
 import shadowverse.patch.CharacterSelectScreenPatches;
 import shadowverse.potions.*;
 import shadowverse.relics.Alice;
 import shadowverse.relics.*;
-import shadowverseCharbosses.bosses.KMR.KMR;
 
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
-import java.util.Map;
 import java.util.Properties;
 
 import static com.badlogic.gdx.graphics.Color.YELLOW;
@@ -160,7 +156,6 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
     public static final Color DRAGON_BROWN = CardHelper.getColor(117, 72, 29);
     public static final Logger logger = LogManager.getLogger(Shadowverse.class.getName());
     public static Properties ShadowverseDefaults = new Properties();
-    public static Map<String, String> tempmusic = new HashMap<>();
 
     public static boolean[] groupActive;
 
@@ -238,34 +233,10 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
     public void receivePostInitialize() {
         loadSettings();
         BaseMod.addEvent(PinyaEvent.ID, PinyaEvent.class);
-        BaseMod.addEvent(GemFortune.ID, GemFortune.class, TheCity.ID);
-        BaseMod.addEvent(Crossover.ID, Crossover.class);
+
         BaseMod.addEvent(NaturalMachine.ID, NaturalMachine.class, Exordium.ID);
-        BaseMod.addEvent(SellCard.ID, SellCard.class, TheCity.ID);
-        BaseMod.addMonster(Belphomet.ID, Belphomet::new);
-        BaseMod.addMonster(Iceschillendrig.ID, Iceschillendrig::new);
-        BaseMod.addMonster(VincentBOSS.ID, VincentBOSS::new);
-        BaseMod.addMonster(Lelouch.ID, () -> new Lelouch());
-        BaseMod.addMonster(KMR.ID, KMR::new);
-        BaseMod.addMonster(Naht.ID, Naht::new);
-        BaseMod.addMonster(TaketsumiBOSS.ID, TaketsumiBOSS::new);
-        BaseMod.addMonster(shadowverseCharbosses.bosses.Urias.Urias.ID, shadowverseCharbosses.bosses.Urias.Urias::new);
-        BaseMod.addEvent(LelouchCollaboration.ID, LelouchCollaboration.class, TheBeyond.ID);
-        BaseMod.addBoss(TheEnding.ID, KMR.ID, "img/monsters/UI/KMR.png", "img/monsters/UI/KMR_Outline.png");
-        BaseMod.addBoss(TheEnding.ID, KMR.ID, "img/monsters/UI/KMR.png", "img/monsters/UI/KMR_Outline.png");
-        BaseMod.addBoss(TheEnding.ID, KMR.ID, "img/monsters/UI/KMR.png", "img/monsters/UI/KMR_Outline.png");
-        BaseMod.addBoss(TheBeyond.ID, Iceschillendrig.ID, "img/monsters/UI/IC.png", "img/monsters/UI/IC_Outline.png");
-        BaseMod.addBoss(TheBeyond.ID, Belphomet.ID, "img/monsters/UI/Belphomet.png", "img/monsters/UI/Belphomet_Outline.png");
-        BaseMod.addBoss(TheBeyond.ID, VincentBOSS.ID, "img/monsters/UI/VincentBOSS.png", "img/monsters/UI/VincentBOSS_Outline.png");
-        BaseMod.addBoss(TheBeyond.ID, Naht.ID, "img/monsters/UI/Naht.png", "img/monsters/UI/Naht_Outline.png");
-        BaseMod.addBoss(TheBeyond.ID, TaketsumiBOSS.ID, "img/monsters/UI/Taketsumi.png", "img/monsters/UI/Taketsumi_Outline.png");
-        BaseMod.addBoss(TheCity.ID, shadowverseCharbosses.bosses.Urias.Urias.ID, "img/monsters/UI/Urias.png", "img/monsters/UI/Urias_Outline.png");
-        BaseMod.addMonster(Megaera.ID, () -> new Megaera());
-        BaseMod.addEliteEncounter(TheBeyond.ID, new MonsterInfo(Megaera.ID, 1.5F));
-        BaseMod.addMonster(Tisiphone.ID, () -> new Tisiphone());
-        BaseMod.addEliteEncounter(TheBeyond.ID, new MonsterInfo(Tisiphone.ID, 1.5F));
-        BaseMod.addMonster(Alector.ID, () -> new Alector());
-        BaseMod.addEliteEncounter(TheBeyond.ID, new MonsterInfo(Alector.ID, 1.5F));
+        BaseMod.addEvent(Crossover.ID, Crossover.class);
+        BaseMod.addEvent(GemFortune.ID, GemFortune.class, TheCity.ID);
         BaseMod.addPotion(SatanPotion.class, Color.CYAN, Color.RED, Color.BLACK, SatanPotion.POTION_ID);
         BaseMod.addPotion(ElfPotion.class, Color.GREEN, Color.LIME, Color.GOLD, ElfPotion.POTION_ID, Elf.Enums.Elf);
         BaseMod.addPotion(BoostPotion.class, Color.BLUE, Color.SKY, Color.SKY, BoostPotion.POTION_ID, Witchcraft.Enums.WITCHCRAFT);
@@ -277,7 +248,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addPotion(NaterranPotion.class, Color.FOREST, Color.BROWN, Color.FOREST, NaterranPotion.POTION_ID);
         BaseMod.addPotion(BatPotion.class, Color.SCARLET, Color.BLACK, Color.SCARLET, BatPotion.POTION_ID, Vampire.Enums.Vampire);
         BaseMod.addPotion(EpitaphPotion.class, Color.SCARLET, Color.GOLDENROD, Color.SCARLET, EpitaphPotion.POTION_ID, Vampire.Enums.Vampire);
-        BaseMod.addPotion(ArtifactPotion.class, Color.CYAN, Color.CLEAR, Color.CYAN, RosePotion.POTION_ID, Nemesis.Enums.Nemesis);
+        BaseMod.addPotion(ArtifactPotion.class, Color.CYAN, Color.CLEAR, Color.CYAN, ArtifactPotion.POTION_ID, Nemesis.Enums.Nemesis);
         BaseMod.addPotion(RevisedPotion.class, Color.BROWN, Color.BROWN, Color.BROWN, RevisedPotion.POTION_ID, Nemesis.Enums.Nemesis);
         BaseMod.addPotion(BuffPotion.class, Color.RED, Color.RED, YELLOW, BuffPotion.POTION_ID, Royal.Enums.Royal);
         BaseMod.addPotion(EvolutionPotion.class, Color.YELLOW, Color.YELLOW, null, EvolutionPotion.POTION_ID, Royal.Enums.Royal);
@@ -288,12 +259,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addPotion(OverflowPotion.class,Color.BROWN,Color.ORANGE,Color.ORANGE,OverflowPotion.POTION_ID,Dragon.Enums.Dragon);
         BaseMod.addPotion(ArmedPotion.class, Color.GOLD, Color.ORANGE, null, ArmedPotion.POTION_ID, Dragon.Enums.Dragon);
         BaseMod.addPotion(BurnPotion.class, Color.RED, Color.FIREBRICK, Color.FIREBRICK, BurnPotion.POTION_ID, Dragon.Enums.Dragon);
-        tempmusic.put("GrandBattle", "sounds/GrandBattle.mp3");
-        tempmusic.put("Aiolon", "sounds/Aiolon.mp3");
-        tempmusic.put("StormOverRivayle", "sounds/StormOverRivayle.mp3");
-        tempmusic.put("IceschillendrigBgm", "sounds/IschellendrigBgm.mp3");
-        tempmusic.put("UriasBgm", "sounds/UriasBgm.mp3");
-        tempmusic.put("Ametsuchi", "sounds/Ametsuchi.mp3");
+
         HashMap<String, Sfx> reflectedMap = getSoundsMap();
         String voicePath = "sounds/";
         if (!Loader.isModLoaded("ShadowverseTheSpireEnglishVoicePack")) {
@@ -398,6 +364,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("BlackPinya", new Sfx(voicePath + "BlackPinya.wav"));
             reflectedMap.put("Maiser", new Sfx(voicePath + "Maiser.wav"));
             reflectedMap.put("RapidFire", new Sfx(voicePath + "RapidFire.wav"));
+            reflectedMap.put("SpineLucille", new Sfx(voicePath + "SpineLucille.wav"));
             reflectedMap.put("Belphomet2", new Sfx(voicePath + "Belphomet2.wav"));
             reflectedMap.put("Belphomet3", new Sfx(voicePath + "Belphomet3.wav"));
             reflectedMap.put("Belphomet4", new Sfx(voicePath + "Belphomet4.wav"));
@@ -476,33 +443,14 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("Pamera", new Sfx(voicePath + "Pamera.wav"));
             reflectedMap.put("Korwa", new Sfx(voicePath + "Korwa.wav"));
             reflectedMap.put("Fil", new Sfx(voicePath + "Fil.wav"));
-            reflectedMap.put("Megaera_PREP", new Sfx(voicePath + "Megaera_PREP.wav"));
-            reflectedMap.put("Megaera_D1", new Sfx(voicePath + "Megaera_D1.wav"));
-            reflectedMap.put("Megaera_D2", new Sfx(voicePath + "Megaera_D2.wav"));
-            reflectedMap.put("Tisiphone_SLASH", new Sfx(voicePath + "Tisiphone_SLASH.wav"));
-            reflectedMap.put("Tisiphone_D1", new Sfx(voicePath + "Tisiphone_D1.wav"));
-            reflectedMap.put("Tisiphone_D2", new Sfx(voicePath + "Tisiphone_D2.wav"));
-            reflectedMap.put("Vincent_A1", new Sfx(voicePath + "Vincent_A1.wav"));
-            reflectedMap.put("Vincent_A2", new Sfx(voicePath + "Vincent_A2.wav"));
-            reflectedMap.put("Vincent_A3", new Sfx(voicePath + "Vincent_A3.wav"));
-            reflectedMap.put("Vincent_A4", new Sfx(voicePath + "Vincent_A4.wav"));
-            reflectedMap.put("Vincent_E1", new Sfx(voicePath + "Vincent_E1.wav"));
-            reflectedMap.put("Vincent_E3", new Sfx(voicePath + "Vincent_E3.wav"));
-            reflectedMap.put("CalamityMode", new Sfx(voicePath + "CalamityMode.wav"));
-            reflectedMap.put("CalamityEnd", new Sfx(voicePath + "CalamityEnd.wav"));
+
+
+
             reflectedMap.put("NewGrea", new Sfx(voicePath + "NewGrea.wav"));
             reflectedMap.put("NewEmber", new Sfx(voicePath + "NewEmber.wav"));
             reflectedMap.put("NewAnne", new Sfx(voicePath + "NewAnne.wav"));
             reflectedMap.put("ExceedBurst", new Sfx(voicePath + "ExceedBurst.wav"));
-            reflectedMap.put("Alector_PREP", new Sfx(voicePath + "Alector_PREP.wav"));
-            reflectedMap.put("Alector_D1", new Sfx(voicePath + "Alector_D1.wav"));
-            reflectedMap.put("Alector_D2", new Sfx(voicePath + "Alector_D2.wav"));
-            reflectedMap.put("Lelouch_GEASS", new Sfx(voicePath + "Lelouch_GEASS.wav"));
-            reflectedMap.put("Lelouch_Checkmate", new Sfx(voicePath + "Lelouch_Checkmate.wav"));
-            reflectedMap.put("FatalOrder", new Sfx(voicePath + "FatalOrder.wav"));
-            reflectedMap.put("Suzaku_SLASH", new Sfx(voicePath + "Suzaku_SLASH.wav"));
-            reflectedMap.put("Suzaku_BEAM", new Sfx(voicePath + "Suzaku_BEAM.wav"));
-            reflectedMap.put("Suzaku_CURSE", new Sfx(voicePath + "Suzaku_CURSE.wav"));
+
             reflectedMap.put("Necro_Selected", new Sfx(voicePath + "Necro_Selected.wav"));
             reflectedMap.put("Necro_Hurt", new Sfx(voicePath + "Necro_Hurt.wav"));
             reflectedMap.put("Necro_Hurt2", new Sfx(voicePath + "Necro_Hurt2.wav"));
@@ -766,22 +714,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("Odin", new Sfx(voicePath + "Odin.wav"));
             reflectedMap.put("RadiantAngel", new Sfx(voicePath + "RadiantAngel.wav"));
             reflectedMap.put("PriestOfTheCudgel", new Sfx(voicePath + "PriestOfTheCudgel.wav"));
-            reflectedMap.put("ArdentSister", new Sfx(voicePath + "ArdentSister.wav"));
-            reflectedMap.put("DarkPriest", new Sfx(voicePath + "DarkPriest.wav"));
-            reflectedMap.put("Lucifer", new Sfx(voicePath + "Lucifer.wav"));
-            reflectedMap.put("Lucifer2", new Sfx(voicePath + "Lucifer2.wav"));
-            reflectedMap.put("AbsoluteOne", new Sfx(voicePath + "AbsoluteOne.wav"));
-            reflectedMap.put("MoonAlmiraj", new Sfx(voicePath + "MoonAlmiraj.wav"));
-            reflectedMap.put("KMR1", new Sfx(voicePath + "KMR1.wav"));
-            reflectedMap.put("KMR2", new Sfx(voicePath + "KMR2.wav"));
-            reflectedMap.put("KMR3", new Sfx(voicePath + "KMR3.wav"));
-            reflectedMap.put("Rowen", new Sfx(voicePath + "Rowen.wav"));
-            reflectedMap.put("SevensForceSorcerer", new Sfx(voicePath + "SevensForceSorcerer.wav"));
-            reflectedMap.put("SevensForceSorcererEff", new Sfx(voicePath + "SevensForceSorcererEff.wav"));
-            reflectedMap.put("ShiningValkyrie", new Sfx(voicePath + "ShiningValkyrie.wav"));
-            reflectedMap.put("DeadSoulTaker", new Sfx(voicePath + "DeadSoulTaker.wav"));
-            reflectedMap.put("AbyssDoomLord", new Sfx(voicePath + "AbyssDoomLord.wav"));
-            reflectedMap.put("SpineLucille", new Sfx(voicePath + "SpineLucille.wav"));
+
             reflectedMap.put("Royal_Hurt", new Sfx(voicePath + "Royal_Hurt.wav"));
             reflectedMap.put("Royal_Hurt1", new Sfx(voicePath + "Royal_Hurt1.wav"));
             reflectedMap.put("Royal_Hurt2", new Sfx(voicePath + "Royal_Hurt2.wav"));
@@ -1181,37 +1114,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("DArtagnan", new Sfx(voicePath + "DArtagnan.wav"));
             reflectedMap.put("MusketeersVow", new Sfx(voicePath + "MusketeersVow.wav"));
             reflectedMap.put("MusketeersVow_EH", new Sfx(voicePath + "MusketeersVow_EH.wav"));
-            reflectedMap.put("Naht_A0", new Sfx(voicePath + "Naht_A0.wav"));
-            reflectedMap.put("Naht_A1", new Sfx(voicePath + "Naht_A1.wav"));
-            reflectedMap.put("Naht_A2", new Sfx(voicePath + "Naht_A2.wav"));
-            reflectedMap.put("Naht_A3", new Sfx(voicePath + "Naht_A3.wav"));
-            reflectedMap.put("Naht_A4", new Sfx(voicePath + "Naht_A4.wav"));
-            reflectedMap.put("Naht_A5", new Sfx(voicePath + "Naht_A5.wav"));
-            reflectedMap.put("Naht_C", new Sfx(voicePath + "Naht_C.wav"));
-            reflectedMap.put("Naht_D1", new Sfx(voicePath + "Naht_D1.wav"));
-            reflectedMap.put("Naht_D2", new Sfx(voicePath + "Naht_D2.wav"));
-            reflectedMap.put("Naht_D3", new Sfx(voicePath + "Naht_D3.wav"));
-            reflectedMap.put("Naht_D4", new Sfx(voicePath + "Naht_D4.wav"));
-            reflectedMap.put("Naht_D5", new Sfx(voicePath + "Naht_D5.wav"));
-            reflectedMap.put("Naht_P1", new Sfx(voicePath + "Naht_P1.wav"));
-            reflectedMap.put("Naht_P2", new Sfx(voicePath + "Naht_P2.wav"));
-            reflectedMap.put("Naht_P3", new Sfx(voicePath + "Naht_P3.wav"));
-            reflectedMap.put("IC_Stage2", new Sfx(voicePath + "IC_Stage2.wav"));
-            reflectedMap.put("IC_Stage2_A1", new Sfx(voicePath + "IC_Stage2_A1.wav"));
-            reflectedMap.put("IC_Stage2_A2", new Sfx(voicePath + "IC_Stage2_A2.wav"));
-            reflectedMap.put("IC_Stage2_A3", new Sfx(voicePath + "IC_Stage2_A3.wav"));
-            reflectedMap.put("Maiser_Story", new Sfx(voicePath + "Maiser_Story.wav"));
-            reflectedMap.put("Selena_Story", new Sfx(voicePath + "Selena_Story.wav"));
-            reflectedMap.put("Illganeau_Story", new Sfx(voicePath + "Illganeau_Story.wav"));
-            reflectedMap.put("Sekka_Story", new Sfx(voicePath + "Sekka_Story.wav"));
-            reflectedMap.put("Dracu_Story", new Sfx(voicePath + "Dracu_Story.wav"));
-            reflectedMap.put("Kagero_Story", new Sfx(voicePath + "Kagero_Story.wav"));
-            reflectedMap.put("VerdictWord", new Sfx(voicePath + "VerdictWord.wav"));
-            reflectedMap.put("AbsoluteOrder", new Sfx(voicePath + "AbsoluteOrder.wav"));
-            reflectedMap.put("Zecilwenshe_A", new Sfx(voicePath + "Zecilwenshe_A.wav"));
-            reflectedMap.put("Zecilwenshe_R", new Sfx(voicePath + "Zecilwenshe_R.wav"));
-            reflectedMap.put("Zecilwenshe_R2", new Sfx(voicePath + "Zecilwenshe_R2.wav"));
-            reflectedMap.put("Zecilwenshe_R3", new Sfx(voicePath + "Zecilwenshe_R3.wav"));
+
             reflectedMap.put("Satanael", new Sfx(voicePath + "Satanael.wav"));
             reflectedMap.put("FlameNGlass2", new Sfx(voicePath + "FlameNGlass2.wav"));
             reflectedMap.put("Taketsumi", new Sfx(voicePath + "Taketsumi.wav"));
@@ -1237,7 +1140,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("RoomServiceDevil_Acc", new Sfx(voicePath + "RoomServiceDevil_Acc.wav"));
             reflectedMap.put("JubilanceWitch", new Sfx(voicePath + "JubilanceWitch.wav"));
             reflectedMap.put("AcidGolem", new Sfx(voicePath + "AcidGolem.wav"));
-            reflectedMap.put("DemonCommander", new Sfx(voicePath + "DemonCommander.wav"));
+
             reflectedMap.put("Seox", new Sfx(voicePath + "Seox.wav"));
             reflectedMap.put("Seox_SA", new Sfx(voicePath + "Seox_SA.wav"));
             reflectedMap.put("Seox_SSA", new Sfx(voicePath + "Seox_SSA.wav"));
@@ -1407,10 +1310,6 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("Kaiser_Hurt2", new Sfx(voicePath + "Kaiser_Hurt2.wav"));
             reflectedMap.put("Kaiser_Hurt3", new Sfx(voicePath + "Kaiser_Hurt3.wav"));
             reflectedMap.put("Kaiser_Hurt4", new Sfx(voicePath + "Kaiser_Hurt4.wav"));
-            reflectedMap.put("Taketsumi_Start", new Sfx(voicePath + "Taketsumi_Start.wav"));
-            reflectedMap.put("Taketsumi_A1", new Sfx(voicePath + "Taketsumi_A1.wav"));
-            reflectedMap.put("Taketsumi_A2", new Sfx(voicePath + "Taketsumi_A2.wav"));
-            reflectedMap.put("Taketsumi_A3", new Sfx(voicePath + "Taketsumi_A3.wav"));
             reflectedMap.put("TidalGunner", new Sfx(voicePath + "TidalGunner.wav"));
             reflectedMap.put("TidalGunnerPower", new Sfx(voicePath + "TidalGunnerPower.wav"));
             reflectedMap.put("DeepSeaScout", new Sfx(voicePath + "DeepSeaScout.wav"));
@@ -1506,7 +1405,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("Weiss", new Sfx(voicePath + "Weiss.wav"));
             reflectedMap.put("DeathscytheHound",new Sfx(voicePath + "DeathscytheHound.wav"));
             reflectedMap.put("DiamondMaster", new Sfx(voicePath + "DiamondMaster.wav"));
-            reflectedMap.put("LegendSwordCommander", new Sfx(voicePath + "LegendSwordCommander.wav"));
+
             reflectedMap.put("JudgmentSpearMaster", new Sfx(voicePath + "JudgmentSpearMaster.wav"));
             reflectedMap.put("JudgmentSpearMaster_Acc", new Sfx(voicePath + "JudgmentSpearMaster_Acc.wav"));
             reflectedMap.put("Monika_Hurt", new Sfx(voicePath + "Monika_Hurt.wav"));
@@ -1813,12 +1712,10 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addRelic(new KMR1(), RelicType.SHARED);
         BaseMod.addRelic(new KMR2(), RelicType.SHARED);
         BaseMod.addRelic(new MissLethal(), RelicType.SHARED);
-        BaseMod.addRelic(new GeassRelic(), RelicType.SHARED);
+
         BaseMod.addRelic(new NeutralBook(), RelicType.SHARED);
-        BaseMod.addRelic(new ValhoreanDealer(), RelicType.SHARED);
-        BaseMod.addRelic(new AlterplaneArbiter(), RelicType.SHARED);
         BaseMod.addRelic(new Tree(), RelicType.SHARED);
-        BaseMod.addRelic(new Bullet(), RelicType.SHARED);
+
         BaseMod.addRelicToCustomPool(new Offensive2(), Elf.Enums.COLOR_GREEN);
         BaseMod.addRelicToCustomPool(new SixMark(), Elf.Enums.COLOR_GREEN);
         BaseMod.addRelicToCustomPool(new ArisaBOSS(), Elf.Enums.COLOR_GREEN);
@@ -1890,6 +1787,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addRelicToCustomPool(new KayaBOSS(),Dragon.Enums.COLOR_BROWN);
         BaseMod.addRelicToCustomPool(new GreaBOSS(),Dragon.Enums.COLOR_BROWN);
         BaseMod.addRelicToCustomPool(new InoriBOSS(),Dragon.Enums.COLOR_BROWN);
+        BaseMod.addRelic(new AlterplaneArbiter(), RelicType.SHARED);
     }
 
     class Keywords {
@@ -1905,18 +1803,18 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         String relicsPath = "localization/relics-" + Settings.language + ".json";
         String uiPath = "localization/UIStrings-" + Settings.language + ".json";
         String eventPath = "localization/events-" + Settings.language + ".json";
-        String monsterPath = "localization/monsters-" + Settings.language + ".json";
         String potionPath = "localization/potions-" + Settings.language + ".json";
         String orbPath = "localization/orbs-" + Settings.language + ".json";
+        String monsterPath = "localization/monsters-" + Settings.language + ".json";
         BaseMod.loadCustomStringsFile(CardStrings.class, cardsPath);
         BaseMod.loadCustomStringsFile(CharacterStrings.class, characterPath);
         BaseMod.loadCustomStringsFile(PowerStrings.class, powerPath);
         BaseMod.loadCustomStringsFile(RelicStrings.class, relicsPath);
         BaseMod.loadCustomStringsFile(UIStrings.class, uiPath);
         BaseMod.loadCustomStringsFile(EventStrings.class, eventPath);
-        BaseMod.loadCustomStringsFile(MonsterStrings.class, monsterPath);
         BaseMod.loadCustomStringsFile(PotionStrings.class, potionPath);
         BaseMod.loadCustomStringsFile(OrbStrings.class, orbPath);
+        BaseMod.loadCustomStringsFile(MonsterStrings.class, monsterPath);
         logger.info("Success");
     }
 
@@ -2057,8 +1955,6 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard(new Maiser());
         BaseMod.addCard(new CrystalBright());
         BaseMod.addCard(new GemLight());
-        BaseMod.addCard(new BelphometStatus());
-        BaseMod.addCard(new ManaForce());
         BaseMod.addCard(new Strike_E());
         BaseMod.addCard(new Defend_E());
         BaseMod.addCard(new Fairy());
@@ -2141,7 +2037,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard(new NewEmber());
         BaseMod.addCard(new ExceedBurst());
         BaseMod.addCard(new ShikigamiSummoning());
-        BaseMod.addCard(new Geass());
+
         BaseMod.addCard(new Strike_N());
         BaseMod.addCard(new Defend_N());
         BaseMod.addCard(new UndyingResentment());
@@ -2415,7 +2311,6 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard(new KnowerOfHistory());
         BaseMod.addCard(new GadgetUser());
         BaseMod.addCard(new Karula());
-        BaseMod.addCard(new CurseOfPurgation());
         BaseMod.addCard(new Uno());
         BaseMod.addCard(new Due());
         BaseMod.addCard(new Tre());
@@ -2459,21 +2354,9 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard(new RevisedExperiment());
         BaseMod.addCard(new Sleipnir());
         BaseMod.addCard(new Odin());
-        BaseMod.addCard(new KMRGaze());
-        BaseMod.addCard(new WUP());
-        BaseMod.addCard(new Altersphere());
-        BaseMod.addCard(new Death());
-        BaseMod.addCard(new Betray());
-        BaseMod.addCard(new Rowen());
+
         BaseMod.addCard(new CurseOfTheBlackDragon());
-        BaseMod.addCard(new ShadowversePain());
-        BaseMod.addCard(new ShadowBahmut());
-        BaseMod.addCard(new KMRsPresent());
-        BaseMod.addCard(new SevensForceSorcerer());
-        BaseMod.addCard(new ShiningValkyrie());
-        BaseMod.addCard(new LegendSwordCommander());
-        BaseMod.addCard(new DeadSoulTaker());
-        BaseMod.addCard(new AbyssDoomLord());
+
         BaseMod.addCard(new Defend_R());
         BaseMod.addCard(new Strike_R());
         BaseMod.addCard(new OathlessKnight());
@@ -2676,7 +2559,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard(new Lorena());
         BaseMod.addCard(new LorenaPunch());
         BaseMod.addCard(new LorenaWater());
-        BaseMod.addCard(new ImperialSaint());
+
         BaseMod.addCard(new Valdain());
         BaseMod.addCard(new Sukuna());
         BaseMod.addCard(new TerrorFormer());
@@ -2773,7 +2656,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard(new InsatiableDesire());
         BaseMod.addCard(new UnselfishGrace());
         BaseMod.addCard(new TheTemperance());
-        BaseMod.addCard(new MadnessCurse());
+
         BaseMod.addCard(new Arthur());
         BaseMod.addCard(new Tweyen());
         BaseMod.addCard(new CelestialArtifact());
@@ -2783,12 +2666,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard(new Yggdrasil());
         BaseMod.addCard(new Rola());
         BaseMod.addCard(new Roid_EW());
-        BaseMod.addCard(new DivineTreasureGuardian());
-        BaseMod.addCard(new DivineTreasureHerald());
-        BaseMod.addCard(new JudgmentSpear());
-        BaseMod.addCard(new GuiltyShield());
-        BaseMod.addCard(new EternalDogma());
-        BaseMod.addCard(new SummonDivineTreasure());
+
         BaseMod.addCard(new Norn());
         BaseMod.addCard(new Rosa());
         BaseMod.addCard(new Cassim());
@@ -2796,7 +2674,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard(new Hanna());
         BaseMod.addCard(new Robopup());
         BaseMod.addCard(new WhirlwindAssault());
-        BaseMod.addCard(new UltimateBahmut());
+
         BaseMod.addCard(new Vyrmedea());
         BaseMod.addCard(new Chastity());
         BaseMod.addCard(new Zerk());
@@ -3100,7 +2978,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard(new WhitefrostWhisper());
         BaseMod.addCard(new Filene());
         BaseMod.addCard(new Forte());
-        BaseMod.addCard(new InfiniflameDragon());
+
         BaseMod.addCard(new DragonlifeBlade());
         BaseMod.addCard(new DragonstrifeBlade());
         BaseMod.addCard(new Hiro());
@@ -3210,7 +3088,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard(new ForbiddenPower());
         BaseMod.addCard(new ManmaruRe());
         BaseMod.addCard(new JoySecured());
-        BaseMod.addCard(new LionBless());
+        BaseMod.addCard(new WingsOfLust());
         BaseMod.addCard(new GarnetRelease());
         BaseMod.addCard(new CrystalshardDragonewt());
         BaseMod.addCard(new ShadowRejection());
@@ -3233,6 +3111,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard(new ChaoticChimera());
         BaseMod.addCard(new Bayleon());
         BaseMod.addCard(new LuminousBlade());
+        BaseMod.addCard(new DespairReborn());
         logger.info("Success");
     }
 

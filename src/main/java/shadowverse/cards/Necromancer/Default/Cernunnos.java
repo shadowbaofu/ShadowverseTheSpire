@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -45,6 +46,17 @@ public class Cernunnos extends CustomCard {
         }
     }
 
+    @Override
+    public void applyPowers() {
+        super.applyPowers();
+        this.rawDescription = cardStrings.DESCRIPTION;
+        int necromance = 0;
+        if (AbstractDungeon.player instanceof AbstractShadowversePlayer){
+            necromance = ((AbstractShadowversePlayer)AbstractDungeon.player).necromanceCount;
+        }
+        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + necromance + cardStrings.EXTENDED_DESCRIPTION[1];
+        this.initializeDescription();
+    }
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot(new BurialAction(1, new DrawCardAction(this.magicNumber)));

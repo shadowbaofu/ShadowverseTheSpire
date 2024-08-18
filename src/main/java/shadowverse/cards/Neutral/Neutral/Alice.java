@@ -54,7 +54,7 @@ public class Alice
             addToBot(new ForeignInfluenceAction(false));
             addToBot(new ForeignInfluenceAction(false));
         }
-        if (count > 6){
+        if (count > 4){
             dmg *= 2;
         }
         addToBot(new DamageAction(m,new DamageInfo(p, dmg, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));

@@ -9,6 +9,9 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.AbstractImageEvent;
 import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.localization.EventStrings;
+import com.megacrit.cardcrawl.relics.PrayerWheel;
+import com.megacrit.cardcrawl.relics.PrismaticShard;
+import shadowverse.characters.AbstractShadowversePlayer;
 
 public class Crossover extends AbstractImageEvent {
     public static final String ID = "Crossover";

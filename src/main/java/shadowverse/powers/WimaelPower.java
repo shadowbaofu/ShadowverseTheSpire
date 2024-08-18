@@ -26,12 +26,14 @@ public class WimaelPower
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
     private static final String TEXT = CardCrawlGame.languagePack.getUIString("shadowverse:Exhaust").TEXT[0];
+    private boolean isUpgraded;
 
-    public WimaelPower(AbstractCreature owner, int amount) {
+    public WimaelPower(AbstractCreature owner, int amount,boolean isUpgraded) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
         this.amount = amount;
+        this.isUpgraded = isUpgraded;
         this.type = PowerType.BUFF;
         updateDescription();
         this.img = new Texture("img/powers/WimaelPower.png");
@@ -52,6 +54,9 @@ public class WimaelPower
     public void atStartOfTurn() {
         for (int i = 0 ; i < this.amount ; i++ ){
             AbstractCard tmp = new Wimael().makeStatEquivalentCopy();
+            if (isUpgraded){
+                tmp.upgrade();
+            }
             tmp.setCostForTurn(0);
             tmp.costForTurn = 0;
             tmp.isCostModified = true;

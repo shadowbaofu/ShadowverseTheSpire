@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
-import shadowverse.cards.Neutral.Temp.DeadSoulTaker;
+//import shadowverse.cards.Neutral.Temp.DeadSoulTaker;
 import shadowverse.cards.Bishop.Amulet2.Jatelant;
 import shadowverse.cards.Elf.Left.PrimalGigant;
 import shadowverse.characters.AbstractShadowversePlayer;
@@ -60,8 +60,10 @@ public class JatelantAction extends AbstractGameAction {
             }
             if (cardCount>0){
                 for (AbstractCard c:AbstractDungeon.actionManager.cardsPlayedThisCombat){
-                    if (c.type == AbstractCard.CardType.ATTACK){
-                        if (tmp.contains(c.cardID)||c instanceof PrimalGigant||c instanceof DeadSoulTaker || c instanceof Jatelant) {
+                    if (!c.isLocked&&c.type == AbstractCard.CardType.ATTACK){
+                        if (tmp.contains(c.cardID)||c instanceof PrimalGigant
+                                //||c instanceof DeadSoulTaker
+                                || c instanceof Jatelant) {
                             continue;
                         }
                         tmp.add(c.cardID);

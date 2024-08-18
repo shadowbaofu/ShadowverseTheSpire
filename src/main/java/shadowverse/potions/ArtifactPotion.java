@@ -35,9 +35,9 @@ public class ArtifactPotion extends CustomPotion {
 
     @Override
     public void use(AbstractCreature abstractCreature) {
-        addToBot((AbstractGameAction)new MakeRandomArtifactAction());
+        addToBot(new MakeRandomArtifactAction());
         if (this.potency>1)
-            addToBot((AbstractGameAction)new MakeRandomArtifactAction());
+            addToBot(new MakeRandomArtifactAction());
     }
 
 

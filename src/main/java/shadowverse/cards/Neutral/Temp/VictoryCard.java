@@ -1,21 +1,18 @@
 package shadowverse.cards.Neutral.Temp;
 
 import basemod.abstracts.CustomCard;
-import shadowverseCharbosses.bosses.KMR.KMR;
+//import shadowverseCharbosses.bosses.KMR.KMR;
 import com.badlogic.gdx.graphics.Color;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.actions.common.SuicideAction;
 import com.megacrit.cardcrawl.actions.utility.HideHealthBarAction;
 import com.megacrit.cardcrawl.actions.watcher.JudgementAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
 import com.megacrit.cardcrawl.vfx.combat.GrandFinalEffect;
 import com.megacrit.cardcrawl.vfx.combat.MiracleEffect;
@@ -37,9 +34,9 @@ public class VictoryCard extends CustomCard {
         addToBot(new ExhaustSpecificCardAction(this, AbstractDungeon.player.hand));
         boolean isKMR = false;
         for (AbstractMonster m : (AbstractDungeon.getMonsters()).monsters) {
-            if (m instanceof KMR){
-                isKMR = true;
-            }
+            //if (m instanceof KMR){
+                //isKMR = true;
+            //}
         }
         if (isKMR&&(AbstractDungeon.getCurrRoom()).cannotLose){
             for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {

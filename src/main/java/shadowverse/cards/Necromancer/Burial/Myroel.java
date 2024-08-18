@@ -47,11 +47,6 @@ public class Myroel extends CustomCard {
         }
     }
 
-    @Override
-    public void triggerOnExhaust() {
-        addToBot( new DrawCardAction(2));
-    }
-
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot( new SFXAction("Myroel"));
         addToBot(new VFXAction(new BorderFlashEffect(Color.PURPLE, true)));

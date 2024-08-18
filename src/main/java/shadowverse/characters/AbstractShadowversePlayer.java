@@ -25,6 +25,7 @@ import shadowverse.powers.*;
 import shadowverse.stance.Vengeance;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public abstract class AbstractShadowversePlayer extends CustomPlayer {
 
@@ -91,7 +92,6 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
     public int magachiyoCount = 0;
     public int burialCount = 0;
     public int discardCount = 0;
-
     public int lainaCount = 0;
 
     public AbstractBanPool cardPool;
@@ -151,7 +151,7 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
             }
         }
         if (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT && this.currentHealth <= this.maxHealth / 2.0F && !(this instanceof Nemesis)) {
-            AbstractDungeon.actionManager.addToBottom(new ChangeStanceAction((AbstractStance) new Vengeance()));
+            AbstractDungeon.actionManager.addToBottom(new ChangeStanceAction(new Vengeance()));
         }
     }
 
@@ -184,7 +184,7 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
     public void applyStartOfCombatLogic() {
         super.applyStartOfCombatLogic();
         if ((this.currentHealth <= this.maxHealth / 2.0F || this.maxHealth == 1) && !(this instanceof Nemesis)) {
-            AbstractDungeon.actionManager.addToBottom(new ChangeStanceAction((AbstractStance) new Vengeance()));
+            AbstractDungeon.actionManager.addToBottom(new ChangeStanceAction(new Vengeance()));
         }
     }
 
@@ -206,7 +206,7 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
         healCount++;
         super.heal(healAmount);
         if (this.currentHealth > this.maxHealth / 2 && !this.hasPower(VengeanceHealthPower.POWER_ID) && !this.hasPower(ExitVengeancePower.POWER_ID))
-            AbstractDungeon.actionManager.addToBottom(new ChangeStanceAction((AbstractStance) new NeutralStance()));
+            AbstractDungeon.actionManager.addToBottom(new ChangeStanceAction(new NeutralStance()));
     }
 
     public static shadowverse.animation.AbstractAnimation getBigAnimation() {

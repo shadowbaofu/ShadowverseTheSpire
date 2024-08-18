@@ -33,10 +33,10 @@ public class Gabriel extends AbstractNeutralCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new SFXAction("Gabriel"));
+        addToBot(new SFXAction("Gabriel"));
         AbstractDungeon.effectsQueue.add(new SpotlightPlayerEffect());
-        addToBot((AbstractGameAction)new GainBlockAction(abstractPlayer,this.block));
-        addToBot((AbstractGameAction)new GabrielAction(abstractPlayer,this.upgraded,this.freeToPlayOnce,this.energyOnUse));
+        addToBot(new GainBlockAction(abstractPlayer,this.block));
+        addToBot(new GabrielAction(abstractPlayer,this.upgraded,this.freeToPlayOnce,this.energyOnUse));
     }
 
     public AbstractCard makeCopy() {

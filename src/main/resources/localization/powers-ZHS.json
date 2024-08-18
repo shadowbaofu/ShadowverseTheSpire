@@ -213,46 +213,13 @@
       " 张可以造成2次 #b50 点伤害的 #y传奇剑斗士 到手中。"
     ]
   },
-  "shadowverse:chushouHealPower": {
-    "NAME": "阻断的触手：谢幕曲",
-    "DESCRIPTIONS": [
-      "死亡时，回复 #y贝尔冯特·阿德莱特 #b",
-      " 点生命值。增加1张 #y马纳之力 到手中。"
-    ]
-  },
-  "shadowverse:chushouExplosionPower": {
-    "NAME": "蹂躏的触手：谢幕曲",
-    "DESCRIPTIONS": [
-      "死亡时，造成 #b",
-      " 点伤害。增加1张 #y马纳之力 到手中。"
-    ]
-  },
+
   "shadowverse:WorldEliminatorLastWordPower": {
     "NAME": "世界消除者：谢幕曲",
     "DESCRIPTIONS": [
       "死亡时，造成 #b",
       " 点伤害。回复 #y莱昂·奥朗什 #b",
       " 点生命值。"
-    ]
-  },
-  "shadowverse:ManaBarrier": {
-    "NAME": "马纳屏障",
-    "DESCRIPTIONS": [
-      "受到攻击伤害的为 #b0 。可以使用 #y马纳之力 移除。"
-    ]
-  },
-  "shadowverse:ICPower": {
-    "NAME": "泰坦诅咒",
-    "DESCRIPTIONS": [
-      "每次使用卡牌将在回合结束时对自身造成 #b1 点伤害。当前返还 #b",
-      " 点伤害。"
-    ]
-  },
-  "shadowverse:ICPower2": {
-    "NAME": "诅咒之力",
-    "DESCRIPTIONS": [
-      "受到的伤害将在 #y艾希连德凛克 回合结束时全额返还给玩家，并等额回复 #y艾希连德凛克 的血量。当前返还 #b",
-      " 点伤害。"
     ]
   },
   "shadowverse:IzudiaPower": {
@@ -365,82 +332,6 @@
       "造成伤害提高 #b",
       "0% ，承受伤害减少 #b",
       "0% 。回合结束时如果已打出的卡牌数为5以上则数值增加 #b10% (最多50%)。如果失去生命则数值减少 #b10% 。"
-    ]
-  },
-  "shadowverse:NoDamage": {
-    "NAME": "宣判之词：禁止伤害",
-    "DESCRIPTIONS": [
-      "无法造成伤害。"
-    ]
-  },
-  "shadowverse:NoPower": {
-    "NAME": "宣判之词：禁止能力",
-    "DESCRIPTIONS": [
-      "无法打出 #y能力牌 。"
-    ]
-  },
-  "shadowverse:ManaPower": {
-    "NAME": "魔力",
-    "DESCRIPTIONS": [
-      "你可以依靠 #g魔力 来抵御文森特的言语。回合内打出第 #b12 张牌时提高 #b1 层魔力，当你有 #b1 层以上的魔力时，抵御一次文森特的消除能力。"
-    ]
-  },
-  "shadowverse:JudgmentWordPower": {
-    "NAME": "宣判之词",
-    "DESCRIPTIONS": [
-      "回合开始时，轮流获得 #y无法造成伤害 、 #y无法打出能力牌 、 #y邪咒 （一回合） 、 #y无法获得 #y格挡 。(回合结束时如果有剩余能量则获得 #b1 层 #y人工制品 )"
-    ]
-  },
-  "shadowverse:RapidFirePower": {
-    "NAME": "集中火力",
-    "DESCRIPTIONS": [
-      "每打出 #b3 张牌，受到 #b",
-      " 点伤害。"
-    ]
-  },
-  "shadowverse:FreezePower": {
-    "NAME": "冻结",
-    "DESCRIPTIONS": [
-      "你抽到的牌耗能+1。"
-    ]
-  },
-  "shadowverse:AlectorPower": {
-    "NAME": "破坏杖·库多拉贾",
-    "DESCRIPTIONS": [
-      "回合结束时，全体敌人获得 #b",
-      " 点 #y力量 。"
-    ]
-  },
-  "shadowverse:KMFPower": {
-    "NAME": "绝对守护领域",
-    "DESCRIPTIONS": [
-      "受到的 #b",
-      " 点以下的伤害将会被无效化。当受到攻击伤害时，当回合将会失效。"
-    ]
-  },
-  "shadowverse:CheckmatePower": {
-    "NAME": "奇迹的条件",
-    "DESCRIPTIONS": [
-      "如果打出 #y稀有牌 则会立即受到 #b",
-      " 点伤害并失去此能力。"
-    ]
-  },
-  "shadowverse:GeassPower": {
-    "NAME": "Geass",
-    "DESCRIPTIONS": [
-      "回合结束时，将1张 #yGeass 加入抽牌堆。"
-    ]
-  },
-  "shadowverse:CurseOfGeass": {
-    "NAME": "Geass的咒缚",
-    "DESCRIPTIONS": [
-      "受到致死伤害时，移除所有负面效果，回复1点生命值并强制结束回合，获得 #b5 点 #y力量 和 #y敏捷 ， #b25 点 #y格挡 。"
-    ]
-  },
-  "shadowverse:CommanderPower": {
-    "NAME": "战术指挥",
-    "DESCRIPTIONS": [
-      "回合结束时轮流执行以下行动：1.全体敌人获得 #b1 层 #y人工制品 、 2.全体敌人获得 #b1 点 #y力量 、 3.全体敌人获得 #b3 点 #y多层护甲 、4.给予 #b2 层 #y虚弱 。"
     ]
   },
   "shadowverse:Cemetery": {
@@ -976,12 +867,6 @@
       " 个回合内，回合开始前从以下3种效果中发动一种未发动过的效果：「失去 #b2 点 #y力量 」「眩晕 #b1 回合」「增加 #b1 张 #y解析的创造物 到你的手中」。"
     ]
   },
-  "shadowverse:AbsoluteOnePower": {
-    "NAME": "绝对之一",
-    "DESCRIPTIONS": [
-      "因能力受到的伤害变为0。回合开始时将 #b1 张 #y绝对制裁 加入手中。"
-    ]
-  },
   "shadowverse:DeathNotePower": {
     "NAME": "亡者之王的记事本",
     "DESCRIPTIONS": [
@@ -989,44 +874,10 @@
       " 个回合内，随机打出一张抽牌堆中耗能最高且不大于你的能量上限的 #y攻击牌 。"
     ]
   },
-  "shadowverse:AncientAmplifierPower": {
-    "NAME": "古代增幅器",
-    "DESCRIPTIONS": [
-      "回合结束时，增加 #b",
-      " 张随机牌到你的抽牌堆中。这个效果回合开始时减少1层。"
-    ]
-  },
   "shadowverse:BrandOfMorningStarPower": {
     "NAME": "灾祸刻印",
     "DESCRIPTIONS": [
       "一回合一次，消耗 #y攻击牌 时增加 #b1 张 #y暗影士兵 到手中。 如果消耗堆中的 #y攻击牌 数量为 #b15 以上，改为增加 #b1 张 #y暗影指挥官 到手中。"
-    ]
-  },
-  "shadowverse:LionSanctuaryPower": {
-    "NAME": "狮子的圣域",
-    "DESCRIPTIONS": [
-      "不会受到负面效果影响。受到攻击时，对攻击者造成 #b",
-      " 点伤害。"
-    ]
-  },
-  "shadowverse:SevensForceSorcererPower": {
-    "NAME": "七彩之力召唤师",
-    "DESCRIPTIONS": [
-      "打出 #b",
-      " 张技能牌后，消灭所有敌人并失去此效果。"
-    ]
-  },
-  "shadowverse:ShiningValkyriePower": {
-    "NAME": "闪耀女武神",
-    "DESCRIPTIONS": [
-      "每回合开始增加 #b1 张 #y妖精 到手中。每当打出 #y妖精 时，对随机敌人造成 #b6 点伤害并获得 #b1 点 #y力量 和 #b1 点 #y敏捷 。"
-    ]
-  },
-  "shadowverse:AbyssDoomLordPower": {
-    "NAME": "深渊毁灭领主",
-    "DESCRIPTIONS": [
-      " #b",
-      " 回合内，你受到的伤害变为0。"
     ]
   },
   "shadowverse:DiscipleOfUsurpationPower": {
@@ -1285,12 +1136,6 @@
       " 个额外回合。"
     ]
   },
-  "shadowverse:ImperialSaintPower": {
-    "NAME": "威严圣者",
-    "DESCRIPTIONS": [
-      "无效一次死亡，回复最大生命值 #b50% 的生命并追加 #b1 个额外回合。"
-    ]
-  },
   "shadowverse:ShadowCorrosionPower": {
     "NAME": "影之侵蚀",
     "DESCRIPTIONS": [
@@ -1448,24 +1293,11 @@
       "本回合未发动。"
     ]
   },
-  "shadowverse:MaiserPower": {
-    "NAME": "音速英雄·麦哲",
-    "DESCRIPTIONS": [
-      "打出 #y技能牌 时，对全体敌人造成 #b5 点伤害。"
-    ]
-  },
   "shadowverse:EnemyNightmareTimePower": {
     "NAME": "梦魇时分",
     "DESCRIPTIONS": [
       "回合开始时，额外抽 #b",
       " 张卡。"
-    ]
-  },
-  "shadowverse:BloodyNailPower": {
-    "NAME": "血腥利爪",
-    "DESCRIPTIONS": [
-      "每打出1张 #y攻击牌 ， #y尤里亚斯 将会对你造成 #b",
-      " 点伤害。"
     ]
   },
   "shadowverse:HeroOfTheHuntPower": {
@@ -1537,28 +1369,6 @@
       "本回合你打出的 #y林地蝙蝠 伤害翻倍，且会给予 #b2 层 #y中毒 ，并使敌人失去 #b2 点生命。"
     ]
   },
-  "shadowverse:GuiltyShieldPower": {
-    "NAME": "罪恶之盾",
-    "DESCRIPTIONS": [
-      "受到的 #b5 以上的伤害变为 #b4 。 #b",
-      " 回合后时失去这个效果。"
-    ]
-  },
-  "shadowverse:JudgementSpearPower": {
-    "NAME": "裁决之枪",
-    "DESCRIPTIONS": [
-      "回合结束时对随机敌人造成 #b",
-      " 点伤害。 #b",
-      " 回合后失去这个效果。"
-    ]
-  },
-  "shadowverse:EternalDogmaPower": {
-    "NAME": "永恒教义",
-    "DESCRIPTIONS": [
-      "回合开始时额外抽 #b1 张牌，回复 #b2 点生命。 #b",
-      " 回合后失去这个效果。"
-    ]
-  },
   "shadowverse:NornPower": {
     "NAME": "外界审判者·诺伦",
     "DESCRIPTIONS": [
@@ -1577,20 +1387,6 @@
     "DESCRIPTIONS": [
       "本回合每当由非 #y共鸣 转变为 #y共鸣 时，获得 #b",
       " 点 #y格挡 。回合开始时额外抽 #b1 张牌。"
-    ]
-  },
-  "shadowverse:LegendSwordCommanderPower": {
-    "NAME": "传说之剑",
-    "DESCRIPTIONS": [
-      "回合结束时获得 #b",
-      " 点 #y格挡 。打出 #y攻击牌 时对全体敌人造成 #b",
-      " 点伤害。"
-    ]
-  },
-  "shadowverse:UltimateBahmutPower": {
-    "NAME": "究极巴哈姆特",
-    "DESCRIPTIONS": [
-      "每回合结束减少 #b1 倒计时。倒计时结束时死亡。"
     ]
   },
   "shadowverse:VyrmedeaPower": {
@@ -1741,12 +1537,6 @@
     "NAME": "机锋的罪人·卡托斯瑞德",
     "DESCRIPTIONS": [
       "每当以 #y爆能强化 打出卡牌时，获得X点能量。X为该爆能强化的数值 #b-1 。"
-    ]
-  },
-  "shadowverse:TaketsumiPower": {
-    "NAME": "大蜘蛛之力",
-    "DESCRIPTIONS": [
-      "死亡时，减少 #y武祇 #b80 点最大生命值。"
     ]
   },
   "shadowverse:TidalGunnerPower": {
@@ -2158,6 +1948,13 @@
     "NAME": "王者曙光·贝里昂",
     "DESCRIPTIONS": [
       "每回合1次，打出 #y那塔拉的大树 时，增加 #b1 张 #y光耀剑闪 到手中。"
+    ]
+  },
+  "shadowverse:RapidFirePower": {
+    "NAME": "集中火力",
+    "DESCRIPTIONS": [
+      "每打出 #b3 张牌，受到 #b",
+      " 点伤害。"
     ]
   }
 }

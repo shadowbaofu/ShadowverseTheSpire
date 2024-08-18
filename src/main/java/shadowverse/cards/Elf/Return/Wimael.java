@@ -57,7 +57,7 @@ public class Wimael extends CustomCard {
                 addToTop(new VFXAction(new ThrowDaggerEffect(m.hb.cX, m.hb.cY),0.2F));
         }
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
-        addToBot(new ApplyPowerAction(p,p,new WimaelPower(p,1),1));
+        addToBot(new ApplyPowerAction(p,p,new WimaelPower(p,1,this.upgraded),1));
         this.cost = 3;
     }
 

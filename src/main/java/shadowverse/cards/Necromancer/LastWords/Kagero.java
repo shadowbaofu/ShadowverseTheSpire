@@ -15,18 +15,36 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
+import rs.lazymankits.interfaces.cards.BranchableUpgradeCard;
+import rs.lazymankits.interfaces.cards.UpgradeBranch;
 import shadowverse.action.NecromanceAction;
+import shadowverse.cards.Neutral.Temp.FirstOne;
 import shadowverse.cards.Neutral.Temp.SoulStrike;
+import shadowverse.cards.Neutral.Temp.Soulflash;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Necromancer;
 import shadowverse.powers.Cemetery;
 
-public class Kagero extends CustomCard {
+import java.util.ArrayList;
+import java.util.List;
+
+public class Kagero extends CustomCard implements BranchableUpgradeCard {
     public static final String ID = "shadowverse:Kagero";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:Kagero");
+    public static CardStrings cardStrings2 = CardCrawlGame.languagePack.getCardStrings("shadowverse:Kagero2");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/Kagero.png";
+    private int previewBranch;
+
+    private static AbstractCard soulStrike = new SoulStrike();
+    private static AbstractCard upgradedsouStrike(){
+        AbstractCard c = new FirstOne();
+        c.upgrade();
+        return c;
+    }
+
+    private static AbstractCard soulFlash = new Soulflash();
 
     public Kagero() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Necromancer.Enums.COLOR_PURPLE, CardRarity.RARE, CardTarget.SELF);
@@ -34,48 +52,104 @@ public class Kagero extends CustomCard {
         this.tags.add(AbstractShadowversePlayer.Enums.LASTWORD);
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
-        this.cardsToPreview = (AbstractCard)new SoulStrike();
     }
 
 
     public void upgrade() {
-        if (!this.upgraded) {
-            upgradeName();
-            upgradeBlock(3);
-            upgradeMagicNumber(1);
-            this.cardsToPreview.upgrade();
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-            initializeDescription();
+        ((UpgradeBranch)((BranchableUpgradeCard)this).possibleBranches().get(chosenBranch())).upgrade();
+    }
+
+    public void update() {
+        super.update();
+        if (this.previewBranch == 0) {
+            if (this.upgraded) {
+                this.cardsToPreview = upgradedsouStrike();
+            } else
+                this.cardsToPreview = soulStrike;
+        }else if (this.previewBranch == 1){
+            this.cardsToPreview = soulFlash;
         }
     }
 
     @Override
     public void triggerOnExhaust() {
-        addToBot((AbstractGameAction)new NecromanceAction(3,null,(AbstractGameAction)new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy())));
+        if (chosenBranch() == 0){
+            if (upgraded){
+                addToBot(new NecromanceAction(3,null,new MakeTempCardInHandAction(soulStrike.makeStatEquivalentCopy())));
+            }else {
+                addToBot(new NecromanceAction(3,null,new MakeTempCardInHandAction(upgradedsouStrike().makeStatEquivalentCopy())));
+            }
+        }else {
+            addToBot(new NecromanceAction(3,null,new MakeTempCardInHandAction(soulFlash.makeStatEquivalentCopy())));
+        }
     }
 
     @Override
     public void triggerWhenDrawn(){
-        int playerNecromance = 0;
-        if (AbstractDungeon.player.hasPower(Cemetery.POWER_ID)){
-            for (AbstractPower p :AbstractDungeon.player.powers){
-                if (p.ID.equals(Cemetery.POWER_ID))
-                    playerNecromance = p.amount;
+        if (previewBranch == 0){
+            int playerNecromance = 0;
+            if (AbstractDungeon.player.hasPower(Cemetery.POWER_ID)){
+                for (AbstractPower p :AbstractDungeon.player.powers){
+                    if (p.ID.equals(Cemetery.POWER_ID))
+                        playerNecromance = p.amount;
+                }
             }
-        }
-        if (playerNecromance>=10){
-            for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-                addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)mo, (AbstractCreature)AbstractDungeon.player, (AbstractPower)new VulnerablePower((AbstractCreature)mo, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+            if (playerNecromance>=10){
+                for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
+                    addToBot(new ApplyPowerAction(mo, AbstractDungeon.player, (AbstractPower)new VulnerablePower(mo, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+                }
             }
         }
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot((AbstractGameAction)new SFXAction("Kagero"));
-        addToBot((AbstractGameAction)new GainBlockAction(AbstractDungeon.player,this.block));
+        switch (chosenBranch()){
+            case 0:
+                addToBot(new SFXAction("Kagero"));
+                break;
+            case 1:
+                addToBot(new SFXAction("Kagero2"));
+                break;
+        }
+        addToBot(new GainBlockAction(AbstractDungeon.player,this.block));
     }
 
     public AbstractCard makeCopy() {
         return new Kagero();
+    }
+
+    @Override
+    public List<UpgradeBranch> possibleBranches() {
+        ArrayList<UpgradeBranch> list = new ArrayList<UpgradeBranch>();
+        list.add(new UpgradeBranch() {
+            @Override
+            public void upgrade() {
+                ++Kagero.this.timesUpgraded;
+                Kagero.this.upgraded = true;
+                Kagero.this.name = cardStrings.NAME + "+";
+                Kagero.this.initializeTitle();
+                Kagero.this.baseBlock = 11;
+                Kagero.this.upgradedBlock = true;
+                Kagero.this.baseMagicNumber = 2;
+                Kagero.this.magicNumber = Kagero.this.baseMagicNumber;
+                Kagero.this.upgradedMagicNumber = true;
+                Kagero.this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+                Kagero.this.initializeDescription();
+                Kagero.this.previewBranch = 0;
+            }
+        });
+        list.add(new UpgradeBranch() {
+            @Override
+            public void upgrade() {
+                ++Kagero.this.timesUpgraded;
+                Kagero.this.upgraded = true;
+                Kagero.this.name = cardStrings2.NAME;
+                Kagero.this.initializeTitle();
+                Kagero.this.rawDescription = cardStrings2.DESCRIPTION;
+                Kagero.this.initializeDescription();
+                Kagero.this.previewBranch = 1;
+            }
+        });
+        return list;
     }
 }

@@ -35,8 +35,8 @@ import shadowverse.characters.Witchcraft;
    public void triggerOnOtherCardPlayed(AbstractCard c) {
      if (c.type == CardType.SKILL) {
        flash();
-       addToBot((AbstractGameAction)new ReduceCostAction((AbstractCard)this));
-       addToBot((AbstractGameAction)new SFXAction("spell_boost"));
+       addToBot(new ReduceCostAction(this));
+       addToBot(new SFXAction("spell_boost"));
      } 
    }
  
@@ -50,14 +50,14 @@ import shadowverse.characters.Witchcraft;
  
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     addToBot((AbstractGameAction)new DrawCardAction((AbstractCreature)abstractPlayer, this.magicNumber));
+     addToBot(new DrawCardAction((AbstractCreature)abstractPlayer, this.magicNumber));
      this.cost = 3;
    }
  
  
    
    public AbstractCard makeCopy() {
-     return (AbstractCard)new FatesHand();
+     return new FatesHand();
    }
  }
 

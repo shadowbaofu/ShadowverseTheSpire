@@ -37,7 +37,7 @@ import java.util.ArrayList;
      this.ID = POWER_ID;
      this.owner = owner;
      this.amount = -1;
-     this.type = NeutralPowertypePatch.NEUTRAL;
+     this.type = PowerType.BUFF;
      updateDescription();
      this.img = new Texture("img/powers/VincentPower.png");
    }

@@ -1,5 +1,6 @@
 package shadowverse.cards.Neutral.Neutral;
 
+import com.evacipated.cardcrawl.mod.stslib.variables.ExhaustiveVariable;
 import com.megacrit.cardcrawl.actions.common.DiscardAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -18,6 +19,7 @@ public class DespairReborn extends AbstractNeutralCard {
 
     public DespairReborn() {
         super(ID, NAME, IMG_PATH, 4, DESCRIPTION, CardType.SKILL, CardColor.COLORLESS, CardRarity.RARE, CardTarget.NONE);
+        ExhaustiveVariable.setBaseValue(this, 2);
     }
 
     @Override
@@ -30,12 +32,15 @@ public class DespairReborn extends AbstractNeutralCard {
     }
 
     @Override
-    public void triggerAtStartOfTurn() {
+    public void atTurnStart() {
         if (AbstractDungeon.ascensionLevel == 20){
-            this.setCostForTurn(2);
+            this.cost = 2;
+            this.isCostModified = true;
             this.superFlash();
         }
     }
+
+
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {

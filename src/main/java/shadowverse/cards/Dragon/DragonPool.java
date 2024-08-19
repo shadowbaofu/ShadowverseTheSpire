@@ -178,6 +178,7 @@ public class DragonPool extends AbstractBanPool {
         Armed.addCard(new SwiftbladeDragonewt());
         Armed.addCard(new WyrmfireEngineer());
         Armed.addCard(new GallantDragonewt());
+        Armed.addCard(new DualRage());
         Buff.addCard(new CelestialDragoon());
         Buff.addCard(new CoralShark());
         Buff.addCard(new Dracu());

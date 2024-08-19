@@ -1693,6 +1693,10 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("Bayleon", new Sfx(voicePath + "Bayleon.wav"));
             reflectedMap.put("Bayleon_Eff", new Sfx(voicePath + "Bayleon_Eff.wav"));
             reflectedMap.put("LuminousBlade", new Sfx(voicePath + "LuminousBlade.wav"));
+            reflectedMap.put("Kagero2", new Sfx(voicePath + "Kagero2.wav"));
+            reflectedMap.put("Soulflash", new Sfx(voicePath + "Soulflash.wav"));
+            reflectedMap.put("Vincent2", new Sfx(voicePath + "Vincent2.wav"));
+            reflectedMap.put("WordsOfSanction", new Sfx(voicePath + "WordsOfSanction.wav"));
         }
         if (Loader.isModLoaded("CardAugments")) {
             AugmentHelper.register();
@@ -3112,6 +3116,12 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard(new Bayleon());
         BaseMod.addCard(new LuminousBlade());
         BaseMod.addCard(new DespairReborn());
+        BaseMod.addCard(new Soulflash());
+        BaseMod.addCard(new WordsOfSanction());
+        BaseMod.addCard(new DualRage());
+        BaseMod.addCard(new DualModeA());
+        BaseMod.addCard(new DualModeB());
+        BaseMod.addCard(new DualModeC());
         logger.info("Success");
     }
 

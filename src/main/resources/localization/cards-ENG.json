@@ -500,8 +500,8 @@
   },
   "shadowverse:Machinus": {
     "NAME": "Natur Al'machinus",
-    "DESCRIPTION": "Machina · Natura. NL Fusion: Machina or Natura cards. NL Deal !D! damage, gain !B! Block. NL Increase this card's damage by 7 and randomly add 1 Natura or Machina card from your draw pile to your hand for every card fused. NL If this card is fused with both a Machina and a Natura card, reduce the cost of the cards added by 1.",
-    "UPGRADE_DESCRIPTION": "Machina · Natura. NL Fusion: Machina or Natura cards. NL Deal !D! damage, gain !B! Block. NL Increase this card's damage by 9 and randomly add 1 Natura or Machina card from your draw pile to your hand for every card fused. NL If this card is fused with both a Machina and a Natura card, reduce the cost of the cards added by 1."
+    "DESCRIPTION": "Machina · Natura. NL Fusion: Machina or Natura cards. NL Deal !D! damage, gain !B! Block. NL Increase this card's damage by 7 and randomly add 1 Natura or Machina card from your draw pile to your hand for every card Fused. NL If this card is Fused with both a Machina and a Natura card, reduce the cost of the cards added by 1.",
+    "UPGRADE_DESCRIPTION": "Machina · Natura. NL Fusion: Machina or Natura cards. NL Deal !D! damage, gain !B! Block. NL Increase this card's damage by 9 and randomly add 1 Natura or Machina card from your draw pile to your hand for every card Fused. NL If this card is Fused with both a Machina and a Natura card, reduce the cost of the cards added by 1."
   },
   "shadowverse:WitchSnap": {
     "NAME": "Witch Snap",
@@ -585,7 +585,7 @@
   },
   "shadowverse:FlameNGlass2": {
     "NAME": "Flame and Glass, Duality",
-    "DESCRIPTION": "Fusion: *Harnessed *Flame or *Harnessed *Glass. NL If this card is fused with at least 1 card, apply !M! Vulnerable and Weak to ALL enemies. NL Deal !D! damage. NL If fused with both *Harnessed *Flame and *Harnessed *Glass, gain 3 Energy."
+    "DESCRIPTION": "Fusion: *Harnessed *Flame or *Harnessed *Glass. NL If this card is Fused with at least 1 card, apply !M! Vulnerable and Weak to ALL enemies. NL Deal !D! damage. NL If Fused with both *Harnessed *Flame and *Harnessed *Glass, gain 3 Energy."
   },
   "shadowverse:Flame": {
     "NAME": "Harnessed Flame",
@@ -737,14 +737,6 @@
     "NAME": "Radiant Crystal",
     "DESCRIPTION": "Fusion: ALL cards EXCEPT *Gleaming *Gems. When cards are Fused to this card, Exhaust it and randomly add cards to your hand for each Exhausted to Fuse this card including itself. NL NL ---------- NL NL Draw until you have !M! cards in your hand. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Retain - Fusion: ALL cards EXCEPT *Gleaming *Gems. When cards are Fused to this card, Exhaust it and randomly add cards to your hand for each Exhausted to Fuse this card including itself. NL NL ---------- NL NL Draw until you have !M! cards in your hand. NL Exhaust."
-  },
-  "shadowverse:BelphometStatus": {
-    "NAME": "Tyrannical Force",
-    "DESCRIPTION": "Retain. NL Machina. NL Take 4 damage. NL Whenever this card is Retained, take !M! damage for every *Tyrannical *Force (excluding the first) in your hand."
-  },
-  "shadowverse:ManaForce": {
-    "NAME": "Aether Force",
-    "DESCRIPTION": "Retain. NL Natura. NL Remove the enemy's Aether Barrier. NL Exhaust."
   },
   "shadowverse:Strike_E": {
     "NAME": "Strike",
@@ -1257,7 +1249,7 @@
   },
   "shadowverse:Ceres2": {
     "NAME": "Ceres, Bride of the Night",
-    "DESCRIPTION": "Gain !B! Block. NL Add a *Darkest *Desire. NL Last_Words: When Exhausted, deal !M! damage to a random enemy. NL Exhaust."
+    "DESCRIPTION": "Gain !B! Block. NL Add a *Darkest *Desire to your hand. NL Last_Words: When Exhausted, deal !M! damage to a random enemy. NL Exhaust."
   },
   "shadowverse:Hector": {
     "NAME": "Demonlord Eachtar",
@@ -1426,30 +1418,6 @@
     "NAME": "Sow Death, Reap Life",
     "DESCRIPTION": "Reanimate: X. X equals your current turn number."
   },
-  "shadowverse:AbsoluteJudgment": {
-    "NAME": "Almighty Verdict",
-    "DESCRIPTION": "If the enemy does not have Vulnerable, apply !M! Vulnerable. NL If the enemy has Vulnerable, the enemy loses 1 Strength. NL The next damage you take becomes 0. NL Exhaust."
-  },
-  "shadowverse:AbsoluteOne": {
-    "NAME": "The Almighty One",
-    "DESCRIPTION": "Gain !B! Block. NL Immune to Power damage. NL Put a *Almighty *Verdict into your hand at the start of your turn. NL Exhaust."
-  },
-  "shadowverse:EnAcceleratium": {
-    "NAME": "Acceleratium",
-    "DESCRIPTION": "Gain !M! Energy next turn."
-  },
-  "shadowverse:ShadowMode": {
-    "NAME": "Shadow Aura",
-    "DESCRIPTION": "Gain 1 Intangible."
-  },
-  "shadowverse:EnBlackenedScripture": {
-    "NAME": "Blackened Scripture",
-    "DESCRIPTION": "Apply !M! Weak and Frail."
-  },
-  "shadowverse:EnMoonAlmiraj": {
-    "NAME": "Moon Al-mi'raj",
-    "DESCRIPTION": "Deal !D! damage and heal HP equal to the damage dealt. NL Gain !B! Block."
-  },
   "shadowverse:RegenerateSpirit": {
     "NAME": "Regenerate Spirit",
     "DESCRIPTION": "Reanimate: 1. NL Enhance 2: Reanimate: 2. NL Ethereal.",
@@ -1477,7 +1445,7 @@
   },
   "shadowverse:ForbiddenAndBalance": {
     "NAME": "Balance and Obliteration",
-    "DESCRIPTION": "Machina. NL Costs 1 [E] less for each Machina card played. NL Draw !M! card(s) and discard 1 card."
+    "DESCRIPTION": "Machina. NL Costs [E] less for each Machina card played. NL Draw !M! card(s) and discard 1 card."
   },
   "shadowverse:GigantSkull": {
     "NAME": "Colossal Skull Lord",
@@ -1664,8 +1632,8 @@
   },
   "shadowverse:Isabelle": {
     "NAME": "Isabelle, Intrepid Mage",
-    "DESCRIPTION": "Protagonist - Fusion: Runecraft Attack cards. NL The 1st time cards are fused to this card, put 1 *Quadra *Magic into your hand. If it's the 2nd time, put 1 *Insight into your hand. If it's the 3rd time, put 1 *Crimson *Sorcery into your hand. NL Gain !B! Block. Put 1 *Fate's *Hand into your hand then Spellboost your hand.",
-    "UPGRADE_DESCRIPTION": "Protagonist - Fusion: Runecraft Attack cards. NL The 1st time time cards are fused to this card, put 1 *Quadra *Magic+ into your hand. If it's the 2nd time, put 1 *Insight+ into your hand. If it's the 3rd time, put 1 *Crimson *Sorcery+ into your hand. NL Gain !B! Block. Put 1 *Fate's *Hand+ into your hand then Spellboost your hand."
+    "DESCRIPTION": "Protagonist - Fusion: Runecraft Attack cards. NL The 1st time cards are Fused to this card, put 1 *Quadra *Magic into your hand. If it's the 2nd time, put 1 *Insight into your hand. If it's the 3rd time, put 1 *Crimson *Sorcery into your hand. NL Gain !B! Block. Put 1 *Fate's *Hand into your hand then Spellboost your hand.",
+    "UPGRADE_DESCRIPTION": "Protagonist - Fusion: Runecraft Attack cards. NL The 1st time time cards are Fused to this card, put 1 *Quadra *Magic+ into your hand. If it's the 2nd time, put 1 *Insight+ into your hand. If it's the 3rd time, put 1 *Crimson *Sorcery+ into your hand. NL Gain !B! Block. Put 1 *Fate's *Hand+ into your hand then Spellboost your hand."
   },
   "shadowverse:Strike_V": {
     "NAME": "Strike",
@@ -1781,7 +1749,7 @@
   },
   "shadowverse:Baal": {
     "NAME": "Baal",
-    "DESCRIPTION": "Fusion: Bloodcraft Attack cards that cost 1 or less. NL If 2 or more cards were fused to this card, draw until you have 6 cards. NL If 5 or more cards were fused, deal !D! damage to ALL enemies",
+    "DESCRIPTION": "Fusion: Bloodcraft Attack cards that cost 1 or less. NL If 2 or more cards were Fused to this card, draw until you have 6 cards. NL If 5 or more cards were Fused, deal !D! damage to ALL enemies",
     "EXTENDED_DESCRIPTION": [
       " NL (Fused ",
       " cards.)"
@@ -1901,7 +1869,7 @@
   },
   "shadowverse:RageCommander": {
     "NAME": "Laura, Enraged Commander",
-    "DESCRIPTION": "Deal !D! damage. NL The next Attack you play deals double damage. NL If Vengeance is active, ALL Attacks this turn deal double damage."
+    "DESCRIPTION": "Deal !D! damage. NL The next Attack you play deals double damage. NL If Vengeance is active, ALL your Attacks this turn deal double damage."
   },
   "shadowverse:Relinquish": {
     "NAME": "Relinquish Reason",
@@ -2069,11 +2037,11 @@
   },
   "shadowverse:BelphometCard2": {
     "NAME": "Belphomet, Worldreaver",
-    "DESCRIPTION": "Machina. NL Fusion: Machina. NL Gain !B! Block. NL Randomly activate 1 of the following effects for each card fused: NL 1. Put 1 *Armored *Tentacle into your hand NL 2. Put 1 *Assault *Tentacle into your hand NL 3. Gain 3 Strength and Dexterity and draw 3 additional cards next turn."
+    "DESCRIPTION": "Machina. NL Fusion: Machina. NL Gain !B! Block. NL Randomly activate 1 of the following effects for each card Fused: NL 1. Put 1 *Armored *Tentacle into your hand NL 2. Put 1 *Assault *Tentacle into your hand NL 3. Gain 3 Strength and Dexterity and draw 3 additional cards next turn."
   },
   "shadowverse:BelphometCard3": {
     "NAME": "Belphomet, Ultimate Creator",
-    "DESCRIPTION": "Machina. NL Fusion: Machina. NL The 2nd or 4th time cards are fused to this card, use 1 Energy and put 1 *Armored *Tentacle into your hand. The 3rd or 5th time, use 1 Energy and put 1 *Assault *Tentacle into your hand. NL  Gain !B! Block. NL Put 1 *Tisiphone, *Malignance *Lives into your hand. If fused with at least 1 card, put 1 *Alecto, *Dissonance *Lives into your hand. If at least 2 cards, put 1 *Megaera, *Indignance *Lives into your hand."
+    "DESCRIPTION": "Machina. NL Fusion: Machina. NL The 2nd or 4th time cards are Fused to this card, use 1 Energy and put 1 *Armored *Tentacle into your hand. The 3rd or 5th time, use 1 Energy and put 1 *Assault *Tentacle into your hand. NL  Gain !B! Block. NL Put 1 *Tisiphone, *Malignance *Lives into your hand. If Fused with at least 1 card, put 1 *Alecto, *Dissonance *Lives into your hand. If at least 2 cards, put 1 *Megaera, *Indignance *Lives into your hand."
   },
   "shadowverse:TisiphoneCard": {
     "NAME": "Tisiphone, the Malignant",
@@ -2146,10 +2114,6 @@
   "shadowverse:ProtectArtifact": {
     "NAME": "Barrier Artifact",
     "DESCRIPTION": "AF. NL Gain !B! Block. NL Exhaust."
-  },
-  "shadowverse:EnProtectArtifact": {
-    "NAME": "Barrier Artifact",
-    "DESCRIPTION": "AF. NL Gain !B! Block. NL Apply !M! Weak. NL Exhaust."
   },
   "shadowverse:EdgeArtifact": {
     "NAME": "Keenedge Artifact",
@@ -2511,10 +2475,6 @@
     "NAME": "Ralmia, Astrowing",
     "DESCRIPTION": "Machina - AF. NL Deal !D! damage. NL If there are 6 or more AF cards with different names in your Exhaust pile, deal !M! damage to ALL enemies."
   },
-  "shadowverse:EnRalmia": {
-    "NAME": "Ralmia, Sonic Racer",
-    "DESCRIPTION": "Machina - AF. NL Deal !D! damage. NL Whenever you play an AF card, gain !M! Strength. This card is affected by Strength 4 times."
-  },
   "shadowverse:OmniscientKaiser": {
     "NAME": "Omniscient Kaiser",
     "DESCRIPTION": "Accelerate 0: Select 1 card in your hand. Exhaust ALL other cards in your hand and draw that many cards. NL NL --------------------- NL NL Gain !B! Block. NL Deal !D! damage to ALL enemies. NL Gain 1 Blur. NL Exhaust.",
@@ -2630,167 +2590,6 @@
   "shadowverse:Odin": {
     "NAME": "Odin, Twilight's Bane",
     "DESCRIPTION": "Deal !D! damage. NL Gain 1 Intangible. NL Put a *Sleipnir into your hand. It costs 0 until played. NL Exhaust."
-  },
-  "shadowverse:SevensForceSorcerer": {
-    "NAME": "Sorcerer of Seven Forces",
-    "DESCRIPTION": "Whenever you play 7 Skill cards in 1 turn, kill ALL enemies and remove this effect.",
-    "UPGRADE_DESCRIPTION": "Whenever you play 7 Skill cards in 1 turn, kill ALL enemies and remove this effect. NL ALL 1 cost Skills cost 0 this turn."
-  },
-  "shadowverse:EnRadiantAngel": {
-    "NAME": "Radiance Angel",
-    "DESCRIPTION": "Gain !B! Block. NL Heal !M! HP. NL Draw 1 more card next turn."
-  },
-  "shadowverse:EnAncientLionSpirit": {
-    "NAME": "Ancient Lion Spirit",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies."
-  },
-  "shadowverse:EnPriestOfTheCudgel": {
-    "NAME": "Priest of the Cudgel",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable. NL Exhaust 1 card on the top of your draw pile."
-  },
-  "shadowverse:EnArdentSister": {
-    "NAME": "Ardent Nun",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Strength."
-  },
-  "shadowverse:EnHeavenlyHound": {
-    "NAME": "Heavenly Hound",
-    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Plated Armor."
-  },
-  "shadowverse:EnDarkPriest": {
-    "NAME": "Dark Priest",
-    "DESCRIPTION": "Gain !B! Block. NL Apply !M! Weak and Frail."
-  },
-  "shadowverse:EnThemisDecree": {
-    "NAME": "Themis Decree",
-    "DESCRIPTION": "Exhaust ALL Attacks in enemy's draw pile. NL Exhaust."
-  },
-  "shadowverse:KMRGaze": {
-    "NAME": "KMR's Gaze",
-    "DESCRIPTION": "Whenever you draw this card, ALL Skills in your hand cost 10 more this turn. NL Ethereal."
-  },
-  "shadowverse:WUP": {
-    "NAME": "World Uprooted",
-    "DESCRIPTION": "Machina - Natura. NL Whenever you draw this card, add 2 *Tyrannical *Force into your hand. NL If there are no Machina or Natura cards in your deck, add 1 more. NL Ethereal."
-  },
-  "shadowverse:Death": {
-    "NAME": "Death",
-    "DESCRIPTION": "At the end of your turn, die if your draw pile is empty."
-  },
-  "shadowverse:Altersphere": {
-    "NAME": "Altersphere",
-    "DESCRIPTION": "Whenever you play a card, randomly Exhaust a card in your hand and put a random card into your hand. NL Ethereal."
-  },
-  "shadowverse:Rowen": {
-    "NAME": "Smiling Rowen",
-    "DESCRIPTION": "At the end of your turn, put 1 *Curse *of *the *Black *Dragon into your hand."
-  },
-  "shadowverse:CurseOfTheBlackDragon": {
-    "NAME": "Curse of the Black Dragon",
-    "DESCRIPTION": "Retain. NL If Overflow is not active, lose 1 HP at the end of your turn. NL If Overflow is active, deal !D! damage to a random enemy."
-  },
-  "shadowverse:ShadowBahmut": {
-    "NAME": "Shadow Bahamut",
-    "DESCRIPTION": "Deal !D! unblockable damage. NL Enemy loses ALL buffs except Strength and Dexterity. NL Kill ALL Minions."
-  },
-  "shadowverse:ShiningValkyrie": {
-    "NAME": "Shining Valkyrie",
-    "DESCRIPTION": "Put !M! *Fairy into your hand. NL Put 1 *Fairy into your hand at the start of your turn. NL Whenever you play a *Fairy, deal 6 damage to a random enemy, gain 1 Strength and 1 Dexterity."
-  },
-  "shadowverse:LegendSwordCommander": {
-    "NAME": "Legendary Sword Commander",
-    "DESCRIPTION": "Block is no longer removed at the start of your turn. NL At the end of your turn, gain !M! Block. NL Whenever you play an attack card, deal !M! damage to ALL enemies."
-  },
-  "shadowverse:DeadSoulTaker": {
-    "NAME": "Departed Soultaker",
-    "DESCRIPTION": "Gain !B! Block. NL Put 1 Attack card from your Exhaust pile to your hand and change its cost to 0 this turn. NL Necromancy 10: Put random Attack cards played in this combat into your hand until it is full. These cards cost 0 and have Exhaust."
-  },
-  "shadowverse:AbyssDoomLord": {
-    "NAME": "Doomlord of the Abyss",
-    "DESCRIPTION": "Exhaust any number of cards in your hand. NL Deal !D! damage. NL Lose HP until your HP equals 1. NL Deal damage equal to double the HP you lost. NL Any damage you take until your next turn becomes 0. NL Exhaust."
-  },
-  "shadowverse:KMRsPresent": {
-    "NAME": "KMR's Present",
-    "DESCRIPTION": "Retain. NL Choose: Put 1 *Mythical *Card into your hand (select and scroll from the drop-down list). NL Exhaust."
-  },
-  "shadowverse:ShadowversePain": {
-    "NAME": "Shadowverse is Pain",
-    "DESCRIPTION": "Whenever you play a Shadowverse card, lose 1 HP."
-  },
-  "shadowverse:Betray": {
-    "NAME": "Shadowverse Betrayed Me!",
-    "DESCRIPTION": "At the end of your turn, put a copy of this card into your discard pile. NL Exhaust."
-  },
-  "shadowverse:CalamityMode": {
-    "NAME": "Calamity's Genesis'",
-    "DESCRIPTION": "Replace your deck with a *Calamity *Deck. NL Exhaust."
-  },
-  "shadowverse:JusticeTyrant": {
-    "NAME": "Magisterial Dreadnought",
-    "DESCRIPTION": "Gain !B! Block. NL Summon 4 *World *Eliminators. NL Put 1 *Evolution *Point into enemy's hand. NL The enemy draws 1 less card next turn."
-  },
-  "shadowverse:ShangrilaBreaker": {
-    "NAME": "Ruiner of Eden",
-    "DESCRIPTION": "Deal !D! damage 10 times. NL Gain !B! Block."
-  },
-  "shadowverse:CalamityEnd": {
-    "NAME": "Calamity's End",
-    "DESCRIPTION": "Kill the enemy."
-  },
-  "shadowverse:EnDeath": {
-    "NAME": "Death",
-    "DESCRIPTION": "You die when you draw this card."
-  },
-  "shadowverse:SacredLion": {
-    "NAME": "Sacred Lion",
-    "DESCRIPTION": "Gain !B! Block. NL Gain 1 Buffer. NL Deal !M! damage back whenever you're attacked this turn. NL Put 1 Holy *Lion's *Blessing into your enemy's hand."
-  },
-  "shadowverse:LionBless": {
-    "NAME": "Holy Lion's Blessing",
-    "DESCRIPTION": "Put 1 Attack card from your Exhaust pile into your hand and change its cost to 0. NL Apply 24 Block and 6 Flame Barrier to the enemy. NL Ethereal. NL Exhaust."
-  },
-  "shadowverse:EnHereticalInquiry": {
-    "NAME": "Countdown: Heretical Inquiry",
-    "DESCRIPTION": "Randomly put !M! Curse cards into your enemy's draw pile."
-  },
-  "shadowverse:EnAcolyteLight": {
-    "NAME": "Acolyte's Light",
-    "DESCRIPTION": "If the Block of your enemy is less than 20, remove ALL Block. NL Otherwise, deal 20 damage. NL Heal HP equal to the removed Block."
-  },
-  "shadowverse:EnSacredPlea": {
-    "NAME": "Countdown: Sacred Plea",
-    "DESCRIPTION": "Draw !M! cards next turn."
-  },
-  "shadowverse:EnLucifer": {
-    "NAME": "Lucifer",
-    "DESCRIPTION": "Choose: Heal !M! HP or deal !D! damage to ALL enemies."
-  },
-  "shadowverse:EnMagisteelLion": {
-    "NAME": "Magisteel Lion",
-    "DESCRIPTION": "Gain !B! Block. NL Put 2 *Analyzing *Artifact into your draw pile."
-  },
-  "shadowverse:EnAnalyzeArtifact": {
-    "NAME": "Analyzing Artifact",
-    "DESCRIPTION": "AF. NL Deal !D! damage. NL Draw 1 more card next turn. NL Exhaust."
-  },
-  "shadowverse:TheGreatCreation": {
-    "NAME": "The Great Creation",
-    "DESCRIPTION": "Gain !M! Strength and Dexterity. NL Put 1 *Ancient *Artifact into your hand."
-  },
-  "shadowverse:EnAncientAmplifier": {
-    "NAME": "Ancient Amplifier",
-    "DESCRIPTION": "Give your enemy the following effect: Randomly put !M! cards into your draw pile. Put 1 less card every turn. NL Lasts for !M! turns."
-  },
-  "shadowverse:EnMysticArtifact": {
-    "NAME": "Mystic Artifact",
-    "DESCRIPTION": "AF. NL Gain !B! Block. NL Draw 1 more card next turn."
-  },
-  "shadowverse:EnGenesisArtifact": {
-    "NAME": "Genesis Artifact",
-    "DESCRIPTION": "AF. NL Gain !B! Block. NL Put 1 *Guard *Artifact and *Defecse *Artifact into your hand. NL Put 2 *Cannon *Artifact into your draw pile."
-  },
-  "shadowverse:EnSpineLucille": {
-    "NAME": "Spinaria & Lucille, Keepers",
-    "DESCRIPTION": "AF. NL Deal !D! damage to ALL enemies"
   },
   "shadowverse:DeathNote": {
     "NAME": "Death's Ledger",
@@ -3113,7 +2912,7 @@
   },
   "shadowverse:Valdain2": {
     "NAME": "Valdain, Forest Shadow",
-    "DESCRIPTION": "Natura. NL Fusion: *Naterran *Great *Trees. NL Deal !D! damage. NL For each card fused to this card, randomly gain 1 of the following effects (no more than once): NL 1. Double the damage. NL 2. Gain !B! Block, 1 Strength and 1 Dexterity. NL 3. Heal 5 HP. NL 4. Deal !M! damage to a random enemy. Repeat once if you have the Power Naterran_Great_Tree.",
+    "DESCRIPTION": "Natura. NL Fusion: *Naterran *Great *Trees. NL Deal !D! damage. NL For each card Fused to this card, randomly gain 1 of the following effects (no more than once): NL 1. Double the damage. NL 2. Gain !B! Block, 1 Strength and 1 Dexterity. NL 3. Heal 5 HP. NL 4. Deal !M! damage to a random enemy. Repeat once if you have the Power Naterran_Great_Tree.",
     "EXTENDED_DESCRIPTION": [
       " Double the damage. NL ",
       " Gain !B! Block, 1 Strength and 1 Dexterity. NL ",
@@ -3368,7 +3167,10 @@
   },
   "shadowverse:Cernunnos": {
     "NAME": "Cernunnos",
-    "DESCRIPTION": "Burial_Rite 1: Draw !M! card(s). NL Limit: Gain [E] [E] . NL Reanimate: !M!. If you have spent 20 or more Shadows this combat, Reanimate: 5 instead."
+    "DESCRIPTION": "Burial_Rite 1: Draw !M! card(s). NL Limit: Gain [E] [E] . NL Reanimate: !M!. If you have spent 20 or more Shadows this combat, Reanimate: 5 instead.",
+    "EXTENDED_DESCRIPTION": [
+      " NL ( Shadows Spent: ",
+      " . )"
   },
   "shadowverse:MiracleHarvest": {
     "NAME": "Miracle Harvest",
@@ -3855,10 +3657,6 @@
     "NAME": "Lorena, Iron-Willed Priest",
     "DESCRIPTION": "Gain !B! Block. NL Put an *Evolution *Point into your hand. NL Put a *Lorena’s *Holy *Water and a *Lorena’s *Iron *Fist into your hand. They cost 0 this turn."
   },
-  "shadowverse:ImperialSaint": {
-    "NAME": "Imperial Saint",
-    "DESCRIPTION": "Gain !M! Temporary HP. NL Gain 1 Blur. NL The next time you would die, heal to 50% of your max HP and take an extra turn after your turn instead."
-  },
   "shadowverse:ShadowCorrosion": {
     "NAME": "Shadow's Corrosion",
     "DESCRIPTION": "Natura. NL Apply the following effect to an enemy: 'At the start of your turn, lose HP equal to quadruple the number of *Naterran *Great *Trees played this combat.' NL If the enemy already has this effect, deal that much damage immediately instead. NL Exhaust."
@@ -3874,7 +3672,7 @@
   },
   "shadowverse:TerrorFormer": {
     "NAME": "Terrorformer",
-    "DESCRIPTION": "Retain. NL Fusion: Forestcraft Attack cards that cost at least 1 Energy. NL When at least 2 cards are fused to this card at once, increase this card's damage by !M! and draw 1 card. NL Deal !D! damage. Apply 2 Weak."
+    "DESCRIPTION": "Retain. NL Fusion: Forestcraft Attack cards that cost at least 1 Energy. NL When at least 2 cards are Fused to this card at once, increase this card's damage by !M! and draw 1 card. NL Deal !D! damage. Apply 2 Weak."
   },
   "shadowverse:Ambush": {
     "NAME": "Ambush",
@@ -3969,8 +3767,8 @@
   },
   "shadowverse:WonderTree": {
     "NAME": "Tree of Wonders",
-    "DESCRIPTION": "Fusion: *Fairies. NL At the start of your turn, activate 1 of the following effects in order: NL 1. Draw 1 additional card. NL 2. Add a *Fairy into your hand and gain !M! Block. NL 3. Heal 2 HP. NL If at least 1 card is fused to this card, activate 2 effects instead.",
-    "UPGRADE_DESCRIPTION": "Fusion: *Fairies. NL At the start of your turn, activate 1 of the following effects in order: NL 1. Draw 1 additional card. NL 2. Add a *Fairy+ into your hand and gain !M! Block. NL 3. Heal 2 HP. NL If at least 1 card is fused to this card, activate 2 effects instead."
+    "DESCRIPTION": "Fusion: *Fairies. NL At the start of your turn, activate 1 of the following effects in order: NL 1. Draw 1 additional card. NL 2. Add a *Fairy into your hand and gain !M! Block. NL 3. Heal 2 HP. NL If at least 1 card is Fused to this card, activate 2 effects instead.",
+    "UPGRADE_DESCRIPTION": "Fusion: *Fairies. NL At the start of your turn, activate 1 of the following effects in order: NL 1. Draw 1 additional card. NL 2. Add a *Fairy+ into your hand and gain !M! Block. NL 3. Heal 2 HP. NL If at least 1 card is Fused to this card, activate 2 effects instead."
   },
   "shadowverse:Alberta": {
     "NAME": "Alberta, the Autumnblade",
@@ -4032,7 +3830,7 @@
   },
   "shadowverse:LightOfHollow": {
     "NAME": "Remnant of Hollowness",
-    "DESCRIPTION": "Retain - Loot. NL Fusion: Loot cards. NL Whenever cards are fused to this card, draw a card. NL Deal a pool of !D! damage divided among ALL enemies. NL If at least 4 cards have been fused to this card, double the damage.",
+    "DESCRIPTION": "Retain - Loot. NL Fusion: Loot cards. NL Whenever cards are Fused to this card, draw a card. NL Deal a pool of !D! damage divided among ALL enemies. NL If at least 4 cards have been Fused to this card, double the damage.",
     "EXTENDED_DESCRIPTION": [
       " NL (Fused Loot: ",
       ")"
@@ -4158,81 +3956,9 @@
     "DESCRIPTION": "Choose: Put 2 of the following cards into your hand: NL *Aramis NL *Porthos NL *Athos NL *D'Artagnan NL NL Enhance 4: Put ALL four into your hand instead. If you have at least 2 *Evolution *Points in your hand, upgrade these cards. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Choose: Put 2 of the following cards into your hand: NL *Aramis NL *Porthos NL *Athos NL *D'Artagnan NL NL Enhance 4: Put ALL four into your hand instead. If you have at least 2 *Evolution *Points in your hand, upgrade these cards. NL Exhaust !stslib:ex!."
   },
-  "shadowverse:Maiser_Story": {
-    "NAME": "Maiser, Accelerated Hero",
-    "DESCRIPTION": "Heroic. NL Deal !D! damage. NL Put a *Bullet *Bike into your hand. NL Deal 5 damage to ALL enemies whenever you play a Skill card this turn. NL Exhaust."
-  },
-  "shadowverse:Selena_Story": {
-    "NAME": "Selena, Sugar-Sweet Ending",
-    "DESCRIPTION": "Gain !B! Block. NL If you have at least 1 other Attack card, heal 4 HP. NL If you have at least 2, draw 2 cards. NL If you have at least 3, gain 1 Strength and Dexterity. NL Exhaust."
-  },
-  "shadowverse:Illganeau_Story": {
-    "NAME": "Illganeau, Horror Awakened",
-    "DESCRIPTION": "Deal !D! damage. NL ALL enemies lose 1 Strength and Dexterity. NL Deal !M! additional damage determined by the number of cards in your Exhaust pile. NL Exhaust."
-  },
-  "shadowverse:Sekka_Story": {
-    "NAME": "Sekka, Nine-Tailed Inferno",
-    "DESCRIPTION": "Deal !D! damage. NL Gain [E] and put 1 *Evolution *Point into your hand. NL If you've played at least 18 non-Strike Attack cards this combat, gain !M! Strength and Dexterity. NL Exhaust.",
-    "EXTENDED_DESCRIPTION": [
-      " NL (X: ",
-      ".)"
-    ]
-  },
-  "shadowverse:Dracu_Story": {
-    "NAME": "Drache, Soaring Dragonlord",
-    "DESCRIPTION": "Deal !D! damage. NL Gain 1 Dexterity. NL If you have at least 5 Dexterity, deal !D! damage again. NL Exhaust."
-  },
-  "shadowverse:Kagero_Story": {
-    "NAME": "Kagero, the Blade Within",
-    "DESCRIPTION": "Deal !D! damage. NL Apply 2 Vulnerable to a random enemy. NL Necromancy 10: Deal !M! additional damage. NL Exhaust."
-  },
-  "shadowverse:VerdictWord": {
-    "NAME": "Verdict Rendered",
-    "DESCRIPTION": "Choose: Put 1 of the following cards into your hand that is not from your class: NL *Maiser, *Accelerated *Hero NL *Selena, *Sugar-Sweet *Ending NL *Illganeau, *Horror *Awakened NL NL If you've played at least 2 *Verdict *Rendered this combat, instead put ALL of them into your hand, upgrade them and double their damage this turn. NL Retain. NL Exhaust."
-  },
-  "shadowverse:AbsoluteOrder": {
-    "NAME": "Absolute Decree",
-    "DESCRIPTION": "Choose: Put 1 of the following cards into your hand that is not from your class: *Sekka, *Nine-Tailed *Inferno NL *Drache, *Soaring *Dragonlord NL *Kagero, *the *Blade *Within NL NL If you've played at least 2 *Absolute *Decree this combat, instead put ALL of them into your hand, upgrade them and double their damage this turn. NL Retain. NL Exhaust."
-  },
   "shadowverse:Skullfather": {
     "NAME": "Skullfather",
     "DESCRIPTION": "Deal !D! damage. NL Gain 1 Strength and Dexterity. NL Exhaust."
-  },
-  "shadowverse:EnNightmareTime": {
-    "NAME": "Nightmare Begins",
-    "DESCRIPTION": "Lose 1 HP. NL Remove ALL debuffs. NL At the start of your turn, draw !M! additional card(s). NL Exhaust."
-  },
-  "shadowverse:EnBloodyNail": {
-    "NAME": "Bloody Claw",
-    "DESCRIPTION": "Lose 1 HP and deal !D! damage. NL Apply the following effect to an enemy: Whenever you play an Attack, you take 1 damage. NL Exhaust."
-  },
-  "shadowverse:EnDemonStorm": {
-    "NAME": "Demonic Storm",
-    "DESCRIPTION": "Deal !D! damage to yourself and ALL enemies."
-  },
-  "shadowverse:EnMono": {
-    "NAME": "Mono, Immortal Garnet",
-    "DESCRIPTION": "Machina. NL Gain !B! Block. NL Gain 2 Strength. NL If Vengeance is active, gain !M! Metallicize."
-  },
-  "shadowverse:EnDemonCommander": {
-    "NAME": "Demon Commander Laura",
-    "DESCRIPTION": "Gain !B! Block. NL If Vengeance is active, the next Attack card is played twice."
-  },
-  "shadowverse:EnTerrorNight": {
-    "NAME": "A Horrible Night",
-    "DESCRIPTION": "Deal !D! damage to yourself and ALL enemies. NL At the start of your next turn, instead of drawing cards, put a *Nightmare *Begins, *Bloody *Claw and *Cursed *Aura into your hand (Limit)."
-  },
-  "shadowverse:EnBloodPact": {
-    "NAME": "Blood Pact",
-    "DESCRIPTION": "Lose 2 HP. NL Draw !M! additional cards next turn."
-  },
-  "shadowverse:EnSeox": {
-    "NAME": "Seox, Heavenly Howl",
-    "DESCRIPTION": "Deal !D! damage twice. NL Skybound_Art 3: Repeat this 1 time. NL Super_Skybound_Art 6: Repeat this 2 times."
-  },
-  "shadowverse:EnLonePromise": {
-    "NAME": "Lone Promise",
-    "DESCRIPTION": "Machina. NL Gain 1 Strength. Heal !M! HP. NL Apply !M! Weak."
   },
   "shadowverse:Taketsumi": {
     "NAME": "Taketsumi, Aconite Paladin",
@@ -4403,7 +4129,7 @@
   },
   "shadowverse:WrathOfNature": {
     "NAME": "Wrath Of Nature",
-    "DESCRIPTION": "Retain. NL Gain 1 Strength. NL Enhance 2: ALL Attacks you play this turn deal double damage. NL Exhaust."
+    "DESCRIPTION": "Retain. NL Gain 1 Strength. NL Enhance 2: This turn, ALL Attacks deal double damage. NL Exhaust."
   },
   "shadowverse:NatureBlessing": {
     "NAME": "Nature's Blessing",
@@ -4415,7 +4141,7 @@
   },
   "shadowverse:Orchid_EW": {
     "NAME": "Orchis, the Limitless",
-    "DESCRIPTION": "Fusion: *Puppets. NL Whenever cards are fused to this card, add 1 *Puppet that deals 2 additional damage to your hand. NL Gain !B! Block. NL *Puppets deal double damage this turn. NL If this card is fused with at least 1 card, add a *Lloyd, *Orchis's *Puppet into your hand. NL If fused with at least 3, upgrade it and gain 5 more Block."
+    "DESCRIPTION": "Fusion: *Puppets. NL When cards are Fused to this card, add 1 *Puppet that deals 2 additional damage to your hand. NL -------------- NL Gain !B! Block. NL *Puppets deal double damage this turn. NL If Fused with at least 1 card, add a *Lloyd, *Orchis's *Puppet into your hand. NL If Fused with at least 3, upgrade it and gain 5 more Block."
   },
   "shadowverse:Roid_EW": {
     "NAME": "Lloyd, Orchis's Puppet",
@@ -4432,34 +4158,6 @@
       " NL (",
       " cards with Last_Words played.)"
     ]
-  },
-  "shadowverse:DivineTreasureHerald": {
-    "NAME": "Divine Treasure Herald",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL Last_Words: When Exhausted, add a *Summon *Divine *Treasure without Enhance to your hand. NL Exhaust."
-  },
-  "shadowverse:DivineTreasureGuardian": {
-    "NAME": "Divine Treasure Guardian",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL Deal !M! damage to ALL enemies. NL Exhaust."
-  },
-  "shadowverse:JudgmentSpear": {
-    "NAME": "Spear of Judgment",
-    "DESCRIPTION": "Deal !M! damage to a random enemy at the end of your turn. NL Countdown 2: Lose this effect."
-  },
-  "shadowverse:GuiltyShield": {
-    "NAME": "Shield of Transgression",
-    "DESCRIPTION": "If you would take 5 or more damage, that damage becomes 4. NL Countdown 2: Lose this effect."
-  },
-  "shadowverse:EternalDogma": {
-    "NAME": "Eternal Dogma",
-    "DESCRIPTION": "At the start of your turn, heal 2 HP and draw a card. NL Countdown 2: Lose this effect."
-  },
-  "shadowverse:SummonDivineTreasure": {
-    "NAME": "Summon Divine Treasure",
-    "DESCRIPTION": "Choose: Play this card as: NL *Judgment *Spear NL *Shield *of *Transgression NL OR *Eternal *Dogma NL Enhance 2: Then add a *Divine *Treasure *Herald to your hand. NL Enhance 3: Then add a *Divine *Treasure *Guardian to your hand. NL Exhaust."
-  },
-  "shadowverse:SummonDivineTreasure_Copy": {
-    "NAME": "Summon Divine Treasure",
-    "DESCRIPTION": "Choose: Play this card as: NL *Judgment *Spear NL *Shield *of *Transgression NL OR *Eternal *Dogma NL Exhaust."
   },
   "shadowverse:Norn": {
     "NAME": "Norn, Arbiter of Worlds",
@@ -4494,14 +4192,6 @@
     "EXTENDED_DESCRIPTION": [
       " NL (" ,
       " *Whirlwind *Assaults played.)"
-    ]
-  },
-  "shadowverse:UltimateBahmut": {
-    "NAME": "Ultimate Bahamut",
-    "DESCRIPTION": "Invocation: At the start of your turn, if you've used 50 or more Energy this combat, add this card to your hand and kill ALL enemies after 3 turns. NL Accelerate 2: Deal !M! damage to a random enemy. Then, gain 2 Energy. NL --------------------- NL Deal !D! damage.",
-    "EXTENDED_DESCRIPTION": [
-      " NL (" ,
-      " Energy used.)"
     ]
   },
   "shadowverse:Veight2": {
@@ -4605,7 +4295,7 @@
   },
   "shadowverse:FullMoonLeap": {
     "NAME": "Full Moon Leap",
-    "DESCRIPTION": "Gain !M! Strength. If you have 2 or less cards in your hand, the next attack you play deals double damage."
+    "DESCRIPTION": "Gain !M! Strength. If you have 2 or less cards in your hand, the next Attack you play deals double damage."
   },
   "shadowverse:BanCardView": {
     "NAME": "",
@@ -4725,11 +4415,11 @@
   },
   "shadowverse:GemstoneWingy": {
     "NAME": "Wingy, Chirpy Gemstone",
-    "DESCRIPTION": "Gain !B! Block. NL If you have played 5 or more amulets with Countdown, gain 1 Blur and your next attack deals double damage."
+    "DESCRIPTION": "Gain !B! Block. NL If you have played 5 or more amulets with Countdown, gain 1 Blur and your next Attack deals double damage."
   },
   "shadowverse:DiamondMaster": {
     "NAME": "Diamond Master",
-    "DESCRIPTION": "Gain !B! Block. NL If you have Blur, gain Barricade. NL If your next attack would deal double damage, ALL attacks you play deal double damage this turn. NL If you have both effects active, deal damage to ALL enemies equal to your Block.",
+    "DESCRIPTION": "Gain !B! Block. NL If you have Blur, gain Barricade. NL If your next Attack would deal double damage, ALL attacks you play deal double damage this turn. NL If you have both effects active, deal damage to ALL enemies equal to your Block.",
     "EXTENDED_DESCRIPTION": [
       " NL (Deal !D! damage if you have Blur and Pen Nib buffs )"
     ]
@@ -4814,11 +4504,11 @@
   },
   "shadowverse:ObsessiveScholar": {
     "NAME": "Obsessive Scholar",
-    "DESCRIPTION": "Condemned NL Fusion: Non-Strike Attack cards. NL Deal !D! damage. NL Put a *Volunteer *Test *Subject into your hand and change its cost to 0. NL If any cards have been fused to this card, put a random Condemned card from your draw pile into your hand."
+    "DESCRIPTION": "Condemned NL Fusion: Non-Strike Attack cards. NL Deal !D! damage. NL Put a *Volunteer *Test *Subject into your hand and change its cost to 0. NL If any cards have been Fused to this card, put a random Condemned card from your draw pile into your hand."
   },
   "shadowverse:Sephie": {
     "NAME": "Sephie, Depraved Convict",
-    "DESCRIPTION": "Condemned - Retain NL Fusion: Non-Strike Attack cards. NL If you fuse at least 2 cards at once to this card, use 1 energy to put a 0 cost *Volunteer *Test *Subject into your hand. NL If a Condemned card was fused, no energy is used. Deal !D! damage. Put a 0 cost *Volunteer *Test *Subject into your hand. NL If you played at least 5 *Volunteer *Test *Subjects, add !M! damage to them for each one in your hand."
+    "DESCRIPTION": "Condemned - Retain NL Fusion: Non-Strike Attack cards. NL If you Fuse at least 2 cards at once to this card, use 1 energy to put a 0 cost *Volunteer *Test *Subject into your hand. NL If a Condemned card was Fused, no energy is used. Deal !D! damage. Put a 0 cost *Volunteer *Test *Subject into your hand. NL If you played at least 5 *Volunteer *Test *Subjects, add !M! damage to them for each one in your hand."
   },
   "shadowverse:SkullFish": {
     "NAME": "Skullfish",
@@ -4978,7 +4668,7 @@
   },
   "shadowverse:Barbaros": {
     "NAME": "Barbaros, Briny Convict",
-    "DESCRIPTION": "Condemned - Fusion: Loot cards. NL When a card is fused to this card, upgrade this card. NL Deal !D! damage. NL Add a *Dread *Pirate's *Flag to your hand. NL If there are 7 or more Loot cards in your Exhaust pile, gain 2 Energy. NL Enhance 3: Double the damage.",
+    "DESCRIPTION": "Condemned - Fusion: Loot cards. NL When a card is Fused to this card, upgrade this card. NL Deal !D! damage. NL Add a *Dread *Pirate's *Flag to your hand. NL If there are 7 or more Loot cards in your Exhaust pile, gain 2 Energy. NL Enhance 3: Double the damage.",
     "UPGRADE_DESCRIPTION": "Condemned - Fusion: Loot cards. NL Deal !D! damage. NL Add a *Dread *Pirate's *Flag to your hand. NL If there are 7 or more Loot cards in your Exhaust pile, gain 2 Energy. NL Enhance 3: Double the damage. NL (Downgrade once played.)"
   },
   "shadowverse:Radiel": {
@@ -5189,8 +4879,8 @@
   },
   "shadowverse:Verdilia": {
     "NAME": "Verdilia, Rogue Professor",
-    "DESCRIPTION": "Academic - Fusion: Academic Cards. NL Whenever cards are fused to this card, heal 1 HP. NL Gain !B! Block. NL If you have any other Academic cards in hand, gain 1 Strength and Dexterity. NL If this card is fused, add *Cyclical *Guidance in hand.",
-    "UPGRADE_DESCRIPTION": "Academic - Fusion: Academic Cards. NL Whenever cards are fused to this card, heal 1 HP. NL Gain !B! Block. NL If you have any other Academic cards in hand, gain 1 Strength and Dexterity. NL If this card is fused, add *Cyclical *Guidance+ in hand."
+    "DESCRIPTION": "Academic - Fusion: Academic Cards. NL Whenever cards are Fused to this card, heal 1 HP. NL Gain !B! Block. NL If you have any other Academic cards in hand, gain 1 Strength and Dexterity. NL If this card is Fused, add *Cyclical *Guidance in hand.",
+    "UPGRADE_DESCRIPTION": "Academic - Fusion: Academic Cards. NL Whenever cards are Fused to this card, heal 1 HP. NL Gain !B! Block. NL If you have any other Academic cards in hand, gain 1 Strength and Dexterity. NL If this card is Fused, add *Cyclical *Guidance+ in hand."
   },
   "shadowverse:SumoMechanic": {
     "NAME": "Sumo Mechanic",
@@ -5264,8 +4954,8 @@
   },
   "shadowverse:CorpseKingCommand": {
     "NAME": "Corpse King's Command ",
-    "DESCRIPTION": "Academic NL Gain 1 Blur. NL Necromancy 10: You deal double damage this turn. NL Exhaust. ",
-    "UPGRADE_DESCRIPTION": "Academic - Retain NL Gain 1 Blur. NL Necromancy 10: You deal double damage this turn. NL Exhaust. "
+    "DESCRIPTION": "Academic NL Gain 1 Blur. NL Necromancy 10: Your Attacks deal double damage this turn. NL Exhaust. ",
+    "UPGRADE_DESCRIPTION": "Academic - Retain NL Gain 1 Blur. NL Necromancy 10: Your Attacks deal double damage this turn. NL Exhaust. "
   },
   "shadowverse:AnneAndGrea": {
     "NAME": "Anne & Grea, Royal Duo",
@@ -5952,8 +5642,8 @@
   },
   "shadowverse:DragonDevouringDread": {
     "NAME": "Dragon-Devouring Dread",
-    "DESCRIPTION": "Fusion: Attacks which cost 3 or more. NL The 1st time you fuse cards to this card, gain 1 Energy. NL The 2nd time, gain 1 Overflow point. NL The 3rd time, draw 2 cards. NL --------------- NL Exhaust ALL Status and Curses in hand. NL Apply !M! Weak and Vulnerable to ALL enemies. Gain !M! Strength. NL Add 1 more Strength, Weak and Vulnerable for each card Fused. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain - Fusion: Attacks which cost 3 or more. NL The 1st time you fuse cards to this card, gain 1 Energy. NL The 2nd time, gain 1 Overflow point. NL The 3rd time, draw 2 cards.  NL ---------------- NL  Exhaust ALL Status and Curses in hand. NL Apply !M! Weak and Vulnerable to ALL enemies. Gain !M! Strength. NL Add 1 more Strength, Weak, and Vulnerable for each card Fused. NL Exhaust."
+    "DESCRIPTION": "Fusion: Attacks which cost 3 or more. NL The 1st time you Fuse cards to this card, gain 1 Energy. NL The 2nd time, gain 1 Overflow point. NL The 3rd time, draw 2 cards. NL --------------- NL Exhaust ALL Status and Curses in hand. NL Apply !M! Weak and Vulnerable to ALL enemies. Gain !M! Strength. NL Add 1 more Strength, Weak and Vulnerable for each card Fused. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain - Fusion: Attacks which cost 3 or more. NL The 1st time you Fuse cards to this card, gain 1 Energy. NL The 2nd time, gain 1 Overflow point. NL The 3rd time, draw 2 cards.  NL ---------------- NL  Exhaust ALL Status and Curses in hand. NL Apply !M! Weak and Vulnerable to ALL enemies. Gain !M! Strength. NL Add 1 more Strength, Weak, and Vulnerable for each card Fused. NL Exhaust."
   },
   "shadowverse:NewfoundAllies": {
     "NAME": "Newfound Allies",
@@ -5982,7 +5672,7 @@
   },
   "shadowverse:Djeana": {
     "NAME": "Djeana, the Stouthearted",
-    "DESCRIPTION": "Natura - Fusion: *Naterran *Great *Trees. NL Whenever cards are fused to this card, gain 1 Overflow point. NL Gain !B! Block."
+    "DESCRIPTION": "Natura - Fusion: *Naterran *Great *Trees. NL Whenever cards are Fused to this card, gain 1 Overflow point. NL Gain !B! Block."
   },
   "shadowverse:WildfireTyrannosaur": {
     "NAME": "Wildfire Tyrannosaur",
@@ -6185,10 +5875,6 @@
     "NAME": "Forte & Miriam, Bondforged",
     "DESCRIPTION": "Deal !D! damage. NL Limit: Gain 2 Strength and Dexterity. NL If Overflow is active, deal !D! damage again."
   },
-  "shadowverse:InfiniflameDragon": {
-    "NAME": "Infiniflame Dragon",
-    "DESCRIPTION": "Deal 50 damage. NL Kill ALL minions and deal 10 damage for each one killed. NL Exhaust ALL attack cards in your hand and deal 10 damage for each one Exhausted. NL Deal !D! damage twice."
-  },
   "shadowverse:Hiro": {
     "NAME": "Hiro's Dragon Oracle",
     "DESCRIPTION": "Innate. NL Gain 1 Overflow point. NL Gain [E] next turn. NL If Overflow is active, draw !M! additional card.",
@@ -6383,8 +6069,8 @@
   },
   "shadowverse:RainOfArrows": {
     "NAME": "Rain of Arrows",
-    "DESCRIPTION": "Fusion: Non-Basic Forestcraft cards. NL If at least 6 cards were fused at once, this card becomes *Deluge *of *Arrows. NL  NL --------------------- NL  NL Deal !D! damage to ALL enemies. NL If at least 2 other cards were played this turn, double the damage and draw a card.",
-    "UPGRADE_DESCRIPTION": "Fusion: Non-Basic Forestcraft cards. NL If at least 6 cards were fused at once, this card becomes *Deluge *of *Arrows+. NL  NL --------------------- NL  NL Deal !D! damage to ALL enemies. NL If at least 2 other cards were played this turn, double the damage and draw a card."
+    "DESCRIPTION": "Fusion: Non-Basic Forestcraft cards. NL If at least 6 cards were Fused at once, this card becomes *Deluge *of *Arrows. NL  NL --------------------- NL  NL Deal !D! damage to ALL enemies. NL If at least 2 other cards were played this turn, double the damage and draw a card.",
+    "UPGRADE_DESCRIPTION": "Fusion: Non-Basic Forestcraft cards. NL If at least 6 cards were Fused at once, this card becomes *Deluge *of *Arrows+. NL  NL --------------------- NL  NL Deal !D! damage to ALL enemies. NL If at least 2 other cards were played this turn, double the damage and draw a card."
   },
   "shadowverse:FrostbornPrincess": {
     "NAME": "Frostborn Princess",
@@ -6400,7 +6086,7 @@
   },
   "shadowverse:SkySpirit": {
     "NAME": "Iris, Sky Spirit",
-    "DESCRIPTION": "Can only Fuse 1 card at a time. NL Retain - Fusion: 1 Forestcraft card. NL If a third card was fused to this card, it becomes *Iris, *Soaring *Spirit. NL  NL --------------------- NL  NL Gain !B! Block. NL If cards were fused to this card, draw 2 cards and add 2 to the number of cards played this turn.",
+    "DESCRIPTION": "Can only Fuse 1 card at a time. NL Retain - Fusion: 1 Forestcraft card. NL If a third card was Fused to this card, it becomes *Iris, *Soaring *Spirit. NL  NL --------------------- NL  NL Gain !B! Block. NL If cards were Fused to this card, draw 2 cards and add 2 to the number of cards played this turn.",
     "EXTENDED_DESCRIPTION": [
       " NL (Fused ",
       " cards. )"
@@ -6422,8 +6108,8 @@
   },
   "shadowverse:SeekerOfTruths": {
     "NAME": "Midelo, Seeker of Truths",
-    "DESCRIPTION": "Fusion: Non-Basic Runecraft cards. NL If at least 5 cards are fused, it becomes *Midelo, *Scorner *Of *Truths. NL  NL --------------------- NL  NL Gain !B! Block. NL Put a Runecraft card from the draw pile to your hand. Repeat if cards were fused to this card.",
-    "UPGRADE_DESCRIPTION": "Fusion: Non-Basic Runecraft cards. NL If at least 5 cards are fused, it becomes *Midelo+, *Scorner *Of *Truths. NL  NL --------------------- NL  NL Gain !B! Block. NL Put a Runecraft card from the draw pile to your hand. Repeat if cards were fused to this card.",
+    "DESCRIPTION": "Fusion: Non-Basic Runecraft cards. NL If at least 5 cards are Fused, it becomes *Midelo, *Scorner *Of *Truths. NL  NL --------------------- NL  NL Gain !B! Block. NL Put a Runecraft card from the draw pile to your hand. Repeat if cards were Fused to this card.",
+    "UPGRADE_DESCRIPTION": "Fusion: Non-Basic Runecraft cards. NL If at least 5 cards are Fused, it becomes *Midelo+, *Scorner *Of *Truths. NL  NL --------------------- NL  NL Gain !B! Block. NL Put a Runecraft card from the draw pile to your hand. Repeat if cards were Fused to this card.",
     "EXTENDED_DESCRIPTION": [
       " NL (Fused ",
       " cards. )"
@@ -6452,8 +6138,8 @@
   },
   "shadowverse:GraveVoidknight": {
     "NAME": "Grave Voidknight",
-    "DESCRIPTION": "Fusion: Non-Basic Shadowcraft cards. NL When fusing to this card, if 2 or less cards have been fused perform Necromancy 4: Randomly add a card with Last Words from the draw pile to your hand. If 3 or more are fused, this card becomes *Grave *Adjudicator.   NL ---------------------  NL Gain !B! Block.  NL Necromancy 4: Add 1 *Evolution *Point to your hand. Deal !D! damage.",
-    "UPGRADE_DESCRIPTION": "Fusion: Non-Basic Shadowcraft cards. NL When fusing to this card, if 2 or less cards have been fused perform Necromancy 4: Randomly add a card with Last Words from the draw pile to your hand. If 3 or more are fused, this card becomes *Grave *Adjudicator+.   NL ---------------------  NL Gain !B! Block.  NL Necromancy 4: Add 1 *Evolution *Point to your hand. Deal !D! damage.",
+    "DESCRIPTION": "Fusion: Non-Basic Shadowcraft cards. NL When fusing to this card, if 2 or less cards have been Fused perform Necromancy 4: Randomly add a card with Last Words from the draw pile to your hand. If 3 or more are Fused, this card becomes *Grave *Adjudicator.   NL ---------------------  NL Gain !B! Block.  NL Necromancy 4: Add 1 *Evolution *Point to your hand. Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Fusion: Non-Basic Shadowcraft cards. NL When fusing to this card, if 2 or less cards have been Fused perform Necromancy 4: Randomly add a card with Last Words from the draw pile to your hand. If 3 or more are Fused, this card becomes *Grave *Adjudicator+.   NL ---------------------  NL Gain !B! Block.  NL Necromancy 4: Add 1 *Evolution *Point to your hand. Deal !D! damage.",
     "EXTENDED_DESCRIPTION": [
       " NL (Fused ",
       " cards. )"
@@ -6465,7 +6151,7 @@
   },
   "shadowverse:SoulLight": {
     "NAME": "Soul's Light",
-    "DESCRIPTION": "Fusion: Non-basic Shadowcraft cards. NL If 2 or more cards are fused at once, this card becomes *Heart's *Radiance. NL  NL --------------------- NL  NL Draw !M! cards. NL If cards were fused, deal !D! damage to ALL enemies."
+    "DESCRIPTION": "Fusion: Non-basic Shadowcraft cards. NL If 2 or more cards are Fused at once, this card becomes *Heart's *Radiance. NL  NL --------------------- NL  NL Draw !M! cards. NL If cards were Fused, deal !D! damage to ALL enemies."
   },
   "shadowverse:HowToTrainYourWolf": {
     "NAME": "How To Train Your Wolf",
@@ -6474,7 +6160,7 @@
   },
   "shadowverse:HowToTrainYourBat": {
     "NAME": "How To Train Your Bat",
-    "DESCRIPTION": "Can only fuse if Wrath is active. NL Fusion: Non-basic Bloodcraft cards. NL If any card is fused to this card, it becomes *How *To *Train *Your *Wolf. NL  NL --------------------- NL  NL Lose 1 HP. Draw !M! cards. NL Lose 1 HP, and draw 1 card next turn."
+    "DESCRIPTION": "Can only Fuse if Wrath is active. NL Fusion: Non-basic Bloodcraft cards. NL If any card is Fused to this card, it becomes *How *To *Train *Your *Wolf. NL  NL --------------------- NL  NL Lose 1 HP. Draw !M! cards. NL Lose 1 HP, and draw 1 card next turn."
   },
   "shadowverse:Companions": {
     "NAME": "Lian & Alfie, Companions",
@@ -6482,8 +6168,8 @@
   },
   "shadowverse:Hunters": {
     "NAME": "Lian & Alfie, Hunters",
-    "DESCRIPTION": "Can only fuse if 5 or more *Evolution *Points are Exhausted. NL Fusion: Non-basic Bloodcraft cards. NL If any cards are fused to this card, it becomes *Lian *& *Alfie, *Companions. NL --------------------- NL Gain !B! Block and 1 Flame Barrier. NL If you play an *Evolution *Point, upgrade this card and add an *Evolution *Point to your hand.",
-    "UPGRADE_DESCRIPTION": "Can only fuse if 5 or more *Evolution *Points are Exhausted. NL Fusion: Non-basic Bloodcraft cards. NL If any cards are fused to this card, it becomes *Lian *& *Alfie, *Companions. NL --------------------- NL Gain !B! Block and 1 Flame Barrier. NL If you play an *Evolution *Point, add an *Evolution *Point to your hand. NL Downgrades when played."
+    "DESCRIPTION": "Can only Fuse if 5 or more *Evolution *Points are Exhausted. NL Fusion: Non-basic Bloodcraft cards. NL If any cards are Fused to this card, it becomes *Lian *& *Alfie, *Companions. NL --------------------- NL Gain !B! Block and 1 Flame Barrier. NL If you play an *Evolution *Point, upgrade this card and add an *Evolution *Point to your hand.",
+    "UPGRADE_DESCRIPTION": "Can only Fuse if 5 or more *Evolution *Points are Exhausted. NL Fusion: Non-basic Bloodcraft cards. NL If any cards are Fused to this card, it becomes *Lian *& *Alfie, *Companions. NL --------------------- NL Gain !B! Block and 1 Flame Barrier. NL If you play an *Evolution *Point, add an *Evolution *Point to your hand. NL Downgrades when played."
   },
   "shadowverse:TanzaniteConvictor": {
     "NAME": "Tanzanite Convictor",
@@ -6495,8 +6181,8 @@
   },
   "shadowverse:AngelsOfTheCovenant": {
     "NAME": "Angels of the Covenant",
-    "DESCRIPTION": "Can only be fused if 10 or more Amulets were destroyed. NL Fusion: Havencraft cards. NL If cards are fused to this card, it becomes *Seraphs *of *the *True *Key. NL  NL --------------------- NL  NL Deal !D! damage. NL Subtract 1 from the Countdown of an Amulet. If it is destroyed, return this card to your hand.",
-    "UPGRADE_DESCRIPTION": "Can only be fused if 10 or more Amulets were destroyed. NL Fusion: Havencraft cards. NL If cards are fused to this card, it becomes *Seraphs *of *the *True *Key. NL  NL --------------------- NL  NL Deal !D! damage. NL Subtract 1 from the Countdown of an Amulet. If it is destroyed, return this card to your hand.",
+    "DESCRIPTION": "Can only be Fused if 10 or more Amulets were destroyed. NL Fusion: Havencraft cards. NL If cards are Fused to this card, it becomes *Seraphs *of *the *True *Key. NL  NL --------------------- NL  NL Deal !D! damage. NL Subtract 1 from the Countdown of an Amulet. If it is destroyed, return this card to your hand.",
+    "UPGRADE_DESCRIPTION": "Can only be Fused if 10 or more Amulets were destroyed. NL Fusion: Havencraft cards. NL If cards are Fused to this card, it becomes *Seraphs *of *the *True *Key. NL  NL --------------------- NL  NL Deal !D! damage. NL Subtract 1 from the Countdown of an Amulet. If it is destroyed, return this card to your hand.",
     "EXTENDED_DESCRIPTION": [
       " NL (Destroyed ",
       " Amulets. )"
@@ -6508,7 +6194,7 @@
   },
   "shadowverse:PurelightPrototype": {
     "NAME": "Agyll, Purelight Prototype",
-    "DESCRIPTION": "AF - Fusion: Non-Basic Portalcraft cards. NL If cards are fused to this card and there are 5 or less Artifacts Exhausted, randomly add 2 AF cards to your hand. Otherwise, this card becomes *Agyll, *Purelight *Exemplar。 NL Deal !D! damage. NL Randomly add !M! Artifacts from the draw pile to your hand."
+    "DESCRIPTION": "AF - Fusion: Non-Basic Portalcraft cards. NL If cards are Fused to this card and there are 5 or less Artifacts Exhausted, randomly add 2 AF cards to your hand. Otherwise, this card becomes *Agyll, *Purelight *Exemplar。 NL Deal !D! damage. NL Randomly add !M! Artifacts from the draw pile to your hand."
   },
   "shadowverse:DisseminatorOfWisdom": {
     "NAME": "Disseminator of Wisdom",
@@ -6524,8 +6210,8 @@
   },
   "shadowverse:FieryBarrage": {
     "NAME": "Fiery Barrage",
-    "DESCRIPTION": "Can only be fused if Resonance is active. NL Fusion: Non-basic Portalcraft cards. If cards are fused to this card it becomes *Blazing *Barrage. NL  NL --------------------- NL  NL Deal !D! damage. NL Remove 1 buff except Strength or Dexterity (Artifact is removed first if applicable).  NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Can only be fused if Resonance is active. NL Fusion: Non-basic Portalcraft cards. If cards are fused to this card it becomes *Blazing *Barrage+. NL  NL --------------------- NL  NL Deal !D! damage. NL Remove 1 buff except Strength or Dexterity (Artifact is removed first if applicable). NL Exhaust. "
+    "DESCRIPTION": "Can only be Fused if Resonance is active. NL Fusion: Non-basic Portalcraft cards. If cards are Fused to this card it becomes *Blazing *Barrage. NL  NL --------------------- NL  NL Deal !D! damage. NL Remove 1 buff except Strength or Dexterity (Artifact is removed first if applicable).  NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Can only be Fused if Resonance is active. NL Fusion: Non-basic Portalcraft cards. If cards are Fused to this card it becomes *Blazing *Barrage+. NL  NL --------------------- NL  NL Deal !D! damage. NL Remove 1 buff except Strength or Dexterity (Artifact is removed first if applicable). NL Exhaust. "
   },
   "shadowverse:GoddessOfCondemnation": {
     "NAME": "Goddess of Condemnation",
@@ -6533,7 +6219,7 @@
   },
   "shadowverse:GoddessOfCompassion": {
     "NAME": "Goddess of Compassion",
-    "DESCRIPTION": "Fusion: Skills, Powers or Colorless cards. NL If 2 or more cards are fused to this card, it becomes *Goddess *of *Condemnation. NL  NL --------------------- NL  NL Gain !B! Block. NL ALL enemies lose 2 Strength and Dexterity. NL If cards were fused, gain 1 Overflow points. NL Exhaust."
+    "DESCRIPTION": "Fusion: Skills, Powers or Colorless cards. NL If 2 or more cards are Fused to this card, it becomes *Goddess *of *Condemnation. NL  NL --------------------- NL  NL Gain !B! Block. NL ALL enemies lose 2 Strength and Dexterity. NL If cards were Fused, gain 1 Overflow points. NL Exhaust."
   },
   "shadowverse:Anthenita": {
     "NAME": "Anthenita, Spark of Change",
@@ -6550,8 +6236,8 @@
   },
   "shadowverse:EnduringHope": {
     "NAME": "Rosalie, Enduring Hope",
-    "DESCRIPTION": "Fusion: Non-Basic Attack cards. NL If you've fused at least 3 cards to this card at once, it becomes *Rosalie, *Everlasting *Hope.  NL  NL --------------------- NL  NL Gain !B! Block. NL Gain 1 Artifact. NL Gain Energy and !M! Block for each card fused to this card. NL Exhaust !stslib:ex! ",
-    "UPGRADE_DESCRIPTION": "Fusion: Non-Basic Attack cards NL If at least 3 cards are fused to this card at once, it becomes *Rosalie, *Everlasting *Hope+.  NL  NL --------------------- NL  NL Gain !B! Block. NL Gain 1 Artifact. NL Gain Energy and !M! Block for each card fused to this card. NL Exhaust !stslib:ex! ",
+    "DESCRIPTION": "Fusion: Non-Basic Attack cards. NL If you've Fused at least 3 cards to this card at once, it becomes *Rosalie, *Everlasting *Hope.  NL  NL --------------------- NL  NL Gain !B! Block. NL Gain 1 Artifact. NL Gain Energy and !M! Block for each card Fused to this card. NL Exhaust !stslib:ex! ",
+    "UPGRADE_DESCRIPTION": "Fusion: Non-Basic Attack cards NL If at least 3 cards are Fused to this card at once, it becomes *Rosalie, *Everlasting *Hope+.  NL  NL --------------------- NL  NL Gain !B! Block. NL Gain 1 Artifact. NL Gain Energy and !M! Block for each card Fused to this card. NL Exhaust !stslib:ex! ",
     "EXTENDED_DESCRIPTION": [
       " NL (Fused ",
       " Cards. )"
@@ -6571,8 +6257,8 @@
   },
   "shadowverse:UntoldKick": {
     "NAME": "Untold Kick",
-    "DESCRIPTION": "Can only be Fused if Rally is at least 10. NL Fusion: Non-Basic attack cards. NL If cards are fused to this card it becomes *Legendary *Kick NL  NL --------------------- NL  NL Deal !D! damage. NL Summon 1 Heavy Knight.",
-    "UPGRADE_DESCRIPTION": "Can only be Fused if Rally is at least 10. NL Fusion: Non-Basic attack cards. NL If cards are fused to this card it becomes *Legendary *Kick+ NL  NL --------------------- NL  NL Deal !D! damage. NL Summon 1 Heavy Knight+.",
+    "DESCRIPTION": "Can only be Fused if Rally is at least 10. NL Fusion: Non-Basic attack cards. NL If cards are Fused to this card it becomes *Legendary *Kick NL  NL --------------------- NL  NL Deal !D! damage. NL Summon 1 Heavy Knight.",
+    "UPGRADE_DESCRIPTION": "Can only be Fused if Rally is at least 10. NL Fusion: Non-Basic attack cards. NL If cards are Fused to this card it becomes *Legendary *Kick+ NL  NL --------------------- NL  NL Deal !D! damage. NL Summon 1 Heavy Knight+.",
     "EXTENDED_DESCRIPTION": [
       " NL (Rally Count: ",
       " . )"
@@ -6800,7 +6486,7 @@
   },
   "shadowverse:ForbiddenPower": {
     "NAME": "Forbidden Power",
-    "DESCRIPTION": "Machina - Retain - Fusion: Machina cards. NL Deal !D! damage to ALL enemies. Increase this damage by !M! for each Machina card in your hand. If any cards have been fused, deal 1 more damage. NL Exhaust."
+    "DESCRIPTION": "Machina - Retain - Fusion: Machina cards. NL Deal !D! damage to ALL enemies. Increase this damage by !M! for each Machina card in your hand. If any cards have been Fused, deal 1 more damage. NL Exhaust."
   },
   "shadowverse:Nicola4": {
     "NAME": "Nicola, Unauthorized Hope",
@@ -7029,6 +6715,52 @@
       "（ X is ",
       " )"
     ]
+  },
+  "shadowverse:CurseOfTheBlackDragon": {
+    "NAME": "Curse of the Black Dragon",
+    "DESCRIPTION": "Unplayable. NL Retain. NL If Overflow is not active, lose 1 HP at the end of your turn. NL If Overflow is active, deal !D! damage to a random enemy.""
+  },
+  "shadowverse:DespairReborn": {
+    "NAME": "Despair Reborn",
+    "DESCRIPTION": "Costs 2 Energy while on Ascension Level 20 at the start of your turn. NL Randomly discard 2 cards. Randomly add 4 Attack or Power cards that cost at least 3 Energy to your hand. They cost 0, are Ethereal and Exhaust. NL Exhausts in !stslib:ex! uses.",
+    "UPGRADE_DESCRIPTION": "Costs 2 Energy while on Ascension Level 20 at the start of your turn. NL Randomly add 4 Attack or Power cards that cost at least 3 Energy to your hand. They cost 0, are Ethereal and Exhaust.  NL Exhausts in !stslib:ex! uses."
+  },
+  "shadowverse:Soulflash": {
+    "NAME": "Soulflash",
+    "DESCRIPTION": "Deal !D! damage. NL If at least 15 Last Words cards were played this combat, deal !D! damage again. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Played ",
+      " Last Words cards )"
+    ]
+  },
+  "shadowverse:Kagero2": {
+    "NAME": "Kagero, Vellsar's Sheath",
+    "DESCRIPTION": "Gain !B! Block. NL Last_Words: When Exhausted, add 1 *Soulflash to your hand."
+  },
+  "shadowverse:WordsOfSanction": {
+    "NAME": "Words of Sanction",
+    "DESCRIPTION": "Retain - Spellboost: Costs [E] less. NL ALL enemies lose ALL buffs. NL (Artifact first if applicable). NL Exhaust."
+  },
+  "shadowverse:Vincent2": {
+    "NAME": "Vincent, Scale Balancer",
+    "DESCRIPTION": "Add 1 *Words *Of *Sanction to your hand. NL Whenever you play a card with Spellboost, if it's the 3rd, 6th, 9th, 12th, 15th, 18th or 21st played after playing this card, deal 8 damage to ALL enemies."
+  },
+  "shadowverse:DualModeA": {
+    "NAME": "Lævateinn Dragon, Dual Form α",
+    "DESCRIPTION": "Armed NL Gain !B! Block. Deal !D! damage twice. NL ALL Attacks in your hand become Armed. NL Gain 1 Strength and 2 Dexterity. NL Take 3 less damage this turn. NL Heal 3 HP at the end of your turn. NL Add 1 *Lævateinn Dragon to your hand next turn. NL Whenever you would die, restore 1 HP, remove all debuffs and apply the previous effects. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Armed NL Gain !B! Block. Deal !D! damage twice. NL ALL Attacks in your hand become Armed. NL Gain 1 Strength and 2 Dexterity. NL Take 3 less damage this turn. NL Heal 3 HP at the end of your turn. NL Add 1 *Lævateinn Dragon+ to your hand next turn. NL Whenever you would die, restore 1 HP, remove all debuffs and apply the previous effects. NL Exhaust."
+  },
+  "shadowverse:DualModeB": {
+    "NAME": "Lævateinn Dragon, Dual Form β",
+    "DESCRIPTION": "Armed NL Gain !B! Block. Deal !D! damage. NL Increase this card's damage by !M! for each Armed Attack card played this combat. NL ALL Attacks in your hand become Armed. NL Take 10 less damage this turn. NL Heal 3 HP at the end of your turn. NL Draw 2 cards. NL Add 1 *Draconic *Weapon to your hand NL Exhaust."
+  },
+  "shadowverse:DualModeC": {
+    "NAME": "Lævateinn Dragon, Dual Form γ",
+    "DESCRIPTION": "Armed NL Gain 2 Strength. NL Deal !D! damage to ALL enemies. NL Increase this card's damage by !M! for each Armed Attack card played this combat. NL This turn, your Attacks deal double damage. NL Exhaust."
+  },
+  "shadowverse:DualRage": {
+    "NAME": "Dual Rage",
+    "DESCRIPTION": "Armed NL Choose 1 of 3 Armed cards and add it your hand. It costs 0 this turn. NL If you have *Lævateinn *Dragon and at least 2 *Draconic *Weapons in your hand, discard *Lævateinn *Dragon, randomly Exhaust 2 *Draconic *Weapons and Choose: NL *Lævateinn *Dragon, *Dual *Form *α, *β, or *γ NL Add the chosen card to your hand.",
+    "UPGRADE_DESCRIPTION": "Armed NL Choose 1 of 3 Armed cards and add it your hand. It costs 0 this turn. NL If you have *Lævateinn *Dragon and at least 2 *Draconic *Weapons in your hand, discard *Lævateinn *Dragon, randomly Exhaust 2 *Draconic *Weapons and Choose: NL *Lævateinn *Dragon, *Dual *Form *α+, *β+, or *γ+ NL Add the chosen card to your hand."
   }
 }
-

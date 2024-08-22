@@ -1815,7 +1815,7 @@
   "shadowverse:Forte4Power": {
     "NAME": "Forte, Darkwing Ruler",
     "DESCRIPTIONS": [
-      "When Strength or Dexterity are gained, the following effects will activate in order, up to 3 times each: NL 1. Gain #b1 extra Energy next turn. NL 2. Apply #b2 Weak and Vulnerable to a random enemy. NL 3. Gain #b1 Buffer, preventing the next time you would lose HP."
+      "When Strength or Dexterity is gained, the following effects will activate in order, up to 3 times each: NL 1. Gain #b1 extra Energy next turn. NL 2. Apply #b2 Weak and Vulnerable to a random enemy. NL 3. Gain #b1 Buffer, preventing the next time you would lose HP."
       ]
    },
   "shadowverse:FafnirPower": {
@@ -1839,13 +1839,13 @@
   "shadowverse:UndyingWitchPower": {
     "NAME": "Undying Witch",
     "DESCRIPTIONS": [
-      "Once per turn, whenever you consume Earth_Essence (such as by performing Earth_Rite, gain Energy equal to the Earth_Essence consumed."
+      "Once per turn, whenever you consume #yEarth #yEssence (such as by performing Earth Rite), gain Energy equal to the Earth Essence consumed."
     ]
   },
   "shadowverse:GraveAdjudicatorPower": {
     "NAME": "Grave Adjudicator",
     "DESCRIPTIONS": [
-      "Immune to debuffs other than #yStrength and #yDexterity. Whenever #yAttacks are exhausted, gain #b1 #yStrength and #yDexterity."
+      "Immune to debuffs other than changes to #yStrength and #yDexterity. Whenever #yAttacks are exhausted, gain #b1 #yStrength and #yDexterity."
     ]
   },
   "shadowverse:CompanionsPower": {
@@ -1953,7 +1953,7 @@
   "shadowverse:RapidFirePower": {
     "NAME": "Rapid Fire",
     "DESCRIPTIONS": [
-      "Whenever you play #b3 cards, take #b",
+      "Whenever you play #b3 cards, deal #b",
       " damage."
     ]
   }

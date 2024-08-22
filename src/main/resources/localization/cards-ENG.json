@@ -2069,11 +2069,11 @@
   },
   "shadowverse:NeoAlector": {
     "NAME": "Alecto, Dissonance Lives",
-    "DESCRIPTION": "Machina. NL Gain !B! Block. NL Gain !M! Metallicize. NL Draw !M! additional cards next turn and gain !M! Strength and Dexterity. NL Exhaust."
+    "DESCRIPTION": "Machina. NL Gain !B! Block. NL Gain !M! Metallicize. NL Draw !M! additional cards and gain !M! Strength and Dexterity next turn. NL Exhaust."
   },
   "shadowverse:NeoMegaera": {
     "NAME": "Megaera, Indignance Lives",
-    "DESCRIPTION": "Machina. NL Gain 1 Blur. NL At the start of your next turn, heal 6 HP, upgrade ALL cards in your hand, put 1 *Miracle into your hand and deal !M! damage to ALL enemies. NL Exhaust."
+    "DESCRIPTION": "Machina. NL Gain 1 Blur. NL Heal 6 HP, upgrade ALL cards in your hand, put 1 *Miracle into your hand and deal !M! damage to ALL enemies next turn. NL Exhaust."
   },
   "shadowverse:CrimsonWar": {
     "NAME": "Laura, Crimson Strife",
@@ -4774,7 +4774,7 @@
   "shadowverse:Castelle": {
     "NAME": "Castelle, Budding Mage",
     "DESCRIPTION": "Academic NL Gain !B! Block, deal !D! damage. NL If X is 10 or more, put 1 *Verdant *Prayer into hand. (X is equal to the number of non-Strike Forestcraft Attacks played in this combat)",
-    "UPGRADE_DESCRIPTION": "Academic NL Gain !B! block, deal !D! damage. NL If X is 10 or more, put 1 *Verdant *Prayer+ into hand. (X is equal to the number of non-Strike Forestcraft Attacks played in this combat)",
+    "UPGRADE_DESCRIPTION": "Academic NL Gain !B! Block, deal !D! damage. NL If X is 10 or more, put 1 *Verdant *Prayer+ into hand. (X is equal to the number of non-Strike Forestcraft Attacks played in this combat)",
     "EXTENDED_DESCRIPTION": [
       " NL (X is",
       " .)"

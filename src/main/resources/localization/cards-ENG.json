@@ -905,7 +905,7 @@
   },
   "shadowverse:Ladica2": {
     "NAME": "Ladica, Verdant Claw",
-    "DESCRIPTION": "Natura. NL Deal !D! damage. NL Whenever you play a card, if it's the 1st card you've played this turn, add a *Ladica's *Embrace into your hand. NL If it's the 4th, gain 1 [E]. NL If it's the 8th, this card will deal damage twice. NL If it's the 12th, gain 3 Strength and Dexterity and double the damage."
+    "DESCRIPTION": "Natura. NL Deal !D! damage. NL While in your hand, when you play a card, if it's the 1st card you've played this turn, add a *Ladica's *Embrace into your hand. NL If it's the 4th, gain [E]. NL If it's the 8th, this card will deal damage twice. NL If it's the 12th, gain 3 Strength and Dexterity and double the damage."
   },
   "shadowverse:VictoryCard": {
     "NAME": "Victory Card",
@@ -2844,7 +2844,7 @@
   },
   "shadowverse:Mirin": {
     "NAME": "Mirin, Samurai Dreamer",
-    "DESCRIPTION": "Deal !D! damage. NL Skybound_Art 3: Repeat 1 time. NL Super_Skybound_Art 6: Repeat 1 more time.",
+    "DESCRIPTION": "Can be upgraded multiple times to lower the Skybound_Art values. NL Deal !D! damage. NL Skybound_Art 3: Repeat 1 time. NL Super_Skybound_Art 6: Repeat 1 more time.",
     "EXTENDED_DESCRIPTION": [
       "Deal !D! damage. NL Skybound_Art ",
       ": Repeat 1 time. NL Super_Skybound_Art ",
@@ -2853,7 +2853,7 @@
   },
   "shadowverse:Seofon": {
     "NAME": "Seofon, Star Sword Sovereign",
-    "DESCRIPTION": "Deal !D! damage and draw 1 card. NL Skybound_Art 3: Upgrade ALL cards in your hand. NL Super_Skybound_Art 6: Gain 1 Intangible (Limit).",
+    "DESCRIPTION": "Can be upgraded multiple times to lower the Skybound_Art values. NL Deal !D! damage and draw 1 card. NL Skybound_Art 3: Upgrade ALL cards in your hand. NL Super_Skybound_Art 6: Gain 1 Intangible (Limit).",
     "EXTENDED_DESCRIPTION": [
       "Deal !D! damage and draw 1 card. NL Skybound_Art ",
       ": Upgrade ALL cards in your hand. NL Super_Skybound_Art (Limit) ",
@@ -2862,7 +2862,7 @@
   },
   "shadowverse:Eahta": {
     "NAME": "Eahta, God of the Blade",
-    "DESCRIPTION": "Deal !D! damage twice. NL Skybound_Art 3: ALL Swordcraft Attacks in your hand cost 2 less this turn. NL Super_Skybound_Art 9: ALL Swordcraft Attack cards cost 2 less this combat (Limit).",
+    "DESCRIPTION": "Can be upgraded multiple times to lower Skybound_Art values. NL Deal !D! damage twice. NL Skybound_Art 3: ALL Swordcraft Attacks in your hand cost 2 less this turn. NL Super_Skybound_Art 9: ALL Swordcraft Attack cards cost 2 less this combat (Limit).",
     "EXTENDED_DESCRIPTION": [
       "Deal !D! damage twice. NL Skybound_Art ",
       ":ALL Swordcraft Attack cards in hand cost 2 less this turn. NL Super_Skybound_Art (Limit) ",
@@ -4103,7 +4103,7 @@
   },
   "shadowverse:Tweyen": {
     "NAME": "Tweyen, Dark Huntress",
-    "DESCRIPTION": "Enemy takes 20% more damage. NL Deal !D! damage. NL Skybound_Art 3: Upgrade ALL cards in your hand and gain 2 Strength. NL Super_Skybound_Art 6: Deal !D! damage to ALL enemies.",
+    "DESCRIPTION": "Can be upgraded multiple times to lower the Skybound_Art values. NL Enemy takes 20% more damage. NL Deal !D! damage. NL Skybound_Art 3: Upgrade ALL cards in your hand and gain 2 Strength. NL Super_Skybound_Art 6: Deal !D! damage to ALL enemies.",
     "EXTENDED_DESCRIPTION": [
       "Increase the damage the enemy takes by 20%. NL Deal !D! damage. NL Skybound_Art ",
       ": Upgrade ALL cards in your hand and gain 2 Strength. NL Super_Skybound_Art ",
@@ -4742,7 +4742,7 @@
   },
   "shadowverse:Seox": {
     "NAME": "Seox, Heavenly Howl",
-    "DESCRIPTION": "Can be upgraded multiple times to lower Skybound_Art values. NL Deal !D! damage twice. NL Skybound_Art 3: Deal !D! damage 4 times. NL Super_Skybound_Art 6: Deal !D! damage 6 times.",
+    "DESCRIPTION": "Can be upgraded multiple times to lower the Skybound_Art values. NL Deal !D! damage twice. NL Skybound_Art 3: Deal !D! damage 4 times. NL Super_Skybound_Art 6: Deal !D! damage 6 times.",
     "EXTENDED_DESCRIPTION": [
       "Deal !D! damage twice. NL Skybound_Art ",
       ": Deal !D! damage 4 times. NL Super_Skybound_Art ",

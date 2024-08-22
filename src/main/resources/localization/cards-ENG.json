@@ -80,7 +80,7 @@
   },
   "shadowverse:OmenOfTruth2": {
     "NAME": "Raio, Truthful Elimination",
-    "DESCRIPTION": "ALL cards in your draw pile cost 0 until played. NL When this card is added to your hand, add 1 *Ersatz *Elimination to your hand."
+    "DESCRIPTION": "ALL cards in your draw pile, including their Enhance effects, cost 0 until played. NL When this card is added to your hand, add 1 *Ersatz *Elimination to your hand."
   },
   "shadowverse:DimensionalWitch": {
     "NAME": "Daria, Dimensional Witch",
@@ -4752,7 +4752,7 @@
   "shadowverse:Alice": {
     "NAME": "Alice, Wandering Dreamer",
     "DESCRIPTION": "Deal !D! damage. NL If at least 3 *Evolution *Points are Exhausted, choose 2 sets of 3 Attacks from any color to add to your hand and upgrade this card. NL If at least 7, double the damage. ",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage and gain 1 Energy. NL If at least 3 *Evolution *Points are Exhausted, choose 2 sets of 3 Attacks from any color to add to your hand. NL If at least 7, double the damage."
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain [E] NL If at least 3 *Evolution *Points are Exhausted, choose 2 sets of 3 Attacks from any color to add to your hand. NL If at least 7, double the damage."
   },
   "shadowverse:CrimsonDesire": {
     "NAME": "Crimson Desire",

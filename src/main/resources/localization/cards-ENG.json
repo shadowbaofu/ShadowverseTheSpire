@@ -414,7 +414,7 @@
   },
   "shadowverse:OmenOfOne2": {
     "NAME": "Mjerrabaine, Great One",
-    "DESCRIPTION": "Exhaust ALL duplicate cards. NL If you have more than half the cards in your deck (min. 15 if no duplicates) or Exhausted at least 1 duplicate (if less than 15), gain Supremacy.  NL Put a *Great *Testimony into your hand."
+    "DESCRIPTION": "Exhaust ALL duplicate cards. NL If you have more than half the cards in your deck (min. 15 if no duplicates) or Exhausted at least 1 duplicate (if less than 15), deal 10 damage to a random enemy at the end of each turn for playing a card that costs 2 or less, and 18 damage to ALL enemies for playing a card that costs 2 or more. NL Put a *Great *Testimony into your hand."
   },
   "shadowverse:RearriveOne": {
     "NAME": "Second Advent of the Omens",

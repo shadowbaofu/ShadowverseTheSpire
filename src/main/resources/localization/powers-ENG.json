@@ -190,8 +190,8 @@
   "shadowverse:HeavensDoorPower": {
     "NAME": "Heaven's Gate",
     "DESCRIPTIONS": [
-      "Randomly subtract 1 from the cost of #b",
-      " cards in your hand at the start of your turn. If there are no duplicate cards in your draw plie, subtract 6 instead."
+      "Randomly subtract 1 from the cost of a card in your hand #b",
+      " times at the start of your turn. If there are no duplicate cards in your draw plie, subtract 6 instead."
     ]
   },
   "shadowverse:HeavensDoorInvocationPower": {

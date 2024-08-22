@@ -3,7 +3,7 @@
     "NAME": "Evil in a Jar",
     "DESCRIPTIONS": [
       "Choose #b1 of #b3 random #yApocalypse or #yCocytus cards to add to your hand, it costs #b0 this turn.",
-      "Choose #b2 of #b3 random #yApocalypse or #yCocytus cards to add to your hand, they costs #b0 this turn."
+      "Choose #b2 of #b3 random #yApocalypse or #yCocytus cards to add to your hand, they cost #b0 this turn."
     ]
   },
   "shadowverse:ElfPotion": {
@@ -92,7 +92,7 @@
   "shadowverse:BuffPotion": {
     "NAME": "Potion Of Unity",
     "DESCRIPTIONS": [
-      "+ #b",
+      "Give + #b",
       " /+ #b",
       " to all your #yFollowers ."
     ]

@@ -232,12 +232,12 @@
   "shadowverse:HeroicResolve": {
     "NAME": "Heroic Resolve",
     "DESCRIPTIONS": [
-      "At the end of your turn, if at least 4 cards were played this turn, next turn, draw #b",
-      " more, gain #b",
-      " #yStrength and #yDexterity. If at least 8, change #b",
-      " more cards to #b",
-      " more cards, change gain #b",
-      " #yStrength and #yDexterity to gain #b",
+      "At the end of your turn, if at least 4 cards were played this turn, draw #b",
+      " more cards next turn, gain #b",
+      " #yStrength and #yDexterity. If at least 8, draw",
+      " #b",
+      " more cards, and gain",
+      " #b",
       " #yStrength and #yDexterity ."
     ]
   },
@@ -245,7 +245,7 @@
     "NAME": "Windfall Fay",
     "DESCRIPTIONS": [
       "Whenever you play a card, if it's at least the 5th card played this turn, draw #b",
-      " card(s). Lose this power at the start of your turn."
+      " card(s). Lose this power at the start of your next turn."
     ]
   },
   "shadowverse:AriaPower": {
@@ -331,7 +331,7 @@
     "DESCRIPTIONS": [
       "Damage dealt + #b",
       "0%, damage taken - #b",
-      "0%. If you have played at least 5 cards at the end of your turn, + #b10% (Can stack up to 5). If you take any unblocked damage, - #b10%."
+      "0%. If you have played at least 5 cards at the end of your turn, gain + #b10% damage boost and damage reduction(Can stack up to 5 times). If you take any unblocked damage, lose #b10% damage boost and damage reduction."
     ]
   },
   "shadowverse:Cemetery": {

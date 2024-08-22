@@ -10,14 +10,14 @@
     "NAME": "Eleanor, Cosmic Friend",
     "FLAVOR": "I am Eleanor Gloria, Cosmic Flower and friend to you. For the two of us I shall proudly bloom!",
     "DESCRIPTIONS": [
-      "For the first #b3 turns, randomly add #b1 Exhaustive 0 cost #yPetrification , #yConjure #yTwosome or #yStaff #yof #yWhirlwinds to your hand."
+      "For the first #b3 turns, randomly add #b1 0 cost #yPetrification , #yConjure #yTwosome or #yStaff #yof #yWhirlwinds to your hand. Those cards Exhaust."
     ]
   },
   "shadowverse:EnchantedLibrary": {
     "NAME": "Enchanted Library",
     "FLAVOR": "Quiet, please. Noise upsets the books. -A poster in the Enchanted Library ",
     "DESCRIPTIONS": [
-      "At the start of the first #b2 turns, put #b1 #ySkill card from your Draw Pile to your hand"
+      "At the start of your first #b2 turns, put #b1 #ySkill card from your Draw Pile to your hand"
     ]
   },
   "shadowverse:EarthEssenceRelic": {
@@ -53,7 +53,7 @@
     "NAME": "Token of 1st",
     "FLAVOR": "I go first, no need to redraw.",
     "DESCRIPTIONS": [
-      "Gain [E] when you play the first #ySkill card in a combat."
+      "Gain [E] when you play the first #ySkill card each combat."
     ]
   },
   "shadowverse:NeutralBook": {
@@ -145,21 +145,14 @@
     "NAME": "'Not-So-Ordinary' Flair",
     "FLAVOR": "Nice to meet you! I'm Mimori Amamiya!",
     "DESCRIPTIONS": [
-      "Damage dealt + #b10%, damage taken - #b10%. By the end of your turn, if you have played at least 5 cards, damage dealt + #b10% (Up to 5 times). If you take any unblocked damage, damage dealt - #b10%."
+      "Damage dealt + #b10%, damage taken - #b10%. By the end of your turn, if you have played at least 5 cards, increase your damage and reduction by #b10% (Up to 5 times). If you take any unblocked damage, reduce your damage and reduction by - #b10%."
     ]
   },
   "shadowverse:KuonWeapon": {
     "NAME": "Mitsura Ryakketsu",
     "FLAVOR": "Calamity approaches! Might wanna run.",
     "DESCRIPTIONS": [
-      "At the start of combat, add 1 #yShikigami #ySummons into your hand."
-    ]
-  },
-  "shadowverse:GeassRelic": {
-    "NAME": "Geass: Survive",
-    "FLAVOR": "Survive!",
-    "DESCRIPTIONS": [
-      "Once per combat whenever you would die, heal to 1 HP, remove all of your debuffs, gain #b5 #yStrength and #yDexterity, and gain #b25 #yBlock instead."
+      "At the start of combat, add 1 #yShikigami #ySummons to your hand."
     ]
   },
   "shadowverse:Offensive3": {
@@ -180,7 +173,7 @@
     "NAME": "Luna's Friend",
     "FLAVOR": "Would you like to be Luna's friend?",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st. At the start of your turn, #yNecromancy 4: Add 1 #yLich to your hand."
+      "Replaces #yToken #yof #y1st. At the start of your turn, perform #yNecromancy 4: Add 1 #yLich to your hand."
     ]
   },
   "shadowverse:Todoroki": {
@@ -351,13 +344,6 @@
       "At the start of your turn, Scry 4."
     ]
   },
-  "shadowverse:ValhoreanDealer": {
-    "NAME": "Valhorean Dealer",
-    "FLAVOR": "I'm sorry——Forgive me——",
-    "DESCRIPTIONS": [
-      "Right click to spend #b30 gold to redraw any number of cards in your hand."
-    ]
-  },
   "shadowverse:KagemitsuSword": {
     "NAME": "Enma Yasukuni",
     "FLAVOR": "Thanks to you, I have drawn my blade from the scabbard called peace. I will cut down my enemies. That is the sole reason I exist.",
@@ -377,23 +363,6 @@
     "FLAVOR": "When the Mother begins to sing, all will be decided.",
     "DESCRIPTIONS": [
       "At the start of combat, add 1 #yNaterran #yGreat #yTree to hand."
-    ]
-  },
-  "shadowverse:AlterplaneArbiter": {
-    "NAME": "Cross Craft",
-    "FLAVOR": "New Limited Time Format: Cross Craft! Build decks with cards from 2 different classes!",
-    "DESCRIPTIONS": [
-      "Enemies will drop an additional card reward belonging to a Shadowverse class other than your own.",
-      "Enemies will drop an extra card reward (different from your Shadowverse class) from ",
-      " .",
-      "#yRunecraft",
-      "#yForestcraft",
-      "#yShadowcraft",
-      "#yBloodcraft",
-      "#yPortalcraft",
-      "#ySwordcraft",
-      "#yHavencraft",
-      "#yDragoncraft"
     ]
   },
   "shadowverse:Offensive7": {
@@ -515,15 +484,6 @@
       "Replaces #yToken #yof #y1st. At start of your turn, #yNecromancy 4: Add 1 #ySkullfather to your hand."
     ]
   },
-  "shadowverse:Bullet": {
-    "NAME": "Mystical Bullet",
-    "FLAVOR": "Think of it as a good luck charm. Do try to keep it close.",
-    "DESCRIPTIONS": [
-      "Relic with unknown use.",
-      "The world of Rivayle sprang forth from this crucible known as the Lodestone.",
-      "At the start of the 1st, 3rd turn, add 1 #yVerdict #yRendered to hand. NL At the start of the 2nd, 4th turn, add 1 #yAbsolute #yDecree to hand. NL At the start of the 5th turn or after, add 1 that you don't have in hand."
-    ]
-  },
   "shadowverse:BanShadowverse": {
     "NAME": "The Weak Don't Deserve to Play Shadowverse",
     "FLAVOR": "The weak don't deserve to play Shadowverse.",
@@ -635,6 +595,23 @@
     "FLAVOR": "Inori's favorite hammer. Completely modified after being transformed by the dragon Homare.",
     "DESCRIPTIONS": [
       "Replaces #yToken #yOf #y1st. NL Start each combat with #b1 Overflow point. Start each combat with all enemies Stunned."
+    ]
+  },
+  "shadowverse:AlterplaneArbiter": {
+    "NAME": "Cross Craft",
+    "FLAVOR": "New Limited Time Format: Cross Craft! Build decks with cards from 2 different classes!",
+    "DESCRIPTIONS": [
+      "Enemies will drop an additional card reward belonging to a Shadowverse class other than your own.",
+      "Enemies will drop an extra card reward (different from your Shadowverse class) from ",
+      " .",
+      "#yRunecraft",
+      "#yForestcraft",
+      "#yShadowcraft",
+      "#yBloodcraft",
+      "#yPortalcraft",
+      "#ySwordcraft",
+      "#yHavencraft",
+      "#yDragoncraft"
     ]
   }
 }

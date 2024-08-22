@@ -439,21 +439,21 @@
     "NAME": "Ameth Amulet",
     "FLAVOR": "Please leave it to me.",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st. Whenever you play a card, if it's the #b6th card played this turn, gain #b1 #yStrength and #yDexterity. NL HP healed in combat increases by #b50%."
+      "Replaces #yToken #yof #y1st. Whenever you play a card, if it's the #b6th card played this turn, gain #b1 #yStrength and #yDexterity. NL Healing is #b50% more effective during combat."
     ]
   },
   "shadowverse:MiyakoBOSS": {
     "NAME": "Sweet Ghost Pudding",
     "FLAVOR": "Pudding, pudding~!",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st. 3 times per combat, at the start of your turn activate #yNecromancy 6: Add 1 #yApparition to hand."
+      "Replaces #yToken #yof #y1st. 3 times per combat, at the start of your turn perform #yNecromancy 6: Add 1 #yApparition to hand."
     ]
   },
   "shadowverse:IoBOSS": {
     "NAME": "Glamour Whip",
     "FLAVOR": "Yes! You called for your teacher~?",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st. Once per combat, when #yFatal, randomly upgrade a card in your deck."
+      "Replaces #yToken #yof #y1st. Once per combat, when you deal #yFatal damage to an enemy, randomly upgrade a card in your deck."
     ]
   },
   "shadowverse:RalmiaBOSS": {
@@ -474,14 +474,14 @@
     "NAME": "Eternal Mug",
     "FLAVOR": "Ehehe, I wanna go home early and have a drink~",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st. Whenever you heal your HP, gain #bPower #bDamage #bImmune. NL Whenever you draw a #yStatus or #yCurse card, draw #b1 card."
+      "Replaces #yToken #yof #y1st. Whenever you heal HP, gain #bPower #bDamage #bImmune. NL Whenever you draw a #yStatus or #yCurse card, draw #b1 card."
     ]
   },
   "shadowverse:ShinobuBOSS": {
     "NAME": "Grim Soul Robe",
     "FLAVOR": "Rest in peace.",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st. At start of your turn, #yNecromancy 4: Add 1 #ySkullfather to your hand."
+      "Replaces #yToken #yof #y1st. At start of your turn, perform #yNecromancy 4: Add 1 #ySkullfather to your hand."
     ]
   },
   "shadowverse:BanShadowverse": {
@@ -495,7 +495,7 @@
     "NAME": "Enlightenment, Sword of Creeds",
     "FLAVOR": "Therefore stand by your own will—and I shall see the world put to trial.",
     "DESCRIPTIONS": [
-      "At the start of combat, gain 1 Strength and Dexterity. If you have any copies of Mjerrabaine in your deck, or have no duplicate cards in your deck, gain 3 Strength, 3 Dexterity and 1 Buffer. "
+      "At the start of combat, gain 1 Strength and Dexterity. If you have any copies of #yMjerrabaine in your deck, or have no duplicate cards in your deck, gain 3 Strength, 3 Dexterity and 1 Buffer instead. "
     ]
   },
   "shadowverse:Gliesaray": {

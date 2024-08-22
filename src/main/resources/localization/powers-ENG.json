@@ -1351,10 +1351,10 @@
     "DESCRIPTIONS": [
       "At the start of your turn, activate 1 of the following effects in order until all 3 have been activated once: NL ",
       " #g",
-      "1. Gain #b1 #yStreng and #yDexitery NL ",
+      "1. Gain #b1 #yStrength and #yDexterity. NL ",
       "2. Draw #b",
-      " cards NL ",
-      "3. Heal #b3 HP"
+      " cards. NL ",
+      "3. Heal #b3 HP."
     ]
   },
   "shadowverse:OrchidPower": {

@@ -390,14 +390,14 @@
     "NAME": "Richard, Paradoxical Sword",
     "FLAVOR": "Hope that is given can only be false.",
     "DESCRIPTIONS": [
-      "Once per turn, apply #b2 Thorns whenever you Block."
+      "Once per turn, gain #b2 Thorns whenever you gain Block."
     ]
   },
   "shadowverse:BishopBOSS": {
     "NAME": "Saren's Brilliant Feather",
     "FLAVOR": "When you spread your wings, your body will no longer be bound by gravity.",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st. Gain 1 Amulet slot. If your HP is at or below 50%, start each of your turns with an additional [E]."
+      "Replaces #yToken #yof #y1st. Gain 1 additional Amulet slot. If your HP is at or below 50%, start each of your turns with an additional [E]."
     ]
   },
   "shadowverse:HeresyAvatar": {

@@ -75,8 +75,8 @@
   },
   "shadowverse:OmenOfTruth": {
     "NAME": "Raio, Omen of Truth",
-    "DESCRIPTION": "Spellboost ALL cards in your draw pile !M! times. NL Gain 1 Strength. NL Gain 1 Dexterity. NL Add 1 *Shivs into your hand.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Spellboost ALL cards in your draw pile !M! times. NL Gain 1 Strength. NL Gain 1 Dexterity. NL Add 1 *Shivs into your hand."
+    "DESCRIPTION": "Spellboost ALL cards in your draw pile !M! times. NL Gain 1 Strength. NL Gain 1 Dexterity. NL Add 1 *Shiv into your hand.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Spellboost ALL cards in your draw pile !M! times. NL Gain 1 Strength. NL Gain 1 Dexterity. NL Add 1 *Shiv into your hand."
   },
   "shadowverse:OmenOfTruth2": {
     "NAME": "Raio, Truthful Elimination",
@@ -2766,8 +2766,8 @@
   },
   "shadowverse:MonochromeEndgame": {
     "NAME": "Monochrome Endgame",
-    "DESCRIPTION": " Choose: Summon Queen_Hemera_the_Brave NL or NL Queen_Magnus_the_Graceful. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Summon Queen_Hemera_the_Brave NL and NL Queen_Magnus_the_Graceful. NL Exhaust."
+    "DESCRIPTION": " Choose: Summon Queen_Hemera_the_Brave or Queen_Magnus_the_Graceful. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Summon Queen_Hemera_the_Brave and Queen_Magnus_the_Graceful. NL Exhaust."
   },
   "shadowverse:QueenHemera_Card": {
     "NAME": "Queen Hemera the Brave",
@@ -3903,8 +3903,8 @@
   },
   "shadowverse:Erika": {
     "NAME": "Erika, Loyal Swordsavant",
-    "DESCRIPTION": "Protagonist NL !M! /1. NL Rally 7: Put 1 *Killer *Instincts into your hand (Limit). NL Passive: Deal damage equal to 4 times this Follower's attack to a random enemy and lose 1 Health at the end of your turn. Whenever you play Attacks, summon *Followers or *Amulets, gain +1/+0 this turn.",
-    "UPGRADE_DESCRIPTION": "Protagonist NL !M! /1. NL Rally 7: Put 1 *Killer *Instincts into your hand (Limit). NL Rally 15: Add 1 *Erika's *Sleight to hand. NL Passive: Deal damage equal to 4 times this Follower's attack to a random enemy and lose 1 Health at the end of your turn. Whenever you play Attacks, summon *Followers or *Amulets, gain +1/+0 this turn. NL Rally 7: Put 1 *Killer *Instincts into your hand (Limit).",
+    "DESCRIPTION": "Protagonist NL !M! / 1. NL Rally 7: Put 1 *Killer *Instincts into your hand ( Limit ). NL Passive: Deal damage equal to 4 times this Follower's attack to a random enemy and lose 1 Health at the end of your turn. Whenever you play Attacks, summon *Followers or *Amulets, gain +1/+0 this turn.",
+    "UPGRADE_DESCRIPTION": "Protagonist NL !M! / 1. NL Rally 7: Put 1 *Killer *Instincts into your hand ( Limit ). NL Rally 15: Add 1 *Erika's *Sleight to hand. NL Passive: Deal damage equal to 4 times this Follower's attack to a random enemy and lose 1 Health at the end of your turn. Whenever you play Attacks, summon *Followers or *Amulets, gain +1/+0 this turn. NL Rally 7: Put 1 *Killer *Instincts into your hand ( Limit ).",
     "EXTENDED_DESCRIPTION": [
       "(Rally: ",
       ")"
@@ -3953,8 +3953,8 @@
   },
   "shadowverse:MusketeersVow": {
     "NAME": "Musketeers' Vow",
-    "DESCRIPTION": "Choose: Put 2 of the following cards into your hand: NL *Aramis NL *Porthos NL *Athos NL *D'Artagnan NL NL Enhance 4: Put ALL four into your hand instead. If you have at least 2 *Evolution *Points in your hand, upgrade these cards. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Choose: Put 2 of the following cards into your hand: NL *Aramis NL *Porthos NL *Athos NL *D'Artagnan NL NL Enhance 4: Put ALL four into your hand instead. If you have at least 2 *Evolution *Points in your hand, upgrade these cards. NL Exhaust !stslib:ex!."
+    "DESCRIPTION": "Choose: Put 2 of the following cards into your hand: NL *Aramis NL *Porthos NL *Athos NL *D'Artagnan NL ------------- NL Enhance 4: Put ALL four into your hand instead. If at least 2 *Evolution *Points are in your hand, upgrade these cards. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Choose: Put 2 of the following cards into your hand: NL *Aramis NL *Porthos NL *Athos NL *D'Artagnan NL ------------- NL Enhance 4: Put ALL four into your hand instead. If at least 2 *Evolution *Points are in your hand, upgrade these cards. NL Exhaust !stslib:ex!."
   },
   "shadowverse:Skullfather": {
     "NAME": "Skullfather",
@@ -4336,8 +4336,8 @@
   },
   "shadowverse:FrontDeskFrog": {
     "NAME": "Front Desk Frog",
-    "DESCRIPTION": "Festive. NL Summon a Front_Desk_Frog",
-    "UPGRADE_DESCRIPTION": "Festive. NL Add a *Glittering *Gold and an *Evolution *Point to your hand. NL Summon a Front_Desk_Frog"
+    "DESCRIPTION": "Festive. NL Summon a Front_Desk_Frog.",
+    "UPGRADE_DESCRIPTION": "Festive. NL Add a *Glittering *Gold and an *Evolution *Point to your hand. NL Summon a Front_Desk_Frog."
   },
   "shadowverse:MasterfulMusician": {
     "NAME": "Masterful Musician",
@@ -4984,7 +4984,7 @@
   },
   "shadowverse:TwilightBlade": {
     "NAME": "Twilight Blade",
-    "DESCRIPTION": "Retain. NL Deal !M! (X) damage to ALL enemies. NL Exhaust .",
+    "DESCRIPTION": "Retain. NL Deal !D! damage to ALL enemies multiplied by X. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
       " NL (Deal !D! damage)"
     ]
@@ -6257,8 +6257,8 @@
   },
   "shadowverse:UntoldKick": {
     "NAME": "Untold Kick",
-    "DESCRIPTION": "Can only be Fused if Rally is at least 10. NL Fusion: Non-Basic attack cards. NL If cards are Fused to this card it becomes *Legendary *Kick NL  NL --------------------- NL  NL Deal !D! damage. NL Summon 1 Heavy Knight.",
-    "UPGRADE_DESCRIPTION": "Can only be Fused if Rally is at least 10. NL Fusion: Non-Basic attack cards. NL If cards are Fused to this card it becomes *Legendary *Kick+ NL  NL --------------------- NL  NL Deal !D! damage. NL Summon 1 Heavy Knight+.",
+    "DESCRIPTION": "Can only be Fused if Rally is at least 10. NL Fusion: Non-Basic attack cards. NL If cards are Fused to this card it becomes *Legendary *Kick. NL  NL --------------------- NL  NL Deal !D! damage. NL Summon 1 Heavy Knight.",
+    "UPGRADE_DESCRIPTION": "Can only be Fused if Rally is at least 10. NL Fusion: Non-Basic attack cards. NL If cards are Fused to this card it becomes *Legendary *Kick+. NL  NL --------------------- NL  NL Deal !D! damage. NL Summon 1 Heavy Knight+.",
     "EXTENDED_DESCRIPTION": [
       " NL (Rally Count: ",
       " . )"
@@ -6575,7 +6575,7 @@
   },
   "shadowverse:V2": {
     "NAME": "Val, Speedy Magicar",
-    "DESCRIPTION": "Retain - Maneuver: 2. NL Deal !D! damage. NL Upgrade the card used to make this card Manueverable. NL Exhaust."
+    "DESCRIPTION": "Retain - Maneuver: 2. NL Deal !D! damage. NL Upgrade the card used to make this card Maneuverable. NL Exhaust."
   },
   "shadowverse:RevolutionShot": {
     "NAME": "Revolutionaries' Shot",
@@ -6587,7 +6587,7 @@
   },
   "shadowverse:SorceryInSolidarity2": {
     "NAME": "Arts of Trust",
-    "DESCRIPTION": "Costs 1 less for every Machina card played. NL Add 2 *Repair *Modes to your hand. NL Whenever you play a Machina card this turn, deal 5 damage to a random enemy."
+    "DESCRIPTION": "Costs 1 less [E] for each Machina card played. NL Add 2 *Repair *Modes to your hand. NL Whenever you play a Machina card this turn, deal 5 damage to a random enemy."
   },
   "shadowverse:AzureBlast": {
     "NAME": "Azure Blast",
@@ -6595,7 +6595,7 @@
   },
   "shadowverse:Tetra4": {
     "NAME": "Tetra, Sapphire Leader",
-    "DESCRIPTION": "Machina NL Gain !B! Block. NL Add 1 *Repair *Mode to your hand. NL This turn, the 1st time you play a Machina card, gain 1 Energy. If it's the 2nd time, deal 8 damage to a random enemy. If it's the 3rd time, add 1 *Azure *Blast to your hand."
+    "DESCRIPTION": "Machina NL Gain !B! Block. NL Add 1 *Repair *Mode to your hand. NL This turn, the 1st time you play a Machina card, gain 1 [E]. If it's the 2nd time, deal 8 damage to a random enemy. If it's the 3rd time, add 1 *Azure *Blast to your hand."
   },
   "shadowverse:RebornAnimals": {
     "NAME": "Vivifauna",

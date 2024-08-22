@@ -4844,7 +4844,7 @@
   },
   "shadowverse:GhostHunter": {
     "NAME": "Ghost Hunter",
-    "DESCRIPTION": "Academic. NL Burial_Rite 1: Add 1 *Ghost to your hand."
+    "DESCRIPTION": "Academic. NL Gain !B! Block. NL Burial_Rite 1: Add 1 *Ghost to your hand."
   },
   "shadowverse:Leeds": {
     "NAME": "Leeds, Pining Witch",
@@ -4874,8 +4874,8 @@
   },
   "shadowverse:CyclicalGuidance": {
     "NAME": "Cyclical Guidance",
-    "DESCRIPTION": "Academic. NL Deal !D! damage to a random enemy 4 times. NL Enhance 5: Increase this card's damage by 24.",
-    "UPGRADE_DESCRIPTION": "Academic - Retain NL Deal !D! damage to a random enemy 4 times. NL Enhance 5: Increase this card's damage by 24."
+    "DESCRIPTION": "Academic. NL Deal !D! damage to a random enemy 4 times. NL Enhance 5: Increase this card's damage by 24. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Academic - Retain NL Deal !D! damage to a random enemy 4 times. NL Enhance 5: Increase this card's damage by 24. NL Exhaust."
   },
   "shadowverse:Verdilia": {
     "NAME": "Verdilia, Rogue Professor",

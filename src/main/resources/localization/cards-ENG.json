@@ -2853,20 +2853,20 @@
   },
   "shadowverse:Seofon": {
     "NAME": "Seofon, Star Sword Sovereign",
-    "DESCRIPTION": "Can be upgraded multiple times to lower the Skybound_Art values. NL Deal !D! damage and draw 1 card. NL Skybound_Art 3: Upgrade ALL cards in your hand. NL Super_Skybound_Art 6: Gain 1 Intangible (Limit).",
+    "DESCRIPTION": "Can be upgraded multiple times to lower the Skybound_Art values. NL Deal !D! damage and draw 1 card. NL Skybound_Art 3: Upgrade ALL cards in your hand. NL Super_Skybound_Art 6: Limit: Gain 1 Intangible.",
     "EXTENDED_DESCRIPTION": [
       "Deal !D! damage and draw 1 card. NL Skybound_Art ",
-      ": Upgrade ALL cards in your hand. NL Super_Skybound_Art (Limit) ",
-      ": Gain 1 Intangible."
+      ": Upgrade ALL cards in your hand. NL Super_Skybound_Art ",
+      ": Limit: Gain 1 Intangible."
     ]
   },
   "shadowverse:Eahta": {
     "NAME": "Eahta, God of the Blade",
-    "DESCRIPTION": "Can be upgraded multiple times to lower Skybound_Art values. NL Deal !D! damage twice. NL Skybound_Art 3: ALL Swordcraft Attacks in your hand cost 2 less this turn. NL Super_Skybound_Art 9: ALL Swordcraft Attack cards cost 2 less this combat (Limit).",
+    "DESCRIPTION": "Can be upgraded multiple times to lower Skybound_Art values. NL Deal !D! damage twice. NL Skybound_Art 3: ALL Swordcraft Attacks in your hand cost 2 less this turn. NL Super_Skybound_Art 9: ALL Swordcraft Attacks cost 2 less this combat ( Limit ).",
     "EXTENDED_DESCRIPTION": [
       "Deal !D! damage twice. NL Skybound_Art ",
-      ":ALL Swordcraft Attack cards in hand cost 2 less this turn. NL Super_Skybound_Art (Limit) ",
-      ":ALL Swordcraft Attack cards cost 2 less this combat."
+      ": ALL Swordcraft Attack cards in hand cost 2 less this turn. NL Super_Skybound_Art ",
+      ": Limit: ALL Swordcraft Attack cards cost 2 less this combat."
     ]
   },
   "shadowverse:StrokeOfConviction": {
@@ -2888,7 +2888,7 @@
   },
   "shadowverse:FrontlineInstructor": {
     "NAME": "Frontline Instructor",
-    "DESCRIPTION": "Gain !B! Block. The rightmost *Follower gains +1/+0. NL Rally 10: ALL *Followers gain +1/+1 instead (Limit).",
+    "DESCRIPTION": "Gain !B! Block. The rightmost *Follower gains +1/+0. NL Rally 10: Limit: ALL *Followers gain +1/+1 instead.",
     "EXTENDED_DESCRIPTION": [
       "(Rally:",
       ")"
@@ -2932,8 +2932,8 @@
   },
   "shadowverse:Alwida": {
     "NAME": "Alwida, Pirate Queen",
-    "DESCRIPTION": " !M! time(s) per turn, whenever you play a Loot card, summon 1 Pirate and 1 Viking. NL Ethereal",
-    "UPGRADE_DESCRIPTION": " !M! time(s) per turn, whenever you play a Loot card, summon 1 Pirate and 1 Viking."
+    "DESCRIPTION": "Whenever you play a Loot card, summon 1 Pirate and 1 Viking. NL Ethereal",
+    "UPGRADE_DESCRIPTION": "Whenever you play a Loot card, summon 1 Pirate and 1 Viking."
   },
   "shadowverse:Patrick": {
     "NAME": "Patrick, Rhiceros Knight",
@@ -3167,15 +3167,15 @@
   },
   "shadowverse:Cernunnos": {
     "NAME": "Cernunnos",
-    "DESCRIPTION": "Burial_Rite 1: Draw !M! card(s). NL Limit: Gain [E] [E] . NL Reanimate: !M!. If you have spent 20 or more Shadows this combat, Reanimate: 5 instead.",
+    "DESCRIPTION": "Burial_Rite 1: Draw !M! card(s). NL Limit: Gain [E] [E]. NL Reanimate: !M!. If you have spent 20 or more Shadows this combat, Reanimate: 5 instead.",
     "EXTENDED_DESCRIPTION": [
       " NL ( Shadows Spent: ",
       " . )"
   },
   "shadowverse:MiracleHarvest": {
     "NAME": "Miracle Harvest",
-    "DESCRIPTION": "Put 1 *Fairy into your hand. NL If the amount of *Fairies played in this combat is more than 5, Upgrade this *Fairy. NL If more than 10, draw !M! cards. Gain [E] (Limit).",
-    "UPGRADE_DESCRIPTION": "Put 1 *Fairy into your hand. NL If the amount of *Fairies played in this combat is more than 5, Upgrade this *Fairy. NL If more than 10, draw !M! cards. Gain [E] [E] (Limit)."
+    "DESCRIPTION": "Put 1 *Fairy into your hand. NL If the amount of *Fairies played this combat is at least 5, Upgrade that *Fairy. NL If at least 10, draw !M! cards. Limit: Gain [E].",
+    "UPGRADE_DESCRIPTION": "Put 1 *Fairy into your hand. NL If the amount of *Fairies played this combat is at least 5, Upgrade that *Fairy. NL If at least 10, draw !M! cards. Limit: Gain [E] [E]."
   },
   "shadowverse:HolyFalcon": {
     "NAME": "Holy Falcon",
@@ -3265,7 +3265,7 @@
   },
   "shadowverse:IronknuckleNun": {
     "NAME": "Ironknuckle Nun",
-    "DESCRIPTION": "Machina. NL Gain !B! Block. NL Gain !M! Plated Armor (Limit). NL Add a *Repair *Mode to your hand."
+    "DESCRIPTION": "Machina. NL Gain !B! Block. NL Gain !M! Plated Armor ( Limit ). NL Add a *Repair *Mode to your hand."
   },
   "shadowverse:RadiantAngel": {
     "NAME": "Radiance Angel",
@@ -3451,7 +3451,7 @@
   },
   "shadowverse:MarkUnleashed": {
     "NAME": "Mark Unleashed",
-    "DESCRIPTION": "Heal 1 HP (Limit). NL Deal !D! damage (This damage is !M! times the amount of HP healed this combat)."
+    "DESCRIPTION": "Limit: Heal 1 HP. NL Deal !D! damage (This damage is !M! times the amount of HP healed this combat)."
   },
   "shadowverse:MarkOfBalance": {
     "NAME": "Mark of Balance",
@@ -3726,7 +3726,7 @@
   },
   "shadowverse:ShadowedMemories": {
     "NAME": "Shadowed Memories",
-    "DESCRIPTION": "Gain !B! Block. NL Draw !M! card. NL If you have any *Followers in Ambush, add 1 *Evolution *Point to your hand."
+    "DESCRIPTION": "Gain !B! Block. NL Draw !M! card(s). NL If you have any *Followers in Ambush, add 1 *Evolution *Point to your hand."
   },
   "shadowverse:BladeDance": {
     "NAME": "Ivory Sword Dance",
@@ -4857,7 +4857,7 @@
   "shadowverse:DemonEyeGangster": {
     "NAME": "Demon-Eyed Gangster",
     "DESCRIPTION": "Academic NL Gain !B! Block. NL Remove ALL Block from an enemy if Vengeance is active.",
-    "UPGRADE_DESCRIPTION": "Academic NL Gain !B! block. NL Remove ALL Block from an enemy if Vengeance is active. NL Stun the enemy if Vengeance is active. (Limit)"
+    "UPGRADE_DESCRIPTION": "Academic NL Gain !B! block. NL Remove ALL Block from an enemy if Vengeance is active. NL Limit: Stun the enemy if Vengeance is active."
   },
   "shadowverse:Arka": {
     "NAME": "Arka, Sin Spinner",
@@ -5853,7 +5853,7 @@
   },
   "shadowverse:Filene3": {
     "NAME": "Filene, Absolute Zero",
-    "DESCRIPTION": "Gain !B! Block. NL Add 1 *Whitefrost *Whisper to your hand. NL If Overflow is active, Stun ALL enemies (Limit)."
+    "DESCRIPTION": "Gain !B! Block. NL Add 1 *Whitefrost *Whisper to your hand. NL If Overflow is active, Stun ALL enemies ( Limit )."
   },
   "shadowverse:Forte": {
     "NAME": "Dark Dragoon Forte",

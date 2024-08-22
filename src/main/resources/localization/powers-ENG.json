@@ -2,7 +2,7 @@
   "shadowverse:MysticSeeker": {
     "NAME": "Arulumaya, Mystic Seer",
     "DESCRIPTIONS": [
-      "At the end of each turn, if you have played no more than #b3 cards,  NL #ySpellboost #b1 times at the start of your next turn. NL If you have played more than #b3 cards, draw #b3 cards at the start of your next turn."
+      "At the end of each turn, if you have played no more than #b3 cards, NL #ySpellboost #b1 times next turn. NL If you have played more than #b3 cards, draw #b3 cards next turn."
     ]
   },
   "shadowverse:EarthEssence": {
@@ -72,7 +72,7 @@
     "NAME": "Mechabook Sorcerer",
     "DESCRIPTIONS": [
       "Whenever you play a #yMachina card, gain #b",
-      " [G]."
+      " [G] ."
     ]
   },
   "shadowverse:SonicFourPower": {
@@ -85,7 +85,7 @@
   "shadowverse:SonicFourPower2": {
     "NAME": "Tetra, Friend of Isabelle",
     "DESCRIPTIONS": [
-      "If you don't have #yDelta #yCannons in your hand at the start of your turn, put #b1 #yDelta #yCannon into your hand."
+      "If you don't have any #yDelta #yCannons in your hand at the start of your turn, put #b1 #yDelta #yCannon into your hand."
     ]
   },
   "shadowverse:ErasmusPower": {
@@ -106,7 +106,7 @@
     "DESCRIPTIONS": [
       "Whenever you play a card, deal #b",
       " damage to a random enemy. If there are no #yAttack, #yStatus, or #yCurse cards in your draw pile and your discard pile, gain #b",
-      " [G]."
+      " [G] ."
     ]
   },
   "shadowverse:NaterranTree": {
@@ -197,7 +197,7 @@
   "shadowverse:HeavensDoorInvocationPower": {
     "NAME": "Invocation: Heaven's Gate",
     "DESCRIPTIONS": [
-      "If you have more than #b2 #yEnergy left at the end of your turn, Exhaust #yHeaven's #yGate from your draw pile and gain its effect."
+      "If you have at least #b2 #yEnergy left at the end of your turn, Exhaust #yHeaven's #yGate from your draw pile and gain its effect."
     ]
   },
   "shadowverse:AstarothLimit": {
@@ -1126,7 +1126,7 @@
   "shadowverse:IminaPower": {
     "NAME": "Totem of Madness",
     "DESCRIPTIONS": [
-      "At the end of the turn, lose #r2 Strength and transfer this effect to a random opponent."
+      "At the end of the turn, lose #r2 Strength and transfer this effect to a random opponent. (Transfers to you if an enemy has this effect)."
     ]
   },
   "shadowverse:DimensionShiftPower": {

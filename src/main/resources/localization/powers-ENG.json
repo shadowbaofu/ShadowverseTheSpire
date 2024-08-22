@@ -1229,7 +1229,7 @@
   "shadowverse:OmenOfOnePower2": {
     "NAME": "Mjerrabaine, Great One",
     "DESCRIPTIONS": [
-      "If any card that costs #b2 or less was played, deal #b10 damage to random enemy at the end of your turn. NL If you have played any card that costs #b2 or more, deal #b18 damage to all enemies at the end of your turn."
+      "If any card that costs #b2 or less was played, deal #b10 damage to random enemy at the end of your turn. NL If any card that costs #b2 or more was played, deal #b18 damage to all enemies at the end of your turn."
     ]
   },
   "shadowverse:BirthOfRavenousPower": {

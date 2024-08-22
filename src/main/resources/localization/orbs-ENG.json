@@ -59,8 +59,7 @@
   "shadowverse:Viking": {
     "DESCRIPTION": [
       "#yPassive: Apply #b",
-      " #yVulnerable , deal #b",
-      " damage to random enemy and lose #b1 Health at the end of your turn. NL #yEvoked: Repeat passive effects until its Health reaches #b0 ."
+      " #yVulnerable, deal #b damage to random enemy and lose #b1 Health at the end of your turn. NL #yEvoked: Repeat passive effects until its Health reaches #b0 ." 
     ],
     "NAME": "Viking"
   },

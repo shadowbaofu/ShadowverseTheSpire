@@ -3174,8 +3174,8 @@
   },
   "shadowverse:MiracleHarvest": {
     "NAME": "Miracle Harvest",
-    "DESCRIPTION": "Put 1 *Fairy into your hand. NL If the amount of *Fairies played this combat is at least 5, Upgrade that *Fairy. NL If at least 10, draw !M! cards. Limit: Gain [E].",
-    "UPGRADE_DESCRIPTION": "Put 1 *Fairy into your hand. NL If the amount of *Fairies played this combat is at least 5, Upgrade that *Fairy. NL If at least 10, draw !M! cards. Limit: Gain [E] [E]."
+    "DESCRIPTION": "Put 1 *Fairy into your hand. NL If the amount of *Fairies played this combat is at least 5, Upgrade that *Fairy. NL If at least 10, draw !M! cards and Limit: Gain [E].",
+    "UPGRADE_DESCRIPTION": "Put 1 *Fairy into your hand. NL If the amount of *Fairies played this combat is at least 5, Upgrade that *Fairy. NL If at least 10, draw !M! cards and Limit: Gain [E] [E]."
   },
   "shadowverse:HolyFalcon": {
     "NAME": "Holy Falcon",

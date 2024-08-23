@@ -1956,5 +1956,18 @@
       "Whenever you play #b3 cards, deal #b",
       " damage."
     ]
+ },
+  "shadowverse:VincentPower2": {
+    "NAME": "Vincent, Scale Balancer",
+    "DESCRIPTIONS": [
+      "Whenever you play a card with #ySpellboost, if it's the #b3rd, #b6th, #b9th, #b12th, #b15th, #b18th or #b21st card played after gaining this effect, deal #b8 damage to all enemies."
+    ]
+  },
+  "shadowverse:DualModeAPower": {
+    "NAME": "Lævateinn Dragon, Dual Mode α",
+    "DESCRIPTIONS": [
+      "Heal #b3 HP at the end of the turn. Reduce damage taken by #b",
+      " points. NL Next turn, add #b1 Lævateinn Dragon to your hand and lose this effect. NL Whenever you would die, heal 1 HP, remove all debuffs and repeat the previous effects instead (heal 3 HP, damage reduction)."
+    ]
   }
 }

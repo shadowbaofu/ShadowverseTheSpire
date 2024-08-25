@@ -6747,8 +6747,8 @@
   },
   "shadowverse:DualModeA": {
     "NAME": "Lævateinn Dragon, Dual Form α",
-    "DESCRIPTION": "Armed NL Gain !B! Block. Deal !D! damage twice. NL ALL Attacks in your hand become Armed. NL Gain 1 Strength and 2 Dexterity. NL Take 3 less damage this turn. NL Heal 3 HP at the end of your turn. NL Add 1 *Lævateinn Dragon to your hand next turn. NL Whenever you would die, restore 1 HP, remove all debuffs and apply the previous effects. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Armed NL Gain !B! Block. Deal !D! damage twice. NL ALL Attacks in your hand become Armed. NL Gain 1 Strength and 2 Dexterity. NL Take 3 less damage this turn. NL Heal 3 HP at the end of your turn. NL Add 1 *Lævateinn Dragon+ to your hand next turn. NL Whenever you would die, restore 1 HP, remove all debuffs and apply the previous effects. NL Exhaust."
+    "DESCRIPTION": "Armed NL Gain !B! Block. Deal !D! damage twice. NL ALL Attacks in your hand become Armed. NL Gain 1 Strength and 2 Dexterity. NL Take 3 less damage this turn. NL Heal 3 HP at the end of your turn. NL Add 1 *Lævateinn Dragon to your hand next turn. NL Whenever you would die, restore 1 HP, remove ALL debuffs and apply the previous effects. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Armed NL Gain !B! Block. Deal !D! damage twice. NL ALL Attacks in your hand become Armed. NL Gain 1 Strength and 2 Dexterity. NL Take 3 less damage this turn. NL Heal 3 HP at the end of your turn. NL Add 1 *Lævateinn Dragon+ to your hand next turn. NL Whenever you would die, restore 1 HP, remove ALL debuffs and apply the previous effects. NL Exhaust."
   },
   "shadowverse:DualModeB": {
     "NAME": "Lævateinn Dragon, Dual Form β",

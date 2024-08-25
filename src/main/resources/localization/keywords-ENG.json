@@ -172,21 +172,21 @@
       "NAMES": [
         "vengeance"
       ],
-      "DESCRIPTION": "#yVengeance becomes active once your HP is at or below 50%. Certain cards have effects trigged by #yVengeance."
+      "DESCRIPTION": "#yVengeance becomes active once your HP is at or below 50%. Certain cards have effects triggered by #yVengeance."
     },
     {
       "PROPER_NAME": "Wrath",
       "NAMES": [
         "wrath"
       ],
-      "DESCRIPTION": "#yWrath is active when you have taken damage or lost HP at least 7 times in a combat. Certain cards have effects trigged by #yWrath."
+      "DESCRIPTION": "#yWrath is active when you have taken damage or lost HP at least 7 times in a combat. Certain cards have effects triggered by #yWrath."
     },
     {
       "PROPER_NAME": "Avarice",
       "NAMES": [
         "avarice"
       ],
-      "DESCRIPTION": "#yAvarice is active when at least 6 cards have been drawn from your draw pile in a turn. Certain cards have effects trigged by #yAvarice. You lose this effect at the end of your turn."
+      "DESCRIPTION": "#yAvarice is active when at least 6 cards have been drawn from your draw pile in a turn. Certain cards have effects triggered by #yAvarice. You lose this effect at the end of your turn."
     },
     {
       "PROPER_NAME": "Drain",

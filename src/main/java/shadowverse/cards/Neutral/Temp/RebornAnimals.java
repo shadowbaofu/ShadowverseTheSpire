@@ -59,8 +59,10 @@ import java.util.ArrayList;
              list.add(c);
            }
          }
-         AbstractCard card = list.get(AbstractDungeon.cardRng.random(list.size()-1));
-         addToBot(new MakeTempCardInHandAction(card.makeStatEquivalentCopy()));
+         if (list.size()>0){
+           AbstractCard card = list.get(AbstractDungeon.cardRng.random(list.size()-1));
+           addToBot(new MakeTempCardInHandAction(card.makeStatEquivalentCopy()));
+         }
          break;
        default:
          break;

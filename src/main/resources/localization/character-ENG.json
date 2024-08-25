@@ -36,13 +36,13 @@
   "shadowverse:Bishop": {
     "NAMES": ["Havencraft","Saren","Yukari","Saren (Summer)"],
     "TEXT": [
-      "The main strategy of Havencraft is to play Countdown 'Amulets' which will activate a few turns after they're played. NL You can overwhelm the opponent by using cards that speed up the countdown or destroy the Amulets to activate them."
+      "The main strategy of Havencraft is to play Countdown 'Amulets' which will activate a few turns after they're played. NL You can overwhelm the enemy by using cards that speed up the countdown or destroy the Amulets to activate them."
     ]
   },
     "shadowverse:Dragon": {
     "NAMES": ["Dragoncraft","Kaya","Grea","Inori"],
     "TEXT": [
-      "Entering a state of Overflow by gaining 3 Overflow points is a characteristic of Dragoncraft. NL Accumulate Overflow points to bolster and increase your maximum energy, then overwhelm your foes with high cost cards. "
+      "Entering a state of Overflow by gaining 3 Overflow points is a characteristic of Dragoncraft. NL Accumulate Overflow points to bolster and increase your maximum energy, then overrun your foes with high cost cards. "
     ]
   }
 }

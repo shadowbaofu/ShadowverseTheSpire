@@ -1,14 +1,11 @@
 package shadowverse.powers;
 
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageRandomEnemyAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
@@ -20,6 +17,7 @@ public class DeepSeaScoutPower extends AbstractPower {
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings("shadowverse:DeepSeaScoutPower");
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
+    private int count = 5;
 
     public DeepSeaScoutPower(AbstractCreature owner, int amount) {
         this.name = NAME;
@@ -46,10 +44,11 @@ public class DeepSeaScoutPower extends AbstractPower {
 
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (card.hasTag(AbstractShadowversePlayer.Enums.GILDED)) {
+        if (card.hasTag(AbstractShadowversePlayer.Enums.GILDED) && count > 0) {
             flash();
             addToBot(new SFXAction("DeepSeaScoutPower"));
             addToBot(new DrawCardAction(this.amount));
+            count--;
         }
     }
 

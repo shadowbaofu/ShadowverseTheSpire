@@ -1,7 +1,6 @@
 package shadowverse.powers;
 
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
@@ -44,8 +43,8 @@ public class AramisPower extends AbstractPower {
 
     @Override
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1] + this.amount + DESCRIPTIONS[2] + this.amount*3 + DESCRIPTIONS[3]
-        +this.amount + DESCRIPTIONS[4] + this.amount*3 + DESCRIPTIONS[5];
+        this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1] + this.amount + DESCRIPTIONS[2] + this.amount * 3 + DESCRIPTIONS[3]
+                + this.amount + DESCRIPTIONS[4] + this.amount * 3 + DESCRIPTIONS[5];
     }
 
     @Override
@@ -53,7 +52,7 @@ public class AramisPower extends AbstractPower {
         if (orb instanceof Minion) {
             addToBot(new SFXAction("AramisPower"));
             ((Minion) orb).buff(this.amount, this.amount);
-            this.card.baseDamage += this.amount*3;
+            this.card.baseDamage += this.amount * 3;
             this.card.applyPowers();
             this.card.flash();
         }
@@ -61,11 +60,11 @@ public class AramisPower extends AbstractPower {
 
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (card.type == AbstractCard.CardType.ATTACK && card!=this.card){
+        if (card.type == AbstractCard.CardType.ATTACK && card != this.card) {
             addToBot(new SFXAction("AramisPower"));
-            addToBot(new ApplyPowerAction(this.owner,this.owner,new StrengthPower(this.owner,this.amount),this.amount));
-            addToBot(new ApplyPowerAction(this.owner,this.owner,new DexterityPower(this.owner,this.amount),this.amount));
-            this.card.baseDamage += this.amount*3;
+            addToBot(new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, (int) (this.amount / 2.0 + 0.5)), (int) (this.amount / 2.0 + 0.5)));
+            addToBot(new ApplyPowerAction(this.owner, this.owner, new DexterityPower(this.owner, this.amount / 2), this.amount / 2));
+            this.card.baseDamage += this.amount * 3;
             this.card.applyPowers();
             this.card.flash();
         }
@@ -73,6 +72,6 @@ public class AramisPower extends AbstractPower {
 
     @Override
     public void atStartOfTurn() {
-        addToBot(new RemoveSpecificPowerAction(this.owner,this.owner,this));
+        addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this));
     }
 }

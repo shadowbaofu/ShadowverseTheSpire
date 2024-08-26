@@ -2711,7 +2711,7 @@
   },
   "shadowverse:CatAdmiral": {
     "NAME": "俏猫上将",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 协作 7 :再造成1次伤害。 NL ",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 协作 7 :再造成1次伤害。 NL 可进化",
     "UPGRADE_DESCRIPTION": "打出后解除 升级 。 NL 造成 !D! 点伤害。 NL 协作 7 :再造成1次伤害。 NL 召唤一个 战盾卫士 和一个 重装骑士 。 NL ",
     "EXTENDED_DESCRIPTION": [
       "（协作数:",
@@ -2752,7 +2752,7 @@
   },
   "shadowverse:DualbladeKnight": {
     "NAME": "双剑骑士",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 [E] 。 NL 协作 7 : 升级 这张牌。 NL ",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 [E] 。 NL 协作 7 : 升级 这张牌。 NL 可进化",
     "UPGRADE_DESCRIPTION": "打出后解除 升级 。 NL 造成 !D! 点伤害。 NL 获得 [E] [E] 。",
     "EXTENDED_DESCRIPTION": [
       "（协作数:",
@@ -2815,7 +2815,7 @@
   },
   "shadowverse:FloralFencer": {
     "NAME": "华丽的花园剑士",
-    "DESCRIPTION": "造成 !D! 点伤害。",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 可进化",
     "UPGRADE_DESCRIPTION": "打出后解除 升级 。 NL 造成 !D! 点伤害。 NL 召唤一个 骑士 NL 和一个 铁甲骑士 。"
   },
   "shadowverse:SunnyDayEncounter": {
@@ -2828,12 +2828,12 @@
   },
   "shadowverse:WarriorWing": {
     "NAME": "白翼战神·埃特尔",
-    "DESCRIPTION": "选择抽牌堆中的1张攻击牌或能力牌，将其置入手牌。",
+    "DESCRIPTION": "选择抽牌堆中的1张攻击牌或能力牌，将其置入手牌。 NL 可进化",
     "UPGRADE_DESCRIPTION": "打出后解除 升级 。 NL 选择抽牌堆中的1张攻击牌或能力牌，将其置入手牌。 NL 使所有随从获得+0/+1。"
   },
   "shadowverse:Alyaska": {
     "NAME": "战争商人·阿尔亚斯卡",
-    "DESCRIPTION": "获得1层 能力伤害无效 。 NL 造成 !D! 点伤害。 NL 抽到时将一张 *进化点 置入手牌。",
+    "DESCRIPTION": "获得1层 能力伤害无效 。 NL 造成 !D! 点伤害。 NL 抽到时将一张 *进化点 置入手牌。 NL 可进化",
     "UPGRADE_DESCRIPTION": "打出后解除 升级 。 NL 获得1层 能力伤害无效 。 NL 造成 !D! 点伤害。 NL 将一张 *究极兵器 置入手牌。"
   },
   "shadowverse:ExterminusWeapon": {
@@ -2842,7 +2842,7 @@
   },
   "shadowverse:RadicalGunslinger": {
     "NAME": "激进的神枪手",
-    "DESCRIPTION": "给予 !M! 层 易伤 ，造成 !D! 点伤害。",
+    "DESCRIPTION": "给予 !M! 层 易伤 ，造成 !D! 点伤害。 NL 可进化",
     "UPGRADE_DESCRIPTION": "打出后解除 升级 。 NL 给予 !M! 层 易伤 ，造成 !D! 点伤害。 NL 增加一张 *顺从的骏马 到手中。"
   },
   "shadowverse:Mirin": {
@@ -2925,7 +2925,7 @@
   },
   "shadowverse:Charlotta": {
     "NAME": "小小的圣骑士·夏绿蒂",
-    "DESCRIPTION": "获得 !B! 点 格挡 。",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 可进化",
     "UPGRADE_DESCRIPTION": "打出后解除 升级 。 NL 获得 !B! 点 格挡 ，获得 !M! 点 敏捷 。 NL 获得1层 能力伤害无效 。"
   },
   "shadowverse:Latham": {
@@ -2970,7 +2970,7 @@
   },
   "shadowverse:LevinBeastmaster": {
     "NAME": "雷维翁魔兽使",
-    "DESCRIPTION": "雷维翁 NL 获得 !B! 点 格挡 。 NL 将1张 *圣兽白虎 置入手牌。",
+    "DESCRIPTION": "雷维翁 NL 获得 !B! 点 格挡 。 NL 将1张 *圣兽白虎 置入手牌。 NL 可进化",
     "UPGRADE_DESCRIPTION": "雷维翁 NL 打出后解除 升级 。 NL 获得 !B! 点 格挡 。 NL 将3张 *圣兽白虎 置入手牌。"
   },
   "shadowverse:WhiteTiger": {
@@ -2983,7 +2983,7 @@
   },
   "shadowverse:LevinArcher": {
     "NAME": "雷维翁弓箭手",
-    "DESCRIPTION": "雷维翁 NL 造成 !D! 点伤害，给予 !M! 层 易伤 。",
+    "DESCRIPTION": "雷维翁 NL 造成 !D! 点伤害，给予 !M! 层 易伤 。 NL 可进化",
     "UPGRADE_DESCRIPTION": "雷维翁 NL 打出后解除 升级 。 NL 造成 !D! 点伤害，给予 !M! 层 易伤 ，如果手牌中有其他 雷维翁 牌，重复一次。"
   },
   "shadowverse:Lounes": {
@@ -3000,7 +3000,7 @@
   },
   "shadowverse:StampedingFortress": {
     "NAME": "虐袭城塞",
-    "DESCRIPTION": "机械 NL 造成 !D! 点伤害，获得 !B! 点 格挡 。",
+    "DESCRIPTION": "机械 NL 造成 !D! 点伤害，获得 !B! 点 格挡 。 NL 可进化",
     "UPGRADE_DESCRIPTION": "机械 NL 打出后解除 升级 。 NL 造成 !D! 点伤害，获得 !B! 点 格挡 。 NL 如果手牌中有其他 机械 牌，将 !M! 张 *生产器械 置入手牌。"
   },
   "shadowverse:MeetTheLevinSisters": {
@@ -3100,7 +3100,7 @@
   },
   "shadowverse:Ernesta": {
     "NAME": "武器商人·艾尔涅斯塔",
-    "DESCRIPTION": "协作 10 :将1张 *恐惧猎犬 加入手牌。",
+    "DESCRIPTION": "协作 10 :将1张 *恐惧猎犬 加入手牌。 NL 可进化",
     "UPGRADE_DESCRIPTION": "打出后解除 升级 。 NL 消耗 1张手牌，抽1张牌。",
     "EXTENDED_DESCRIPTION": [
       "（协作数:",
@@ -3113,7 +3113,7 @@
   },
   "shadowverse:Ilmisuna": {
     "NAME": "动乱商人·伊尔米斯娜",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 消耗 1张手牌，抽1张牌。",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 消耗 1张手牌，抽1张牌。 NL 可进化",
     "UPGRADE_DESCRIPTION": "打出后解除 升级 。 NL 每有一个随从，造成 !D! 点伤害。"
   },
   "shadowverse:MasterDealer": {
@@ -3801,7 +3801,7 @@
   },
   "shadowverse:UltimateHollow": {
     "NAME": "极意的空绝",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果消耗堆中的 财宝牌 数量为4以上，伤害翻倍并获得 !B! 点 格挡 。 NL 这张牌视为 财宝牌 。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 劫掠 4 ：伤害翻倍并获得 !B! 点 格挡 。 NL 这张牌视为 财宝牌 。"
   },
   "shadowverse:LoathingDesire": {
     "NAME": "憎恶的爱绝",
@@ -3897,7 +3897,7 @@
   },
   "shadowverse:AdherentOfHollow": {
     "NAME": "空绝的崇拜者",
-    "DESCRIPTION": "打出 财宝牌 时 升级 这张牌。 NL 造成 !D! 点伤害。 NL 打出 *进化点 时，随机增加1张 财宝牌 到手中。",
+    "DESCRIPTION": "打出 财宝牌 时 升级 这张牌。 NL 造成 !D! 点伤害。 NL 打出 *进化点 时，随机增加1张 财宝牌 到手中。 NL 可进化",
     "UPGRADE_DESCRIPTION":"打出后解除 升级 。 NL 造成 !D! 点伤害。 NL 打出 *进化点 时，随机增加1张 财宝牌 到手中。"
   },
   "shadowverse:AdherentOfDispair": {
@@ -3944,7 +3944,7 @@
   },
   "shadowverse:Aramis": {
     "NAME": "阿拉密斯",
-    "DESCRIPTION": "打出攻击牌时，获得1点 力量 和 敏捷 并使这张牌的伤害+3。 NL 召唤随从时，使该随从获得+1/+1并使这张牌的伤害+3。 NL 造成 !D! 点伤害。 NL 消耗 。"
+    "DESCRIPTION": "打出攻击牌时，轮流获得1点 力量 或 敏捷 并使这张牌的伤害+3。 NL 召唤随从时，使该随从获得+1/+1并使这张牌的伤害+3。 NL 造成 !D! 点伤害。 NL 消耗 。"
   },
   "shadowverse:Porthos": {
     "NAME": "波尔多斯",
@@ -4308,7 +4308,7 @@
       "获得 [E] 。",
       "获得5金币。",
       "回复2点生命。",
-      "再获得 !D! 点 格挡 。",
+      "再获得 !B! 点 格挡 。",
       " NL （目前已打出的次数为:",
       "张）"
   ]
@@ -4320,10 +4320,6 @@
   },
   "shadowverse:JiemonThiefLord": {
     "NAME": "天下大侠客·治右卫门",
-
-
-
-
     "DESCRIPTION": "宴乐 NL 增加一张 *闪耀的金币 到手中，每当你使用 *闪耀的金币 时，获得 [E] ，对所有敌人造成4点伤害。",
     "UPGRADE_DESCRIPTION":"宴乐 NL 增加一张 *闪耀的金币 到手中，每当你使用 *闪耀的金币 时，获得 [E] ，对所有敌人造成4点伤害。 NL 回合开始时，将一张 *闪耀的金币 置入手牌。"
   },
@@ -4334,7 +4330,7 @@
   },
   "shadowverse:SuaveBandit": {
     "NAME": "高雅的侠客",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 增加一张 *闪耀的金币 到手中。",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 增加一张 *闪耀的金币 到手中。 NL 可进化",
     "UPGRADE_DESCRIPTION":"打出后解除 升级 。 NL 造成 !D! 点伤害两次。 NL 增加两张 *闪耀的金币 到手中。"
   },
   "shadowverse:FrontDeskFrog": {
@@ -4451,7 +4447,7 @@
   },
   "shadowverse:VerdantLieutenant": {
     "NAME": "叶脉舍弟头",
-    "DESCRIPTION": "八狱 NL 造成 !D! 点伤害，获得 !B! 点 格挡 。 NL 使本回合中已打出的卡牌张数+1。 NL 本回合打出牌时，若为本回合已打出的第4张及以上， 升级 手中的这张牌并抽1张牌。",
+    "DESCRIPTION": "八狱 NL 造成 !D! 点伤害，获得 !B! 点 格挡 。 NL 使本回合中已打出的卡牌张数+1。 NL 本回合打出牌时，若为本回合已打出的第4张及以上， 升级 手中的这张牌并抽1张牌。 NL 可进化",
     "UPGRADE_DESCRIPTION":"八狱 NL 造成 !D! 点伤害，获得 !B! 点 格挡 。 NL 使本回合中已打出的卡牌张数+1。 NL 打出后解除 升级 。"
   },
   "shadowverse:BuddingInitiate": {
@@ -4657,20 +4653,20 @@
   },
   "shadowverse:TidalGunner": {
     "NAME": "海潮炮手",
-    "DESCRIPTION": "八狱 NL 造成 !D! 点伤害。 NL 增加1张 *黄金之杯 到手中。 NL 如果消耗堆中的 财宝牌 数量为7以上，改为增加1张 *战栗的海贼旗 到手中。 NL 本回合内，每打出1张 财宝牌 ，对随机敌人造成 !M! 点伤害。"
+    "DESCRIPTION": "八狱 NL 造成 !D! 点伤害。 NL 增加1张 *黄金之杯 到手中。 NL 劫夺 7：改为 *战栗的海贼旗 。 NL 本回合内，每打出1张 财宝牌 ，对随机敌人造成 !M! 点伤害。"
   },
   "shadowverse:DeepSeaScout": {
     "NAME": "大洋斥候",
-    "DESCRIPTION": "八狱 NL 造成 !D! 点伤害。 NL 增加1张 *黄金之靴 到手中。 NL 如果消耗堆中的 财宝牌 数量为7以上，改为增加1张 *战栗的海贼旗 到手中。 NL 本回合内，每打出1张 财宝牌 ，抽1张牌。"
+    "DESCRIPTION": "八狱 NL 造成 !D! 点伤害。 NL 增加1张 *黄金之靴 到手中。 NL 劫夺 7：改为 *战栗的海贼旗。 NL 本回合内，每打出1张 财宝牌 ，抽1张牌(上限为5次)。"
   },
   "shadowverse:StormWrackedFirstMate": {
     "NAME": "怒涛副船长",
-    "DESCRIPTION": "八狱 NL 获得 !B! 点 格挡 。 NL 增加1张 *黄金首饰 到手中。 NL 如果消耗堆中的 财宝牌 数量为7以上，改为增加1张 *战栗的海贼旗 到手中。 NL 本回合内，每打出1张 财宝牌 ，召唤1个 加农炮水手 (上限为5次)。"
+    "DESCRIPTION": "八狱 NL 获得 !B! 点 格挡 。 NL 增加1张 *黄金首饰 到手中。 NL 劫夺 7：改为 *战栗的海贼旗。 NL 本回合内，每打出1张 财宝牌 ，召唤1个 加农炮水手 (上限为5次)。"
   },
   "shadowverse:Barbaros": {
     "NAME": "出航的罪人·芭芭萝丝",
-    "DESCRIPTION": "八狱 · 融合 : 财宝牌 。 NL 融合 时， 升级 这张牌。 NL 造成 !D! 点伤害。 NL 增加1张 *战栗的海贼旗 到手中。 NL 如果消耗堆中的 财宝牌 数量为7以上，获得 [E] [E] 。 NL 爆能强化 3 :伤害翻倍。",
-    "UPGRADE_DESCRIPTION":"八狱 · 融合 : 财宝牌 。 NL 造成 !D! 点伤害。 NL 增加1张 *战栗的海贼旗 到手中。 NL 如果消耗堆中的 财宝牌 数量为7以上，获得 [E] [E] 。 NL 爆能强化 3 :伤害翻倍。 NL 打出后解除 升级 。"
+    "DESCRIPTION": "八狱 · 融合 : 财宝牌 。 NL 融合 时， 升级 这张牌。 NL 造成 !D! 点伤害。 NL 增加1张 *战栗的海贼旗 到手中。 NL 爆能强化 3 :伤害翻倍。 NL 可进化",
+    "UPGRADE_DESCRIPTION":"八狱 · 融合 : 财宝牌 。 NL 造成 !D! 点伤害。 NL 增加1张 *战栗的海贼旗 到手中。 NL 劫夺 7：获得 [E] [E] 。 NL 爆能强化 3 :伤害翻倍。 NL 打出后解除 升级 。"
   },
   "shadowverse:Radiel": {
     "NAME": "武皇执行者·雷帝尔",
@@ -4682,7 +4678,7 @@
   },
   "shadowverse:WardenOfHonor": {
     "NAME": "尽忠看守",
-    "DESCRIPTION": "八狱 · 结晶 0 NL 下回合开始时额外抽1张牌，增加1张 *复制品 到弃牌堆中。 NL  NL --------------------- NL  NL  升级 这张牌，获得 !B! 点 格挡 2次。 NL 增加1张 *复制品 到消耗堆中。",
+    "DESCRIPTION": "八狱 · 结晶 0 NL 下回合开始时额外抽1张牌，增加1张 *复制品 到弃牌堆中。 NL  NL --------------------- NL  NL  升级 这张牌，获得 !B! 点 格挡 2次。 NL 增加1张 *复制品 到消耗堆中。 NL 可进化",
     "UPGRADE_DESCRIPTION":"八狱 · 结晶 0 NL 下回合开始时额外抽1张牌，增加1张 *复制品 到弃牌堆中。 NL  NL --------------------- NL  NL 获得 !B! 点 格挡 2次。 NL 增加1张 *复制品 到消耗堆中。 NL 打出后解除 升级 。"
   },
   "shadowverse:IronwroughtDefender": {
@@ -4720,12 +4716,12 @@
   },
   "shadowverse:DancingMiniSoulDevil": {
     "NAME": "舞踏迷你灵魔",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 打出 *进化点 时， 升级 这张牌并增加1张 *进化点 到手中。",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 打出 *进化点 时， 升级 这张牌并增加1张 *进化点 到手中。 NL 可进化",
     "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 打出后解除 升级 。"
   },
   "shadowverse:Signa": {
     "NAME": "封印的凶狼·希古娜",
-    "DESCRIPTION": "对全体敌人造成 !D! 点伤害。 NL 获得1层 *残影 。 NL 打出 *进化点 时， 升级 这张牌并增加1张 *进化点 到手中。",
+    "DESCRIPTION": "对全体敌人造成 !D! 点伤害。 NL 获得1层 *残影 。 NL 打出 *进化点 时， 升级 这张牌并增加1张 *进化点 到手中。 NL 可进化",
     "UPGRADE_DESCRIPTION":"对全体敌人造成 !D! 点伤害。 NL 获得1层 *残影 。 NL 如果消耗堆中 *进化点 数量为3以上，额外对全体敌人造成 !M! 点伤害。 NL 如果为7张以上，获得1点 力量 和 敏捷 。 NL 打出后解除 升级 。"
   },
   "shadowverse:Yuzuki": {
@@ -5556,7 +5552,7 @@
   },
   "shadowverse:SoaringDragonewt": {
     "NAME": "翱翔的龙人",
-    "DESCRIPTION": "机械 NL 打出技能牌时， 升级 这张牌。 NL 造成 !D! 点伤害。 NL 随机丢弃手中耗能最小的1张牌，抽1张牌。",
+    "DESCRIPTION": "机械 NL 打出技能牌时， 升级 这张牌。 NL 造成 !D! 点伤害。 NL 随机丢弃手中耗能最小的1张牌，抽1张牌。 NL 可进化",
     "UPGRADE_DESCRIPTION":"机械 NL 打出后解除 升级 。 NL 造成 !D! 点伤害。 NL 随机丢弃手中耗能最小的1张牌，抽1张牌，重复上述2次。"
   },
   "shadowverse:WiseDragonewtScholar": {
@@ -6165,7 +6161,7 @@
   },
   "shadowverse:Hunters": {
     "NAME": "日暮猎人·黎昂&艾尔弗",
-    "DESCRIPTION": "消耗堆中的 *进化点 为5张以上则可以发动 融合 。 NL 融合 :非基础牌 NL 融合变身 为 *幽暗狩猎者·黎昂&艾尔 。 NL  NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 获得1层 *火焰屏障 。 NL 打出 *进化点 时， 升级 这张牌并增加1张 *进化点 到手中。",
+    "DESCRIPTION": "消耗堆中的 *进化点 为5张以上则可以发动 融合 。 NL 融合 :非基础牌 NL 融合变身 为 *幽暗狩猎者·黎昂&艾尔 。 NL  NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 获得1层 *火焰屏障 。 NL 打出 *进化点 时， 升级 这张牌并增加1张 *进化点 到手中。 NL 可进化",
     "UPGRADE_DESCRIPTION": "消耗堆中的 *进化点 为5张以上则可以发动 融合 。 NL 融合 :非基础牌 NL 融合变身 为 *幽暗狩猎者·黎昂&艾尔 。 NL  NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 获得3层 *火焰屏障 。 NL 打出后解除 升级 。"
   },
   "shadowverse:TanzaniteConvictor": {
@@ -6702,7 +6698,7 @@
   },
   "shadowverse:Bayleon": {
     "NAME": "王者曙光·贝里昂",
-    "DESCRIPTION": "自然 NL 获得 !B! 点 格挡 。 NL 如果X为10以上， 升级 这张牌。 NL X为本场战斗中打出的 *那塔拉的大树 数量与 协作 数之和。",
+    "DESCRIPTION": "自然 NL 获得 !B! 点 格挡 。 NL 如果X为10以上， 升级 这张牌。 NL X为本场战斗中打出的 *那塔拉的大树 数量与 协作 数之和。 NL 可进化",
     "UPGRADE_DESCRIPTION":"自然 NL 造成 !D! 点伤害，获得 !B! 点 格挡 。 NL 获得「每回合1次，打出 *那塔拉的大树 时，增加1张 *光耀剑闪 到手中」效果。 NL 打出后解除 升级 。",
     "EXTENDED_DESCRIPTION": [
       "（X为",

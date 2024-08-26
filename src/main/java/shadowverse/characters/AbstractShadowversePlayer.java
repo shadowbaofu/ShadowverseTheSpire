@@ -14,7 +14,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
-import com.megacrit.cardcrawl.stances.AbstractStance;
 import com.megacrit.cardcrawl.stances.NeutralStance;
 import shadowverse.Shadowverse;
 import shadowverse.action.RemoveMinionAction;
@@ -25,7 +24,6 @@ import shadowverse.powers.*;
 import shadowverse.stance.Vengeance;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public abstract class AbstractShadowversePlayer extends CustomPlayer {
 
@@ -140,12 +138,10 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
     public void damage(DamageInfo info) {
         super.damage(info);
         int amt = info.output;
-        if (amt > 0) {
-            wrathLastTurn++;
-        }
         if (info.owner == this && amt >= 0) {
             wrathCount++;
             wrathThisTurn++;
+            wrathLastTurn++;
             if (wrathCount >= 7 && !this.hasPower(WrathPower.POWER_ID)) {
                 AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, (AbstractPower) new WrathPower(this)));
             }

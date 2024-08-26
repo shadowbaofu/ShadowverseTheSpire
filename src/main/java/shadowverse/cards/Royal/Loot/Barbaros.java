@@ -22,9 +22,7 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
 import shadowverse.Shadowverse;
-import shadowverse.cards.AbstractEnhanceCard;
 import shadowverse.cards.AbstractRightClickCard2;
-import shadowverse.cards.Nemesis.Condemned.Judith;
 import shadowverse.cards.Neutral.Temp.DreadPirateFlag;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
@@ -178,7 +176,7 @@ public class Barbaros
             if (card.hasTag(AbstractShadowversePlayer.Enums.GILDED))
                 hasGilded++;
         }
-        if (hasGilded>=7){
+        if (hasGilded>=7 && this.upgraded){
             addToBot(new GainEnergyAction(2));
         }
         addToBot(new MakeTempCardInHandAction(new DreadPirateFlag(),1));

@@ -6316,8 +6316,8 @@
   },
   "shadowverse:MoonAndSun": {
     "NAME": "Twofold Grace",
-    "DESCRIPTION": "Choose: Add 1 *Amaterasu, *Clearsky *Goddess or *Tsukuyomi, *Stormcloud *Deity to your hand. If either card effect is active, heal 1 HP, Gain 1 Energy and add 1 *Evolution *Point to your hand instead.",
-    "UPGRADE_DESCRIPTION": "Choose: Add 1 *Amaterasu, *Clearsky *Goddess+ or *Tsukuyomi, *Stormcloud *Deity+ to your hand. If either card effect is active, heal 1 HP, Gain 1 Energy and add 1 *Evolution *Point to your hand instead."
+    "DESCRIPTION": "Choose: Add 1 *Amaterasu, *Clearsky *Goddess or *Tsukuyomi, *Stormcloud *Deity to your hand. If either card effect is active heal 1 HP, gain 1 Energy and add 1 *Evolution *Point to your hand instead.",
+    "UPGRADE_DESCRIPTION": "Choose: Add 1 *Amaterasu, *Clearsky *Goddess+ or *Tsukuyomi, *Stormcloud *Deity+ to your hand. If either card effect is active heal 1 HP, gain 1 Energy and add 1 *Evolution *Point to your hand instead."
   },
   "shadowverse:Blackwyrm": {
     "NAME": "Grim Blackwyrm",

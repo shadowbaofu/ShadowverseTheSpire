@@ -2,22 +2,19 @@ package shadowverse.powers;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
-import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import shadowverse.characters.AbstractShadowversePlayer;
 
 public class DeepSeaScoutPower extends AbstractPower {
     public static final String POWER_ID = "shadowverse:DeepSeaScoutPower";
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings("shadowverse:DeepSeaScoutPower");
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-    private int count = 5;
+    private int num;
 
     public DeepSeaScoutPower(AbstractCreature owner, int amount) {
         this.name = NAME;
@@ -25,6 +22,7 @@ public class DeepSeaScoutPower extends AbstractPower {
         this.owner = owner;
         this.amount = amount;
         this.type = PowerType.BUFF;
+        this.num = 0;
         updateDescription();
         this.img = new Texture("img/powers/DeepSeaScoutPower.png");
     }
@@ -43,17 +41,19 @@ public class DeepSeaScoutPower extends AbstractPower {
     }
 
     @Override
-    public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (card.hasTag(AbstractShadowversePlayer.Enums.GILDED) && count > 0) {
+    public void onExhaust(AbstractCard card) {
+        if (card.cardID == "shadowverse:DreadPirateFlag") {
             flash();
             addToBot(new SFXAction("DeepSeaScoutPower"));
             addToBot(new DrawCardAction(this.amount));
-            count--;
+        } else if (card.type == AbstractCard.CardType.SKILL) {
+            num++;
+            if (num % 2 == 0) {
+                flash();
+                addToBot(new SFXAction("DeepSeaScoutPower"));
+                addToBot(new DrawCardAction(this.amount));
+                num = 0;
+            }
         }
-    }
-
-    @Override
-    public void atStartOfTurn() {
-        addToBot(new RemoveSpecificPowerAction(this.owner,this.owner,this));
     }
 }

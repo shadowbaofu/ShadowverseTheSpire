@@ -97,7 +97,7 @@ public class Gawain extends CustomCard {
         addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, dmg, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         if (upgraded){
             this.degrade();
-            if (abstractPlayer.hasRelic(KagemitsuSword.ID)) {
+            if (abstractPlayer.hasRelic(KagemitsuSword.ID) || abstractPlayer.hasPower("shadowverse:SeofonPower")) {
                 this.upgrade();
             }
         }

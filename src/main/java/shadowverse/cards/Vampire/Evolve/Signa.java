@@ -97,7 +97,7 @@ public class Signa
                 addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, 1), 1));
             }
             this.degrade();
-            if (p.hasRelic(KagemitsuSword.ID)) {
+            if (p.hasRelic(KagemitsuSword.ID) || p.hasPower("shadowverse:SeofonPower")) {
                 this.upgrade();
             }
         }

@@ -80,7 +80,7 @@ public class LevinArcher extends CustomCard {
                 }
             }
             this.degrade();
-            if(abstractPlayer.hasRelic(KagemitsuSword.ID)){
+            if(abstractPlayer.hasRelic(KagemitsuSword.ID) || abstractPlayer.hasPower("shadowverse:SeofonPower")){
                 this.upgrade();
             }
         }

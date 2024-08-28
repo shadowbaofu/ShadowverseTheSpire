@@ -5,10 +5,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.SelectCardsInHandAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
-import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -18,15 +15,13 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
-import shadowverse.Shadowverse;
 import shadowverse.cards.AbstractRightClickCard2;
 import shadowverse.cards.Neutral.Temp.DreadPirateFlag;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
-import shadowverse.powers.CutthroatPower;
+import shadowverse.powers.BarbarosPower;
 import shadowverse.relics.KagemitsuSword;
 
 public class Barbaros
@@ -40,41 +35,26 @@ public class Barbaros
     private static final Texture LEADER_SKIN_VERSION = ImageMaster.loadImage("img/cards/Barbaros_L.png");
     private static final String LEADER_SKIN_VERSION_EV = "img/cards/Barbaros_Ev_L.png";
     private boolean hasFusion = false;
-
-    public int enhanceCost;
-    public int baseCost;
-
-    public boolean exFreeOnce;
-
-    public int exCost;
-
-    public int exCostForTurn;
-
-    public int ex;
+    public boolean triggered;
 
     public Barbaros() {
-        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.ENEMY);
-        this.baseDamage = 10;
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.ENEMY);
+        this.baseDamage = 8;
         this.tags.add(AbstractShadowversePlayer.Enums.CONDEMNED);
         this.cardsToPreview = new DreadPirateFlag();
-        this.baseCost = cost;
-        this.enhanceCost = 3;
-        this.exCost = cost;
-        this.exCostForTurn = cost;
-        this.exFreeOnce = false;
-        this.ex = 0;
         this.jokePortrait = new TextureAtlas.AtlasRegion(LEADER_SKIN_VERSION, 0, 0, LEADER_SKIN_VERSION.getWidth(), LEADER_SKIN_VERSION.getHeight());
+        this.triggered = false;
     }
 
 
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(7);
+            upgradeDamage(3);
             if ((UnlockTracker.betaCardPref.getBoolean(this.cardID, false))) {
                 this.textureImg = LEADER_SKIN_VERSION_EV;
                 this.loadCardImage(LEADER_SKIN_VERSION_EV);
-            }else {
+            } else {
                 this.textureImg = IMG_PATH_EV;
                 this.loadCardImage(IMG_PATH_EV);
             }
@@ -84,68 +64,24 @@ public class Barbaros
     }
 
     @Override
-    public void update() {
-        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT) {
-            if (Shadowverse.Enhance(enhanceCost)) {
-                if (this.ex == 0) {
-                    this.exCost = this.cost;
-                    this.exCostForTurn = this.costForTurn;
-                }
-                this.ex = 1;
-                this.exFreeOnce = this.freeToPlayOnce;
-                setCostForTurn(enhanceCost);
-            } else {
-                if (this.ex > 0) {
-                    setCostForTurn(baseCost);
-                    this.cost = this.exCost;
-                    this.costForTurn = this.exCostForTurn;
-                    this.freeToPlayOnce = this.exFreeOnce;
-                }
-                this.ex = 0;
-            }
-        }
-        super.update();
-    }
-
-    public AbstractCard makeStatEquivalentCopy () {
-        Barbaros c = (Barbaros) super.makeStatEquivalentCopy();
-        c.exCost = this.exCost;
-        c.exCostForTurn = this.exCostForTurn;
-        c.exFreeOnce = this.exFreeOnce;
-        c.ex = this.ex;
-        return c;
-    }
-
-
-    public void triggerOnGlowCheck() {
-        if (Shadowverse.Enhance(enhanceCost)) {
-            this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
-        } else {
-            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
-        }
-    }
-
-    @Override
     protected void onRightClick() {
-            if (!this.hasFusion && AbstractDungeon.player!=null){
-                addToBot(new SelectCardsInHandAction(9,TEXT[0],true,true, card -> {
-                    return card.hasTag(AbstractShadowversePlayer.Enums.GILDED);
-                }, abstractCards -> {
-                    if (abstractCards.size()>0){
-                        this.upgrade();
-                        this.superFlash();
-                    }
-                    for (AbstractCard c : abstractCards){
-                        addToBot(new ExhaustSpecificCardAction(c,AbstractDungeon.player.hand));
-                    }
-                }));
-            this.hasFusion = true;
+        if (!this.hasFusion && AbstractDungeon.player != null) {
+            addToBot(new SelectCardsInHandAction(9, TEXT[0], true, true, card -> {
+                return card.hasTag(AbstractShadowversePlayer.Enums.GILDED);
+            }, abstractCards -> {
+                if (abstractCards.size() > 0) {
+                    this.hasFusion = true;
+                }
+                for (AbstractCard c : abstractCards) {
+                    addToBot(new ExhaustSpecificCardAction(c, AbstractDungeon.player.hand));
+                }
+            }));
         }
     }
 
 
     @Override
-    public void atTurnStart(){
+    public void atTurnStart() {
         hasFusion = false;
     }
 
@@ -171,35 +107,33 @@ public class Barbaros
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.effectsQueue.add(new BorderFlashEffect(Color.BLUE, true));
-        int hasGilded = 0;
-        for (AbstractCard card:p.exhaustPile.group){
-            if (card.hasTag(AbstractShadowversePlayer.Enums.GILDED))
-                hasGilded++;
-        }
-        if (hasGilded>=7 && this.upgraded){
-            addToBot(new GainEnergyAction(2));
-        }
-        addToBot(new MakeTempCardInHandAction(new DreadPirateFlag(),1));
-        if (this.costForTurn == 3) {
-            if (p.hasPower(CutthroatPower.POWER_ID)){
-                addToBot(new GainEnergyAction(2));
-            }
+        if (this.hasFusion) {
             if ((UnlockTracker.betaCardPref.getBoolean(this.cardID, false))) {
                 addToBot(new SFXAction("Barbaros_Eh_L"));
-            }else {
+            } else {
                 addToBot(new SFXAction("Barbaros_Eh"));
             }
-            addToBot(new DamageAction(m,new DamageInfo(p,this.damage*2,this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
-        }else {
+        } else {
             if ((UnlockTracker.betaCardPref.getBoolean(this.cardID, false))) {
-                addToBot(new SFXAction("Barbaros_L"));
-            }else {
-                addToBot(new SFXAction("Barbaros"));
+                addToBot(new SFXAction("Barbaros_Eh_L"));
+            } else {
+                addToBot(new SFXAction("Barbaros_Eh"));
             }
-            addToBot(new DamageAction(m,new DamageInfo(p,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+        }
+        addToBot(new DamageAction(m, new DamageInfo(p, this.damage * 2, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+        if (this.upgraded && !this.triggered) {
+            addToBot(new ApplyPowerAction(p, p, new BarbarosPower(p, 1)));
+            this.triggered = true;
+        } else {
+            addToBot(new MakeTempCardInHandAction(new DreadPirateFlag(), 1));
+            addToBot(new GainEnergyAction(1));
+        }
+        if (this.hasFusion) {
+            addToBot(new MakeTempCardInHandAction(new DreadPirateFlag(), 1));
+            addToBot(new GainEnergyAction(1));
         }
         this.degrade();
-        if(p.hasRelic(KagemitsuSword.ID)){
+        if (p.hasRelic(KagemitsuSword.ID) || p.hasPower("shadowverse:SeofonPower")) {
             this.upgrade();
         }
     }

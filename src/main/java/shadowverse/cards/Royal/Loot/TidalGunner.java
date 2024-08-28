@@ -39,8 +39,8 @@ public class TidalGunner extends CustomCard {
 
     public TidalGunner() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ENEMY);
-        this.baseDamage = 8;
-        this.baseMagicNumber = 2;
+        this.baseDamage = 6;
+        this.baseMagicNumber = 3;
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(AbstractShadowversePlayer.Enums.CONDEMNED);
     }
@@ -71,6 +71,8 @@ public class TidalGunner extends CustomCard {
             upgradeMagicNumber(1);
             textureImg = IMG_PATH_EV;
             loadCardImage(IMG_PATH_EV);
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            initializeDescription();
         }
     }
 
@@ -79,12 +81,7 @@ public class TidalGunner extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction(ID.replace("shadowverse:", "")));
         addToBot(new DamageAction(m,new DamageInfo(p,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-        int hasGilded = 0;
-        for (AbstractCard card:p.exhaustPile.group){
-            if (card.hasTag(AbstractShadowversePlayer.Enums.GILDED))
-                hasGilded++;
-        }
-        if (hasGilded>=7){
+        if (this.upgraded){
             addToBot(new MakeTempCardInHandAction(new DreadPirateFlag(),1));
         }else {
             addToBot(new MakeTempCardInHandAction(new GildedGoblet(),1));

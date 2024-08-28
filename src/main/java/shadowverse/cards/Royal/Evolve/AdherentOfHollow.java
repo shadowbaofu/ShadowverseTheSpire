@@ -80,7 +80,7 @@ public class AdherentOfHollow extends CustomCard {
         addToBot(new SFXAction(ID.replace("shadowverse:", "")));
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         this.degrade();
-        if(p.hasRelic(KagemitsuSword.ID)){
+        if(p.hasRelic(KagemitsuSword.ID) || p.hasPower("shadowverse:SeofonPower")){
             this.upgrade();
         }
     }

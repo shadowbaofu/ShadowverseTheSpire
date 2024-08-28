@@ -64,6 +64,8 @@ public class StormWrackedFirstMate extends CustomCard {
         if (!this.upgraded) {
             upgradeName();
             upgradeBlock(3);
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            initializeDescription();
         }
     }
 
@@ -72,12 +74,7 @@ public class StormWrackedFirstMate extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction(ID.replace("shadowverse:", "")));
         addToBot(new GainBlockAction(p,this.block));
-        int hasGilded = 0;
-        for (AbstractCard card:p.exhaustPile.group){
-            if (card.hasTag(AbstractShadowversePlayer.Enums.GILDED))
-                hasGilded++;
-        }
-        if (hasGilded>=7){
+        if (this.upgraded){
             addToBot(new MakeTempCardInHandAction(new DreadPirateFlag(),1));
         }else {
             addToBot(new MakeTempCardInHandAction(new GildedNecklace(),1));

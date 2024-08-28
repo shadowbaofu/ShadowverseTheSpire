@@ -80,7 +80,7 @@ public class SoaringDragonewt
             addToBot(new DiscardRandomMinimumAction(abstractPlayer, abstractPlayer, 1));
             addToBot(new DrawCardAction(1));
             this.degrade();
-            if (abstractPlayer.hasRelic(KagemitsuSword.ID)) {
+            if (abstractPlayer.hasRelic(KagemitsuSword.ID) || abstractPlayer.hasPower("shadowverse:SeofonPower")) {
                 this.upgrade();
             }
         }

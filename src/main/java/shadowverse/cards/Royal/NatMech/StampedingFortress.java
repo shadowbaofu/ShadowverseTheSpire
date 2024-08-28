@@ -89,7 +89,7 @@ public class StampedingFortress extends CustomCard {
                 this.addToTop(new MakeTempCardInHandAction(new ProductMachine(), 3));
             }
             this.degrade();
-            if(p.hasRelic(KagemitsuSword.ID)){
+            if(p.hasRelic(KagemitsuSword.ID) || p.hasPower("shadowverse:SeofonPower")){
                 this.upgrade();
             }
         }

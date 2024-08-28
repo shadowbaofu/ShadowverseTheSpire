@@ -73,7 +73,7 @@ public class FloralFencer extends CustomCard {
             AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new Knight()));
             AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new SteelcladKnight()));
             this.degrade();
-            if(abstractPlayer.hasRelic(KagemitsuSword.ID)){
+            if(abstractPlayer.hasRelic(KagemitsuSword.ID) || abstractPlayer.hasPower("shadowverse:SeofonPower")){
                 this.upgrade();
             }
         }

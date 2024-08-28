@@ -1,13 +1,11 @@
 package shadowverse.orbs;
 
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.OrbStrings;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
-import shadowverse.action.MinionAttackAction;
 
 public class ShieldGuardian  extends Minion {
 
@@ -34,7 +32,7 @@ public class ShieldGuardian  extends Minion {
 
     @Override
     public void updateDescription() { // Set the on-hover description of the orb
-        description = DESCRIPTIONS[0] + "2*" + this.attack + "=" + 2 * this.attack + DESCRIPTIONS[1];
+        description = DESCRIPTIONS[0] + "3*" + this.attack + "=" + 3 * this.attack + DESCRIPTIONS[1];
     }
 
 
@@ -47,6 +45,6 @@ public class ShieldGuardian  extends Minion {
 
     @Override
     public void effect() {
-        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, this.attack * 2));
+        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, this.attack * 3));
     }
 }

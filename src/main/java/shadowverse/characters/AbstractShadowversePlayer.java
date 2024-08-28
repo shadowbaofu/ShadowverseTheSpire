@@ -138,10 +138,12 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
     public void damage(DamageInfo info) {
         super.damage(info);
         int amt = info.output;
+        if (amt > 0) {
+            wrathLastTurn++;
+        }
         if (info.owner == this && amt >= 0) {
             wrathCount++;
             wrathThisTurn++;
-            wrathLastTurn++;
             if (wrathCount >= 7 && !this.hasPower(WrathPower.POWER_ID)) {
                 AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, (AbstractPower) new WrathPower(this)));
             }
@@ -179,6 +181,7 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
 
     public void applyStartOfCombatLogic() {
         super.applyStartOfCombatLogic();
+        wrathLastTurn = 0;
         if ((this.currentHealth <= this.maxHealth / 2.0F || this.maxHealth == 1) && !(this instanceof Nemesis)) {
             AbstractDungeon.actionManager.addToBottom(new ChangeStanceAction(new Vengeance()));
         }
@@ -229,7 +232,7 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
         } else {
             tmpPool.addAll(pool.get(0).group);
             for (presize = 0; presize < allGroupNumber; ++presize) {
-                if (Shadowverse.groupActive.length>presize && Shadowverse.groupActive[presize]) {
+                if (Shadowverse.groupActive.length > presize && Shadowverse.groupActive[presize]) {
                     tmpPool.addAll(pool.get(presize).group);
                 }
             }

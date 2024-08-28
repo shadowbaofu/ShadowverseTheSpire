@@ -334,7 +334,7 @@
     "NAME": "征兵令",
     "FLAVOR": "我不求质，我只求量。",
     "DESCRIPTIONS": [
-      "回合开始时，若你没有随从，召唤一个 #y骑士 。"
+      "回合开始时，召唤一个 #y骑士 。"
     ]
   },
   "shadowverse:Spineblade": {

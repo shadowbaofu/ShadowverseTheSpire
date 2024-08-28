@@ -28,7 +28,7 @@ public class FlyingMessengerSquirrel extends CustomCard {
     public FlyingMessengerSquirrel() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ENEMY);
         this.baseMagicNumber = this.magicNumber = 1;
-        this.baseDamage = 9;
+        this.baseDamage = 8;
     }
 
 
@@ -46,7 +46,7 @@ public class FlyingMessengerSquirrel extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction(ID.replace("shadowverse:", "")));
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        addToBot(new DrawCardAction(p, this.magicNumber));
+        addToBot(new DrawCardAction(p, 1));
         if (rally() >= 10) {
             addToBot(new DrawCardAction(p, this.magicNumber));
         }

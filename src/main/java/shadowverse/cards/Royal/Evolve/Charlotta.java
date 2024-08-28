@@ -75,7 +75,7 @@ public class Charlotta extends CustomCard {
             addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, this.magicNumber), this.magicNumber));
             addToBot(new ApplyPowerAction(p, p, (AbstractPower) new DisableEffectDamagePower(p, 1), 1));
             this.degrade();
-            if(p.hasRelic(KagemitsuSword.ID)){
+            if(p.hasRelic(KagemitsuSword.ID) || p.hasPower("shadowverse:SeofonPower")){
                 this.upgrade();
             }
         }

@@ -3,12 +3,10 @@ package shadowverse.relics;
 import basemod.abstracts.CustomRelic;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
-import com.megacrit.cardcrawl.orbs.EmptyOrbSlot;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import shadowverse.action.MinionSummonAction;
 import shadowverse.orbs.AmbushMinion;
@@ -33,10 +31,7 @@ public class Conscription extends CustomRelic {
     @Override
     public void atTurnStart() {
         flash();
-        AbstractPlayer p = AbstractDungeon.player;
-        if (p.orbs.get(0) instanceof EmptyOrbSlot) {
-            AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new Knight()));
-        }
+        AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new Knight()));
     }
 
     @Override

@@ -66,7 +66,7 @@ public class VerdantLieutenant extends CustomCard {
         addToBot(new DamageAction(m,new DamageInfo(p,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
         if (this.upgraded){
             this.degrade();
-            if(p.hasRelic(KagemitsuSword.ID)){
+            if(p.hasRelic(KagemitsuSword.ID) || p.hasPower("shadowverse:SeofonPower")){
                 this.upgrade();
             }
         }

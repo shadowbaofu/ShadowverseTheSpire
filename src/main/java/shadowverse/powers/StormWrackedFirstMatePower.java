@@ -1,17 +1,15 @@
 package shadowverse.powers;
 
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
-import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import shadowverse.action.MinionSummonAction;
-import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.orbs.Cannoneer;
 
 public class StormWrackedFirstMatePower extends AbstractPower {
@@ -19,7 +17,7 @@ public class StormWrackedFirstMatePower extends AbstractPower {
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings("shadowverse:StormWrackedFirstMatePower");
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-    private int count = 5;
+    private int num;
 
     public StormWrackedFirstMatePower(AbstractCreature owner, int amount) {
         this.name = NAME;
@@ -27,6 +25,7 @@ public class StormWrackedFirstMatePower extends AbstractPower {
         this.owner = owner;
         this.amount = amount;
         this.type = PowerType.BUFF;
+        this.num = 0;
         updateDescription();
         this.img = new Texture("img/powers/StormWrackedFirstMatePower.png");
     }
@@ -45,19 +44,28 @@ public class StormWrackedFirstMatePower extends AbstractPower {
     }
 
     @Override
-    public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (card.hasTag(AbstractShadowversePlayer.Enums.GILDED) && count > 0) {
+    public void onExhaust(AbstractCard card) {
+        AbstractPlayer p = AbstractDungeon.player;
+        if (card.cardID == "shadowverse:DreadPirateFlag") {
             flash();
             addToBot(new SFXAction("StormWrackedFirstMatePower"));
-            for (int i=0;i<this.amount;i++){
-                addToBot(new MinionSummonAction(new Cannoneer()));
+            for (int i = 0; i < this.amount; i++) {
+                if (p.hasEmptyOrb()) {
+                    addToBot(new MinionSummonAction(new Cannoneer()));
+                }
             }
-            count--;
+        } else if (card.type == AbstractCard.CardType.SKILL) {
+            num++;
+            if (num % 2 == 0) {
+                flash();
+                addToBot(new SFXAction("StormWrackedFirstMatePower"));
+                for (int i = 0; i < this.amount; i++) {
+                    if (p.hasEmptyOrb()) {
+                        addToBot(new MinionSummonAction(new Cannoneer()));
+                    }
+                }
+                num = 0;
+            }
         }
-    }
-
-    @Override
-    public void atStartOfTurn() {
-        addToBot(new RemoveSpecificPowerAction(this.owner,this.owner,this));
     }
 }

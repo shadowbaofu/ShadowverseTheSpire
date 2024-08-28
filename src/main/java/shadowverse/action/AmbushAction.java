@@ -38,9 +38,9 @@ public class AmbushAction extends AbstractGameAction {
             if (AbstractDungeon.cardRewardScreen.discoveryCard != null) {
                 AbstractCard disCard = AbstractDungeon.cardRewardScreen.discoveryCard;
                 if (disCard instanceof Ambush){
-                    AbstractDungeon.actionManager.addToBottom(new MinionBuffAction(1, 0, (Minion) orb));
+                    AbstractDungeon.actionManager.addToBottom(new MinionBuffAction(1, 1, (Minion) orb));
                     if (p.hasPower(DualbladePower.POWER_ID)){
-                        AbstractDungeon.actionManager.addToBottom(new MinionBuffAction(1, 0, (Minion) orb));;
+                        AbstractDungeon.actionManager.addToBottom(new MinionBuffAction(1, 1, (Minion) orb));;
                     }
                 }else {
                     orb.ambush = false;

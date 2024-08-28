@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.IntangiblePlayerPower;
 import shadowverse.characters.Royal;
+import shadowverse.powers.SeofonPower;
 
 public class Seofon extends CustomCard {
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:Seofon");
@@ -77,8 +78,9 @@ public class Seofon extends CustomCard {
         }
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         addToBot(new DrawCardAction(p, 1));
+        this.addToBot(new ApotheosisAction());
         if (this.magicNumber <= 3) {
-            this.addToBot(new ApotheosisAction());
+            this.addToBot(new ApplyPowerAction(p, p, new SeofonPower(p), 1));
         }
         if (!this.triggered && this.magicNumber <= 0) {
             this.triggered = true;

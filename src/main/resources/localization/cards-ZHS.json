@@ -2673,7 +2673,7 @@
   },
   "shadowverse:Sera": {
     "NAME": "曙光少女·赛拉",
-    "DESCRIPTION": "获得 !B! 点 格挡 。获得1层 人工制品 。 NL 消耗 。",
+    "DESCRIPTION": "获得 !B! 点 格挡 。获得1层 人工制品 。 NL 可进化 NL 消耗 。",
     "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。获得1层 人工制品 。 NL 召唤3个 战盾卫士 ，回复 !M! 点生命。 NL 消耗 。"
   },
   "shadowverse:MistolinaBayleon": {
@@ -2747,7 +2747,7 @@
   },
   "shadowverse:PrudentGeneral": {
     "NAME": "静寂的元帅",
-    "DESCRIPTION": "虚无",
+    "DESCRIPTION": "虚无 NL 可进化 ",
     "UPGRADE_DESCRIPTION": "回合结束时，召唤 !M! 个 铁甲骑士 。"
   },
   "shadowverse:DualbladeKnight": {
@@ -2856,10 +2856,10 @@
   },
   "shadowverse:Seofon": {
     "NAME": "天星剑王·席耶提",
-    "DESCRIPTION": "升级 时降低奥义数。 NL 造成 !D! 点伤害，抽1张牌。 NL 奥义 3 : 升级 所有卡牌。 NL 限定 解放奥义 6 :获得1层 无实体 。",
+    "DESCRIPTION": "升级 时降低奥义数。 NL 造成 !D! 点伤害，抽1张牌， 升级 所有卡牌。 NL 奥义 3 :所有 打出后解除升级 的卡牌在打出后自动 升级 。 NL 限定 解放奥义 6 :获得1层 无实体 。",
     "EXTENDED_DESCRIPTION": [
-      "造成 !D! 点伤害，抽1张牌。 NL 奥义 ",
-      ": 升级 所有卡牌。 NL 限定 解放奥义 ",
+      "造成 !D! 点伤害，抽1张牌， 升级 所有卡牌。 NL 奥义 ",
+      ":所有 打出后解除升级 的卡牌在打出后自动 升级 。 NL 限定 解放奥义 ",
       ":获得1层 无实体 。"
     ]
   },
@@ -3683,7 +3683,7 @@
   },
   "shadowverse:Ambush": {
     "NAME": "潜伏",
-    "DESCRIPTION": "回合结束时不触发被动效果，获得+1/+0。"
+    "DESCRIPTION": "回合结束时不触发被动效果，获得+1/+1。"
   },
   "shadowverse:AmbushAttack": {
     "NAME": "攻击",
@@ -3801,7 +3801,7 @@
   },
   "shadowverse:UltimateHollow": {
     "NAME": "极意的空绝",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 劫掠 4 ：伤害翻倍并获得 !B! 点 格挡 。 NL 这张牌视为 财宝牌 。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 若消耗堆中的 财宝牌 数量大于4张，伤害翻倍并获得 !B! 点 格挡 。 NL 这张牌视为 财宝牌 。"
   },
   "shadowverse:LoathingDesire": {
     "NAME": "憎恶的爱绝",
@@ -3837,11 +3837,7 @@
   },
   "shadowverse:LightOfHollow": {
     "NAME": "空绝的残光",
-    "DESCRIPTION": "保留 · 融合 : 财宝牌 。 NL 融合 后抽1张牌。 NL 轮流对敌方造成 !D! 点伤害。 NL 如果 融合 张数 为4以上，则伤害翻倍。 NL 这张牌视为 财宝牌 。",
-    "EXTENDED_DESCRIPTION": [
-      " NL (当前已 融合 财宝牌 为",
-      "张)"
-    ]
+    "DESCRIPTION": "保留 · 融合 : 财宝牌 。 融合 后抽1张牌。 NL 依据消耗堆中的： *黄金首饰 ： 获得1点 力量 ， *黄金之靴 ： 获得1点 敏捷 ， NL *黄金之杯 ： 回复 !M! 点生命 ， *黄金短剑 ： 造成 !D! 点伤害 。 NL 这张牌视为 财宝牌 。"
   },
   "shadowverse:WingsOfDesire": {
     "NAME": "爱绝的飞翔",
@@ -4649,24 +4645,27 @@
   },
   "shadowverse:DreadPirateFlag": {
     "NAME": "战栗的海贼旗",
-    "DESCRIPTION": "对随机敌人造成 !D! 点伤害。 NL 这张牌视为 财宝牌 。 NL 消耗 。"
+    "DESCRIPTION": "对随机敌人造成 !D! 点伤害两次。 NL 这张牌视为 财宝牌 。 NL 消耗 。"
   },
   "shadowverse:TidalGunner": {
     "NAME": "海潮炮手",
-    "DESCRIPTION": "八狱 NL 造成 !D! 点伤害。 NL 增加1张 *黄金之杯 到手中。 NL 劫夺 7：改为 *战栗的海贼旗 。 NL 本回合内，每打出1张 财宝牌 ，对随机敌人造成 !M! 点伤害。"
+    "DESCRIPTION": "八狱 NL 造成 !D! 点伤害。 NL 增加1张 *黄金之杯 到手中。 NL 每消耗一张 *战栗的海贼旗 或两张技能牌 ，对随机敌人造成 !M! 点伤害。",
+    "UPGRADE_DESCRIPTION": "八狱 NL 造成 !D! 点伤害。 NL 增加1张 *战栗的海贼旗 到手中。 NL 每消耗一张 *战栗的海贼旗 或两张技能牌 ，对随机敌人造成 !M! 点伤害。"
   },
   "shadowverse:DeepSeaScout": {
     "NAME": "大洋斥候",
-    "DESCRIPTION": "八狱 NL 造成 !D! 点伤害。 NL 增加1张 *黄金之靴 到手中。 NL 劫夺 7：改为 *战栗的海贼旗。 NL 本回合内，每打出1张 财宝牌 ，抽1张牌(上限为5次)。"
+    "DESCRIPTION": "八狱 NL 增加1张 *黄金之靴 到手中。 NL 限定 每消耗一张 *战栗的海贼旗 或两张技能牌 ，抽1张牌。",
+    "UPGRADE_DESCRIPTION": "八狱 NL 增加1张 *战栗的海贼旗 到手中。 NL 限定 每消耗一张 *战栗的海贼旗 或两张技能牌 ，抽1张牌。"
   },
   "shadowverse:StormWrackedFirstMate": {
     "NAME": "怒涛副船长",
-    "DESCRIPTION": "八狱 NL 获得 !B! 点 格挡 。 NL 增加1张 *黄金首饰 到手中。 NL 劫夺 7：改为 *战栗的海贼旗。 NL 本回合内，每打出1张 财宝牌 ，召唤1个 加农炮水手 (上限为5次)。"
+    "DESCRIPTION": "八狱 NL 获得 !B! 点 格挡 。 NL 增加1张 *黄金首饰 到手中。 NL 限定 每消耗一张 *战栗的海贼旗 或两张技能牌 ，若有随从空位，召唤1个 加农炮水手 。",
+    "UPGRADE_DESCRIPTION": "八狱 NL 获得 !B! 点 格挡 。 NL 增加1张 *战栗的海贼旗 到手中。 NL 限定 每消耗一张 *战栗的海贼旗 或两张技能牌 ，若有随从空位，召唤1个 加农炮水手 。"
   },
   "shadowverse:Barbaros": {
     "NAME": "出航的罪人·芭芭萝丝",
-    "DESCRIPTION": "八狱 · 融合 : 财宝牌 。 NL 融合 时， 升级 这张牌。 NL 造成 !D! 点伤害。 NL 增加1张 *战栗的海贼旗 到手中。 NL 爆能强化 3 :伤害翻倍。 NL 可进化",
-    "UPGRADE_DESCRIPTION":"八狱 · 融合 : 财宝牌 。 NL 造成 !D! 点伤害。 NL 增加1张 *战栗的海贼旗 到手中。 NL 劫夺 7：获得 [E] [E] 。 NL 爆能强化 3 :伤害翻倍。 NL 打出后解除 升级 。"
+    "DESCRIPTION": "八狱 · 融合 : 财宝牌 。  NL 造成 !D! 点伤害。 增加1张 *战栗的海贼旗 到手中，获得 [E] 。 NL 如果已 融合 ，增加1张 *战栗的海贼旗 到手中，获得 [E]  NL 可进化",
+    "UPGRADE_DESCRIPTION":"八狱 · 融合 : 财宝牌 。 NL 限定 每当你消耗其他技能牌时， 增加1张 *战栗的海贼旗 到手中。 NL 如果已 融合 ，增加1张 *战栗的海贼旗 到手中，获得 [E] NL 打出后解除 升级 。"
   },
   "shadowverse:Radiel": {
     "NAME": "武皇执行者·雷帝尔",
@@ -5030,7 +5029,8 @@
   },
   "shadowverse:Weiss": {
     "NAME": "选别的教员·韦斯",
-    "DESCRIPTION": "学园 NL 本回合内你不会受到敌人施加的负面效果影响。 NL 本回合内敌人不会受到正面效果影响。"
+    "DESCRIPTION": "学园 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "学园 NL 本回合内你不会受到敌人施加的负面效果影响。 NL 本回合内敌人不会受到正面效果影响。"
   },
   "shadowverse:BishopPool": {
     "NAME": "",

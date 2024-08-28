@@ -2,13 +2,10 @@ package shadowverse.cards.Royal.Loot;
 
 import basemod.abstracts.CustomCard;
 import com.badlogic.gdx.Gdx;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -39,7 +36,6 @@ public class DeepSeaScout extends CustomCard {
 
     public DeepSeaScout() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ENEMY);
-        this.baseDamage = 6;
         this.tags.add(AbstractShadowversePlayer.Enums.CONDEMNED);
     }
 
@@ -65,7 +61,8 @@ public class DeepSeaScout extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(2);
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            initializeDescription();
         }
     }
 
@@ -73,13 +70,7 @@ public class DeepSeaScout extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction(ID.replace("shadowverse:", "")));
-        addToBot(new DamageAction(m,new DamageInfo(p,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-        int hasGilded = 0;
-        for (AbstractCard card:p.exhaustPile.group){
-            if (card.hasTag(AbstractShadowversePlayer.Enums.GILDED))
-                hasGilded++;
-        }
-        if (hasGilded>=7){
+        if (this.upgraded){
             addToBot(new MakeTempCardInHandAction(new DreadPirateFlag(),1));
         }else {
             addToBot(new MakeTempCardInHandAction(new GildedBoots(),1));

@@ -120,7 +120,7 @@ public class Ernesta extends CustomCard {
         }
         if (this.upgraded) {
             this.degrade();
-            if(p.hasRelic(KagemitsuSword.ID)){
+            if(p.hasRelic(KagemitsuSword.ID) || p.hasPower("shadowverse:SeofonPower")){
                 this.upgrade();
             }
         }

@@ -82,7 +82,7 @@ public class Ilmisuna extends CustomCard {
                 }
             }
             this.degrade();
-            if (p.hasRelic(KagemitsuSword.ID)) {
+            if (p.hasRelic(KagemitsuSword.ID) || p.hasPower("shadowverse:SeofonPower")) {
                 this.upgrade();
             }
         }

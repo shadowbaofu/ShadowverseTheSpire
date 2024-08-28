@@ -62,7 +62,7 @@ public class DancingMiniSoulDevil
         addToBot(new GainBlockAction(p, this.block));
         if (this.upgraded) {
             this.degrade();
-            if (p.hasRelic(KagemitsuSword.ID)) {
+            if (p.hasRelic(KagemitsuSword.ID) || p.hasPower("shadowverse:SeofonPower")) {
                 this.upgrade();
             }
         }

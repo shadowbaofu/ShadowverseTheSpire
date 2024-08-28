@@ -67,7 +67,7 @@ public class WarriorWing extends CustomCard {
         if (this.upgraded) {
             AbstractDungeon.actionManager.addToBottom(new MinionBuffAction(0, 1, true));
             this.degrade();
-            if(abstractPlayer.hasRelic(KagemitsuSword.ID)){
+            if(abstractPlayer.hasRelic(KagemitsuSword.ID) || abstractPlayer.hasPower("shadowverse:SeofonPower")){
                 this.upgrade();
             }
         }

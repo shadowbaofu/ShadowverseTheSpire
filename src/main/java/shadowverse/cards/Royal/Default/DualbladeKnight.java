@@ -100,7 +100,7 @@ public class DualbladeKnight extends CustomCard {
         this.addToTop(new GainEnergyAction(this.magicNumber));
         addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         this.degrade();
-        if(abstractPlayer.hasRelic(KagemitsuSword.ID)){
+        if(abstractPlayer.hasRelic(KagemitsuSword.ID) || abstractPlayer.hasPower("shadowverse:SeofonPower")){
             this.upgrade();
         }
     }

@@ -45,7 +45,7 @@ public class WardenOfHonor
         addToBot(new GainBlockAction(abstractPlayer, this.block));
         addToBot(new GainBlockAction(abstractPlayer, this.block));
         AbstractCard copy = this.makeCopy();
-        if (abstractPlayer.hasRelic(KagemitsuSword.ID)) {
+        if (abstractPlayer.hasRelic(KagemitsuSword.ID) || abstractPlayer.hasPower("shadowverse:SeofonPower")) {
             copy.upgrade();
         }
         addToBot(new MakeTempCardInDiscardAction(copy, 1));

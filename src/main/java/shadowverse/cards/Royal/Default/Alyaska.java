@@ -77,7 +77,7 @@ public class Alyaska extends CustomCard {
             AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
             addToBot(new MakeTempCardInHandAction(c, 1));
             this.degrade();
-            if(abstractPlayer.hasRelic(KagemitsuSword.ID)){
+            if(abstractPlayer.hasRelic(KagemitsuSword.ID) || abstractPlayer.hasPower("shadowverse:SeofonPower")){
                 this.upgrade();
             }
         }

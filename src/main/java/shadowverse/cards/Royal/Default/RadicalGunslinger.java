@@ -77,7 +77,7 @@ public class RadicalGunslinger extends CustomCard {
             AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
             addToBot(new MakeTempCardInHandAction(c, 1));
             this.degrade();
-            if(p.hasRelic(KagemitsuSword.ID)){
+            if(p.hasRelic(KagemitsuSword.ID) || p.hasPower("shadowverse:SeofonPower")){
                 this.upgrade();
             }
         }

@@ -28,7 +28,7 @@ public class DreadPirateFlag extends CustomCard {
 
     public DreadPirateFlag() {
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.SPECIAL, CardTarget.ALL_ENEMY);
-        this.baseDamage = 12;
+        this.baseDamage = 6;
         this.exhaust = true;
         this.tags.add(AbstractShadowversePlayer.Enums.GILDED);
     }
@@ -38,7 +38,7 @@ public class DreadPirateFlag extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(4);
+            upgradeDamage(3);
         }
     }
 
@@ -46,6 +46,11 @@ public class DreadPirateFlag extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
         AbstractCreature m = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
+        if (m != null){
+            addToBot(new VFXAction(new ThrowDaggerEffect(m.hb.cX, m.hb.cY),0.3F));
+            addToBot(new DamageAction(m,new DamageInfo(p,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
+        }
+        m = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
         if (m != null){
             addToBot(new VFXAction(new ThrowDaggerEffect(m.hb.cX, m.hb.cY),0.3F));
             addToBot(new DamageAction(m,new DamageInfo(p,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));

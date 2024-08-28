@@ -496,5 +496,18 @@
     ],
       "DESCRIPTION": "At the end of your turn, if you've played a card that costs 2 or less, deal 10 damage to a random enemy. NL If you've played a card that costs 2 or more, deal 18 damage to ALL enemies."
     }
+  },
+    {
+      "NAMES": [
+        "Usurpation"
+      ],
+      "DESCRIPTION": "Additional effects are triggered when there are at least that many Loot cards in the Exhaust pile."
+    },
+    {
+      "NAMES": [
+        "Evolve"
+      ],
+      "DESCRIPTION": "Gains additional effects when upgraded, or upgrades itself under certain conditions. The upgraded card reverts back after being played in combat." 
+    }
   ]
 }

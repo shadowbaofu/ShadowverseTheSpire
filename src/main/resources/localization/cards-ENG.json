@@ -1733,7 +1733,7 @@
   },
   "shadowverse:SexyVampire": {
     "NAME": "Seductress Vampire",
-    "DESCRIPTION": "Whenever you draw this card and Vengeance is not active, set your HP to half your max HP and Exhaust this card. You cannot have more than half your max HP this combat. At the end of combat, heal HP equal to the amount lost by this card. NL Deal !D! damage and heal !M! HP."
+    "DESCRIPTION": "Whenever you draw this card and Vengeance is not active, set your HP to half your max HP and Exhaust it. You cannot have more than half your max HP this combat. At the end of combat, heal HP equal to the amount lost by this card. NL Deal !D! damage and heal !M! HP."
   },
   "shadowverse:SadisticDemon": {
     "NAME": "Contemptuous Demon",

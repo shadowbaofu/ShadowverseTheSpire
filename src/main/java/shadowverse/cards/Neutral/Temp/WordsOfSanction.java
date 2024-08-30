@@ -51,10 +51,10 @@ public class WordsOfSanction
         addToBot(new SFXAction("WordsOfSanction"));
         for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
             if (mo != null && !mo.isDeadOrEscaped()) {
-                if (abstractMonster.hasPower("Artifact")) {
-                    addToBot(new RemoveSpecificPowerAction(abstractMonster, abstractPlayer, "Artifact"));
+                if (mo.hasPower("Artifact")) {
+                    addToBot(new RemoveSpecificPowerAction(mo, abstractPlayer, "Artifact"));
                 } else {
-                    for (AbstractPower pow : abstractMonster.powers) {
+                    for (AbstractPower pow : mo.powers) {
                         if (pow.type == AbstractPower.PowerType.BUFF && pow.ID != "Invincible" && pow.ID != "Mode Shift" && pow.ID != "Split" && pow.ID != "Unawakened" && pow.ID != "Life Link" && pow.ID != "Fading" && pow.ID != "Stasis" && pow.ID != "Minion" && pow.ID != "Shifting" && pow.ID != "shadowverse:chushouHealPower") {
                             addToBot(new RemoveSpecificPowerAction(pow.owner, abstractPlayer, pow.ID));
                         }

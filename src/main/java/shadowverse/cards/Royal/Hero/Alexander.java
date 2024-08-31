@@ -42,6 +42,15 @@ public class Alexander extends CustomCard {
         }
     }
 
+    @Override
+    public void triggerOnGlowCheck() {
+        if (inDanger()) {
+            this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
+        } else {
+            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+        }
+    }
+
     public boolean inDanger() {
         AbstractPlayer p = AbstractDungeon.player;
         if (p.currentHealth <= p.maxHealth / 4) {

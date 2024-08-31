@@ -39,6 +39,7 @@ public class Octrice extends CustomCard implements BranchableUpgradeCard {
     private float rotationTimer;
     private int previewIndex;
     private int previewBranch;
+    private boolean trigggered;
 
     public static ArrayList<AbstractCard> returnProphecy() {
         ArrayList<AbstractCard> list = new ArrayList<>();
@@ -62,9 +63,9 @@ public class Octrice extends CustomCard implements BranchableUpgradeCard {
     public Octrice() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.ENEMY);
         this.tags.add(CardTags.HEALING);
-        this.baseMagicNumber = 10;
+        this.baseMagicNumber = 15;
         this.magicNumber = this.baseMagicNumber;
-        this.exhaust = true;
+        this.trigggered = false;
     }
 
     @Override
@@ -111,8 +112,8 @@ public class Octrice extends CustomCard implements BranchableUpgradeCard {
 
     @Override
     public void triggerWhenDrawn() {
-        if (chosenBranch()==1){
-            if (rally()>7){
+        if (chosenBranch() == 1) {
+            if (rally() > 7) {
                 addToBot(new MakeTempCardInHandAction(new EvolutionPoint()));
             }
         }
@@ -142,80 +143,100 @@ public class Octrice extends CustomCard implements BranchableUpgradeCard {
                 } else {
                     addToBot(new SFXAction(ID.replace("shadowverse:", "")));
                 }
-                addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, 2), 2));
-                addToBot(new ApplyPowerAction(m, p, new StrengthPower(m, -2), -2));
-                AbstractDungeon.effectList.add(new RainingGoldEffect(this.magicNumber));
-                AbstractDungeon.player.gainGold(this.magicNumber);
-                if (this.upgraded) {
+                if (!this.trigggered) {
+                    if (this.upgraded) {
+                        addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, 4), 4));
+                        addToBot(new ApplyPowerAction(m, p, new StrengthPower(m, -4), -4));
+                    } else {
+                        addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, 2), 2));
+                        addToBot(new ApplyPowerAction(m, p, new StrengthPower(m, -2), -2));
+                    }
+                    AbstractDungeon.effectList.add(new RainingGoldEffect(this.magicNumber));
+                    AbstractDungeon.player.gainGold(this.magicNumber);
+                    this.trigggered = true;
+                }
+                if (!this.upgraded) {
                     int r1 = AbstractDungeon.cardRandomRng.random(3);
                     int r2 = AbstractDungeon.cardRandomRng.random(2);
                     AbstractCard c1 = returnProphecy().get(r1);
                     AbstractCard c2 = returnProphecy().get((r1 + r2 + 1) % 4);
                     addToBot(new MakeTempCardInHandAction(c1));
                     addToBot(new MakeTempCardInHandAction(c2));
+                } else {
+                    for (int i = p.hand.size(); i < 10; i++) {
+                        int r = AbstractDungeon.cardRandomRng.random(3);
+                        AbstractCard c = returnProphecy().get(r);
+                        addToBot(new MakeTempCardInHandAction(c));
+                    }
                 }
                 break;
             case 1:
                 addToBot(new SFXAction("Octrice2"));
-                AbstractDungeon.effectList.add(new RainingGoldEffect(this.magicNumber));
-                AbstractDungeon.player.gainGold(this.magicNumber);
+                if (!this.trigggered) {
+                    AbstractDungeon.effectList.add(new RainingGoldEffect(this.magicNumber));
+                    AbstractDungeon.player.gainGold(this.magicNumber);
+                    List<AbstractPower> powers = new ArrayList<>();
+                    for (AbstractPower pow : m.powers) {
+                        if (pow.type == AbstractPower.PowerType.BUFF && pow.ID != "Invincible" && pow.ID != "Mode Shift" && pow.ID != "Split" && pow.ID != "Unawakened" && pow.ID != "Life Link" && pow.ID != "Fading" && pow.ID != "Stasis" && pow.ID != "Minion" && pow.ID != "Shifting" && pow.ID != "shadowverse:chushouHealPower" && !(pow instanceof BeatOfDeathPower)) {
+                            powers.add(pow);
+                        }
+                    }
+                    if (powers.size() > 0) {
+                        Collections.shuffle(powers);
+                        AbstractPower po = powers.get(0);
+                        if (po instanceof StrengthPower) {
+                            addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, po.amount), po.amount));
+                        } else if (po instanceof DexterityPower) {
+                            addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, po.amount), po.amount));
+                        } else if (po instanceof RitualPower) {
+                            addToBot(new ApplyPowerAction(p, p, new RitualPower(p, po.amount, true), po.amount));
+                        } else if (po instanceof PlatedArmorPower) {
+                            addToBot(new ApplyPowerAction(p, p, new PlatedArmorPower(p, po.amount), po.amount));
+                        } else if (po instanceof MetallicizePower) {
+                            addToBot(new ApplyPowerAction(p, p, new MetallicizePower(p, po.amount), po.amount));
+                        } else if (po instanceof RegenerateMonsterPower) {
+                            addToBot(new ApplyPowerAction(p, p, new RegenPower(p, po.amount), po.amount));
+                        } else if (po instanceof CuriosityPower) {
+                            addToBot(new ApplyPowerAction(p, p, new CuriosityPower(p, po.amount), po.amount));
+                        } else if (po instanceof TimeWarpPower) {
+                            addToBot(new ApplyPowerAction(p, p, new TimeWarpPower(p)));
+                        } else if (po instanceof AngerPower) {
+                            addToBot(new ApplyPowerAction(p, p, new AngerPower(p, po.amount), po.amount));
+                        } else if (po instanceof FlightPower) {
+                            addToBot(new ApplyPowerAction(p, p, new FlightPower(p, po.amount), po.amount));
+                        } else if (po instanceof MalleablePower) {
+                            addToBot(new ApplyPowerAction(p, p, new MalleablePower(p, po.amount), po.amount));
+                        } else if (po instanceof BarricadePower) {
+                            addToBot(new ApplyPowerAction(p, p, new BarricadePower(p)));
+                        } else if (po instanceof BufferPower) {
+                            addToBot(new ApplyPowerAction(p, p, new BufferPower(p, po.amount), po.amount));
+                            //}else if (po instanceof EnemyFlameBarrierPower){
+                            //addToBot(new ApplyPowerAction(p, p, new FlameBarrierPower(p,po.amount),po.amount));
+                        } else if (po instanceof ThornsPower) {
+                            addToBot(new ApplyPowerAction(p, p, new ThornsPower(p, po.amount), po.amount));
+                        } else if (po instanceof ArtifactPower) {
+                            addToBot(new ApplyPowerAction(p, p, new ArtifactPower(p, po.amount), po.amount));
+                        } else if (po instanceof GenericStrengthUpPower) {
+                            addToBot(new ApplyPowerAction(p, p, new GenericStrengthUpPower(p, "", po.amount), po.amount));
+                            //}else if (po instanceof CurseOfGeass){
+                            //addToBot(new ApplyPowerAction(p, p, new CurseOfGeass(p)));
+                            //}else if (po instanceof BetterFlightPower){
+                            //addToBot(new ApplyPowerAction(p, p, new BetterFlightPower(p,po.amount),po.amount));
+                        } else if (po instanceof IntangiblePower) {
+                            addToBot(new ApplyPowerAction(p, p, new IntangiblePlayerPower(p, po.amount), po.amount));
+                        } else {
+                            addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, 2), 2));
+                        }
+                    }
+                    this.trigggered = true;
+                }
                 addToBot(new MakeTempCardInHandAction(new LightOfHollow()));
-                List<AbstractPower> powers = new ArrayList<>();
-                for (AbstractPower pow : m.powers) {
-                    if (pow.type == AbstractPower.PowerType.BUFF && pow.ID != "Invincible" && pow.ID != "Mode Shift" && pow.ID != "Split" && pow.ID != "Unawakened" && pow.ID != "Life Link" && pow.ID != "Fading" && pow.ID != "Stasis" && pow.ID != "Minion" && pow.ID != "Shifting" && pow.ID != "shadowverse:chushouHealPower" && !(pow instanceof BeatOfDeathPower)) {
-                        powers.add(pow);
-                    }
-                }
-                if (powers.size()>0){
-                    Collections.shuffle(powers);
-                    AbstractPower po = powers.get(0);
-                    if (po instanceof StrengthPower){
-                        addToBot(new ApplyPowerAction(p, p, new StrengthPower(p,po.amount),po.amount));
-                    }else if (po instanceof DexterityPower){
-                        addToBot(new ApplyPowerAction(p, p, new DexterityPower(p,po.amount),po.amount));
-                    }else if (po instanceof RitualPower){
-                        addToBot(new ApplyPowerAction(p, p, new RitualPower(p,po.amount,true),po.amount));
-                    }else if (po instanceof PlatedArmorPower){
-                        addToBot(new ApplyPowerAction(p, p, new PlatedArmorPower(p,po.amount),po.amount));
-                    }else if (po instanceof MetallicizePower){
-                        addToBot(new ApplyPowerAction(p, p, new MetallicizePower(p,po.amount),po.amount));
-                    }else if (po instanceof RegenerateMonsterPower){
-                        addToBot(new ApplyPowerAction(p, p, new RegenPower(p,po.amount),po.amount));
-                    }else if (po instanceof CuriosityPower){
-                        addToBot(new ApplyPowerAction(p, p, new CuriosityPower(p,po.amount),po.amount));
-                    }else if (po instanceof TimeWarpPower){
-                        addToBot(new ApplyPowerAction(p, p, new TimeWarpPower(p)));
-                    }else if (po instanceof AngerPower){
-                        addToBot(new ApplyPowerAction(p, p, new AngerPower(p,po.amount),po.amount));
-                    }else if (po instanceof FlightPower){
-                        addToBot(new ApplyPowerAction(p, p, new FlightPower(p,po.amount),po.amount));
-                    }else if (po instanceof MalleablePower){
-                        addToBot(new ApplyPowerAction(p, p, new MalleablePower(p,po.amount),po.amount));
-                    }else if (po instanceof BarricadePower){
-                        addToBot(new ApplyPowerAction(p, p, new BarricadePower(p)));
-                    }else if (po instanceof BufferPower){
-                        addToBot(new ApplyPowerAction(p, p, new BufferPower(p,po.amount),po.amount));
-                    //}else if (po instanceof EnemyFlameBarrierPower){
-                        //addToBot(new ApplyPowerAction(p, p, new FlameBarrierPower(p,po.amount),po.amount));
-                    }else if (po instanceof ThornsPower){
-                        addToBot(new ApplyPowerAction(p, p, new ThornsPower(p,po.amount),po.amount));
-                    }else if (po instanceof ArtifactPower){
-                        addToBot(new ApplyPowerAction(p, p, new ArtifactPower(p,po.amount),po.amount));
-                    }else if (po instanceof GenericStrengthUpPower){
-                        addToBot(new ApplyPowerAction(p, p, new GenericStrengthUpPower(p,"",po.amount),po.amount));
-                    //}else if (po instanceof CurseOfGeass){
-                        //addToBot(new ApplyPowerAction(p, p, new CurseOfGeass(p)));
-                    //}else if (po instanceof BetterFlightPower){
-                        //addToBot(new ApplyPowerAction(p, p, new BetterFlightPower(p,po.amount),po.amount));
-                    }else if (po instanceof IntangiblePower){
-                        addToBot(new ApplyPowerAction(p, p, new IntangiblePlayerPower(p,po.amount),po.amount));
-                    } else {
-                        addToBot(new ApplyPowerAction(p, p, new StrengthPower(p,2),2));
-                    }
-                }
                 int r1 = AbstractDungeon.cardRandomRng.random(3);
+                int r2 = AbstractDungeon.cardRandomRng.random(2);
                 AbstractCard c1 = returnProphecy().get(r1);
+                AbstractCard c2 = returnProphecy().get((r1 + r2 + 1) % 4);
                 addToBot(new MakeTempCardInHandAction(c1));
+                addToBot(new MakeTempCardInHandAction(c2));
                 break;
         }
     }
@@ -236,7 +257,7 @@ public class Octrice extends CustomCard implements BranchableUpgradeCard {
                 Octrice.this.upgraded = true;
                 Octrice.this.name = cardStrings.NAME + "+";
                 Octrice.this.initializeTitle();
-                Octrice.this.baseMagicNumber = 15;
+                Octrice.this.baseMagicNumber = 25;
                 Octrice.this.magicNumber = Octrice.this.baseMagicNumber;
                 Octrice.this.upgradedMagicNumber = true;
                 Octrice.this.textureImg = IMG_PATH_EV;

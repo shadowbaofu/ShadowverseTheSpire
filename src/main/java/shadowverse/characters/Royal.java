@@ -68,7 +68,7 @@ public class Royal extends AbstractShadowversePlayer {
         for (i = 0; i < 4; i++) {
             starterDeck.add(Strike_R.ID);
         }
-        for (i = 0; i < 4; i++) {
+        for (i = 0; i < 5; i++) {
             starterDeck.add(Defend_R.ID);
         }
         starterDeck.add(OathlessKnight.ID);

@@ -20,7 +20,7 @@ import shadowverse.powers.ApostleOfUsurpationPower;
 
 import java.util.ArrayList;
 
-public class ApostleOfUsurpation  extends CustomCard {
+public class ApostleOfUsurpation extends CustomCard {
     public static final String ID = "shadowverse:ApostleOfUsurpation";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:ApostleOfUsurpation");
     public static final String NAME = cardStrings.NAME;
@@ -39,7 +39,8 @@ public class ApostleOfUsurpation  extends CustomCard {
     }
 
     public ApostleOfUsurpation() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.POWER, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.SELF);
+        this.baseBlock = 6;
         this.baseMagicNumber = 6;
         this.magicNumber = this.baseMagicNumber;
     }
@@ -66,8 +67,8 @@ public class ApostleOfUsurpation  extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-            initializeDescription();
+            upgradeBlock(3);
+            upgradeMagicNumber(3);
         }
     }
 
@@ -76,11 +77,9 @@ public class ApostleOfUsurpation  extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
         addToBot(new SFXAction(ID.replace("shadowverse:", "")));
         addToBot(new ApplyPowerAction(p, p, new ApostleOfUsurpationPower(p, this.magicNumber)));
-        if (this.upgraded) {
-            int r1 = AbstractDungeon.cardRandomRng.random(3);
-            AbstractCard c1 = returnProphecy().get(r1);
-            addToBot(new MakeTempCardInHandAction(c1));
-        }
+        int r1 = AbstractDungeon.cardRandomRng.random(3);
+        AbstractCard c1 = returnProphecy().get(r1);
+        addToBot(new MakeTempCardInHandAction(c1));
     }
 
 

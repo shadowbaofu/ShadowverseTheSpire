@@ -1,6 +1,8 @@
 package shadowverse.cards.Royal.Hero;
 
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -10,6 +12,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.GainStrengthPower;
+import com.megacrit.cardcrawl.powers.StrengthPower;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
 
@@ -25,6 +29,7 @@ public class IronwroughtDefender extends CustomCard {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.SELF);
         this.baseBlock = 3;
         this.tags.add(AbstractShadowversePlayer.Enums.HERO);
+        this.baseMagicNumber=this.magicNumber=3;
     }
 
     @Override
@@ -32,6 +37,16 @@ public class IronwroughtDefender extends CustomCard {
         if (!this.upgraded) {
             upgradeName();
             upgradeBlock(1);
+            upgradeMagicNumber(1);
+        }
+    }
+
+    @Override
+    public void triggerOnGlowCheck() {
+        if (inDanger()) {
+            this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
+        } else {
+            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
         }
     }
 
@@ -63,11 +78,13 @@ public class IronwroughtDefender extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction(ID.replace("shadowverse:", "")));
         int amount = 3;
-        if(inDanger()){
-            amount = 4;
+        for (int i = 0; i < amount; i++) {
+            addToBot(new GainBlockAction(p, this.block));
         }
-        for (int i = 0; i < amount; i++){
-            addToBot(new GainBlockAction(p,this.block));
+        if (inDanger()) {
+            addToBot(new ApplyPowerAction(m, p, new StrengthPower(m, -this.magicNumber), -this.magicNumber));
+            if (!m.hasPower("Artifact"))
+                addToBot(new ApplyPowerAction(m, p, new GainStrengthPower(m, this.magicNumber), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
         }
     }
 

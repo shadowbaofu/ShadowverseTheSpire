@@ -21,6 +21,7 @@ public class AramisPower extends AbstractPower {
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
     private AbstractCard card;
+    private boolean str;
 
     public AramisPower(AbstractCreature owner, int amount, AbstractCard card) {
         this.name = NAME;
@@ -31,6 +32,7 @@ public class AramisPower extends AbstractPower {
         this.card = card;
         updateDescription();
         this.img = new Texture("img/powers/AramisPower.png");
+        this.str = true;
     }
 
     @Override
@@ -62,8 +64,13 @@ public class AramisPower extends AbstractPower {
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if (card.type == AbstractCard.CardType.ATTACK && card != this.card) {
             addToBot(new SFXAction("AramisPower"));
-            addToBot(new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, (int) (this.amount / 2.0 + 0.5)), (int) (this.amount / 2.0 + 0.5)));
-            addToBot(new ApplyPowerAction(this.owner, this.owner, new DexterityPower(this.owner, this.amount / 2), this.amount / 2));
+            if (str) {
+                addToBot(new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, this.amount), this.amount));
+                str = false;
+            } else {
+                addToBot(new ApplyPowerAction(this.owner, this.owner, new DexterityPower(this.owner, this.amount), this.amount));
+                str = true;
+            }
             this.card.baseDamage += this.amount * 3;
             this.card.applyPowers();
             this.card.flash();

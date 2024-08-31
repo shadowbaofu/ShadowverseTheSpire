@@ -4,6 +4,7 @@ import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -23,9 +24,10 @@ public class UltimateHollow extends CustomCard {
 
     public UltimateHollow() {
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.ENEMY);
-        this.baseDamage = 6;
-        this.baseBlock = 12;
+        this.baseDamage = 5;
+        this.baseBlock = 5;
         this.tags.add(AbstractShadowversePlayer.Enums.GILDED);
+        this.exhaust = true;
     }
 
 
@@ -34,24 +36,21 @@ public class UltimateHollow extends CustomCard {
         if (!this.upgraded) {
             upgradeName();
             upgradeDamage(3);
-            upgradeBlock(4);
+            upgradeBlock(3);
         }
     }
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot(new SFXAction("UltimateHollow"));
-        int hasGilded = 0;
-        for (AbstractCard card:abstractPlayer.exhaustPile.group){
-            if (card.hasTag(AbstractShadowversePlayer.Enums.GILDED))
-                hasGilded++;
-        }
-        if (hasGilded>=4){
-            addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage*2, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-            addToBot(new GainBlockAction(abstractPlayer,this.block));
-        }else {
-            addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        }
+        addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        addToBot(new GainBlockAction(abstractPlayer, this.block));
+    }
+
+    @Override
+    public void triggerWhenDrawn() {
+        addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_Eff"));
+        this.addToTop(new MakeTempCardInDiscardAction(new UltimateHollow(), 1));
     }
 
 

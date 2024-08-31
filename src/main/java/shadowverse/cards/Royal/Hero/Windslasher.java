@@ -40,6 +40,7 @@ public class Windslasher extends CustomCard {
         }
     }
 
+
     public boolean inDanger() {
         AbstractPlayer p = AbstractDungeon.player;
         if (p.currentHealth <= p.maxHealth / 4) {

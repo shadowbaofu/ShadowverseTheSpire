@@ -50,7 +50,6 @@ public class Barbaros
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(3);
             if ((UnlockTracker.betaCardPref.getBoolean(this.cardID, false))) {
                 this.textureImg = LEADER_SKIN_VERSION_EV;
                 this.loadCardImage(LEADER_SKIN_VERSION_EV);
@@ -120,7 +119,9 @@ public class Barbaros
                 addToBot(new SFXAction("Barbaros_Eh"));
             }
         }
-        addToBot(new DamageAction(m, new DamageInfo(p, this.damage * 2, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+        if(!this.upgraded){
+            addToBot(new DamageAction(m, new DamageInfo(p, this.damage , this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+        }
         if (this.upgraded && !this.triggered) {
             addToBot(new ApplyPowerAction(p, p, new BarbarosPower(p, 1)));
             this.triggered = true;

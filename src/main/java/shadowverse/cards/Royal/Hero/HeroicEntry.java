@@ -114,6 +114,15 @@ public class HeroicEntry extends CustomCard {
     }
 
     @Override
+    public void triggerOnGlowCheck() {
+        if (inDanger()) {
+            this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
+        } else {
+            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+        }
+    }
+
+    @Override
     public AbstractCard makeCopy() {
         return new HeroicEntry();
     }

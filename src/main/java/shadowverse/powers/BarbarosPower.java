@@ -40,9 +40,9 @@ public class BarbarosPower extends AbstractPower {
 
     @Override
     public void onExhaust(AbstractCard card) {
-        if (card.cardID != "shadowverse:DreadPirateFlag") {
+        if (card.cardID != "shadowverse:DreadPirateFlag" && card.type== AbstractCard.CardType.SKILL) {
             flash();
-            addToBot(new MakeTempCardInHandAction(new DreadPirateFlag(), 1));
+            addToBot(new MakeTempCardInHandAction(new DreadPirateFlag(), this.amount));
         }
     }
 }

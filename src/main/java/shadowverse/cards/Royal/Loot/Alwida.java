@@ -68,6 +68,7 @@ public class Alwida extends CustomCard {
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
             this.isEthereal = false;
+            upgradeMagicNumber(1);
         }
     }
 

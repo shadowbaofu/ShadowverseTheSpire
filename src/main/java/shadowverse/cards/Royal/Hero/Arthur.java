@@ -66,6 +66,14 @@ public class Arthur extends CustomCard {
         return false;
     }
 
+    @Override
+    public void triggerOnGlowCheck() {
+        if (inDanger()) {
+            this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
+        } else {
+            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+        }
+    }
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {

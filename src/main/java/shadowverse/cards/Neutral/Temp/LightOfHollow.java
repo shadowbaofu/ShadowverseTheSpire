@@ -35,8 +35,8 @@ public class LightOfHollow
         this.baseDamage = 3;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
-        this.selfRetain = true;
         this.tags.add(AbstractShadowversePlayer.Enums.GILDED);
+        this.exhaust = true;
     }
 
 
@@ -84,6 +84,11 @@ public class LightOfHollow
             } else if (c.cardID == "shadowverse:Goblet") {
                 goblet++;
             } else if (c.cardID == "shadowverse:GildedBlade") {
+                blade++;
+            } else if (c.cardID == "shadowverse:UltimateHollow"){
+                necklace++;
+                boots++;
+                goblet++;
                 blade++;
             }
         }

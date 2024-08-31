@@ -47,6 +47,7 @@ public class Wilbert
         this.cardsToPreview = new HolyCavalier();
         this.tags.add(AbstractShadowversePlayer.Enums.LASTWORD);
         this.exhaust = true;
+        this.tags.add(AbstractShadowversePlayer.Enums.HERO);
     }
 
 

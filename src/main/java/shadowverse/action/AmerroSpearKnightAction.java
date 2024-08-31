@@ -7,6 +7,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.screens.CardRewardScreen;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToDiscardEffect;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToHandEffect;
+import shadowverse.cards.Bishop.Ward.Wilbert;
+import shadowverse.cards.Dragon.Default.Georgius;
 import shadowverse.cards.Elf.Long.Hero;
 import shadowverse.cards.Nemesis.Condemned.Judith;
 import shadowverse.cards.Nemesis.Tokens.Maisha;
@@ -60,23 +62,29 @@ public class AmerroSpearKnightAction extends AbstractGameAction {
     private ArrayList<AbstractCard> generateCardChoices() {
         ArrayList<AbstractCard> derp = new ArrayList();
         AbstractCard[] heros = {
+                new Alexander(),
+                new AmerroSpearKnight(),
+                new Arthur(),
                 new FlameSoldier(),
+                new HeroicEntry(),
+                new HeroOfAntiquity(),
+                new Icyclone(),
+                new IronwroughtDefender(),
                 new MachKnight(),
                 new ValiantFencer(),
-                new IronwroughtDefender(),
-                new Icyclone(),
-                new HeroOfAntiquity(),
-                new Alexander(),
-                new Arthur(),
-                new Maiser(),
-                new Hero(),
-                new Maisha(),
+                new Windslasher(),
+        };
+        AbstractCard[] heros1 = {
                 new Johann(),
                 new Albert(),
                 new Judith(),
-                new Hero()
+                new Hero(),
+                new Maiser(),
+                new Georgius(),
+                new Wilbert(),
+                new Maisha(),
         };
-        while (derp.size() != 3) {
+        while (derp.size() != 2) {
             boolean dupe = false;
             int roll = AbstractDungeon.cardRandomRng.random(heros.length - 1);
             AbstractCard tmp = heros[roll];
@@ -93,7 +101,9 @@ public class AmerroSpearKnightAction extends AbstractGameAction {
                 derp.add(tmp.makeCopy());
             }
         }
-
+        int roll = AbstractDungeon.cardRandomRng.random(heros1.length - 1);
+        AbstractCard tmp = heros[roll];
+        derp.add(tmp.makeCopy());
         return derp;
     }
 }

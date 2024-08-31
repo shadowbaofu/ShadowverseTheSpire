@@ -3311,7 +3311,7 @@
   },
   "shadowverse:Wilbert": {
     "NAME": "Wilbert, Grand Knight",
-    "DESCRIPTION": "Gain !B! Block. NL Gain the following effect: 'When you are attacked, if you have any Block, deal damage equal to 5% of the enemy's max HP (Min. 6 damage).' NL Last_Words: When Exhausted, add !M! *Holy *Cavaliers to your hand next turn. NL Exhaust."
+    "DESCRIPTION": " Heroic NL Gain !B! Block. NL Gain the following effect: 'When you are attacked, if you have any Block, deal damage equal to 5% of the enemy's max HP (Min. 6 damage).' NL Last_Words: When Exhausted, add !M! *Holy *Cavaliers to your hand next turn. NL Exhaust."
   },
   "shadowverse:Wilbert2": {
     "NAME": "Wilbert, Luminous Paladin",
@@ -5497,7 +5497,7 @@
   },
   "shadowverse:Georgius": {
     "NAME": "Georgius",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Mark ALL enemies as Dragons. NL Repeat once if Overflow is active. NL Repeat twice if Full Overflow is active."
+    "DESCRIPTION": "Heroic NL Deal !D! damage to ALL enemies. NL Mark ALL enemies as Dragons. NL Repeat once if Overflow is active. NL Repeat twice if Full Overflow is active."
   },
   "shadowverse:Ethica": {
     "NAME": "Ethica, Firebrand Claw",

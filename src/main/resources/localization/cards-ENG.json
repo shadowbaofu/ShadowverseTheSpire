@@ -410,15 +410,15 @@
   },
   "shadowverse:OmenOfOne": {
     "NAME": "Mjerrabaine, Omen of One",
-    "DESCRIPTION": "If there are no duplicate cards in your draw pile, gain 2 Strength, 2 Dexterity, and deal 12 damage to a random enemy at the end of each of your turns."
+    "DESCRIPTION": "If there are no duplicate cards in your draw pile, at the end of your turn gain 2 Strength, 2 Dexterity, and deal 12 damage to a random enemy."
   },
   "shadowverse:OmenOfOne2": {
     "NAME": "Mjerrabaine, Great One",
-    "DESCRIPTION": "Exhaust ALL duplicate cards. NL If you have more than half the cards in your deck (min. 15 if no duplicates) or Exhausted at least 1 duplicate (if less than 15), deal 10 damage to a random enemy at the end of each turn for playing a card that costs 2 or less, and 18 damage to ALL enemies for playing a card that costs 2 or more. NL Put a *Great *Testimony into your hand."
+    "DESCRIPTION": "Exhaust ALL duplicate cards. NL If there were no duplicate cards in the deck (min. 15) or Exhausted at least 1 duplicate with more than half the cards in the deck left (even if less than 15), gain: 'At the end of your turn, deal 10 damage to a random enemy whenever you play a card that costs 2 or less. Deal 18 damage to ALL enemies whenever you play a card that costs 2 or more.' NL Put a *Great *Testimony into your hand."
   },
   "shadowverse:RearriveOne": {
     "NAME": "Second Advent of the Omens",
-    "DESCRIPTION": "Deal !D! damage to a random enemy. If there are no duplicate cards in your draw pile, gain 1 Energy, draw 1 card, and put 2 *Evolution *Points into your hand."
+    "DESCRIPTION": "Deal !D! damage to a random enemy. If there are no duplicate cards in your draw pile: Gain [E]. NL Draw 1 card. NL Put 2 *Evolution *Points into your hand."
   },
   "shadowverse:Mysteria": {
     "NAME": "Mysteria, Magic Founder",

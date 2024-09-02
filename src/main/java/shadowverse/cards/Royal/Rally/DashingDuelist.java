@@ -1,7 +1,6 @@
 package shadowverse.cards.Royal.Rally;
 
 
-
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
@@ -51,12 +50,14 @@ public class DashingDuelist extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction("DashingDuelist"));
-        if (rally()>10){
-            addToBot(new MakeTempCardInHandAction(new EvolutionPoint()));
+        if (rally() > 10) {
+            AbstractCard c = new EvolutionPoint();
+            c.upgrade();
+            addToBot(new MakeTempCardInHandAction(c));
         }
-        if (rally()>20){
-            addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(this.damage*2, true), DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.SLASH_DIAGONAL, true));
-        }else {
+        if (rally() > 20) {
+            addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(this.damage * 2, true), DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.SLASH_DIAGONAL, true));
+        } else {
             addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(this.damage, true), DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.SLASH_DIAGONAL, true));
         }
         addToBot(new DrawCardAction(this.magicNumber));

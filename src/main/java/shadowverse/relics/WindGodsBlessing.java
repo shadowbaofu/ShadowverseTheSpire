@@ -58,11 +58,15 @@ public class WindGodsBlessing extends CustomRelic {
         if (rally() != this.counter) {
             this.counter = rally();
         }
-        if (!this.grayscale && this.counter >= 10) {
-            addToBot(new MinionBuffAction(1, 1, true));
-            flash();
-            this.counter = -1;
-            this.grayscale = true;
+        if(this.counter >= 10) {
+            if (!this.grayscale) {
+                addToBot(new MinionBuffAction(1, 1, true));
+                flash();
+                this.counter = -1;
+                this.grayscale = true;
+            }else{
+                addToBot(new MinionBuffAction(0, 1, true));
+            }
         }
     }
 

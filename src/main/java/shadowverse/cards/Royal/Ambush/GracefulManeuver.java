@@ -20,7 +20,7 @@ public class GracefulManeuver extends CustomCard {
 
 
     public GracefulManeuver() {
-        super(ID, NAME, IMG_PATH, -1, DESCRIPTION, CardType.POWER, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, -1, DESCRIPTION, CardType.POWER, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.SELF);
     }
 
     @Override

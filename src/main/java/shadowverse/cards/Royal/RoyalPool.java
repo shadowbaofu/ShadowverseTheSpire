@@ -73,27 +73,31 @@ public class RoyalPool  extends AbstractBanPool {
         BanGroup Minion = new BanGroup("Mars");
         BanGroup NatMech = new BanGroup("MistolinaBayleon");
         BanGroup Rally = new BanGroup("FrenziedCorpsmaster");
+
         Default.addCard(new Alyaska());
-        Default.addCard(new DramaticRetreat());
-        Default.addCard(new DualbladeKnight());
-        Default.addCard(new FighterFortitude());
-        Default.addCard(new GloriousCore());
         Default.addCard(new HonoredFrontguardGeneral());
         Default.addCard(new Ilmisuna());
-        Default.addCard(new Kagemitsu());
         Default.addCard(new LeciaSkySaber());
         Default.addCard(new LuxbladeArriet());
-        Default.addCard(new MasterDealer());
-        Default.addCard(new MusketeersVow());
         Default.addCard(new Nahtnaught());
         Default.addCard(new PompousSummons());
-        Default.addCard(new RadicalGunslinger());
         Default.addCard(new Reinhardt());
         Default.addCard(new Sera());
         Default.addCard(new Spector());
         Default.addCard(new TheChariot());
         Default.addCard(new Valse());
         Default.addCard(new Weiss());
+        Default.addCard(new EnduringHope());
+        Default.addCard(new DramaticRetreat());
+        Default.addCard(new Alexander());
+        Default.addCard(new Arthur());
+        Default.addCard(new UsurpingSpineblade());
+        Default.addCard(new EleganceInAction());
+        Default.addCard(new MonochromeEndgame());
+        Default.addCard(new PrudentGeneral());
+        Default.addCard(new StrikeproneGuardian());
+        Default.addCard(new RadicalGunslinger());
+
         Ambush.addCard(new AmbushBuff());
         Ambush.addCard(new BladeDance());
         Ambush.addCard(new Dualblade());
@@ -104,6 +108,8 @@ public class RoyalPool  extends AbstractBanPool {
         Ambush.addCard(new ShieldOfFlame());
         Ambush.addCard(new ShinobiTanuki());
         Ambush.addCard(new Tsubaki());
+        Ambush.addCard(new Kagemitsu());
+
         Evolve.addCard(new AdherentOfHollow());
         Evolve.addCard(new CatAdmiral());
         Evolve.addCard(new Charlotta());
@@ -111,10 +117,11 @@ public class RoyalPool  extends AbstractBanPool {
         Evolve.addCard(new FortressStrategist());
         Evolve.addCard(new LuminousMage());
         Evolve.addCard(new Mirin());
-        Evolve.addCard(new Radiel());
         Evolve.addCard(new Seofon());
         Evolve.addCard(new WardenOfHonor());
         Evolve.addCard(new WeeMerchantsAppraisal());
+        Default.addCard(new Radiel());
+
         Festive.addCard(new FrontDeskFrog());
         Festive.addCard(new HonorableThief());
         Festive.addCard(new JiemonThiefLord());
@@ -125,9 +132,9 @@ public class RoyalPool  extends AbstractBanPool {
         Festive.addCard(new ReturnFromTheBrink());
         Festive.addCard(new SuaveBandit());
         Festive.addCard(new Taketsumi());
-        Hero.addCard(new Alexander());
+        Festive.addCard(new MasterDealer());
+
         Hero.addCard(new AmerroSpearKnight());
-        Hero.addCard(new Arthur());
         Hero.addCard(new FlameSoldier());
         Hero.addCard(new HeroicEntry());
         Hero.addCard(new HeroOfAntiquity());
@@ -137,6 +144,8 @@ public class RoyalPool  extends AbstractBanPool {
         Hero.addCard(new ValiantFencer());
         Hero.addCard(new Windslasher());
         Hero.addCard(new Icyclone());
+        Hero.addCard(new FighterFortitude());
+
         Levin.addCard(new Albert());
         Levin.addCard(new Jeno());
         Levin.addCard(new LevinArcher());
@@ -147,6 +156,8 @@ public class RoyalPool  extends AbstractBanPool {
         Levin.addCard(new MeetTheLevinSisters());
         Levin.addCard(new MirrorImage());
         Levin.addCard(new WarriorWing());
+        Levin.addCard(new MusketeersVow());
+
         Loot.addCard(new Alwida());
         Loot.addCard(new ApostleOfUsurpation());
         Loot.addCard(new Barbaros());
@@ -157,20 +168,20 @@ public class RoyalPool  extends AbstractBanPool {
         Loot.addCard(new Octrice());
         Loot.addCard(new TidalGunner());
         Loot.addCard(new UltimateHollow());
-        Loot.addCard(new UsurpingSpineblade());
         Loot.addCard(new Rogers());
+
         Minion.addCard(new CaptainWalfrid());
-        Minion.addCard(new EleganceInAction());
         Minion.addCard(new EmpressOfSerenity());
         Minion.addCard(new FrontlineInstructor());
         Minion.addCard(new Latham());
         Minion.addCard(new Leonidas());
         Minion.addCard(new Mars());
-        Minion.addCard(new MonochromeEndgame());
         Minion.addCard(new RoyalBanner());
         Minion.addCard(new SageCommander());
         Minion.addCard(new ShieldPhalanx());
         Minion.addCard(new Lvbu());
+        Minion.addCard(new GloriousCore());
+
         NatMech.addCard(new BrothersUnited());
         NatMech.addCard(new Cybercannoneer());
         NatMech.addCard(new Garven());
@@ -183,17 +194,16 @@ public class RoyalPool  extends AbstractBanPool {
         NatMech.addCard(new SunnyDayEncounter());
         NatMech.addCard(new TemperedMana());
         NatMech.addCard(new Bayleon());
+
         Rally.addCard(new EnragedGeneral());
+        Rally.addCard(new DualbladeKnight());
         Rally.addCard(new Ernesta());
         Rally.addCard(new FlyingMessengerSquirrel());
         Rally.addCard(new FrenziedCorpsmaster());
         Rally.addCard(new Gawain());
         Rally.addCard(new GeneralMaximus());
-        Rally.addCard(new PrudentGeneral());
         Rally.addCard(new StormWrackedFirstMate());
-        Rally.addCard(new StrikeproneGuardian());
         Rally.addCard(new WhitePaladin());
-        Rally.addCard(new EnduringHope());
         Rally.addCard(new DashingDuelist());
         Rally.addCard(new UntoldKick());
         pool.add(Default);

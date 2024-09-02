@@ -327,7 +327,7 @@
     "NAME": "风神的祝福",
     "FLAVOR": "风不止息。",
     "DESCRIPTIONS": [
-      "#y协作 #b10 :回合结束时，使所有随从获得+ #b1 /+ #b1 。"
+      "#y协作 #b10 :回合结束时，使所有随从获得+ #b0 /+ #b1 。 #y限定： 再 + #b1 /+ #b0 。"
     ]
   },
   "shadowverse:Conscription": {

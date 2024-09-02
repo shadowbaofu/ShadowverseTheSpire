@@ -26,7 +26,7 @@ public class Rogers extends CustomCard {
 
 
     public Rogers() {
-        super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.POWER, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.POWER, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.SELF);
         this.isEthereal = true;
         this.cardsToPreview = new GildedGoblet();
     }
@@ -46,6 +46,7 @@ public class Rogers extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction(ID.replace("shadowverse:", "")));
         addToBot(new GainEnergyAction(1));
+        addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
         addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
         if (upgraded){
             addToBot(new ApplyPowerAction(p, p, new RogersPower(p)));

@@ -11,7 +11,6 @@ import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import shadowverse.action.MinionAttackAction;
-import shadowverse.action.MinionBuffAction;
 import shadowverse.action.MinionSummonAction;
 import shadowverse.action.RemoveMinionAction;
 import shadowverse.effect.AddCardToStasisEffect;
@@ -20,13 +19,11 @@ public class LvbuOrb extends Minion {
     public AbstractCard card;
     private AbstractGameEffect stasisStartEffect;
 
-    private boolean musou;
 
-    public LvbuOrb(int atk, int def, AbstractCard card, boolean musou) {
+    public LvbuOrb(int atk, int def, AbstractCard card) {
         this.attack = this.baseAttack = atk;
         this.defense = this.baseDefense = def;
         this.card = card;
-        this.musou = musou;
         this.stasisStartEffect = new AddCardToStasisEffect(card, this, Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F, false);
         AbstractDungeon.effectsQueue.add(this.stasisStartEffect);
     }
@@ -49,9 +46,6 @@ public class LvbuOrb extends Minion {
     public void onEndOfTurn() {
         if (this.defense > 0) {
             this.effect();
-            if (!this.musou){
-                AbstractDungeon.actionManager.addToBottom(new MinionBuffAction(0, -1, this));
-            }
             this.updateDescription();
         }
     }
@@ -112,6 +106,6 @@ public class LvbuOrb extends Minion {
 
     @Override
     public AbstractOrb makeCopy() {
-        return new LvbuOrb(this.attack, this.defense, this.card, this.musou);
+        return new LvbuOrb(this.attack, this.defense, this.card);
     }
 }

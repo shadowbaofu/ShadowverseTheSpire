@@ -11,7 +11,6 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import shadowverse.action.MinionSummonAction;
-import shadowverse.action.RemoveMinionAction;
 import shadowverse.characters.Royal;
 import shadowverse.orbs.LvbuOrb;
 import shadowverse.orbs.Minion;
@@ -33,7 +32,7 @@ public class Lvbu
 
 
     public void upgrade() {
-        if (!this.upgraded){
+        if (!this.upgraded) {
             upgradeName();
             upgradeBaseCost(1);
         }
@@ -44,17 +43,17 @@ public class Lvbu
         addToBot(new SFXAction("Lvbu"));
         int atk = 1;
         int def = 1;
-        for (AbstractOrb o : p.orbs){
-            if (o instanceof Minion){
+        for (AbstractOrb o : p.orbs) {
+            if (o instanceof Minion) {
                 atk += ((Minion) o).attack;
                 def += ((Minion) o).attack;
             }
         }
         addToBot(new RemoveAllOrbsAction());
-        boolean musou = atk + def - 2 >= 20;
-        addToBot(new MinionSummonAction(new LvbuOrb(atk,def,this.makeStatEquivalentCopy(),musou)));
-        if (musou){
-            addToBot(new ApplyPowerAction(p,p,new HeavenlyAegisPower(p)));
+        boolean musou = atk + def >= 20;
+        addToBot(new MinionSummonAction(new LvbuOrb(atk, def, this.makeStatEquivalentCopy())));
+        if (musou) {
+            addToBot(new ApplyPowerAction(p, p, new HeavenlyAegisPower(p)));
         }
     }
 

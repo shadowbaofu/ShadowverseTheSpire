@@ -73,7 +73,7 @@ public class AmbushMinion extends Minion{
     @Override
     public void effect() {
         if (this.guard){
-            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, this.attack * 2));
+            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, this.attack * 3));
         }else {
             int damage = this.attack * 5;
             if (AbstractDungeon.player.hasPower("Electro")) {

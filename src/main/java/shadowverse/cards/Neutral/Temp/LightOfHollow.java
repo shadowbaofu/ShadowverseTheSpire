@@ -33,8 +33,7 @@ public class LightOfHollow
     public LightOfHollow() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.SPECIAL, CardTarget.ALL_ENEMY);
         this.baseDamage = 3;
-        this.baseMagicNumber = 1;
-        this.magicNumber = this.baseMagicNumber;
+        this.baseBlock = 3;
         this.tags.add(AbstractShadowversePlayer.Enums.GILDED);
         this.exhaust = true;
     }
@@ -44,7 +43,7 @@ public class LightOfHollow
         if (!this.upgraded) {
             upgradeName();
             upgradeDamage(1);
-            upgradeMagicNumber(1);
+            upgradeBlock(1);
         }
     }
 
@@ -85,7 +84,7 @@ public class LightOfHollow
                 goblet++;
             } else if (c.cardID == "shadowverse:GildedBlade") {
                 blade++;
-            } else if (c.cardID == "shadowverse:UltimateHollow"){
+            } else if (c.cardID == "shadowverse:UltimateHollow") {
                 necklace++;
                 boots++;
                 goblet++;
@@ -94,7 +93,7 @@ public class LightOfHollow
         }
         addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new StrengthPower(abstractPlayer, necklace), necklace));
         addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new DexterityPower(abstractPlayer, boots), boots));
-        AbstractDungeon.actionManager.addToBottom(new HealAction(abstractPlayer, AbstractDungeon.player, this.magicNumber * goblet));
+        addToBot(new GainBlockAction(abstractPlayer, this.block * goblet));
         for (int i = 0; i < blade; i++) {
             addToBot(new DamageRandomEnemyAction(new DamageInfo(abstractPlayer, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
         }

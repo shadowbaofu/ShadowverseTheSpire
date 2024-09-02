@@ -26,6 +26,7 @@ public class DeepSeaScout extends CustomCard {
     public static final String IMG_PATH = "img/cards/DeepSeaScout.png";
     private float rotationTimer;
     private int previewIndex;
+    private boolean triggered;
 
     public static ArrayList<AbstractCard> returnProphecy() {
         ArrayList<AbstractCard> list = new ArrayList<>();
@@ -37,6 +38,7 @@ public class DeepSeaScout extends CustomCard {
     public DeepSeaScout() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.ENEMY);
         this.tags.add(AbstractShadowversePlayer.Enums.CONDEMNED);
+        triggered = false;
     }
 
     @Override
@@ -70,12 +72,15 @@ public class DeepSeaScout extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction(ID.replace("shadowverse:", "")));
-        if (this.upgraded){
-            addToBot(new MakeTempCardInHandAction(new DreadPirateFlag(),1));
-        }else {
-            addToBot(new MakeTempCardInHandAction(new GildedBoots(),1));
+        if (this.upgraded) {
+            addToBot(new MakeTempCardInHandAction(new DreadPirateFlag(), 1));
+        } else {
+            addToBot(new MakeTempCardInHandAction(new GildedBoots(), 1));
         }
-        addToBot(new ApplyPowerAction(p, p, new DeepSeaScoutPower(p, 1)));
+        if (!triggered) {
+            addToBot(new ApplyPowerAction(p, p, new DeepSeaScoutPower(p, 1)));
+            triggered = true;
+        }
     }
 
 

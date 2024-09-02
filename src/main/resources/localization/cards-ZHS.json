@@ -2650,7 +2650,7 @@
   },
   "shadowverse:DiscipleOfUsurpation": {
     "NAME": "强夺的信徒",
-    "DESCRIPTION": "潜伏 ，1/1 。 NL 被动:获得攻击力的2倍 格挡 并失去1点体力。 NL 每使用一张 财宝牌 ，获得 !M! 点护甲。"
+    "DESCRIPTION": "潜伏 ，1/1 。 NL 被动:获得攻击力的3倍 格挡 并失去1点体力。 NL 每使用一张 财宝牌 ，获得 !M! 点护甲。"
   },
   "shadowverse:ApostleOfUsurpation": {
     "NAME": "强夺的使徒",
@@ -3716,7 +3716,7 @@
   },
   "shadowverse:ShinobiTanuki": {
     "NAME": "忍者狸猫",
-    "DESCRIPTION": "潜伏 ，1/ !M! 。 NL 被动:获得攻击力的2倍 格挡 并失去1点体力。 NL 消耗 。"
+    "DESCRIPTION": "潜伏 ，1/ !M! 。 NL 被动:获得攻击力的3倍 格挡 并失去1点体力。 NL 消耗 。"
   },
   "shadowverse:Tsubaki": {
     "NAME": "妖刀之鬼·椿",
@@ -3800,7 +3800,7 @@
   },
   "shadowverse:UltimateHollow": {
     "NAME": "极意的空绝",
-    "DESCRIPTION": "造成 !D! 点伤害。 获得 !B! 点 格挡 。 NL 消耗。 NL 抽到时，将一张 *极意的空绝 置入弃牌堆。 NL 这张牌视为 *黄金首饰 、 *黄金之靴 、 *黄金之杯 、 *黄金匕首 。"
+    "DESCRIPTION": "造成 !D! 点伤害。 获得 !B! 点 格挡 。 NL 抽到时，将一张 *极意的空绝 置入弃牌堆。 NL 这张牌视为 *黄金首饰 、 *黄金之靴 、 *黄金之杯 、 *黄金匕首 。 NL 消耗 。"
   },
   "shadowverse:LoathingDesire": {
     "NAME": "憎恶的爱绝",
@@ -3836,7 +3836,7 @@
   },
   "shadowverse:LightOfHollow": {
     "NAME": "空绝的残光",
-    "DESCRIPTION": "融合 : 财宝牌 。 融合 后抽1张牌。 NL 依据消耗堆中的： *黄金首饰 ： 获得1点 力量 ， NL *黄金之靴 ： 获得1点 敏捷 ， NL *黄金之杯 ： 回复 !M! 点生命 ， NL *黄金短剑 ： 造成 !D! 点伤害 。 NL 这张牌视为 财宝牌 。 消耗"
+    "DESCRIPTION": "融合 : 财宝牌 。 融合 后抽1张牌。 NL 依据消耗堆中的： *黄金首饰 ： 获得1点 力量 ， NL *黄金之靴 ： 获得1点 敏捷 ， NL *黄金之杯 ： 获得 !B! 点格挡 ， NL *黄金短剑 ： 造成 !D! 点伤害 。 NL 这张牌视为 财宝牌 。 消耗"
   },
   "shadowverse:WingsOfDesire": {
     "NAME": "爱绝的飞翔",
@@ -5028,7 +5028,7 @@
   },
   "shadowverse:Weiss": {
     "NAME": "选别的教员·韦斯",
-    "DESCRIPTION": "学园 NL 消耗 。",
+    "DESCRIPTION": "学园 NL 消耗 。 NL 可进化",
     "UPGRADE_DESCRIPTION": "学园 NL 本回合内你不会受到敌人施加的负面效果影响。 NL 本回合内敌人不会受到正面效果影响。"
   },
   "shadowverse:BishopPool": {
@@ -6228,8 +6228,8 @@
   },
   "shadowverse:EnduringHope": {
     "NAME": "漆黑残光·罗莎",
-    "DESCRIPTION": "融合 :非基础牌的攻击牌 NL 融合 时，如果一次性融合的牌为3张以上， 融合变身 为 *漆黑曙光·罗莎 。  NL  NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 获得1层 人工制品 。 NL 每融合1张牌，额外获得1点能量和 !M! 点 格挡 。 NL 消耗性 !stslib:ex! 。",
-    "UPGRADE_DESCRIPTION":"融合 :非基础牌的攻击牌 NL 融合 时，如果一次性融合的牌为3张以上， 融合变身 为 *漆黑曙光·罗莎+ 。  NL  NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 获得1层 人工制品 。 NL 每融合1张牌，额外获得1点能量和 !M! 点 格挡 。 NL 消耗性 !stslib:ex! 。",
+    "DESCRIPTION": "融合 :非基础牌的攻击牌 NL 融合 时，如果一次性融合的牌为3张以上， 融合变身 为 *漆黑曙光·罗莎 。 NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 获得1层 人工制品 。 NL 每融合1张牌，额外获得1点能量和 !M! 点 格挡 。 NL 消耗性 !stslib:ex! 。",
+    "UPGRADE_DESCRIPTION":"融合 :非基础牌的攻击牌 NL 融合 时，如果一次性融合的牌为3张以上， 融合变身 为 *漆黑曙光·罗莎+ 。 NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 获得1层 人工制品 。 NL 每融合1张牌，额外获得1点能量和 !M! 点 格挡 。 NL 消耗性 !stslib:ex! 。",
     "EXTENDED_DESCRIPTION": [
       " NL (已融合",
       " 张。)"

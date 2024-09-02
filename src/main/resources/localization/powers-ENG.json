@@ -552,7 +552,7 @@
   "shadowverse:NeunPower": {
     "NAME": "Neun, Daybreak Vampire",
     "DESCRIPTIONS": [
-      "If you've played #b10 or more Machina non-Skill cards in this combat, gain #b2 Metallicize the next time you play a Machina card."
+      "If you've played #b10 or more Machina non-Skill cards in this combat, gain #b2 Metallicize each time you play a Machina card."
     ]
   },
   "shadowverse:CradlePower": {

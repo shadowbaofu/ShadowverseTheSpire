@@ -6661,7 +6661,7 @@
   },
   "shadowverse:MajorPrayers2": {
     "NAME": "Shining Prayers",
-    "DESCRIPTION": "Costs 1 less Energy whenever you play an Amulet. NL Costs 2 less Energy whenever you play a *Naterran *Great *Tree. NL Destroy 1 Amulet. NL Apply 2 Weak and Vulnerable to a random enemy."
+    "DESCRIPTION": "Costs [E] less whenever you play an Amulet. NL Costs [E] [E] less whenever you play a *Naterran *Great *Tree. NL Destroy 1 Amulet. NL Apply 2 Weak and Vulnerable to a random enemy."
   },
   "shadowverse:Rola2": {
     "NAME": "Rola, Hellfire Dragoon",
@@ -6718,7 +6718,7 @@
   },
   "shadowverse:CurseOfTheBlackDragon": {
     "NAME": "Curse of the Black Dragon",
-    "DESCRIPTION": "Unplayable. NL Retain. NL If Overflow is not active, lose 1 HP at the end of your turn. NL If Overflow is active, deal !D! damage to a random enemy.""
+    "DESCRIPTION": "Unplayable. NL Retain. NL If Overflow is not active, lose 1 HP at the end of your turn. NL If Overflow is active, deal !D! damage to a random enemy."
   },
   "shadowverse:DespairReborn": {
     "NAME": "Despair Reborn",

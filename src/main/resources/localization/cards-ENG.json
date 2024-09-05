@@ -2766,8 +2766,8 @@
   },
   "shadowverse:MonochromeEndgame": {
     "NAME": "Monochrome Endgame",
-    "DESCRIPTION": " Choose: Summon Queen_Hemera_the_Brave or Queen_Magnus_the_Graceful. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Summon Queen_Hemera_the_Brave and Queen_Magnus_the_Graceful. NL Exhaust."
+    "DESCRIPTION": " Choose: Summon *Queen *Hemera *the *Brave or *Queen *Magnus *the *Graceful. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Summon *Queen *Hemera *the *Brave AND *Queen *Magnus *the *Graceful. NL Exhaust."
   },
   "shadowverse:QueenHemera_Card": {
     "NAME": "Queen Hemera the Brave",

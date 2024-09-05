@@ -4972,11 +4972,11 @@
   },
   "shadowverse:LeciaSkySaber": {
     "NAME": "Lecia, Sky Saber",
-    "DESCRIPTION": "At the end of your turn, discard ALL attacks in your hand. Deal !M! damage to a random enemy for each card discarded. NL Whenever this card is drawn, if *Nano, *the *Dawnblade is not in your hand, put 1 into your hand. Otherwise, transform this card into *Lecia *& *Nano."
+    "DESCRIPTION": "At the end of your turn, discard ALL Attacks in your hand. Deal !M! damage to a random enemy for each card discarded. NL Whenever this card is drawn, if *Nano, *the *Dawnblade is not in your hand, put 1 into your hand. Otherwise, transform this card into *Lecia *& *Nano."
   },
   "shadowverse:NanoTheDawnblade": {
     "NAME": "Nano, the Dawnblade",
-    "DESCRIPTION": "Retain. NL Deal !D! damage. Apply !M! Weak and Vulnerable ."
+    "DESCRIPTION": "Retain. NL Deal !D! damage. Apply !M! Weak and Vulnerable."
   },
   "shadowverse:LeciaNano": {
     "NAME": "Lecia & Nano",
@@ -6032,7 +6032,7 @@
   },
   "shadowverse:Lvbu": {
     "NAME": "Peerless Warrior",
-    "DESCRIPTION": "Remove ALL other followers. Summon a Peerless Warrior. It gains +X/+Y. X and Y equal the total Attack and Health of those other followers. If X OR Y is 20 or more, you cannot be debuffed unless it affects Strength or Dexterity and this follower does not lose Health. NL Passive: Deal damage equal to its Attack, gain Block equal to its Health, reduce Health by 1. NL Evoke: Summon a copy of this follower. NL Exhaust."  
+    "DESCRIPTION": "Remove ALL other followers. Summon a Peerless_Warrior. It gains +X/+Y. X and Y equal the total Attack and Health of those other followers. If X OR Y is 20 or more, you cannot be debuffed unless it affects Strength or Dexterity and this follower does not lose Health. NL Passive: Deal damage equal to its Attack, gain Block equal to its Health, reduce Health by 1. NL Evoke: Summon a copy of this follower. NL Exhaust."  
   },
   "shadowverse:SlaughteringDragonewt": {
     "NAME": "Slaughtering Dragonewt",
@@ -6060,8 +6060,8 @@
   },
   "shadowverse:Rogers": {
     "NAME": "Rogers, Ruler Of The Seas",
-    "DESCRIPTION": "Gain 1 Energy. Add 1 *Gilded *Goblet to your hand. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "Gain 1 Energy. Add 1 *Gilded *Goblet to your hand. NL Summon a Cannoneer. NL Whenever you play a Loot card, if it's the first one this turn, gain 1 energy. If it's the second one, deal 10 damage to ALL enemies. NL Ethereal."
+    "DESCRIPTION": "Gain 1 [E]. Add 1 *Gilded *Goblet to your hand. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Gain 1 [E]. Add 1 *Gilded *Goblet to your hand. NL Summon a Cannoneer. NL Whenever you play a Loot card, if it's the first one this turn, gain [E]. If it's the second one, deal 10 damage to ALL enemies. NL Ethereal."
   },
   "shadowverse:DelugeOfArrows": {
     "NAME": "Deluge of Arrows",

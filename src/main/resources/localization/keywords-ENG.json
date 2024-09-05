@@ -495,15 +495,16 @@
       "Supremacy"
     ],
       "DESCRIPTION": "At the end of your turn, if you've played a card that costs 2 or less, deal 10 damage to a random enemy. NL If you've played a card that costs 2 or more, deal 18 damage to ALL enemies."
-    }
-  },
+    }.
     {
+      "PROPER_NAME": "Usurpation",
       "NAMES": [
         "Usurpation"
       ],
       "DESCRIPTION": "Additional effects are triggered when there are at least that many Loot cards in the Exhaust pile."
     },
     {
+      "PROPER_NAME": "Evolve",
       "NAMES": [
         "Evolve"
       ],

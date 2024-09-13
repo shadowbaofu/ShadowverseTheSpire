@@ -3,6 +3,7 @@ package shadowverse.cards.Royal.Loot;
 import basemod.abstracts.CustomCard;
 import com.badlogic.gdx.Gdx;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -28,6 +29,7 @@ public class ApostleOfUsurpation extends CustomCard {
     public static final String IMG_PATH = "img/cards/ApostleOfUsurpation.png";
     private float rotationTimer;
     private int previewIndex;
+    private boolean triggered;
 
     public static ArrayList<AbstractCard> returnProphecy() {
         ArrayList<AbstractCard> list = new ArrayList<>();
@@ -40,9 +42,10 @@ public class ApostleOfUsurpation extends CustomCard {
 
     public ApostleOfUsurpation() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.SELF);
-        this.baseBlock = 6;
+        this.baseBlock = 5;
         this.baseMagicNumber = 6;
         this.magicNumber = this.baseMagicNumber;
+        this.triggered = false;
     }
 
     @Override
@@ -67,8 +70,8 @@ public class ApostleOfUsurpation extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBlock(3);
-            upgradeMagicNumber(3);
+            upgradeBlock(2);
+            upgradeMagicNumber(2);
         }
     }
 
@@ -76,7 +79,11 @@ public class ApostleOfUsurpation extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
         addToBot(new SFXAction(ID.replace("shadowverse:", "")));
-        addToBot(new ApplyPowerAction(p, p, new ApostleOfUsurpationPower(p, this.magicNumber)));
+        addToBot(new GainBlockAction(p, this.block));
+        if (!this.triggered) {
+            addToBot(new ApplyPowerAction(p, p, new ApostleOfUsurpationPower(p, this.magicNumber)));
+            this.triggered = true;
+        }
         int r1 = AbstractDungeon.cardRandomRng.random(3);
         AbstractCard c1 = returnProphecy().get(r1);
         addToBot(new MakeTempCardInHandAction(c1));

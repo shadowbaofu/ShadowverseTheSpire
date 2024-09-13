@@ -26,7 +26,7 @@ public class IronwroughtDefender extends CustomCard {
 
 
     public IronwroughtDefender() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ENEMY);
         this.baseBlock = 3;
         this.tags.add(AbstractShadowversePlayer.Enums.HERO);
         this.baseMagicNumber=this.magicNumber=3;
@@ -77,8 +77,7 @@ public class IronwroughtDefender extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction(ID.replace("shadowverse:", "")));
-        int amount = 3;
-        for (int i = 0; i < amount; i++) {
+        for (int i = 0; i < 3; i++) {
             addToBot(new GainBlockAction(p, this.block));
         }
         if (inDanger()) {

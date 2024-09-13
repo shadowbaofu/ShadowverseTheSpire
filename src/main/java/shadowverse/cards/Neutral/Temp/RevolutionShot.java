@@ -37,8 +37,7 @@ public class RevolutionShot extends CustomCard {
 
     @Override
     public void onRetained() {
-        this.exhaust = true;
-        AbstractDungeon.player.hand.removeCard(this);
+        addToBot(new ExhaustSpecificCardAction(this,AbstractDungeon.player.hand));
         addToBot(new HealAction(AbstractDungeon.player,AbstractDungeon.player,2));
     }
 

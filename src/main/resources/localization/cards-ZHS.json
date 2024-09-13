@@ -2654,7 +2654,7 @@
   },
   "shadowverse:ApostleOfUsurpation": {
     "NAME": "强夺的使徒",
-    "DESCRIPTION": "获得 !B! 点格挡。 NL 获得“每使用一张 财宝牌 ，对随机敌人造成 !M! 点伤害。”效果。 NL 随机将1张 财宝牌 加入手牌。"
+    "DESCRIPTION": "获得 !B! 点格挡。 NL 限定 ：获得“每使用一张 财宝牌 ，对随机敌人造成 !M! 点伤害。”效果。 NL 随机将1张 财宝牌 加入手牌。"
   },
   "shadowverse:Octrice": {
     "NAME": "强夺灾杰·奥克托丽丝",
@@ -6571,7 +6571,7 @@
   },
   "shadowverse:RevolutionShot": {
     "NAME": "革命射击",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 回合结束时，如果未被打出， 消耗 并回复2点生命。 NL 消耗。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 回合结束时，如果未被打出， 消耗 并回复2点生命。 NL 消耗 。"
   },
   "shadowverse:Spector2": {
     "NAME": "反叛拍档·巴妮与巴隆",

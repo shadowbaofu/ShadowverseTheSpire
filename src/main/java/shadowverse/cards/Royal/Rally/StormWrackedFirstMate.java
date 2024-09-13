@@ -27,6 +27,7 @@ public class StormWrackedFirstMate extends CustomCard {
     public static final String IMG_PATH = "img/cards/StormWrackedFirstMate.png";
     private float rotationTimer;
     private int previewIndex;
+    private boolean triggered;
 
     public static ArrayList<AbstractCard> returnProphecy() {
         ArrayList<AbstractCard> list = new ArrayList<>();
@@ -39,6 +40,7 @@ public class StormWrackedFirstMate extends CustomCard {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.SELF);
         this.baseBlock = 8;
         this.tags.add(AbstractShadowversePlayer.Enums.CONDEMNED);
+        this.triggered = false;
     }
 
     @Override
@@ -73,13 +75,16 @@ public class StormWrackedFirstMate extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction(ID.replace("shadowverse:", "")));
-        addToBot(new GainBlockAction(p,this.block));
-        if (this.upgraded){
-            addToBot(new MakeTempCardInHandAction(new DreadPirateFlag(),1));
-        }else {
-            addToBot(new MakeTempCardInHandAction(new GildedNecklace(),1));
+        addToBot(new GainBlockAction(p, this.block));
+        if (this.upgraded) {
+            addToBot(new MakeTempCardInHandAction(new DreadPirateFlag(), 1));
+        } else {
+            addToBot(new MakeTempCardInHandAction(new GildedNecklace(), 1));
         }
-        addToBot(new ApplyPowerAction(p, p, new StormWrackedFirstMatePower(p, 1)));
+        if (!this.triggered) {
+            addToBot(new ApplyPowerAction(p, p, new StormWrackedFirstMatePower(p, 1)));
+            this.triggered = true;
+        }
     }
 
 

@@ -28,7 +28,7 @@ public class DreadPirateFlag extends CustomCard {
 
     public DreadPirateFlag() {
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.SPECIAL, CardTarget.ALL_ENEMY);
-        this.baseDamage = 6;
+        this.baseDamage = 4;
         this.exhaust = true;
         this.tags.add(AbstractShadowversePlayer.Enums.GILDED);
     }
@@ -38,7 +38,7 @@ public class DreadPirateFlag extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(3);
+            upgradeDamage(2);
         }
     }
 

@@ -2257,11 +2257,7 @@
   },
   "shadowverse:MagnaZero": {
     "NAME": "Magna Zero",
-    "DESCRIPTION": "Machina. NL Deal !D! damage to ALL enemies. NL If Resonance has been active 10 or more times this combat, deal additional !M! damage. NL If Resonance has been active 20 or more times, double the damage.",
-    "EXTENDED_DESCRIPTION": [
-      " NL ( Resonance has been active ",
-      " times.)"
-    ]
+    "DESCRIPTION": "Machina. NL Deal !D! damage to ALL enemies. NL Increase this card's damage by !M! each time Resonance has been active for you.",
   },
   "shadowverse:Yuwan": {
     "NAME": "Yuwan, Dimensional Avenger",
@@ -2651,8 +2647,8 @@
   },
   "shadowverse:ApostleOfUsurpation": {
     "NAME": "Apostle of Usurpation",
-    "DESCRIPTION": "Whenever you play a Loot card, deal !M! damage to a random enemy.",
-    "UPGRADE_DESCRIPTION": "Whenever you play a Loot card, deal !M! damage to a random enemy. NL Add 1 random Loot card to your hand."
+    "DESCRIPTION": "Gain !B! Block. NL Limit: Whenever you play a Loot card, deal !M! damage to a random enemy.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Limit: Whenever you play a Loot card, deal !M! damage to a random enemy. NL Add 1 random Loot card to your hand."
   },
   "shadowverse:Octrice": {
     "NAME": "Octrice, Omen of Usurpation",
@@ -3794,7 +3790,7 @@
   },
   "shadowverse:UltimateHollow": {
     "NAME": "Ultimate Hollow",
-    "DESCRIPTION": "Deal !D! damage. NL Usurpation 4: Double the damage and gain !B! Block. NL This card is treated as a Loot card."
+    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL Whenever you draw this card, add a copy of this card into your discard pile. NL This card is treated as a Loot card."
   },
   "shadowverse:LoathingDesire": {
     "NAME": "Loathing Desire",
@@ -4686,7 +4682,7 @@
   },
   "shadowverse:IronwroughtDefender": {
     "NAME": "Ironwrought Defender",
-    "DESCRIPTION": "Heroic. NL Gain !B! Block 3 times. NL Distress_Call: Gain Block 1 more time."
+    "DESCRIPTION": "Heroic. NL Gain !B! Block 3 times. NL Distress_Call: Enemy loses !M! Strength this turn."
   },
   "shadowverse:Windslasher": {
     "NAME": "Windslasher",
@@ -6352,8 +6348,8 @@
   },
   "shadowverse:DarkAlice": {
     "NAME": "Dark Alice, Foul Fairytale",
-    "DESCRIPTION": "Crystallize 1: Add 1 *Dark *Alice *Crystallized to your hand. NL Deal !D! damage. If at least 10 Last Words cards were played this combat, Exhaust this card and add a *Dark *Alice *Evolved to your hand instead. NL Last_Words: When Exhausted, add a copy of this card to your hand. If at least 10 Last Words cards were played, add a *Dark *Alice *Crystallized to your hand instead. Its Countdown is 1.",
-    "UPGRADE_DESCRIPTION": "Crystallize 1: Add 1 *Dark *Alice *Crystallized+ to your hand. NL Deal !D! damage. If at least 10 Last Words cards were played this combat, Exhaust this card and add a *Dark *Alice *Evolved+ to your hand instead. NL Last_Words: When Exhausted, add a copy of this card to your hand. If at least 10 Last Words cards were played, add a *Dark *Alice *Crystallized+ to your hand instead. Its Countdown is 1.",
+    "DESCRIPTION": "Crystallize 1: Add 1 *Dark *Alice *Crystallized to your hand. NL ---------------- NL Deal !D! damage. If at least 10 Last Words cards were played this combat, Exhaust this card and add a *Dark *Alice *Evolved to your hand instead. NL Last_Words: When Exhausted, add a copy of this card to your hand. If at least 10 Last Words cards were played, add a *Dark *Alice *Crystallized to your hand instead. Its Countdown is 1.",
+    "UPGRADE_DESCRIPTION": "Crystallize 1: Add 1 *Dark *Alice *Crystallized+ to your hand. NL ---------------- NL Deal !D! damage. If at least 10 Last Words cards were played this combat, Exhaust this card and add a *Dark *Alice *Evolved+ to your hand instead. NL Last_Words: When Exhausted, add a copy of this card to your hand. If at least 10 Last Words cards were played, add a *Dark *Alice *Crystallized+ to your hand instead. Its Countdown is 1.",
     "EXTENDED_DESCRIPTION": [
       " NL (Played ",
       " Last Words cards.)"
@@ -6762,5 +6758,13 @@
     "NAME": "Dual Rage",
     "DESCRIPTION": "Armed. NL Choose 1 of 3 Armed cards and add it your hand. It costs 0 this turn. NL If you have *Lævateinn *Dragon and at least 2 *Draconic *Weapons in your hand, discard *Lævateinn *Dragon, randomly Exhaust 2 *Draconic *Weapons and Choose: NL *Lævateinn *Dragon, *Dual *Form *α, *β, or *γ NL Add the chosen card to your hand.",
     "UPGRADE_DESCRIPTION": "Armed. NL Choose 1 of 3 Armed cards and add it your hand. It costs 0 this turn. NL If you have *Lævateinn *Dragon and at least 2 *Draconic *Weapons in your hand, discard *Lævateinn *Dragon, randomly Exhaust 2 *Draconic *Weapons and Choose: NL *Lævateinn *Dragon, *Dual *Form *α+, *β+, or *γ+ NL Add the chosen card to your hand."
+   },
+  "shadowverse:DragonFighter": {
+    "NAME": "Reforged Dragon Warrior",
+    "DESCRIPTION": "Armed NL Deal !D! damage. NL Increase this card's damage by !M! + X and draw X cards. NL X equals the number of Armed attacks played this combat (max. 6)",
+    "EXTENDED_DESCRIPTION": [
+      " NL （X is ",
+      " )"
+    ]
   }
 }

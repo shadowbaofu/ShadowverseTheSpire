@@ -30,7 +30,7 @@ import java.util.ArrayList;
 public class TransReward  extends CustomReward {
     public static final String ID = "shadowverse:TransReward";
 
-    public static final String[] TEXT = (CardCrawlGame.languagePack.getUIString(ID)).TEXT;
+    public static final String[] TEXT = (CardCrawlGame.languagePack.getUIString("shadowverse:ClassReward")).TEXT;
     public CardGroup group;
 
     public TransReward() {

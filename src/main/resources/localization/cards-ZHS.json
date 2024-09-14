@@ -3800,7 +3800,7 @@
   },
   "shadowverse:UltimateHollow": {
     "NAME": "极意的空绝",
-    "DESCRIPTION": "造成 !D! 点伤害。 获得 !B! 点 格挡 。 NL 抽到时，将一张 *极意的空绝 置入弃牌堆。 NL 这张牌视为 *黄金首饰 、 *黄金之靴 、 *黄金之杯 、 *黄金匕首 。 NL 消耗 。"
+    "DESCRIPTION": "造成 !D! 点伤害。 获得 !B! 点 格挡 。 NL 抽到时，将一张 *复制品 置入弃牌堆。 NL 这张牌视为 *黄金首饰 、 *黄金之靴 、 *黄金之杯 、 *黄金匕首 。 NL 消耗 。"
   },
   "shadowverse:LoathingDesire": {
     "NAME": "憎恶的爱绝",

@@ -15,7 +15,7 @@ import java.util.*;
 public class LoliReward extends CustomReward {
     public static final String ID = "shadowverse:LoliReward";
 
-    public static final String[] TEXT = (CardCrawlGame.languagePack.getUIString(ID)).TEXT;
+    public static final String[] TEXT = (CardCrawlGame.languagePack.getUIString("shadowverse:ClassReward")).TEXT;
     public CardGroup group;
     ArrayList<AbstractCard.CardTags> tags = new ArrayList<>(Arrays.asList(
             AbstractShadowversePlayer.Enums.CONDEMNED,

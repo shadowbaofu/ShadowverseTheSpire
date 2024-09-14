@@ -73,6 +73,7 @@ public class ShadowverseEvolve  extends AbstractImageEvent {
                         this.imageEventText.clearRemainingOptions();
                         return;
                     case 1:
+                        this.imageEventText.updateBodyText(ACCEPT_BODY);
                         AbstractDungeon.gridSelectScreen.open(CardGroup.getGroupWithoutBottledCards(AbstractDungeon.player.masterDeck.getPurgeableCards()), 1, OPTIONS[7], false, false, false, true);
                         this.screenNum = 2;
                         this.imageEventText.updateDialogOption(0, OPTIONS[2]);

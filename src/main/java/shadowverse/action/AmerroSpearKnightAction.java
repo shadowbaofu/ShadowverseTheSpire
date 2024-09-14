@@ -63,7 +63,6 @@ public class AmerroSpearKnightAction extends AbstractGameAction {
         ArrayList<AbstractCard> derp = new ArrayList();
         AbstractCard[] heros = {
                 new Alexander(),
-                new AmerroSpearKnight(),
                 new Arthur(),
                 new FlameSoldier(),
                 new HeroicEntry(),
@@ -102,7 +101,7 @@ public class AmerroSpearKnightAction extends AbstractGameAction {
             }
         }
         int roll = AbstractDungeon.cardRandomRng.random(heros1.length - 1);
-        AbstractCard tmp = heros[roll];
+        AbstractCard tmp = heros1[roll];
         derp.add(tmp.makeCopy());
         return derp;
     }

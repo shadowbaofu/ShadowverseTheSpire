@@ -42,7 +42,8 @@ public class MirrorImage extends CustomCard {
                 tmp.exhaustOnUseOnce = true;
                 tmp.exhaust = true;
                 tmp.isEthereal = true;
-                tmp.rawDescription += " NL "+TEXT2+" 。 NL "+TEXT1+" 。";
+                tmp.retain = false;
+                tmp.rawDescription += " NL " + TEXT2 + " 。 NL " + TEXT1 + " 。";
                 tmp.initializeDescription();
                 tmp.applyPowers();
                 abstractPlayer.hand.addToTop(tmp);

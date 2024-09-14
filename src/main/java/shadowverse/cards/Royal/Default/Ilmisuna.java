@@ -26,7 +26,7 @@ public class Ilmisuna extends CustomCard {
     public Ilmisuna() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.ENEMY);
         this.baseDamage = 7;
-        this.baseBlock = 3;
+        this.baseBlock = 6;
     }
 
     @Override

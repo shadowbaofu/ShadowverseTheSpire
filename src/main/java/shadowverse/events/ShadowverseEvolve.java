@@ -1,17 +1,23 @@
 package shadowverse.events;
 
+import com.megacrit.cardcrawl.cards.CardGroup;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.AbstractImageEvent;
 import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
-import shadowverse.reward.LoliReward;
+import shadowverse.characters.*;
+import shadowverse.reward.TransReward;
 
-public class Loli extends AbstractImageEvent {
-    public static final String ID = "Loli";
+import java.util.ArrayList;
+import java.util.Arrays;
 
-    private static final EventStrings eventStrings = CardCrawlGame.languagePack.getEventString("Loli");
+public class ShadowverseEvolve  extends AbstractImageEvent {
+    public static final String ID = "ShadowverseEvolve";
+
+    private static final EventStrings eventStrings = CardCrawlGame.languagePack.getEventString("ShadowverseEvolve");
 
     public static final String NAME = eventStrings.NAME;
 
@@ -28,11 +34,18 @@ public class Loli extends AbstractImageEvent {
 
     private int screenNum = 0;
 
-    public Loli() {
-        super(NAME, "test", "img/event/Loli.png");
+    public ShadowverseEvolve() {
+        super(NAME, "test", "img/event/ShadowverseEvolve.jpg");
         this.body = INTRO_BODY_M;
-        this.imageEventText.setDialogOption(OPTIONS[0]);
-        this.imageEventText.setDialogOption(OPTIONS[1]);
+        ArrayList<AbstractPlayer.PlayerClass> cls=new ArrayList<>(Arrays.asList(Elf.Enums.Elf, Royal.Enums.Royal, Witchcraft.Enums.WITCHCRAFT, Dragon.Enums.Dragon, Necromancer.Enums.Necromancer,Vampire.Enums.Vampire,Bishop.Enums.Bishop));
+        if(cls.contains(AbstractDungeon.player.chosenClass)){
+            this.imageEventText.setDialogOption(OPTIONS[0]);
+
+        }else{
+            this.imageEventText.setDialogOption(OPTIONS[1]);
+
+        }
+        this.imageEventText.setDialogOption(OPTIONS[2]);
     }
 
     @Override
@@ -50,13 +63,18 @@ public class Loli extends AbstractImageEvent {
                     case 0:
                         this.imageEventText.updateBodyText(ACCEPT_BODY);
                         AbstractDungeon.getCurrRoom().rewards.clear();
-                        AbstractDungeon.getCurrRoom().addCardReward(new LoliReward());
+                        AbstractDungeon.getCurrRoom().addCardReward(new TransReward());
                         AbstractDungeon.getCurrRoom().phase = AbstractRoom.RoomPhase.COMPLETE;
                         AbstractDungeon.combatRewardScreen.open();
                         this.screenNum = 1;
                         this.imageEventText.updateDialogOption(0, OPTIONS[2]);
                         this.imageEventText.clearRemainingOptions();
                         return;
+                    case 1:
+                        AbstractDungeon.gridSelectScreen.open(CardGroup.getGroupWithoutBottledCards(AbstractDungeon.player.masterDeck.getPurgeableCards()), 1, OPTIONS[7], false, false, false, true);
+                        this.screenNum = 1;
+                        this.imageEventText.updateDialogOption(0, OPTIONS[2]);
+                        this.imageEventText.clearRemainingOptions();
                 }
                 logMetricIgnored("Loli");
                 this.imageEventText.updateBodyText(EXIT_BODY);

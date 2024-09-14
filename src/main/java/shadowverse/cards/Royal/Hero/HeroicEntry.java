@@ -27,6 +27,7 @@ public class HeroicEntry extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/HeroicEntry.png";
     private static final String TEXT = CardCrawlGame.languagePack.getUIString("shadowverse:Exhaust").TEXT[0];
+    private static final String TEXT1 = CardCrawlGame.languagePack.getUIString("shadowverse:Retain").TEXT[0];
 
     public HeroicEntry() {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY);
@@ -102,7 +103,7 @@ public class HeroicEntry extends CustomCard {
                         addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(4, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE, true));
                         if (upgraded && !c.retain && !c.selfRetain) {
                             c.retain = true;
-                            c.rawDescription += " NL " + TEXT;
+                            c.rawDescription += " NL " + TEXT1;
                             c.initializeDescription();
                             c.applyPowers();
                         }

@@ -233,9 +233,9 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
     public void receivePostInitialize() {
         loadSettings();
         BaseMod.addEvent(PinyaEvent.ID, PinyaEvent.class);
-
         BaseMod.addEvent(NaturalMachine.ID, NaturalMachine.class, Exordium.ID);
         BaseMod.addEvent(Crossover.ID, Crossover.class);
+        BaseMod.addEvent(ShadowverseEvolve.ID, ShadowverseEvolve.class);
         BaseMod.addEvent(GemFortune.ID, GemFortune.class, TheCity.ID);
         BaseMod.addPotion(SatanPotion.class, Color.CYAN, Color.RED, Color.BLACK, SatanPotion.POTION_ID);
         BaseMod.addPotion(ElfPotion.class, Color.GREEN, Color.LIME, Color.GOLD, ElfPotion.POTION_ID, Elf.Enums.Elf);

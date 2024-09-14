@@ -4171,7 +4171,7 @@
     "DESCRIPTION": "消耗 1张手牌，增加1张 *复制品 到抽牌堆中，下回合开始时额外抽1张牌。 NL 造成 !D! 点伤害。 NL 本回合每当由非 共鸣 转变为 共鸣 时，对全体敌人造成 !M! 点伤害。"
   },
   "shadowverse:Rosa": {
-    "NAME": "解放少女·罗莎",
+    "NAME": "解放少女·萝夏",
     "DESCRIPTION": "消耗 1张手牌，增加1张 *复制品 到抽牌堆中，下回合开始时额外抽1张牌。 NL 获得 !B! 点 格挡 。 NL 本回合每当由非 共鸣 转变为 共鸣 时，获得 !M! 点 格挡 。"
   },
   "shadowverse:Craig": {
@@ -4681,7 +4681,7 @@
   },
   "shadowverse:IronwroughtDefender": {
     "NAME": "铁壁守卫者",
-    "DESCRIPTION": "英雄 NL 获得 !B! 点 格挡 3次。 NL 危难 :本回合内，敌人失去 !M! 点 力量 。"
+    "DESCRIPTION": "英雄 NL 获得 !B! 点 格挡 3次。 NL 危难 :本回合内，目标敌人失去 !M! 点 力量 。"
   },
   "shadowverse:Windslasher": {
     "NAME": "驭风斩击者",

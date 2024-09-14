@@ -72,9 +72,9 @@ public class Sukuna
 
 
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction) new SFXAction("Sukuna"));
+        addToBot(new SFXAction("Sukuna"));
         calculateCardDamage(abstractMonster);
-        addToBot((AbstractGameAction) new DamageAction((AbstractCreature) abstractMonster, new DamageInfo((AbstractCreature) p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+        addToBot(new DamageAction(abstractMonster, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
     }
 
 

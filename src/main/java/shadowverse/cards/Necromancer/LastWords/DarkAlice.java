@@ -17,6 +17,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.powers.WeakPower;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
+import com.megacrit.cardcrawl.vfx.cardManip.ExhaustCardEffect;
 import shadowverse.cards.AbstractAccelerateCard;
 import shadowverse.cards.Neutral.Temp.DarkAlice_Crystalize;
 import shadowverse.cards.Neutral.Temp.DarkAlice_Ev;
@@ -52,18 +53,16 @@ public class DarkAlice
         }
     }
 
-    public void applyPowers() {
-        super.applyPowers();
+    public void triggerOnGlowCheck() {
         int count = 0;
         for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisCombat) {
             if (c.hasTag(AbstractShadowversePlayer.Enums.LASTWORD))
                 count++;
         }
-        this.rawDescription = cardStrings.DESCRIPTION;
-        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + count;
-        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[1];
-        initializeDescription();
+        if (count>=10)
+            this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
     }
+
 
     @Override
     public void baseUse(AbstractPlayer p, AbstractMonster m) {
@@ -78,6 +77,7 @@ public class DarkAlice
                 count++;
         }
         if (count > 10) {
+            AbstractDungeon.effectList.add(new ExhaustCardEffect(this));
             p.hand.removeCard(this);
             AbstractCard ev = new DarkAlice_Ev();
             if (upgraded)

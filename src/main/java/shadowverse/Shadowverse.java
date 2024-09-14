@@ -2563,7 +2563,6 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard(new Lorena());
         BaseMod.addCard(new LorenaPunch());
         BaseMod.addCard(new LorenaWater());
-
         BaseMod.addCard(new Valdain());
         BaseMod.addCard(new Sukuna());
         BaseMod.addCard(new TerrorFormer());
@@ -3122,6 +3121,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard(new DualModeA());
         BaseMod.addCard(new DualModeB());
         BaseMod.addCard(new DualModeC());
+        BaseMod.addCard(new DragonFighter());
         logger.info("Success");
     }
 

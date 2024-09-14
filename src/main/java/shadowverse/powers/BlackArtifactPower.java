@@ -7,10 +7,12 @@ import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import shadowverse.effect.RedLaserBeamEffect;
+import shadowverse.effect.moryyEffect;
 
 
 public class BlackArtifactPower
@@ -37,16 +39,20 @@ public class BlackArtifactPower
     }
 
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0]+this.amount+DESCRIPTIONS[1];
+        this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
     }
 
     public void atStartOfTurnPostDraw() {
         flash();
-        addToBot((AbstractGameAction)new VFXAction(this.owner, (AbstractGameEffect)new RedLaserBeamEffect(this.owner.dialogX, this.owner.dialogY,this.owner.flipHorizontal), 0.1F));
-        if (this.owner.hasPower(WhiteArtifactPower.POWER_ID)){
-            addToBot((AbstractGameAction)new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(this.amount*2, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE));
-        }else {
-            addToBot((AbstractGameAction)new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(this.amount, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE));
+        if (Settings.FAST_MODE) {
+            addToBot(new VFXAction(new moryyEffect(), 0.7F));
+        } else {
+            addToBot(new VFXAction(new moryyEffect(), 1.0F));
+        }
+        if (this.owner.hasPower(WhiteArtifactPower.POWER_ID)) {
+            addToBot(new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(this.amount * 2, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE));
+        } else {
+            addToBot(new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(this.amount, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE));
         }
     }
 

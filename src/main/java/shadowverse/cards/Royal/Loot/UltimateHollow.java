@@ -50,7 +50,11 @@ public class UltimateHollow extends CustomCard {
     @Override
     public void triggerWhenDrawn() {
         addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_Eff"));
-        this.addToTop(new MakeTempCardInDiscardAction(new UltimateHollow(), 1));
+        AbstractCard c=new UltimateHollow();
+        if(this.upgraded){
+            c.upgrade();
+        }
+        this.addToTop(new MakeTempCardInDiscardAction(c, 1));
     }
 
 

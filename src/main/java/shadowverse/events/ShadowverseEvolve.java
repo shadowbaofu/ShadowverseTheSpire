@@ -1,5 +1,6 @@
 package shadowverse.events;
 
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -8,6 +9,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.AbstractImageEvent;
 import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
+import com.megacrit.cardcrawl.vfx.cardManip.PurgeCardEffect;
 import shadowverse.characters.*;
 import shadowverse.reward.TransReward;
 
@@ -66,17 +68,18 @@ public class ShadowverseEvolve  extends AbstractImageEvent {
                         AbstractDungeon.getCurrRoom().addCardReward(new TransReward());
                         AbstractDungeon.getCurrRoom().phase = AbstractRoom.RoomPhase.COMPLETE;
                         AbstractDungeon.combatRewardScreen.open();
-                        this.screenNum = 1;
+                        this.screenNum = 2;
                         this.imageEventText.updateDialogOption(0, OPTIONS[2]);
                         this.imageEventText.clearRemainingOptions();
                         return;
                     case 1:
+                        this.imageEventText.updateBodyText(ACCEPT_BODY);
                         AbstractDungeon.gridSelectScreen.open(CardGroup.getGroupWithoutBottledCards(AbstractDungeon.player.masterDeck.getPurgeableCards()), 1, OPTIONS[7], false, false, false, true);
-                        this.screenNum = 1;
+                        this.screenNum = 2;
                         this.imageEventText.updateDialogOption(0, OPTIONS[2]);
                         this.imageEventText.clearRemainingOptions();
                 }
-                logMetricIgnored("Loli");
+                logMetricIgnored("SVE");
                 this.imageEventText.updateBodyText(EXIT_BODY);
                 this.screenNum = 2;
                 this.imageEventText.updateDialogOption(0, OPTIONS[2]);
@@ -87,5 +90,16 @@ public class ShadowverseEvolve  extends AbstractImageEvent {
                 return;
         }
         openMap();
+    }
+
+    public void update() {
+        super.update();
+        if (!AbstractDungeon.gridSelectScreen.selectedCards.isEmpty()) {
+            AbstractCard c = (AbstractCard)AbstractDungeon.gridSelectScreen.selectedCards.get(0);
+            AbstractDungeon.topLevelEffects.add(new PurgeCardEffect(c, (float)(Settings.WIDTH / 2), (float)(Settings.HEIGHT / 2)));
+            AbstractDungeon.player.masterDeck.removeCard(c);
+            AbstractDungeon.gridSelectScreen.selectedCards.remove(c);
+        }
+
     }
 }

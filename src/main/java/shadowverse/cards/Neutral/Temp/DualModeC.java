@@ -32,6 +32,7 @@ import shadowverse.characters.Dragon;
      super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Dragon.Enums.COLOR_BROWN, CardRarity.SPECIAL, CardTarget.ALL);
      this.baseDamage = 0;
      this.baseMagicNumber = 14;
+     this.magicNumber = this.baseMagicNumber;
      this.tags.add(AbstractShadowversePlayer.Enums.ARMED);
      this.exhaust = true;
    }

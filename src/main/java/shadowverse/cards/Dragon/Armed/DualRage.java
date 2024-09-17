@@ -80,7 +80,6 @@ public class DualRage extends CustomCard {
         for (AbstractCard card : abstractPlayer.hand.group) {
             if (card instanceof DragonWeapon) {
                 count++;
-                addToBot(new ExhaustSpecificCardAction(card, abstractPlayer.hand));
             }
             if (card instanceof LavateinnDragon){
                 hasLavatin = true;

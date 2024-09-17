@@ -39,7 +39,7 @@ public class Kagero extends CustomCard implements BranchableUpgradeCard {
 
     private static AbstractCard soulStrike = new SoulStrike();
     private static AbstractCard upgradedsouStrike(){
-        AbstractCard c = new FirstOne();
+        AbstractCard c = new SoulStrike();
         c.upgrade();
         return c;
     }

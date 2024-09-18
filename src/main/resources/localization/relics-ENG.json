@@ -573,7 +573,7 @@
     "NAME": "Dragon Queen's Castle",
     "FLAVOR": "Protect Empress Otohime!",
     "DESCRIPTIONS": [
-      "The first attack each turn that costs #b3 or more is played twice."
+      "The first attack each combat that costs #b3 or more is played twice."
     ]
   },
   "shadowverse:KayaBOSS": {

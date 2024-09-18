@@ -42,7 +42,7 @@
   },
   "shadowverse:DimensionShift": {
     "NAME": "Dimension Shift",
-    "DESCRIPTION": "Retain. NL Spellboost: \bCosts 1 less [E]. NL Exhaust. NL Take an extra turn after this one."
+    "DESCRIPTION": "Retain. NL Spellboost: \bCosts 1 less [E]. NL Take an extra turn after this one. NL Exhaust."
   },
   "shadowverse:MagicMissile": {
     "NAME": "Magic Missile",
@@ -159,7 +159,7 @@
   },
   "shadowverse:PiousInstructor": {
     "NAME": "Karl, Pious Instructor",
-    "DESCRIPTION": "Gain 1 Earth_Essence. NL Gain !M! Block every time you gain an Earth_Essence."
+    "DESCRIPTION": "Gain 1 Earth_Essence. NL Gain !M! Block each time you gain an Earth_Essence."
   },
   "shadowverse:ConjureGuardian": {
     "NAME": "Conjure Guardian",
@@ -208,7 +208,7 @@
   },
   "shadowverse:Magisa": {
     "NAME": "Magisa, Ruinfist Witch",
-    "DESCRIPTION": "Apply !M! Vulnerable. NL Earth_Rite: \bGain !B! Block. NL Earth_Rite 2: \bDeal !D! damage. NL Earth_Rite 3: \bApply !M! Weak. NL Earth_Rite 4: \bGain 3 Strength and 3 Dexterity."
+    "DESCRIPTION": "Apply !M! Vulnerable. NL Earth_Rite: \bGain !B! Block. NL Earth_Rite 2: \bDeal !D! damage. NL Earth_Rite 3: \bApply !M! Weak. NL Earth_Rite 4: \bGain 3 Strength and Dexterity."
   },
   "shadowverse:StaffOfWhirlwinds": {
     "NAME": "Staff of Whirlwinds",
@@ -233,7 +233,7 @@
   },
   "shadowverse:Chaos": {
     "NAME": "Whims of Chaos",
-    "DESCRIPTION": "Gain Confused. NL You and ALL enemies gain or lose up to !M! Strength randomly at the start of the turn. NL Lose or gain this Strength at the end of the turn."
+    "DESCRIPTION": "Become Confused. NL You and ALL enemies gain or lose up to !M! Strength randomly at the start of the turn. NL Lose or gain this Strength at the end of the turn."
   },
   "shadowverse:ChainLightning": {
     "NAME": "Chain Lightning",
@@ -385,8 +385,8 @@
   },
   "shadowverse:Riley": {
     "NAME": "Riley, Hydroshaman",
-    "DESCRIPTION": "Natura. NL Deal !D! damage. NL Increase this card's damage by 5 for every *Naterran *Great *Tree you've played this combat. NL Invocation: At the start of your turn, if you have played at least 7 *Naterran *Great *Trees this combat, put this card into your hand and change its cost to 0.",
-    "UPGRADE_DESCRIPTION": "Natura. NL Deal !D! damage. NL Increase this card's damage by 7 for every *Naterran *Great *Tree you've played this combat. NL Invocation: At the start of your turn, if you have played at least 7 *Naterran *Great *Trees this combat, put this card into your hand and change its cost to 0.",
+    "DESCRIPTION": "Natura. NL Deal !D! damage. NL Increase this card's damage by 5 for every *Naterran *Great *Tree played this combat. NL Invocation: At the start of your turn, if you have played at least 7 *Naterran *Great *Trees this combat, put this card into your hand and change its cost to 0.",
+    "UPGRADE_DESCRIPTION": "Natura. NL Deal !D! damage. NL Increase this card's damage by 7 for every *Naterran *Great *Tree played this combat. NL Invocation: At the start of your turn, if you have played at least 7 *Naterran *Great *Trees this combat, put this card into your hand and change its cost to 0.",
     "EXTENDED_DESCRIPTION": [
       " NL (*Naterran *Great *Trees played: ",
       ")"
@@ -402,7 +402,7 @@
   },
   "shadowverse:Ghios": {
     "NAME": "Ghios, Sparkling Prism",
-    "DESCRIPTION": "Retain. NL When Retained, at the end of your turn, if this card was *Spellboosted at least 3 times, set the HP of ALL enemies with 10 or less to 0. NL If at least 7 times, gain 8 Block and 1 Blur. NL If at least 9 times, ALL enemies lose 2 Strength. NL If at least 12 times, change the cost of this card to 0. NL Deal !D! damage, gain !B! Block. NL Exhaust.",
+    "DESCRIPTION": "Retain. NL When Retained at the end of your turn, if this card was *Spellboosted at least 3 times, set the HP of ALL enemies with 10 or less to 0. NL If at least 7 times, gain 8 Block and 1 Blur. NL If at least 9 times, ALL enemies lose 2 Strength. NL If at least 12 times, change the cost of this card to 0. NL Deal !D! damage, gain !B! Block. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
       " NL (Current Spellboosts: ",
       " )"
@@ -446,11 +446,11 @@
   },
   "shadowverse:Scorpion": {
     "NAME": "Scorpion of Greed",
-    "DESCRIPTION": "Deal !D! damage and apply 8 Poison. Heal HP equal to unblocked damage. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. Apply 8 Poison. Heal HP equal to unblocked damage. NL Exhaust."
   },
   "shadowverse:Flamelord": {
     "NAME": "Flamelord of Deceit",
-    "DESCRIPTION": "Deal !D! damage and apply !M! Weak."
+    "DESCRIPTION": "Deal !D! damage. Apply !M! Weak."
   },
   "shadowverse:ViciousCommander": {
     "NAME": "Vicious Commander",
@@ -483,7 +483,7 @@
   },
   "shadowverse:Satanael": {
     "NAME": "Satanael",
-    "DESCRIPTION": "Exhaust your hand and gain !B! Block for each card Exhausted. NL Randomly put 6 different Apocalypse Cards or Cocytus Cards with Retain into your hand. "
+    "DESCRIPTION": "Exhaust your hand. Gain !B! Block for each card Exhausted. NL Randomly put 6 different Apocalypse Cards or Cocytus Cards with Retain into your hand. "
   },
   "shadowverse:EmbodimentOfCocytus": {
     "NAME": "Embodiment of Cocytus",

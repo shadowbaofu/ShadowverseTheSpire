@@ -26,7 +26,7 @@ public class FrontlineInstructor extends CustomCard {
 
 
     public FrontlineInstructor() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.SELF);
         this.baseBlock = 7;
         this.triggered = false;
     }

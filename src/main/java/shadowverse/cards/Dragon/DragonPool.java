@@ -4,7 +4,6 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import shadowverse.cards.AbstractBanPool;
 import shadowverse.cards.BanGroup;
-import shadowverse.cards.Bishop.Default.Ra;
 import shadowverse.cards.Dragon.Armed.*;
 import shadowverse.cards.Dragon.Buff.*;
 import shadowverse.cards.Dragon.Default.*;
@@ -14,7 +13,6 @@ import shadowverse.cards.Dragon.Natura.*;
 import shadowverse.cards.Dragon.Ramp.*;
 import shadowverse.cards.Dragon.Tempo.*;
 import shadowverse.characters.Dragon;
-import shadowverse.characters.Elf;
 
 import java.util.ArrayList;
 
@@ -93,6 +91,7 @@ public class DragonPool extends AbstractBanPool {
         Default.addCard(new Masamune());
         Default.addCard(new Filene());
         Default.addCard(new PlatinumDragonblader());
+        Default.addCard(new Razia());
         Discard1.addCard(new DracomancerRites());
         Discard1.addCard(new DraconicCounsel());
         Discard1.addCard(new DragoonMedic());

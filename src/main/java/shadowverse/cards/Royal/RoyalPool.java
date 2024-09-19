@@ -120,7 +120,7 @@ public class RoyalPool  extends AbstractBanPool {
         Evolve.addCard(new Seofon());
         Evolve.addCard(new WardenOfHonor());
         Evolve.addCard(new WeeMerchantsAppraisal());
-        Default.addCard(new Radiel());
+        Evolve.addCard(new Radiel());
 
         Festive.addCard(new FrontDeskFrog());
         Festive.addCard(new HonorableThief());

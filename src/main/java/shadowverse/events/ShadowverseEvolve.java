@@ -39,8 +39,7 @@ public class ShadowverseEvolve  extends AbstractImageEvent {
     public ShadowverseEvolve() {
         super(NAME, "test", "img/event/ShadowverseEvolve.jpg");
         this.body = INTRO_BODY_M;
-        ArrayList<AbstractPlayer.PlayerClass> cls=new ArrayList<>(Arrays.asList(Elf.Enums.Elf, Royal.Enums.Royal, Witchcraft.Enums.WITCHCRAFT, Dragon.Enums.Dragon, Necromancer.Enums.Necromancer,Vampire.Enums.Vampire,Bishop.Enums.Bishop));
-        if(cls.contains(AbstractDungeon.player.chosenClass)){
+        if(isSVP()){
             this.imageEventText.setDialogOption(OPTIONS[0]);
 
         }else{
@@ -48,6 +47,11 @@ public class ShadowverseEvolve  extends AbstractImageEvent {
 
         }
         this.imageEventText.setDialogOption(OPTIONS[2]);
+    }
+
+    public boolean isSVP(){
+        ArrayList<AbstractPlayer.PlayerClass> cls=new ArrayList<>(Arrays.asList(Elf.Enums.Elf, Royal.Enums.Royal, Witchcraft.Enums.WITCHCRAFT, Dragon.Enums.Dragon, Necromancer.Enums.Necromancer,Vampire.Enums.Vampire,Bishop.Enums.Bishop));
+        return cls.contains(AbstractDungeon.player.chosenClass);
     }
 
     @Override
@@ -63,21 +67,23 @@ public class ShadowverseEvolve  extends AbstractImageEvent {
             case 0:
                 switch (buttonPressed) {
                     case 0:
-                        this.imageEventText.updateBodyText(ACCEPT_BODY);
-                        AbstractDungeon.getCurrRoom().rewards.clear();
-                        AbstractDungeon.getCurrRoom().addCardReward(new TransReward());
-                        AbstractDungeon.getCurrRoom().phase = AbstractRoom.RoomPhase.COMPLETE;
-                        AbstractDungeon.combatRewardScreen.open();
-                        this.screenNum = 2;
-                        this.imageEventText.updateDialogOption(0, OPTIONS[2]);
-                        this.imageEventText.clearRemainingOptions();
-                        return;
-                    case 1:
-                        this.imageEventText.updateBodyText(ACCEPT_BODY);
-                        AbstractDungeon.gridSelectScreen.open(CardGroup.getGroupWithoutBottledCards(AbstractDungeon.player.masterDeck.getPurgeableCards()), 1, OPTIONS[7], false, false, false, true);
-                        this.screenNum = 2;
-                        this.imageEventText.updateDialogOption(0, OPTIONS[2]);
-                        this.imageEventText.clearRemainingOptions();
+                        if(isSVP()){
+                            this.imageEventText.updateBodyText(ACCEPT_BODY);
+                            AbstractDungeon.getCurrRoom().rewards.clear();
+                            AbstractDungeon.getCurrRoom().addCardReward(new TransReward());
+                            AbstractDungeon.getCurrRoom().phase = AbstractRoom.RoomPhase.COMPLETE;
+                            AbstractDungeon.combatRewardScreen.open();
+                            this.screenNum = 2;
+                            this.imageEventText.updateDialogOption(0, OPTIONS[2]);
+                            this.imageEventText.clearRemainingOptions();
+                            return;
+                        }else{
+                            this.imageEventText.updateBodyText(ACCEPT_BODY);
+                            AbstractDungeon.gridSelectScreen.open(CardGroup.getGroupWithoutBottledCards(AbstractDungeon.player.masterDeck.getPurgeableCards()), 1, OPTIONS[7], false, false, false, true);
+                            this.screenNum = 2;
+                            this.imageEventText.updateDialogOption(0, OPTIONS[2]);
+                            this.imageEventText.clearRemainingOptions();
+                        }
                 }
                 logMetricIgnored("SVE");
                 this.imageEventText.updateBodyText(EXIT_BODY);

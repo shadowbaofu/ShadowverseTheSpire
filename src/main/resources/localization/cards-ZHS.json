@@ -3796,7 +3796,7 @@
   },
   "shadowverse:UltimateHollow": {
     "NAME": "极意的空绝",
-    "DESCRIPTION": "造成 !D! 点伤害。 获得 !B! 点 格挡 。 NL 抽到时，将一张 *复制品 置入弃牌堆。 NL 这张牌视为 *黄金首饰 、 *黄金之靴 、 *黄金之杯 、 *黄金匕首 。 NL 消耗 。"
+    "DESCRIPTION": "造成 !D! 点伤害。 获得 !B! 点 格挡 。 NL 抽到时，将一张 *复制品 置入手牌。 NL 这张牌视为 *黄金首饰 、 *黄金之靴 、 *黄金之杯 、 *黄金匕首 。 NL 消耗 。"
   },
   "shadowverse:LoathingDesire": {
     "NAME": "憎恶的爱绝",
@@ -3935,7 +3935,7 @@
   },
   "shadowverse:Aramis": {
     "NAME": "阿拉密斯",
-    "DESCRIPTION": "打出攻击牌时，轮流获得1点 力量 或 敏捷 并使这张牌的伤害+3。 NL 召唤随从时，使该随从获得+1/+1并使这张牌的伤害+3。 NL 造成 !D! 点伤害。 NL 消耗 。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 本回合中，打出攻击牌时，获得1点 力量 或 敏捷 。 NL 召唤随从时，使该随从获得+1/+1。 NL 消耗 。"
   },
   "shadowverse:Porthos": {
     "NAME": "波尔多斯",
@@ -4374,8 +4374,8 @@
   },
   "shadowverse:AmerroSpearKnight": {
     "NAME": "锐枪骑士·埃米罗斯",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL  危难 :从3张 英雄 牌中选择1张加入你的手牌。",
-    "UPGRADE_DESCRIPTION":"造成 !D! 点伤害两次。 NL  危难 :从3张 英雄 牌中选择1张加入你的手牌，这张牌在本回合中耗能减少1 [E] 。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 可进化 。",
+    "UPGRADE_DESCRIPTION":"造成 !D! 点伤害两次。 NL 危难 :从3张 英雄 牌中选择1张加入你的手牌。 NL 打出后解除升级"
   },
   "shadowverse:HeroicEntry": {
     "NAME": "英雄到来！",
@@ -6762,5 +6762,37 @@
       " NL （X为",
       ")"
     ]
+  },
+  "shadowverse:Razia": {
+    "NAME": "破天的铳枪骑士·拉丝缇娜",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 直到下回合开始，受到攻击时，若仍有 格挡 ，获得1点 力量 ，攻击者受到 !M! 点伤害。 NL 否则攻击者受到 !M! 点伤害两次并失去此能力。 NL 反击伤害享受3倍 力量 加成。"
+  },
+  "shadowverse:Goblin": {
+    "NAME": "哥布林",
+    "DESCRIPTION": "造成 !D! 点伤害。",
+    "UPGRADE_DESCRIPTION":"造成 !D! 点伤害。 NL 限定 ： 将一张随机 *女骑士 或 *女精灵 加入手牌，使其获得 消耗 。"
+  },
+  "shadowverse:AngelicSnipe": {
+    "NAME": "天使的圣箭",
+    "DESCRIPTION": "造成 !D! 点伤害。",
+    "UPGRADE_DESCRIPTION":"造成 !D! 点伤害。 NL 抽1张牌。 NL 消耗 。"
+  },
+  "shadowverse:CloudChorus": {
+    "NAME": "天界的乐曲",
+    "DESCRIPTION": "获得 !B! 点 格挡 。",
+    "UPGRADE_DESCRIPTION":"获得 !B! 点 格挡 。 NL 限定 ：回复 !M! 点生命。"
+  },
+  "shadowverse:AngelicBarrage": {
+    "NAME": "天使的箭雨",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。"
+  },
+  "shadowverse:Goliath": {
+    "NAME": "歌利亚",
+    "DESCRIPTION": "造成 !D! 点伤害。",
+    "UPGRADE_DESCRIPTION":"造成 !D! 点伤害。 NL 获得 !B! 点 格挡 。"
+  },
+  "shadowverse:AngelicSwordMaiden": {
+    "NAME": "天女剑士",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !B! 点 格挡 。"
   }
 }

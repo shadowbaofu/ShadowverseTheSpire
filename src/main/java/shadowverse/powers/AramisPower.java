@@ -8,7 +8,6 @@ import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.powers.AbstractPower;
@@ -21,19 +20,15 @@ public class AramisPower extends AbstractPower {
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings("shadowverse:AramisPower");
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-    private AbstractCard card;
-    private boolean str;
 
-    public AramisPower(AbstractCreature owner, int amount, AbstractCard card) {
+    public AramisPower(AbstractCreature owner, int amount) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
         this.amount = amount;
         this.type = PowerType.BUFF;
-        this.card = card;
         updateDescription();
         this.img = new Texture("img/powers/AramisPower.png");
-        this.str = true;
     }
 
     @Override
@@ -46,8 +41,7 @@ public class AramisPower extends AbstractPower {
 
     @Override
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1] + this.amount + DESCRIPTIONS[2] + this.amount * 3 + DESCRIPTIONS[3]
-                + this.amount + DESCRIPTIONS[4] + this.amount * 3 + DESCRIPTIONS[5];
+        this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1] + this.amount + DESCRIPTIONS[2] + this.amount * 3 + DESCRIPTIONS[3];
     }
 
     @Override
@@ -55,26 +49,15 @@ public class AramisPower extends AbstractPower {
         if (orb instanceof Minion) {
             addToBot(new SFXAction("AramisPower"));
             ((Minion) orb).buff(this.amount, this.amount);
-            this.card.baseDamage += this.amount * 3;
-            this.card.applyPowers();
-            this.card.flash();
         }
     }
 
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (card.type == AbstractCard.CardType.ATTACK && card != this.card && AbstractDungeon.player.hand.group.contains(this.card)) {
+        if (card.type == AbstractCard.CardType.ATTACK) {
             addToBot(new SFXAction("AramisPower"));
-            if (str) {
-                addToBot(new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, this.amount), this.amount));
-                str = false;
-            } else {
-                addToBot(new ApplyPowerAction(this.owner, this.owner, new DexterityPower(this.owner, this.amount), this.amount));
-                str = true;
-            }
-            this.card.baseDamage += this.amount * 3;
-            this.card.applyPowers();
-            this.card.flash();
+            addToBot(new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, this.amount), this.amount));
+            addToBot(new ApplyPowerAction(this.owner, this.owner, new DexterityPower(this.owner, this.amount), this.amount));
         }
     }
 

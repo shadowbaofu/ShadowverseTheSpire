@@ -34,7 +34,6 @@ public class MorgensternMaid extends CustomCard {
         if (!this.upgraded) {
             upgradeName();
             upgradeBlock(5);
-            upgradeMagicNumber(1);
             upgradeDamage(2);
         }
     }

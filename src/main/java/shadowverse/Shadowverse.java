@@ -1239,6 +1239,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("OpulentStrategist_Pow", new Sfx(voicePath + "OpulentStrategist_Pow.wav"));
             reflectedMap.put("MasterfulMusician", new Sfx(voicePath + "MasterfulMusician.wav"));
             reflectedMap.put("AmerroSpearKnight", new Sfx(voicePath + "AmerroSpearKnight.wav"));
+            reflectedMap.put("AmerroSpearKnight_Ev", new Sfx(voicePath + "AmerroSpearKnight_Ev.wav"));
             reflectedMap.put("HeroicEntry", new Sfx(voicePath + "HeroicEntry.wav"));
             reflectedMap.put("ValiantFencer", new Sfx(voicePath + "ValiantFencer.wav"));
             reflectedMap.put("ValiantFencer_EH", new Sfx(voicePath + "ValiantFencer_EH.wav"));
@@ -1697,6 +1698,12 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("Soulflash", new Sfx(voicePath + "Soulflash.wav"));
             reflectedMap.put("Vincent2", new Sfx(voicePath + "Vincent2.wav"));
             reflectedMap.put("WordsOfSanction", new Sfx(voicePath + "WordsOfSanction.wav"));
+            reflectedMap.put("AngelicSwordMaiden", new Sfx(voicePath + "AngelicSwordMaiden.wav"));
+            reflectedMap.put("Goblin", new Sfx(voicePath + "Goblin.wav"));
+            reflectedMap.put("Goliath", new Sfx(voicePath + "Goliath.wav"));
+            reflectedMap.put("Razia", new Sfx(voicePath + "Razia.wav"));
+            reflectedMap.put("RaziaPower1", new Sfx(voicePath + "RaziaPower1.wav"));
+            reflectedMap.put("RaziaPower2", new Sfx(voicePath + "RaziaPower2.wav"));
         }
         if (Loader.isModLoaded("CardAugments")) {
             AugmentHelper.register();
@@ -3122,6 +3129,13 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard(new DualModeB());
         BaseMod.addCard(new DualModeC());
         BaseMod.addCard(new DragonFighter());
+        BaseMod.addCard(new Razia());
+        BaseMod.addCard(new Goblin());
+        BaseMod.addCard(new AngelicSnipe());
+        BaseMod.addCard(new AngelicBarrage());
+        BaseMod.addCard(new CloudChorus());
+        BaseMod.addCard(new Goliath());
+        BaseMod.addCard(new AngelicSwordMaiden());
         logger.info("Success");
     }
 

@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import shadowverse.action.AmerroSpearKnightAction;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
+import shadowverse.relics.KagemitsuSword;
 
 public class AmerroSpearKnight extends CustomCard {
     public static final String ID = "shadowverse:AmerroSpearKnight";
@@ -22,6 +23,7 @@ public class AmerroSpearKnight extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/AmerroSpearKnight.png";
+    public static final String IMG_PATH_EV = "img/cards/AmerroSpearKnight_Ev.png";
 
 
     public AmerroSpearKnight() {
@@ -34,9 +36,30 @@ public class AmerroSpearKnight extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
+            this.textureImg = IMG_PATH_EV;
+            this.loadCardImage(IMG_PATH_EV);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
+    }
+
+    public void degrade() {
+        if (this.upgraded) {
+            degradeName();
+            this.textureImg = IMG_PATH;
+            this.loadCardImage(IMG_PATH);
+            this.rawDescription = cardStrings.DESCRIPTION;
+            initializeDescription();
+            this.superFlash();
+            this.applyPowers();
+        }
+    }
+
+    public void degradeName() {
+        --this.timesUpgraded;
+        this.upgraded = false;
+        this.name = NAME;
+        this.initializeTitle();
     }
 
     public boolean inDanger() {
@@ -64,7 +87,7 @@ public class AmerroSpearKnight extends CustomCard {
 
     @Override
     public void triggerOnGlowCheck() {
-        if (inDanger()) {
+        if (inDanger() && this.upgraded) {
             this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
         } else {
             this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
@@ -73,14 +96,23 @@ public class AmerroSpearKnight extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new SFXAction(ID.replace("shadowverse:", "")));
+        if (this.upgraded) {
+            addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_Ev"));
+        } else {
+            addToBot(new SFXAction(ID.replace("shadowverse:", "")));
+        }
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
         if (upgraded) {
             addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
+            if (inDanger()) {
+                addToBot(new AmerroSpearKnightAction(false));
+            }
+            this.degrade();
+            if (p.hasRelic(KagemitsuSword.ID) || p.hasPower("shadowverse:SeofonPower")) {
+                this.upgrade();
+            }
         }
-        if (inDanger()) {
-            addToBot(new AmerroSpearKnightAction(this.upgraded));
-        }
+
     }
 
     @Override

@@ -1,14 +1,15 @@
 package shadowverse.action;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.screens.CardRewardScreen;
 import shadowverse.cards.Neutral.Status.EvolutionPoint;
-import shadowverse.cards.Neutral.Temp.*;
-import shadowverse.powers.AramisPower;
+import shadowverse.cards.Neutral.Temp.Aramis;
+import shadowverse.cards.Neutral.Temp.Athos;
+import shadowverse.cards.Neutral.Temp.DArtagnan;
+import shadowverse.cards.Neutral.Temp.Porthos;
 
 import java.util.ArrayList;
 
@@ -62,9 +63,6 @@ public class MusketeersAction
                     if (ep>1){
                         c.upgrade();
                     }
-                    if (c instanceof Aramis) {
-                        addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new AramisPower(AbstractDungeon.player, 1, c)));
-                    }
                     if (c instanceof DArtagnan){
                         c.baseDamage *= 2;
                         c.applyPowers();
@@ -93,9 +91,6 @@ public class MusketeersAction
                     AbstractCard disCard = AbstractDungeon.cardRewardScreen.discoveryCard.makeStatEquivalentCopy();
                     if (AbstractDungeon.player.hasPower("MasterRealityPower")) {
                         disCard.upgrade();
-                    }
-                    if (disCard instanceof Aramis) {
-                        addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new AramisPower(AbstractDungeon.player, 1, disCard)));
                     }
                     if (this.amount == 1) {
                         if (AbstractDungeon.player.hand.group.size()<10){

@@ -4,7 +4,7 @@ import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -54,7 +54,7 @@ public class UltimateHollow extends CustomCard {
         if(this.upgraded){
             c.upgrade();
         }
-        this.addToTop(new MakeTempCardInDiscardAction(c, 1));
+        this.addToTop(new MakeTempCardInHandAction(c, 1));
     }
 
 

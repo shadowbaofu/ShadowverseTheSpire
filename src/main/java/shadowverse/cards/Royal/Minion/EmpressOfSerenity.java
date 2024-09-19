@@ -20,7 +20,7 @@ public class EmpressOfSerenity extends AbstractEnhanceCard {
     public static final String IMG_PATH = "img/cards/EmpressOfSerenity.png";
 
     public EmpressOfSerenity() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.SELF, 2);
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.SELF, 2);
         this.baseBlock = 6;
     }
 

@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import shadowverse.action.KagemitsuAction;
 import shadowverse.cards.Neutral.Temp.LostSamurai;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
 import shadowverse.powers.NextKagemitsu;
 
@@ -35,6 +36,7 @@ public class Kagemitsu extends CustomCard {
         this.baseDamage = 7;
         this.exhaust = true;
         this.cardsToPreview = new LostSamurai();
+        this.tags.add(AbstractShadowversePlayer.Enums.MUTIUPGRADE);
     }
 
     @Override

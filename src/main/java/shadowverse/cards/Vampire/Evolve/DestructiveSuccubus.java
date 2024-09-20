@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Vampire;
 import shadowverse.powers.EpitaphPower;
 import shadowverse.stance.Vengeance;
@@ -32,6 +33,7 @@ public class DestructiveSuccubus extends CustomCard {
         this.baseBlock = 4;
         this.baseDamage = 30;
         this.timesUpgraded = upgrades;
+        this.tags.add(AbstractShadowversePlayer.Enums.MUTIUPGRADE);
     }
 
     @Override

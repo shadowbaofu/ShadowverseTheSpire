@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
 
 public class ExterminusWeapon extends CustomCard {
@@ -33,6 +34,7 @@ public class ExterminusWeapon extends CustomCard {
         this.isMultiDamage = true;
         this.selfRetain = true;
         this.exhaust = true;
+        this.tags.add(AbstractShadowversePlayer.Enums.MUTIUPGRADE);
     }
 
     @Override

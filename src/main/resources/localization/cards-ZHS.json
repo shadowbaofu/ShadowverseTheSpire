@@ -3935,7 +3935,7 @@
   },
   "shadowverse:Aramis": {
     "NAME": "阿拉密斯",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 本回合中，打出攻击牌时，获得1点 力量 或 敏捷 。 NL 召唤随从时，使该随从获得+1/+1。 NL 消耗 。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 本回合中，打出攻击牌时，获得1点 力量 或 敏捷 。 NL 召唤随从时，使该随从获得+1/+1。 NL 消耗 。 虚无 。"
   },
   "shadowverse:Porthos": {
     "NAME": "波尔多斯",
@@ -6798,8 +6798,8 @@
   },
   "shadowverse:RadiantLuminousMage": {
     "NAME": "光辉的鲁米那斯法师",
-    "DESCRIPTION": "打出 打出后解除升级 的卡牌后，获得1张 *进化点 。",
-    "UPGRADE_DESCRIPTION":"打出 打出后解除升级 的卡牌后，获得1张 *进化点 。 NL 抽到时将一张 *进化点 置入手牌。"
+    "DESCRIPTION": "打出 可进化 、 打出后解除升级 或 可被多次 升级 的攻击牌后，获得1张 *进化点 。",
+    "UPGRADE_DESCRIPTION":"打出 可进化 、 打出后解除升级 或 可被多次 升级 的攻击牌后，获得1张 *进化点 。 NL 抽到时将一张 *进化点 置入手牌。"
   },
   "shadowverse:CourtlyDance": {
     "NAME": "贵族的舞蹈",
@@ -6807,7 +6807,7 @@
   },
   "shadowverse:Troya": {
     "NAME": "暗夜斥候·特洛依雅",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果本回合已打出的卡牌数为2以上，抽1张牌。 NL 一回合打出2张升级后卡牌时，将这张牌升级。 NL 可进化",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果本回合已打出的卡牌数为2以上，抽1张牌。 NL 一回合打出2张升级后或 可进化 攻击牌时，将这张牌升级。 NL 可进化",
     "UPGRADE_DESCRIPTION":"打出后解除升级 NL 造成 !D! 点伤害。给予1层 虚弱 和 易伤 。 NL 如果本回合已打出的卡牌数为2以上，抽1张牌。 NL 将一张 *进化点 置入手牌。"
   }
 }

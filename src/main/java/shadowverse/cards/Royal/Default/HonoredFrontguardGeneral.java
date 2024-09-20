@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import shadowverse.action.MinionSummonAction;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
 import shadowverse.orbs.FrontguardGeneral;
 import shadowverse.orbs.Minion;
@@ -29,6 +30,7 @@ public class HonoredFrontguardGeneral extends CustomCard {
         this.magicNumber = this.baseMagicNumber;
         this.timesUpgraded = upgrades;
         this.exhaust = true;
+        this.tags.add(AbstractShadowversePlayer.Enums.MUTIUPGRADE);
     }
 
     public HonoredFrontguardGeneral(){

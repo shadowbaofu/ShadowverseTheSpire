@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.BiteEffect;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Vampire;
 
 public class Leoparion
@@ -33,6 +34,7 @@ public class Leoparion
             }
         }
         this.exhaust = true;
+        this.tags.add(AbstractShadowversePlayer.Enums.MUTIUPGRADE);
     }
 
 

@@ -21,7 +21,7 @@ public class RadiantLuminousMage extends CustomCard {
     public static final String IMG_PATH = "img/cards/RadiantLuminousMage.png";
 
     public RadiantLuminousMage() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, AbstractCard.CardType.POWER, Royal.Enums.COLOR_YELLOW, AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, AbstractCard.CardType.POWER, Royal.Enums.COLOR_YELLOW, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.SELF);
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
         this.cardsToPreview = new EvolutionPoint();

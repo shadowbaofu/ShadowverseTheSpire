@@ -4493,7 +4493,7 @@
   },
   "shadowverse:ObsessiveScholar": {
     "NAME": "忘我的才女",
-    "DESCRIPTION": "八狱 · 融合 : 非技能牌 。 NL  造成 !D! 点伤害。 NL 增加1张耗能为0的 *沉没的实验体 到手中。 NL 如果已 融合 ，随机从抽牌堆中将1张 八狱 牌加入手中。"
+    "DESCRIPTION": "八狱 · 融合 : 基础牌以外的非技能牌 。 NL  造成 !D! 点伤害。 NL 增加1张耗能为0的 *沉没的实验体 到手中。 NL 如果已 融合 ，随机从抽牌堆中将1张 八狱 牌加入手中。"
   },
   "shadowverse:Sephie": {
     "NAME": "沉溺的罪人·瑟霏",

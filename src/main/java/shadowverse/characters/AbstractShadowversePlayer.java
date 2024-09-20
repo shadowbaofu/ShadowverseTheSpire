@@ -142,9 +142,6 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
     public void damage(DamageInfo info) {
         super.damage(info);
         int amt = info.output;
-        if (amt > 0) {
-            wrathLastTurn++;
-        }
         if (info.owner == this && amt >= 0) {
             wrathCount++;
             wrathThisTurn++;

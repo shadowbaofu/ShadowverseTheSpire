@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import shadowverse.action.ZeusAction;
 import shadowverse.cards.AbstractNeutralCard;
 import shadowverse.cards.Neutral.Status.EvolutionPoint;
+import shadowverse.characters.AbstractShadowversePlayer;
 
 public class Zeus extends AbstractNeutralCard {
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:Zeus");
@@ -25,6 +26,7 @@ public class Zeus extends AbstractNeutralCard {
         this.magicNumber = this.baseMagicNumber;
         this.timesUpgraded = upgrades;
         this.exhaust = true;
+        this.tags.add(AbstractShadowversePlayer.Enums.MUTIUPGRADE);
     }
 
     @Override

@@ -92,13 +92,28 @@ public class Troya extends CustomCard {
 
     @Override
     public void triggerOnOtherCardPlayed(AbstractCard c) {
-        if (!this.upgraded && c.upgraded) {
+        if (!this.upgraded && c.type == CardType.ATTACK && (c.upgraded || c.hasTag(AbstractShadowversePlayer.Enums.EVOLVEABLE)) && AbstractDungeon.player.hand.group.contains(this)) {
             this.count++;
-            if(this.count >=2){
+            if (this.count >= 2) {
                 this.superFlash();
                 this.upgrade();
                 addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_Ev"));
             }
+        }
+    }
+
+    @Override
+    public void triggerAtStartOfTurn() {
+        super.triggerAtStartOfTurn();
+        this.count = 0;
+    }
+
+    @Override
+    public void triggerOnGlowCheck() {
+        if (AbstractDungeon.actionManager.cardsPlayedThisTurn.size() >= 2) {
+            this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
+        } else {
+            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
         }
     }
 

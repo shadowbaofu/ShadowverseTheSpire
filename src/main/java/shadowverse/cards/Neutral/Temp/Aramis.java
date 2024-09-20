@@ -28,6 +28,7 @@ public class Aramis extends CustomCard {
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.SPECIAL, CardTarget.ENEMY);
         this.baseDamage = 6;
         this.exhaust = true;
+        this.isEthereal = true;
     }
 
 

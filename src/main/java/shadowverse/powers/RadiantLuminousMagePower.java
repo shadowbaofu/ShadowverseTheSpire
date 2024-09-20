@@ -6,7 +6,6 @@ import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import shadowverse.cards.Neutral.Status.EvolutionPoint;
@@ -29,12 +28,10 @@ public class RadiantLuminousMagePower extends AbstractPower {
     }
 
     @Override
-    public void onAfterUseCard(AbstractCard card, UseCardAction action) {
-        if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
-            if (card.upgraded && card.hasTag(AbstractShadowversePlayer.Enums.EVOLVEABLE)) {
-                this.flash();
-                this.addToBot(new MakeTempCardInHandAction(new EvolutionPoint(), this.amount, false));
-            }
+    public void onUseCard(AbstractCard card, UseCardAction action) {
+        if (card.hasTag(AbstractShadowversePlayer.Enums.EVOLVEABLE) && card.type == AbstractCard.CardType.ATTACK) {
+            this.flash();
+            this.addToBot(new MakeTempCardInHandAction(new EvolutionPoint(), this.amount, false));
         }
     }
 

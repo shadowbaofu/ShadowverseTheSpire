@@ -15,6 +15,7 @@ import shadowverse.action.ChoiceAction2;
 import shadowverse.cards.Neutral.Status.EvolutionPoint;
 import shadowverse.cards.Neutral.Temp.Leoparion;
 import shadowverse.cards.Neutral.Temp.PeckishOwlcat;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Vampire;
 
 import java.util.ArrayList;
@@ -40,6 +41,7 @@ public class Doublame extends CustomCard {
     public Doublame() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Vampire.Enums.COLOR_SCARLET, CardRarity.RARE, CardTarget.SELF);
         this.baseBlock = 4;
+        this.tags.add(AbstractShadowversePlayer.Enums.MUTIUPGRADE);
     }
 
 

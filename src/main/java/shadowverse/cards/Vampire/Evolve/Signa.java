@@ -24,6 +24,7 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 import shadowverse.cards.Neutral.Status.EvolutionPoint;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Vampire;
 import shadowverse.relics.KagemitsuSword;
 
@@ -44,6 +45,7 @@ public class Signa
         this.magicNumber = this.baseMagicNumber;
         this.cardsToPreview = new EvolutionPoint();
         this.jokePortrait = new TextureAtlas.AtlasRegion(LEADER_SKIN_VERSION, 0, 0, LEADER_SKIN_VERSION.getWidth(), LEADER_SKIN_VERSION.getHeight());
+        this.tags.add(AbstractShadowversePlayer.Enums.EVOLVEABLE);
     }
 
 

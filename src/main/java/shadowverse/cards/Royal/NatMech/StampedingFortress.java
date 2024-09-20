@@ -30,6 +30,7 @@ public class StampedingFortress extends CustomCard {
     public StampedingFortress() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.ENEMY);
         this.tags.add(AbstractShadowversePlayer.Enums.MACHINE);
+        this.tags.add(AbstractShadowversePlayer.Enums.EVOLVEABLE);
         this.baseDamage = 6;
         this.baseBlock = 6;
         this.baseMagicNumber = this.magicNumber = 3;

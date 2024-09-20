@@ -6,16 +6,23 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.BufferPower;
+import com.megacrit.cardcrawl.powers.DexterityPower;
+import com.megacrit.cardcrawl.powers.StrengthPower;
+import shadowverse.cards.Neutral.Status.EvolutionPoint;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
 import shadowverse.orbs.AmbushMinion;
 import shadowverse.orbs.ErikaOrb;
@@ -32,7 +39,8 @@ public class Gawain extends CustomCard {
     public Gawain() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.ENEMY);
         this.baseDamage = 9;
-        ExhaustiveVariable.setBaseValue(this, 3);
+        this.tags.add(AbstractShadowversePlayer.Enums.EVOLVEABLE);
+        ExhaustiveVariable.setBaseValue(this, 2);
     }
 
 
@@ -41,6 +49,7 @@ public class Gawain extends CustomCard {
         if (!this.upgraded) {
             upgradeName();
             upgradeDamage(4);
+            ExhaustiveVariable.upgrade(this,2);
         }
     }
 
@@ -74,12 +83,6 @@ public class Gawain extends CustomCard {
         return rally;
     }
 
-    @Override
-    public void triggerWhenDrawn() {
-        if (rally()>10){
-            upgrade();
-        }
-    }
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
@@ -89,7 +92,11 @@ public class Gawain extends CustomCard {
          addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new BufferPower(abstractPlayer,1),1));
         }
         if (rally() > 15){
-            dmg*=2;
+            addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new StrengthPower((AbstractCreature)abstractPlayer, 2), 2));
+            addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new DexterityPower((AbstractCreature)abstractPlayer, 2), 2));
+        }
+        if (rally()>10){
+            this.addToTop(new MakeTempCardInHandAction(new EvolutionPoint(), 1));
         }
         if (rally()>5){
             addToBot(new DrawCardAction(1));

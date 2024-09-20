@@ -39,6 +39,8 @@ public class ValiantFencer extends AbstractEnhanceCard {
             upgradeName();
             upgradeBlock(3);
             upgradeMagicNumber(2);
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            initializeDescription();
         }
     }
 
@@ -96,7 +98,7 @@ public class ValiantFencer extends AbstractEnhanceCard {
         if (p.hand.group.size() < this.magicNumber) {
             addToBot(new DrawCardAction(this.magicNumber - p.hand.group.size()));
         }
-        addToBot(new ValiantFencerAction());
+        addToBot(new ValiantFencerAction(this.upgraded));
     }
 
     @Override

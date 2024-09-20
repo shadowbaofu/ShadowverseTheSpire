@@ -28,6 +28,7 @@ public class VerdantLieutenant extends CustomCard {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Elf.Enums.COLOR_GREEN, CardRarity.UNCOMMON, CardTarget.ENEMY);
         this.baseBlock = 5;
         this.baseDamage = 5;
+        this.tags.add(AbstractShadowversePlayer.Enums.EVOLVEABLE);
         this.tags.add(AbstractShadowversePlayer.Enums.CONDEMNED);
     }
 

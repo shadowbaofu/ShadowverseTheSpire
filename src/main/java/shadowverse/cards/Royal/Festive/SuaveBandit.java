@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import shadowverse.cards.Neutral.Temp.GlitteringGold;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
 import shadowverse.relics.KagemitsuSword;
 
@@ -27,6 +28,7 @@ public class SuaveBandit extends CustomCard {
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, AbstractCard.CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, AbstractCard.CardTarget.ENEMY);
         this.baseDamage = 3;
         this.cardsToPreview = new GlitteringGold();
+        this.tags.add(AbstractShadowversePlayer.Enums.EVOLVEABLE);
     }
 
 

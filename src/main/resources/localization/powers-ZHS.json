@@ -1995,5 +1995,12 @@
       " 点伤害。 NL 否则攻击者受到 #b",
       " 点伤害两次并失去此能力。 NL 伤害享受 #b3 倍 #y力量 加成。"
     ]
+  },
+  "shadowverse:RadiantLuminousMagePower": {
+    "NAME": "光辉的鲁米那斯法师",
+    "DESCRIPTIONS": [
+      "打出 #y打出后解除升级 的卡牌后，获得 #b",
+      " 张 #y进化点 。"
+    ]
   }
 }

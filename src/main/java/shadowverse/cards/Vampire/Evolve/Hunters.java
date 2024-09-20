@@ -19,6 +19,7 @@ import com.megacrit.cardcrawl.powers.FlameBarrierPower;
 import shadowverse.cards.AbstractRightClickCard2;
 import shadowverse.cards.Neutral.Status.EvolutionPoint;
 import shadowverse.cards.Neutral.Temp.Companions;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Vampire;
 
 public class Hunters extends AbstractRightClickCard2 {
@@ -35,6 +36,7 @@ public class Hunters extends AbstractRightClickCard2 {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Vampire.Enums.COLOR_SCARLET, CardRarity.RARE, CardTarget.SELF);
         this.baseBlock = 8;
         this.cardsToPreview = new Companions();
+        this.tags.add(AbstractShadowversePlayer.Enums.EVOLVEABLE);
     }
 
 

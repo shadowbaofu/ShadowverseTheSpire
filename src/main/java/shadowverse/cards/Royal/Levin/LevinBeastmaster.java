@@ -26,6 +26,7 @@ public class LevinBeastmaster extends CustomCard {
     public LevinBeastmaster() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.SELF);
         this.tags.add(AbstractShadowversePlayer.Enums.LEVIN);
+        this.tags.add(AbstractShadowversePlayer.Enums.EVOLVEABLE);
         this.cardsToPreview = new WhiteTiger();
         this.baseBlock = 4;
     }

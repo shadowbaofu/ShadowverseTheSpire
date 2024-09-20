@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import shadowverse.cards.Neutral.Status.EvolutionPoint;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Vampire;
 import shadowverse.relics.KagemitsuSword;
 
@@ -26,6 +27,7 @@ public class DancingMiniSoulDevil
     public DancingMiniSoulDevil() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Vampire.Enums.COLOR_SCARLET, CardRarity.COMMON, CardTarget.SELF);
         this.baseBlock = 8;
+        this.tags.add(AbstractShadowversePlayer.Enums.EVOLVEABLE);
         this.cardsToPreview = new EvolutionPoint();
     }
 

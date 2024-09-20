@@ -27,6 +27,7 @@ public class LevinArcher extends CustomCard {
     public LevinArcher() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ENEMY);
         this.tags.add(AbstractShadowversePlayer.Enums.LEVIN);
+        this.tags.add(AbstractShadowversePlayer.Enums.EVOLVEABLE);
         this.baseDamage = 7;
         this.baseMagicNumber = this.magicNumber = 1;
     }

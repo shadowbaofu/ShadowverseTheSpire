@@ -1704,6 +1704,9 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("Razia", new Sfx(voicePath + "Razia.wav"));
             reflectedMap.put("RaziaPower1", new Sfx(voicePath + "RaziaPower1.wav"));
             reflectedMap.put("RaziaPower2", new Sfx(voicePath + "RaziaPower2.wav"));
+            reflectedMap.put("RadiantLuminousMage", new Sfx(voicePath + "RadiantLuminousMage.wav"));
+            reflectedMap.put("Troya", new Sfx(voicePath + "Troya.wav"));
+            reflectedMap.put("Troya_Ev", new Sfx(voicePath + "Troya_Ev.wav"));
         }
         if (Loader.isModLoaded("CardAugments")) {
             AugmentHelper.register();
@@ -3136,6 +3139,9 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard(new CloudChorus());
         BaseMod.addCard(new Goliath());
         BaseMod.addCard(new AngelicSwordMaiden());
+        BaseMod.addCard(new RadiantLuminousMage());
+        BaseMod.addCard(new CourtlyDance());
+        BaseMod.addCard(new Troya());
         logger.info("Success");
     }
 

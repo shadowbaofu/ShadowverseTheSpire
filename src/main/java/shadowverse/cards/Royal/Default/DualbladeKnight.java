@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
 import shadowverse.orbs.AmbushMinion;
 import shadowverse.orbs.ErikaOrb;
@@ -31,6 +32,7 @@ public class DualbladeKnight extends CustomCard {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.ENEMY);
         this.baseDamage = 7;
         this.baseMagicNumber = this.magicNumber = 1;
+        this.tags.add(AbstractShadowversePlayer.Enums.EVOLVEABLE);
     }
 
 

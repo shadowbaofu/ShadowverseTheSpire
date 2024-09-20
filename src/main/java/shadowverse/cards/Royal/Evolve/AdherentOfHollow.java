@@ -45,6 +45,7 @@ public class AdherentOfHollow extends CustomCard {
     public AdherentOfHollow() {
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ENEMY);
         this.baseDamage = 2;
+        this.tags.add(AbstractShadowversePlayer.Enums.EVOLVEABLE);
     }
 
     @Override

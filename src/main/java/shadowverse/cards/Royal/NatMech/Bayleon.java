@@ -37,6 +37,7 @@ public class Bayleon extends CustomCard {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.ENEMY);
         this.baseDamage = 6;
         this.baseBlock = 6;
+        this.tags.add(AbstractShadowversePlayer.Enums.EVOLVEABLE);
         this.tags.add(AbstractShadowversePlayer.Enums.NATURAL);
         this.cardsToPreview = new LuminousBlade();
     }

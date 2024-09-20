@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.DexterityPower;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
 import shadowverse.powers.DisableEffectDamagePower;
 import shadowverse.relics.KagemitsuSword;
@@ -28,6 +29,7 @@ public class Charlotta extends CustomCard {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.SELF);
         this.baseBlock = 8;
         this.baseMagicNumber = this.magicNumber = 1;
+        this.tags.add(AbstractShadowversePlayer.Enums.EVOLVEABLE);
     }
 
 

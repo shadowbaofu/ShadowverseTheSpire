@@ -70,6 +70,10 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
         public static AbstractCard.CardTags ACADEMIC;
         @SpireEnum
         public static AbstractCard.CardTags ARMED;
+        @SpireEnum
+        public static AbstractCard.CardTags EVOLVEABLE;
+        @SpireEnum
+        public static AbstractCard.CardTags MUTIUPGRADE;
     }
 
     public int earthCount = 0;

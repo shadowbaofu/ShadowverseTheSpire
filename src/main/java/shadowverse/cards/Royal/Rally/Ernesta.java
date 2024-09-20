@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import shadowverse.cards.Neutral.Temp.DreadHound;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
 import shadowverse.orbs.AmbushMinion;
 import shadowverse.orbs.ErikaOrb;
@@ -28,6 +29,7 @@ public class Ernesta extends CustomCard {
 
     public Ernesta() {
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.SELF);
+        this.tags.add(AbstractShadowversePlayer.Enums.EVOLVEABLE);
         this.cardsToPreview = new DreadHound();
     }
 

@@ -97,6 +97,9 @@ public class RoyalPool  extends AbstractBanPool {
         Default.addCard(new PrudentGeneral());
         Default.addCard(new StrikeproneGuardian());
         Default.addCard(new RadicalGunslinger());
+        Default.addCard(new LuminousMage());
+        Default.addCard(new DanceOfUsurpation());
+        Default.addCard(new Troya());
 
         Ambush.addCard(new AmbushBuff());
         Ambush.addCard(new BladeDance());
@@ -110,17 +113,17 @@ public class RoyalPool  extends AbstractBanPool {
         Ambush.addCard(new Tsubaki());
         Ambush.addCard(new Kagemitsu());
 
-        Evolve.addCard(new AdherentOfHollow());
         Evolve.addCard(new CatAdmiral());
         Evolve.addCard(new Charlotta());
         Evolve.addCard(new Eahta());
         Evolve.addCard(new FortressStrategist());
-        Evolve.addCard(new LuminousMage());
+        Evolve.addCard(new RadiantLuminousMage());
         Evolve.addCard(new Mirin());
         Evolve.addCard(new Seofon());
         Evolve.addCard(new WardenOfHonor());
         Evolve.addCard(new WeeMerchantsAppraisal());
         Evolve.addCard(new Radiel());
+        Evolve.addCard(new CourtlyDance());
 
         Festive.addCard(new FrontDeskFrog());
         Festive.addCard(new HonorableThief());
@@ -161,7 +164,6 @@ public class RoyalPool  extends AbstractBanPool {
         Loot.addCard(new Alwida());
         Loot.addCard(new ApostleOfUsurpation());
         Loot.addCard(new Barbaros());
-        Loot.addCard(new DanceOfUsurpation());
         Loot.addCard(new DeepSeaScout());
         Loot.addCard(new DiscipleOfUsurpation());
         Loot.addCard(new GrandAcquisition());
@@ -169,6 +171,7 @@ public class RoyalPool  extends AbstractBanPool {
         Loot.addCard(new TidalGunner());
         Loot.addCard(new UltimateHollow());
         Loot.addCard(new Rogers());
+        Loot.addCard(new AdherentOfHollow());
 
         Minion.addCard(new CaptainWalfrid());
         Minion.addCard(new EmpressOfSerenity());

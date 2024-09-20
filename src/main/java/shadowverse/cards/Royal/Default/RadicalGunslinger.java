@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import shadowverse.cards.Neutral.Temp.Horse;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
 import shadowverse.relics.KagemitsuSword;
 
@@ -30,6 +31,7 @@ public class RadicalGunslinger extends CustomCard {
         this.baseDamage = 3;
         this.magicNumber = this.baseMagicNumber = 1;
         this.cardsToPreview = new Horse();
+        this.tags.add(AbstractShadowversePlayer.Enums.EVOLVEABLE);
     }
 
 

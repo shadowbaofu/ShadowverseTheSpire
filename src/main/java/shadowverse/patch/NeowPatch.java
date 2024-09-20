@@ -32,7 +32,7 @@ public class NeowPatch {
         public static void patch(NeowEvent __instance, ArrayList<NeowReward> ___rewards) {
             NeowReward n = new NeowReward(true);
             n.type = STARTPACK;
-            n.optionLabel = "[" + CardCrawlGame.languagePack.getUIString("shadowverse:StartPack").TEXT[0];
+            n.optionLabel = "[ " + CardCrawlGame.languagePack.getUIString("shadowverse:StartPack").TEXT[0];
             ___rewards.add(n);
             __instance.roomEventText.addDialogOption(n.optionLabel);
         }

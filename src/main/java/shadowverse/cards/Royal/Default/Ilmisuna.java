@@ -2,17 +2,19 @@ package shadowverse.cards.Royal.Default;
 
 import basemod.abstracts.CustomCard;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.SelectCardsInHandAction;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.*;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import shadowverse.cards.Neutral.Status.EvolutionPoint;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
-import shadowverse.orbs.Minion;
 import shadowverse.relics.KagemitsuSword;
 
 public class Ilmisuna extends CustomCard {
@@ -24,9 +26,9 @@ public class Ilmisuna extends CustomCard {
     public static final String IMG_PATH_EV = "img/cards/Ilmisuna_Ev.png";
 
     public Ilmisuna() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.ENEMY);
-        this.baseDamage = 7;
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.SELF);
         this.baseBlock = 6;
+        this.tags.add(AbstractShadowversePlayer.Enums.EVOLVEABLE);
     }
 
     @Override
@@ -66,25 +68,25 @@ public class Ilmisuna extends CustomCard {
         } else {
             addToBot(new SFXAction(ID.replace("shadowverse:", "")));
         }
-        if (!this.upgraded) {
-            addToBot(new GainBlockAction(p, p, this.block));
+        addToBot(new GainBlockAction(p, p, this.block));
+        if (this.upgraded) {
             addToBot(new SelectCardsInHandAction(1, TEXT[0], false, false, card -> true, abstractCards -> {
                 for (AbstractCard c : abstractCards) {
                     addToBot(new ExhaustSpecificCardAction(c, p.hand));
-                    addToBot(new DrawCardAction(1));
+                    addToBot(new DrawCardAction(2));
                 }
             }));
-        }
-        if (this.upgraded) {
-            for (int i = 0; i < p.orbs.size(); i++) {
-                if (p.orbs.get(i) instanceof Minion) {
-                    addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-                }
-            }
             this.degrade();
             if (p.hasRelic(KagemitsuSword.ID) || p.hasPower("shadowverse:SeofonPower")) {
                 this.upgrade();
             }
+        }
+    }
+
+    @Override
+    public void triggerWhenDrawn() {
+        if (!this.upgraded) {
+            this.addToTop(new MakeTempCardInHandAction(new EvolutionPoint(), 1));
         }
     }
 

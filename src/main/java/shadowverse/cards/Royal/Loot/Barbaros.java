@@ -40,6 +40,7 @@ public class Barbaros
     public Barbaros() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.ENEMY);
         this.baseDamage = 8;
+        this.tags.add(AbstractShadowversePlayer.Enums.EVOLVEABLE);
         this.tags.add(AbstractShadowversePlayer.Enums.CONDEMNED);
         this.cardsToPreview = new DreadPirateFlag();
         this.jokePortrait = new TextureAtlas.AtlasRegion(LEADER_SKIN_VERSION, 0, 0, LEADER_SKIN_VERSION.getWidth(), LEADER_SKIN_VERSION.getHeight());

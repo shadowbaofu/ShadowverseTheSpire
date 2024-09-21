@@ -71,13 +71,12 @@ public class WingedInversion
     }
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        AbstractCard[] list = new AbstractCard[returnChoice().size()];
+        ArrayList<AbstractCard> stanceChoices = returnChoice();
         if (this.upgraded){
-            for (AbstractCard c : list){
+            for (AbstractCard c : stanceChoices){
                 c.upgrade();
             }
         }
-        ArrayList<AbstractCard> stanceChoices = (ArrayList<AbstractCard>) Arrays.asList(list);
         addToBot(new ChooseOneAction(stanceChoices));
     }
 

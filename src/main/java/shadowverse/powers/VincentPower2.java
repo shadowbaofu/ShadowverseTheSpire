@@ -63,9 +63,4 @@ public class VincentPower2
             }
         }
     }
-
-    @Override
-    public void atStartOfTurnPostDraw() {
-        addToBot(new MakeTempCardInHandAction((AbstractCard) new JudgmentWord(), 1));
-    }
 }

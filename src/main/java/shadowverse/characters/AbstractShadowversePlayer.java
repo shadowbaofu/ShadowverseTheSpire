@@ -74,6 +74,8 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
         public static AbstractCard.CardTags EVOLVEABLE;
         @SpireEnum
         public static AbstractCard.CardTags MUTIUPGRADE;
+        @SpireEnum
+        public static AbstractCard.CardTags DARK_ANGEL;
     }
 
     public int earthCount = 0;

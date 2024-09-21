@@ -2655,7 +2655,7 @@
   "shadowverse:Octrice": {
     "NAME": "强夺灾杰·奥克托丽丝",
     "DESCRIPTION": "限定 ：夺取2点 力量 ，获得 !M! 金币。 NL 随机将2张 财宝牌 加入手牌。",
-    "UPGRADE_DESCRIPTION": "限定 ：夺取4点 力量 ，获得 !M! 金币。 NL 随机将2张 财宝牌 加入手牌。 NL 发现一张本回合0费的随机 谢幕曲 牌，使其基础伤害和格挡变为0且具有消耗。"
+    "UPGRADE_DESCRIPTION": "限定 ：夺取3点 力量 ，获得 !M! 金币。 NL 随机将2张 财宝牌 加入手牌。 NL 发现一张本回合0费的随机 谢幕曲 牌，使其基础伤害和格挡变为0且具有消耗。"
   },
   "shadowverse:Octrice2": {
     "NAME": "空绝强夺·奥克托丽丝",
@@ -6817,5 +6817,78 @@
   "shadowverse:TravelersRespite": {
     "NAME": "荒野的休息",
     "DESCRIPTION": "自然 NL 回复 !M! 点生命。 NL 增加1章 *那塔拉的大树 到手中。 NL 消耗 。"
+  },
+  "shadowverse:Lyrial": {
+    "NAME": "神弓天使·莉莉耶尔",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 可进化",
+    "UPGRADE_DESCRIPTION": "打出后解除升级 。 NL 造成 !D! 点伤害。 NL 造成 !M! 点伤害。"
+  },
+  "shadowverse:DarkLyrial": {
+    "NAME": "暗黑莉莉耶尔",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 选择手中1张耗能为2以下的无色攻击牌，获得1点 力量 和 敏捷 。"
+  },
+  "shadowverse:AngelOfTheWord": {
+    "NAME": "圣言天使",
+    "DESCRIPTION": "造成 !D! 点伤害。"
+  },
+  "shadowverse:AngelOfDarkWord": {
+    "NAME": "暗言天使",
+    "DESCRIPTION": "对全体敌人造成 !D! 点伤害。"
+  },
+  "shadowverse:DarkGabriel": {
+    "NAME": "暗黑加百列",
+    "DESCRIPTION": "使目标失去X点 力量 和 敏捷 。 NL 随机增加1张本场战斗已打出过的耗能为1以下的无色攻击牌到手中，并使其基础伤害+3，基础格挡+4。",
+    "UPGRADE_DESCRIPTION": "使目标失去X+1点 力量 和 敏捷 。 NL 随机增加1张本场战斗已打出过的耗能为1以下的无色攻击牌到手中，并使其基础伤害+3，基础格挡+4。"
+  },
+  "shadowverse:HealingAngel": {
+    "NAME": "治愈天使",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 回复 !M! 点生命。 NL 消耗 。"
+  },
+  "shadowverse:DarkHealingAngel": {
+    "NAME": "暗黑治愈天使",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 对全体敌人造成 !M! 点伤害。 NL 回复 !M! 点生命。 NL 抽 !M! 张卡。 NL 消耗 。"
+  },
+  "shadowverse:ShieldAngel": {
+    "NAME": "圣盾天使",
+    "DESCRIPTION": "获得 !B! 点 格挡 。"
+  },
+  "shadowverse:DarkShieldAngel": {
+    "NAME": "暗黑圣盾天使",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 对随机敌人造成 !D! 点伤害。 NL 造成 !D! 点伤害。"
+  },
+  "shadowverse:AngelKnight": {
+    "NAME": "天使骑士",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得1点 力量 。"
+  },
+  "shadowverse:DarkAngelKnight": {
+    "NAME": "暗黑天使骑士",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得1点 力量 和 敏捷 。"
+  },
+  "shadowverse:Altaia": {
+    "NAME": "圣光天使·阿尔缇雅",
+    "DESCRIPTION": "选择手中1张非无色牌攻击牌，将其变为无色。 NL 造成 !D! 点伤害。 NL 这个伤害会根据手中无色牌数量增加。"
+  },
+  "shadowverse:DarkAltaia": {
+    "NAME": "暗黑天使·阿尔缇雅",
+    "DESCRIPTION": "NL 造成 !D! 点伤害。 NL 这个伤害会根据手中无色牌数量增加。 NL 抽2张牌。"
+  },
+  "shadowverse:FallenAngel": {
+    "NAME": "堕天使",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 回复 !M! 点生命。"
+  },
+  "shadowverse:DarkAngelChoice": {
+    "NAME": "堕天",
+    "DESCRIPTION": "从3张随机堕天使牌选择1张加入手中。",
+    "UPGRADE_DESCRIPTION": "从3张已 升级 的随机堕天使牌选择1张加入手中。"
+  },
+  "shadowverse:AngelChoice": {
+    "NAME": "天使化",
+    "DESCRIPTION": "选择手中1张攻击牌，若其为堕天使牌，获得2点 力量 和 敏捷，且如果有对应的天使牌则将其消失并增加该牌到手中。 NL 若其不为堕天使牌，将其消失并增加1张 *堕天使 到手中。",
+    "UPGRADE_DESCRIPTION": "选择手中1张攻击牌，若其为堕天使牌，获得2点 力量 和 敏捷，且如果有对应的天使牌则将其消失并增加该牌到手中。 NL 若其不为堕天使牌，将其消失并增加1张 *堕天使+ 到手中。"
+  },
+  "shadowverse:WingedInversion": {
+    "NAME": "反转之翼",
+    "DESCRIPTION": "抉择 : NL *堕天 NL *天使化 ",
+    "UPGRADE_DESCRIPTION": "抉择 : NL *堕天+ NL *天使化+ "
   }
 }

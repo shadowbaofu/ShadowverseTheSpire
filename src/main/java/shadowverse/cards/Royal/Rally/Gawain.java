@@ -39,7 +39,6 @@ public class Gawain extends CustomCard {
     public Gawain() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.ENEMY);
         this.baseDamage = 9;
-        this.tags.add(AbstractShadowversePlayer.Enums.EVOLVEABLE);
         ExhaustiveVariable.setBaseValue(this, 2);
     }
 

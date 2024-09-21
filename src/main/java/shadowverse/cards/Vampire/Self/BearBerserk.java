@@ -42,20 +42,20 @@ public class BearBerserk
 
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot((AbstractGameAction)new SFXAction("BearBerserk"));
-        addToBot((AbstractGameAction)new GainBlockAction(p,this.block));
+        addToBot(new SFXAction("BearBerserk"));
+        addToBot(new GainBlockAction(p, this.block));
         int lostAmt = 1;
-        if (p.hasPower(EpitaphPower.POWER_ID)||p.hasPower(AvaricePower.POWER_ID)){
+        if (p.hasPower(EpitaphPower.POWER_ID) || p.hasPower(AvaricePower.POWER_ID)) {
             lostAmt = 2;
-            addToBot((AbstractGameAction)new HealAction(p,p,4));
-        }else {
-            addToBot((AbstractGameAction)new HealAction(p,p,2));
+            addToBot(new HealAction(p, p, 4));
+        } else {
+            addToBot(new HealAction(p, p, 2));
         }
-        for (int i=0;i<lostAmt;i++){
-            addToBot((AbstractGameAction) new LoseHPAction((AbstractCreature) p, (AbstractCreature) p, 1));
+        for (int i = 0; i < lostAmt; i++) {
+            addToBot(new LoseHPAction( p,  p, 1));
             for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
                 if (!mo.isDeadOrEscaped())
-                addToBot((AbstractGameAction)new LoseHPAction(mo,p,1));
+                    addToBot(new LoseHPAction(mo, p, 1));
             }
         }
     }

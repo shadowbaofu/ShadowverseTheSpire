@@ -1707,7 +1707,13 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("RadiantLuminousMage", new Sfx(voicePath + "RadiantLuminousMage.wav"));
             reflectedMap.put("Troya", new Sfx(voicePath + "Troya.wav"));
             reflectedMap.put("Troya_Ev", new Sfx(voicePath + "Troya_Ev.wav"));
-            reflectedMap.put("MechaGoblin", new Sfx(voicePath + "MechaGoblin.wav"));
+            reflectedMap.put("AngelOfTheWord", new Sfx(voicePath + "AngelOfTheWord.wav"));
+            reflectedMap.put("Lyrial", new Sfx(voicePath + "Lyrial.wav"));
+            reflectedMap.put("HealingAngel", new Sfx(voicePath + "HealingAngel.wav"));
+            reflectedMap.put("ShieldAngel", new Sfx(voicePath + "ShieldAngel.wav"));
+            reflectedMap.put("AngelKnight", new Sfx(voicePath + "AngelKnight.wav"));
+            reflectedMap.put("Altaia", new Sfx(voicePath + "Altaia.wav"));
+            reflectedMap.put("FallenAngel", new Sfx(voicePath + "FallenAngel.wav"));
         }
         if (Loader.isModLoaded("CardAugments")) {
             AugmentHelper.register();
@@ -3145,6 +3151,19 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard(new Troya());
         BaseMod.addCard(new MechaGoblin());
         BaseMod.addCard(new TravelersRespite());
+        BaseMod.addCard(new AngelOfTheWord());
+        BaseMod.addCard(new AngelOfDarkWord());
+        BaseMod.addCard(new Lyrial());
+        BaseMod.addCard(new DarkLyrial());
+        BaseMod.addCard(new HealingAngel());
+        BaseMod.addCard(new DarkHealingAngel());
+        BaseMod.addCard(new DarkGabriel());
+        BaseMod.addCard(new ShieldAngel());
+        BaseMod.addCard(new DarkShieldAngel());
+        BaseMod.addCard(new AngelKnight());
+        BaseMod.addCard(new DarkAngelKnight());
+        BaseMod.addCard(new Altaia());
+        BaseMod.addCard(new WingedInversion());
         logger.info("Success");
     }
 

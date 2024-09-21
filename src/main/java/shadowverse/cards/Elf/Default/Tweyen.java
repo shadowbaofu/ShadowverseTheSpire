@@ -73,10 +73,10 @@ public class Tweyen extends CustomCard {
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         addToBot(new ApplyPowerAction(m, p, new TweyenPower(m)));
         if (this.magicNumber <= 0) {
-            addToBot((AbstractGameAction) new DamageAllEnemiesAction((AbstractCreature) p, DamageInfo.createDamageMatrix(this.damage, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE, true));
+            addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(this.damage, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE, true));
             for (int i = 0; i < 5; i++) {
                 if (m != null)
-                    addToTop((AbstractGameAction) new VFXAction(new ThrowDaggerEffect(m.hb.cX, m.hb.cY),0.2F));
+                    addToTop(new VFXAction(new ThrowDaggerEffect(m.hb.cX, m.hb.cY),0.2F));
             }
         }
         if (this.magicNumber <= 3) {

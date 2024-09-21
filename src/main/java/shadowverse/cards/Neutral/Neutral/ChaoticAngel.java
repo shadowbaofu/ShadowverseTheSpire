@@ -25,11 +25,11 @@ import java.util.ArrayList;
 
 public class ChaoticAngel
         extends AbstractNeutralCard {
-    public static final String ID = "shadowverse:Aerin";
-    public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:Aerin");
+    public static final String ID = "shadowverse:ChaoticAngel";
+    public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:ChaoticAngel");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String IMG_PATH = "img/cards/Aerin.png";
+    public static final String IMG_PATH = "img/cards/ChaoticAngel.png";
     private ArrayList<String> dup = new ArrayList<>();
     public int enhanceCost;
     public int baseCost;

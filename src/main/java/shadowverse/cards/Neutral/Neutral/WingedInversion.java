@@ -2,22 +2,17 @@ package shadowverse.cards.Neutral.Neutral;
 
 
 import com.badlogic.gdx.Gdx;
-import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
-import com.megacrit.cardcrawl.actions.common.HealAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.actions.watcher.ChooseOneAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import shadowverse.action.ChoiceAction;
 import shadowverse.cards.AbstractNeutralCard;
-import shadowverse.cards.Neutral.Status.EvolutionPoint;
 import shadowverse.cards.Neutral.Temp.*;
-import shadowverse.powers.NextTurnAmaterasu;
-import shadowverse.powers.NextTurnTsukuyomi;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class WingedInversion
         extends AbstractNeutralCard {
@@ -77,13 +72,13 @@ public class WingedInversion
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         AbstractCard[] list = new AbstractCard[returnChoice().size()];
-        returnChoice().toArray(list);
         if (this.upgraded){
             for (AbstractCard c : list){
                 c.upgrade();
             }
         }
-        addToBot(new ChoiceAction(list));
+        ArrayList<AbstractCard> stanceChoices = (ArrayList<AbstractCard>) Arrays.asList(list);
+        addToBot(new ChooseOneAction(stanceChoices));
     }
 
 

@@ -1,6 +1,7 @@
 package shadowverse.cards.Royal.Loot;
 
 import basemod.abstracts.CustomCard;
+import shadowverse.action.OctriceAction;
 import shadowverse.cards.Neutral.Temp.*;
 import com.badlogic.gdx.Gdx;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -145,8 +146,8 @@ public class Octrice extends CustomCard implements BranchableUpgradeCard {
                 }
                 if (!this.trigggered) {
                     if (this.upgraded) {
-                        addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, 4), 4));
-                        addToBot(new ApplyPowerAction(m, p, new StrengthPower(m, -4), -4));
+                        addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, 3), 3));
+                        addToBot(new ApplyPowerAction(m, p, new StrengthPower(m, -3), -3));
                     } else {
                         addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, 2), 2));
                         addToBot(new ApplyPowerAction(m, p, new StrengthPower(m, -2), -2));
@@ -155,19 +156,8 @@ public class Octrice extends CustomCard implements BranchableUpgradeCard {
                     AbstractDungeon.player.gainGold(this.magicNumber);
                     this.trigggered = true;
                 }
-                if (!this.upgraded) {
-                    int r1 = AbstractDungeon.cardRandomRng.random(3);
-                    int r2 = AbstractDungeon.cardRandomRng.random(2);
-                    AbstractCard c1 = returnProphecy().get(r1);
-                    AbstractCard c2 = returnProphecy().get((r1 + r2 + 1) % 4);
-                    addToBot(new MakeTempCardInHandAction(c1));
-                    addToBot(new MakeTempCardInHandAction(c2));
-                } else {
-                    for (int i = p.hand.size(); i < 10; i++) {
-                        int r = AbstractDungeon.cardRandomRng.random(3);
-                        AbstractCard c = returnProphecy().get(r);
-                        addToBot(new MakeTempCardInHandAction(c));
-                    }
+                if (this.upgraded) {
+                    addToBot(new OctriceAction());
                 }
                 break;
             case 1:
@@ -231,14 +221,14 @@ public class Octrice extends CustomCard implements BranchableUpgradeCard {
                     this.trigggered = true;
                 }
                 addToBot(new MakeTempCardInHandAction(new LightOfHollow()));
-                int r1 = AbstractDungeon.cardRandomRng.random(3);
-                int r2 = AbstractDungeon.cardRandomRng.random(2);
-                AbstractCard c1 = returnProphecy().get(r1);
-                AbstractCard c2 = returnProphecy().get((r1 + r2 + 1) % 4);
-                addToBot(new MakeTempCardInHandAction(c1));
-                addToBot(new MakeTempCardInHandAction(c2));
                 break;
         }
+        int r1 = AbstractDungeon.cardRandomRng.random(3);
+        int r2 = AbstractDungeon.cardRandomRng.random(2);
+        AbstractCard c1 = returnProphecy().get(r1);
+        AbstractCard c2 = returnProphecy().get((r1 + r2 + 1) % 4);
+        addToBot(new MakeTempCardInHandAction(c1));
+        addToBot(new MakeTempCardInHandAction(c2));
     }
 
 
@@ -257,7 +247,7 @@ public class Octrice extends CustomCard implements BranchableUpgradeCard {
                 Octrice.this.upgraded = true;
                 Octrice.this.name = cardStrings.NAME + "+";
                 Octrice.this.initializeTitle();
-                Octrice.this.baseMagicNumber = 25;
+                Octrice.this.baseMagicNumber = 20;
                 Octrice.this.magicNumber = Octrice.this.baseMagicNumber;
                 Octrice.this.upgradedMagicNumber = true;
                 Octrice.this.textureImg = IMG_PATH_EV;

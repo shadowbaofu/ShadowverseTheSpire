@@ -111,17 +111,19 @@ public class StartPackHelper {
         uni.addCard(new Discovery());
         uni.addCard(new MasterCook());
 
-        mech.addCard(new Goblin(),2);
-        mech.addCard(new Goliath(),3);
+        mech.addCard(new Goblin());
+        mech.addCard(new MechaGoblin(),2);
+        mech.addCard(new Goliath(),2);
         mech.addCard(new AngelicSwordMaiden(),2);
         mech.addCard(new MachineClaw());
         mech.addCard(new Cybercannoneer());
         mech.addCard(new MechaforgeDevil());
         mech.addCard(new Armadillo());
 
-        nat.addCard(new AngelicSnipe(),2);
+        nat.addCard(new AngelicSnipe(),1);
         nat.addCard(new AngelicBarrage(),2);
-        nat.addCard(new CloudChorus(),3);
+        nat.addCard(new CloudChorus(),2);
+        nat.addCard(new TravelersRespite(),2);
         nat.addCard(new ScaryTrend());
         nat.addCard(new BrothersUnited());
         nat.addCard(new Aeroelementalist());

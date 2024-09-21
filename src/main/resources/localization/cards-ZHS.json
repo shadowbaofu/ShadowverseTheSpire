@@ -2655,7 +2655,7 @@
   "shadowverse:Octrice": {
     "NAME": "强夺灾杰·奥克托丽丝",
     "DESCRIPTION": "限定 ：夺取2点 力量 ，获得 !M! 金币。 NL 随机将2张 财宝牌 加入手牌。",
-    "UPGRADE_DESCRIPTION": "限定 ：夺取4点 力量 ，获得 !M! 金币。 NL 将 财宝牌 加入手牌直到上限。"
+    "UPGRADE_DESCRIPTION": "限定 ：夺取4点 力量 ，获得 !M! 金币。 NL 随机将2张 财宝牌 加入手牌。 NL 发现一张本回合0费的随机 谢幕曲 牌，使其基础伤害和格挡变为0且具有消耗。"
   },
   "shadowverse:Octrice2": {
     "NAME": "空绝强夺·奥克托丽丝",
@@ -6809,5 +6809,13 @@
     "NAME": "暗夜斥候·特洛依雅",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 如果本回合已打出的卡牌数为2以上，抽1张牌。 NL 一回合打出2张升级后或 可进化 攻击牌时，将这张牌升级。 NL 可进化",
     "UPGRADE_DESCRIPTION":"打出后解除升级 NL 造成 !D! 点伤害。给予1层 虚弱 和 易伤 。 NL 如果本回合已打出的卡牌数为2以上，抽1张牌。 NL 将一张 *进化点 置入手牌。"
+  },
+  "shadowverse:MechaGoblin": {
+    "NAME": "机械哥布林",
+    "DESCRIPTION": "机械 NL 造成 !D! 点伤害。 NL 谢幕曲 :打出时增加1章 *修复模式 到手中。"
+  },
+  "shadowverse:TravelersRespite": {
+    "NAME": "荒野的休息",
+    "DESCRIPTION": "自然 NL 回复 !M! 点生命。 NL 增加1章 *那塔拉的大树 到手中。 NL 消耗 。"
   }
 }

@@ -24,6 +24,7 @@ import shadowverse.Shadowverse;
 import shadowverse.cards.Neutral.Temp.FangsOfArdentDestruction;
 import shadowverse.cards.Royal.Loot.Barbaros;
 import shadowverse.characters.Dragon;
+import shadowverse.powers.CutthroatPower;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -122,6 +123,9 @@ public class OmenOfDisdain extends CustomCard implements BranchableUpgradeCard {
             case 0:
                 if (this.costForTurn == 3) {
                     addToBot(new SFXAction("OmenOfDisdain_Eh"));
+                    if (abstractPlayer.hasPower(CutthroatPower.POWER_ID)) {
+                        addToBot(new GainEnergyAction(enhanceCost - 1));
+                    }
                     if (abstractMonster != null)
                         addToBot(new VFXAction(new ClawEffect(abstractMonster.hb.cX, abstractMonster.hb.cY, Color.SCARLET, Color.ORANGE), 0.1F));
                     addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));

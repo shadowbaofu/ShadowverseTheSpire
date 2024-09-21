@@ -18,6 +18,7 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import shadowverse.Shadowverse;
 import shadowverse.cards.AbstractNeutralCard;
 import shadowverse.characters.AbstractShadowversePlayer;
+import shadowverse.powers.CutthroatPower;
 import shadowverse.powers.HeavenlyAegisPower;
 
 import java.util.ArrayList;
@@ -118,6 +119,9 @@ public class ChaoticAngel
         addToBot(new DamageAction(abstractMonster,new DamageInfo(abstractPlayer,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
         addToBot(new DamageAction(abstractMonster,new DamageInfo(abstractPlayer,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
         if (this.costForTurn == 4) {
+            if (abstractPlayer.hasPower(CutthroatPower.POWER_ID)) {
+                addToBot(new GainEnergyAction(enhanceCost - 1));
+            }
             addToBot(new GainEnergyAction(2));
             addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new HeavenlyAegisPower(abstractPlayer)));
             addToBot(new AbstractGameAction() {

@@ -17,7 +17,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import shadowverse.Shadowverse;
 import shadowverse.cards.AbstractNeutralCard;
-import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.powers.CutthroatPower;
 import shadowverse.powers.HeavenlyAegisPower;
 
@@ -30,6 +29,7 @@ public class ChaoticAngel
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/ChaoticAngel.png";
+    private static final String TEXT = CardCrawlGame.languagePack.getUIString("shadowverse:Exhaust").TEXT[0];
     private ArrayList<String> dup = new ArrayList<>();
     public int enhanceCost;
     public int baseCost;
@@ -104,7 +104,7 @@ public class ChaoticAngel
                 dup.add(c.cardID);
             }
         }
-        int amount = dup.size();
+        int amount = dup.size()-1;
         int realBaseDamage = this.baseDamage;
         this.baseDamage += amount * this.magicNumber;
         super.calculateCardDamage(mo);

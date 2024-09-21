@@ -70,8 +70,8 @@
   },
   "shadowverse:GigantChimera": {
     "NAME": "巨兽奇美拉",
-    "DESCRIPTION": "魔力增幅 :+7点伤害。 NL 轮流对敌方造成 !D! 点伤害。 NL (由血量最低的敌人开始，依序给予该敌人生命值与 格挡 的合计值等量的伤害，该敌人死亡后，对其他敌人造成剩余伤害。)",
-    "UPGRADE_DESCRIPTION": "魔力增幅  :+9点伤害。 NL 轮流对敌方造成 !D! 点伤害。 NL (由血量最低的敌人开始，依序给予该敌人生命值与 格挡 的合计值等量的伤害，该敌人死亡后，对其他敌人造成剩余伤害。)"
+    "DESCRIPTION": "魔力增幅 :+7点伤害。 NL 对全体敌人造成 !D! 点伤害 。",
+    "UPGRADE_DESCRIPTION": "魔力增幅  :+9点伤害。 NL 对全体敌人造成 !D! 点伤害 。"
   },
   "shadowverse:OmenOfTruth": {
     "NAME": "真实绝杰·莱奥",
@@ -2389,10 +2389,6 @@
   "shadowverse:Karula": {
     "NAME": "武艺至尊·伽尔拉",
     "DESCRIPTION": "获得 !B! 点 格挡 。 NL 爆能强化 2 :增加1张 *进化点 和 *奇迹 到手中。 NL 回合结束时，如果有剩余能量，则获得 !M! 点 力量 和 敏捷 ，给予随机敌人3层 易伤 和 虚弱 。"
-  },
-  "shadowverse:CurseOfPurgation": {
-    "NAME": "肃清的诅咒",
-    "DESCRIPTION": "无法被 消耗 。 NL 当被从卡组移除时，你死亡。 NL 当打出第8张以上牌时，本回合抽牌时失去2点生命。"
   },
   "shadowverse:Uno": {
     "NAME": "提线傀儡·舞诺",
@@ -6825,7 +6821,7 @@
   },
   "shadowverse:DarkLyrial": {
     "NAME": "暗黑莉莉耶尔",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 选择手中1张耗能为2以下的无色攻击牌，获得1点 力量 和 敏捷 。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果手中有其他耗能为2以下的无色攻击牌，获得 !M! 点 力量 和 敏捷 。"
   },
   "shadowverse:AngelOfTheWord": {
     "NAME": "圣言天使",
@@ -6890,5 +6886,55 @@
     "NAME": "反转之翼",
     "DESCRIPTION": "抉择 : NL *堕天 NL *天使化 ",
     "UPGRADE_DESCRIPTION": "抉择 : NL *堕天+ NL *天使化+ "
+  },
+  "shadowverse:SeraphOfSin": {
+    "NAME": "污秽的天兵",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 增加1张 *反转之翼 到手中。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 增加1张 *反转之翼 到手中。 NL 增加1张 *堕天使 到手中。"
+  },
+  "shadowverse:ReturnToHeaven": {
+    "NAME": "天之归还",
+    "DESCRIPTION": "选择消耗手中1张无色攻击牌，增加1张 *复制品 到手中并获得 !M! 点能量。 NL 如果选择的是堕天使牌且有对应的天使牌，改为那张牌。 NL 消耗 。"
+  },
+  "shadowverse:SeraphOfVirtue": {
+    "NAME": "圣洁的天兵",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 增加1张 *天之归还 到手中。"
+  },
+  "shadowverse:HarbingerOfTheNight": {
+    "NAME": "暗黑邪使",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 增加1张 *反转之翼 到手中。"
+  },
+  "shadowverse:HarbingerOfTheDaylight": {
+    "NAME": "光翼圣使",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 被抽到时自动 升级 。 NL 可进化",
+    "UPGRADE_DESCRIPTION": "打出后解除升级 。 NL 造成 !D! 点伤害。"
+  },
+  "shadowverse:AngelOfDarkness": {
+    "NAME": "漆黑使徒",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果目标至少有1种正面效果，增加1张 *反转之翼 到手中。"
+  },
+  "shadowverse:AngelOfBrightness": {
+    "NAME": "纯白使徒",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 「每当打出 *反转之翼 或 *天之归还 时，对随机敌人造成 !D! 点伤害」效果。"
+  },
+  "shadowverse:SingleWingedExecutor": {
+    "NAME": "片翼执行者",
+    "DESCRIPTION": "限定 :打出无色攻击牌时，将这张牌和那张牌 升级 并获得1点 力量 和 敏捷 。 NL 获得 !B! 点 格挡 。 NL 获得 [E] 。"
+  },
+  "shadowverse:SingleWingedRebellion": {
+    "NAME": "片翼反叛者",
+    "DESCRIPTION": "限定 :打出堕天使牌时，将这张牌和那张牌 升级 并。 NL 获得 !B! 点 格挡 。 NL 获得 [E] 。 NL 增加1张 *反转之翼 到手中。"
+  },
+  "shadowverse:PurifyGuardian": {
+    "NAME": "纯净守护者",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 如果手中有无色攻击牌，选择1张丢弃，下1次受到的伤害变为0。"
+  },
+  "shadowverse:CorruptionGuardian": {
+    "NAME": "腐化守护者",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 如果手中有无色攻击牌，选择1张丢弃，抽1张牌，获得 [E] 。"
+  },
+  "shadowverse:ChaoticAngel": {
+    "NAME": "混沌天使",
+    "DESCRIPTION": "造成 !D! 点伤害2次。 NL 本场战斗每打出1种无色牌，伤害+ !M! 。 NL 爆能强化 4:你不会受到 力量 和 敏捷 以外的负面效果影响。获得2点能量。增加2张带有 消耗 的 *反转之翼 到手中。"
   }
 }

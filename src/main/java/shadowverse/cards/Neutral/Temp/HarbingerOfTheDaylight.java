@@ -1,4 +1,4 @@
-package shadowverse.cards.Neutral.Neutral;
+package shadowverse.cards.Neutral.Temp;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -11,23 +11,20 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.vfx.combat.ThrowDaggerEffect;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.relics.KagemitsuSword;
 
-public class Lyrial extends CustomCard {
-    public static final String ID = "shadowverse:Lyrial";
+public class HarbingerOfTheDaylight extends CustomCard {
+    public static final String ID = "shadowverse:HarbingerOfTheDaylight";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String IMG_PATH = "img/cards/Lyrial.png";
+    public static final String IMG_PATH = "img/cards/HarbingerOfTheDaylight.png";
 
 
-    public Lyrial() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.BASIC, CardTarget.ENEMY);
-        this.baseDamage = 6;
-        this.baseMagicNumber = 3;
-        this.magicNumber = this.baseMagicNumber;
+    public HarbingerOfTheDaylight() {
+        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.ENEMY);
+        this.baseDamage = 4;
         this.tags.add(AbstractShadowversePlayer.Enums.EVOLVEABLE);
     }
 
@@ -38,6 +35,12 @@ public class Lyrial extends CustomCard {
             this.upgradeDamage(3);
             initializeDescription();
         }
+    }
+
+    @Override
+    public void triggerWhenDrawn() {
+        if (!this.upgraded)
+            this.upgrade();
     }
 
     public void degrade() {
@@ -58,11 +61,9 @@ public class Lyrial extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot(new SFXAction(ID.replace("shadowverse:", "")));
+        addToBot(new SFXAction("HarbingerOfTheNight"));
         addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        if (this.upgraded) {
-            if (abstractMonster != null)
-                addToTop(new VFXAction(new ThrowDaggerEffect(abstractMonster.hb.cX, abstractMonster.hb.cY),0.2F));
+        if (this.upgraded) {;
             addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.magicNumber, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
             this.degrade();
             if(abstractPlayer.hasRelic(KagemitsuSword.ID) || abstractPlayer.hasPower("shadowverse:SeofonPower")){
@@ -74,7 +75,7 @@ public class Lyrial extends CustomCard {
 
     @Override
     public AbstractCard makeCopy() {
-        return new Lyrial();
+        return new HarbingerOfTheDaylight();
     }
 }
 

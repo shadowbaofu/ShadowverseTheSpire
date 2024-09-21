@@ -1,10 +1,9 @@
 package shadowverse.cards.Neutral.Temp;
 
 import basemod.abstracts.CustomCard;
-import com.evacipated.cardcrawl.mod.stslib.actions.common.SelectCardsInHandAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -12,56 +11,47 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.DexterityPower;
-import com.megacrit.cardcrawl.powers.StrengthPower;
-import shadowverse.cards.Neutral.Neutral.Lyrial;
+import com.megacrit.cardcrawl.powers.AbstractPower;
+import shadowverse.cards.Neutral.Neutral.WingedInversion;
 import shadowverse.characters.AbstractShadowversePlayer;
 
-public class DarkLyrial extends CustomCard {
-    public static final String ID = "shadowverse:DarkLyrial";
+public class AngelOfDarkness extends CustomCard {
+    public static final String ID = "shadowverse:AngelOfDarkness";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String IMG_PATH = "img/cards/DarkLyrial.png";
+    public static final String IMG_PATH = "img/cards/AngelOfDarkness.png";
 
 
-    public DarkLyrial() {
+    public AngelOfDarkness() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.ENEMY);
-        this.baseDamage = 6;
-        this.baseMagicNumber = 1;
-        this.magicNumber = this.baseMagicNumber;
+        this.baseDamage = 12;
+        this.cardsToPreview = new AngelOfBrightness();
         this.tags.add(AbstractShadowversePlayer.Enums.DARK_ANGEL);
-        this.cardsToPreview = new Lyrial();
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(3);
-            upgradeMagicNumber(1);
+            this.upgradeDamage(3);
             this.cardsToPreview.upgrade();
         }
     }
 
+
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot(new SFXAction("Lyrial"));
+        addToBot(new SFXAction(ID.replace("shadowverse:", "")));
         addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        for (AbstractCard card : abstractPlayer.hand.group) {
-            if (card.type == CardType.ATTACK
-                    && card.color == CardColor.COLORLESS &&
-                    card.cost <= 2 && card != this) {
-                addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new StrengthPower(abstractPlayer, this.magicNumber), this.magicNumber));
-                addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new DexterityPower(abstractPlayer, this.magicNumber), this.magicNumber));
-            }
-        }
+        if (abstractMonster.powers.stream().anyMatch(abstractPower -> abstractPower.type == AbstractPower.PowerType.BUFF))
+            addToBot(new MakeTempCardInHandAction(new WingedInversion()));
     }
 
 
     @Override
     public AbstractCard makeCopy() {
-        return new DarkLyrial();
+        return new AngelOfDarkness();
     }
 }
 

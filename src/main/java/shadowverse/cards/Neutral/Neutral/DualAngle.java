@@ -28,7 +28,7 @@ import shadowverse.characters.AbstractShadowversePlayer;
    
    public DualAngle() {
      super("shadowverse:DualAngle", NAME, "img/cards/DualAngle.png", 1, DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.UNCOMMON, CardTarget.ENEMY);
-     this.baseDamage = 10;
+     this.baseDamage = 8;
      this.baseBlock = 8;
      this.tags.add(AbstractShadowversePlayer.Enums.MACHINE);
      this.tags.add(AbstractShadowversePlayer.Enums.NATURAL);
@@ -45,8 +45,8 @@ import shadowverse.characters.AbstractShadowversePlayer;
  
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     addToBot((AbstractGameAction)new SFXAction("DualAngle"));
-     addToBot((AbstractGameAction)new GainBlockAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, this.block));
+     addToBot(new SFXAction("DualAngle"));
+     addToBot(new GainBlockAction(abstractPlayer, abstractPlayer, this.block));
      int machineCount = 0;
      int naturalCount = 0;
      for (AbstractCard c : abstractPlayer.hand.group) {
@@ -60,17 +60,17 @@ import shadowverse.characters.AbstractShadowversePlayer;
            }
        }
        if (machineCount >= 2) {
-       addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+       addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
      }
      if (naturalCount >= 2) {
-       addToBot((AbstractGameAction)new HealAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, 2));
+       addToBot(new HealAction(abstractPlayer, abstractPlayer, 2));
      }
-     addToBot((AbstractGameAction)new ChoiceAction(new AbstractCard[] { (AbstractCard)new ProductMachine(), (AbstractCard)new NaterranGreatTree() }));
+     addToBot(new ChoiceAction(new ProductMachine(), new NaterranGreatTree()));
    }
  
    
    public AbstractCard makeCopy() {
-     return (AbstractCard)new DualAngle();
+     return new DualAngle();
    }
  }
 

@@ -70,8 +70,8 @@
   },
   "shadowverse:GigantChimera": {
     "NAME": "ギガントキマイラ",
-    "DESCRIPTION": "スペルブースト \b+7ダメージ。 NL すべての敵に !D! ダメージ。 NL (HPが最も低い敵から初め、順番にそのHPとブロックの合計値のダメージを与え、その敵が死亡した時、別の敵に残りダメージを割り込む。)",
-    "UPGRADE_DESCRIPTION": "スペルブースト \b+9ダメージ。 NL すべての敵に !D! ダメージ。 NL (HPが最も低い敵から初め、順番にそのHPとブロックの合計値のダメージを与え、その敵が死亡した時、別の敵に残りダメージを割り込む。)"
+    "DESCRIPTION": "スペルブースト \b+7ダメージ。 NL 敵全体に!D! ダメージを与える。",
+    "UPGRADE_DESCRIPTION": "スペルブースト \b+9ダメージ。 NL 敵全体に!D! ダメージを与える。"
   },
   "shadowverse:OmenOfTruth": {
     "NAME": "真実の絶傑・ライオ",

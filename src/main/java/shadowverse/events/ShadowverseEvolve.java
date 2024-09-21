@@ -51,7 +51,7 @@ public class ShadowverseEvolve  extends AbstractImageEvent {
 
     public boolean isSVP(){
         ArrayList<AbstractPlayer.PlayerClass> cls=new ArrayList<>(Arrays.asList(Elf.Enums.Elf, Royal.Enums.Royal, Witchcraft.Enums.WITCHCRAFT, Dragon.Enums.Dragon, Necromancer.Enums.Necromancer,Vampire.Enums.Vampire,Bishop.Enums.Bishop));
-        return cls.contains(AbstractDungeon.player.chosenClass);
+        return cls.stream().anyMatch(playerClass -> playerClass == AbstractDungeon.player.chosenClass);
     }
 
     @Override

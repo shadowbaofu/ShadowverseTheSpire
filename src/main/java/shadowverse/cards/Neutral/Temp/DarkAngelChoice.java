@@ -22,7 +22,7 @@ public class DarkAngelChoice extends CustomCard {
     public static final String IMG_PATH = "img/cards/WingedInversion.png";
 
     public DarkAngelChoice() {
-        super(ID, NAME, IMG_PATH, -2, DESCRIPTION, CardType.SKILL, Vampire.Enums.COLOR_SCARLET, CardRarity.SPECIAL, CardTarget.NONE);
+        super(ID, NAME, IMG_PATH, -2, DESCRIPTION, CardType.SKILL, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.NONE);
     }
 
 

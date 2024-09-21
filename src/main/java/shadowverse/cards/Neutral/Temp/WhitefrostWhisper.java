@@ -60,7 +60,7 @@ public class WhitefrostWhisper extends CustomCard {
 
         if (abstractMonster.currentHealth < abstractMonster.maxHealth && !hasStatusOrCurse) {
             addToBot(new GainEnergyAction(1));
-        }else {
+        }else if (abstractMonster.currentHealth == abstractMonster.maxHealth){
             addToBot(new ApplyPowerAction(abstractMonster, abstractMonster, new WeakPower(abstractMonster, this.magicNumber, false), this.magicNumber));
         }
     }

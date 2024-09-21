@@ -26,7 +26,7 @@ public class AngelChoice extends CustomCard {
     public static final String IMG_PATH = "img/cards/WingedInversion.png";
 
     public AngelChoice() {
-        super(ID, NAME, IMG_PATH, -2, DESCRIPTION, CardType.SKILL, Vampire.Enums.COLOR_SCARLET, CardRarity.SPECIAL, CardTarget.NONE);
+        super(ID, NAME, IMG_PATH, -2, DESCRIPTION, CardType.SKILL, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.NONE);
     }
 
 
@@ -52,8 +52,6 @@ public class AngelChoice extends CustomCard {
                         AbstractDungeon.player.hand.removeCard(c);
                         addToBot(new MakeTempCardInHandAction(c.cardsToPreview.makeStatEquivalentCopy()));
                     }else {
-                        AbstractDungeon.effectList.add(new ExhaustCardEffect(c));
-                        AbstractDungeon.player.hand.removeCard(c);
                         AbstractCard f = new FallenAngel();
                         if (this.upgraded)
                             f.upgrade();

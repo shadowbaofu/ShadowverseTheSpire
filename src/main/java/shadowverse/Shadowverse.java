@@ -1714,6 +1714,10 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("AngelKnight", new Sfx(voicePath + "AngelKnight.wav"));
             reflectedMap.put("Altaia", new Sfx(voicePath + "Altaia.wav"));
             reflectedMap.put("FallenAngel", new Sfx(voicePath + "FallenAngel.wav"));
+            reflectedMap.put("SeraphOfSin", new Sfx(voicePath + "SeraphOfSin.wav"));
+            reflectedMap.put("AngelOfDarkness", new Sfx(voicePath + "AngelOfDarkness.wav"));
+            reflectedMap.put("HarbingerOfTheNight", new Sfx(voicePath + "HarbingerOfTheNight.wav"));
+            reflectedMap.put("ChaoticAngel", new Sfx(voicePath + "ChaoticAngel.wav"));
         }
         if (Loader.isModLoaded("CardAugments")) {
             AugmentHelper.register();
@@ -2998,7 +3002,6 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard(new WhitefrostWhisper());
         BaseMod.addCard(new Filene());
         BaseMod.addCard(new Forte());
-
         BaseMod.addCard(new DragonlifeBlade());
         BaseMod.addCard(new DragonstrifeBlade());
         BaseMod.addCard(new Hiro());
@@ -3164,6 +3167,18 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard(new DarkAngelKnight());
         BaseMod.addCard(new Altaia());
         BaseMod.addCard(new WingedInversion());
+        BaseMod.addCard(new SeraphOfSin());
+        BaseMod.addCard(new ReturnToHeaven());
+        BaseMod.addCard(new SeraphOfVirtue());
+        BaseMod.addCard(new HarbingerOfTheDaylight());
+        BaseMod.addCard(new HarbingerOfTheNight());
+        BaseMod.addCard(new AngelOfBrightness());
+        BaseMod.addCard(new AngelOfDarkness());
+        BaseMod.addCard(new SingleWingedExecutor());
+        BaseMod.addCard(new SingleWingedRebellion());
+        BaseMod.addCard(new PurifyGuardian());
+        BaseMod.addCard(new CorruptionGuardian());
+        BaseMod.addCard(new ChaoticAngel());
         logger.info("Success");
     }
 

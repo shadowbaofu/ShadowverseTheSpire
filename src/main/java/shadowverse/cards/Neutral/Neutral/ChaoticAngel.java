@@ -104,7 +104,9 @@ public class ChaoticAngel
                 dup.add(c.cardID);
             }
         }
-        int amount = dup.size()-1;
+        int amount = dup.size();
+        if (dup.size() == 1 && dup.get(0).equals(ChaoticAngel.NAME))
+            amount = 0;
         int realBaseDamage = this.baseDamage;
         this.baseDamage += amount * this.magicNumber;
         super.calculateCardDamage(mo);

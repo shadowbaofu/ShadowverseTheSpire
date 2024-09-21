@@ -44,45 +44,45 @@ public class WitchStarterPack {
         spellboost2 = new StartPack(new GrimoireSorcerer(), new GigantChimera());
 
         academic.addCard(new AngelicSnipe());
-        academic.addCard(new CloudChorus());
-        academic.addCard(new AngelicBarrage(), 2);
+        academic.addCard(new CloudChorus(),2);
+        academic.addCard(new AngelicBarrage(), 3);
         academic.addCard(new Insight());
         academic.addCard(new Hanna());
         academic.addCard(new Owen(),2);
         academic.addCard(new MysterianKnowledge());
 
         chess.addCard(new AngelicSnipe(), 2);
-        chess.addCard(new AngelicBarrage(), 2);
-        chess.addCard(new CloudChorus(), 2);
+        chess.addCard(new AngelicBarrage(), 3);
+        chess.addCard(new CloudChorus(), 3);
         chess.addCard(new MagicalRook());
         chess.addCard(new FieryEmbrace());
 
-        earth1.addCard(new Goblin(), 2);
-        earth1.addCard(new Goliath(), 2);
+        earth1.addCard(new Goblin(), 3);
+        earth1.addCard(new Goliath(), 3);
         earth1.addCard(new AngelicSwordMaiden());
         earth1.addCard(new WitchSnap());
         earth1.addCard(new DwarfAlchemist(), 2);
         earth1.addCard(new ConjureTwosome());
 
 
-        earth2.addCard(new Goblin(), 2);
-        earth2.addCard(new Goliath(), 2);
+        earth2.addCard(new Goblin(), 3);
+        earth2.addCard(new Goliath(), 3);
         earth2.addCard(new ShieldAngel());
         earth2.addCard(new AngelicSwordMaiden());
         earth2.addCard(new Gruinne());
         earth2.addCard(new JubilanceWitch());
         earth2.addCard(new CommenceExperiment());
 
-        spellboost1.addCard(new AngelicSnipe());
-        spellboost1.addCard(new CloudChorus());
+        spellboost1.addCard(new AngelicSnipe(),2);
+        spellboost1.addCard(new CloudChorus(),2);
         spellboost1.addCard(new AngelicBarrage(), 2);
         spellboost1.addCard(new Insight());
         spellboost1.addCard(new FieryEmbrace());
         spellboost1.addCard(new MagicMissile());
         spellboost1.addCard(new Ogler(),2);
 
-        spellboost2.addCard(new AngelicSnipe());
-        spellboost2.addCard(new CloudChorus());
+        spellboost2.addCard(new AngelicSnipe(),2);
+        spellboost2.addCard(new CloudChorus(),2);
         spellboost2.addCard(new AngelicBarrage(), 2);
         spellboost2.addCard(new Insight());
         spellboost2.addCard(new FieryEmbrace());

@@ -2,6 +2,7 @@ package shadowverse.cards.Neutral.Temp;
 
 import basemod.abstracts.CustomCard;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.SelectCardsInHandAction;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
@@ -48,20 +49,27 @@ public class AngelChoice extends CustomCard {
             for (AbstractCard c : abstractCards) {
                 if (c.hasTag(AbstractShadowversePlayer.Enums.DARK_ANGEL)){
                     if (c.cardsToPreview != null && c.type == CardType.ATTACK){
-                        AbstractDungeon.effectList.add(new ExhaustCardEffect(c));
-                        AbstractDungeon.player.hand.removeCard(c);
+                        addToBot(new AbstractGameAction() {
+                            @Override
+                            public void update() {
+                                AbstractDungeon.effectList.add(new ExhaustCardEffect(c));
+                                AbstractDungeon.player.hand.removeCard(c);
+                                this.isDone = true;
+                            }
+                        });
                         addToBot(new MakeTempCardInHandAction(c.cardsToPreview.makeStatEquivalentCopy()));
-                    }else {
-                        AbstractCard f = new FallenAngel();
-                        if (this.upgraded)
-                            f.upgrade();
-                        addToBot(new MakeTempCardInHandAction(f));
                     }
                     addToBot(new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,new StrengthPower(AbstractDungeon.player,2)));
                     addToBot(new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,new DexterityPower(AbstractDungeon.player,2)));
                 }else {
-                    AbstractDungeon.effectList.add(new ExhaustCardEffect(c));
-                    AbstractDungeon.player.hand.removeCard(c);
+                    addToBot(new AbstractGameAction() {
+                        @Override
+                        public void update() {
+                            AbstractDungeon.effectList.add(new ExhaustCardEffect(c));
+                            AbstractDungeon.player.hand.removeCard(c);
+                            this.isDone = true;
+                        }
+                    });
                     AbstractCard f = new FallenAngel();
                     if (this.upgraded)
                         f.upgrade();

@@ -38,6 +38,7 @@ public class ChaoticAngel
     public int exCostForTurn;
 
     public int ex;
+
     public ChaoticAngel() {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.RARE, CardTarget.ENEMY);
         this.baseDamage = 0;
@@ -85,8 +86,8 @@ public class ChaoticAngel
     }
 
     public void applyPowers() {
-        for (AbstractCard c: AbstractDungeon.actionManager.cardsPlayedThisCombat){
-            if (c.color == CardColor.COLORLESS &&!dup.contains(c.cardID)){
+        for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisCombat) {
+            if (c.color == CardColor.COLORLESS && !dup.contains(c.cardID)) {
                 dup.add(c.cardID);
             }
         }
@@ -99,14 +100,7 @@ public class ChaoticAngel
     }
 
     public void calculateCardDamage(AbstractMonster mo) {
-        for (AbstractCard c: AbstractDungeon.actionManager.cardsPlayedThisCombat){
-            if (c.color == CardColor.COLORLESS &&!dup.contains(c.cardID)){
-                dup.add(c.cardID);
-            }
-        }
         int amount = dup.size();
-        if (dup.size() == 1 && dup.get(0).equals(ChaoticAngel.NAME))
-            amount = 0;
         int realBaseDamage = this.baseDamage;
         this.baseDamage += amount * this.magicNumber;
         super.calculateCardDamage(mo);
@@ -118,14 +112,14 @@ public class ChaoticAngel
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot(new SFXAction("ChaoticAngel"));
         calculateCardDamage(abstractMonster);
-        addToBot(new DamageAction(abstractMonster,new DamageInfo(abstractPlayer,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
-        addToBot(new DamageAction(abstractMonster,new DamageInfo(abstractPlayer,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
+        addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
+        addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
         if (this.costForTurn == 4) {
             if (abstractPlayer.hasPower(CutthroatPower.POWER_ID)) {
                 addToBot(new GainEnergyAction(enhanceCost - 1));
             }
             addToBot(new GainEnergyAction(2));
-            addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new HeavenlyAegisPower(abstractPlayer)));
+            addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new HeavenlyAegisPower(abstractPlayer)));
             addToBot(new AbstractGameAction() {
                 @Override
                 public void update() {

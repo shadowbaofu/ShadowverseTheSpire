@@ -21,7 +21,7 @@ public class AngelicSnipe extends CustomCard {
 
     public AngelicSnipe() {
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, CardColor.COLORLESS, CardRarity.BASIC, CardTarget.ENEMY);
-        this.baseDamage = 3;
+        this.baseDamage = 4;
     }
 
     @Override

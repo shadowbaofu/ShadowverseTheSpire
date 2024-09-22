@@ -20,14 +20,15 @@ public class CloudChorus extends CustomCard {
 
     public CloudChorus() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, CardColor.COLORLESS, CardRarity.BASIC, CardTarget.SELF);
-        this.baseBlock = 6;
-        this.magicNumber = this.baseMagicNumber = 3;
+        this.baseBlock = 5;
+        this.magicNumber = this.baseMagicNumber = 2;
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
+            upgradeBlock(2);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }

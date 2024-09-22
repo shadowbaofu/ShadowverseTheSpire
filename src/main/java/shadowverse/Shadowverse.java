@@ -1718,6 +1718,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("AngelOfDarkness", new Sfx(voicePath + "AngelOfDarkness.wav"));
             reflectedMap.put("HarbingerOfTheNight", new Sfx(voicePath + "HarbingerOfTheNight.wav"));
             reflectedMap.put("ChaoticAngel", new Sfx(voicePath + "ChaoticAngel.wav"));
+            reflectedMap.put("DesertPathfinder", new Sfx(voicePath + "DesertPathfinder.wav"));
         }
         if (Loader.isModLoaded("CardAugments")) {
             AugmentHelper.register();
@@ -3166,6 +3167,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard(new AngelKnight());
         BaseMod.addCard(new DarkAngelKnight());
         BaseMod.addCard(new Altaia());
+        BaseMod.addCard(new DarkAltaia());
         BaseMod.addCard(new WingedInversion());
         BaseMod.addCard(new SeraphOfSin());
         BaseMod.addCard(new ReturnToHeaven());
@@ -3179,6 +3181,8 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard(new PurifyGuardian());
         BaseMod.addCard(new CorruptionGuardian());
         BaseMod.addCard(new ChaoticAngel());
+        BaseMod.addCard(new SummonDivineTreasure());
+        BaseMod.addCard(new DesertPathfinder());
         logger.info("Success");
     }
 

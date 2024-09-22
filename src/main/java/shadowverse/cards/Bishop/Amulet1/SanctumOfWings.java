@@ -24,7 +24,7 @@ public class SanctumOfWings extends AbstractAmuletCard {
 
     public SanctumOfWings() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, Bishop.Enums.COLOR_WHITE, CardRarity.COMMON, CardTarget.NONE);
-        this.countDown = 3;
+        this.countDown = 2;
         this.cardsToPreview = new RegalFalcon();
         this.tags.add(AbstractShadowversePlayer.Enums.NATURAL);
     }

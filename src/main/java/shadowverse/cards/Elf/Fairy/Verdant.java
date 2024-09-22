@@ -47,9 +47,9 @@ import shadowverse.powers.NextTurnFairy;
  
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     addToBot((AbstractGameAction)new SFXAction("Verdant"));
-     AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new GainBlockAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, this.block));
-     addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature) abstractPlayer,(AbstractCreature) abstractPlayer,(AbstractPower)new NextTurnFairy(abstractPlayer,this.magicNumber),this.magicNumber));
+     addToBot(new SFXAction("Verdant"));
+     AbstractDungeon.actionManager.addToBottom(new GainBlockAction(abstractPlayer, abstractPlayer, this.block));
+     addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new NextTurnFairy(abstractPlayer,this.magicNumber),this.magicNumber));
    }
  
    

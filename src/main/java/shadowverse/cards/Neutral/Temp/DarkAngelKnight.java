@@ -23,7 +23,7 @@ public class DarkAngelKnight extends CustomCard {
 
 
     public DarkAngelKnight() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.SELF);
         this.baseBlock = 5;
         this.cardsToPreview = new AngelKnight();
     }

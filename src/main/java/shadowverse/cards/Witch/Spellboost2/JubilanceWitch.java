@@ -43,7 +43,7 @@ import shadowverse.powers.EarthEssence;
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
      addToBot(new SFXAction("JubilanceWitch"));
-     addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new EarthEssence((AbstractCreature)abstractPlayer, this.magicNumber), this.magicNumber));
+     addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new EarthEssence(abstractPlayer, this.magicNumber), this.magicNumber));
      AbstractPower p = abstractPlayer.getPower(EarthEssence.POWER_ID);
      if (p!=null&&(p.amount+this.magicNumber)>2){
        addToBot(new DamageAllEnemiesAction(abstractPlayer,this.damage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.FIRE));

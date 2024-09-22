@@ -1979,5 +1979,27 @@
       "ターン終了時、HPを #b3 回復する。受けるダメージを- #b",
       " する。"
     ]
+  },
+  "shadowverse:GuiltyShieldPower": {
+    "NAME": "ギルティ・シールド",
+    "DESCRIPTIONS": [
+      "自分への #b5 以上のダメージは #b4 になる。あと #b",
+      " ターン続く。"
+    ]
+  },
+  "shadowverse:JudgementSpearPower": {
+    "NAME": "ジャッジメント・スピア",
+    "DESCRIPTIONS": [
+      "ターン終了時にランダムな敵に #b",
+      " ダメージを与える。あと #b",
+      " ターン続く。"
+    ]
+  },
+  "shadowverse:EternalDogmaPower": {
+    "NAME": "エターナル・ドグマ",
+    "DESCRIPTIONS": [
+      "ターン開始時、追加でカードを #b1 引き、HPを #b2 回復する。あと #b",
+      " ターン続く。"
+    ]
   }
 }

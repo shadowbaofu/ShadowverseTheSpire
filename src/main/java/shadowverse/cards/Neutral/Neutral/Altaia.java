@@ -23,7 +23,7 @@ public class Altaia extends CustomCard {
 
     public Altaia() {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.BASIC, CardTarget.ENEMY);
-        this.baseDamage = 6;
+        this.baseDamage = 5;
     }
 
     @Override

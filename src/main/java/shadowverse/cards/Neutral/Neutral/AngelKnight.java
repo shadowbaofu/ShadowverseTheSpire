@@ -21,8 +21,8 @@ public class AngelKnight extends CustomCard {
 
 
     public AngelKnight() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, CardColor.COLORLESS, CardRarity.BASIC, CardTarget.SELF);
-        this.baseBlock = 5;
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.BASIC, CardTarget.SELF);
+        this.baseBlock = 4;
     }
 
     @Override

@@ -36,6 +36,7 @@ public class Lyrial extends CustomCard {
         if (!this.upgraded) {
             upgradeName();
             this.upgradeDamage(3);
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

@@ -9,7 +9,6 @@ import com.megacrit.cardcrawl.actions.utility.WaitAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -51,9 +50,9 @@ public class Paracelise
 
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot((AbstractGameAction) new SFXAction("Paracelise"));
-        addToBot((AbstractGameAction) new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        addToBot((AbstractGameAction) new DiscardAction((AbstractCreature) p, (AbstractCreature) p, 3, true));
+        addToBot(new SFXAction("Paracelise"));
+        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        addToBot(new DiscardAction(p, p, 3, true));
     }
 
     @Override
@@ -73,23 +72,23 @@ public class Paracelise
                 AbstractDungeon.effectsQueue.add(new StanceChangeParticleGenerator(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, "Divinity"));
                 dupCheck = false;
                 if (AbstractDungeon.player.discardPile.contains((AbstractCard) this)) {
-                    addToBot((AbstractGameAction) new WaitAction(0.4F));
-                    addToBot((AbstractGameAction) new DiscardToHandAction((AbstractCard) this));
-                    addToBot((AbstractGameAction) new WaitAction(0.4F));
-                    addToBot((AbstractGameAction) new SFXAction("Paracelise"));
-                    addToBot((AbstractGameAction) new GainBlockAction(AbstractDungeon.player, this.baseBlock));
-                    addToBot((AbstractGameAction) new HealAction(AbstractDungeon.player, AbstractDungeon.player, this.magicNumber));
-                    addToBot((AbstractGameAction)new DamageAllEnemiesAction(AbstractDungeon.player, DamageInfo.createDamageMatrix(this.magicNumber, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE, true));
-                    addToBot((AbstractGameAction)new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,new DrawCardNextTurnPower(AbstractDungeon.player,1)));
+                    addToBot(new WaitAction(0.4F));
+                    addToBot(new DiscardToHandAction((AbstractCard) this));
+                    addToBot(new WaitAction(0.4F));
+                    addToBot(new SFXAction("Paracelise"));
+                    addToBot(new GainBlockAction(AbstractDungeon.player, this.baseBlock));
+                    addToBot(new HealAction(AbstractDungeon.player, AbstractDungeon.player, this.magicNumber));
+                    addToBot(new DamageAllEnemiesAction(AbstractDungeon.player, DamageInfo.createDamageMatrix(this.magicNumber, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE, true));
+                    addToBot(new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,new DrawCardNextTurnPower(AbstractDungeon.player,1)));
                 } else if (AbstractDungeon.player.drawPile.contains((AbstractCard) this)) {
-                    addToBot((AbstractGameAction) new WaitAction(0.4F));
-                    addToBot((AbstractGameAction) new InvocationAction(this));
-                    addToBot((AbstractGameAction) new WaitAction(0.4F));
-                    addToBot((AbstractGameAction) new SFXAction("Paracelise"));
-                    addToBot((AbstractGameAction) new GainBlockAction(AbstractDungeon.player, this.baseBlock));
-                    addToBot((AbstractGameAction) new HealAction(AbstractDungeon.player, AbstractDungeon.player, this.magicNumber));
-                    addToBot((AbstractGameAction)new DamageAllEnemiesAction(AbstractDungeon.player, DamageInfo.createDamageMatrix(this.magicNumber, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE, true));
-                    addToBot((AbstractGameAction)new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,new DrawCardNextTurnPower(AbstractDungeon.player,1)));
+                    addToBot(new WaitAction(0.4F));
+                    addToBot(new InvocationAction(this));
+                    addToBot(new WaitAction(0.4F));
+                    addToBot(new SFXAction("Paracelise"));
+                    addToBot(new GainBlockAction(AbstractDungeon.player, this.baseBlock));
+                    addToBot(new HealAction(AbstractDungeon.player, AbstractDungeon.player, this.magicNumber));
+                    addToBot(new DamageAllEnemiesAction(AbstractDungeon.player, DamageInfo.createDamageMatrix(this.magicNumber, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE, true));
+                    addToBot(new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,new DrawCardNextTurnPower(AbstractDungeon.player,1)));
                 }
             }
         }

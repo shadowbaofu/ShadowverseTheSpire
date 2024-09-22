@@ -19,8 +19,8 @@ public class ShieldAngel extends CustomCard {
 
 
     public ShieldAngel() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, CardColor.COLORLESS, CardRarity.BASIC, CardTarget.SELF);
-        this.baseBlock = 8;
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.BASIC, CardTarget.SELF);
+        this.baseBlock = 5;
     }
 
     @Override

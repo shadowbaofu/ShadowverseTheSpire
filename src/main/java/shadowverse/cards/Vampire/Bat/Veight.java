@@ -2,16 +2,13 @@ package shadowverse.cards.Vampire.Bat;
 
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import rs.lazymankits.interfaces.cards.BranchableUpgradeCard;
@@ -50,24 +47,24 @@ public class Veight
 
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        switch (chosenBranch()){
+        switch (chosenBranch()) {
             case 0:
-                addToBot((AbstractGameAction) new SFXAction("Veight"));
-                addToBot((AbstractGameAction) new GainBlockAction((AbstractCreature) p, (AbstractCreature) p, this.block));
-                addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) p, (AbstractCreature) p, (AbstractPower) new VeightPower((AbstractCreature) p, this.magicNumber), this.magicNumber));
+                addToBot(new SFXAction("Veight"));
+                addToBot(new GainBlockAction(p, p, this.block));
+                addToBot(new ApplyPowerAction(p, p, new VeightPower(p, this.magicNumber), this.magicNumber));
                 break;
             case 1:
-                addToBot((AbstractGameAction) new SFXAction("Veight2"));
-                addToBot((AbstractGameAction) new GainBlockAction((AbstractCreature) p, (AbstractCreature) p, this.block));
-                addToBot(new LoseHPAction(p,p,1));
+                addToBot(new SFXAction("Veight2"));
+                addToBot(new GainBlockAction(p, p, this.block));
+                addToBot(new LoseHPAction(p, p, 1));
                 addToBot(new DrawCardAction(1));
                 addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
-                addToBot(new LoseHPAction(p,p,1));
+                addToBot(new LoseHPAction(p, p, 1));
                 addToBot(new DrawCardAction(1));
                 addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
                 if (p.hasPower(EpitaphPower.POWER_ID) || p.stance.ID.equals(Vengeance.STANCE_ID) || p.hasPower(WrathPower.POWER_ID)) {
-                    addToBot(new ApplyPowerAction(p,p,new StrengthPower(p,1)));
-                    addToBot(new ApplyPowerAction(p,p,new DexterityPower(p,1)));
+                    addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, 1)));
+                    addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, 1)));
                 }
                 break;
         }
@@ -101,7 +98,8 @@ public class Veight
                 Veight.this.textureImg = IMG_PATH2;
                 Veight.this.loadCardImage(IMG_PATH2);
                 Veight.this.name = cardStrings2.NAME;
-                Veight.this.baseBlock = 6;
+                Veight.this.upgradeBaseCost(2);
+                Veight.this.baseBlock = 9;
                 Veight.this.upgradedDamage = true;
                 Veight.this.initializeTitle();
                 Veight.this.rawDescription = cardStrings2.DESCRIPTION;

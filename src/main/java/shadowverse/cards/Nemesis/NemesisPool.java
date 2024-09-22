@@ -119,6 +119,7 @@ public class NemesisPool extends AbstractBanPool {
         Condemned.addCard(new SmeltworkBodyguard());
         Condemned.addCard(new WardenOfTrigger());
         Condemned.addCard(new StringMaster());
+        Condemned.addCard(new SummonDivineTreasure());
         Mech.addCard(new AerialCraft());
         Mech.addCard(new Armadillo());
         Mech.addCard(new Bearminator());

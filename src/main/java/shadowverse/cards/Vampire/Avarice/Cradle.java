@@ -3,19 +3,15 @@ package shadowverse.cards.Vampire.Avarice;
 
 import basemod.abstracts.CustomCard;
 import com.badlogic.gdx.graphics.Color;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.actions.unique.ApotheosisAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.VerticalAuraEffect;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Vampire;
@@ -47,13 +43,13 @@ public class Cradle extends CustomCard {
 
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction) new VFXAction((AbstractCreature) abstractPlayer, (AbstractGameEffect) new VerticalAuraEffect(Color.BLACK, abstractPlayer.hb.cX, abstractPlayer.hb.cY), 0.33F));
-        addToBot((AbstractGameAction) new VFXAction((AbstractCreature) abstractPlayer, (AbstractGameEffect) new VerticalAuraEffect(Color.FOREST, abstractPlayer.hb.cX, abstractPlayer.hb.cY), 0.33F));
-        addToBot((AbstractGameAction)new HealAction(abstractPlayer,abstractPlayer,3));
+        addToBot(new VFXAction(abstractPlayer, new VerticalAuraEffect(Color.BLACK, abstractPlayer.hb.cX, abstractPlayer.hb.cY), 0.33F));
+        addToBot(new VFXAction(abstractPlayer, new VerticalAuraEffect(Color.FOREST, abstractPlayer.hb.cX, abstractPlayer.hb.cY), 0.33F));
+        addToBot(new HealAction(abstractPlayer,abstractPlayer,3));
         if (abstractPlayer.hasPower(NaterranTree.POWER_ID)){
-            addToBot((AbstractGameAction)new ApotheosisAction());
+            addToBot(new ApotheosisAction());
         }
-        addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) abstractPlayer, (AbstractCreature) abstractPlayer, (AbstractPower) new CradlePower((AbstractCreature) abstractPlayer,2),2));
+        addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new CradlePower(abstractPlayer,2),2));
     }
 
 

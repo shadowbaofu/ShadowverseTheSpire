@@ -22,7 +22,7 @@ public class AngelicBarrage  extends CustomCard {
 
     public AngelicBarrage() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, CardColor.COLORLESS, CardRarity.BASIC, CardTarget.ALL_ENEMY);
-        this.baseDamage = 5;
+        this.baseDamage = 6;
     }
 
     @Override

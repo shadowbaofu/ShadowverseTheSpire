@@ -3,7 +3,6 @@
 
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -38,8 +37,8 @@ import shadowverse.powers.AdherentOfAnnihilationPower;
  
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     addToBot((AbstractGameAction) new SFXAction("AdherentOfAnnihilation"));
-     addToBot((AbstractGameAction) new ApplyPowerAction(abstractPlayer,abstractPlayer,new AdherentOfAnnihilationPower(abstractPlayer,this.magicNumber),this.magicNumber));
+     addToBot(new SFXAction("AdherentOfAnnihilation"));
+     addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new AdherentOfAnnihilationPower(abstractPlayer,this.magicNumber),this.magicNumber));
    }
  
    

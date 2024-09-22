@@ -1969,5 +1969,27 @@
       "Heal #b3 HP at the end of the turn. Reduce damage taken by #b",
       " points. NL Next turn, add #b1 Lævateinn Dragon to your hand and lose this effect. NL Whenever you would die, heal 1 HP, remove all debuffs and repeat the previous effects instead (heal 3 HP, damage reduction)."
     ]
+  },
+  "shadowverse:GuiltyShieldPower": {
+    "NAME": "Shield of Transgression",
+    "DESCRIPTIONS": [
+      "Any damage you take greater than #b5 becomes #b4. Countdown #b",
+      ": Lose this effect."
+    ]
+  },
+  "shadowverse:JudgementSpearPower": {
+    "NAME": "Spear of Judgment",
+    "DESCRIPTIONS": [
+      "At the end of your turn, deal #b",
+      "damage to a random enemy. Countdown #b",
+      ": Lose this effect."
+    ]
+  },
+  "shadowverse:EternalDogmaPower": {
+    "NAME": "Eternal Dogma",
+    "DESCRIPTIONS": [
+      "Draw #b1 additional card at the start of your turn and heal #b2 HP. Countdown #b",
+      ": Lose this effect."
+    ]
   }
 }

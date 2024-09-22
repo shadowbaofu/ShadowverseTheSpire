@@ -25,7 +25,7 @@ public class DarkShieldAngel extends CustomCard {
 
 
     public DarkShieldAngel() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.ENEMY);
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.ENEMY);
         this.baseBlock = 8;
         this.baseDamage = 5;
         this.tags.add(AbstractShadowversePlayer.Enums.DARK_ANGEL);

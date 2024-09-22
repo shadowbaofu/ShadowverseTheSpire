@@ -10,11 +10,9 @@ import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.ClashEffect;
 import shadowverse.characters.Elf;
 
@@ -31,7 +29,7 @@ import shadowverse.characters.Elf;
      this.baseDamage = 3;
      this.baseMagicNumber = 1;
      this.magicNumber = this.baseMagicNumber;
-     this.cardsToPreview = (AbstractCard)new GreenWoodGuardian();
+     this.cardsToPreview = new GreenWoodGuardian();
      this.exhaust = true;
    }
  
@@ -46,14 +44,14 @@ import shadowverse.characters.Elf;
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
      AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
-     addToBot((AbstractGameAction)new MakeTempCardInHandAction(c,this.magicNumber));
-     addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
-     addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new ClashEffect(abstractMonster.hb.cX, abstractMonster.hb.cY), 0.1F));
+     addToBot(new MakeTempCardInHandAction(c,this.magicNumber));
+     addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
+     addToBot(new VFXAction(new ClashEffect(abstractMonster.hb.cX, abstractMonster.hb.cY), 0.1F));
    }
  
    
    public AbstractCard makeCopy() {
-     return (AbstractCard)new CrossCombination();
+     return new CrossCombination();
    }
  }
 

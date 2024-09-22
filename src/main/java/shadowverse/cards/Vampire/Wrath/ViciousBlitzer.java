@@ -42,14 +42,14 @@ public class ViciousBlitzer
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction("ViciousBlitzer"));
-        for (int i=0;i<2;i++){
-            addToBot( new LoseHPAction( p,  p, 1));
+        for (int i = 0; i < 2; i++) {
+            addToBot(new LoseHPAction(p, p, 1));
             for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
                 if (!mo.isDeadOrEscaped())
-                addToBot(new LoseHPAction(mo,p,1));
+                    addToBot(new LoseHPAction(mo, p, 1));
             }
         }
-        addToBot(new DamageAction(m,new DamageInfo(p,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
     }
 
 

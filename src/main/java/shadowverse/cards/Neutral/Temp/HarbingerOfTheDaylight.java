@@ -32,7 +32,8 @@ public class HarbingerOfTheDaylight extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.upgradeDamage(3);
+            upgradeDamage(3);
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

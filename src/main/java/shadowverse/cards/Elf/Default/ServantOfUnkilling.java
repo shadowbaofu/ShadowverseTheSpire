@@ -7,12 +7,10 @@
  import com.megacrit.cardcrawl.actions.common.GainBlockAction;
  import com.megacrit.cardcrawl.cards.AbstractCard;
  import com.megacrit.cardcrawl.characters.AbstractPlayer;
- import com.megacrit.cardcrawl.core.AbstractCreature;
  import com.megacrit.cardcrawl.core.CardCrawlGame;
  import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
  import com.megacrit.cardcrawl.localization.CardStrings;
  import com.megacrit.cardcrawl.monsters.AbstractMonster;
- import com.megacrit.cardcrawl.powers.AbstractPower;
  import com.megacrit.cardcrawl.powers.GainStrengthPower;
  import com.megacrit.cardcrawl.powers.StrengthPower;
  import shadowverse.characters.Elf;
@@ -44,10 +42,10 @@
  
    
    public void use(AbstractPlayer p, AbstractMonster m) {
-     AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new GainBlockAction((AbstractCreature)p, (AbstractCreature)p, this.block));
-     addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m, (AbstractCreature)p, (AbstractPower)new StrengthPower((AbstractCreature)m, -this.magicNumber), -this.magicNumber));
+     AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
+     addToBot(new ApplyPowerAction(m, p, new StrengthPower(m, -this.magicNumber), -this.magicNumber));
      if (!m.hasPower("Artifact"))
-       addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m, (AbstractCreature)p, (AbstractPower)new GainStrengthPower((AbstractCreature)m, this.magicNumber), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+       addToBot(new ApplyPowerAction(m, p, new GainStrengthPower(m, this.magicNumber), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
  }
  
  

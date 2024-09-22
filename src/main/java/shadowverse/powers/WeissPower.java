@@ -55,7 +55,7 @@ public class WeissPower
     @Override
     public boolean betterOnApplyPower(AbstractPower abstractPower, AbstractCreature abstractCreature, AbstractCreature abstractCreature1) {
         if (abstractCreature == AbstractDungeon.player){
-            if (abstractPower.type == PowerType.DEBUFF && abstractCreature1 instanceof AbstractMonster)
+            if (abstractPower.type == PowerType.DEBUFF && abstractCreature1 != abstractCreature)
                 return  false;
         }
         if (abstractCreature instanceof AbstractMonster){

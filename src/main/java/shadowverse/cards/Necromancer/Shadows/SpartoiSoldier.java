@@ -45,12 +45,12 @@ import shadowverse.powers.Cemetery;
 
    @Override
    public void triggerOnExhaust() {
-     addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)AbstractDungeon.player, (AbstractCreature)AbstractDungeon.player, (AbstractPower)new Cemetery((AbstractCreature)AbstractDungeon.player, this.magicNumber), this.magicNumber));
+     addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new Cemetery(AbstractDungeon.player, this.magicNumber), this.magicNumber));
    }
  
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     addToBot((AbstractGameAction)new GainBlockAction(abstractPlayer,this.block));
+     addToBot(new GainBlockAction(abstractPlayer,this.block));
    }
  
    

@@ -10,7 +10,6 @@ import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -30,7 +29,7 @@ import shadowverse.characters.Elf;
      this.baseDamage = 7;
      this.baseMagicNumber = 1;
      this.magicNumber = this.baseMagicNumber;
-     this.cardsToPreview = (AbstractCard)new GreenWoodGuardian();
+     this.cardsToPreview = new GreenWoodGuardian();
    }
  
    
@@ -43,24 +42,24 @@ import shadowverse.characters.Elf;
  
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     addToBot((AbstractGameAction)new SFXAction("WoodlandCleaver"));
+     addToBot(new SFXAction("WoodlandCleaver"));
      AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
-     addToBot((AbstractGameAction)new MakeTempCardInHandAction(c,this.magicNumber));
+     addToBot(new MakeTempCardInHandAction(c,this.magicNumber));
      int count = 0;
      for (AbstractCard ca : AbstractDungeon.actionManager.cardsPlayedThisCombat) {
        if (ca instanceof GreenWoodGuardian)
          count++;
      }
      if (count >= 3){
-       addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage*2, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+       addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage*2, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
      }else {
-       addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+       addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
      }
    }
  
    
    public AbstractCard makeCopy() {
-     return (AbstractCard)new WoodlandCleaver();
+     return new WoodlandCleaver();
    }
  }
 

@@ -20,7 +20,7 @@ public class HealingAngel extends CustomCard {
 
 
     public HealingAngel() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, CardColor.COLORLESS, CardRarity.BASIC, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.BASIC, CardTarget.SELF);
         this.baseBlock = 5;
         this.magicNumber = this.baseMagicNumber = 2;
         this.exhaust = true;

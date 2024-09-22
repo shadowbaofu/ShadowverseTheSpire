@@ -24,7 +24,7 @@ public class AngelOfDarkWord extends CustomCard {
 
     public AngelOfDarkWord() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.ALL_ENEMY);
-        this.baseDamage = 9;
+        this.baseDamage = 11;
         this.isMultiDamage = true;
         this.tags.add(AbstractShadowversePlayer.Enums.DARK_ANGEL);
         this.cardsToPreview = new AngelOfTheWord();

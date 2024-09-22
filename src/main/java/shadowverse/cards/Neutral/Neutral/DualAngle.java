@@ -28,7 +28,7 @@ import shadowverse.characters.AbstractShadowversePlayer;
    
    public DualAngle() {
      super("shadowverse:DualAngle", NAME, "img/cards/DualAngle.png", 1, DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.UNCOMMON, CardTarget.ENEMY);
-     this.baseDamage = 8;
+     this.baseDamage = 10;
      this.baseBlock = 8;
      this.tags.add(AbstractShadowversePlayer.Enums.MACHINE);
      this.tags.add(AbstractShadowversePlayer.Enums.NATURAL);

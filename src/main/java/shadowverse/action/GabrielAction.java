@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
@@ -39,12 +40,12 @@ public class GabrielAction extends AbstractGameAction {
         }
         if (this.upgraded)
             effect++;
-        if (effect > 0) {
-            addToBot(new ApplyPowerAction(this.p, AbstractDungeon.player, new StrengthPower(this.p, effect), effect));
-            addToBot(new ApplyPowerAction(this.p, AbstractDungeon.player, new DexterityPower(this.p, effect), effect));
-            if (!this.freeToPlayOnce)
-                AbstractDungeon.player.energy.use(EnergyPanel.totalCount);
-        }
+        if (this.p instanceof AbstractMonster)
+            effect *= -1;
+        addToBot(new ApplyPowerAction(this.p, AbstractDungeon.player, new StrengthPower(this.p, effect), effect));
+        addToBot(new ApplyPowerAction(this.p, AbstractDungeon.player, new DexterityPower(this.p, effect), effect));
+        if (!this.freeToPlayOnce)
+            AbstractDungeon.player.energy.use(EnergyPanel.totalCount);
         this.isDone = true;
     }
 }

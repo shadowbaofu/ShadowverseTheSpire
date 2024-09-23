@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.BlurPower;
 import shadowverse.cards.AbstractAmuletCard;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Bishop;
 import shadowverse.orbs.AmuletOrb;
 
@@ -29,6 +30,7 @@ public class EphemeralMoon extends AbstractAmuletCard {
         this.countDown = 2;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
+        this.tags.add(AbstractShadowversePlayer.Enums.AMULET_FOR_ONECE);
     }
 
 

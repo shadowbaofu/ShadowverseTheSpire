@@ -39,7 +39,7 @@ public class WardenOfTheWings extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(5);
+            upgradeDamage(4);
         }
     }
 

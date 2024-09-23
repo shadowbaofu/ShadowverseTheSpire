@@ -34,7 +34,6 @@ import java.util.ArrayList;
 
    public HeartlessBattle() {
      super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.SKILL, Nemesis.Enums.COLOR_SKY, CardRarity.UNCOMMON, CardTarget.SELF);
-     this.baseBlock = 6;
    }
 
 
@@ -51,7 +50,7 @@ import java.util.ArrayList;
          if (this.hb.hovered)
              if (this.rotationTimer <= 0.0F) {
                  this.rotationTimer = 2.0F;
-                 this.cardsToPreview = (AbstractCard)returnChoice().get(previewIndex).makeCopy();
+                 this.cardsToPreview = returnChoice().get(previewIndex).makeCopy();
                  if (this.previewIndex == returnChoice().size() - 1) {
                      this.previewIndex = 0;
                  } else {
@@ -66,21 +65,21 @@ import java.util.ArrayList;
  
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-         AbstractCard r = (AbstractCard)new Roid();
-         AbstractCard v = (AbstractCard)new Victoria();
-         AbstractCard p = (AbstractCard)new Puppet();
+         AbstractCard r = new Roid();
+         AbstractCard v = new Victoria();
+         AbstractCard p = new Puppet();
          if (this.upgraded){
              r.upgrade();
              v.upgrade();
              p.upgrade();
          }
-         addToBot((AbstractGameAction)new ChoiceAction(new AbstractCard[] { r, v }));
-         addToBot((AbstractGameAction)new MakeTempCardInHandAction(p));
+         addToBot(new ChoiceAction(r, v));
+         addToBot(new MakeTempCardInHandAction(p));
    }
  
    
    public AbstractCard makeCopy() {
-     return (AbstractCard)new HeartlessBattle();
+     return new HeartlessBattle();
    }
  }
 

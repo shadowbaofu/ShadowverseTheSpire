@@ -39,7 +39,7 @@ public class DarkGabriel extends AbstractNeutralCard {
         addToBot(new SFXAction("Gabriel"));
         AbstractDungeon.effectsQueue.add(new SpotlightPlayerEffect());
         addToBot(new DarkGabrielAction());
-        addToBot(new GabrielAction(abstractMonster,this.upgraded,this.freeToPlayOnce,-this.energyOnUse));
+        addToBot(new GabrielAction(abstractMonster,this.upgraded,this.freeToPlayOnce,this.energyOnUse));
     }
 
     public AbstractCard makeCopy() {

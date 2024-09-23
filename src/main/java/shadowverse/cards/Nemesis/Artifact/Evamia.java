@@ -49,7 +49,11 @@ import java.util.ArrayList;
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
      addToBot(new GainBlockAction(abstractPlayer,this.block));
-     addToBot(new MakeTempCardInDrawPileAction(this.cardsToPreview.makeStatEquivalentCopy(), this.magicNumber, true, true));
+     AbstractCard temp = this.cardsToPreview.makeStatEquivalentCopy();
+     temp.cost = 0;
+     temp.costForTurn = 0;
+     temp.isCostModified = true;
+     addToBot(new MakeTempCardInDrawPileAction(temp, this.magicNumber, true, true));
      ArrayList<AbstractCard> list = new ArrayList<>();
      ArrayList<String> dup = new ArrayList<>();
      for (AbstractCard c: abstractPlayer.exhaustPile.group){

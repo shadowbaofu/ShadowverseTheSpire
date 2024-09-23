@@ -3,8 +3,10 @@ package shadowverse.helper;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import shadowverse.Shadowverse;
+import shadowverse.cards.Bishop.BishopStarterPack;
 import shadowverse.cards.Elf.ElfStarterPack;
 import shadowverse.cards.Necromancer.NecroStarterPack;
+import shadowverse.cards.Nemesis.NemesisStarterPack;
 import shadowverse.cards.Neutral.Neutral.*;
 import shadowverse.cards.Royal.NatMech.BrothersUnited;
 import shadowverse.cards.Royal.NatMech.Cybercannoneer;
@@ -151,15 +153,49 @@ public class StartPackHelper {
                 packs.add(VampireStarterPack.wrath2);
             }
         } else if (AbstractDungeon.player.chosenClass == Bishop.Enums.Bishop) {
-            if (Shadowverse.groupActive[1] || Shadowverse.groupActive[2]) {
+            if (Shadowverse.groupActive[1]) {
                 packs.add(nat);
+                packs.add(BishopStarterPack.amulet1);
+            }
+            if (Shadowverse.groupActive[2]) {
+                packs.add(BishopStarterPack.amulet2);
+            }
+            if (Shadowverse.groupActive[3]) {
+                packs.add(BishopStarterPack.evil);
             }
             if (Shadowverse.groupActive[4]) {
                 packs.add(mech);
             }
+            if (Shadowverse.groupActive[5]) {
+                packs.add(BishopStarterPack.recover1);
+            }
+            if (Shadowverse.groupActive[6]) {
+                packs.add(BishopStarterPack.recover2);
+            }
+            if (Shadowverse.groupActive[7]) {
+                packs.add(BishopStarterPack.ward);
+            }
         } else if (AbstractDungeon.player.chosenClass == Nemesis.Enums.Nemesis) {
+            if (Shadowverse.groupActive[1]) {
+                packs.add(NemesisStarterPack.artifact1);
+            }
+            if (Shadowverse.groupActive[2]) {
+                packs.add(NemesisStarterPack.condemned);
+            }
             if (Shadowverse.groupActive[3]) {
                 packs.add(mech);
+            }
+            if (Shadowverse.groupActive[4]) {
+                packs.add(NemesisStarterPack.artifact2);
+            }
+            if (Shadowverse.groupActive[5]) {
+                packs.add(NemesisStarterPack.puppet);
+            }
+            if (Shadowverse.groupActive[6]) {
+                packs.add(NemesisStarterPack.resonance);
+            }
+            if (Shadowverse.groupActive[7]) {
+                packs.add(NemesisStarterPack.token);
             }
         }
         int roll = AbstractDungeon.cardRandomRng.random(packs.size() - 1);

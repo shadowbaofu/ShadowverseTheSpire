@@ -55,17 +55,17 @@ public class WitchStarterPack {
         chess.addCard(new FieryEmbrace());
 
         earth1.addCard(new Goblin());
-        earth1.addCard(new Goliath(), 3);
+        earth1.addCard(new Goliath(), 2);
         earth1.addCard(new AngelicSwordMaiden());
         earth1.addCard(new Insight());
-        earth1.addCard(new WitchSnap());
+        earth1.addCard(new WitchSnap(),2);
         earth1.addCard(new DwarfAlchemist(), 3);
         earth1.addCard(new ConjureTwosome());
 
 
         earth2.addCard(new Goblin());
         earth2.addCard(new Goliath(), 3);
-        earth2.addCard(new ShieldAngel(),2);
+        earth2.addCard(new CloudChorus(),2);
         earth2.addCard(new AngelicSwordMaiden());
         earth2.addCard(new Insight());
         earth2.addCard(new Gruinne());

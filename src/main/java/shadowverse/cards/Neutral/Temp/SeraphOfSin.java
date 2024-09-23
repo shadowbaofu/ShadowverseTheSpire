@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.ThrowDaggerEffect;
@@ -23,6 +24,7 @@ public class SeraphOfSin extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/SeraphOfSin.png";
+    private static final String TEXT = CardCrawlGame.languagePack.getUIString("shadowverse:Exhaust").TEXT[0];
 
 
     public SeraphOfSin() {
@@ -48,7 +50,27 @@ public class SeraphOfSin extends CustomCard {
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot(new SFXAction(ID.replace("shadowverse:", "")));
         addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        addToBot(new MakeTempCardInHandAction(new WingedInversion()));
+        addToBot(new AbstractGameAction() {
+            @Override
+            public void update() {
+                AbstractCard tmp = cardsToPreview.makeStatEquivalentCopy();
+                tmp.exhaustOnUseOnce = true;
+                tmp.exhaust = true;
+                tmp.rawDescription += " NL " + TEXT + " 。";
+                tmp.initializeDescription();
+                tmp.applyPowers();
+                tmp.lighten(true);
+                tmp.setAngle(0.0F);
+                tmp.drawScale = 0.12F;
+                tmp.targetDrawScale = 0.75F;
+                tmp.current_x = Settings.WIDTH / 2.0F;
+                tmp.current_y = Settings.HEIGHT / 2.0F;
+                abstractPlayer.hand.addToTop(tmp);
+                abstractPlayer.hand.refreshHandLayout();
+                abstractPlayer.hand.applyPowers();
+                this.isDone = true;
+            }
+        });
         if (upgraded){
             addToBot(new MakeTempCardInHandAction(new FallenAngel()));
         }

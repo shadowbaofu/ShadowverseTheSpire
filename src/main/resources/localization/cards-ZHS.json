@@ -5955,11 +5955,11 @@
   },
   "shadowverse:Lazuli": {
     "NAME": "门扉解放者·菈姿莉",
-    "DESCRIPTION": "创造物 NL 获得 !B! 点 格挡 。 NL 增加 !M! 张 *绚烂的创造物 到抽牌堆中。 NL 从抽牌堆中增加1张技能牌到手中。 NL  如果消耗堆中的 创造物 种类为6以上，增加1张 *进化点 到手中。"
+    "DESCRIPTION": "创造物 NL 获得 !B! 点 格挡 。 NL 增加 !M! 张耗能为1的 *绚烂的创造物 到抽牌堆中。 NL 从抽牌堆中增加1张技能牌到手中。 NL  如果消耗堆中的 创造物 种类为6以上，增加1张 *进化点 到手中。"
   },
   "shadowverse:Evamia": {
     "NAME": "织系丝‧艾薇米亚",
-    "DESCRIPTION": "创造物 NL 获得 !B! 点 格挡 。 NL 增加 !M! 张 *神秘的创造物 到抽牌堆中。 NL 如果消耗堆中的 创造物 种类为6以上， 限定 ：下一次受到的伤害变为0。"
+    "DESCRIPTION": "创造物 NL 获得 !B! 点 格挡 。 NL 增加 !M! 张耗能为0的 *神秘的创造物 到抽牌堆中。 NL 如果消耗堆中的 创造物 种类为6以上， 限定 ：下一次受到的伤害变为0。"
   },
   "shadowverse:Shin": {
     "NAME": "混沌终幕·辛恩",
@@ -6405,7 +6405,7 @@
   },
   "shadowverse:EphemeralMoon": {
     "NAME": "朦胧之月",
-    "DESCRIPTION": "倒计时 2:获得1层 残影 。 NL 回合开始时，将你的弃牌堆洗牌后放入你的抽牌堆。抽 !M! 张牌。"
+    "DESCRIPTION": "圣祝 · 倒计时 2:获得1层 残影 。 NL 回合开始时，将你的弃牌堆洗牌后放入你的抽牌堆。抽 !M! 张牌。"
   },
   "shadowverse:Kaguya": {
     "NAME": "辉夜",
@@ -6808,11 +6808,11 @@
   },
   "shadowverse:MechaGoblin": {
     "NAME": "机械哥布林",
-    "DESCRIPTION": "机械 NL 造成 !D! 点伤害。 NL 谢幕曲 :打出时增加1章 *修复模式 到手中。"
+    "DESCRIPTION": "机械 NL 造成 !D! 点伤害。 NL 谢幕曲 :打出时增加1张 *修复模式 到手中。"
   },
   "shadowverse:TravelersRespite": {
     "NAME": "荒野的休息",
-    "DESCRIPTION": "自然 NL 回复 !M! 点生命。 NL 增加1章 *那塔拉的大树 到手中。 NL 消耗 。"
+    "DESCRIPTION": "自然 NL 回复 !M! 点生命。 NL 增加1张 *那塔拉的大树 到手中。 NL 消耗 。"
   },
   "shadowverse:Lyrial": {
     "NAME": "神弓天使·莉莉耶尔",
@@ -6889,8 +6889,8 @@
   },
   "shadowverse:SeraphOfSin": {
     "NAME": "污秽的天兵",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 增加1张 *反转之翼 到手中。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 增加1张 *反转之翼 到手中。 NL 增加1张 *堕天使 到手中。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 增加1张带有 消耗 的 *反转之翼 到手中。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 增加1张带有 消耗 的 *反转之翼 到手中。 NL 增加1张 *堕天使 到手中。"
   },
   "shadowverse:ReturnToHeaven": {
     "NAME": "天之归还",
@@ -6902,7 +6902,7 @@
   },
   "shadowverse:HarbingerOfTheNight": {
     "NAME": "暗黑邪使",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 增加1张 *反转之翼 到手中。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 增加1张带有 消耗 的 *反转之翼 到手中。"
   },
   "shadowverse:HarbingerOfTheDaylight": {
     "NAME": "光翼圣使",
@@ -6911,7 +6911,7 @@
   },
   "shadowverse:AngelOfDarkness": {
     "NAME": "漆黑使徒",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果目标至少有1种正面效果，增加1张 *反转之翼 到手中。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果目标至少有1种正面效果，增加1张带有 消耗 的 *反转之翼 到手中。"
   },
   "shadowverse:AngelOfBrightness": {
     "NAME": "纯白使徒",
@@ -6923,7 +6923,7 @@
   },
   "shadowverse:SingleWingedRebellion": {
     "NAME": "片翼反叛者",
-    "DESCRIPTION": "限定 :打出堕天使牌时，将这张牌和那张牌 升级 并。 NL 获得 !B! 点 格挡 。 NL 获得 [E] 。 NL 增加1张 *反转之翼 到手中。"
+    "DESCRIPTION": "限定 :打出堕天使牌时，将这张牌和那张牌 升级 并。 NL 获得 !B! 点 格挡 。 NL 获得 [E] 。 NL 增加1张带有 消耗 的 *反转之翼 到手中。"
   },
   "shadowverse:PurifyGuardian": {
     "NAME": "纯净守护者",
@@ -6931,7 +6931,7 @@
   },
   "shadowverse:CorruptionGuardian": {
     "NAME": "腐化守护者",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加1张反转之翼到手中。 NL 如果手中有无色攻击牌，选择1张丢弃，抽1张牌，获得 [E] 。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加1张带有 消耗 的反转之翼到手中。 NL 如果手中有无色攻击牌，选择1张丢弃，抽1张牌，获得 [E] 。"
   },
   "shadowverse:ChaoticAngel": {
     "NAME": "混沌天使",
@@ -6959,7 +6959,8 @@
   },
   "shadowverse:SummonDivineTreasure": {
     "NAME": "神器鸣动",
-    "DESCRIPTION": "抉择 : NL *裁决之枪 NL *罪恶之盾 NL *永恒教义 NL 爆能强化 2 :增加1张 *神器的使者 到手中。 NL  爆能强化 3 :增加1张 *神器的守护者 到手中。 NL 消耗性  !stslib:ex! 。"
+    "DESCRIPTION": "抉择 : NL *裁决之枪 NL *罪恶之盾 NL *永恒教义 NL 爆能强化 2 :增加1张 *神器的使者 到手中。 NL  爆能强化 3 :增加1张 *神器的守护者 到手中。 NL 虚无 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"抉择 : NL *裁决之枪 NL *罪恶之盾 NL *永恒教义 NL 爆能强化 2 :增加1张 *神器的使者 到手中。 NL  爆能强化 3 :增加1张 *神器的守护者 到手中。 NL 消耗 。"
   },
   "shadowverse:SummonDivineTreasure_Copy": {
     "NAME": "神器鸣动",

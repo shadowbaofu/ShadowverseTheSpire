@@ -54,6 +54,7 @@ public class DarkLyrial extends CustomCard {
                     card.cost <= 2 && card != this) {
                 addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new StrengthPower(abstractPlayer, this.magicNumber), this.magicNumber));
                 addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new DexterityPower(abstractPlayer, this.magicNumber), this.magicNumber));
+                break;
             }
         }
     }

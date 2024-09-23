@@ -1,6 +1,5 @@
 package shadowverse.cards.Bishop.Evil;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
@@ -11,7 +10,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.powers.WeakPower;
 import shadowverse.cards.AbstractAmuletCard;
@@ -41,10 +39,10 @@ public class MoriaeEncomium extends AbstractAmuletCard {
 
     @Override
     public void onEvoke(AmuletOrb paramOrb) {
-        AbstractCreature m = (AbstractCreature) AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
+        AbstractCreature m = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
         if (m != null){
-            addToBot((AbstractGameAction)new ApplyPowerAction(m,AbstractDungeon.player,(AbstractPower)new VulnerablePower(m,this.magicNumber,false),this.magicNumber));
-            addToBot((AbstractGameAction)new ApplyPowerAction(m,AbstractDungeon.player,(AbstractPower)new WeakPower(m,this.magicNumber,false),this.magicNumber));
+            addToBot(new ApplyPowerAction(m,AbstractDungeon.player,new VulnerablePower(m,this.magicNumber,false),this.magicNumber));
+            addToBot(new ApplyPowerAction(m,AbstractDungeon.player,new WeakPower(m,this.magicNumber,false),this.magicNumber));
         }
     }
 
@@ -79,8 +77,8 @@ public class MoriaeEncomium extends AbstractAmuletCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new DrawCardAction(this.magicNumber));
+        addToBot(new DrawCardAction(this.magicNumber));
         AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
-        addToBot((AbstractGameAction)new MakeTempCardInDrawPileAction(c,1,true,true,false));
+        addToBot(new MakeTempCardInDrawPileAction(c,1,true,true,false));
     }
 }

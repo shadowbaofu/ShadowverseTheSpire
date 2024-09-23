@@ -99,7 +99,7 @@ public class Veight
                 Veight.this.loadCardImage(IMG_PATH2);
                 Veight.this.name = cardStrings2.NAME;
                 Veight.this.upgradeBaseCost(2);
-                Veight.this.baseBlock = 9;
+                Veight.this.baseBlock = 11;
                 Veight.this.upgradedDamage = true;
                 Veight.this.initializeTitle();
                 Veight.this.rawDescription = cardStrings2.DESCRIPTION;

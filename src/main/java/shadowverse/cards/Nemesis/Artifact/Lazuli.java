@@ -55,7 +55,11 @@ import java.util.ArrayList;
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
      addToBot(new SFXAction("Lazuli"));
      addToBot(new GainBlockAction(abstractPlayer,this.block));
-     addToBot(new MakeTempCardInDrawPileAction(this.cardsToPreview.makeStatEquivalentCopy(), this.magicNumber, true, true));
+     AbstractCard temp = this.cardsToPreview.makeStatEquivalentCopy();
+     temp.cost = 1;
+     temp.costForTurn = 1;
+     temp.isCostModified = true;
+     addToBot(new MakeTempCardInDrawPileAction(temp, this.magicNumber, true, true));
      addToBot(new DrawPileToHandAction(1,CardType.SKILL));
      ArrayList<AbstractCard> list = new ArrayList<>();
      ArrayList<String> dup = new ArrayList<>();

@@ -32,7 +32,7 @@ public class AngelOfBrightness extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.upgradeDamage(3);
+            upgradeDamage(3);
             upgradeMagicNumber(1);
         }
     }
@@ -42,7 +42,7 @@ public class AngelOfBrightness extends CustomCard {
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot(new SFXAction("AngelOfDarkness"));
         addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new DarkAngelPower(abstractPlayer,this.magicNumber)));
+        addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new DarkAngelPower(abstractPlayer,this.magicNumber),this.magicNumber));
     }
 
 

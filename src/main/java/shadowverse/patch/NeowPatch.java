@@ -1,9 +1,7 @@
 package shadowverse.patch;
 
-import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
-import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
-import com.evacipated.cardcrawl.modthespire.lib.SpirePostfixPatch;
-import com.evacipated.cardcrawl.modthespire.lib.SpirePrefixPatch;
+import basemod.ReflectionHacks;
+import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -29,7 +27,7 @@ public class NeowPatch {
     )
     public static class MiniPatch {
         @SpirePostfixPatch()
-        public static void patch(NeowEvent __instance, ArrayList<NeowReward> ___rewards) {
+        public static void mini(NeowEvent __instance, ArrayList<NeowReward> ___rewards) {
             NeowReward n = new NeowReward(true);
             n.type = STARTPACK;
             n.optionLabel = "[ " + CardCrawlGame.languagePack.getUIString("shadowverse:StartPack").TEXT[0];
@@ -37,15 +35,15 @@ public class NeowPatch {
             __instance.roomEventText.addDialogOption(n.optionLabel);
         }
     }
-
+/*
     @SpirePatch(
             clz = NeowEvent.class,
             method = "update"
     )
     public static class updatePatch {
-        @SpirePrefixPatch
-        public static void patch(NeowEvent __instance, boolean ___pickCard) {
-            if (!___pickCard && !AbstractDungeon.gridSelectScreen.selectedCards.isEmpty()) {
+        @SpireInsertPatch(rloc = 2)
+        public static void Insert(NeowEvent __instance) {
+            if (!(boolean)ReflectionHacks.getPrivate(__instance, NeowEvent.class,"pickCard") && !AbstractDungeon.gridSelectScreen.selectedCards.isEmpty()) {
                 CardGroup group = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
                 Iterator var2 = AbstractDungeon.gridSelectScreen.selectedCards.iterator();
 
@@ -58,7 +56,7 @@ public class NeowPatch {
                 AbstractDungeon.gridSelectScreen.selectedCards.clear();
             }
         }
-    }
+    }*/
 
     @SpirePatch(
             clz = NeowReward.class,
@@ -66,8 +64,8 @@ public class NeowPatch {
     )
     public static class ActivatePatch {
         @SpirePrefixPatch
-        public static void patch(NeowReward __instance) {
-            if (__instance.type == CARDPACK) {
+        public static void addPack(NeowReward __instance) {
+            /*if (__instance.type == CARDPACK) {
                 CardGroup group = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
                 for (int i = 0; i < 8; i++) {
                     int roll = AbstractDungeon.cardRandomRng.random(99);
@@ -86,7 +84,7 @@ public class NeowPatch {
                     group.addToBottom(tmp);
                 }
                 AbstractDungeon.gridSelectScreen.open(group, 8, true, (CardCrawlGame.languagePack.getUIString("shadowverse:CardPack")).TEXT[1]);
-            }
+            }*/
             if (__instance.type == STARTPACK) {
                 AbstractDungeon.player.masterDeck.group = new ArrayList<>();
                 CardGroup group = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
@@ -104,15 +102,14 @@ public class NeowPatch {
             method = "getRewardOptions"
     )
     public static class AddRewardsPatch {
-        @SpirePostfixPatch
-        public static ArrayList<NeowReward.NeowRewardDef> patch(ArrayList<NeowReward.NeowRewardDef> __result, NeowReward __instance, int category) {
-            if (category == 1) {
-                __result.add(new NeowReward.NeowRewardDef(CARDPACK, CardCrawlGame.languagePack.getUIString("shadowverse:CardPack").TEXT[0]));
-            }
+        @SpireInsertPatch(rloc = 3,localvars = {"rewardOptions"})
+        public static void Insert(NeowReward __instance, int category,ArrayList<NeowReward.NeowRewardDef> rewardOptions) {
+            /*if (category == 1) {
+                rewardOptions.add(new NeowReward.NeowRewardDef(CARDPACK, CardCrawlGame.languagePack.getUIString("shadowverse:CardPack").TEXT[0]));
+            }*/
             if (category == 2) {
-                __result.add(new NeowReward.NeowRewardDef(STARTPACK, CardCrawlGame.languagePack.getUIString("shadowverse:StartPack").TEXT[0]));
+                rewardOptions.add(new NeowReward.NeowRewardDef(STARTPACK, CardCrawlGame.languagePack.getUIString("shadowverse:StartPack").TEXT[0]));
             }
-            return __result;
         }
     }
 }

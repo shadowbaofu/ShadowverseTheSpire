@@ -50,7 +50,7 @@ public class AngelOfDarkness extends CustomCard {
             addToBot(new AbstractGameAction() {
                 @Override
                 public void update() {
-                    AbstractCard tmp = cardsToPreview.makeStatEquivalentCopy();
+                    AbstractCard tmp = new WingedInversion();
                     tmp.exhaustOnUseOnce = true;
                     tmp.exhaust = true;
                     tmp.rawDescription += " NL " + TEXT + " 。";

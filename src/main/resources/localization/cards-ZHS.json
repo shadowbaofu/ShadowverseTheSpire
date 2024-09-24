@@ -6870,7 +6870,7 @@
   },
   "shadowverse:FallenAngel": {
     "NAME": "堕天使",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 回复 !M! 点生命。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 回复 !M! 点生命。 NL 消耗 。"
   },
   "shadowverse:DarkAngelChoice": {
     "NAME": "堕天",

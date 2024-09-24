@@ -1,6 +1,7 @@
 package shadowverse.helper;
 
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.curses.AscendersBane;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
 import java.util.ArrayList;
@@ -30,6 +31,8 @@ public class StartPack {
         } else {
             pack.add(rareCard);
         }
+        if (AbstractDungeon.ascensionLevel>=10)
+            pack.add(new AscendersBane());
         return pack;
     }
 

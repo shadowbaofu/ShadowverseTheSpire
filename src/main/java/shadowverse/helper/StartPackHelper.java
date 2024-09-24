@@ -4,6 +4,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import shadowverse.Shadowverse;
 import shadowverse.cards.Bishop.BishopStarterPack;
+import shadowverse.cards.Dragon.DragonStarterPack;
 import shadowverse.cards.Elf.ElfStarterPack;
 import shadowverse.cards.Necromancer.NecroStarterPack;
 import shadowverse.cards.Nemesis.NemesisStarterPack;
@@ -101,8 +102,26 @@ public class StartPackHelper {
                 packs.add(WitchStarterPack.spellboost2);
             }
         } else if (AbstractDungeon.player.chosenClass == Dragon.Enums.Dragon) {
+            if (Shadowverse.groupActive[1]) {
+                packs.add(DragonStarterPack.armed);
+            }
+            if (Shadowverse.groupActive[2]) {
+                packs.add(DragonStarterPack.discard1);
+            }
+            if (Shadowverse.groupActive[3]) {
+                packs.add(DragonStarterPack.discard2);
+            }
             if (Shadowverse.groupActive[4]) {
                 packs.add(nat);
+            }
+            if (Shadowverse.groupActive[4]) {
+                packs.add(DragonStarterPack.ramp);
+            }
+            if (Shadowverse.groupActive[5]) {
+                packs.add(DragonStarterPack.tempo);
+            }
+            if (Shadowverse.groupActive[6]) {
+                packs.add(DragonStarterPack.buff);
             }
         } else if (AbstractDungeon.player.chosenClass == Necromancer.Enums.Necromancer) {
             if (Shadowverse.groupActive[1]) {

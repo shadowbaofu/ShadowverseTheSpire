@@ -65,25 +65,24 @@ public class ShadowverseEvolve  extends AbstractImageEvent {
     protected void buttonEffect(int buttonPressed) {
         switch (this.screenNum) {
             case 0:
-                switch (buttonPressed) {
-                    case 0:
-                        if(isSVP()){
-                            this.imageEventText.updateBodyText(ACCEPT_BODY);
-                            AbstractDungeon.getCurrRoom().rewards.clear();
-                            AbstractDungeon.getCurrRoom().addCardReward(new TransReward());
-                            AbstractDungeon.getCurrRoom().phase = AbstractRoom.RoomPhase.COMPLETE;
-                            AbstractDungeon.combatRewardScreen.open();
-                            this.screenNum = 2;
-                            this.imageEventText.updateDialogOption(0, OPTIONS[2]);
-                            this.imageEventText.clearRemainingOptions();
-                            return;
-                        }else{
-                            this.imageEventText.updateBodyText(ACCEPT_BODY);
-                            AbstractDungeon.gridSelectScreen.open(CardGroup.getGroupWithoutBottledCards(AbstractDungeon.player.masterDeck.getPurgeableCards()), 1, OPTIONS[7], false, false, false, true);
-                            this.screenNum = 2;
-                            this.imageEventText.updateDialogOption(0, OPTIONS[2]);
-                            this.imageEventText.clearRemainingOptions();
-                        }
+                if (buttonPressed == 0) {
+                    if (isSVP()) {
+                        this.imageEventText.updateBodyText(ACCEPT_BODY);
+                        AbstractDungeon.getCurrRoom().rewards.clear();
+                        AbstractDungeon.getCurrRoom().addCardReward(new TransReward());
+                        AbstractDungeon.getCurrRoom().phase = AbstractRoom.RoomPhase.COMPLETE;
+                        AbstractDungeon.combatRewardScreen.open();
+                        this.screenNum = 2;
+                        this.imageEventText.updateDialogOption(0, OPTIONS[2]);
+                        this.imageEventText.clearRemainingOptions();
+                        return;
+                    } else {
+                        this.imageEventText.updateBodyText(ACCEPT_BODY);
+                        AbstractDungeon.gridSelectScreen.open(CardGroup.getGroupWithoutBottledCards(AbstractDungeon.player.masterDeck.getPurgeableCards()), 1, OPTIONS[3], false, false, false, true);
+                        this.screenNum = 2;
+                        this.imageEventText.updateDialogOption(0, OPTIONS[2]);
+                        this.imageEventText.clearRemainingOptions();
+                    }
                 }
                 logMetricIgnored("SVE");
                 this.imageEventText.updateBodyText(EXIT_BODY);

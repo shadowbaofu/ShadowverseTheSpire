@@ -6794,5 +6794,10 @@
   "shadowverse:SummonDivineTreasure_Copy": {
     "NAME": "Summon Divine Treasure",
     "DESCRIPTION": "Choose: Play this card as: NL *Judgment *Spear NL *Shield *of *Transgression NL OR *Eternal *Dogma NL Exhaust."
+  },
+  "shadowverse:DesertPathfinder": {
+    "NAME": "Desert Pathfinder",
+    "DESCRIPTION": "Gain !B! Block. NL Last_Words: When Exhausted, add 1 *Naterran *Great *Tree to your hand.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL If you have no *Naterran *Great *Tree, add 1 to your hand. NL Last_Words: When Exhausted, add 1 *Naterran *Great *Tree to your hand."
   }
 }

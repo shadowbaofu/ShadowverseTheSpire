@@ -3212,22 +3212,22 @@
   },
   "shadowverse:SeraphLapis": {
     "NAME": "Seraph Lapis, Glory Be",
-    "DESCRIPTION": "Countdown 1: Win the combat. NL Banish."
+    "DESCRIPTION": "Haven - Countdown 1: Win the combat. NL Banish."
   },
   "shadowverse:RenascentSeraph": {
     "NAME": "Renascent Seraph",
-    "DESCRIPTION": "Countdown 1: Put a *Seraph *Lapis, *Glory *Be into your hand. NL Banish.",
-    "UPGRADE_DESCRIPTION": "Countdown 1: Put a *Seraph *Lapis, *Glory *Be+ into your hand. NL Banish."
+    "DESCRIPTION": "Haven - Countdown 1: Put a *Seraph *Lapis, *Glory *Be into your hand. NL Banish.",
+    "UPGRADE_DESCRIPTION": "Haven - Countdown 1: Put a *Seraph *Lapis, *Glory *Be+ into your hand. NL Banish."
   },
   "shadowverse:AwakenedSeraph": {
     "NAME": "Awakened Seraph",
-    "DESCRIPTION": "Countdown 1: Put a *Renascent *Seraph into your hand. NL Banish.",
-    "UPGRADE_DESCRIPTION": "Countdown 1: Put a *Renascent *Seraph+ into your hand. NL Banish."
+    "DESCRIPTION": "Haven - Countdown 1: Put a *Renascent *Seraph into your hand. NL Banish.",
+    "UPGRADE_DESCRIPTION": "Haven - Countdown 1: Put a *Renascent *Seraph+ into your hand. NL Banish."
   },
   "shadowverse:EnstatuedSeraph": {
     "NAME": "Enstatued Seraph",
-    "DESCRIPTION": "Countdown 1: Put an *Awakened *Seraph into your hand. NL Banish.",
-    "UPGRADE_DESCRIPTION": "Countdown 1: Put an *Awakened *Seraph+ into your hand. NL Banish."
+    "DESCRIPTION": "Haven - Countdown 1: Put an *Awakened *Seraph into your hand. NL Banish.",
+    "UPGRADE_DESCRIPTION": "Haven - Countdown 1: Put an *Awakened *Seraph+ into your hand. NL Banish."
   },
   "shadowverse:Ra": {
     "NAME": "Ra, Radiance Incarnate",
@@ -3247,8 +3247,8 @@
   },
   "shadowverse:WhitefangTemple": {
     "NAME": "Whitefang Temple",
-    "DESCRIPTION": "Countdown 6: Put a *Holywing *Dragon into your hand. NL Whenever you heal HP, subtract 1 from this card's Countdown. NL At the end of your turn, heal 1 HP. NL Banish.",
-    "UPGRADE_DESCRIPTION": "Countdown 6: Put a *Holywing *Dragon+ into your hand. NL Whenever you heal HP, subtract 1 from this card's Countdown. NL At the end of your turn, heal 1 HP. NL Banish."
+    "DESCRIPTION": "Haven - Countdown 6: Put a *Holywing *Dragon into your hand. NL Whenever you heal HP, subtract 1 from this card's Countdown. NL At the end of your turn, heal 1 HP. NL Banish.",
+    "UPGRADE_DESCRIPTION": "Haven - Countdown 6: Put a *Holywing *Dragon+ into your hand. NL Whenever you heal HP, subtract 1 from this card's Countdown. NL At the end of your turn, heal 1 HP. NL Banish."
   },
   "shadowverse:ElanaPrayer": {
     "NAME": "Elana's Prayer",
@@ -3277,8 +3277,8 @@
   },
   "shadowverse:HallowedCave": {
     "NAME": "Hallowed Cave Shrine",
-    "DESCRIPTION": "Add a *Holy *Cavalier to your hand. NL Add a *Holy *Cavalier to your hand at the start of your turn. NL Countdown 2: Lose this effect. NL Banish.",
-    "UPGRADE_DESCRIPTION": "Add a *Holy *Cavalier to your hand. NL Add a *Holy *Cavalier to your hand at the start of your turn. NL Countdown 3: Lose this effect. NL Banish."
+    "DESCRIPTION": "Haven. NL Add a *Holy *Cavalier to your hand. NL Add a *Holy *Cavalier to your hand at the start of your turn. NL Countdown 2: Lose this effect. NL Banish.",
+    "UPGRADE_DESCRIPTION": "Haven. NL Add a *Holy *Cavalier to your hand. NL Add a *Holy *Cavalier to your hand at the start of your turn. NL Countdown 3: Lose this effect. NL Banish."
   },
   "shadowverse:HolyHector": {
     "NAME": "Holylord Eachtar",
@@ -3292,8 +3292,8 @@
   },
   "shadowverse:TempleOfHeresy": {
     "NAME": "Temple of Heresy",
-    "DESCRIPTION": "Shuffle a *Black *Mass to your draw pile. NL Countdown 6: Randomly add a *Prince *of *Darkness or *Prince *of *Cocytus to your hand and change its cost to 0. NL At the start of your turn, subtract 1 from this card's Countdown for each Curse card in your Amulet zone. NL Banish.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Shuffle a *Black *Mass to your draw pile. NL Countdown 6: Randomly add a *Prince *of *Darkness or *Prince *of *Cocytus to your hand and change its cost to 0. NL At the start of your turn, subtract 1 from this card's Countdown for each Curse card in your Amulet zone. NL Banish."
+    "DESCRIPTION": "Haven. NL Shuffle a *Black *Mass to your draw pile. NL Countdown 6: Randomly add a *Prince *of *Darkness or *Prince *of *Cocytus to your hand and change its cost to 0. NL At the start of your turn, subtract 1 from this card's Countdown for each Curse card in your Amulet zone. NL Banish.",
+    "UPGRADE_DESCRIPTION": "Innate. Haven. NL Shuffle a *Black *Mass to your draw pile. NL Countdown 6: Randomly add a *Prince *of *Darkness or *Prince *of *Cocytus to your hand and change its cost to 0. NL At the start of your turn, subtract 1 from this card's Countdown for each Curse card in your Amulet zone. NL Banish."
   },
   "shadowverse:Abdiel": {
     "NAME": "Abdiel",
@@ -3526,13 +3526,13 @@
   },
   "shadowverse:RealmOfRepose": {
     "NAME": "Realm of Repose",
-    "DESCRIPTION": "If no Attacks have been played this turn, any damage you would receive is reduced to 3. NL Countdown 2: Lose this effect. NL Ethereal. NL Banish.",
-    "UPGRADE_DESCRIPTION": "If no Attacks have been played this turn, any damage you would receive is reduced to 3. NL Countdown 2: Lose this effect. NL Banish."
+    "DESCRIPTION": "Haven. NL If no Attacks have been played this turn, any damage you would receive is reduced to 3. NL Countdown 2: Lose this effect. NL Ethereal. NL Banish.",
+    "UPGRADE_DESCRIPTION": "Haven. NL If no Attacks have been played this turn, any damage you would receive is reduced to 3. NL Countdown 2: Lose this effect. NL Banish."
   },
   "shadowverse:EternalDispair": {
     "NAME": "Perpetual Despair",
-    "DESCRIPTION": "If you’ve played no Attack cards this turn, heal 2 HP and draw 1 additional card at the start of your next turn. NL Countdown 3: Lose this effect. NL Ethereal. NL Banish.",
-    "UPGRADE_DESCRIPTION": "If you’ve played no Attack cards this turn, heal 2 HP and draw 1 additional card at the start of your next turn. NL Countdown 3: Lose this effect. NL Banish."
+    "DESCRIPTION": "Haven. NL If you’ve played no Attack cards this turn, heal 2 HP and draw 1 additional card at the start of your next turn. NL Countdown 3: Lose this effect. NL Ethereal. NL Banish.",
+    "UPGRADE_DESCRIPTION": "Haven. NL If you’ve played no Attack cards this turn, heal 2 HP and draw 1 additional card at the start of your next turn. NL Countdown 3: Lose this effect. NL Banish."
   },
   "shadowverse:Jatelant": {
     "NAME": "Jatelant, God of Prosperity",
@@ -3544,7 +3544,7 @@
   },
   "shadowverse:SomnolentStrength": {
     "NAME": "Somnolent Strength",
-    "DESCRIPTION": "Countdown 2: Gain !M! Dexterity. A random enemy loses !M! Strength. NL Banish."
+    "DESCRIPTION": "Haven. NL Countdown 2: Gain !M! Dexterity. A random enemy loses !M! Strength. NL Banish."
   },
   "shadowverse:TheStrength": {
     "NAME": "VIII. Sofina, Strength",
@@ -4814,20 +4814,20 @@
   },
   "shadowverse:OrchidExaminationHall": {
     "NAME": "Orchid's Examination Hall",
-    "DESCRIPTION": "Banish. NL Academic. NL Heal 1 HP. NL Countdown 1: Heal 1 HP. NL Enhance 1: Choose: Play this card as either NL *Bambeauty's Examination Hall NL *Mum's Examination Hall OR NL *Plum's Examination Hall",
-    "UPGRADE_DESCRIPTION": "Banish. Academic.NL Heal 1 HP. NL Countdown 1: Heal 1 HP. NL Enhance 1: Choose: Play this card as either NL *Bambeauty's Examination Hall+ NL *Mum's Examination Hall+ OR NL *Plum's Examination Hall+"
+    "DESCRIPTION": "Haven - Banish - Academic. NL Heal 1 HP. NL Countdown 1: Heal 1 HP. NL Enhance 1: Choose: Play this card as either NL *Bambeauty's Examination Hall NL *Mum's Examination Hall OR NL *Plum's Examination Hall",
+    "UPGRADE_DESCRIPTION": "Banish - Academic. NL Heal 1 HP. NL Countdown 1: Heal 1 HP. NL Enhance 1: Choose: Play this card as either NL *Bambeauty's Examination Hall+ NL *Mum's Examination Hall+ OR NL *Plum's Examination Hall+"
   },
   "shadowverse:BambeautyExaminationHall": {
     "NAME": "Bambeauty's Examination Hall",
-    "DESCRIPTION": "Banish. NL Academic. NL Heal 1 HP, draw !M! cards. NL Countdown 1: Heal 1 HP, draw !M! cards."
+    "DESCRIPTION": "Haven - Banish - Academic. NL Heal 1 HP, draw !M! cards. NL Countdown 1: Heal 1 HP, draw !M! cards."
   },
   "shadowverse:MumExaminationHall": {
     "NAME": "Mum's Examination Hall",
-    "DESCRIPTION": "Banish. NL Academic. NL Heal 1 HP, deal !M! damage to a random enemy. NL Countdown 1: Heal 1 HP, deal !M! damage to a random enemy."
+    "DESCRIPTION": "Haven - Banish - Academic. NL Heal 1 HP, deal !M! damage to a random enemy. NL Countdown 1: Heal 1 HP, deal !M! damage to a random enemy."
   },
   "shadowverse:PlumExaminationHall": {
     "NAME": "Plum's Examination Hall",
-    "DESCRIPTION": "Banish. NL Academic. NL Heal !M! HP. NL Countdown 1: Heal !M! HP."
+    "DESCRIPTION": "Haven - Banish - Academic. NL Heal !M! HP. NL Countdown 1: Heal !M! HP."
   },
   "shadowverse:Gruinne": {
     "NAME": "Gruinne, Leonardian Provost",
@@ -5966,11 +5966,11 @@
   },
   "shadowverse:Lazuli": {
     "NAME": "Lazuli, Gateway Liberator",
-    "DESCRIPTION": "AF. NL Gain !B! Block. NL Shuffle !M! *Radiant *Artifacts into the draw pile. NL Put 1 Skill card from the draw pile into your hand. NL If there are 6 or more Artifacts with different names in your Exhaust pile, add 1 *Evolution *Point to your hand."
+    "DESCRIPTION": "AF. NL Gain !B! Block. NL Shuffle !M! *Radiant *Artifacts into the draw pile. Change their costs to 1. NL Put 1 Skill card from the draw pile into your hand. NL If there are 6 or more Artifacts with different names in your Exhaust pile, add 1 *Evolution *Point to your hand."
   },
   "shadowverse:Evamia": {
     "NAME": "Evamia, Spinner of Threads",
-    "DESCRIPTION": "AF. NL Gain !B! Block. NL Shuffle !M! *Mystic *Artifacts into the draw pile. NL If there are 6 or more Artifacts with different names in your Exhaust pile, prevent the next time you would lose HP."
+    "DESCRIPTION": "AF. NL Gain !B! Block. NL Shuffle !M! *Mystic *Artifacts into the draw pile. Change their costs to 0. NL If there are 6 or more Artifacts with different names in your Exhaust pile, prevent the next time you would lose HP."
   },
   "shadowverse:Shin": {
     "NAME": "Shin, Enemy of Chaos",
@@ -6173,7 +6173,7 @@
   },
   "shadowverse:SeraphsOfTheTrueKey": {
     "NAME": "Seraphs of the True Key",
-    "DESCRIPTION": "Deal !D! damage. Gain !B! Block. NL Fill ALL Amulet slots with those played this combat that had Countdown. NL They gain: 'When the Countdown is 0, deal 10 damage to ALL enemies and gain 4 Block.' NL Last_Words: When played, subtract 10 from the Countdown of ALL Amulets next turn."
+    "DESCRIPTION": "Deal !D! damage. Gain !B! Block. NL Fill ALL Amulet slots with those played this combat that had Countdown. NL They gain: 'Haven - Countdown: When Countdown is 0, deal 10 damage to ALL enemies and gain 4 Block.' NL Last_Words: When played, subtract 10 from the Countdown of ALL Amulets next turn."
   },
   "shadowverse:AngelsOfTheCovenant": {
     "NAME": "Angels of the Covenant",

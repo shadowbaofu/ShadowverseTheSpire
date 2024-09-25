@@ -495,7 +495,7 @@
       "Supremacy"
     ],
       "DESCRIPTION": "At the end of your turn, if you've played a card that costs 2 or less, deal 10 damage to a random enemy. NL If you've played a card that costs 2 or more, deal 18 damage to ALL enemies."
-    }.
+    }
     {
       "PROPER_NAME": "Usurpation",
       "NAMES": [
@@ -509,6 +509,23 @@
         "Evolve"
       ],
       "DESCRIPTION": "Gains additional effects when upgraded, or upgrades itself under certain conditions. The upgraded card reverts back after being played in combat." 
-    }
+    },
+  {
+    "PROPER_NAME": "Apocalypse Deck",
+    "NAMES": [
+      "apocalypse deck",
+      "apocalypse_deck"
+    ],
+  "DESCRIPTION": "A 10 card deck containing expensive but extremely powerful Attacks."
+},
+{
+  "PROPER_NAME": "Cocytus Deck",
+  "NAMES": [
+    "cocytus deck",
+    "cocytus_deck"
+  ],
+  "DESCRIPTION": "A 13 card deck containing single copies of very powerful cards."
+}
   ]
 }
+

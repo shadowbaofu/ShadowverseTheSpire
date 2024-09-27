@@ -1017,7 +1017,7 @@
   "shadowverse:RealmOfReposePower": {
     "NAME": "Realm of Repose",
     "DESCRIPTIONS": [
-      " #b",
+      " For #b turns,",
       " If no Attack cards were played this turn, any damage you would receive equal to #b4 or more becomes #b3."
     ]
   },

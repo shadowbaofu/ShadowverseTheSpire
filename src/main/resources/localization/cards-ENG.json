@@ -4434,7 +4434,7 @@
   },
   "shadowverse:Magachiyo": {
     "NAME": "Magachiyo, Barbed Convict",
-    "DESCRIPTION": "Condemned. NL Deal !D! damage. NL Add 1 to the number of cards played this turn.  NL If you have played 4 cards at least 3 times, gain 2 Strength, Dexterity and add !M! damage and Block to ALL Condemned Attacks in your hand.",
+    "DESCRIPTION": "Condemned. NL Deal !D! damage. NL Add 1 to the number of cards played this turn. NL If you have played 4 cards at least 3 times, gain 2 Strength, Dexterity and add !M! damage and Block to ALL Condemned Attacks in your hand.",
     "EXTENDED_DESCRIPTION": [
       " NL (You played 4 cards ",
       " times. )"
@@ -4504,7 +4504,7 @@
   },
   "shadowverse:Sephie": {
     "NAME": "Sephie, Depraved Convict",
-    "DESCRIPTION": "Condemned. NL Retain. NL Fusion: Non-Strike Attack cards. NL If you Fuse at least 2 cards at once to this card, use 1 energy to put a 0 cost *Volunteer *Test *Subject into your hand. NL If a Condemned card was Fused, no energy is used. NL Deal !D! damage. Put a 0 cost *Volunteer *Test *Subject into your hand. NL If at least 5 were played, add !M! damage to them for each one in your hand."
+    "DESCRIPTION": "Condemned - Retain. NL Fusion: Non-Strike Attack cards. NL If you Fuse at least 2 cards at once to this card, use 1 energy to put a 0 cost *Volunteer *Test *Subject into your hand. NL If a Condemned card was Fused, no energy is used. NL Deal !D! damage. Put a 0 cost *Volunteer *Test *Subject into your hand. NL If at least 5 were played, add !M! damage to them for each one in your hand."
   },
   "shadowverse:SkullFish": {
     "NAME": "Skullfish",
@@ -4516,8 +4516,8 @@
   },
   "shadowverse:Istyndet": {
     "NAME": "Istyndet, Soul Convict",
-    "DESCRIPTION": "Condemned. NL Gain !B! Block. NL If you've played 10 or more cards with Last_Words, apply 1 Weak and Vulnerable to ALL enemies and Exhaust ALL non-Skill cards in your hand.  NL Last_Words: When Exhausted, gain 3 Shadows.",
-    "UPGRADE_DESCRIPTION": "Condemned. NL Gain !B! Block. NL Put a *Skullfish into your hand and change its cost to 0.  NL If you've played 10 or more cards with Last_Words, apply 1 Weak and Vulnerable to ALL enemies and Exhaust ALL non-Skill cards in your hand.  NL Last_Words: When Exhausted, gain 3 Shadows",
+    "DESCRIPTION": "Condemned. NL Gain !B! Block. NL If you've played 10 or more cards with Last_Words, apply 1 Weak and Vulnerable to ALL enemies and Exhaust ALL non-Skill cards in your hand. NL Last_Words: When Exhausted, gain 3 Shadows.",
+    "UPGRADE_DESCRIPTION": "Condemned. NL Gain !B! Block. NL Put a *Skullfish into your hand and change its cost to 0. NL If you've played 10 or more cards with Last_Words, apply 1 Weak and Vulnerable to ALL enemies and Exhaust ALL non-Skill cards in your hand. NL Last_Words: When Exhausted, gain 3 Shadows",
     "EXTENDED_DESCRIPTION": [
       " NL (Played ",
       " cards with Last_Words.)"
@@ -4560,7 +4560,7 @@
   },
   "shadowverse:Garodeth": {
     "NAME": "Garodeth, Insurgent Convict",
-    "DESCRIPTION": "Condemned. NL Lose 1 HP. NL Deal !D! damage to ALL enemies. NL Deal !D! damage. If you lost HP at least 3 times this turn, quadruple the damage dealt to the single enemy. ",
+    "DESCRIPTION": "Condemned. NL Lose 1 HP. NL Deal !D! damage to ALL enemies. NL Deal !D! damage. NL If you lost HP at least 3 times this turn, quadruple the damage dealt to the single enemy. ",
     "EXTENDED_DESCRIPTION": [
       " NL (You lost HP ",
       " times this turn)"
@@ -4590,8 +4590,8 @@
   },
   "shadowverse:Erralde": {
     "NAME": "Erralde, Troth Convict",
-    "DESCRIPTION": "Condemned. NL Accelerate 0: Heal 2 HP. If you played a Condemned card or a card that cost 2 or more this turn, draw a card next turn. NL --------------------- NL Apply 2 Weak and Vulnerable to ALL enemies. NL Gain the following effect: At the end of your turn, if you played a Condemned card or a 2-cost card this turn, heal 2 HP and draw a card next turn. NL Ethereal",
-    "UPGRADE_DESCRIPTION": "Condemned. NL Accelerate 0: Heal 2 HP. If you played a Condemned card or a card that cost 2 or more this turn, draw a card next turn. NL --------------------- NL Apply 2 Weak and Vulnerable to ALL enemies. NL Gain the following effect: At the end of your turn, if you played a Condemned card or a 2-cost card this turn, heal 2 HP and draw a card next turn."
+    "DESCRIPTION": "Condemned. NL Accelerate 0: Heal 2 HP. If you played a Condemned card or a card that cost 2 or more Energy this turn, draw a card next turn. NL --------------------- NL Apply 2 Weak and Vulnerable to ALL enemies. NL At the end of your turn, if you played a Condemned card or a 2-cost card this turn, heal 2 HP and draw a card next turn. NL Ethereal",
+    "UPGRADE_DESCRIPTION": "Condemned. NL Accelerate 0: Heal 2 HP. If you played a Condemned card or a card that cost 2 or more Energy this turn, draw a card next turn. NL --------------------- NL Apply 2 Weak and Vulnerable to ALL enemies. NL At the end of your turn, if you played a Condemned card or a 2-cost card this turn, heal 2 HP and draw a card next turn."
   },
   "shadowverse:ExecutorOfTheOath": {
     "NAME": "Executor of the Oath",

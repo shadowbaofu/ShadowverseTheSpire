@@ -298,5 +298,18 @@
     "TEXT": [
       " NL Last_Words: When Exhausted, add 1 *Assembly *Droid to your hand."
     ]
-  }
+  },
+"shadowverse:CardPack": {
+    "TEXT": [
+      "[ #gOpen #ga #gBooster #gPack, #gObtain #gany #gcards #gyou #gfind ]",
+      "Open Booster Pack！",
+      "Look at the cards you pulled"
+    ]
+  },
+  "shadowverse:StartPack": {
+  "TEXT": [
+    "#gReplace #gstarting #gdeck #gwith #ga #grandom #gStructure #gDeck ]",
+    "Get a brand new starting deck!"
+  ]
+}
 }

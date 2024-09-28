@@ -6799,5 +6799,182 @@
     "NAME": "Desert Pathfinder",
     "DESCRIPTION": "Gain !B! Block. NL Last_Words: When Exhausted, add 1 *Naterran *Great *Tree to your hand.",
     "UPGRADE_DESCRIPTION": "Gain !B! Block. NL If you have no *Naterran *Great *Tree, add 1 to your hand. NL Last_Words: When Exhausted, add 1 *Naterran *Great *Tree to your hand."
-  }
+  },
+  "shadowverse:Razia": {
+    "NAME": "Razia, Vengeful Cannonlancer",
+    "DESCRIPTION": "Gain !B! Block. NL Whenever you are attacked this turn, if you still have any Block, gain 1 Strength and deal !M! damage back. NL Otherwise the attacker takes !M! damage twice and you lose this effect. NL Strength affects this card's damage 3 times."
+  },
+  "shadowverse:Goblin": {
+    "NAME": "Goblin",
+    "DESCRIPTION": "Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Limit：Add a random *Female *Knight or *Female *Elf card to your hand. That card Exhausts."
+  },
+  "shadowverse:AngelicSnipe": {
+    "NAME": "Angelic Snipe",
+    "DESCRIPTION": "Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Draw 1 card. NL Exhaust."
+  },
+  "shadowverse:CloudChorus": {
+    "NAME": "Cloud Chorus",
+    "DESCRIPTION": "Gain !B! Block.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Limit: Heal !M! HP. NL Exhaust."
+  },
+  "shadowverse:AngelicBarrage": {
+    "NAME": "Angelic Barrage",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies."
+  },
+  "shadowverse:Goliath": {
+    "NAME": "Goliath",
+    "DESCRIPTION": "Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain !B! Block."
+  },
+  "shadowverse:AngelicSwordMaiden": {
+    "NAME": "Angelic Sword Maiden",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block."
+  },
+  "shadowverse:RadiantLuminousMage": {
+    "NAME": "Radiant Luminous Mage",
+    "DESCRIPTION": "Whenever you play an Attack card with Evolve, Upgrades itself or that can be Upgraded multiple times, put 1 *Evolution *Point into your hand.",
+    "UPGRADE_DESCRIPTION": "Whenever you play an Attack card with Evolve, Upgrades itself or that can be Upgraded multiple times, put 1 *Evolution *Point into your hand. NL When this card is drawn, put 1 *Evolution *Point to your hand."
+  },
+  "shadowverse:CourtlyDance": {
+    "NAME": "Courtly Dance",
+    "DESCRIPTION": "Put !M! attacks with Evolve, Upgrade themselves or can be Upgraded multiple times from the draw pile to you hand, then upgrade them."
+  },
+  "shadowverse:Troya": {
+    "NAME": "Troya, Nocturnal Scout",
+    "DESCRIPTION": "Deal !D! damage. NL If you have played at least 2 cards this turn, draw 1 card. NL If you have played 2 Upgraded or Evolve cards this turn, Upgrade this card. NL Evolve.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Apply 1 Weak and 1 Vulnerable. NL If you have played at least 2 cards this turn, draw 1 card. NL Put 1 *Evolution *Point into your hand. NL Downgrade once played."
+  },
+  "shadowverse:MechaGoblin": {
+    "NAME": "Robogoblin",
+    "DESCRIPTION": "Machina NL Deal !D! damage. NL Last_Words: When played or Exhausted, add 1 *Repair *Mode to your hand."
+  },
+  "shadowverse:TravelersRespite": {
+    "NAME": "Travelers' Respite",
+    "DESCRIPTION": "Natura NL Heal !M! HP. NL Add 1 *Naterran *Great *Tree to your hand. NL Exhaust."
+  },
+  "shadowverse:Lyrial": {
+    "NAME": "Lyrial, Celestial Archer",
+    "DESCRIPTION": "Deal !D! damage. NL Evolve.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Deal !M! damage. NL Downgrade once played."
+  },
+  "shadowverse:DarkLyrial": {
+    "NAME": "Dark Lyrial",
+    "DESCRIPTION": "Deal !D! damage. NL If you have a Colorless Attack card that costs 2 Energy or less in your hand, gain !M! Strength and Dexterity."
+  },
+  "shadowverse:AngelOfTheWord": {
+    "NAME": "Angel of the Word",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "shadowverse:AngelOfDarkWord": {
+    "NAME": "Angel of the Dark Word",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies."
+  },
+  "shadowverse:DarkGabriel": {
+    "NAME": "Dark Gabriel",
+    "DESCRIPTION": "Enemy loses X Strength and Dexterity. NL Randomly add a Colorless Attack that costs 1 Energy or less that has been played this combat to your hand, increase its damage by 3 and its Block by 4.",
+    "UPGRADE_DESCRIPTION": "Enemy loses X+1 Strength and Dexterity. NL Randomly add a Colorless Attack that costs 1 Energy or less that has been played this combat to your hand, increase its damage by 3 and its Block by 4."
+  },
+  "shadowverse:HealingAngel": {
+    "NAME": "Healing Angel",
+    "DESCRIPTION": "Gain !B! Block. NL Heal !M! HP. NL Exhaust."
+  },
+  "shadowverse:DarkHealingAngel": {
+    "NAME": "Dark Healing Angel",
+    "DESCRIPTION": "Gain !B! Block. NL Deal !M! damage to ALL enemies. NL Heal !M! HP. NL Draw !M! cards. NL Exhaust."
+  },
+  "shadowverse:ShieldAngel": {
+    "NAME": "Shield Angel",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "shadowverse:DarkShieldAngel": {
+    "NAME": "Dark Shield Angel",
+    "DESCRIPTION": "Gain !B! Block. NL Deal !D! damage to a random enemy. NL Deal !D! damage."
+  },
+  "shadowverse:AngelKnight": {
+    "NAME": "Angelic Knight",
+    "DESCRIPTION": "Gain !B! Block. NL Gain 1 Strength."
+  },
+  "shadowverse:DarkAngelKnight": {
+    "NAME": "Dark Angelic Knight",
+    "DESCRIPTION": "Gain !B! Block. NL Gain 1 Strength and Dexterity."
+  },
+  "shadowverse:Altaia": {
+    "NAME": "Altaia, Angel of Judgment",
+    "DESCRIPTION": "Select 1 non-Colorless Attack card in your hand. It becomes Colorless. NL Deal !D! damage. NL Increase this card's damage for each Colorless card in your hand."
+  },
+  "shadowverse:DarkAltaia": {
+    "NAME": "Altaia, Dark Angel of Judgment",
+    "DESCRIPTION": "Deal !D! damage. NL Increase this card's damage for each Colorless card in your hand. NL Draw 2 cards."
+  },
+  "shadowverse:FallenAngel": {
+    "NAME": "Fallen Angel",
+    "DESCRIPTION": "Deal !D! damage. NL Heal !M! HP. NL Exhaust."
+  },
+  "shadowverse:DarkAngelChoice": {
+    "NAME": "Fall",
+    "DESCRIPTION": "Choose 1 of 3 random *Dark *Angel cards to add into your hand.",
+    "UPGRADE_DESCRIPTION": "Choose 1 of 3 random Upgraded *Dark *Angel cards to add into your hand."
+  },
+  "shadowverse:AngelChoice": {
+    "NAME": "Ascend",
+    "DESCRIPTION": "Select an Attack card in your hand. If it is a *Dark *Angel, gain 2 Strength and Dexterity, Exhaust it and add the corresponding *Angel to your hand. NL Otherwise, Exhaust the selected card and add 1 *Fallen *Angel to your hand.",
+    "UPGRADE_DESCRIPTION": "Select an Attack card in your hand. If it is a *Dark *Angel, gain 2 Strength and Dexterity, Exhaust it and add the corresponding *Angel to your hand. NL Otherwise, Exhaust the selected card and add 1 *Fallen *Angel+ to your hand."
+  },
+  "shadowverse:WingedInversion": {
+    "NAME": "Winged Inversion",
+    "DESCRIPTION": "Choose: Play this card as either *Fall or NL *Ascend.",
+    "UPGRADE_DESCRIPTION": "Choose: Play this card as either *Fall+ or NL *Ascend+"
+  },
+  "shadowverse:SeraphOfSin": {
+    "NAME": "Seraph of Sin",
+    "DESCRIPTION": "Deal !D! damage. NL Add 1 *Winged *Inversion with Exhaust to your hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Add 1 *Winged *Inversion with Exhaust to your hand. NL Add 1 *Fallen *Angel to your hand."
+  },
+  "shadowverse:ReturnToHeaven": {
+    "NAME": "Return to Heaven",
+    "DESCRIPTION": "Exhaust 1 Colorless card in your hand. Add a copy of that card to your hand and gain !M! Energy. NL If a *Dark *Angel was selected, add the corresponding Angel to your hand instead. NL Exhaust."
+  },
+  "shadowverse:SeraphOfVirtue": {
+    "NAME": "Seraph of Virtue",
+    "DESCRIPTION": "Deal !D! damage. NL Add 1 *Return *to *Heaven to your hand."
+  },
+  "shadowverse:HarbingerOfTheNight": {
+    "NAME": "Harbinger of the Night",
+    "DESCRIPTION": "Deal !D! damage. NL Add 1 *Winged *Inversion with Exhaust to your hand."
+  },
+  "shadowverse:HarbingerOfTheDaylight": {
+    "NAME": "Harbinger of the Daylight",
+    "DESCRIPTION": "Deal !D! damage. NL Automatically upgrades when drawn. NL Evolve.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Downgrade once played."
+  },
+  "shadowverse:AngelOfDarkness": {
+    "NAME": "Angel of Darkness",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy has at least 1 buff, add 1 *Winged *Inversion to your hand."
+  },
+  "shadowverse:AngelOfBrightness": {
+    "NAME": "Angel of Light",
+    "DESCRIPTION": "Deal !D! damage. NL Whenever you play a *Winged *Inversion or *Return *to *Heaven, deal !D! damage to a random enemy."
+  },
+  "shadowverse:SingleWingedExecutor": {
+    "NAME": "Single-Winged Executor",
+    "DESCRIPTION": "Gain !B! Block. NL Gain [E]. NL Limit: When a Colorless attack card is played, upgrade it along with this card, then gain 1 Strength and Dexterity."
+  },
+  "shadowverse:SingleWingedRebellion": {
+    "NAME": "Single-Winged Rebel",
+    "DESCRIPTION": "Gain !B! Block. NL Gain [E]. NL Add 1 *Winged *Inversion to your hand. NL Limit: Whenever a *Dark *Angel is played, upgrade it along with this card."
+  },
+  "shadowverse:PurifyGuardian": {
+    "NAME": "Guardian of Purity",
+    "DESCRIPTION": "Gain !B! Block. NL If you have any Colorless Attack cards in your hand, select and discard one of them. If you do, prevent the next damage you would take."
+  },
+  "shadowverse:CorruptionGuardian": {
+    "NAME": "Guardian of Corruption",
+    "DESCRIPTION": "Gain !B! Block. NL Add 1 *Winged *Inversion to your hand. NL If you have any Colorless Attack cards in your hand, select and discard one of them. If you do, draw 1 card and gain [E]."
+  },
+  "shadowverse:ChaoticAngel": {
+    "NAME": "Angel of Chaos",
+    "DESCRIPTION": "Deal !D! damage twice. NL Increase this card's damage by !M! for each Colorless card played this combat. NL Enhance 4: You are unaffected by debuffs except those that change Strength and Dexterity. Gain 2 Energy. Add 2 *Winged *Inversions to your hand."
+  },
 }

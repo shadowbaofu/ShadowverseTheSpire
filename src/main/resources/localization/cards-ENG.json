@@ -6941,11 +6941,11 @@
     "DESCRIPTION": "Deal !D! damage. NL Add 1 *Return *to *Heaven to your hand."
   },
   "shadowverse:HarbingerOfTheNight": {
-    "NAME": "Harbinger of the Night",
+    "NAME": "Dark Messenger",
     "DESCRIPTION": "Deal !D! damage. NL Add 1 *Winged *Inversion with Exhaust to your hand."
   },
   "shadowverse:HarbingerOfTheDaylight": {
-    "NAME": "Harbinger of the Daylight",
+    "NAME": "Light-Winged Messenger",
     "DESCRIPTION": "Deal !D! damage. NL Automatically upgrades when drawn. NL Evolve.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Downgrade once played."
   },

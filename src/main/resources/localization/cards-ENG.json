@@ -6958,19 +6958,19 @@
     "DESCRIPTION": "Deal !D! damage. NL Whenever you play a *Winged *Inversion or *Return *to *Heaven, deal !D! damage to a random enemy."
   },
   "shadowverse:SingleWingedExecutor": {
-    "NAME": "Single-Winged Executor",
+    "NAME": "One-Winged Executor",
     "DESCRIPTION": "Gain !B! Block. NL Gain [E]. NL Limit: When a Colorless attack card is played, upgrade it along with this card, then gain 1 Strength and Dexterity."
   },
   "shadowverse:SingleWingedRebellion": {
-    "NAME": "Single-Winged Rebel",
+    "NAME": "One-Winged Traitor",
     "DESCRIPTION": "Gain !B! Block. NL Gain [E]. NL Add 1 *Winged *Inversion to your hand. NL Limit: Whenever a *Dark *Angel is played, upgrade it along with this card."
   },
   "shadowverse:PurifyGuardian": {
-    "NAME": "Guardian of Purity",
+    "NAME": "Purifying Guardian",
     "DESCRIPTION": "Gain !B! Block. NL If you have any Colorless Attack cards in your hand, select and discard one of them. If you do, prevent the next damage you would take."
   },
   "shadowverse:CorruptionGuardian": {
-    "NAME": "Guardian of Corruption",
+    "NAME": "Corruption Guardian",
     "DESCRIPTION": "Gain !B! Block. NL Add 1 *Winged *Inversion to your hand. NL If you have any Colorless Attack cards in your hand, select and discard one of them. If you do, draw 1 card and gain [E]."
   },
   "shadowverse:ChaoticAngel": {

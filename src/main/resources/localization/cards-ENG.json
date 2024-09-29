@@ -517,7 +517,7 @@
   },
   "shadowverse:Zeus": {
     "NAME": "Zeus, the Supreme",
-    "DESCRIPTION": "Can be upgraded multiple times. NL Randomly activate the following effects !M! times: NL 1. Heal 5 HP. NL 2. Remove Block from ALL enemies and gain 3 Strength. NL 3. Deal !D! damage to ALL enemies. NL 4. Apply 2 Weak and 4 Poison to ALL enemies. NL 5. Gain !B! Block. NL Exhaust."
+    "DESCRIPTION": "Can be upgraded multiple times. NL Randomly activate the following effects X+!M! times: NL 1. Heal 5 HP. NL 2. Remove Block from ALL enemies and gain 3 Strength. NL 3. Deal !D! damage to ALL enemies. NL 4. Apply 2 Weak and 4 Poison to ALL enemies. NL 5. Gain !B! Block. NL Exhaust."
   },
   "shadowverse:StarBright": {
     "NAME": "Starbright Deity",

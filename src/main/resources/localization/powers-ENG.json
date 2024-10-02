@@ -836,8 +836,8 @@
   "shadowverse:SpinePower": {
     "NAME": "Spinaria, Keeper of Enigmas",
     "DESCRIPTIONS": [
-      "Whenever you play an #yAF card, deal #b to a random enemy.",
-      " damage"
+      "Whenever you play an #yAF card, deal #b ",
+      " damage to a random enemy."
     ]
   },
   "shadowverse:MiriamPower": {

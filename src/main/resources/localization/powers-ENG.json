@@ -1415,8 +1415,8 @@
     "NAME": "Craig, Mysterian Chanter",
     "DESCRIPTIONS": [
       "Whenever you play a Skill card, deal #b",
-      "damage. Wheever you play a Mysteria card, gain #b",
-      "Block."
+      " damage. Whenever you play a Mysteria card, gain #b",
+      " Block."
     ]
   },
   "shadowverse:MasqueradeGhostPower": {

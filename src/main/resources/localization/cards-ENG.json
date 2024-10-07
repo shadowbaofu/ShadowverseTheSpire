@@ -6397,8 +6397,8 @@
   },
   "shadowverse:Jill": {
     "NAME": "Mr. Bertrand, School Magus",
-    "DESCRIPTION": "Accelerate 0: Add a *Mysterian *Circle to your hand. NL  NL --------------------- NL  NL Gain !B! Block. Put 2 *Mysteria cards from the draw pile to your hand. NL Whenever you play a Mysteria card, deal 1 damage to ALL enemies.",
-    "UPGRADE_DESCRIPTION": "Accelerate 0: Add a *Mysterian *Circle+ to your hand. NL  NL --------------------- NL  NL Gain !B! Block. Put 2 *Mysteria cards from the draw pile to your hand. NL Whenever you play a Mysteria card, deal 1 damage to ALL enemies."
+    "DESCRIPTION": "Accelerate 0: Add a *Mysterian *Circle to your hand. NL  NL --------------------- NL  NL Gain !B! Block. Put 2 *Mysteria cards from the draw pile to your hand. NL Deal 1 damage to ALL enemies for each Mysteria card in your hand.",
+    "UPGRADE_DESCRIPTION": "Accelerate 0: Add a *Mysterian *Circle+ to your hand. NL  NL --------------------- NL  NL Gain !B! Block. Put 2 *Mysteria cards from the draw pile to your hand. NL Deal 1 damage to ALL enemies for each Mysteria card in your hand."
   },
   "shadowverse:Eon": {
     "NAME": "Eon, Destiny's Hand",

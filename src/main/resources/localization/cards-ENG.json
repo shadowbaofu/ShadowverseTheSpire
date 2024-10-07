@@ -697,7 +697,7 @@
   },
   "shadowverse:MysterianRite": {
     "NAME": "Mysterian Rite",
-    "DESCRIPTION": "Mysteria. NL Costs 1 less for each Mysteria card played while in your hand. NL Deal !D! damage. NL Apply !M! Vulnerable. NL Gain !B! Block. NL Ethereal. NL Exhaust."
+    "DESCRIPTION": "Mysteria. NL Whenever you play a Mysteria card, change this card's cost to 1. NL Deal !D! damage. NL Apply !M! Vulnerable. NL Gain !B! Block. NL Ethereal. NL Exhaust."
   },
   "shadowverse:Miranda": {
     "NAME": "Ms. Miranda, Light Mage",

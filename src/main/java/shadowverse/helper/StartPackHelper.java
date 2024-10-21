@@ -15,6 +15,7 @@ import shadowverse.cards.Royal.RoyalStartPack;
 import shadowverse.cards.Vampire.Default.Executioner;
 import shadowverse.cards.Vampire.NatMech.MechaforgeDevil;
 import shadowverse.cards.Vampire.VampireStarterPack;
+import shadowverse.cards.Witch.Natura.Aeroelementalist;
 import shadowverse.cards.Witch.Natura.Stormelementalist;
 import shadowverse.cards.Witch.WitchStarterPack;
 import shadowverse.characters.*;
@@ -250,6 +251,6 @@ public class StartPackHelper {
         nat.addCard(new DesertPathfinder(),3);
         nat.addCard(new TravelersRespite(),2);
         nat.addCard(new BrothersUnited());
-        nat.addCard(new Stormelementalist());
+        nat.addCard(new Aeroelementalist());
     }
 }

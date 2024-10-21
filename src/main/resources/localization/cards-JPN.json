@@ -2650,17 +2650,16 @@
   },
   "shadowverse:ApostleOfUsurpation": {
     "NAME": "簒奪の使徒",
-    "DESCRIPTION": "財宝カード をプレイする度、ランダムな敵に !M! ダメージを与える。",
-    "UPGRADE_DESCRIPTION": "財宝カード をプレイする度、ランダムな敵に !M! ダメージを与える。 NL ランダムな 財宝カード 1枚を手札に加える。"
+    "DESCRIPTION": "財宝カード をプレイする度、ランダムな敵に !M! ダメージを与える。 NL ランダムな 財宝カード 1枚を手札に加える"
   },
   "shadowverse:Octrice": {
     "NAME": "簒奪の絶傑・オクトリス",
-    "DESCRIPTION": "敵の 筋力 を2奪う。 !M! ゴールドを得る。 NL 廃棄 。",
-    "UPGRADE_DESCRIPTION": "敵の 筋力 を2奪う。 !M! ゴールドを得る。 NL ランダムな 財宝カード 2枚を手札に加える。 NL 廃棄 。"
+    "DESCRIPTION": "限定 :敵の 筋力 を2奪う。 !M! ゴールドを得る",
+    "UPGRADE_DESCRIPTION": "限定 :敵の 筋力 を3奪う。 !M! ゴールドを得る。 NL ランダムな 財宝カード 2枚を手札に加える。 NL このターンだけコスト0のダメージとブロックが0、 廃棄 を持つ、ランダムな ラストワード も持つカード1枚を手札に加える。"
   },
   "shadowverse:Octrice2": {
     "NAME": "空絶の簒奪・オクトリス",
-    "DESCRIPTION": "連携 8 \bこれが引かれる時、 *EP 1枚を手札に加える。 NL ランダムに敵からバフを1種類得る。 NL !M! ゴールドを得る。 NL *空絶の残光 1枚を手札に加える。 NL ランダムな 財宝カード 1枚を手札に加える。 NL 廃棄 。"
+    "DESCRIPTION": "連携 8 \bこれが引かれる時、 *EP 1枚を手札に加える。 NL 限定 ： ランダムに敵からバフを1種類得る。 NL !M! ゴールドを得る。 NL *空絶の残光 1枚を手札に加える。 NL ランダムな 財宝カード 1枚を手札に加える。"
   },
   "shadowverse:Mars": {
     "NAME": "静かなる炎将・マーズ",
@@ -2669,7 +2668,7 @@
   },
   "shadowverse:Sera": {
     "NAME": "曙の乙女・セラ",
-    "DESCRIPTION": "!B! ブロック を得る。 アーティファクト 1を得る。 NL 廃棄 。",
+    "DESCRIPTION": "!B! ブロック を得る。 アーティファクト 1を得る。 NL 進化可能 NL 廃棄 。",
     "UPGRADE_DESCRIPTION": "!B! ブロック を得る。 アーティファクト 1を得る。 NL シールドガーディアン 3体を出し、HPを !M! 回復する。 NL 廃棄 。"
   },
   "shadowverse:MistolinaBayleon": {
@@ -2707,7 +2706,7 @@
   },
   "shadowverse:CatAdmiral": {
     "NAME": "キャットアドミラル",
-    "DESCRIPTION": "!D! ダメージを与える。 NL 連携 7：もう一回ダメージを与える。 NL ",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 連携 7：もう一回ダメージを与える。 NL 進化可能 NL ",
     "UPGRADE_DESCRIPTION": "ダウングレード 。 NL !D! ダメージを与える。 NL 連携 7：もう一回ダメージを与える。 NL シールドガーディアン と ヘヴィーナイト 1体ずつ出す。 NL ",
     "EXTENDED_DESCRIPTION": [
       "（連携数：",
@@ -2748,7 +2747,7 @@
   },
   "shadowverse:DualbladeKnight": {
     "NAME": "二刀の騎士",
-    "DESCRIPTION": "!D! ダメージを与える。 NL [E] を得る。 NL 連携 7：これを アップグレード する。 NL ",
+    "DESCRIPTION": "!D! ダメージを与える。 NL [E] を得る。 NL 連携 7：これを アップグレード する。 NL 進化可能 NL ",
     "UPGRADE_DESCRIPTION": "ダウングレード 。 NL !D! ダメージを与える。 NL [E] [E] を得る。",
     "EXTENDED_DESCRIPTION": [
       "（連携数：",
@@ -2811,7 +2810,7 @@
   },
   "shadowverse:FloralFencer": {
     "NAME": "フローラルフェンサー",
-    "DESCRIPTION": "!D! ダメージを与える。",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 進化可能 ",
     "UPGRADE_DESCRIPTION": "ダウングレード 。 NL !D! ダメージを与える。 NL ナイト と スティールナイト 1体ずつ出す。"
   },
   "shadowverse:SunnyDayEncounter": {
@@ -2824,12 +2823,12 @@
   },
   "shadowverse:WarriorWing": {
     "NAME": "白翼の戦神・アイテール",
-    "DESCRIPTION": "山札からアタックかパワー1枚を選択して手札に加える。",
+    "DESCRIPTION": "山札からアタックかパワー1枚を選択して手札に加える。 NL 進化可能 ",
     "UPGRADE_DESCRIPTION": "ダウングレード 。 NL 山札からアタックかパワー1枚を選択して手札に加える。 NL すべてのフォロワーを+0/+1する。"
   },
   "shadowverse:Alyaska": {
     "NAME": "戦争商人・アルヤスカ",
-    "DESCRIPTION": "能力によるダメージは無効 1を得る。 NL !D! ダメージを与える。 NL これが引かれる時、 *EP 1枚を手札に加える。",
+    "DESCRIPTION": "能力によるダメージは無効 1を得る。 NL !D! ダメージを与える。 NL これが引かれる時、 *EP 1枚を手札に加える。 NL 進化可能 ",
     "UPGRADE_DESCRIPTION": "ダウングレード 。 NL 能力によるダメージは無効 1を得る。 NL !D! ダメージを与える。 NL *ターミナルウェポン 1枚を手札に加える。"
   },
   "shadowverse:ExterminusWeapon": {
@@ -2838,7 +2837,7 @@
   },
   "shadowverse:RadicalGunslinger": {
     "NAME": "ラディカルガンスリンガー",
-    "DESCRIPTION": "弱体 !M! を与え、 !D! ダメージを与える。",
+    "DESCRIPTION": "弱体 !M! を与え、 !D! ダメージを与える。 NL 進化可能 ",
     "UPGRADE_DESCRIPTION": "ダウングレード 。 NL 弱体 !M! を与え、 !D! ダメージを与える。 NL *従順な駿馬 1枚を手札に加える。"
   },
   "shadowverse:Mirin": {
@@ -2921,7 +2920,7 @@
   },
   "shadowverse:Charlotta": {
     "NAME": "小さな聖騎士・シャルロッテ",
-    "DESCRIPTION": "!B! ブロック を得る。",
+    "DESCRIPTION": "!B! ブロック を得る。 NL 進化可能 ",
     "UPGRADE_DESCRIPTION": "ダウングレード 。 NL !B! ブロック を得る。 敏捷性 !M! を得る。 NL 能力によるダメージは無効 1を得る。"
   },
   "shadowverse:Latham": {
@@ -2966,7 +2965,7 @@
   },
   "shadowverse:LevinBeastmaster": {
     "NAME": "レヴィオンの魔獣使い",
-    "DESCRIPTION": "レヴィオン 。 NL !B! ブロック を得る。 NL *ホワイトタイガー 1枚を手札に加える。",
+    "DESCRIPTION": "レヴィオン 。 NL !B! ブロック を得る。 NL *ホワイトタイガー 1枚を手札に加える。 NL 進化可能 ",
     "UPGRADE_DESCRIPTION": "レヴィオン 。 NL ダウングレード 。 NL !B! ブロック を得る。 NL L *ホワイトタイガー 3枚を手札に加える。"
   },
   "shadowverse:WhiteTiger": {
@@ -2979,7 +2978,7 @@
   },
   "shadowverse:LevinArcher": {
     "NAME": "レヴィオンの弓使い",
-    "DESCRIPTION": "レヴィオン 。 NL !D! ダメージを与える。 弱体 !M! を与える。",
+    "DESCRIPTION": "レヴィオン 。 NL !D! ダメージを与える。 弱体 !M! を与える。 NL 進化可能 ",
     "UPGRADE_DESCRIPTION": "レヴィオン 。 NL ダウングレード 。 NL !D! ダメージを与える。 弱体 !M! を与える。手札に他の レヴィオン カードがあるなら、これをもう一回行う。"
   },
   "shadowverse:Lounes": {
@@ -2996,7 +2995,7 @@
   },
   "shadowverse:StampedingFortress": {
     "NAME": "トランプルフォートレス",
-    "DESCRIPTION": "機械 。 NL !D! ダメージを与える，!B! ブロック を得る。",
+    "DESCRIPTION": "機械 。 NL !D! ダメージを与える，!B! ブロック を得る。 NL 進化可能 ",
     "UPGRADE_DESCRIPTION": "機械 。 NL ダウングレード 。 NL !D! ダメージを与える，!B! ブロック を得る。 NL 手札に他の 機械 カードがあるなら、 *プロダクトマシン !M! 枚を手札に加える。"
   },
   "shadowverse:MeetTheLevinSisters": {
@@ -3797,7 +3796,7 @@
   },
   "shadowverse:UltimateHollow": {
     "NAME": "極意たる空絶",
-    "DESCRIPTION": "!D! ダメージを与える。 NL 廃棄札にある 財宝カード が4枚以上なら、ダメージを倍にし、 !B! ブロック を得る。 NL このカードは財宝カードとして扱う。"
+    "DESCRIPTION": "!D! ダメージを与える。 NL !B! ブロック を得る。 NL これが引かれた時、 *複製品 1枚を手札に加える。 NL このカードはあらゆる財宝カードとして扱う。 NL 廃棄 。"
   },
   "shadowverse:LoathingDesire": {
     "NAME": "憎悪する愛絶",
@@ -3833,11 +3832,7 @@
   },
   "shadowverse:LightOfHollow": {
     "NAME": "空絶の残光",
-    "DESCRIPTION": "保留 ・ 融合 ： 財宝カード 。 NL これに 融合 したら、カードを1枚引く。 NL 敵に !D! ダメージを割り込む。 NL これに融合した数が4以上なら、ダメージを倍にする。 NL このカードは財宝カードとして扱う。",
-    "EXTENDED_DESCRIPTION": [
-      " NL ( 融合 したカードは",
-      "枚)"
-    ]
+    "DESCRIPTION": "融合 : 財宝カード 。 これに融合した時、カード1枚を引く。 NL 廃棄札にある財宝カード1枚につき能力が働く。 *黄金の首飾り ： 筋力 1を得る， NL *黄金の靴 ： 敏捷性 1を得る， NL *黄金の盃 ： !B! ブロックを得る ， NL *黄金の小剣 ： !D! ダメージを与える。 NL このカードは財宝カードとして扱う。　NL 廃棄"
   },
   "shadowverse:WingsOfDesire": {
     "NAME": "愛絶の飛翔",
@@ -3893,7 +3888,7 @@
   },
   "shadowverse:AdherentOfHollow": {
     "NAME": "空絶の崇拝者",
-    "DESCRIPTION": "財宝カード をプレイする時、これを アップグレード する。 NL !D! ダメージを与える。 NL *EP をプレイする時、ランダムな 財宝カード 1枚を手札に加える。",
+    "DESCRIPTION": "財宝カード をプレイする時、これを アップグレード する。 NL !D! ダメージを与える。 NL *EP をプレイする時、ランダムな 財宝カード 1枚を手札に加える。 NL 進化可能 ",
     "UPGRADE_DESCRIPTION":"ダウングレード 。 NL !D! ダメージを与える。 NL *EP をプレイする時、ランダムな 財宝カード 1枚を手札に加える。"
   },
   "shadowverse:AdherentOfDispair": {
@@ -3940,7 +3935,7 @@
   },
   "shadowverse:Aramis": {
     "NAME": "アラミス",
-    "DESCRIPTION": "アタックをプレイする度、 筋力 と 敏捷性 1を得、これのダメージを+3する。 NL フォロワーを出す度、 筋力 と 敏捷性 1を得、これのダメージを+3する。 NL !D! ダメージを与える。 NL 廃棄 。"
+    "DESCRIPTION": "アタックをプレイする度、 筋力 と 敏捷性 1を得、これのダメージを+3する。 NL フォロワーを出す度、 筋力 か 敏捷性 1を得、これのダメージを+3する。 NL !D! ダメージを与える。 NL 廃棄 。"
   },
   "shadowverse:Porthos": {
     "NAME": "ポルトス",
@@ -4334,7 +4329,7 @@
   },
   "shadowverse:SuaveBandit": {
     "NAME": "エレガントバンデッド",
-    "DESCRIPTION": "!D! ダメージを与える。 NL *輝く金貨 1枚を手札に加える。",
+    "DESCRIPTION": "!D! ダメージを与える。 NL *輝く金貨 1枚を手札に加える。 NL 進化可能 ",
     "UPGRADE_DESCRIPTION":"ダウングレード 。 NL !D! ダメージを2回与える。 NL *輝く金貨 2枚を手札に加える。"
   },
   "shadowverse:FrontDeskFrog": {
@@ -4387,8 +4382,8 @@
   },
   "shadowverse:AmerroSpearKnight": {
     "NAME": "スピアナイト・アミロス",
-    "DESCRIPTION": "!D! ダメージを与える。 NL  ピンチ ：ランダムな3枚の ヒーロー カードを1枚選択して手札に加える。",
-    "UPGRADE_DESCRIPTION":"!D! ダメージを2回与える。 NL  ピンチ ：ランダムな3枚の ヒーロー カードを1枚選択して手札に加え、それのコストをこのターンだけ-1する。"
+    "DESCRIPTION": "!D! ダメージを与える。 NL ヒーロー　カード1枚を手札に加える。 NL 進化可能 ",
+    "UPGRADE_DESCRIPTION":"!D! ダメージを2回与える。 NL  ピンチ ：ランダムな3枚の ヒーロー カードを1枚選択して手札に加え、それのコストをこのターンだけ-1する。 NL ダウングレード "
   },
   "shadowverse:HeroicEntry": {
     "NAME": "ヒロイックエントリー！",
@@ -4451,7 +4446,7 @@
   },
   "shadowverse:VerdantLieutenant": {
     "NAME": "葉脈の舎弟頭",
-    "DESCRIPTION": "八獄 NL !D! ダメージを与え、 !B! ブロック を得る。 NL このターン中にプレイしていたカードの数を+1する。 NL カードをプレイする時、それがこのターン中にプレイしていた4枚目以上なら、手札にあるこのカードを アップグレード し、カード1枚を引く。",
+    "DESCRIPTION": "八獄 NL !D! ダメージを与え、 !B! ブロック を得る。 NL このターン中にプレイしていたカードの数を+1する。 NL カードをプレイする時、それがこのターン中にプレイしていた4枚目以上なら、手札にあるこのカードを アップグレード し、カード1枚を引く。 NL 進化可能 ",
     "UPGRADE_DESCRIPTION":"八獄 NL !D! ダメージを与え、 !B! ブロック を得る。 NL このターン中にプレイしていたカードの数を+1する。 NL ダウングレード 。"
   },
   "shadowverse:BuddingInitiate": {
@@ -4653,24 +4648,27 @@
   },
   "shadowverse:DreadPirateFlag": {
     "NAME": "戦慄の海賊旗",
-    "DESCRIPTION": "ランダムな敵に !D! ダメージを与える。 NL このカードは 財宝 カードとして扱う。 NL 廃棄 。"
+    "DESCRIPTION": "ランダムな敵に !D! ダメージを2回与える。 NL このカードは 財宝 カードとして扱う。 NL 廃棄 。"
   },
   "shadowverse:TidalGunner": {
     "NAME": "潮流の砲手",
-    "DESCRIPTION": "八獄 NL !D! ダメージを与える。 NL *黄金の盃 1枚を手札に加える。 NL 廃棄札にある 財宝カード の数が7以上なら、それではなく *戦慄の海賊旗 1枚を手札に加える。 NL このターン、 財宝カード をプレイする度、ランダムな敵に !M! ダメージを与える。"
+    "DESCRIPTION": "八獄 NL !D! ダメージを与える。 NL *黄金の盃 1枚を手札に加える。 NL 自分は「 *戦慄の海賊旗 1枚かスキルカード2枚を廃棄する度、ランダムな敵に !M! ダメージ」を持つ。",
+    "UPGRADE_DESCRIPTION": "八獄 NL !D! ダメージを与える。 NL *戦慄の海賊旗 1枚を手札に加える。 NL 自分は「 *戦慄の海賊旗 1枚かスキルカード2枚を廃棄する度、ランダムな敵に !M! ダメージ」を持つ。"
   },
   "shadowverse:DeepSeaScout": {
     "NAME": "海原の斥候",
-    "DESCRIPTION": "八獄 NL !D! ダメージを与える。 NL *黄金の靴 1枚を手札に加える。 NL 廃棄札にある 財宝カード の数が7以上なら、それではなく *戦慄の海賊旗 1枚を手札に加える。 NL このターン、 財宝カード をプレイする度、カード1枚を引く。"
+    "DESCRIPTION": "八獄 NL !D! ダメージを与える。 NL *黄金の靴 1枚を手札に加える。 NL 限定 :自分は「 *戦慄の海賊旗 1枚かスキルカード2枚を廃棄する度、カード1枚を引く」を持つ。",
+    "UPGRADE_DESCRIPTION": "八獄 NL !D! ダメージを与える。 NL *戦慄の海賊旗 1枚を手札に加える。 NL 限定 :自分は「 *戦慄の海賊旗 1枚かスキルカード2枚を廃棄する度、カード1枚を引く」を持つ。"
   },
   "shadowverse:StormWrackedFirstMate": {
     "NAME": "怒涛の副船長",
-    "DESCRIPTION": "八獄 NL !D! ダメージを与える。 NL *黄金の首飾り 1枚を手札に加える。 NL 廃棄札にある 財宝カード の数が7以上なら、それではなく *戦慄の海賊旗 1枚を手札に加える。 NL このターン、 財宝カード をプレイする度、 キャノンクルー 1体を出す(上限は1ターンに5回)。"
+    "DESCRIPTION": "八獄 NL !B! ブロックを得る。 NL *黄金の首飾り 1枚を手札に加える。 NL 限定 :自分は「 *戦慄の海賊旗 1枚かスキルカード2枚を廃棄する度、可能なら キャノンクルー 1体を出す」を持つ。",
+    "UPGRADE_DESCRIPTION": "八獄 NL !B! ブロックを得る。 NL *戦慄の海賊旗 1枚を手札に加える。 NL 限定 :自分は「 *戦慄の海賊旗 1枚かスキルカード2枚を廃棄する度、可能なら キャノンクルー 1体を出す」を持つ。"
   },
   "shadowverse:Barbaros": {
     "NAME": "出航の咎人・バルバロス",
-    "DESCRIPTION": "八獄 ・ 融合 : 財宝カード NL これに融合した時、これを アップグレード する。 NL !D! ダメージを与える。 NL *戦慄の海賊旗 1枚を手札に加える。 NL 廃棄札にある 財宝カード の数が7以上なら、エナジー2を得る。 NL エンハンス 3 与えるダメージを倍にする。",
-    "UPGRADE_DESCRIPTION":"八獄 ・ 融合 : 財宝カード NL !D! ダメージを与える。 NL *戦慄の海賊旗 1枚を手札に加える。 NL 廃棄札にある 財宝カード の数が7以上なら、エナジー2を得る。 NL エンハンス 3 与えるダメージを倍にする。 NL ダウングレード"
+    "DESCRIPTION": "八獄 ・ 融合 : 財宝カード NL これに融合した時、 *戦慄の海賊旗 1枚を手札に加え、エナジー1を得る。 NL !D! ダメージを与える。 NL 進化可能 ",
+    "UPGRADE_DESCRIPTION":"八獄 ・ 融合 : 財宝カード NL これに融合した時、 *戦慄の海賊旗 1枚を手札に加え、エナジー1を得る。 NL !D! ダメージを与える。 NL 限定 :自分は「他のスキルを廃棄する度、 *戦慄の海賊旗 1枚を手札に加える」を持つ。 NL ダウングレード "
   },
   "shadowverse:Radiel": {
     "NAME": "武皇の執行者・レーディエル",
@@ -4682,7 +4680,7 @@
   },
   "shadowverse:WardenOfHonor": {
     "NAME": "尽忠の看守",
-    "DESCRIPTION": "八獄 ・ 結晶 0 NL 次のターン開始時に追加でカード1枚を引く。これの複製1枚を捨札に加える。 NL  NL --------------------- NL  NL これを アップグレード する。 !B! ブロック を2回得る。 NL これの複製1枚を捨札に加える。",
+    "DESCRIPTION": "八獄 ・ 結晶 0 NL 次のターン開始時に追加でカード1枚を引く。これの複製1枚を捨札に加える。 NL  NL --------------------- NL  NL これを アップグレード する。 !B! ブロック を2回得る。 NL これの複製1枚を捨札に加える。 NL 進化可能 ",
     "UPGRADE_DESCRIPTION":"八獄 ・ 結晶 0 NL 次のターン開始時に追加でカード1枚を引く。これの複製1枚を捨札に加える。 NL  NL --------------------- NL  NL !B! ブロック を2回得る。 NL これの複製1枚を捨札に加える。 NL ダウングレード "
   },
   "shadowverse:IronwroughtDefender": {
@@ -5037,7 +5035,8 @@
   },
   "shadowverse:Weiss": {
     "NAME": "選別の教員・ヴァイス",
-    "DESCRIPTION": "学園 NL このターン、敵からのデバフを受けない。 NL このターン、敵はバフを受けない。"
+    "DESCRIPTION": "学園 NL 進化可能 ",
+    "UPGRADE_DESCRIPTION": "学園 NL このターン、敵からのデバフを受けない。 NL このターン、敵はバフを受けない。"
   },
   "shadowverse:BishopPool": {
     "NAME": "",
@@ -5559,7 +5558,7 @@
   },
   "shadowverse:SoaringDragonewt": {
     "NAME": "飛翔の竜人",
-    "DESCRIPTION": "機械 NL スキルをプレイする時、これを アップグレード する。 NL !D! ダメージを与える。 NL 手札からコスト最小のカードをランダムに1枚捨てる。カードを1枚引く。",
+    "DESCRIPTION": "機械 NL スキルをプレイする時、これを アップグレード する。 NL !D! ダメージを与える。 NL 手札からコスト最小のカードをランダムに1枚捨てる。カードを1枚引く。 NL 進化可能 ",
     "UPGRADE_DESCRIPTION":"機械 ・ ダウングレード NL !D! ダメージを与える。 NL 手札からコスト最小のカードをランダムに1枚捨てる。カードを1枚引く。これを2回繰り返す。"
   },
   "shadowverse:WiseDragonewtScholar": {
@@ -6060,8 +6059,8 @@
   },
   "shadowverse:Rogers": {
     "NAME": "大海の征服者・ロジャー",
-    "DESCRIPTION": "エナジー1を得る。 *黄金の盃 1枚を手札に加える。 NL エセリアル 。",
-    "UPGRADE_DESCRIPTION":"エナジー1を得る。 *黄金の盃 1枚を手札に加える。 NL キャノンクルー 1体を出す。 NL 自分は「 財宝カード をプレイする度、それがこのターン中に1枚目なら、エナジー1を得る。2枚目なら、敵全体に10ダメージを与える。」を持つ。 NL エセリアル 。"
+    "DESCRIPTION": "エナジー1を得る。 *黄金の盃 2枚を手札に加える。 NL エセリアル  NL 進化可能 ",
+    "UPGRADE_DESCRIPTION":"エナジー1を得る。 *黄金の盃 2枚を手札に加える。 NL キャノンクルー 1体を出す。 NL 自分は「 財宝カード をプレイする度、それがこのターン中に1枚目なら、エナジー1を得る。2枚目なら、敵全体に10ダメージを与える。」を持つ。 NL エセリアル 。"
   },
   "shadowverse:DelugeOfArrows": {
     "NAME": "アローストーム",
@@ -6168,7 +6167,7 @@
   },
   "shadowverse:Hunters": {
     "NAME": "宵闇の狩人・リアン＆アルフィ",
-    "DESCRIPTION": "廃棄堆にある *EP が5枚以上なら、 融合 できる。 NL 融合 :スターター以外のカード NL *幽闇の狩猟者・リアン＆アルフィ に 融合変身 する。 NL  NL --------------------- NL  NL !B! ブロックを得る。 NL ファイアバリア 1を得る。 NL *EP をプレイする時、これを アップグレード し、 *EP 1枚を手札に加える。",
+    "DESCRIPTION": "廃棄堆にある *EP が5枚以上なら、 融合 できる。 NL 融合 :スターター以外のカード NL *幽闇の狩猟者・リアン＆アルフィ に 融合変身 する。 NL  NL --------------------- NL  NL !B! ブロックを得る。 NL ファイアバリア 1を得る。 NL *EP をプレイする時、これを アップグレード し、 *EP 1枚を手札に加える。 NL 進化可能 ",
     "UPGRADE_DESCRIPTION": "廃棄堆にある *EP が5枚以上なら、 融合 できる。 NL 融合 :スターター以外のカード NL *幽闇の狩猟者・リアン＆アルフィ に 融合変身 する。 NL  NL --------------------- NL  NL !B! ブロックを得る。 NL ファイアバリア 3を得る。 NL ダウングレード 。"
   },
   "shadowverse:TanzaniteConvictor": {
@@ -6498,7 +6497,7 @@
   },
   "shadowverse:ManmaruRe": {
     "NAME": "頑強のマンマル1号",
-    "DESCRIPTION": "機械 NL !B! ブロック を得る 。 NL 谢幕曲 :被 廃棄 时，抽1张牌。 NL 廃棄 。"
+    "DESCRIPTION": "機械 NL !B! ブロック を得る 。 NL ラストワード :被 廃棄 时，抽1张牌。 NL 廃棄 。"
   },
   "shadowverse:Aenea2": {
     "NAME": "紫紺の創造者・エンネア",
@@ -6705,7 +6704,7 @@
   },
   "shadowverse:Bayleon": {
     "NAME": "王者の曙光・ベイリオン",
-    "DESCRIPTION": "自然 NL !B! ブロック を得る 。 NL Xが10以上なら、これを アップグレード する。 NL Xはこの戦闘中にプレイした *ナテラの大樹 の数と 連携 数の合計である。",
+    "DESCRIPTION": "自然 NL !B! ブロック を得る 。 NL Xが10以上なら、これを アップグレード する。 NL Xはこの戦闘中にプレイした *ナテラの大樹 の数と 連携 数の合計である。 NL 進化可能 ",
     "UPGRADE_DESCRIPTION":"自然 NL  !D! ダメージを与える，!B! ブロック を得る 。 NL 自分は「1ターンに1度、 *ナテラの大樹 をプレイする時、 *光の剣閃 1枚を手札に加える」を持つ。 NL ダウングレード 。",
     "EXTENDED_DESCRIPTION": [
       "（Xは",
@@ -6793,10 +6792,188 @@
   },
   "shadowverse:SummonDivineTreasure": {
     "NAME": "神器鳴動",
-    "DESCRIPTION": "チョイス : NL *ジャジメント・スピア NL *ギルティ・シールド NL *エターナル・ドグマ NL エンハンス 2： *神器の使者 1枚を手札に加える。 NL エンハンス 3： *神器の番人 1枚を手札に加える。 NL あと !stslib:ex! 回使って廃棄する。"
+    "DESCRIPTION": "チョイス : NL *ジャジメント・スピア NL *ギルティ・シールド NL *エターナル・ドグマ NL エンハンス 2： *神器の使者 1枚を手札に加える。 NL エンハンス 3： *神器の番人 1枚を手札に加える。 NL エセリアル 。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION":"チョイス : NL *ジャジメント・スピア NL *ギルティ・シールド NL *エターナル・ドグマ NL エンハンス 2： *神器の使者 1枚を手札に加える。 NL エンハンス 3： *神器の番人 1枚を手札に加える。 NL 廃棄 。"
   },
   "shadowverse:SummonDivineTreasure_Copy": {
     "NAME": "神器鳴動",
     "DESCRIPTION": "チョイス : NL *ジャジメント・スピア NL *ギルティ・シールド NL *エターナル・ドグマ NL 廃棄 。"
+  },
+  "shadowverse:Razia": {
+    "NAME": "天穿の銃槍騎・ラスティナ",
+    "DESCRIPTION": "!B! ブロック を 得る  。 NL 次のターンまで、攻撃を受ける度、ブロックがまだ残っているなら、 筋力 1を得る。反撃ダメージ !M! を与える。 NL 反撃ダメージは 3倍の筋力ボーナスが適用される。"
+  },
+  "shadowverse:Goblin": {
+    "NAME": "ゴブリン",
+    "DESCRIPTION": "!D! ダメージを与える。",
+    "UPGRADE_DESCRIPTION":"!D! ダメージを与える。 NL 限定 : 廃棄 を持つランダムな *女騎士 か *女エルフ カード1枚を手札に加える。"
+  },
+  "shadowverse:AngelicSnipe": {
+    "NAME": "エンジェルスナイプ",
+    "DESCRIPTION": "!D! ダメージを与える。",
+    "UPGRADE_DESCRIPTION":"!D! ダメージを与える。 NL カード1枚を引く。 NL 廃棄 。"
+  },
+  "shadowverse:CloudChorus": {
+    "NAME": "天上の楽曲",
+    "DESCRIPTION": "!B! ブロック を 得る  。",
+    "UPGRADE_DESCRIPTION":"!B! ブロック を 得る  。 NL 限定 ：HPを !M! 回復する。"
+  },
+  "shadowverse:AngelicBarrage": {
+    "NAME": "エンジェルバレッジ",
+    "DESCRIPTION": "敵全体に !D! ダメージを与える。"
+  },
+  "shadowverse:Goliath": {
+    "NAME": "ゴリアテ",
+    "DESCRIPTION": "!D! ダメージを与える。",
+    "UPGRADE_DESCRIPTION":"!D! ダメージを与える。 NL !B! ブロック を 得る  。"
+  },
+  "shadowverse:AngelicSwordMaiden": {
+    "NAME": "天剣の乙女",
+    "DESCRIPTION": "!D! ダメージを与える。 NL !B! ブロック を 得る  。"
+  },
+  "shadowverse:RadiantLuminousMage": {
+    "NAME": "光辉的鲁米那斯法师",
+    "DESCRIPTION": "進化可能 、 ダウングレード か 何度も アップグレード できるアタックをプレイする度、 *EP 1枚を手札に加える。",
+    "UPGRADE_DESCRIPTION":"進化可能 、 ダウングレード か 何度も アップグレード できるアタックをプレイする度、 *EP 1枚を手札に加える。 NL これが引かれた時、 *EP 1枚を手札に加える。"
+  },
+  "shadowverse:CourtlyDance": {
+    "NAME": "貴族の舞踏",
+    "DESCRIPTION": "山札から 進化可能 、 ダウングレード か 何度も アップグレード できるアタック !M! 枚をプレイする。それらを アップグレード する。"
+  },
+  "shadowverse:Troya": {
+    "NAME": "闇夜の斥候・トロイア",
+    "DESCRIPTION": "!D! ダメージを与える。 NL このターン中にぷれいしていたカードが2枚以上なら、カード1枚を引く。 NL アップグレードしたアタックか 進化可能 のアタックを2枚プレイしたなら、これを アップグレード する。 NL 進化可能",
+    "UPGRADE_DESCRIPTION":"ダウングレード NL !D! ダメージを与える。 脱力 と 弱体化 1を与える。 NL このターン中にプレイしていたカードが2枚以上なら、カード1枚を引く。 NL *EP 1枚を手札に加える。"
+  },
+  "shadowverse:MechaGoblin": {
+    "NAME": "メカゴブリン",
+    "DESCRIPTION": "机械 NL !D! ダメージを与える。 NL ラストワード :プレイした時 *リペアモード 1枚を手札に加える。"
+  },
+  "shadowverse:TravelersRespite": {
+    "NAME": "荒野の休息",
+    "DESCRIPTION": "自然 NL HPを !M! 回復する。 NL *ナテラの大樹 1枚を手札に加える。 NL 廃棄 。"
+  },
+  "shadowverse:Lyrial": {
+    "NAME": "天弓の天使・リリエル",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 進化可能",
+    "UPGRADE_DESCRIPTION": "ダウングレード 。 NL !D! ダメージを与える。 NL !M! ダメージを与える。"
+  },
+  "shadowverse:DarkLyrial": {
+    "NAME": "ダークリリエル",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 手札に他のコスト2以下の無色アタックがあるなら、 筋力 と 敏捷性 !M! を得る。"
+  },
+  "shadowverse:AngelOfTheWord": {
+    "NAME": "御言葉の天使",
+    "DESCRIPTION": "!D! ダメージを与える。"
+  },
+  "shadowverse:AngelOfDarkWord": {
+    "NAME": "暗言の天使",
+    "DESCRIPTION": "敵全体に!D! ダメージを与える。"
+  },
+  "shadowverse:DarkGabriel": {
+    "NAME": "ダークガブリエル",
+    "DESCRIPTION": "敵は 筋力 と 敏捷性 Xを失う。 NL この戦闘中にプレイしていたコスト1以下の無色アタック1枚を手札に加え、それのダメージを+3、ブロック+4する。",
+    "UPGRADE_DESCRIPTION": "敵は 筋力 と 敏捷性 X+1を失う。 NL この戦闘中にプレイしていたコスト1以下の無色アタック1枚を手札に加え、それのダメージを+3、ブロック+4する。"
+  },
+  "shadowverse:HealingAngel": {
+    "NAME": "ヒーリングエンジェル",
+    "DESCRIPTION": "!B! ブロック を 得る  。 NL HPを !M! 回復する。 NL 廃棄 。"
+  },
+  "shadowverse:DarkHealingAngel": {
+    "NAME": "ダークヒーリングエンジェル",
+    "DESCRIPTION": "!B! ブロック を 得る。 NL 敵全体に !M! ダメージを与える。 NL HPを !M! 回復する。 NL カード !M! 枚を引く。 NL 廃棄 。"
+  },
+  "shadowverse:ShieldAngel": {
+    "NAME": "シールドエンジェル",
+    "DESCRIPTION": "!B! ブロック を 得る  。"
+  },
+  "shadowverse:DarkShieldAngel": {
+    "NAME": "ダークドエンジェル",
+    "DESCRIPTION": "!B! ブロック を 得る  。 NL ランダムな敵に !D! ダメージを与える。 NL !D! ダメージを与える。"
+  },
+  "shadowverse:AngelKnight": {
+    "NAME": "エンジェルナイト",
+    "DESCRIPTION": "!B! ブロック を 得る。 NL 筋力 1を得る。"
+  },
+  "shadowverse:DarkAngelKnight": {
+    "NAME": "ダークエンジェルナイト",
+    "DESCRIPTION": "!B! ブロック を 得る  。 NL 筋力 と 敏捷性 1を得る。"
+  },
+  "shadowverse:Altaia": {
+    "NAME": "ホーリーエンジェル・アルテア",
+    "DESCRIPTION": "手札1枚を無色カードにする。 NL !D! ダメージを与える。 NL このダメージは手札の無色カードの枚数によって強化される。"
+  },
+  "shadowverse:DarkAltaia": {
+    "NAME": "ダークアルテア",
+    "DESCRIPTION": "NL !D! ダメージを与える。 NL このダメージは手札の無色カードの枚数によって強化される。 NL カード2枚を引く。"
+  },
+  "shadowverse:FallenAngel": {
+    "NAME": "堕天使",
+    "DESCRIPTION": "!D! ダメージを与える。 NL HPを !M! 回復する。 NL 廃棄 。"
+  },
+  "shadowverse:DarkAngelChoice": {
+    "NAME": "堕天",
+    "DESCRIPTION": "ランダムな堕天使カード3枚から1枚を選択して手札に加える。",
+    "UPGRADE_DESCRIPTION": "アップグレード したランダムな堕天使カード3枚から1枚を選択して手札に加える。"
+  },
+  "shadowverse:AngelChoice": {
+    "NAME": "天使化",
+    "DESCRIPTION": "手札のアタック1枚を選択する。それが堕天使カードなら、 筋力 と 敏捷性 2を得る。それを天使化させる。 NL そうでないなら、それを消滅させ、 *堕天使 1枚を手札に加える。",
+    "UPGRADE_DESCRIPTION": "手札のアタック1枚を選択する。それが堕天使カードなら、 筋力 と 敏捷性 2を得る。それを天使化させる。 NL そうでないなら、それを消滅させ、 *堕天使+ 1枚を手札に加える。"
+  },
+  "shadowverse:WingedInversion": {
+    "NAME": "反転する翼",
+    "DESCRIPTION": "チョイス : NL *堕天 NL *天使化 ",
+    "UPGRADE_DESCRIPTION": "チョイス : NL *堕天+ NL *天使化+ "
+  },
+  "shadowverse:SeraphOfSin": {
+    "NAME": "穢れし天兵",
+    "DESCRIPTION": "!D! ダメージを与える。 NL  廃棄 を持つ *反転する翼 1枚を手札に加える。",
+    "UPGRADE_DESCRIPTION": "!D! ダメージを与える。 NL  廃棄 を持つ *反転する翼 1枚を手札に加える。 NL *堕天使 1枚を手札に加える。"
+  },
+  "shadowverse:ReturnToHeaven": {
+    "NAME": "天への帰還",
+    "DESCRIPTION": "手札の無色アタック1枚を廃棄し、それの *複製品 1枚を手札に加え、エナジー !M! を得る。 NL それが堕天使カードなら、天使化させる。 NL 廃棄 。"
+  },
+  "shadowverse:SeraphOfVirtue": {
+    "NAME": "清らかな天兵",
+    "DESCRIPTION": "!D! ダメージを与える。 NL *天への帰還 1枚を手札に加える。"
+  },
+  "shadowverse:HarbingerOfTheNight": {
+    "NAME": "暗黒の御使い",
+    "DESCRIPTION": "!D! ダメージを与える。 NL  廃棄 を持つ *反転する翼 1枚を手札に加える。"
+  },
+  "shadowverse:HarbingerOfTheDaylight": {
+    "NAME": "光翼の御使い",
+    "DESCRIPTION": "!D! ダメージを与える。 NL これが引かれた時、 アップグレード する。 NL 進化可能 ",
+    "UPGRADE_DESCRIPTION": "ダウングレード 。 NL !D! ダメージを与える。"
+  },
+  "shadowverse:AngelOfDarkness": {
+    "NAME": "漆黒の使徒",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 敵がバフを持っているなら、 廃棄 を持つ *反転する翼 1枚を手札に加える。"
+  },
+  "shadowverse:AngelOfBrightness": {
+    "NAME": "純白の使徒",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 自分は 「 *反転する翼 か *天への帰還 をプレイする度、ランダムな敵に !D! ダメージを与える」を持つ。"
+  },
+  "shadowverse:SingleWingedExecutor": {
+    "NAME": "片翼の執行者",
+    "DESCRIPTION": "限定 :無色アタックをプレイする時、それとこれを アップグレード し、 筋力 と 敏捷性 1を得る。 NL !B! ブロック を 得る。 NL [E] を得る。"
+  },
+  "shadowverse:SingleWingedRebellion": {
+    "NAME": "片翼の反逆者",
+    "DESCRIPTION": "限定 :堕天使カードをプレイする時、それとこれを アップグレード する。 NL !B! ブロック を 得る  。 NL [E] を得る。 NL 廃棄 を持つ *反転する翼 1枚を手札に加える。"
+  },
+  "shadowverse:PurifyGuardian": {
+    "NAME": "ピュリファイガーディアン",
+    "DESCRIPTION": "!B! ブロック を 得る  。 NL 手札の無色アタック1枚を捨て、次に受けるダメージを０にする。"
+  },
+  "shadowverse:CorruptionGuardian": {
+    "NAME": "コラプションガーディアン",
+    "DESCRIPTION": "!B! ブロック を 得る  。 NL 廃棄 を持つ *反転する翼 1枚を手札に加える。 NL 手札の無色アタック1枚を捨て、カード1枚を引き、 [E] を得る。"
+  },
+  "shadowverse:ChaoticAngel": {
+    "NAME": "カオティックエンジェル",
+    "DESCRIPTION": "!D! ダメージを2回与える。 NL この戦闘中にプレイしていた無色カード1枚につき、ダメージを+ !M! する。 NL エンハンス 4: 筋力 と 敏捷性 以外のデバフを受けなくなり、エナジー2を得る。 廃棄 を持つ *反転する翼 2枚を手札に加える。"
   }
 }

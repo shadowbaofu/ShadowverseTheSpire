@@ -40,9 +40,10 @@ public class DesertPathfinder extends CustomCard {
     }
 
     @Override
-    public void triggerOnEndOfPlayerTurn() {
+    public void triggerOnExhaust() {
         addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
     }
+
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {

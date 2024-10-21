@@ -2702,7 +2702,7 @@
   },
   "shadowverse:CatAdmiral": {
     "NAME": "俏猫上将",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 协作 7 :再造成1次伤害。 NL 可进化",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 协作 7 :再造成1次伤害。 NL 可进化 NL ",
     "UPGRADE_DESCRIPTION": "打出后解除升级 。 NL 造成 !D! 点伤害。 NL 协作 7 :再造成1次伤害。 NL 召唤一个 战盾卫士 和一个 重装骑士 。 NL ",
     "EXTENDED_DESCRIPTION": [
       "（协作数:",
@@ -6879,8 +6879,8 @@
   },
   "shadowverse:AngelChoice": {
     "NAME": "天使化",
-    "DESCRIPTION": "选择手中1张攻击牌，若其为堕天使牌，获得2点 力量 和 敏捷，且如果有对应的天使牌则将其消失并增加该牌到手中。 NL 若其不为堕天使牌，将其消失并增加1张 *堕天使 到手中。",
-    "UPGRADE_DESCRIPTION": "选择手中1张攻击牌，若其为堕天使牌，获得2点 力量 和 敏捷，且如果有对应的天使牌则将其消失并增加该牌到手中。 NL 若其不为堕天使牌，将其消失并增加1张 *堕天使+ 到手中。"
+    "DESCRIPTION": "选择手中1张攻击牌，若其为堕天使牌，获得2点 力量 和 敏捷 ，且如果有对应的天使牌则将其消失并增加该牌到手中。 NL 若其不为堕天使牌，将其消失并增加1张 *堕天使 到手中。",
+    "UPGRADE_DESCRIPTION": "选择手中1张攻击牌，若其为堕天使牌，获得2点 力量 和 敏捷 ，且如果有对应的天使牌则将其消失并增加该牌到手中。 NL 若其不为堕天使牌，将其消失并增加1张 *堕天使+ 到手中。"
   },
   "shadowverse:WingedInversion": {
     "NAME": "反转之翼",
@@ -6923,7 +6923,7 @@
   },
   "shadowverse:SingleWingedRebellion": {
     "NAME": "片翼反叛者",
-    "DESCRIPTION": "限定 :打出堕天使牌时，将这张牌和那张牌 升级 并。 NL 获得 !B! 点 格挡 。 NL 获得 [E] 。 NL 增加1张带有 消耗 的 *反转之翼 到手中。"
+    "DESCRIPTION": "限定 :打出堕天使牌时，将这张牌和那张牌 升级 。 NL 获得 !B! 点 格挡 。 NL 获得 [E] 。 NL 增加1张带有 消耗 的 *反转之翼 到手中。"
   },
   "shadowverse:PurifyGuardian": {
     "NAME": "纯净守护者",

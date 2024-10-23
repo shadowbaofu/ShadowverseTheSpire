@@ -294,12 +294,12 @@
       "Deals !Hanna:D! damage to ALL enemies. NL "
     ]
   },
-    "shadowverse:AeneaMod": {
+  "shadowverse:AeneaMod": {
     "TEXT": [
       " NL Last_Words: When Exhausted, add 1 *Assembly *Droid to your hand."
     ]
   },
-"shadowverse:CardPack": {
+   "shadowverse:CardPack": {
     "TEXT": [
       "[ #gOpen #ga #gBooster #gPack, #gObtain #gany #gcards #gyou #gfind ]",
       "Open Booster Pack！",

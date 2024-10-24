@@ -1970,6 +1970,13 @@
       " points. NL Next turn, add #b1 Lævateinn Dragon to your hand and lose this effect. NL Whenever you would die, heal 1 HP, remove all debuffs and repeat the previous effects instead (heal 3 HP, damage reduction)."
     ]
   },
+  "shadowverse:DualModeBPower": {
+    "NAME": "Lævateinn Dragon, Dual Mode β",
+    "DESCRIPTIONS": [
+      "Heal #b3 HP at the end of the turn. Reduce damage taken by #b",
+      " points."
+    ]
+  },
   "shadowverse:GuiltyShieldPower": {
     "NAME": "Shield of Transgression",
     "DESCRIPTIONS": [

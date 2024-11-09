@@ -1266,7 +1266,7 @@
   },
   "shadowverse:ZombieDog": {
     "NAME": "Night of the Living Dog",
-    "DESCRIPTION": "Natura. NL Deal !D! damage and gain !B! Block. NL Whenever you play a *Naterran *Great *Tree while that effect is already active, increase this card's damage and block by !M!."
+    "DESCRIPTION": "Natura. NL Deal !D! damage and gain !B! Block. NL Whenever you play a *Naterran *Great *Tree while that effect is already active, increase this card's damage and Block by !M!."
   },
   "shadowverse:NecroAnimals": {
     "NAME": "Necrofauna",
@@ -1767,7 +1767,7 @@
   },
   "shadowverse:BearBerserk": {
     "NAME": "Bear Pelt Warrior",
-    "DESCRIPTION": "Lose 1 HP, then ALL enemies lose 1 HP and you heal 2 HP. NL Repeat if Avarice is active. NL Gain !B! block."
+    "DESCRIPTION": "Lose 1 HP, then ALL enemies lose 1 HP and you heal 2 HP. NL Repeat if Avarice is active. NL Gain !B! Block."
   },
   "shadowverse:FloodBehemoth": {
     "NAME": "Flood Behemoth",
@@ -2376,7 +2376,7 @@
   },
   "shadowverse:DominateFortress": {
     "NAME": "Fearsome Fortress",
-    "DESCRIPTION": "Gain !B! Block. NL If Resonance is active for you, gain double the block."
+    "DESCRIPTION": "Gain !B! Block. NL If Resonance is active for you, gain double the Block."
   },
   "shadowverse:GadgetUser": {
     "NAME": "Gizmo Enthusiast",
@@ -4060,7 +4060,7 @@
   },
   "shadowverse:RoomServiceDevil": {
     "NAME": "Room Service Demon",
-    "DESCRIPTION": "Festive. NL Accelerate 0: Discard 1 card and deal !M! damage. NL NL --------------------- NL NL Deal !D! damage. If there are 2 or less cards in your hand, deal !D! damage again and gain !B! block."
+    "DESCRIPTION": "Festive. NL Accelerate 0: Discard 1 card and deal !M! damage. NL NL --------------------- NL NL Deal !D! damage. If there are 2 or less cards in your hand, deal !D! damage again and gain !B! Block."
   },
   "shadowverse:JubilanceWitch": {
     "NAME": "Jubilance Witch",

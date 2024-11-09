@@ -511,7 +511,6 @@
       "DESCRIPTION": "Gains additional effects when upgraded, or upgrades itself under certain conditions. The upgraded card reverts back after being played in combat." 
     },
   {
-    "PROPER_NAME": "Apocalypse Deck",
     "NAMES": [
       "apocalypse deck",
       "apocalypse_deck"
@@ -519,7 +518,6 @@
   "DESCRIPTION": "A 10 card deck containing expensive but extremely powerful cards to obliterate the enemy."
 },
 {
-  "PROPER_NAME": "Cocytus Deck",
   "NAMES": [
     "cocytus deck",
     "cocytus_deck"

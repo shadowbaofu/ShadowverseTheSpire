@@ -506,7 +506,7 @@
     {
       "PROPER_NAME": "Evolve",
       "NAMES": [
-        "Evolve"
+        "evolve"
       ],
       "DESCRIPTION": "Gains additional effects when upgraded, or upgrades itself under certain conditions. The upgraded card reverts back after being played in combat." 
     },

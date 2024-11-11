@@ -6873,8 +6873,8 @@
   },
   "shadowverse:DarkGabriel": {
     "NAME": "Dark Gabriel",
-    "DESCRIPTION": "Enemy loses X Strength and Dexterity. NL Randomly add a Colorless Attack that costs 1 Energy or less that has been played this combat to your hand, increase its damage by 3 and its Block by 4.",
-    "UPGRADE_DESCRIPTION": "Enemy loses X+1 Strength and Dexterity. NL Randomly add a Colorless Attack that costs 1 Energy or less that has been played this combat to your hand, increase its damage by 3 and its Block by 4."
+    "DESCRIPTION": "Enemy loses X Strength and Dexterity. NL Randomly add a Colorless Attack that costs 1 Energy or less and has been played this combat to your hand, increase its damage by 3 and its Block by 4.",
+    "UPGRADE_DESCRIPTION": "Enemy loses X+1 Strength and Dexterity. NL Randomly add a Colorless Attack that costs 1 Energy or less and has been played this combat to your hand, increase its damage by 3 and its Block by 4."
   },
   "shadowverse:HealingAngel": {
     "NAME": "Healing Angel",

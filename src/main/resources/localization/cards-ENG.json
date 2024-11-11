@@ -6789,11 +6789,11 @@
   },
   "shadowverse:SummonDivineTreasure": {
     "NAME": "Summon Divine Treasure",
-    "DESCRIPTION": "Choose: Play this card as: NL *Judgment *Spear NL *Shield *of *Transgression NL OR *Eternal *Dogma NL Enhance 2: Then add a *Divine *Treasure *Herald to your hand. NL Enhance 3: Then add a *Divine *Treasure *Guardian to your hand. NL Exhaust."
+    "DESCRIPTION": "Choose: Play this card as: NL *Judgment *Spear NL *Shield *of *Transgression NL OR *Eternal *Dogma NL Enhance 2: Add a *Divine *Treasure *Herald to your hand. NL Enhance 3: Add a *Divine *Treasure *Guardian to your hand. NL Ethereal. NL Exhaust."
   },
   "shadowverse:SummonDivineTreasure_Copy": {
     "NAME": "Summon Divine Treasure",
-    "DESCRIPTION": "Choose: Play this card as: NL *Judgment *Spear NL *Shield *of *Transgression NL OR *Eternal *Dogma NL Exhaust."
+    "DESCRIPTION": "Choose: Play this card as: NL *Judgment *Spear NL *Shield *of *Transgression NL OR *Eternal *Dogma NL Ethereal. NL Exhaust."
   },
   "shadowverse:DesertPathfinder": {
     "NAME": "Desert Pathfinder",

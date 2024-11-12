@@ -1998,5 +1998,19 @@
       "Draw #b1 additional card at the start of your turn and heal #b2 HP. Countdown #b",
       ": Lose this effect."
     ]
+  },
+ "shadowverse:RadiantLuminousMagePower": {
+    "NAME": "Radiant Luminous Mage",
+    "DESCRIPTIONS": [
+      "Whenever you play an Attack with Evolve or that downgrades after playing, put #b ",
+      " #yEvolution #yPoint into your hand."
+    ]
+ },
+   "shadowverse:DarkAngelPower": {
+    "NAME": "Angel of Light",
+    "DESCRIPTIONS": [
+      "Whenever you play a #yWinged #yInversion or #yReturn #yto #yHeaven, deal #b ",
+      " damage to a random enemy."
+    ]
   }
 }

@@ -1999,6 +1999,14 @@
       ": Lose this effect."
     ]
   },
+   "shadowverse:RaziaPower": {
+    "NAME": "Razia, Vengeful Cannonlancer",
+    "DESCRIPTIONS": [
+      "Whenever you are attacked, if you still have #y Block, gain #b1 Strength and deal #b ",
+      " damage. NL Otherwise deal #b ",
+      " damage twice and lose this effect. NL #yStrength affects the returned damage #b3 times."
+    ]
+  },
  "shadowverse:RadiantLuminousMagePower": {
     "NAME": "Radiant Luminous Mage",
     "DESCRIPTIONS": [

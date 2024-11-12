@@ -5743,7 +5743,7 @@
   },
   "shadowverse:Joe": {
     "NAME": "Coach Joe, Fiery Counselor",
-    "DESCRIPTION": "Academic. NL Crystallize 0: Exhaust 1 card in your hand. NL Add the Exhausted card to the draw pile and 1 copy of this card to the discard pile. NL Gain 1 Dexterity and draw 1 more card next turn. NL If you Exhausted an Academic card, draw 2 more cards next turn. NL --------------------- NL Gain !B! Block. If you have at least 4 Dexterity, deal !D! damage to ALL enemies. If you have at least 6 Dexterity, deal !M! damage to ALL enemies."
+    "DESCRIPTION": "Academic. NL Crystallize 0: Exhaust 1 card in your hand. NL Add the Exhausted card to the draw pile and this card to the discard pile. NL Gain 1 Dexterity. Draw 1 more card next turn. NL If you Exhausted an Academic card, draw 2 more cards next turn. NL --------------------- NL Gain !B! Block. If you have at least 4 Dexterity, deal !D! damage to ALL enemies. If you have at least 6 Dexterity, deal !M! damage to ALL enemies."
   },
   "shadowverse:Romelia": {
     "NAME": "Romelia, Lightning Striker",

@@ -2938,7 +2938,7 @@
   "shadowverse:Johann": {
     "NAME": "Johann, Ironforged Hero",
     "DESCRIPTION": "Machina. NL Heroic. NL Whenever you play a Machina card, subtract 1 from this card's cost. NL Deal !D! damage. Whenever you play a Machina card this turn, gain !M! Block.",
-    "UPGRADE_DESCRIPTION": "Machina. NL Heroic. NL Whenever you play a Machina card, subtract 1 from this card's cost. NL Deal !D! damage. Whenever you play a Machina card this turn, gain !M! Block. NL Retain"
+    "UPGRADE_DESCRIPTION": "Machina. NL Heroic - Retain. NL Whenever you play a Machina card, subtract 1 from this card's cost. NL Deal !D! damage. Whenever you play a Machina card this turn, gain !M! Block."
   },
   "shadowverse:Grayson": {
     "NAME": "Grayson, Rocket Blader",

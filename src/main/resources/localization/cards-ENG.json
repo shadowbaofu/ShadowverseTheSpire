@@ -4664,8 +4664,8 @@
   },
   "shadowverse:Barbaros": {
     "NAME": "Barbaros, Briny Convict",
-    "DESCRIPTION": "Condemned. NL Fusion: Loot cards. NL When a card is Fused to this card, upgrade this card. NL Deal !D! damage. NL Usurpation 7: Gain [E] [E]. NL Enhance 3: Double the damage. NL Evolve.",
-    "UPGRADE_DESCRIPTION": "Condemned. NL Fusion: Loot cards. NL Deal !D! damage. NL Add a *Dread *Pirate's *Flag to your hand. NL Usurpation 7: Gain [E] [E]. NL Enhance 3: Double the damage. NL Downgrade once played."
+    "DESCRIPTION": "Condemned. NL Fusion: Loot cards. NL When a card is Fused to this card, upgrade this card. NL Deal !D! damage. NL If at least 7 Loot cards were played or Fused, gain [E] [E]. NL Enhance 3: Double the damage. NL Evolve.",
+    "UPGRADE_DESCRIPTION": "Condemned. NL Fusion: Loot cards. NL Deal !D! damage. NL Add a *Dread *Pirate's *Flag to your hand. NL If at least 7 Loot cards were played or Fused, gain [E] [E]. NL Enhance 3: Double the damage. NL Downgrade once played."
   },
   "shadowverse:Radiel": {
     "NAME": "Radiel, Valorous Enforcer",

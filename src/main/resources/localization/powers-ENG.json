@@ -2012,7 +2012,14 @@
     "DESCRIPTIONS": [
       "Whenever you play an Attack with Evolve or that downgrades after playing, put #b ",
       " #yEvolution #yPoint into your hand."
+    ],
+    "shadowverse:BarbarosPower": {
+    "NAME": "Barbaros, Briny Convict",
+    "DESCRIPTIONS": [
+      "Each time you Exhaust a Skill card other than #yDread #yPirate's #yFlag, put ",
+      "a #yDread #yPirate's #yFlag in your hand."
     ]
+  },
  },
    "shadowverse:DarkAngelPower": {
     "NAME": "Angel of Light",

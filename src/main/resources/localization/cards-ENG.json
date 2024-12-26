@@ -2652,8 +2652,8 @@
   },
   "shadowverse:Octrice": {
     "NAME": "Octrice, Omen of Usurpation",
-    "DESCRIPTION": "Gain 2 Strength. Enemy loses 2 Strength. Gain !M! Gold. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain 2 Strength. Enemy loses 2 Strength. Gain !M! Gold. NL Add 2 random Loot cards to your hand. NL Exhaust."
+    "DESCRIPTION": "Limit: Gain 2 Strength. Enemy loses 2 Strength. Gain !M! Gold. NL Add 2 random Loot cards to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Limit: Gain 2 Strength. Enemy loses 2 Strength. Gain !M! Gold. NL Add 2 random Loot cards to your hand. NL Choose 1 of 3 cards with Last_Words and add it to your hand. It costs 0, deals no damage and gains 0 Block. NL Exhaust."
   },
   "shadowverse:Octrice2": {
     "NAME": "Octrice, Hollow Usurpation",
@@ -2697,7 +2697,7 @@
   },
   "shadowverse:DramaticRetreat": {
     "NAME": "Dramatic Retreat",
-    "DESCRIPTION": "Select 1 Attack card in your hand and shuffle it into your draw pile. NL It costs 0 until played. NL Draw !M! cards.",
+    "DESCRIPTION": "Select 1 Attack card your hand. NL Draw !M! cards. NL Shuffle the selected card into your draw pile. NL It costs 0 until played.",
     "EXTENDED_DESCRIPTION": [
       "I have no Attacks in my hand!"
     ]
@@ -3790,7 +3790,7 @@
   },
   "shadowverse:UltimateHollow": {
     "NAME": "Ultimate Hollow",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL Whenever you draw this card, add a copy of this card into your discard pile. NL This card is treated as a Loot card."
+    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL Whenever you draw this card, add a copy of this card to your hand. NL This card is treated as a Loot card."
   },
   "shadowverse:LoathingDesire": {
     "NAME": "Loathing Desire",
@@ -4648,7 +4648,7 @@
   },
   "shadowverse:DreadPirateFlag": {
     "NAME": "Dread Pirate's Flag",
-    "DESCRIPTION": "Deal !D! damage to a random enemy. NL (This card is considered a Loot card.) NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage to a random enemy twice. NL (This card is considered a Loot card.) NL Exhaust."
   },
   "shadowverse:TidalGunner": {
     "NAME": "Tidal Gunner",
@@ -6843,7 +6843,7 @@
   },
   "shadowverse:CourtlyDance": {
     "NAME": "Courtly Dance",
-    "DESCRIPTION": "Put !M! attacks with Evolve, Upgrade themselves or can be Upgraded multiple times from the draw pile to you hand, then upgrade them."
+    "DESCRIPTION": "Put !M! attacks with Evolve, Upgrade themselves or can be Upgraded multiple times from the draw pile to your hand, then upgrade them."
   },
   "shadowverse:Troya": {
     "NAME": "Troya, Nocturnal Scout",

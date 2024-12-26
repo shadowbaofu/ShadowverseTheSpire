@@ -44,7 +44,7 @@ public class Machinus extends AbstractRightClickCard {
     @Override
     protected void onRightClick() {
         if (turnCheck){
-            addToBot((AbstractGameAction) new FusionAction(8,false,true,true,this,AbstractShadowversePlayer.Enums.MACHINE,AbstractShadowversePlayer.Enums.NATURAL));
+            addToBot(new FusionAction(8,false,true,true,this,AbstractShadowversePlayer.Enums.MACHINE,AbstractShadowversePlayer.Enums.NATURAL));
             if (fusionCheck){
                 turnCheck = false;
             }
@@ -87,19 +87,15 @@ public class Machinus extends AbstractRightClickCard {
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         calculateCardDamage(abstractMonster);
-        addToBot((AbstractGameAction) new GainBlockAction((AbstractCreature) abstractPlayer,(AbstractCreature) abstractPlayer,this.block));
-        addToBot((AbstractGameAction)new SFXAction("ATTACK_HEAVY"));
-        addToBot((AbstractGameAction)new VFXAction((AbstractCreature)abstractPlayer, (AbstractGameEffect)new MindblastEffect(abstractPlayer.dialogX, abstractPlayer.dialogY, abstractPlayer.flipHorizontal), 0.1F));
-        addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
+        addToBot(new GainBlockAction(abstractPlayer,abstractPlayer,this.block));
+        addToBot(new SFXAction("ATTACK_HEAVY"));
+        addToBot(new VFXAction(abstractPlayer, new MindblastEffect(abstractPlayer.dialogX, abstractPlayer.dialogY, abstractPlayer.flipHorizontal), 0.1F));
+        addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
         if (this.machineCheck && this.naturalCheck){
-            addToBot((AbstractGameAction)new DrawPileToHandAction_Tag_Machinus(this.magicNumber, AbstractShadowversePlayer.Enums.NATURAL, AbstractShadowversePlayer.Enums.MACHINE));
+            addToBot(new DrawPileToHandAction_Tag_Machinus(this.magicNumber, AbstractShadowversePlayer.Enums.NATURAL, AbstractShadowversePlayer.Enums.MACHINE));
         }else if(this.magicNumber !=0 ){
-            addToBot((AbstractGameAction)new DrawPileToHandAction_Tag(this.magicNumber, AbstractShadowversePlayer.Enums.NATURAL, AbstractShadowversePlayer.Enums.MACHINE));
+            addToBot(new DrawPileToHandAction_Tag(this.magicNumber, AbstractShadowversePlayer.Enums.NATURAL, AbstractShadowversePlayer.Enums.MACHINE));
         }
-        this.baseMagicNumber = 0;
-        this.magicNumber = this.baseMagicNumber;
-        this.machineCheck = false;
-        this.naturalCheck = false;
     }
 
     @Override

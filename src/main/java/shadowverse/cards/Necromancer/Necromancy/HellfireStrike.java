@@ -23,8 +23,8 @@ public class HellfireStrike extends CustomCard {
 
     public HellfireStrike() {
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Necromancer.Enums.COLOR_PURPLE, CardRarity.UNCOMMON, CardTarget.ENEMY);
-        this.baseDamage = 4;
-        this.baseMagicNumber = 4;
+        this.baseDamage = 5;
+        this.baseMagicNumber = 5;
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(CardTags.STRIKE);
     }

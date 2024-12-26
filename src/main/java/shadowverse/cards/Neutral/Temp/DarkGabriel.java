@@ -16,7 +16,7 @@ import shadowverse.characters.AbstractShadowversePlayer;
 
 public class DarkGabriel extends AbstractNeutralCard {
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:DarkGabriel");
-    public static final String ID = "shadowverse:Gabriel";
+    public static final String ID = "shadowverse:DarkGabriel";
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION; public static final String IMG_PATH = "img/cards/DarkGabriel.png";
     public DarkGabriel() {

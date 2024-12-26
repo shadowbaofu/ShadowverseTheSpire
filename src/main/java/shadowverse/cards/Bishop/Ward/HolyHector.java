@@ -32,7 +32,7 @@ public class HolyHector
 
     public HolyHector() {
         super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.RARE, CardTarget.ENEMY);
-        this.baseDamage = 20;
+        this.baseDamage = 25;
         this.cardsToPreview = (AbstractCard)new HolyCavalier();
     }
 
@@ -40,7 +40,7 @@ public class HolyHector
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(4);
+            upgradeDamage(5);
             this.cardsToPreview.upgrade();
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();

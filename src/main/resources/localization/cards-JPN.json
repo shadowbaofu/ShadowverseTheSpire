@@ -3145,8 +3145,8 @@
   },
   "shadowverse:ImaginationRealized": {
     "NAME": "想像の具現化",
-    "DESCRIPTION": "カードを3枚引き、それらのコストはこのターン0になる。 NL 廃棄 。",
-    "UPGRADE_DESCRIPTION": "カードを3枚引き、それらのコストはこの戦闘中0になる。 NL 廃棄 。"
+    "DESCRIPTION": "カードを3枚引き、それらのコストはこのターン0になる。 NL 廃棄 。 NL エセリアル 。",
+    "UPGRADE_DESCRIPTION": "カードを3枚引き、それらのコストはこの戦闘中0になる。 NL 廃棄 。 NL エセリアル 。"
   },
   "shadowverse:GuildAssembly": {
     "NAME": "ギルド会議",
@@ -4500,7 +4500,7 @@
   },
   "shadowverse:ObsessiveScholar": {
     "NAME": "忘我の才媛",
-    "DESCRIPTION": "八獄 ・ 融合 ： スターターでないスキル以外。 NL !D! ダメージを与える。 NL コスト0の *没頭の実験体 1枚を手札に加える。 NL 融合 していたなら、ランダムな 八獄 カード1枚を山札から手札に加える。"
+    "DESCRIPTION": "八獄 ・ 融合 ： スターターでないアタック。 NL !D! ダメージを与える。 NL コスト0の *没頭の実験体 1枚を手札に加える。 NL 融合 していたなら、ランダムな 八獄 カード1枚を山札から手札に加える。"
   },
   "shadowverse:Sephie": {
     "NAME": "耽溺の咎人・セフィー",

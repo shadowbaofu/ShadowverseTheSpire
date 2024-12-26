@@ -52,11 +52,11 @@ public class HolyPurebomb extends CustomCard {
             addToBot(new ExhaustSpecificCardAction(c, abstractPlayer.hand));
         }
         if(abstractMonster.hasPower("Artifact")){
-            addToBot((AbstractGameAction) new RemoveSpecificPowerAction(abstractMonster,abstractPlayer,"Artifact"));
+            addToBot(new RemoveSpecificPowerAction(abstractMonster,abstractPlayer,"Artifact"));
         }else {
             for (AbstractPower pow : abstractMonster.powers){
                 if (pow.type == AbstractPower.PowerType.BUFF && pow.ID!="Invincible" &&pow.ID!="Mode Shift"&&pow.ID!="Split"&&pow.ID!="Unawakened"&&pow.ID!="Life Link"&&pow.ID!="Fading"&&pow.ID!="Stasis"&&pow.ID!="Minion"&&pow.ID!="Shifting"&&pow.ID!="shadowverse:chushouHealPower"){
-                    addToBot((AbstractGameAction) new RemoveSpecificPowerAction(pow.owner,abstractPlayer,pow.ID));
+                    addToBot(new RemoveSpecificPowerAction(pow.owner,abstractPlayer,pow.ID));
                     break;
                 }
             }

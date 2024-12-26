@@ -21,6 +21,7 @@
    public ImaginationRealized() {
      super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.SKILL, Witchcraft.Enums.COLOR_BLUE, CardRarity.UNCOMMON, CardTarget.NONE);
      this.exhaust = true;
+     this.isEthereal = true;
    }
  
    

@@ -46,15 +46,15 @@ import com.megacrit.cardcrawl.vfx.combat.BlizzardEffect;
  
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     addToBot((AbstractGameAction)new SFXAction("FlameNGlass"));
+     addToBot(new SFXAction("FlameNGlass"));
        if (Settings.FAST_MODE) {
-           addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new BlizzardEffect(this.magicNumber + 1,
+           addToBot(new VFXAction(new BlizzardEffect(this.magicNumber + 1,
                    AbstractDungeon.getMonsters().shouldFlipVfx()), 0.25F));
        } else {
-           addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new BlizzardEffect(this.magicNumber + 1, AbstractDungeon.getMonsters().shouldFlipVfx()), 1.0F));
+           addToBot(new VFXAction(new BlizzardEffect(this.magicNumber + 1, AbstractDungeon.getMonsters().shouldFlipVfx()), 1.0F));
        }
-       addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
-       addToBot((AbstractGameAction)new DamageAllEnemiesAction((AbstractCreature)abstractPlayer, DamageInfo.createDamageMatrix(this.damage, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE, true));
+       addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
+       addToBot(new DamageAllEnemiesAction(abstractPlayer, DamageInfo.createDamageMatrix(this.damage, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE, true));
    }
  
    

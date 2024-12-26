@@ -32,7 +32,7 @@ public class Hector
 
     public Hector() {
         super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Necromancer.Enums.COLOR_PURPLE, CardRarity.RARE, CardTarget.ENEMY);
-        this.baseDamage = 20;
+        this.baseDamage = 25;
         this.cardsToPreview = (AbstractCard)new Zombie();
     }
 
@@ -40,7 +40,7 @@ public class Hector
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(4);
+            upgradeDamage(5);
             this.cardsToPreview.upgrade();
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();

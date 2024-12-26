@@ -3143,8 +3143,8 @@
   },
   "shadowverse:ImaginationRealized": {
     "NAME": "상상의 구현화",
-    "DESCRIPTION": "카드를 3장 뽑습니다. 그 카드들이 이번 턴 0코스트가 됩니다. NL 소멸.",
-    "UPGRADE_DESCRIPTION": "카드를 3장 뽑습니다. 그 카드들이 이번 전투 0코스트가 됩니다. NL 소멸."
+    "DESCRIPTION": "카드를 3장 뽑습니다. 그 카드들이 이번 턴 0코스트가 됩니다. NL 소멸. NL 휘발성.",
+    "UPGRADE_DESCRIPTION": "카드를 3장 뽑습니다. 그 카드들이 이번 전투 0코스트가 됩니다. NL 소멸. NL 휘발성."
   },
   "shadowverse:GuildAssembly": {
     "NAME": "길드 회의",

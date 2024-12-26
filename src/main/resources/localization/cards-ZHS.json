@@ -3137,8 +3137,8 @@
   },
   "shadowverse:ImaginationRealized": {
     "NAME": "想象的具现化",
-    "DESCRIPTION": "抽3张牌，使这些牌本回合耗能变为0。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "抽3张牌，使这些牌本场战斗耗能变为0。 NL 消耗 。"
+    "DESCRIPTION": "抽3张牌，使这些牌本回合耗能变为0。 NL 消耗 。 NL 虚无 。",
+    "UPGRADE_DESCRIPTION": "抽3张牌，使这些牌本场战斗耗能变为0。 NL 消耗 。 NL 虚无 。"
   },
   "shadowverse:GuildAssembly": {
     "NAME": "公会会议",
@@ -4489,7 +4489,7 @@
   },
   "shadowverse:ObsessiveScholar": {
     "NAME": "忘我的才女",
-    "DESCRIPTION": "八狱 · 融合 : 基础牌以外的非技能牌 。 NL  造成 !D! 点伤害。 NL 增加1张耗能为0的 *沉没的实验体 到手中。 NL 如果已 融合 ，随机从抽牌堆中将1张 八狱 牌加入手中。"
+    "DESCRIPTION": "八狱 · 融合 : 基础牌以外的攻击牌 。 NL  造成 !D! 点伤害。 NL 增加1张耗能为0的 *沉没的实验体 到手中。 NL 如果已 融合 ，随机从抽牌堆中将1张 八狱 牌加入手中。"
   },
   "shadowverse:Sephie": {
     "NAME": "沉溺的罪人·瑟霏",

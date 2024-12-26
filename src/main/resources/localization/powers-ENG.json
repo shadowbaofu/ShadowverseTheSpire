@@ -1833,7 +1833,7 @@
   "shadowverse:RogersPower": {
     "NAME": "Rogers, Ruler Of The Seas",
     "DESCRIPTIONS": [
-      "Whenever you play a #yLoot card, if it's the first one this turn, gain [E]. If it's the second one, deal #b10 damage to all enemies."
+      "Whenever you play a #yLoot card, if it's the first one this turn, gain 1 Energy. If it's the second one, deal #b10 damage to all enemies."
     ]
    },
   "shadowverse:UndyingWitchPower": {

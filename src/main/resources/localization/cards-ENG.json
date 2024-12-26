@@ -3063,7 +3063,7 @@
   },
   "shadowverse:Kagemitsu": {
     "NAME": "Kagemitsu, Matchless Blade",
-    "DESCRIPTION": "Can be upgraded multiple times. NL Deal !D! damage. NL Exhaust. NL If Fatal, upgrade this card. NL Last_Words: When Exhausted, put a 0 cost *Kagemitsu, *Lost *Samurai with the same number of upgrades to your hand next turn."
+    "DESCRIPTION": "Can be upgraded multiple times. NL Deal !D! damage. NL If Fatal, upgrade this card. NL Last_Words: When Exhausted, put a 0 cost *Kagemitsu, *Lost *Samurai with the same number of upgrades to your hand next turn. NL Exhaust."
   },
   "shadowverse:LostSamurai": {
     "NAME": "Kagemitsu, Lost Samurai",

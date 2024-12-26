@@ -3556,7 +3556,7 @@
   },
   "shadowverse:SacredCounter": {
     "NAME": "Holy Counterattack",
-    "DESCRIPTION": "If the enemy intends to attack and your Block is greater than the incoming damage, deal damage to that enemy equal to your Block.",
+    "DESCRIPTION": "If the enemy intends to attack and your Block is greater than the incoming damage, deal damage equal to your Block.",
     "EXTENDED_DESCRIPTION": [
       "NL (Deal !D! damage.)"
     ]

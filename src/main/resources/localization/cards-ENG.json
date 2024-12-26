@@ -3899,8 +3899,8 @@
   },
   "shadowverse:Erika": {
     "NAME": "Erika, Loyal Swordsavant",
-    "DESCRIPTION": "Protagonist NL !M! / 1. NL Rally 7: Put 1 *Killer *Instincts into your hand ( Limit ). NL Passive: Deal damage equal to 4 times this Follower's attack to a random enemy and lose 1 Health at the end of your turn. Whenever you play Attacks, summon *Followers or *Amulets, gain +1/+0 this turn.",
-    "UPGRADE_DESCRIPTION": "Protagonist NL !M! / 1. NL Rally 7: Put 1 *Killer *Instincts into your hand ( Limit ). NL Rally 15: Add 1 *Erika's *Sleight to hand. NL Passive: Deal damage equal to 4 times this Follower's attack to a random enemy and lose 1 Health at the end of your turn. Whenever you play Attacks, summon *Followers or *Amulets, gain +1/+0 this turn. NL Rally 7: Put 1 *Killer *Instincts into your hand ( Limit ).",
+    "DESCRIPTION": "Protagonist NL !M! / 1. NL Rally 7: Limit: Put 1 *Killer *Instincts into your hand. NL Passive: Deal damage equal to 4 times this Follower's attack to a random enemy and lose 1 Health at the end of your turn. Whenever you play Attacks, *Amulets or summon *Followers, gain +1/+0 this turn.",
+    "UPGRADE_DESCRIPTION": "Protagonist NL !M! / 1. NL Rally 7: Limit: Put 1 *Killer *Instincts into your hand. NL Rally 15: Add 1 *Erika's *Sleight to hand. NL Passive: Deal damage equal to 4 times this Follower's attack to a random enemy and lose 1 Health at the end of your turn. Whenever you play Attacks, *Amulets or summon *Followers, gain +1/+0 this turn.",
     "EXTENDED_DESCRIPTION": [
       "(Rally: ",
       ")"

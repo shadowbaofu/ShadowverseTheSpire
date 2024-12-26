@@ -2652,8 +2652,8 @@
   },
   "shadowverse:Octrice": {
     "NAME": "Octrice, Omen of Usurpation",
-    "DESCRIPTION": "Gain 2 Strength. Enemy loses 2 Strength. Gain !M! Gold. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain 2 Strength. Enemy loses 2 Strength. Gain !M! Gold. NL Add 2 random Loot cards to your hand. NL Exhaust."
+    "DESCRIPTION": "Limit: Gain 2 Strength. Enemy loses 2 Strength. Gain !M! Gold. NL Add 2 random Loot cards to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Limit: Gain 2 Strength. Enemy loses 2 Strength. Gain !M! Gold. NL Add 2 random Loot cards to your hand. NL Choose 1 of 3 cards with Last_Words and add it to your hand. It costs 0, deals no damage and gains 0 Block. NL Exhaust."
   },
   "shadowverse:Octrice2": {
     "NAME": "Octrice, Hollow Usurpation",
@@ -2697,7 +2697,7 @@
   },
   "shadowverse:DramaticRetreat": {
     "NAME": "Dramatic Retreat",
-    "DESCRIPTION": "Select 1 Attack card in your hand and shuffle it into your draw pile. NL It costs 0 until played. NL Draw !M! cards.",
+    "DESCRIPTION": "Select 1 Attack card your hand. NL Draw !M! cards. NL Shuffle the selected card into your draw pile. NL It costs 0 until played.",
     "EXTENDED_DESCRIPTION": [
       "I have no Attacks in my hand!"
     ]
@@ -2938,7 +2938,7 @@
   "shadowverse:Johann": {
     "NAME": "Johann, Ironforged Hero",
     "DESCRIPTION": "Machina. NL Heroic. NL Whenever you play a Machina card, subtract 1 from this card's cost. NL Deal !D! damage. Whenever you play a Machina card this turn, gain !M! Block.",
-    "UPGRADE_DESCRIPTION": "Machina. NL Heroic. NL Whenever you play a Machina card, subtract 1 from this card's cost. NL Deal !D! damage. Whenever you play a Machina card this turn, gain !M! Block. NL Retain"
+    "UPGRADE_DESCRIPTION": "Machina. NL Heroic - Retain. NL Whenever you play a Machina card, subtract 1 from this card's cost. NL Deal !D! damage. Whenever you play a Machina card this turn, gain !M! Block."
   },
   "shadowverse:Grayson": {
     "NAME": "Grayson, Rocket Blader",
@@ -3790,7 +3790,7 @@
   },
   "shadowverse:UltimateHollow": {
     "NAME": "Ultimate Hollow",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL Whenever you draw this card, add a copy of this card into your discard pile. NL This card is treated as a Loot card."
+    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL Whenever you draw this card, add a copy of this card to your hand. NL This card is treated as a Loot card."
   },
   "shadowverse:LoathingDesire": {
     "NAME": "Loathing Desire",
@@ -4644,28 +4644,31 @@
   },
   "shadowverse:Kyrzael": {
     "NAME": "Kyrzael, Killshot Enforcer",
-    "DESCRIPTION": "Condemned. NL Machina. NL Deal !D! damage. NL Add 2 *Wardens *of *the *Trigger to your hand. NL Change their costs to 0. NL Limit: Gain 2 Metallicize for each Machina card in your hand. "
+    "DESCRIPTION": "Condemned. NL Machina. NL Deal !D! damage. NL Add 2 *Wardens *of *the *Trigger to your hand. NL Change their costs to 0. NL Limit: Gain 2 Metallicize for each Machina card in your hand."
   },
   "shadowverse:DreadPirateFlag": {
     "NAME": "Dread Pirate's Flag",
-    "DESCRIPTION": "Deal !D! damage to a random enemy. NL (This card is considered a Loot card.) NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage to a random enemy twice. NL (This card is considered a Loot card.) NL Exhaust."
   },
   "shadowverse:TidalGunner": {
     "NAME": "Tidal Gunner",
-    "DESCRIPTION": "Condemned. NL Deal !D! damage. NL Put a *Gilded *Goblet into your hand. NL Usurpation 7: Put a *Dread *Pirate's *Flag instead. NL During this turn, deal !M! damage to a random enemy for each Loot card played."
+    "DESCRIPTION": "Condemned. NL Deal !D! damage. NL Add a *Gilded *Goblet to your hand. NL Limit: Gain 'Whenever you Exhaust 2 Skill cards or a *Dread *Pirate's *Flag, deal !M! damage to a random enemy.'",
+    "DESCRIPTION": "Condemned. NL Deal !D! damage. NL Add a *Dread *Pirate's *Flag to your hand. NL Limit: Gain 'Whenever you Exhaust 2 Skill cards or a *Dread *Pirate's *Flag, deal !M! damage to a random enemy.'"
   },
   "shadowverse:DeepSeaScout": {
     "NAME": "Deep-Sea Scout",
-    "DESCRIPTION": "Condemned. NL Deal !D! damage. NL Put a *Gilded *Boots into your hand. NL Usurpation 7: Put a *Dread *Pirate's *Flag instead. NL During this turn, draw a card for each Loot card played."
+    "DESCRIPTION": "Condemned. NL Deal !D! damage. NL Add a *Gilded *Boots to your hand. NL Limit: Gain 'Whenever you Exhaust 2 Skill cards or a *Dread *Pirate's *Flag, draw 1 card.'",
+    "UPGRADE_DESCRIPTION": "Condemned. NL Deal !D! damage. NL Add a *Dread *Pirate's *Flag to your hand. NL Limit: Gain 'Whenever you Exhaust 2 Skill cards or a *Dread *Pirate's *Flag, draw 1 card.'"
   },
   "shadowverse:StormWrackedFirstMate": {
     "NAME": "Storm-Wracked First Mate",
-    "DESCRIPTION": "Condemned. NL Gain !B! Block. NL Put a *Gilded *Necklace into your hand. NL Usurpation 7: Put a *Dread *Pirate's *Flag instead. NL During this turn, whenever you play a Loot card, summon a Cannoneer (Up to 5 times)."
+    "DESCRIPTION": "Condemned. NL Gain !B! Block. NL Add a *Gilded *Necklace to your hand. NL Limit: Gain 'Whenever you Exhaust 2 Skill cards or a *Dread *Pirate's *Flag, summon a Cannoneer.'",
+    "UPGRADE_DESCRIPTION": "Condemned. NL Gain !B! Block. NL Add a *Dread *Pirate's *Flag to your hand. NL Limit: Gain 'Whenever you Exhaust 2 Skill cards or a *Dread *Pirate's *Flag, summon a Cannoneer.'"
   },
   "shadowverse:Barbaros": {
     "NAME": "Barbaros, Briny Convict",
-    "DESCRIPTION": "Condemned. NL Fusion: Loot cards. NL When a card is Fused to this card, upgrade this card. NL Deal !D! damage. NL Usurpation 7: Gain [E] [E]. NL Enhance 3: Double the damage. NL Evolve.",
-    "UPGRADE_DESCRIPTION": "Condemned. NL Fusion: Loot cards. NL Deal !D! damage. NL Add a *Dread *Pirate's *Flag to your hand. NL Usurpation 7: Gain [E] [E]. NL Enhance 3: Double the damage. NL Downgrade once played."
+    "DESCRIPTION": "Condemned. NL Fusion: Loot cards. NL When cards are Fused to this card, gain [E] and add a *Dread *Pirate's *Flag to your hand. NL Deal !D! damage. NL Evolve.",
+    "UPGRADE_DESCRIPTION": "Condemned. NL Fusion: Loot cards. When cards are Fused to this card, gain [E] and add a *Dread *Pirate's *Flag to your hand. NL Deal !D! damage. NL Limit: Whenever you Exhaust a Skill card, add a *Dread *Pirate's *Flag to your hand. NL Downgrades once played."
   },
   "shadowverse:Radiel": {
     "NAME": "Radiel, Valorous Enforcer",
@@ -5024,7 +5027,7 @@
   },
   "shadowverse:Gawain": {
     "NAME": "Gawain, Oath to Glory",
-    "DESCRIPTION": "Deal !D! damage. NL Rally 5: Draw 1 card. NL Rally 10: If this card is drawn, upgrade it. NL Rally 15: Double the damage. NL Rally 20: Gain 1 Buffer. ",
+    "DESCRIPTION": "Deal !D! damage. NL Rally 5: Draw 1 card. NL Rally 10: Add 1 *Evolution *Point to your hand. NL Rally 15: Double the damage. NL Rally 20: Gain 1 Buffer. ",
     "EXTENDED_DESCRIPTION": [
       " NL (Rally Count: ",
       ")"
@@ -5032,7 +5035,8 @@
   },
   "shadowverse:Weiss": {
     "NAME": "Weiss, Discerning Professor",
-    "DESCRIPTION": "Academic. NL You are immune to Debuffs this turn. NL Enemies cannot gain Buffs this turn. "
+    "DESCRIPTION": "Academic. NL Evolve.",
+    "UPGRADE_DESCRIPTION": "Academic. NL You are immune to Debuffs this turn. NL Enemies cannot gain Buffs this turn."
   },
   "shadowverse:BishopPool": {
     "NAME": "",
@@ -6839,7 +6843,7 @@
   },
   "shadowverse:CourtlyDance": {
     "NAME": "Courtly Dance",
-    "DESCRIPTION": "Put !M! attacks with Evolve, Upgrade themselves or can be Upgraded multiple times from the draw pile to you hand, then upgrade them."
+    "DESCRIPTION": "Put !M! attacks with Evolve, Upgrade themselves or can be Upgraded multiple times from the draw pile to your hand, then upgrade them."
   },
   "shadowverse:Troya": {
     "NAME": "Troya, Nocturnal Scout",

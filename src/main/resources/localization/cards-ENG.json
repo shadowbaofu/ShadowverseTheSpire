@@ -4644,7 +4644,7 @@
   },
   "shadowverse:Kyrzael": {
     "NAME": "Kyrzael, Killshot Enforcer",
-    "DESCRIPTION": "Condemned. NL Machina. NL Deal !D! damage. NL Add 2 *Wardens *of *the *Trigger to your hand. NL Change their costs to 0. NL Limit: Gain 2 Metallicize for each Machina card in your hand. "
+    "DESCRIPTION": "Condemned. NL Machina. NL Deal !D! damage. NL Add 2 *Wardens *of *the *Trigger to your hand. NL Change their costs to 0. NL Limit: Gain 2 Metallicize for each Machina card in your hand."
   },
   "shadowverse:DreadPirateFlag": {
     "NAME": "Dread Pirate's Flag",
@@ -4652,20 +4652,23 @@
   },
   "shadowverse:TidalGunner": {
     "NAME": "Tidal Gunner",
-    "DESCRIPTION": "Condemned. NL Deal !D! damage. NL Put a *Gilded *Goblet into your hand. NL Usurpation 7: Put a *Dread *Pirate's *Flag instead. NL During this turn, deal !M! damage to a random enemy for each Loot card played."
+    "DESCRIPTION": "Condemned. NL Deal !D! damage. NL Add a *Gilded *Goblet to your hand. NL Limit: Gain 'Whenever you Exhaust 2 Skill cards or a *Dread *Pirate's *Flag, deal !M! damage to a random enemy.'",
+    "DESCRIPTION": "Condemned. NL Deal !D! damage. NL Add a *Dread *Pirate's *Flag to your hand. NL Limit: Gain 'Whenever you Exhaust 2 Skill cards or a *Dread *Pirate's *Flag, deal !M! damage to a random enemy.'"
   },
   "shadowverse:DeepSeaScout": {
     "NAME": "Deep-Sea Scout",
-    "DESCRIPTION": "Condemned. NL Deal !D! damage. NL Put a *Gilded *Boots into your hand. NL Usurpation 7: Put a *Dread *Pirate's *Flag instead. NL During this turn, draw a card for each Loot card played."
+    "DESCRIPTION": "Condemned. NL Deal !D! damage. NL Add a *Gilded *Boots to your hand. NL Limit: Gain 'Whenever you Exhaust 2 Skill cards or a *Dread *Pirate's *Flag, draw 1 card.'",
+    "UPGRADE_DESCRIPTION": "Condemned. NL Deal !D! damage. NL Add a *Dread *Pirate's *Flag to your hand. NL Limit: Gain 'Whenever you Exhaust 2 Skill cards or a *Dread *Pirate's *Flag, draw 1 card.'"
   },
   "shadowverse:StormWrackedFirstMate": {
     "NAME": "Storm-Wracked First Mate",
-    "DESCRIPTION": "Condemned. NL Gain !B! Block. NL Put a *Gilded *Necklace into your hand. NL Usurpation 7: Put a *Dread *Pirate's *Flag instead. NL During this turn, whenever you play a Loot card, summon a Cannoneer (Up to 5 times)."
+    "DESCRIPTION": "Condemned. NL Gain !B! Block. NL Add a *Gilded *Necklace to your hand. NL Limit: Gain 'Whenever you Exhaust 2 Skill cards or a *Dread *Pirate's *Flag, summon a Cannoneer.'",
+    "UPGRADE_DESCRIPTION": "Condemned. NL Gain !B! Block. NL Add a *Dread *Pirate's *Flag to your hand. NL Limit: Gain 'Whenever you Exhaust 2 Skill cards or a *Dread *Pirate's *Flag, summon a Cannoneer.'"
   },
   "shadowverse:Barbaros": {
     "NAME": "Barbaros, Briny Convict",
-    "DESCRIPTION": "Condemned. NL Fusion: Loot cards. NL When a card is Fused to this card, upgrade this card. NL Deal !D! damage. NL If at least 7 Loot cards were played or Fused, gain [E] [E]. NL Enhance 3: Double the damage. NL Evolve.",
-    "UPGRADE_DESCRIPTION": "Condemned. NL Fusion: Loot cards. NL Deal !D! damage. NL Add a *Dread *Pirate's *Flag to your hand. NL If at least 7 Loot cards were played or Fused, gain [E] [E]. NL Enhance 3: Double the damage. NL Downgrade once played."
+    "DESCRIPTION": "Condemned. NL Fusion: Loot cards. NL When cards are Fused to this card, gain [E] and add a *Dread *Pirate's *Flag to your hand. NL Deal !D! damage. NL Evolve.",
+    "UPGRADE_DESCRIPTION": "Condemned. NL Fusion: Loot cards. When cards are Fused to this card, gain [E] and add a *Dread *Pirate's *Flag to your hand. NL Deal !D! damage. NL Limit: Whenever you Exhaust a Skill card, add a *Dread *Pirate's *Flag to your hand. NL Downgrades once played."
   },
   "shadowverse:Radiel": {
     "NAME": "Radiel, Valorous Enforcer",
@@ -5032,7 +5035,8 @@
   },
   "shadowverse:Weiss": {
     "NAME": "Weiss, Discerning Professor",
-    "DESCRIPTION": "Academic. NL You are immune to Debuffs this turn. NL Enemies cannot gain Buffs this turn. "
+    "DESCRIPTION": "Academic. NL Evolve.",
+    "UPGRADE_DESCRIPTION": "Academic. NL You are immune to Debuffs this turn. NL Enemies cannot gain Buffs this turn."
   },
   "shadowverse:BishopPool": {
     "NAME": "",

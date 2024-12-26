@@ -1542,22 +1542,22 @@
   "shadowverse:TidalGunnerPower": {
     "NAME": "Tidal Gunner",
     "DESCRIPTIONS": [
-      "Whenever you play a #yLoot card this turn, deal #b",
+      "Every time you Exhaust a #yDread #yPirate's #yFlag or 2 Skill cards, deal #b",
       " damage to a random enemy."
     ]
   },
   "shadowverse:DeepSeaScoutPower": {
     "NAME": "Deep-Sea Scout",
     "DESCRIPTIONS": [
-      "Whenever you play a #yLoot card this turn, draw #b",
+      "Every time you Exhaust a #yDread #yPirate's #yFlag or 2 Skill cards, draw #b",
       " card(s)."
     ]
   },
   "shadowverse:StormWrackedFirstMatePower": {
     "NAME": "Storm-Wracked First Mate",
     "DESCRIPTIONS": [
-      "Whenever you play a #yLoot card this turn, summon #b",
-      " #yCannoneer (Up to 5 times)."
+      "WEvery time you Exhaust a #yDread #yPirate's #yFlag or 2 Skill cards #b",
+      " #yCannoneer."
     ]
   },
   "shadowverse:AgentOfTheCommandmentsPower": {

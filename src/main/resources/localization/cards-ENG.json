@@ -4657,8 +4657,8 @@
   },
   "shadowverse:DeepSeaScout": {
     "NAME": "Deep-Sea Scout",
-    "DESCRIPTION": "Condemned. NL Deal !D! damage. NL Add a *Gilded *Boots to your hand. NL Limit: Gain 'Whenever you Exhaust 2 Skill cards or a *Dread *Pirate's *Flag, draw 1 card.'",
-    "UPGRADE_DESCRIPTION": "Condemned. NL Deal !D! damage. NL Add a *Dread *Pirate's *Flag to your hand. NL Limit: Gain 'Whenever you Exhaust 2 Skill cards or a *Dread *Pirate's *Flag, draw 1 card.'"
+    "DESCRIPTION": "Condemned. NL Add a *Gilded *Boots to your hand. NL Limit: Gain 'Whenever you Exhaust 2 Skill cards or a *Dread *Pirate's *Flag, draw 1 card.'",
+    "UPGRADE_DESCRIPTION": "Condemned. NL Add a *Dread *Pirate's *Flag to your hand. NL Limit: Gain 'Whenever you Exhaust 2 Skill cards or a *Dread *Pirate's *Flag, draw 1 card.'"
   },
   "shadowverse:StormWrackedFirstMate": {
     "NAME": "Storm-Wracked First Mate",

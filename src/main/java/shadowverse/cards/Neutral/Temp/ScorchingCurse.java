@@ -48,9 +48,6 @@ public class ScorchingCurse extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
         addToBot(new SFXAction("ScorchingCurse"));
         if (p.hand.group.stream().anyMatch(abstractCard -> abstractCard.type == CardType.ATTACK)){
-            addToBot(new DamageAllEnemiesAction(p, this.damage, DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE));
-            addToBot(new AddTemporaryHPAction(p, p, 3));
-        }else {
             addToBot(new SelectCardsInHandAction(1, TEXT[0], false, true, card -> card.type == CardType.ATTACK, abstractCards -> {
                 if (abstractCards.size()==0){
                     addToBot(new DamageAllEnemiesAction(p, this.damage, DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE));
@@ -88,6 +85,9 @@ public class ScorchingCurse extends CustomCard {
                 }
                 }
             }));
+        }else {
+            addToBot(new DamageAllEnemiesAction(p, this.damage, DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE));
+            addToBot(new AddTemporaryHPAction(p, p, 3));
         }
     }
 

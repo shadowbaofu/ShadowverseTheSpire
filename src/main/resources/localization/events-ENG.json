@@ -72,7 +72,8 @@
     "OPTIONS": [
       "[Check out the new cards] Choose 1 card from #ryour #rclass' #rStructure #rDeck to add to your deck.",
       "[You're not into physical cards] Remove a card from your deck.",
-      "[Leave]"
+      "[Leave]",
+      "Remove a card from your deck."
     ]
   },
     "Crossover": {

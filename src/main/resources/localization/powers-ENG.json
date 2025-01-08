@@ -221,7 +221,6 @@
       " HP for #yLeon #yAurenche."
     ]
   },
-
   "shadowverse:IzudiaPower": {
     "NAME": "Damage Reduction",
     "DESCRIPTIONS": [
@@ -1621,7 +1620,7 @@
       " Damage to a random enemy"
     ]
   },
-   "shadowverse:MagicalBishopPower": {
+  "shadowverse:MagicalBishopPower": {
     "NAME": "Magical Bishop",
     "DESCRIPTIONS": [
       "Whenever you play a Chess card, deal #b ",
@@ -1633,7 +1632,7 @@
     "DESCRIPTIONS": [
       "Immune to all Debuffs this turn. Enemies will not gain Buffs this turn."
     ]
-   },
+  },
   "shadowverse:WimaelPower": {
     "NAME": "Wimael, Redolent Enforcer",
     "DESCRIPTIONS": [
@@ -1641,7 +1640,7 @@
       " Add #y Wimael, Redolent Enforcer with 0 cost and Exhaust this turn to your hand."
     ]
   },
-   "shadowverse:OverflowPower": {
+  "shadowverse:OverflowPower": {
     "NAME": "Unawakened",
     "DESCRIPTIONS": [
       "Enters Overflow when you have 3 Overflow points, afterwards gain [E] at the start of your turn. Overflow Points: #b",
@@ -1653,27 +1652,27 @@
       "Full Overflow"
     ]
   },
-"shadowverse:RahabPower": {
+  "shadowverse:RahabPower": {
     "NAME": "Rahab",
     "DESCRIPTIONS": [
       "At the start of your turn, gain Strength equal to your remaining energy. #b ",
       " Energy leftover. "
     ]
- },
+  },
   "shadowverse:ShipsbanePlesiosaurusPower": {
     "NAME": "Shipsbane Plesiosaurus",
     "DESCRIPTIONS": [
       "Whenever a card is discarded from your hand, deal #b4 damage to a random enemy. "
     ]
   },
-   "shadowverse:DracomancerRitesPower": {
+  "shadowverse:DracomancerRitesPower": {
     "NAME": "Dracomancer's Rites",
     "DESCRIPTIONS": [
       "Whenever a card is discarded from your hand, draw #b ",
       "cards "
     ]
   },
-   "shadowverse:GoldenDragonDenPower": {
+  "shadowverse:GoldenDragonDenPower": {
     "NAME": "Golden Dragon's Den",
     "DESCRIPTIONS": [
       "At the start of your turn, randomly discard #b ",
@@ -1681,7 +1680,7 @@
       " cards. "
     ]
   },
-   "shadowverse:PolyphonicRoarPower": {
+  "shadowverse:PolyphonicRoarPower": {
     "NAME": "Polyphonic Roar",
     "DESCRIPTIONS": [
       "At the start of your turn, add #b ",
@@ -1695,7 +1694,7 @@
       "All cards you draw cost half energy (rounded up). "
     ]
   },
-   "shadowverse:LumiorePower": {
+  "shadowverse:LumiorePower": {
     "NAME": "Lumiore, Prestigious Gold",
     "DESCRIPTIONS": [
       "For each card you discard from your hand, deal #b ",
@@ -1710,7 +1709,7 @@
       " points of Damage. "
     ]
   },
-   "shadowverse:PrimeDragonKeeperPower": {
+  "shadowverse:PrimeDragonKeeperPower": {
     "NAME": "Prime Dragon Keeper",
     "DESCRIPTIONS": [
       "Whenever you play a Dragoncraft attack card that costs 1 or less, a random enemy takes #b",
@@ -1724,7 +1723,7 @@
       "Whenever a #yStatus, #yCurse, or Attack that costs 1 or less is drawn, exhaust it and add #b1 #yHellflame #yDragon(s) to your hand. "
     ]
   },
-   "shadowverse:RowenPower": {
+  "shadowverse:RowenPower": {
     "NAME": "Rowen, Dragon Lance",
     "DESCRIPTIONS": [
       "Attack damage increased by #b",
@@ -1732,7 +1731,7 @@
       " turns. "
     ]
   },
-   "shadowverse:WildfangDragonewtPower": {
+  "shadowverse:WildfangDragonewtPower": {
     "NAME": "Wildfang Dragonewt",
     "DESCRIPTIONS": [
       "Whenever a card is discarded from your hand this turn, a random enemy takes #b ",
@@ -1816,8 +1815,8 @@
     "NAME": "Forte, Darkwing Ruler",
     "DESCRIPTIONS": [
       "When Strength or Dexterity is gained, the following effects will activate in order, up to 3 times each: NL 1. Gain #b1 extra Energy next turn. NL 2. Apply #b2 Weak and Vulnerable to a random enemy. NL 3. Gain #b1 Buffer, preventing the next time you would lose HP."
-      ]
-   },
+    ]
+  },
   "shadowverse:FafnirPower": {
     "NAME": "Fafnir, Cunning Wyrm",
     "DESCRIPTIONS": [
@@ -1826,7 +1825,7 @@
   },
   "shadowverse:Minthe2": {
     "NAME": "Minthe, Steward of Souls",
-    "DESCRIPTIONS": [ 
+    "DESCRIPTIONS": [
       "Once per turn, whenever you perform #yNecromancy, gain Shadows equal to the #yNecromancy cost."
     ]
   },
@@ -1835,7 +1834,7 @@
     "DESCRIPTIONS": [
       "Whenever you play a #yLoot card, if it's the first one this turn, gain 1 Energy. If it's the second one, deal #b10 damage to all enemies."
     ]
-   },
+  },
   "shadowverse:UndyingWitchPower": {
     "NAME": "Undying Witch",
     "DESCRIPTIONS": [
@@ -1944,7 +1943,7 @@
       "Whenever you are attacked this turn, heal #b2 HP."
     ]
   },
-   "shadowverse:BayleonPower": {
+  "shadowverse:BayleonPower": {
     "NAME": "Bayleon, Shining Sovereign",
     "DESCRIPTIONS": [
       "Once per turn, when a #yNaterran #yGreat #yTree is played, add #b1 #yLuminous #yBlade to your hand."
@@ -1956,7 +1955,7 @@
       "Whenever you play #b3 cards, deal #b",
       " damage."
     ]
- },
+  },
   "shadowverse:VincentPower2": {
     "NAME": "Vincent, Scale Balancer",
     "DESCRIPTIONS": [
@@ -1999,7 +1998,7 @@
       ": Lose this effect."
     ]
   },
-   "shadowverse:RaziaPower": {
+  "shadowverse:RaziaPower": {
     "NAME": "Razia, Vengeful Cannonlancer",
     "DESCRIPTIONS": [
       "Whenever you are attacked, if you still have #y Block, gain #b1 Strength and deal #b ",
@@ -2007,21 +2006,21 @@
       " damage twice and lose this effect. NL #yStrength affects the returned damage #b3 times."
     ]
   },
- "shadowverse:RadiantLuminousMagePower": {
+  "shadowverse:RadiantLuminousMagePower": {
     "NAME": "Radiant Luminous Mage",
     "DESCRIPTIONS": [
       "Whenever you play an Attack with Evolve or that downgrades after playing, put #b ",
       " #yEvolution #yPoint into your hand."
-    ],
-    "shadowverse:BarbarosPower": {
+    ]
+  },
+  "shadowverse:BarbarosPower": {
     "NAME": "Barbaros, Briny Convict",
     "DESCRIPTIONS": [
       "Each time you Exhaust a Skill card other than #yDread #yPirate's #yFlag, put ",
       "a #yDread #yPirate's #yFlag in your hand."
     ]
   },
- },
-   "shadowverse:DarkAngelPower": {
+  "shadowverse:DarkAngelPower": {
     "NAME": "Angel of Light",
     "DESCRIPTIONS": [
       "Whenever you play a #yWinged #yInversion or #yReturn #yto #yHeaven, deal #b ",

@@ -4653,7 +4653,7 @@
   "shadowverse:TidalGunner": {
     "NAME": "Tidal Gunner",
     "DESCRIPTION": "Condemned. NL Deal !D! damage. NL Add a *Gilded *Goblet to your hand. NL Limit: Gain 'Whenever you Exhaust 2 Skill cards or a *Dread *Pirate's *Flag, deal !M! damage to a random enemy.'",
-    "DESCRIPTION": "Condemned. NL Deal !D! damage. NL Add a *Dread *Pirate's *Flag to your hand. NL Limit: Gain 'Whenever you Exhaust 2 Skill cards or a *Dread *Pirate's *Flag, deal !M! damage to a random enemy.'"
+    "UPGRADE_DESCRIPTION": "Condemned. NL Deal !D! damage. NL Add a *Dread *Pirate's *Flag to your hand. NL Limit: Gain 'Whenever you Exhaust 2 Skill cards or a *Dread *Pirate's *Flag, deal !M! damage to a random enemy.'"
   },
   "shadowverse:DeepSeaScout": {
     "NAME": "Deep-Sea Scout",

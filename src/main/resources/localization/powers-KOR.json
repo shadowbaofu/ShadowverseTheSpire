@@ -1954,6 +1954,26 @@
       " 받습니다."
     ]
   },
+  "shadowverse:VincentPower2": {
+    "NAME": "위협을 조율하는 자 빈센트",
+    "DESCRIPTIONS": [
+      "주문증폭을 가진 카드를 사용할때, 그것이 이 효과를 얻은 후 3번째, 6번째, 9번째, 12번째, 15번째, 18번째, 21번째 사용한 주문증폭 카드라면 모든 적에게 피해를 8 줍니다."
+    ]
+  },
+  "shadowverse:DualModeAPower": {
+    "NAME": "레바테인 드래곤 듀얼 모드 알파",
+    "DESCRIPTIONS": [
+      "턴 종료시 체력을 3 회복합니다. 받는 피해를 #b",
+      " 만큼 감소시킵니다. NL 다음 턴, 레바테인 드래곤 1장을 얻고 이 효과를 잃습니다. NL 당신이 죽으려 하면, 모든 해로운 효과를 제거하고 체력을 1 회복하며, 상기 효과를 반복합니다.(체력 3 회복과 피해감소)"
+    ]
+  },
+  "shadowverse:DualModeBPower": {
+    "NAME": "레바테인 드래곤 듀얼 모드 베타",
+    "DESCRIPTIONS": [
+      "턴 종료시 체력을 3 회복합니다. 받는 피해를 #b",
+      " 만큼 감소시킵니다."
+    ]
+  },
   "shadowverse:GuiltyShieldPower": {
     "NAME": "길티 실드",
     "DESCRIPTIONS": [
@@ -1973,7 +1993,36 @@
     "NAME": "이터널 도그마",
     "DESCRIPTIONS": [
       "턴 시작시, 카드를 #b1 장 더 뽑고,체력을 #b2 회복합니다. 앞으로 #b",
-      " 턴 지속됩니다. "
+      " 턴 지속됩니다."
+    ]
+  },
+  "shadowverse:RaziaPower": {
+    "NAME": "건랜스 기사 라스티나",
+    "DESCRIPTIONS": [
+      "공격받고도 방어도가 남아있다면, 힘을 1 얻고 피해를 ",
+      " 줍니다. NL 그렇지 않다면 피해를 #b ",
+      " 만큼 2번 주고 이 효과를 잃습니다. NL 반격 피해에 #y힘 이 3배의 영향을 줍니다."
+    ]
+  },
+  "shadowverse:RadiantLuminousMagePower": {
+    "NAME": "빛을 밝히는 루미나스 마법사",
+    "DESCRIPTIONS": [
+      "진화 또는 사용후 강화해제되는 공격 카드를 사용할 때마다 진화 포인트 #b ",
+      " 장을 얻습니다."
+    ]
+  },
+  "shadowverse:BarbarosPower": {
+    "NAME": "출항의 죄인 바르바로스",
+    "DESCRIPTIONS": [
+      "전율의 해적 깃발 이외의 스킬 카드를 소멸시킬 때마다 전율의 해적 깃발 ",
+      " 장을 얻습니다."
+    ]
+  },
+  "shadowverse:DarkAngelPower": {
+    "NAME": "빛의 천사",
+    "DESCRIPTIONS": [
+      " 반전하는 날개 또는 하늘로의 귀환을 사용할 때마다 무작위 적에게 피해를 ",
+      " 줍니다."
     ]
   }
 }

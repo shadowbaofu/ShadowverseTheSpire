@@ -6716,6 +6716,61 @@
       "（X는",
       ")"
     ]
+   },
+  "shadowverse:CurseOfTheBlackDragon": {
+    "NAME": "검은 용의 저주",
+    "DESCRIPTION": "사용불가. NL 보존. NL 각성 상태가 아니라면 턴 종료시 체력을 1 잃습니다. NL 각성 상태라면 무작위 적에게 피해를 !D! 줍니다."
+  },
+  "shadowverse:DespairReborn": {
+    "NAME": "되살아나는 절망",
+    "DESCRIPTION": "승천 20단계라면 턴 시작시 비용이 2가 됩니다. NL 무작위로 카드를 2장 버립니다. 비용이 3 이상인 무작위 공격 또는 파워 카드 3장을 얻습니다. 그 비용은 0이 되고, 휘발성과 소멸을 얻습니다. NL !stslib:ex! 번 사용 후 소멸.",
+    "UPGRADE_DESCRIPTION": "승천 20단계라면 턴 시작시 비용이 2가 됩니다. NL 무작위로 카드를 2장 버립니다. 비용이 3 이상인 무작위 공격 또는 파워 카드 3장을 얻습니다. 그 비용은 0이 되고, 휘발성과 소멸을 얻습니다. NL !stslib:ex! 번 사용 후 소멸."
+  },
+  "shadowverse:Soulflash": {
+    "NAME": "혼이 담긴 일섬",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 이번 전투에서 유언 카드 15장 이상이 사용되었다면, 피해를 !D! 만큼 다시 줍니다. NL 소멸.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (사용된 유언 카드 ",
+      " 장 )"
+    ]
+  },
+  "shadowverse:Kagero2": {
+    "NAME": "현세의 혼 카게로우",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 유언: 소멸되면, *혼이 *담긴 *일섬 1장을 얻습니다."
+  },
+  "shadowverse:WordsOfSanction": {
+    "NAME": "유지의 한마디",
+    "DESCRIPTION": "보존. NL 주문증폭: 비용이 [E] 감소합니다. NL 모든 적이 모든 이로운 효과를 잃습니다. NL (가능하다면 인공물부터). NL 소멸. "
+  },
+  "shadowverse:Vincent2": {
+    "NAME": "위협을 조율하는 자 빈센트",
+    "DESCRIPTION": "*유지의 *한마디 1장을 얻습니다. NL 주문증폭 카드를 사용할때마다, 그게 이 카드를 사용한 후 3,6,9,12,15,18번째 주문증폭 카드라면 모든 적에게 피해를 8 줍니다. "
+  },
+  "shadowverse:DualModeA": {
+    "NAME": "레바테인 드래곤 듀얼 모드 알파",
+    "DESCRIPTION": "무장. NL 방어도를 !B! 얻습니다. 피해를 !D! 만큼 2번 줍니다. NL 손의 모든 공격카드가 무장 카드가 됩니다. NL 힘 1과 민첩 2를 얻습니다. NL 이번 턴 피해를 3 적게 입습니다.  NL 턴 종료시 체력을 3 회복합니다. NL 다음 턴 시작에 *레바테인 *드래곤 1장을 얻습니다. NL 죽으려 한다면, 체력을 1 회복하고 모든 해로운 효과를 제거한 뒤 상기 효과를 반복합니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "무장. NL 방어도를 !B! 얻습니다. 피해를 !D! 만큼 2번 줍니다. NL 손의 모든 공격카드가 무장 카드가 됩니다. NL 힘 1과 민첩 2를 얻습니다. NL 이번 턴 피해를 3 적게 입습니다.  NL 턴 종료시 체력을 3 회복합니다. NL 다음 턴 시작에 *레바테인 *드래곤+ 1장을 얻습니다. NL 죽으려 한다면, 체력을 1 회복하고 모든 해로운 효과를 제거한 뒤 상기 효과를 반복합니다. NL 소멸."
+  },
+  "shadowverse:DualModeB": {
+    "NAME": "레바테인 드래곤 듀얼 모드 베타",
+    "DESCRIPTION": "무장. NL 방어도를 !B! 얻고 피해를 !D! 줍니다. NL 이 카드의 피해량은 이번 전투에서 사용한 무장 공격 카드 1장마다 !M! 증가합니다. NL 손의 모든 공격 카드가 무장 카드가 됩니다. NL 이번 턴 피해를 10 적게 받습니다. NL 턴 종료시 체력을 3 회복합니다. NL 카드를 2장 뽑고, *드래곤 *웨폰 1장을 얻습니다. NL 소멸. "
+  },
+  "shadowverse:DualModeC": {
+    "NAME": "레바테인 드래곤 듀얼 모드 감마",
+    "DESCRIPTION": "무장. NL 힘을 2 얻고 모든 적에게 피해를 !D! 줍니다.NL 이 카드의 피해량은 이번 전투에서 사용한 무장 공격 카드 1장마다 !M! 증가합니다. N:L 이번 턴 공격 카드가 2배의 피해를 줍니다. NL 소멸. "
+  },
+  "shadowverse:DualRage": {
+    "NAME": "듀얼 레이지",
+    "DESCRIPTION": "무장. NL 무작위 무장 카드 3장중 1장을 선택해 얻습니다. 이번 턴 그 카드의 비용이 0이 됩니다. NL 손에 *레바테인 *드래곤 이 있고 *드래곤 *웨폰 이 2장 이상 있다면, 레바테인 드래곤을 버리고 무작위 드래곤 웨폰 2장을 소멸시킨 다음 선택합니다:  NL *레바테인 *드래곤 *듀얼 *모드 *알파, *레바테인 *드래곤 *듀얼 *모드 *베타, *레바테인 *드래곤 *듀얼 *모드 *감마. NL 선택한 카드를 손에 넣습니다.",
+    "UPGRADE_DESCRIPTION": "무장. NL 무작위 무장 카드 3장중 1장을 선택해 얻습니다. 이번 턴 그 카드의 비용이 0이 됩니다. NL 손에 *레바테인 *드래곤 이 있고 *드래곤 *웨폰 이 2장 이상 있다면, 레바테인 드래곤을 버리고 무작위 드래곤 웨폰 2장을 소멸시킨 다음 선택합니다:  NL *레바테인 *드래곤 *듀얼 *모드 *알파+, *레바테인 *드래곤 *듀얼 *모드 *베타+, *레바테인 *드래곤 *듀얼 *모드 *감마+. NL 선택한 카드를 손에 넣습니다."
+   },
+  "shadowverse:DragonFighter": {
+    "NAME": "재련된 용족 전사",
+    "DESCRIPTION": "무장. NL 피해를 !D! 줍니다. NL 이 카드의 피해량이 !M! + X 만큼 증가하고 카드를 X장 뽑습니다.  NL X는 이번 전투에서 사용한 무장 공격 카드 수.(최대 6)",
+    "EXTENDED_DESCRIPTION": [
+      " NL （X는 ",
+      " )"
+    ]
   },
   "shadowverse:DivineTreasureHerald": {
     "NAME": "신기의 사자",
@@ -6739,10 +6794,192 @@
   },
   "shadowverse:SummonDivineTreasure": {
     "NAME": "신기의 울림",
-    "DESCRIPTION": "결단: 이 카드를 이하의 카드중 하나로 사용합니다: NL *저지먼트 *스피어 NL *길티 *실드 NL *이터널 *도그마 NL 강화 2: 추가로 *신기의 *사자 1장을 얻습니다. NL 강화 3: 추가로 *신기의 *파수꾼 1장을 얻습니다. NL 소멸."
+    "DESCRIPTION": "결단: 이 카드를 이하의 카드중 하나로 사용합니다: NL *저지먼트 *스피어 NL *길티 *실드 NL *이터널 *도그마 NL 강화 2: 추가로 *신기의 *사자 1장을 얻습니다. NL 강화 3: 추가로 *신기의 *파수꾼 1장을 얻습니다. NL 휘발성, 소멸."
   },
   "shadowverse:SummonDivineTreasure_Copy": {
     "NAME": "신기의 울림",
-    "DESCRIPTION": "결단: 이 카드를 이하의 카드중 하나로 사용합니다: NL *저지먼트 *스피어 NL *길티 *실드 NL *이터널 *도그마 NL 소멸."
+    "DESCRIPTION": "결단: 이 카드를 이하의 카드중 하나로 사용합니다: NL *저지먼트 *스피어 NL *길티 *실드 NL *이터널 *도그마 NL 휘발성, 소멸."
+  },
+  "shadowverse:DesertPathfinder": {
+    "NAME": "황야의 안내인",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 유언: 소멸되면 *나테라의 *신목 1장을 얻습니다.",
+    "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL *나테라의 *신목 을 사용하지 않았다면, 1장 얻습니다. NL 유언: 소멸되면 *나테라의 *신목 1장을 얻습니다."
+  },
+  "shadowverse:Razia": {
+    "NAME": "건랜스 기사 라스티나",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 이번 턴 공격당하고 방어도가 남아있다면, 힘을 1 얻고 피해를 !M! 돌려줍니다. NL 그렇지 않다면 피해를 !M! 의 2배만큼 돌려주고 이 효과를 잃습니다. NL 이 피해에 힘은 3배로 영향을 줍니다."
+  },
+  "shadowverse:Goblin": {
+    "NAME": "고블린",
+    "DESCRIPTION": "피해를 !D! 줍니다.",
+    "UPGRADE_DESCRIPTION": "피해를 !D! 줍니다.  NL 제한: 무작위 *여기사 또는 *여성 *엘프 카드를 얻습니다. 그 카드는 소멸을 가집니다."
+  },
+  "shadowverse:AngelicSnipe": {
+    "NAME": "천사의 저격",
+    "DESCRIPTION": "피해를 !D! 줍니다.",
+    "UPGRADE_DESCRIPTION": "피해를 !D! 줍니다. NL 카드를 1장 뽑습니다. NL 소멸. "
+  },
+  "shadowverse:CloudChorus": {
+    "NAME": "천상의 음률",
+    "DESCRIPTION": "방어도를 !B! 얻습니다.",
+    "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL 제한: 체력을 !M! 회복합니다. NL 소멸. "
+  },
+  "shadowverse:AngelicBarrage": {
+    "NAME": "천사의 일제사격",
+    "DESCRIPTION": "모든 적에게 피해를 !D! 줍니다. "
+  },
+  "shadowverse:Goliath": {
+    "NAME": "골리앗",
+    "DESCRIPTION": "피해를 !D! 줍니다.",
+    "UPGRADE_DESCRIPTION": "피해를 !D! 줍니다. NL 방어도를 !B! 얻습니다."
+  },
+  "shadowverse:AngelicSwordMaiden": {
+    "NAME": "천상의 여전사",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 방어도를 !B! 얻습니다."
+  },
+  "shadowverse:RadiantLuminousMage": {
+    "NAME": "빛을 밝히는 루미나스 마법사",
+    "DESCRIPTION": "진화, 스스로 강화되는 효과, 여러번 강화가능한 카드를 사용할 때마다 *진화 *포인트 1장을 얻습니다.",
+    "UPGRADE_DESCRIPTION": "진화, 스스로 강화되는 효과, 여러번 강화가능한 카드를 사용할 때마다 *진화 *포인트 1장을 얻습니다. NL 이 카드를 뽑으면 *진화 *포인트 1장을 얻습니다."
+  },
+  "shadowverse:CourtlyDance": {
+    "NAME": "귀족의 무도",
+    "DESCRIPTION": "진화, 스스로 강화되는 효과, 또는 여러번 강화가능한 카드를 !M! 장 뽑고 강화합니다."
+  },
+  "shadowverse:Troya": {
+    "NAME": "암야의 척후 트로이아",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 이번 턴 사용한 카드가 2장 이상이라면 카드를 1장 뽑습니다. NL 이번 턴 강화되거나 진화한 카드를 2장 이상 사용했다면, 이 카드를 강화합니다. NL 진화.",
+    "UPGRADE_DESCRIPTION": "피해를 !D! 주고 약화와 취약을 1 부여합니다. NL 이번 턴 사용한 카드가 2장 이상이라면 카드를 1장 뽑습니다. NL *진화 *포인트 1장을 얻습니다. NL 사용후 강화해제."
+  },
+  "shadowverse:MechaGoblin": {
+    "NAME": "머신 고블린",
+    "DESCRIPTION": "기계 NL 피해를 !D! 줍니다. NL 유언:사용하거나 소멸되면 *수리 *모드 1장을 얻습니다."
+  },
+  "shadowverse:TravelersRespite": {
+    "NAME": "황야에서의 휴식",
+    "DESCRIPTION": "자연. NL 체력을 !M! 회복하고, *나테라의 *신목 1장을 얻습니다. NL 소멸."
+  },
+  "shadowverse:Lyrial": {
+    "NAME": "무지개 천사 리리엘",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 진화.",
+    "UPGRADE_DESCRIPTION": "피해를 !D! 주고 !M! 줍니다. NL 사용후 강화해제."
+  },
+  "shadowverse:DarkLyrial": {
+    "NAME": "타락한 천사 리리엘",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 손에 비용이 2 이하인 무색 공격 카드가 있다면, 힘과 민첩을 !M! 얻습니다."
+  },
+  "shadowverse:AngelOfTheWord": {
+    "NAME": "신탁의 천사",
+    "DESCRIPTION": "피해를 !D! 줍니다."
+  },
+  "shadowverse:AngelOfDarkWord": {
+    "NAME": "타락한 신탁의 천사",
+    "DESCRIPTION": "모든 적에게 피해를 !D! 줍니다."
+  },
+  "shadowverse:DarkGabriel": {
+    "NAME": "타락한 가브리엘",
+    "DESCRIPTION": "적이 힘과 민첩을 X 잃습니다. 비용이 1 이하이며 이번 전투에서 사용되었던 무색 공격 카드 1장을 무작위로 손에 가져오고, 그 피해를 3, 방어도를 4 늘립니다.",
+    "UPGRADE_DESCRIPTION": "적이 힘과 민첩을 X+1 잃습니다. 비용이 1 이하이며 이번 전투에서 사용되었던 무색 공격 카드 1장을 무작위로 손에 가져오고, 그 피해를 3, 방어도를 4 늘립니다."
+  },
+  "shadowverse:HealingAngel": {
+    "NAME": "치유의 천사",
+    "DESCRIPTION": "방어도를 !B! 얻고 체력을 !M! 회복합니다. NL 소멸. "
+  },
+  "shadowverse:DarkHealingAngel": {
+    "NAME": "타락한 치유의 천사",
+    "DESCRIPTION": "방어도를 !B! 얻고 모든 적에게 피해를 !M! 줍니다. NL 체력을 !M! 회복하고 카드를 !M!장 뽑습니다. NL 소멸."
+  },
+  "shadowverse:ShieldAngel": {
+    "NAME": "방패의 천사",
+    "DESCRIPTION": "방어도를 !B! 얻습니다."
+  },
+  "shadowverse:DarkShieldAngel": {
+    "NAME": "타락한 방패의 천사",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 무작위 적에게 피해를 !D! 줍니다. NL 피해를 !D! 줍니다."
+  },
+  "shadowverse:AngelKnight": {
+    "NAME": "천계의 기사",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 힘을 1 얻습니다."
+  },
+  "shadowverse:DarkAngelKnight": {
+    "NAME": "타락한 천계의 기사",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 힘과 민첩을 1 얻습니다."
+  },
+  "shadowverse:Altaia": {
+    "NAME": "선별의 천사 알테아",
+    "DESCRIPTION": "손에 있는 무색이 아닌 공격 카드 1장을 고릅니다. 그 카드는 무색이 됩니다. NL 피해를 !D! 줍니다. NL 이 카드의 피해량은 손에 있는 무색 카드 수에 비례해 증가시킵니다."
+  },
+  "shadowverse:DarkAltaia": {
+    "NAME": "타락한 선별의 천사 알테아",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 이 카드의 피해량은 손에 있는 무색 카드 수에 비례해 증가시킵니다. NL 카드를 2장 뽑습니다."
+  },
+  "shadowverse:FallenAngel": {
+    "NAME": "타천사",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 체력을 !M! 회복합니다. NL 소멸. "
+  },
+  "shadowverse:DarkAngelChoice": {
+    "NAME": "타천",
+    "DESCRIPTION": "무작위 타천사 카드 3종중 1장을 골라 얻습니다.",
+    "UPGRADE_DESCRIPTION": "무작위 강화된 타천사 카드 3종중 1장을 골라 얻습니다."
+  },
+  "shadowverse:AngelChoice": {
+    "NAME": "승천",
+    "DESCRIPTION": "손에 있는 공격 카드를 선택합니다. 그것이 타천사라면, 힘과 민첩을 2 얻고, 소멸시킨 다음 상응하는 천사 카드를 얻습니다. NL 그렇지 않다면 그 카드를 소멸시키고 타천사를 1장 얻습니다.",
+    "UPGRADE_DESCRIPTION": "손에 있는 공격 카드를 선택합니다. 그것이 타천사라면, 힘과 민첩을 2 얻고, 소멸시킨 다음 상응하는 천사 카드를 얻습니다. NL 그렇지 않다면 그 카드를 소멸시키고 타천사+를 1장 얻습니다."
+  },
+  "shadowverse:WingedInversion": {
+    "NAME": "반전하는 날개",
+    "DESCRIPTION": "선택: 타천 또는 승천으로 이 카드를 사용합니다.",
+    "UPGRADE_DESCRIPTION": "선택: 타천+ 또는 승천+으로 이 카드를 사용합니다."
+  },
+  "shadowverse:SeraphOfSin": {
+    "NAME": "죄의 치천사",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 소멸하는 *반전하는 *날개 1장을 얻습니다.",
+    "UPGRADE_DESCRIPTION": "피해를 !D! 줍니다. NL 소멸하는 *반전하는 *날개 1장을 얻습니다. NL *타천사 1장을 얻습니다."
+  },
+  "shadowverse:ReturnToHeaven": {
+    "NAME": "하늘로의 귀환",
+    "DESCRIPTION": "무색 카드 1장을 소멸시키고, 그 복사본을 얻은 뒤 에너지를 !M! 얻습니다. NL 타천사가 선택되었다면, 상응하는 천사 카드를 얻습니다. NL 소멸. "
+  },
+  "shadowverse:SeraphOfVirtue": {
+    "NAME": "미덕의 치천사",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL *하늘로의 *귀환 1장을 얻습니다."
+  },
+  "shadowverse:HarbingerOfTheNight": {
+    "NAME": "밤의 전령",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 소멸하는 *반전하는 *날개 1장을 얻습니다."
+  },
+  "shadowverse:HarbingerOfTheDaylight": {
+    "NAME": "햇빛의 전령",
+    "DESCRIPTION": "피해를 !D 줍니다. NL 뽑으면 강화됩니다. NL 진화.",
+    "UPGRADE_DESCRIPTION": "피해를 !D! 줍니다. NL 사용후 강화해제."
+  },
+  "shadowverse:AngelOfDarkness": {
+    "NAME": "어둠의 천사",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 그 적에게 이로운 효과가 있었다면, *반전하는 *날개 를 얻습니다."
+  },
+  "shadowverse:AngelOfBrightness": {
+    "NAME": "빛의 천사",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL *반전하는 *날개 나 *하늘로의 *귀환 을 사용할때마다 무작위 적에게 피해를 !D! 줍니다."
+  },
+  "shadowverse:SingleWingedExecutor": {
+    "NAME": "편익의 집행자",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL [E]를 얻습니다. NL 제한 : 무색 카드를 사용하면, 이 카드와 그 카드를 강화하고 힘과 민첩을 1 얻습니다."
+  },
+  "shadowverse:SingleWingedRebellion": {
+    "NAME": "편익의 반란자",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL [E]를 얻습니다. NL *반전하는 *날개 1장을 얻습니다.  NL 제한 : 타천사를 사용하면, 이 카드와 그 카드를 강화합니다."
+  },
+  "shadowverse:PurifyGuardian": {
+    "NAME": "정화의 수호자",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 손에 무색 공격 카드가 있다면, 그중 하나를 버립니다. 그렇게 한다면 이 다음 입는 피해를 막습니다."
+  },
+  "shadowverse:CorruptionGuardian": {
+    "NAME": "타락한 수호자",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL *반전하는 *날개 1장을 얻습니다. NL 손에 무색 공격 카드가 있다면, 그중 하나를 버립니다. 그렇게 한다면 카드를 1장 뽑고 [E]를 얻습니다. "
+  },
+  "shadowverse:ChaoticAngel": {
+    "NAME": "카오틱 엔젤",
+    "DESCRIPTION": "피해를 !D! 만큼 2번 줍니다. NL 이 카드의 피해량은 이번 전투에서 사용한 무색 카드 1장당 !M! 증가합니다. NL 강화 4 : 힘과 민첩에 영향을 주는것을 제외한 모든 해로운 효과에 면역이 됩니다. [E] [E]를 얻습니다. *반전하는 *날개 2장을 얻습니다."
   }
 }

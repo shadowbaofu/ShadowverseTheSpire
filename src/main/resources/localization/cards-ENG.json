@@ -3139,8 +3139,8 @@
   },
   "shadowverse:ImaginationRealized": {
     "NAME": "Imagination Realized",
-    "DESCRIPTION": "Draw 3 cards. These cards costs 0 this turn. NL Exhaust. NL Ethereal .",
-    "UPGRADE_DESCRIPTION": "Draw 3 cards. These cards costs 0 this combat. NL Exhaust. NL Ethereal ."
+    "DESCRIPTION": "Draw 3 cards. These cards costs 0 this turn. NL Exhaust. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Draw 3 cards. These cards costs 0 this combat. NL Exhaust. NL Ethereal."
   },
   "shadowverse:GuildAssembly": {
     "NAME": "Guild Assembly",
@@ -6348,8 +6348,8 @@
   },
   "shadowverse:Ginger": {
     "NAME": "Ginger, Raging Word",
-    "DESCRIPTION": "Costs 1 less Energy for each card played that has a Trait. NL Put 1 *Scorching *Curse in your hand. NL At the start of your turn, put 1 *Scorching *Curse in your hand.",
-    "UPGRADE_DESCRIPTION": "Costs 1 less Energy for each card played that has a Trait. NL Put 1 *Scorching *Curse+ in your hand. NL At the start of your turn, put 1 *Scorching *Curse+ in your hand."
+    "DESCRIPTION": "Costs 1 less [E] for each card played that has a Trait. NL Put 1 *Scorching *Curse in your hand. NL At the start of your turn, put 1 *Scorching *Curse in your hand.",
+    "UPGRADE_DESCRIPTION": "Costs 1 less [E] for each card played that has a Trait. NL Put 1 *Scorching *Curse+ in your hand. NL At the start of your turn, put 1 *Scorching *Curse+ in your hand."
   },
   "shadowverse:DarkAlice": {
     "NAME": "Dark Alice, Foul Fairytale",

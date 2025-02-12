@@ -6724,7 +6724,7 @@
   "shadowverse:DespairReborn": {
     "NAME": "Despair Reborn",
     "DESCRIPTION": "Costs 2 Energy while on Ascension Level 20 at the start of your turn. NL Randomly discard 2 cards. Randomly add 4 Attack or Power cards that cost at least 3 Energy to your hand. They cost 0, are Ethereal and Exhaust. NL Exhausts in !stslib:ex! uses.",
-    "UPGRADE_DESCRIPTION": "Costs 2 Energy while on Ascension Level 20 at the start of your turn. NL Randomly add 4 Attack or Power cards that cost at least 3 Energy to your hand. They cost 0, are Ethereal and Exhaust.  NL Exhausts in !stslib:ex! uses."
+    "UPGRADE_DESCRIPTION": "Costs 2 Energy while on Ascension Level 20 at the start of your turn. NL Randomly discard 2 cards. Randomly add 4 Upgraded Attack or Power cards that cost at least 3 Energy to your hand. They cost 0, are Ethereal and Exhaust.  NL Exhausts in !stslib:ex! uses."
   },
   "shadowverse:Soulflash": {
     "NAME": "Soulflash",

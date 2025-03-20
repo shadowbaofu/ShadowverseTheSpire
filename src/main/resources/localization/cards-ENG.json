@@ -1981,8 +1981,8 @@
   },
   "shadowverse:Vanpi": {
     "NAME": "Vania, Nightshade Vampire",
-    "DESCRIPTION": "Gain !B! Block. NL You and ALL enemies lose 2 HP. Add 1 *Forest Bat to your hand. NL If Vengeance is active, instead Choose: Add a *Kind *Queen *Vania or *Blood *Queen *Vania to your hand. It costs 0 this turn.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL You and ALL enemies lose 2 HP. Add 1 *Forest Bat+ to your hand. NL If Vengeance is active, instead Choose: Add a *Kind *Queen *Vania+ or *Blood *Queen *Vania+ to your hand. It costs 0 this turn."
+    "DESCRIPTION": "Gain !B! Block. NL You and ALL enemies lose 2 HP. Add 1 *Forest *Bat to your hand. NL If Vengeance is active, instead Choose: Add a *Kind *Queen *Vania or *Blood *Queen *Vania to your hand. It costs 0 this turn.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL You and ALL enemies lose 2 HP. Add 1 *Forest *Bat+ to your hand. NL If Vengeance is active, instead Choose: Add a *Kind *Queen *Vania+ or *Blood *Queen *Vania+ to your hand. It costs 0 this turn."
   },
   "shadowverse:Volteo": {
     "NAME": "Volteo, Hedonistic Dealer",

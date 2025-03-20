@@ -2416,7 +2416,7 @@
   "shadowverse:Orchid": {
     "NAME": "Orchis, Puppet Girl",
     "DESCRIPTION": "Gain !B! Block. NL If you have less than 2 *Puppets in your hand, add 3 *Puppets to your hand. NL Otherwise, Choose: Play this card as either *Orchis, *Vengeful *Puppet or *Orchis, *Resolute *Puppet.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL If you have less than 2 *Puppets in your hand, add 3 *Puppets to your hand. NL Otherwise, Choose: Play this card as either *Orchis, *Vengeful *Puppet+ or *Orchis, *Resolute *Puppet+."
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL If you have less than 2 *Puppets in your hand, add 3 *Puppets to your hand. NL Otherwise, Choose: Play this card as either an Upgraded *Orchis, *Vengeful *Puppet or *Orchis, *Resolute *Puppet."
   },
   "shadowverse:OrchidNeo": {
     "NAME": "Orchis, Linked Heart",

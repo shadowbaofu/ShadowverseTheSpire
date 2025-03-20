@@ -47,6 +47,7 @@ public class SummonDivineTreasure
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
+            this.isEthereal = false;
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }

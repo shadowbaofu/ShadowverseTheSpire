@@ -57,10 +57,9 @@ public class Myroel extends CustomCard {
                 attackAmt++;
         }
         if (attackAmt >= 2){
-            addToBot( new ApplyPowerAction(abstractPlayer,abstractPlayer,new MyroelPower(abstractPlayer,1)));
-            addToBot(new DamageAllEnemiesAction(abstractPlayer, DamageInfo.createDamageMatrix(10, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE, true));
+            addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new MyroelPower(abstractPlayer,1)));
             if (this.costForTurn > 0){
-                addToBot( new BurialAction(2, null));
+                addToBot( new BurialAction(2, new DamageAllEnemiesAction(abstractPlayer, DamageInfo.createDamageMatrix(10, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE, true)));
                 addToBot( new ReanimateAction(1));
                 addToBot( new ReanimateAction(2));
                 if (abstractPlayer.hasPower(MementoPower.POWER_ID)){

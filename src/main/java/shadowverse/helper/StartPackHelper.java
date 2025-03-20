@@ -115,13 +115,13 @@ public class StartPackHelper {
             if (Shadowverse.groupActive[4]) {
                 packs.add(nat);
             }
-            if (Shadowverse.groupActive[4]) {
+            if (Shadowverse.groupActive[5]) {
                 packs.add(DragonStarterPack.ramp);
             }
-            if (Shadowverse.groupActive[5]) {
+            if (Shadowverse.groupActive[6]) {
                 packs.add(DragonStarterPack.tempo);
             }
-            if (Shadowverse.groupActive[6]) {
+            if (Shadowverse.groupActive[7]) {
                 packs.add(DragonStarterPack.buff);
             }
         } else if (AbstractDungeon.player.chosenClass == Necromancer.Enums.Necromancer) {

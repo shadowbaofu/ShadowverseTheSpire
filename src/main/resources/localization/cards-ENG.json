@@ -6617,7 +6617,7 @@
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain 10 Shadows. NL If you have spent at least 20 Shadows, gain [E] [E].",
     "EXTENDED_DESCRIPTION": [
       " NL ( Shadows Spent: ",
-      " . )"]
+      " . )"
     ]
   },
   "shadowverse:SuccessionOfBalance": {

@@ -5384,7 +5384,7 @@
   },
   "shadowverse:Lumiore": {
     "NAME": "Lumiore, Prestigious Gold",
-    "DESCRIPTION": "Gain !B! Block. Gain [E] NL Deal !M! damage to ALL enemies for each card discarded this turn. NL If you discarded cards 2 or more times this combat, discard 2 cards and draw 3 cards.",
+    "DESCRIPTION": "Gain !B! Block. NL Gain [E]. NL Deal !M! damage to ALL enemies for each card discarded this turn. NL If you discarded cards 2 or more times this combat, discard 2 cards and draw 3 cards.",
     "EXTENDED_DESCRIPTION": [
       "（ Discarded ",
       " times)"

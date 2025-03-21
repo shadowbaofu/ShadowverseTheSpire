@@ -5236,7 +5236,7 @@
   },
   "shadowverse:RazorClawedThief": {
     "NAME": "Razor-Clawed Thief",
-    "DESCRIPTION": "Condemned. NL Deal !D! damage. NL Last_Words: Add 1 *Razor-Clawed *Thief with Exhaust and without Last Words to your hand."
+    "DESCRIPTION": "Condemned. NL Deal !D! damage. NL Last_Words: When played, Add 1 *Razor-Clawed *Thief with Exhaust and without Last Words to your hand."
   },
   "shadowverse:RazorClawedThief_Copy": {
     "NAME": "Razor-Clawed Thief",

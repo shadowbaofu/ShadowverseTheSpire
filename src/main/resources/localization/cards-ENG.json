@@ -6751,22 +6751,22 @@
     "DESCRIPTION": "Add 1 *Words *Of *Sanction to your hand. NL Whenever you play a card with Spellboost, if it's the 3rd, 6th, 9th, 12th, 15th, 18th or 21st played after playing this card, deal 8 damage to ALL enemies."
   },
   "shadowverse:DualModeA": {
-    "NAME": "Lævateinn Dragon, Dual Form α",
+    "NAME": "Lævateinn Dragon, Dual Form Alpha",
     "DESCRIPTION": "Armed. NL Gain !B! Block. Deal !D! damage twice. NL ALL Attacks in your hand become Armed. NL Gain 1 Strength and 2 Dexterity. NL Take 3 less damage this turn. NL Heal 3 HP at the end of your turn. NL Add 1 *Lævateinn Dragon to your hand next turn. NL Whenever you would die, restore 1 HP, remove ALL debuffs and apply the previous effects. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Armed. NL Gain !B! Block. Deal !D! damage twice. NL ALL Attacks in your hand become Armed. NL Gain 1 Strength and 2 Dexterity. NL Take 3 less damage this turn. NL Heal 3 HP at the end of your turn. NL Add 1 *Lævateinn Dragon+ to your hand next turn. NL Whenever you would die, restore 1 HP, remove ALL debuffs and apply the previous effects. NL Exhaust."
   },
   "shadowverse:DualModeB": {
-    "NAME": "Lævateinn Dragon, Dual Form β",
+    "NAME": "Lævateinn Dragon, Dual Form Beta",
     "DESCRIPTION": "Armed. NL Gain !B! Block. Deal !D! damage. NL Increase this card's damage by !M! for each Armed Attack card played this combat. NL ALL Attacks in your hand become Armed. NL Take 10 less damage this turn. NL Heal 3 HP at the end of your turn. NL Draw 2 cards. NL Add 1 *Draconic *Weapon to your hand NL Exhaust."
   },
   "shadowverse:DualModeC": {
-    "NAME": "Lævateinn Dragon, Dual Form γ",
+    "NAME": "Lævateinn Dragon, Dual Form Gamma",
     "DESCRIPTION": "Armed. NL Gain 2 Strength. NL Deal !D! damage to ALL enemies. NL Increase this card's damage by !M! for each Armed Attack card played this combat. NL This turn, your Attacks deal double damage. NL Exhaust."
   },
   "shadowverse:DualRage": {
     "NAME": "Dual Rage",
-    "DESCRIPTION": "Armed. NL Choose 1 of 3 Armed cards and add it your hand. It costs 0 this turn. NL If you have *Lævateinn *Dragon and at least 2 *Draconic *Weapons in your hand, discard *Lævateinn *Dragon, randomly Exhaust 2 *Draconic *Weapons and Choose: NL *Lævateinn *Dragon, *Dual *Form *α, *β, or *γ NL Add the chosen card to your hand.",
-    "UPGRADE_DESCRIPTION": "Armed. NL Choose 1 of 3 Armed cards and add it your hand. It costs 0 this turn. NL If you have *Lævateinn *Dragon and at least 2 *Draconic *Weapons in your hand, discard *Lævateinn *Dragon, randomly Exhaust 2 *Draconic *Weapons and Choose: NL *Lævateinn *Dragon, *Dual *Form *α+, *β+, or *γ+ NL Add the chosen card to your hand."
+    "DESCRIPTION": "Armed. NL Choose 1 of 3 Armed cards and add it your hand. It costs 0 this turn. NL If you have *Lævateinn *Dragon and at least 2 *Draconic *Weapons in your hand, discard *Lævateinn *Dragon, randomly Exhaust 2 *Draconic *Weapons and Choose: NL *Lævateinn *Dragon, *Dual *Form *Alpha, *Beta, or *Gamma NL Add the chosen card to your hand.",
+    "UPGRADE_DESCRIPTION": "Armed. NL Choose 1 of 3 Armed cards and add it your hand. It costs 0 this turn. NL If you have *Lævateinn *Dragon and at least 2 *Draconic *Weapons in your hand, discard *Lævateinn *Dragon, randomly Exhaust 2 *Draconic *Weapons and Choose: NL *Lævateinn *Dragon, *Dual *Form *Alpha+, *Beta+, or *Gamma+ NL Add the chosen card to your hand."
    },
   "shadowverse:DragonFighter": {
     "NAME": "Reforged Dragon Warrior",

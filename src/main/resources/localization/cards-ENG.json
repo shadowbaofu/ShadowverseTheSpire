@@ -5392,7 +5392,7 @@
   },
   "shadowverse:NoirNBlanc": {
     "NAME": "Noir & Blanc, Brothers",
-    "DESCRIPTION": "Deal !D! damage. NL When this card is discarded, deal 6 damage to a random enemy. NL If played or discarded while in Full Overflow, gain 36 Block, 1 Blur, Artifact and Power_Damage_Immune at the end of your turn. Then, if you did not lose ALL of your Block, deal !M! damage to a random enemy next turn."
+    "DESCRIPTION": "Deal !D! damage. NL When this card is discarded, deal 6 damage to a random enemy. NL If played or discarded while in Full_Overflow, gain 36 Block, 1 Blur, Artifact and Power_Damage_Immune at the end of your turn. Then, if you did not lose ALL of your Block, deal !M! damage to a random enemy next turn."
   },
   "shadowverse:DragoonMedic": {
     "NAME": "Dragoon Medic",
@@ -5498,7 +5498,7 @@
   },
   "shadowverse:Georgius": {
     "NAME": "Georgius",
-    "DESCRIPTION": "Heroic NL Deal !D! damage to ALL enemies. NL Mark ALL enemies as Dragons. NL Repeat once if Overflow is active. NL Repeat twice if Full Overflow is active."
+    "DESCRIPTION": "Heroic NL Deal !D! damage to ALL enemies. NL Mark ALL enemies as Dragons. NL Repeat once if Overflow is active. NL Repeat twice if Full_Overflow is active."
   },
   "shadowverse:Ethica": {
     "NAME": "Ethica, Firebrand Claw",
@@ -5817,11 +5817,11 @@
   },
   "shadowverse:Masamune": {
     "NAME": "Masamune, Raging Dragon",
-    "DESCRIPTION": "Deal !D! damage. NL If Full Overflow is active, gain 1 Buffer. NL Exhaust !stslib:ex! 。"
+    "DESCRIPTION": "Deal !D! damage. NL If Full_Overflow is active, gain 1 Buffer. NL Exhaust !stslib:ex! 。"
   },
   "shadowverse:Masamune2": {
     "NAME": "Masamune, One-Eyed Dragon",
-    "DESCRIPTION": "Deal !D! damage. NL If Overflow is active, gain 1 Buffer. NL If Full Overflow is active, each time you play an Attack card, deal 4 damage to a random enemy. NL Exhaust !stslib:ex! 。"
+    "DESCRIPTION": "Deal !D! damage. NL If Overflow is active, gain 1 Buffer. NL If Full_Overflow is active, each time you play an Attack card, deal 4 damage to a random enemy. NL Exhaust !stslib:ex! 。"
   },
   "shadowverse:DevotedDragon": {
     "NAME": "Devoted Dragon",
@@ -5921,7 +5921,7 @@
   },
   "shadowverse:PlatinumDragonblader": {
     "NAME": "Platinum Dragonblader",
-    "DESCRIPTION": "Gain !B! Block. NL If Full Overflow is active, the next Attack you play deals double damage."
+    "DESCRIPTION": "Gain !B! Block. NL If Full_Overflow is active, the next Attack you play deals double damage."
   },
   "shadowverse:HellfireStrike": {
     "NAME": "Hellfire Strike",
@@ -6394,7 +6394,7 @@
   },
   "shadowverse:CelestialWyrmGod": {
     "NAME": "Celestial Wyrm God",
-    "DESCRIPTION": "Gain !B! Block. NL Apply 2 Vulnerable and Weak. NL If Full Overflow is active, Exhaust ALL cards that cost 2 or less from your draw pile and halve the cost of all Dragoncraft Attack cards in your hand this combat (rounded up)."
+    "DESCRIPTION": "Gain !B! Block. NL Apply 2 Vulnerable and Weak. NL If Full_Overflow is active, Exhaust ALL cards that cost 2 or less from your draw pile and halve the cost of all Dragoncraft Attack cards in your hand this combat (rounded up)."
   },
   "shadowverse:AbsoluteDragon": {
     "NAME": "Relic Dragon",

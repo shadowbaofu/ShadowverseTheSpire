@@ -6798,7 +6798,8 @@
   },
   "shadowverse:SummonDivineTreasure": {
     "NAME": "Summon Divine Treasure",
-    "DESCRIPTION": "Choose: Play this card as: NL *Judgment *Spear NL *Shield *of *Transgression NL OR *Eternal *Dogma NL Enhance 2: Add a *Divine *Treasure *Herald to your hand. NL Enhance 3: Add a *Divine *Treasure *Guardian to your hand. NL Ethereal. NL Exhaust."
+    "DESCRIPTION": "Choose: Play this card as: NL *Judgment *Spear NL *Shield *of *Transgression NL OR *Eternal *Dogma NL Enhance 2: Add a *Divine *Treasure *Herald to your hand. NL Enhance 3: Add a *Divine *Treasure *Guardian to your hand. NL Ethereal. NL Exhaust.",
+    "UPGRADE_DESCRIPTION":"Choose: Play this card as: NL *Judgment *Spear NL *Shield *of *Transgression NL OR *Eternal *Dogma NL Enhance 2: Add a *Divine *Treasure *Herald to your hand. NL Enhance 3: Add a *Divine *Treasure *Guardian to your hand. NL Exhaust."
   },
   "shadowverse:SummonDivineTreasure_Copy": {
     "NAME": "Summon Divine Treasure",

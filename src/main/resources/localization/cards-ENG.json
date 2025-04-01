@@ -6033,7 +6033,7 @@
   },
   "shadowverse:Lvbu": {
     "NAME": "Peerless Warrior",
-    "DESCRIPTION": "Remove ALL other followers. Summon a Peerless_Warrior. It gains +X/+Y. X and Y equal the total Attack and Health of those other followers. If X OR Y is 20 or more, you cannot be debuffed unless it affects Strength or Dexterity and this follower does not lose Health. NL Passive: Deal damage equal to its Attack, gain Block equal to its Health, reduce Health by 1. NL Evoke: Summon a copy of this follower. NL Exhaust."  
+    "DESCRIPTION": "Remove ALL other followers. Summon a Peerless_Warrior. It gains +X/+Y. X and Y equal the total Attack and Health of those other followers. If X OR Y is 20 or more, you cannot be debuffed unless it affects Strength or Dexterity and this follower does not lose Health. NL Exhaust."  
   },
   "shadowverse:SlaughteringDragonewt": {
     "NAME": "Slaughtering Dragonewt",

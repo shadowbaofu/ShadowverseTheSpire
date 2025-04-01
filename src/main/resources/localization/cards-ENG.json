@@ -6033,7 +6033,7 @@
   },
   "shadowverse:Lvbu": {
     "NAME": "Peerless Warrior",
-    "DESCRIPTION": "Remove ALL other followers. Summon a Peerless_Warrior. It gains +X/+Y. X and Y equal the total Attack and Health of those other followers. If X OR Y is 20 or more, you cannot be debuffed unless it affects Strength or Dexterity and this follower does not lose Health. NL Exhaust."  
+    "DESCRIPTION": "Remove ALL other followers. Summon a Peerless_Warrior. It gains +X/+Y. X and Y equal the total Attack and Health of those other followers. If X OR Y is 20 or more, you are unaffected by debuffs except those that change Strength or Dexterity and this follower does not lose Health. NL Exhaust."  
   },
   "shadowverse:SlaughteringDragonewt": {
     "NAME": "Slaughtering Dragonewt",
@@ -6985,6 +6985,6 @@
   },
   "shadowverse:ChaoticAngel": {
     "NAME": "Angel of Chaos",
-    "DESCRIPTION": "Deal !D! damage twice. NL Increase this card's damage by !M! for each Colorless card played this combat. NL Enhance 4: You are unaffected by debuffs except those that change Strength and Dexterity. Gain 2 Energy. Add 2 *Winged *Inversions to your hand."
+    "DESCRIPTION": "Deal !D! damage twice. NL Increase this card's damage by !M! for each Colorless card played this combat. NL Enhance 4: You are unaffected by debuffs except those that change Strength and Dexterity. Gain [E] [E]. Add 2 *Winged *Inversions to your hand."
   }
 }

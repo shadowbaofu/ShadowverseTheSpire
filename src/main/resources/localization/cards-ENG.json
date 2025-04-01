@@ -6061,8 +6061,8 @@
   },
   "shadowverse:Rogers": {
     "NAME": "Rogers, Ruler Of The Seas",
-    "DESCRIPTION": "Gain 1 [E]. Add 1 *Gilded *Goblet to your hand. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "Gain 1 [E]. Add 1 *Gilded *Goblet to your hand. NL Summon a Cannoneer. NL Whenever you play a Loot card, if it's the first one this turn, gain [E]. If it's the second one, deal 10 damage to ALL enemies. NL Ethereal."
+    "DESCRIPTION": "Gain [E]. Add 1 *Gilded *Goblet to your hand. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Gain [E]. Add 1 *Gilded *Goblet to your hand. NL Summon a Cannoneer. NL Whenever you play a Loot card, if it's the first one this turn, gain [E]. If it's the second one, deal 10 damage to ALL enemies. NL Ethereal."
   },
   "shadowverse:DelugeOfArrows": {
     "NAME": "Deluge of Arrows",

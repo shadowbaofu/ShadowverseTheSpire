@@ -2308,7 +2308,7 @@
   },
   "shadowverse:PuppetRoom": {
     "NAME": "Puppet Room",
-    "DESCRIPTION": "Countdown !M! \bLose this ability. NL When you play this card, add 1 *Puppet to your hand. NL At the start of your turn, add 1 *Puppet to your hand."
+    "DESCRIPTION": "Countdown !M! : \bLose this ability. NL When you play this card, add 1 *Puppet to your hand. NL At the start of your turn, add 1 *Puppet to your hand."
   },
   "shadowverse:Victoria": {
     "NAME": "Victoria",

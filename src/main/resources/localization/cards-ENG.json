@@ -6555,8 +6555,8 @@
   },
   "shadowverse:SanctumOfWings": {
     "NAME": "Sanctum of Wings",
-    "DESCRIPTION": "Natura. NL Countdown 2: Add 1 *Regal *Falcon to your hand. NL When played, add 1 *Naterran *Great *Tree to your hand.",
-    "UPGRADE_DESCRIPTION": "Natura. NLCountdown 2: Add 1 *Regal *Falcon+ to your hand. NL When played, add 1 *Naterran *Great *Tree to your hand."
+    "DESCRIPTION": "Natura. NL Add 1 *Naterran *Great *Tree to your hand. NL Countdown 2: Add 1 *Regal *Falcon to your hand. ",
+    "UPGRADE_DESCRIPTION": "Natura. NL Add 1 *Naterran *Great *Tree to your hand. NL Countdown 2: Add 1 *Regal *Falcon+ to your hand. "
   },
   "shadowverse:YuwanFervor": {
     "NAME": "Yuwan's Fervor",

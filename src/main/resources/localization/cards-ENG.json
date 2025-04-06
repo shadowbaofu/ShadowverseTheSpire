@@ -4447,7 +4447,7 @@
   },
   "shadowverse:VerdantLieutenant": {
     "NAME": "Verdant Lieutenant",
-    "DESCRIPTION": "Condemned. NL Deal !D! damage and gain !B! Block. NL Add 1 to the number of cards played this turn. NL When you play a card, if at least 4 cards were played this turn, upgrade this card in your hand and draw 1 card. NL Evolve. ",
+    "DESCRIPTION": "Condemned. NL Deal !D! damage and gain !B! Block. NL Add 1 to the number of cards played this turn. NL When you play a card, if at least 4 cards were played this turn, upgrade this card in your hand and draw 1 card. NL Evolve.",
     "UPGRADE_DESCRIPTION": "Condemned. NL Deal !D! damage and gain !B! Block. NL Add 1 to the number of cards played this turn. NL Downgrade once played."
   },
   "shadowverse:BuddingInitiate": {

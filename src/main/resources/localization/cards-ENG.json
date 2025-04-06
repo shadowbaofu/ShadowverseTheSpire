@@ -4767,8 +4767,8 @@
     "DESCRIPTION": "Academic. NL Add 1 *Evolution *Point and 1 *Miracle into your hand. NL If you played 20 or more non-Strike Forestcraft Attacks this combat, gain !M! Strength and Dexterity, 1 Blur and Artifact. NL Exhaust. ",
     "UPGRADE_DESCRIPTION": "Retain. NL Academic. NL Add 1 *Evolution *Point and 1 *Miracle into your hand. NL If you played 20 or more non-Strike Forestcraft Attacks this combat, gain !M! Strength and Dexterity, 1 Blur and Artifact. NL Exhaust. ",
     "EXTENDED_DESCRIPTION": [
-      " NL (Number of non-Forestcraft Attacks played ",
-      " 。)"
+      " NL (Number of non-Forestcraft Attacks played: ",
+      " .)"
     ]
   },
   "shadowverse:Castelle": {

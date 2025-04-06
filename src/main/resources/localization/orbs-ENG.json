@@ -88,7 +88,7 @@
   "shadowverse:FrontDeskFrogOrb": {
     "DESCRIPTION": [
       "#yPassive: At the end of your turn, deal #b",
-      " damage to a random enemy and lose #b1 Health. NL Put a #yGlitterig #yGold into your hand. #yEvoked: Repeat passive effects until Health reaches #b0."
+      " damage to a random enemy and lose #b1 Health. NL Put a #yGlittering #yGold into your hand. #yEvoked: Repeat passive effects until Health reaches #b0."
     ],
     "NAME": "Front Desk Frog"
   },

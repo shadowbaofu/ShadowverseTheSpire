@@ -1450,8 +1450,8 @@
       "Whenever you play a Skill card, if it's the 1st time, gain 3 Block.",
       "Whenever you play a Skill card, if it's the 2nd time, draw a card.",
       "Whenever you play a Skill card, if it's the 3rd time, give +1/+1 to all allied #yFollowers.",
-      " NL Triggered #b ",
-      " times this turn."
+      " NL Triggered #b times this turn ",
+      " ."
     ]
   },
   "shadowverse:CosmosFangPower": {

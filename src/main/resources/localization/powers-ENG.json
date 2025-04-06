@@ -1447,11 +1447,11 @@
   "shadowverse:OpulentStrategistPower": {
     "NAME": "Opulent Strategist",
     "DESCRIPTIONS": [
-      "Whenever you play a Skill card, if it's the 1st time, gain 3 Block.",
-      "Whenever you play a Skill card, if it's the 2nd time, draw a card.",
-      "Whenever you play a Skill card, if it's the 3rd time, give +1/+1 to all allied #yFollowers.",
-      " NL Triggered #b times this turn ",
-      " ."
+      " 1. Whenever you play a Skill card, gain 3 Block. The next Skill you play will draw a card.",
+      " 2. Whenever you play a Skill card, draw a card. The next Skill you play will give +1/+1 to all your #yFollowers. ",
+      " 3. Whenever you play a Skill card, give +1/+1 to all allied #yFollowers. The next Skill you play will give 3 Block. ",
+      " NL Current Effect: #b",
+      "."
     ]
   },
   "shadowverse:CosmosFangPower": {

@@ -857,7 +857,7 @@
   },
   "shadowverse:Damian": {
     "NAME": "Damian, Drillarm Brawler",
-    "DESCRIPTION": "Machina. NL If any other Machina Attack cards were played this turn, deal !D! damage. Deal X damage to ALL enemies. X equals !M! times of the number of Machina Attack cards played this turn."
+    "DESCRIPTION": "Machina. NL If any other Machina Attack cards were played this turn, deal !D! damage. Deal X damage to ALL enemies. X equals !M! times the number of Machina Attack cards played this turn."
   },
   "shadowverse:MachineClaw": {
     "NAME": "Mechaclaw Elf",

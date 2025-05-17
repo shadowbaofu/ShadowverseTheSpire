@@ -4927,7 +4927,7 @@
   },
   "shadowverse:PureflameLady": {
     "NAME": "Pureflame Lady",
-    "DESCRIPTION": "Academic. NL Gain !B! Block. NL Whenever you gain Strength or Dexterity, deal 2 damage to ALL enemies. (Max. 10 times) NL Heal 1 HP."
+    "DESCRIPTION": "Academic. NL Gain !B! Block. NL Gain 1 Strength and Dexterity until the end of the turn. NL Whenever you gain Strength or Dexterity, deal 2 damage to ALL enemies. (Max. 10 times) NL Heal 1 HP."
   },
   "shadowverse:Galom": {
     "NAME": "Galom, Empress Fist",

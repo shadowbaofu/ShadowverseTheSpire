@@ -4240,7 +4240,7 @@
   },
   "shadowverse:MysticKing": {
     "NAME": "Mystic King",
-    "DESCRIPTION": "Chess. NL Retain. NL Costs 1 less each time you play a *Magical *Pawn. NL Gain !B! temporary HP. NL Add 4 *Magical *Pawns to your hand. NL *Magical *Pawns do double damage +!M!. NL Die if you lose ALL of your temporary HP."
+    "DESCRIPTION": "Chess. NL Retain. NL Costs 1 less each time you play a *Magical *Pawn. NL Gain !B! temporary HP. NL Add 4 *Magical *Pawns to your hand. NL *Magical *Pawns do double damage plus !M!. NL Die if you lose ALL of your temporary HP."
   },
   "shadowverse:Ghost": {
     "NAME": "Ghost",

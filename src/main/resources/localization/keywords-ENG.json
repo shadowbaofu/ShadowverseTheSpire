@@ -35,7 +35,7 @@
       "NAMES": [
         "enhance"
       ],
-      "DESCRIPTION": "If you have enough #yEnergy, NL it will be spent to activate additional effects NL (Won't trigger if the card is not being played from hand.) NL TIP: Cost altering effects do not apply to Enhance unless you have less Energy than the Enhance cost. NL Enhance effects may activate from autoplay effects if you have the correct energy amount."
+      "DESCRIPTION": "If you have enough #yEnergy, NL it will be spent to activate additional effects NL (Won't trigger if the card is not being played from hand.) NL TIP: Cost altering effects do not apply to Enhance unless you have less Energy than the Enhance cost. NL Enhance effects may or may not activate from autoplay effects if you have the correct energy amount."
     },
     {
       "PROPER_NAME": "Accelerate",
@@ -207,7 +207,7 @@
       "NAMES": [
         "maneuver"
       ],
-      "DESCRIPTION": "Cards with #yManeuver can't be played directly. If another Attack with a cost greater than or equal to the #yManeuver value is played while this card is in hand, the Attack card will lose its effects and #yExhaust, then this card can be played. If this card is #yExhausted, the Attack card returns to your hand and costs 0 this turn. NL TIP: Avoid playing cards that cost more than the Manuever value if one is in your hand."
+      "DESCRIPTION": "Cards with #yManeuver can't be played directly. If another Attack with a cost greater than or equal to the #yManeuver value is played while this card is in hand, the Attack card will lose its effects and #yExhausts, then this card can be played. If this card is #yExhausted, the Attack card returns to your hand and costs 0 this turn. NL TIP: Avoid playing cards that cost more than the Manuever value if one is in your hand."
     },
     {
       "PROPER_NAME": "Cannon Hermit Crab",

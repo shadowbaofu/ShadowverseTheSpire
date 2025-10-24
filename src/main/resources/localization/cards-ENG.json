@@ -565,7 +565,7 @@
   },
   "shadowverse:Omniscient": {
     "NAME": "Scourge of the Omniscient",
-    "DESCRIPTION": "Apply the following effect: At the end of your turn, lose !M!/10th of your max HP. NL Exhaust."
+    "DESCRIPTION": "Apply the following effect to an enemy: At the end of your turn, lose !M!/10th of your max HP. NL Exhaust."
   },
   "shadowverse:TheFool": {
     "NAME": "O. Lhynkal, The Fool",

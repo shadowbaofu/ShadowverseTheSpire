@@ -6110,7 +6110,7 @@
   "shadowverse:SeekerOfTruths": {
     "NAME": "Midelo, Seeker of Truths",
     "DESCRIPTION": "Fusion: Non-Basic Runecraft cards. NL If at least 5 cards are Fused, it becomes *Midelo, *Scorner *Of *Truths. NL  NL --------------------- NL  NL Gain !B! Block. NL Put a Runecraft card from the draw pile to your hand. Repeat if cards were Fused to this card.",
-    "UPGRADE_DESCRIPTION": "Fusion: Non-Basic Runecraft cards. NL If at least 5 cards are Fused, it becomes *Midelo+, *Scorner *Of *Truths. NL  NL --------------------- NL  NL Gain !B! Block. NL Put a Runecraft card from the draw pile to your hand. Repeat if cards were Fused to this card.",
+    "UPGRADE_DESCRIPTION": "Fusion: Non-Basic Runecraft cards. NL If at least 5 cards are Fused, it becomes *Midelo, *Scorner *Of *Truths+. NL  NL --------------------- NL  NL Gain !B! Block. NL Put a Runecraft card from the draw pile to your hand. Repeat if cards were Fused to this card.",
     "EXTENDED_DESCRIPTION": [
       " NL (Fused ",
       " cards. )"

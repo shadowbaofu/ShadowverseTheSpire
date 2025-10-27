@@ -1636,8 +1636,8 @@
   "shadowverse:WimaelPower": {
     "NAME": "Wimael, Redolent Enforcer",
     "DESCRIPTIONS": [
-      "Increased by #b at the start of your turn",
-      " Add #y Wimael, Redolent Enforcer with 0 cost and Exhaust this turn to your hand."
+      "At the start of your turn ",
+      " Add #b Wimael, Redolent Enforcer with 0 cost and Exhaust to your hand."
     ]
   },
   "shadowverse:OverflowPower": {

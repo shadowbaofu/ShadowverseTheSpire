@@ -573,7 +573,7 @@
   },
   "shadowverse:Mother": {
     "NAME": "Viridia Magna",
-    "DESCRIPTION": "Natura. NL Apply !M! Poison. NL If you have played at least 1 *Naterran *Great *Tree(s) this combat, apply !M! more Poison. NL If you have played more than 3 *Naterran *Great *Tree this combat, gain !B! Block.",
+    "DESCRIPTION": "Natura. NL Apply !M! Poison. NL If you have played at least 1 *Naterran *Great *Tree(s) this combat, apply !M! more Poison. NL If you have played more than 3 *Naterran *Great *Trees this combat, gain !B! Block.",
     "EXTENDED_DESCRIPTION": [
       " NL (*Naterran *Great *Trees played: ",
       ")"

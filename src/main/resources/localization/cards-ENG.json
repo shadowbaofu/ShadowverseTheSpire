@@ -597,7 +597,7 @@
   },
   "shadowverse:HeavensDoor": {
     "NAME": "Heaven's Gate",
-    "DESCRIPTION": "Subtract 1 from cost of !M! cards in your hand randomly at the start of your turn. NL If there are no duplicate cards in your draw pile, subtract 6 from the cost instead. NL Invocation: If you have at least 2 [E] left at the end of your turn, Exhaust this card from your draw pile and gain it's effect."
+    "DESCRIPTION": "Subtract 1 from the cost of !M! card in your hand randomly at the start of your turn. NL If there are no duplicate cards in your draw pile, subtract 6 from the cost instead. NL Invocation: If you have at least 2 [E] at the end of your turn, Exhaust this card from your draw pile and gain its effect."
   },
   "shadowverse:Technolord": {
     "NAME": "Technolord",
